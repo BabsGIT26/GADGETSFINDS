@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Background Colors */
+    --color-background: #FAFBFC; /* gray-50 - original light background */
+    --color-foreground: #1A1D29; /* slate-900 */
+    --color-surface: #F4F6F8; /* gray-100 */
+    
+    /* Border & Input */
+    --color-border: #E5E7EB; /* gray-200 */
+    --color-input: #E5E7EB; /* gray-200 */
+    --color-ring: #0066FF; /* blue-600 */
+    
+    /* Card & Popover */
+    --color-card: #FFFFFF; /* white */
+    --color-card-foreground: #1A1D29; /* slate-900 */
+    --color-popover: #FFFFFF; /* white */
+    --color-popover-foreground: #1A1D29; /* slate-900 */
+    
+    /* Muted */
+    --color-muted: #F4F6F8; /* gray-100 */
+    --color-muted-foreground: #6B7280; /* gray-500 */
+    
+    /* Primary - Brand Authority */
+    --color-primary: #0066FF; /* blue-600 */
+    --color-primary-foreground: #FFFFFF; /* white */
+    
+    /* Secondary - Professional Depth */
+    --color-secondary: #1A1D29; /* slate-900 */
+    --color-secondary-foreground: #FFFFFF; /* white */
+    
+    /* Accent - Success States */
+    --color-accent: #00D4AA; /* teal-400 */
+    --color-accent-foreground: #1A1D29; /* slate-900 */
+    
+    /* Destructive */
+    --color-destructive: #EF4444; /* red-500 */
+    --color-destructive-foreground: #FFFFFF; /* white */
+    
+    /* Success */
+    --color-success: #10B981; /* green-500 */
+    --color-success-foreground: #FFFFFF; /* white */
+    
+    /* Warning */
+    --color-warning: #F59E0B; /* amber-500 */
+    --color-warning-foreground: #1A1D29; /* slate-900 */
+    
+    /* Error */
+    --color-error: #EF4444; /* red-500 */
+    --color-error-foreground: #FFFFFF; /* white */
+    
+    /* Brand Colors - Tech Oracle Palette */
+    --color-brand-primary: #00ff88; /* emerald-400 */
+    --color-brand-secondary: #0066ff; /* blue-600 */
+    --color-brand-accent: #ff6b35; /* orange-500 */
+    --color-brand-trust: #6366f1; /* indigo-500 */
+    --color-brand-dark: #0a0a0b; /* slate-950 */
+    --color-brand-text-primary: #f8fafc; /* slate-50 */
+    --color-brand-text-secondary: #94a3b8; /* slate-400 */
+    --color-brand-cta: #fbbf24; /* amber-400 */
+    
+    /* Spacing */
+    --spacing-xs: 0.5rem; /* 8px */
+    --spacing-sm: 0.8125rem; /* 13px */
+    --spacing-md: 1.3125rem; /* 21px */
+    --spacing-lg: 2.125rem; /* 34px */
+    --spacing-xl: 3.4375rem; /* 55px */
+    
+    /* Border Radius */
+    --radius-sm: 0.25rem; /* 4px */
+    --radius-md: 0.5rem; /* 8px */
+    --radius-lg: 1rem; /* 16px */
+    --radius-xl: 1.5rem; /* 24px */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .pulse-animation {
+    animation: pulse 2.3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.7;
+    }
+  }
+  
+  .glow-effect {
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+  }
+  
+  .smooth-transition {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  @keyframes slide-in-right {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .animate-slide-in-right {
+    animation: slide-in-right 0.3s ease-out;
+  }
+}
