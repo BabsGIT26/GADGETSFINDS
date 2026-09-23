@@ -24,12 +24,13 @@ export const metadata: Metadata = {
     url: 'https://www.gadgets-finds.com/homepage',
     type: 'website',
     images: [
-    {
-      url: "https://img.rocket.new/generatedImages/rocket_gen_img_142fa928a-1770670098681.png",
-      width: 1200,
-      height: 630,
-      alt: 'Gadgets Finds — Tech News, Reviews & Insights'
-    }]
+  {
+    url: "/og-home.png",
+    width: 1200,
+    height: 630,
+    alt: "Gadgets Finds",
+  },
+],
 
   },
   twitter: {
@@ -39,7 +40,7 @@ export const metadata: Metadata = {
     title: 'Gadgets Finds — Your Tech News & Reviews Hub',
     description:
     'Your definitive source for tech news, reviews, and insights. Discover trending stories, compare products, and stay ahead of the tech curve.',
-    images: ['https://www.gadgets-finds.com/assets/images/c25f7797a5e24e21877a902e49174fd6-1768753589028.png']
+    images: ["/og-home.png"],
   }
 };
 
