@@ -39,7 +39,7 @@ const nextConfig = {
         destination: '/',
         permanent: false,
       },
-    ];
-  }
+    ]
+  };
 
 export default nextConfig;
