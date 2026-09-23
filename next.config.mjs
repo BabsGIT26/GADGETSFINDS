@@ -32,15 +32,14 @@ const nextConfig = {
     ],
   },
 
-  async redirects() {
+    async redirects() {
     return [
       {
-        source: '/',
-        destination: '/homepage',
+        source: '/homepage',
+        destination: '/',
         permanent: false,
       },
     ];
   }
-};
 
 export default nextConfig;
