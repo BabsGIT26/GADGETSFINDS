@@ -21,13 +21,14 @@ export const metadata: Metadata = {
     url: 'https://www.gadgets-finds.com',
     siteName: 'Gadgets Finds',
     type: 'website',
-    images: [
-    {
-      url: "https://img.rocket.new/generatedImages/rocket_gen_img_142fa928a-1770670098681.png",
-      width: 1200,
-      height: 630,
-      alt: 'Gadgets Finds — Tech News & Reviews'
-    }]
+        images: [
+      {
+        url: "/og-home.png",
+        width: 1200,
+        height: 630,
+        alt: "Gadgets Finds",
+      },
+    ],
 
   },
   twitter: {
@@ -36,13 +37,12 @@ export const metadata: Metadata = {
     creator: '@Gadgets_finds',
     title: 'Gadgets Finds — Tech News & Reviews',
     description: 'Discover the best trending gadgets with honest reviews, tech news, and expert recommendations.',
-    images: ['https://www.gadgets-finds.com/assets/images/c25f7797a5e24e21877a902e49174fd6-1768753589028.png']
+        images: ["/og-home.png"],
   },
-  icons: {
-    icon: [
-    { url: '/favicon.ico', type: 'image/x-icon' }]
-
-  }
+    icons: {
+    icon: [{ url: "/favicon.ico", type: "image/x-icon" }],
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 const organizationSchema = {
