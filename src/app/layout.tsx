@@ -1,3 +1,4 @@
+import Script from "next/script";
 import React from 'react';
 import type { Metadata, Viewport } from 'next';
 import '../styles/index.css';
@@ -90,17 +91,21 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
 </head>
-      <body>{children}
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XVZBC35EG6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-XVZBC35EG6');
-</script>
-</body>
+            <body>
+        {children}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-XVZBC35EG6"
+          strategy="afterInteractive"
+        />
+        <Script id="ga4" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-XVZBC35EG6');
+          `}
+        </Script>
+      </body>
     </html>);
 
 }
