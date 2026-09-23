@@ -48,7 +48,7 @@ export default function Homepage() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-
+            <GadgetsSection />
       <main className="pt-24 md:pt-20">
         <section className="bg-gradient-to-br from-brand-dark via-slate-900 to-brand-dark py-8 md:py-16 lg:py-24">
           <div className="container mx-auto px-4">
@@ -82,7 +82,6 @@ export default function Homepage() {
 
         <CES2026Preview />
 
-        <GadgetsSection />
 
         <section className="py-8 md:py-16 bg-background">
           <div className="container mx-auto px-4">
