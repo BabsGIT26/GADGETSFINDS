@@ -9,8 +9,8 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: 'Gadgets Finds — Tech News & Reviews',
-  description: 'Discover the best trending gadgets with honest reviews, tech news, and expert recommendations from Best Gadgets Finds LLC.',
+  title: "Gadgets Finds — Daily gadget deals",
+  description: "Daily gadget deals and tech drops. Compare prices, read reviews, and find discounted laptops, phones, and gear on Gadgets Finds.",
   metadataBase: new URL('https://www.gadgets-finds.com'),
   alternates: {
     canonical: 'https://www.gadgets-finds.com'
