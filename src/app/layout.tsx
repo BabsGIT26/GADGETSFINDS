@@ -74,7 +74,13 @@ const organizationSchema = {
     availableLanguage: 'English'
   }
 };
-
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Gadgets Finds",
+  alternateName: ["GadgetsFinds", "gadgets-finds.com"],
+  url: "https://www.gadgets-finds.com/",
+};
 export default function RootLayout({
   children
 
@@ -90,6 +96,11 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
+                
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
 </head>
             <body>
         {children}
