@@ -86,13 +86,13 @@ export default function MacBookProM4Article() {
                 <time className="text-gray-200/90">March 20, 2026</time>
               </div>
 
-              <h1 
-                <AmazonDealBox
-  productName="MacBook Pro M4"
-  href="https://www.amazon.com/s?k=MacBook+Pro+M4&tag=gadgetsfindswebsite-20"
-/>
+              <h1
                 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold leading-tight text-white drop-shadow-[0_3px_8px_rgba(0,0,0,0.95)]">
                 MacBook Pro M4: Apple Silicon Reaches New Performance Heights
+                <AmazonDealBox
+                 productName="MacBook Pro M4"
+                  href="https://www.amazon.com/s?k=MacBook+Pro+M4&tag=gadgetsfindswebsite-20"
+                  />
               </h1>
 
               <p className="mt-3 max-w-3xl text-xs sm:text-sm md:text-base lg:text-lg text-white/95 drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)] leading-relaxed">
