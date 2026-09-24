@@ -1,9 +1,10 @@
-
 import type { Metadata } from "next";
 import AppImage from "@/components/ui/AppImage";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
+
+const AMAZON = "https://www.amazon.com/dp/B0CD1JTBSC?tag=gadgetsfindswebsite-20";
 
 export const metadata: Metadata = {
   title: "Meta Quest 3 Review — Gadgets Finds",
@@ -26,7 +27,6 @@ export default function Page() {
           <p className="text-muted-foreground mb-8">
             Current standalone Meta headset with color mixed reality. Quest 4 is not released.
           </p>
-          <AmazonDealBox productName="Meta Quest 3" href={AMAZON} />
           <h2 className="text-2xl font-bold mt-10 mb-3">What it is</h2>
           <p className="text-muted-foreground mb-4">
             All-in-one VR: Snapdragon XR2 Gen 2, pancake lenses, higher resolution than Quest 2,
