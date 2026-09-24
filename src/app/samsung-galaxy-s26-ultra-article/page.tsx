@@ -4,6 +4,7 @@ import AppImage from '@/components/ui/AppImage';
 import Icon from '@/components/ui/AppIcon';
 import Header from '@/components/common/Header';
 import Footer from '@/app/homepage/components/Footer';
+import AmazonDealBox from "@/components/common/AmazonDealBox";
 
 export const metadata: Metadata = {
   title: 'Samsung Galaxy S26 Ultra Review — Gadgets Finds',
@@ -92,7 +93,12 @@ export default function SamsungGalaxyS26UltraArticle() {
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-3 md:mb-4">
                 Samsung Galaxy S26 Ultra Review: AI Camera Powerhouse
               </h1>
-
+              
+              <AmazonDealBox
+  productName="Samsung Galaxy S26 Ultra"
+  href="https://www.amazon.com/s?k=Samsung+Galaxy+S26+Ultra&tag=gadgetsfindswebsite-20"
+/>
+              
               <p className="text-sm sm:text-base md:text-lg text-white/95 mb-3 md:mb-4 max-w-3xl leading-relaxed">
                 Announced February 25, 2026 and available from March 11, 2026 — the Galaxy S26 Ultra delivers Samsung's most advanced AI-powered photography and flagship performance to date.
               </p>
