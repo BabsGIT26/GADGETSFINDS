@@ -18,8 +18,12 @@ export default function Page() {
     <>
       <Header />
       <article className="min-h-screen bg-background pt-14 md:pt-16">
-        <div className="relative min-h-[40vh] overflow-hidden">
-          <AppImage src="/assets/images/meta_quest_3.png" alt="Meta Quest 3" className="w-full h-[42vh] object-cover" />
+               <div className="w-full bg-muted flex items-center justify-center py-10">
+          <AppImage
+            src="/assets/images/meta_quest_3.png"
+            alt="Meta Quest 3"
+            className="max-h-[360px] w-auto max-w-full object-contain"
+          />
         </div>
         <div className="container mx-auto px-4 py-10 max-w-3xl">
           <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">XR</p>
