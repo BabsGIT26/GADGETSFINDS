@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Link from 'next/link';
 import AppImage from '@/components/ui/AppImage';
 import Icon from '@/components/ui/AppIcon';
@@ -77,6 +80,8 @@ const gadgets: Gadget[] = [
 const categories = ['All', 'Laptops', 'Smartphones', 'GPUs', 'Robotics'];
 
 export default function GadgetsSection() {
+    const [active, setActive] = useState("All");
+  const visible = active === "All" ? gadgets : gadgets.filter((g) => g.category === active);
   return (
     <section className="py-12 md:py-20 bg-background">
       <div className="container mx-auto px-4">
@@ -107,20 +112,24 @@ export default function GadgetsSection() {
         {/* Category pills */}
         <div className="flex flex-wrap gap-2 mb-8">
           {categories.map((cat) => (
-            <span
+            <button
               key={cat}
-              className={`px-4 py-1.5 rounded-full text-xs font-semibold border transition-all cursor-default ${
-                cat === 'All' ?'bg-primary text-primary-foreground border-primary' :'bg-card text-muted-foreground border-border'
+              type="button"
+              onClick={() => setActive(cat)}
+              className={`px-4 py-1.5 rounded-full text-xs font-semibold border transition-all ${
+                cat === active
+                  ? "bg-primary text-primary-foreground border-primary"
+                  : "bg-card text-muted-foreground border-border"
               }`}
             >
               {cat}
-            </span>
+            </button>
           ))}
         </div>
 
         {/* Gadget cards — asymmetric grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {gadgets.map((gadget, i) => (
+          {visible.map((gadget, i) => (
             <Link
               key={gadget.name}
               href={gadget.href}
