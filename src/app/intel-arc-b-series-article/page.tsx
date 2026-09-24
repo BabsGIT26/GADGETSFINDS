@@ -4,6 +4,7 @@ import AppImage from '@/components/ui/AppImage';
 import Icon from '@/components/ui/AppIcon';
 import Header from '@/components/common/Header';
 import Footer from '@/app/homepage/components/Footer';
+import AmazonDealBox from "@/components/common/AmazonDealBox";
 
 export const metadata: Metadata = {
   title: 'Intel Arc B-Series Graphics Cards Deliver Breakthrough Performance — Gadgets Finds',
@@ -208,7 +209,11 @@ export default function IntelArcBSeriesArticle() {
               Intel has confirmed that the C-Series "Celestial" architecture is in development for 2027, promising another significant performance leap. The company's long-term commitment to discrete graphics appears solid, with substantial R&D investment and partnerships with game developers to optimize titles for Arc GPUs.
             </p>
           </div>
-
+                    <AmazonDealBox
+            productName="Intel Arc B580"
+            href="https://www.amazon.com/s?k=Intel+Arc+B580&tag=gadgetsfindswebsite-20"
+          />
+          
           {/* Share Section */}
           <div className="mt-12 pt-8 border-t border-border">
             <h3 className="text-lg font-semibold text-foreground mb-4">Share this article</h3>
