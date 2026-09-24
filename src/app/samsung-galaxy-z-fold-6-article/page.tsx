@@ -4,6 +4,7 @@ import AppImage from '@/components/ui/AppImage';
 import Icon from '@/components/ui/AppIcon';
 import Header from '@/components/common/Header';
 import Footer from '@/app/homepage/components/Footer';
+import AmazonDealBox from "@/components/common/AmazonDealBox";
 
 export const metadata: Metadata = {
   title: 'Samsung Galaxy Z Fold 6 Review — Gadgets Finds',
@@ -93,6 +94,10 @@ export default function SamsungGalaxyZFold6Article() {
               <Icon name="NewspaperIcon" size={20} variant="outline" />
               <span>Live News Feed</span>
             </Link>
+            <AmazonDealBox
+  productName="Samsung Galaxy Z Fold 6"
+  href="https://www.amazon.com/s?k=Samsung+Galaxy+Z+Fold+6&tag=gadgetsfindswebsite-20"
+/>
           </div>
 
           {/* Accuracy Notice */}
