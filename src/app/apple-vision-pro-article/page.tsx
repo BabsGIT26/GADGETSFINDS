@@ -8,7 +8,8 @@ const AMAZON = "https://www.amazon.com/s?k=Apple+Vision+Pro&tag=gadgetsfindswebs
 
 export const metadata: Metadata = {
   title: "Apple Vision Pro Review — Gadgets Finds",
-  description: "Apple Vision Pro first-generation spatial computer: who it is for and what to know before buying.",
+  description:
+    "Apple Vision Pro first-generation spatial computer: who it is for and what to know before buying.",
   metadataBase: new URL("https://www.gadgets-finds.com"),
   alternates: { canonical: "https://www.gadgets-finds.com/apple-vision-pro-article" },
 };
@@ -18,8 +19,12 @@ export default function Page() {
     <>
       <Header />
       <article className="min-h-screen bg-background pt-14 md:pt-16">
-        <div className="relative min-h-[40vh] overflow-hidden">
-          <AppImage src="/assets/images/apple_vision_pro.png" alt="Apple Vision Pro" className="w-full h-[42vh] object-cover" />
+        <div className="w-full bg-muted flex items-center justify-center py-8">
+          <AppImage
+            src="/assets/images/apple_vision_pro.png"
+            alt="Apple Vision Pro"
+            className="max-h-[280px] w-auto max-w-[70%] object-contain"
+          />
         </div>
         <div className="container mx-auto px-4 py-10 max-w-3xl">
           <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">XR</p>
@@ -28,7 +33,6 @@ export default function Page() {
             First-generation headset launched 2024 (later M5 refresh exists). Vision Pro 2 is not out.
             Apple Store is often the cleaner buy than marketplace sellers.
           </p>
-          <AmazonDealBox productName="Apple Vision Pro" href={AMAZON} />
           <h2 className="text-2xl font-bold mt-10 mb-3">What it is</h2>
           <p className="text-muted-foreground mb-4">
             A spatial computer: micro-OLED displays, eye/hand tracking, external battery pack.
