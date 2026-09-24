@@ -4,6 +4,7 @@ import AppImage from '@/components/ui/AppImage';
 import Icon from '@/components/ui/AppIcon';
 import Header from '@/components/common/Header';
 import Footer from '@/app/homepage/components/Footer';
+import AmazonDealBox from "@/components/common/AmazonDealBox";
 
 export const metadata: Metadata = {
   title: 'NVIDIA RTX 5090 Review — Gadgets Finds',
