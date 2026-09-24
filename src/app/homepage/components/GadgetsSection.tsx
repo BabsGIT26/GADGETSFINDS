@@ -14,6 +14,9 @@ interface Gadget {
   alt: string;
   href: string;
   highlights: string[];
+  listPrice?: string;
+  dealPrice?: string;
+  percentOff?: string;
 }
 
 const gadgets: Gadget[] = [
@@ -85,7 +88,8 @@ export default function GadgetsSection() {
               <span className="text-primary text-xs font-bold tracking-widest uppercase">Today's Deals</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              Hot gadget<span className="text-primary">drops</span>
+              Hot gadget<span className="text-primary"> drops 
+              </span>
             </h2>
             <p className="text-muted-foreground mt-2 text-sm md:text-base max-w-lg">
               Price cuts worth opening — tap Get Deal when you're ready.
