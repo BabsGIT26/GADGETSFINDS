@@ -4,6 +4,7 @@ import AppImage from '@/components/ui/AppImage';
 import Icon from '@/components/ui/AppIcon';
 import Header from '@/components/common/Header';
 import Footer from '@/app/homepage/components/Footer';
+import AmazonDealBox from "@/components/common/AmazonDealBox";
 
 export const metadata: Metadata = {
   title: 'Sony WH-2000XM6 Review — Gadgets Finds',
@@ -70,6 +71,11 @@ export default function SonyWH2000XM6Article() {
               <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white mb-4">
                 Sony WH-2000XM6 Review: The New King of Noise Cancellation
               </h1>
+              <AmazonDealBox
+  productName="Sony WH-1000XM6"
+  href="https://www.amazon.com/s?k=Sony+WH-1000XM6&tag=gadgetsfindswebsite-20"
+/>
+              
               <p className="text-sm sm:text-base md:text-lg text-white/95 mb-3 md:mb-4 max-w-3xl leading-relaxed">
                 Sony's latest flagship headphones set a new standard for active noise cancellation and audio quality.
               </p>
