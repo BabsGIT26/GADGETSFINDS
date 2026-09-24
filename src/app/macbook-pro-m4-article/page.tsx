@@ -91,10 +91,7 @@ export default function MacBookProM4Article() {
                 MacBook Pro M4: Apple Silicon Reaches New Performance Heights
       
               </h1>
-              <AmazonDealBox
-                 productName="MacBook Pro M4"
-                  href="https://www.amazon.com/s?k=MacBook+Pro+M4&tag=gadgetsfindswebsite-20"
-                  />
+              
               <p className="mt-3 max-w-3xl text-xs sm:text-sm md:text-base lg:text-lg text-white/95 drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)] leading-relaxed">
                 Our comprehensive review of the M4 MacBook Pro reveals unprecedented performance for creative professionals and developers. Apple's latest silicon chip represents a quantum leap in computing power while maintaining exceptional energy efficiency.
               </p>
@@ -274,7 +271,10 @@ export default function MacBookProM4Article() {
               The MacBook Pro M4 represents the pinnacle of laptop engineering. Apple has created a machine that doesn't compromise on performance, portability, or battery life. For professionals who demand the best tools for their craft, this is the laptop to beat. The M4 chip's combination of raw power and efficiency sets a new standard that competitors will struggle to match for years to come.
             </p>
           </div>
-
+          <AmazonDealBox
+                 productName="MacBook Pro M4"
+                  href="https://www.amazon.com/s?k=MacBook+Pro+M4&tag=gadgetsfindswebsite-20"
+                  />
           {/* Tags */}
           <div className="flex flex-wrap gap-2 mt-12 pt-8 border-t border-border">
             {['MacBookPro', 'M4Chip', 'AppleSilicon', 'LaptopReview', 'CreativeProfessionals']?.map((tag) =>
