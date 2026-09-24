@@ -5,8 +5,6 @@ import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 
-const AMAZON = "https://www.amazon.com/dp/B0CD1JTBSC?tag=gadgetsfindswebsite-20";
-
 export const metadata: Metadata = {
   title: "Meta Quest 3 Review — Gadgets Finds",
   description: "Meta Quest 3 standalone VR headset: mixed reality, games, and who should buy it.",
