@@ -1,3 +1,4 @@
+import AmazonDealBox from "@/components/common/AmazonDealBox";
 import type { Metadata } from "next";
 import AppImage from "@/components/ui/AppImage";
 import Header from "@/components/common/Header";
