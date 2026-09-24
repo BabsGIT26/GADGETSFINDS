@@ -125,8 +125,11 @@ const Footer = () => {
         <div className="border-t border-slate-800 pt-6 md:pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0 text-center md:text-left">
             <p className="text-brand-text-secondary text-xs md:text-sm">
-              {isHydrated ? `© ${currentYear}` : '© 2026'} Best Gadgets Finds LLC. All rights reserved.
-            </p>
+                {isHydrated ? `© ${currentYear}` : '© 2026'} Best Gadgets Finds LLC. All rights reserved.
+              </p>
+              <p className="text-brand-text-secondary text-xs mt-2 max-w-xl">
+                As an Amazon Associate, Gadgets Finds earns from qualifying purchases.
+              </p>
           </div>
         </div>
       </div>
