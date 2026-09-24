@@ -199,7 +199,12 @@ export default function NVIDIARTXArticle() {
               NVIDIA's RTX 5090 sets a new benchmark for consumer GPU performance. The Blackwell architecture, combined with DLSS 4 Multi Frame Generation, delivers a generational leap in gaming performance. If you need the fastest GPU money can buy right now, the RTX 5090 is it — just make sure your PSU and wallet are ready.
             </p>
           </div>
-
+          
+<AmazonDealBox
+  productName="NVIDIA RTX 5090"
+  href="https://www.amazon.com/ASUS-Graphics-Military-Grade-Components-Protective/dp/B0DS2X13PH?crid=3FPXZL8NE4JR8&dib=eyJ2IjoiMSJ9.OSAxfSSEwGzbpqyyiUlBpNM7Wn6cisKP59h0tCsvWxb4wb-Vdj3aSbtmP56pmPDanswSy-_RokfSaWJgTHwKg_IFNZB2REtbcpn0p36-3AH5xkF5hQK7PjpxkaxcqTAtbUwAly6s4hmPUM1UQdKdvlWNMm570PwkxYF5ZCb2MDdR7I5iEf22K48whuETSTMc91ocBZ1tbmHACKmi0VvvPbgkunbeGKxjZZ2ALlf9oD8.VPTX6eWP5_N8_CY0RC3lE5s-a4PeEW9nwgVrZG0tQEU&dib_tag=se&keywords=RTX%2B5090&qid=1790253119&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=rtx%2B5090%C2%B5%2Caps%2C352&sr=8-3&th=1&linkCode=ll2&tag=gadgetsfindswebsite-20&linkId=a927befb0581887dfe0822c6a9f7fb49&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+/>
+          
           {/* Final CTA – consistent "Live News Feed" button */}
           <div className="mt-12 border-t border-border pt-10 text-center sm:text-left">
             <Link
