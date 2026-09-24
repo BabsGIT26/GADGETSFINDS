@@ -94,10 +94,7 @@ export default function SamsungGalaxyZFold6Article() {
               <Icon name="NewspaperIcon" size={20} variant="outline" />
               <span>Live News Feed</span>
             </Link>
-            <AmazonDealBox
-  productName="Samsung Galaxy Z Fold 6"
-  href="https://www.amazon.com/s?k=Samsung+Galaxy+Z+Fold+6&tag=gadgetsfindswebsite-20"
-/>
+            
           </div>
 
           {/* Accuracy Notice */}
@@ -177,7 +174,11 @@ export default function SamsungGalaxyZFold6Article() {
               The Z Fold 6 is Samsung's best foldable yet — more durable, slightly slimmer, and with a marginally improved inner display. However, it does not represent a breakthrough in crease elimination. If you can accept the crease as part of the foldable experience, the Z Fold 6 is an excellent productivity device. If the crease is a dealbreaker, no current foldable phone solves this problem.
             </p>
           </div>
-
+          
+<AmazonDealBox
+  productName="Samsung Galaxy Z Fold 6"
+  href="https://www.amazon.com/s?k=Samsung+Galaxy+Z+Fold+6&tag=gadgetsfindswebsite-20"
+/>
           {/* Share Section */}
           <div className="mt-12 pt-8 border-t border-border">
             <h3 className="text-lg font-semibold text-foreground mb-4">Share this article</h3>
