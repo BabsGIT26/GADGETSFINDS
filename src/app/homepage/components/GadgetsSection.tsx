@@ -1,5 +1,5 @@
 "use client";
-import AmazonDealBox from "@/components/common/AmazonDealBox";
+
 import { useState } from "react";
 import Link from "next/link";
 import AppImage from "@/components/ui/AppImage";
