@@ -94,11 +94,6 @@ export default function SamsungGalaxyS26UltraArticle() {
                 Samsung Galaxy S26 Ultra Review: AI Camera Powerhouse
               </h1>
               
-              <AmazonDealBox
-  productName="Samsung Galaxy S26 Ultra"
-  href="https://www.amazon.com/s?k=Samsung+Galaxy+S26+Ultra&tag=gadgetsfindswebsite-20"
-/>
-              
               <p className="text-sm sm:text-base md:text-lg text-white/95 mb-3 md:mb-4 max-w-3xl leading-relaxed">
                 Announced February 25, 2026 and available from March 11, 2026 — the Galaxy S26 Ultra delivers Samsung's most advanced AI-powered photography and flagship performance to date.
               </p>
@@ -230,6 +225,10 @@ export default function SamsungGalaxyS26UltraArticle() {
               The Samsung Galaxy S26 Ultra is available now (from March 11, 2026). Pricing starts at $1,299 for the 256GB model, with higher storage options available. The phone is available in Titanium Black, Titanium Gray, Titanium Silverblue, and Titanium Whitesilver colorways.
             </p>
           </div>
+          <AmazonDealBox
+  productName="Samsung Galaxy S26 Ultra"
+  href="https://www.amazon.com/s?k=Samsung+Galaxy+S26+Ultra&tag=gadgetsfindswebsite-20"
+/>
         </article>
 
         {/* Bottom Navigation */}
