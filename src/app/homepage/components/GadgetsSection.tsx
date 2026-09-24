@@ -82,13 +82,13 @@ export default function GadgetsSection() {
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary/10 border border-primary/30 rounded-full mb-4">
               <Icon name="CpuChipIcon" size={14} variant="solid" className="text-primary" />
-              <span className="text-primary text-xs font-bold tracking-widest uppercase">Top Gadgets 2026</span>
+              <span className="text-primary text-xs font-bold tracking-widest uppercase">Today's Deals</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              Gadgets Worth <span className="text-primary">Your Attention</span>
+              Hot gadget<span className="text-primary">drops</span>
             </h2>
             <p className="text-muted-foreground mt-2 text-sm md:text-base max-w-lg">
-              Handpicked hardware that's redefining what's possible — reviewed, rated, and ranked by our editors.
+              Price cuts worth opening — tap Get Deal when you're ready.
             </p>
           </div>
           <Link
