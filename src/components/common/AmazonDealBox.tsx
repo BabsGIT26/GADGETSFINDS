@@ -16,8 +16,8 @@ export default function AmazonDealBox({ productName, href }: Props) {
         View on Amazon
       </a>
       <p className="text-xs text-muted-foreground mt-3">
-        As an Amazon Associate, Gadgets Finds earns from qualifying purchases. <br>   Prices and
-        availability change on Amazon. </br>
+        As an Amazon Associate, Gadgets Finds earns from qualifying purchases.  Prices and
+        availability change on Amazon. 
       </p>
     </aside>
   );
