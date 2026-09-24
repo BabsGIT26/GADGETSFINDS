@@ -1,5 +1,5 @@
 "use client";
-
+import AmazonDealBox from "@/components/common/AmazonDealBox";
 import { useState } from "react";
 import Link from "next/link";
 import AppImage from "@/components/ui/AppImage";
@@ -88,7 +88,7 @@ const gadgets: Gadget[] = [
     badgeColor: "bg-sky-600 text-white",
     image: "/assets/images/playstation_5.png",
     alt: "Sony PlayStation 5",
-    href: "/product-comparison-engine",
+    href: "/playstation-5-article",
     highlights: ["On sale now", "4K gaming", "DualSense"],
   },
   {
@@ -100,7 +100,7 @@ const gadgets: Gadget[] = [
     badgeColor: "bg-indigo-600 text-white",
     image: "/assets/images/meta_quest_3.png",
     alt: "Meta Quest 3",
-    href: "/product-comparison-engine",
+    href: "/meta-quest-3-article",
     highlights: ["Standalone VR", "Color mixed reality", "In stores"],
   },
   {
@@ -112,7 +112,7 @@ const gadgets: Gadget[] = [
     badgeColor: "bg-zinc-700 text-white",
     image: "/assets/images/apple_vision_pro.png",
     alt: "Apple Vision Pro",
-    href: "/product-comparison-engine",
+    href: "/apple-vision-pro-article",
     highlights: ["Spatial computing", "First generation", "On sale"],
   },
   {
