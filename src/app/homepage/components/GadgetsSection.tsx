@@ -181,7 +181,7 @@ export default function GadgetsSection() {
 
                 {/* Footer */}
                 <div className="flex items-center justify-between pt-3 border-t border-border mt-auto">
-                  <span className="text-sm font-bold text-foreground">{gadget.price}</span>
+                  <span className="text-sm font-bold text-foreground">{/* <p>{gadget.price}</p> */}</span>
                   <span className="text-primary text-xs font-semibold flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
                     Read Review <Icon name="ArrowRightIcon" size={12} variant="outline" />
                   </span>
