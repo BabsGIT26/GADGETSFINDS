@@ -29,105 +29,115 @@ const gadgets: Gadget[] = [
     image: "/assets/images/macbook_pro_m_four.png",
     alt: "Apple MacBook Pro M4",
     href: "/macbook-pro-m4-article",
-    highlights: ["M4 Pro chip", "24GB unified memory", "22-hr battery"],
+    highlights: ["M4 chip", "Liquid Retina XDR", "ProMotion 120Hz"],
   },
   {
     name: "NVIDIA RTX 5090",
     brand: "NVIDIA",
     category: "GPUs",
     rating: 4.8,
-    badge: "Best GPU",
+    badge: "Flagship GPU",
     badgeColor: "bg-green-600 text-white",
     image: "/assets/images/nvidia_rtx_six_zero_nine_zero_ti.png",
     alt: "NVIDIA RTX 5090",
     href: "/nvidia-rtx-6090-ti-article",
-    highlights: ["32GB GDDR7", "Blackwell", "4K gaming"],
+    highlights: ["Blackwell", "32GB class VRAM", "4K gaming"],
   },
   {
     name: "Samsung Galaxy S26 Ultra",
     brand: "Samsung",
     category: "Smartphones",
     rating: 4.7,
-    badge: "Top Rated",
+    badge: "Flagship",
     badgeColor: "bg-blue-600 text-white",
     image: "/assets/images/samsung_galaxy_s_twenty_six_ultra.png",
     alt: "Samsung Galaxy S26 Ultra",
     href: "/samsung-galaxy-s26-ultra-article",
-    highlights: ["200MP camera", "S Pen", "Galaxy AI"],
+    highlights: ["S Pen", "200MP class camera", "Galaxy AI"],
   },
   {
     name: "Tesla Optimus Gen 3",
     brand: "Tesla",
     category: "Robotics",
     rating: 4.6,
-    badge: "Watch",
+    badge: "Not retail",
     badgeColor: "bg-red-600 text-white",
     image: "/assets/images/tesla_optimus_gen_three.png",
     alt: "Tesla Optimus Gen 3",
     href: "/tesla-optimus-gen-3-article",
-    highlights: ["Humanoid robot", "Factory 2026", "Not retail yet"],
+    highlights: ["Humanoid", "Target $20K–$30K", "Not sold to public yet"],
   },
   {
     name: "Sony WH-1000XM6",
     brand: "Sony",
     category: "Audio",
     rating: 4.7,
-    badge: "Audio",
+    badge: "Headphones",
     badgeColor: "bg-violet-600 text-white",
-    image: "/assets/images/no_image.png",
+    image: "/assets/images/sony_wh_1000xm6.png",
     alt: "Sony WH-1000XM6",
     href: "/sony-wh-2000xm6-review-article",
-    highlights: ["ANC", "Long battery", "Travel pick"],
+    highlights: ["ANC", "Wireless", "Travel"],
   },
   {
-    name: "Apple Vision Pro 2",
-    brand: "Apple",
-    category: "XR",
-    rating: 4.5,
-    image: "/assets/images/no_image.png",
-    alt: "Apple Vision Pro 2",
-    href: "/apple-vision-pro-2-article",
-    highlights: ["Spatial computing", "Apple silicon", "In development"],
-  },
-  {
-    name: "Meta Quest 4",
-    brand: "Meta",
-    category: "XR",
-    rating: 4.4,
-    image: "/assets/images/no_image.png",
-    alt: "Meta Quest 4",
-    href: "/meta-quest-4-article",
-    highlights: ["Standalone VR", "Gaming", "Lower price tier"],
-  },
-  {
-    name: "PlayStation 6",
+    name: "PlayStation 5",
     brand: "Sony",
     category: "Gaming",
-    rating: 4.6,
-    image: "/assets/images/no_image.png",
-    alt: "PlayStation 6",
-    href: "/sony-playstation-6-article",
-    highlights: ["Next-gen console", "Sony", "Upcoming"],
+    rating: 4.8,
+    badge: "Console",
+    badgeColor: "bg-sky-600 text-white",
+    image: "/assets/images/playstation_5.png",
+    alt: "Sony PlayStation 5",
+    href: "/product-comparison-engine",
+    highlights: ["On sale now", "4K gaming", "DualSense"],
+  },
+  {
+    name: "Meta Quest 3",
+    brand: "Meta",
+    category: "XR",
+    rating: 4.5,
+    badge: "VR",
+    badgeColor: "bg-indigo-600 text-white",
+    image: "/assets/images/meta_quest_3.png",
+    alt: "Meta Quest 3",
+    href: "/product-comparison-engine",
+    highlights: ["Standalone VR", "Color mixed reality", "In stores"],
+  },
+  {
+    name: "Apple Vision Pro",
+    brand: "Apple",
+    category: "XR",
+    rating: 4.4,
+    badge: "Released 2024",
+    badgeColor: "bg-zinc-700 text-white",
+    image: "/assets/images/apple_vision_pro.png",
+    alt: "Apple Vision Pro",
+    href: "/product-comparison-engine",
+    highlights: ["Spatial computing", "First generation", "On sale"],
   },
   {
     name: "Galaxy Z Fold 6",
     brand: "Samsung",
     category: "Smartphones",
     rating: 4.5,
-    image: "/assets/images/no_image.png",
+    badge: "Foldable",
+    badgeColor: "bg-blue-600 text-white",
+    image: "/assets/images/samsung_galaxy_z_fold_6.png",
     alt: "Samsung Galaxy Z Fold 6",
     href: "/samsung-galaxy-z-fold-6-article",
-    highlights: ["Foldable", "Big screen", "S Pen support"],
+    highlights: ["Out since 2024", "Folding display", "S Pen"],
   },
   {
-    name: "Intel Arc B-Series",
+    name: "Intel Arc B580",
     brand: "Intel",
     category: "GPUs",
     rating: 4.3,
-    image: "/assets/images/no_image.png",
-    alt: "Intel Arc B-Series",
+    badge: "Battlemage",
+    badgeColor: "bg-cyan-700 text-white",
+    image: "/assets/images/intel_arc_b580.png",
+    alt: "Intel Arc B580",
     href: "/intel-arc-b-series-article",
-    highlights: ["Battlemage", "Value GPU", "Intel"],
+    highlights: ["12GB GDDR6", "Released 2024", "Value GPU"],
   },
 ];
 
@@ -144,13 +154,13 @@ export default function GadgetsSection() {
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary/10 border border-primary/30 rounded-full mb-4">
               <Icon name="CpuChipIcon" size={14} variant="solid" className="text-primary" />
-              <span className="text-primary text-xs font-bold tracking-widest uppercase">Today's Deals</span>
+              <span className="text-primary text-xs font-bold tracking-widest uppercase">Featured gadgets</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
               Hot gadget <span className="text-primary">drops</span>
             </h2>
             <p className="text-muted-foreground mt-2 text-sm md:text-base max-w-lg">
-              Handpicked gadgets — open a card for the full write-up. Prices come later.
+              Products you can actually look up today. Prices come later.
             </p>
           </div>
           <Link
@@ -201,7 +211,6 @@ export default function GadgetsSection() {
                   {gadget.category}
                 </span>
               </div>
-
               <div className="p-5 flex flex-col flex-1">
                 <p className="text-xs text-primary font-bold uppercase tracking-wide mb-1">{gadget.brand}</p>
                 <h3 className="text-foreground font-bold text-base md:text-lg group-hover:text-primary transition-colors mb-2">
@@ -238,16 +247,6 @@ export default function GadgetsSection() {
               </div>
             </Link>
           ))}
-        </div>
-
-        <div className="mt-10 text-center">
-          <Link
-            href="/product-comparison-engine"
-            className="inline-flex items-center gap-2 px-8 py-3.5 bg-primary text-primary-foreground rounded-xl font-semibold hover:bg-primary/90 transition-all"
-          >
-            <Icon name="CpuChipIcon" size={18} variant="outline" />
-            Explore All Gadgets & Compare
-          </Link>
         </div>
       </div>
     </section>
