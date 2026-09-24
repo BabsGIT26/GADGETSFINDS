@@ -1,15 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import Link from 'next/link';
-import AppImage from '@/components/ui/AppImage';
-import Icon from '@/components/ui/AppIcon';
+import Link from "next/link";
+import AppImage from "@/components/ui/AppImage";
+import Icon from "@/components/ui/AppIcon";
 
 interface Gadget {
   name: string;
   brand: string;
   category: string;
-  price: string;
   rating: number;
   badge?: string;
   badgeColor?: string;
@@ -17,75 +16,130 @@ interface Gadget {
   alt: string;
   href: string;
   highlights: string[];
-  listPrice?: string;
-  dealPrice?: string;
-  percentOff?: string;
 }
 
 const gadgets: Gadget[] = [
   {
-    name: 'MacBook Pro M4',
-    brand: 'Apple',
-    category: 'Laptops',
-    price: 'From $1,999',
+    name: "MacBook Pro M4",
+    brand: "Apple",
+    category: "Laptops",
     rating: 4.9,
     badge: "Editor's Pick",
-    badgeColor: 'bg-amber-500 text-white',
-    image: '/assets/images/macbook_pro_m_four.png',
-    alt: 'Apple MacBook Pro M4 laptop with Liquid Retina XDR display on a desk',
-    href: '/macbook-pro-m4-article',
-    highlights: ['M4 Pro chip', '24GB unified memory', '22-hr battery'],
+    badgeColor: "bg-amber-500 text-white",
+    image: "/assets/images/macbook_pro_m_four.png",
+    alt: "Apple MacBook Pro M4",
+    href: "/macbook-pro-m4-article",
+    highlights: ["M4 Pro chip", "24GB unified memory", "22-hr battery"],
   },
   {
-    name: 'NVIDIA RTX 5090',
-    brand: 'NVIDIA',
-    category: 'GPUs',
-    price: 'From $1,999',
+    name: "NVIDIA RTX 5090",
+    brand: "NVIDIA",
+    category: "GPUs",
     rating: 4.8,
-    badge: 'Best GPU 2025',
-    badgeColor: 'bg-green-600 text-white',
-    image: '/assets/images/nvidia_rtx_six_zero_nine_zero_ti.png',
-    alt: 'NVIDIA RTX 5090 graphics card with triple-fan cooling system',
-    href: '/nvidia-rtx-6090-ti-article',
-    highlights: ['32GB GDDR7', 'Blackwell architecture', '4K 240fps gaming'],
+    badge: "Best GPU",
+    badgeColor: "bg-green-600 text-white",
+    image: "/assets/images/nvidia_rtx_six_zero_nine_zero_ti.png",
+    alt: "NVIDIA RTX 5090",
+    href: "/nvidia-rtx-6090-ti-article",
+    highlights: ["32GB GDDR7", "Blackwell", "4K gaming"],
   },
   {
-    name: 'Samsung Galaxy S26 Ultra',
-    brand: 'Samsung',
-    category: 'Smartphones',
-    price: 'From $1,299',
+    name: "Samsung Galaxy S26 Ultra",
+    brand: "Samsung",
+    category: "Smartphones",
     rating: 4.7,
-    badge: 'Top Rated',
-    badgeColor: 'bg-blue-600 text-white',
-    image: '/assets/images/samsung_galaxy_s_twenty_six_ultra.png',
-    alt: 'Samsung Galaxy S26 Ultra smartphone with S Pen and quad camera system',
-    href: '/samsung-galaxy-s26-ultra-article',
-    highlights: ['200MP quad camera', 'Snapdragon 8 Gen 4', 'S Pen included'],
+    badge: "Top Rated",
+    badgeColor: "bg-blue-600 text-white",
+    image: "/assets/images/samsung_galaxy_s_twenty_six_ultra.png",
+    alt: "Samsung Galaxy S26 Ultra",
+    href: "/samsung-galaxy-s26-ultra-article",
+    highlights: ["200MP camera", "S Pen", "Galaxy AI"],
   },
   {
-    name: 'Tesla Optimus Gen 3',
-    brand: 'Tesla',
-    category: 'Robotics',
-    price: '$20K–$30K target',
+    name: "Tesla Optimus Gen 3",
+    brand: "Tesla",
+    category: "Robotics",
     rating: 4.6,
-    badge: 'Most Anticipated',
-    badgeColor: 'bg-red-600 text-white',
-    image: '/assets/images/tesla_optimus_gen_three.png',
-    alt: 'Tesla Optimus Gen 3 humanoid robot standing in a white studio environment',
-    href: '/tesla-optimus-gen-3-article',
-    highlights: ['22 DOF tendon-driven hands', 'AI5 chip + Grok AI', 'Factory deployment 2026'],
+    badge: "Watch",
+    badgeColor: "bg-red-600 text-white",
+    image: "/assets/images/tesla_optimus_gen_three.png",
+    alt: "Tesla Optimus Gen 3",
+    href: "/tesla-optimus-gen-3-article",
+    highlights: ["Humanoid robot", "Factory 2026", "Not retail yet"],
+  },
+  {
+    name: "Sony WH-1000XM6",
+    brand: "Sony",
+    category: "Audio",
+    rating: 4.7,
+    badge: "Audio",
+    badgeColor: "bg-violet-600 text-white",
+    image: "/assets/images/no_image.png",
+    alt: "Sony WH-1000XM6",
+    href: "/sony-wh-2000xm6-review-article",
+    highlights: ["ANC", "Long battery", "Travel pick"],
+  },
+  {
+    name: "Apple Vision Pro 2",
+    brand: "Apple",
+    category: "XR",
+    rating: 4.5,
+    image: "/assets/images/no_image.png",
+    alt: "Apple Vision Pro 2",
+    href: "/apple-vision-pro-2-article",
+    highlights: ["Spatial computing", "Apple silicon", "In development"],
+  },
+  {
+    name: "Meta Quest 4",
+    brand: "Meta",
+    category: "XR",
+    rating: 4.4,
+    image: "/assets/images/no_image.png",
+    alt: "Meta Quest 4",
+    href: "/meta-quest-4-article",
+    highlights: ["Standalone VR", "Gaming", "Lower price tier"],
+  },
+  {
+    name: "PlayStation 6",
+    brand: "Sony",
+    category: "Gaming",
+    rating: 4.6,
+    image: "/assets/images/no_image.png",
+    alt: "PlayStation 6",
+    href: "/sony-playstation-6-article",
+    highlights: ["Next-gen console", "Sony", "Upcoming"],
+  },
+  {
+    name: "Galaxy Z Fold 6",
+    brand: "Samsung",
+    category: "Smartphones",
+    rating: 4.5,
+    image: "/assets/images/no_image.png",
+    alt: "Samsung Galaxy Z Fold 6",
+    href: "/samsung-galaxy-z-fold-6-article",
+    highlights: ["Foldable", "Big screen", "S Pen support"],
+  },
+  {
+    name: "Intel Arc B-Series",
+    brand: "Intel",
+    category: "GPUs",
+    rating: 4.3,
+    image: "/assets/images/no_image.png",
+    alt: "Intel Arc B-Series",
+    href: "/intel-arc-b-series-article",
+    highlights: ["Battlemage", "Value GPU", "Intel"],
   },
 ];
 
-const categories = ['All', 'Laptops', 'Smartphones', 'GPUs', 'Robotics'];
+const categories = ["All", "Laptops", "Smartphones", "GPUs", "Robotics", "Audio", "XR", "Gaming"];
 
 export default function GadgetsSection() {
-    const [active, setActive] = useState("All");
+  const [active, setActive] = useState("All");
   const visible = active === "All" ? gadgets : gadgets.filter((g) => g.category === active);
+
   return (
     <section className="py-12 md:py-20 bg-background">
       <div className="container mx-auto px-4">
-        {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-10 gap-4">
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary/10 border border-primary/30 rounded-full mb-4">
@@ -93,11 +147,10 @@ export default function GadgetsSection() {
               <span className="text-primary text-xs font-bold tracking-widest uppercase">Today's Deals</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              Hot gadget<span className="text-primary"> drops 
-              </span>
+              Hot gadget <span className="text-primary">drops</span>
             </h2>
             <p className="text-muted-foreground mt-2 text-sm md:text-base max-w-lg">
-              Price cuts worth opening — tap Get Deal when you're ready.
+              Handpicked gadgets — open a card for the full write-up. Prices come later.
             </p>
           </div>
           <Link
@@ -109,7 +162,6 @@ export default function GadgetsSection() {
           </Link>
         </div>
 
-        {/* Category pills */}
         <div className="flex flex-wrap gap-2 mb-8">
           {categories.map((cat) => (
             <button
@@ -127,17 +179,13 @@ export default function GadgetsSection() {
           ))}
         </div>
 
-        {/* Gadget cards — asymmetric grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {visible.map((gadget, i) => (
+          {visible.map((gadget) => (
             <Link
               key={gadget.name}
               href={gadget.href}
-              className={`group bg-card border border-border rounded-2xl overflow-hidden hover:border-primary hover:shadow-xl transition-all duration-300 flex flex-col ${
-                i === 0 ? 'sm:col-span-2 lg:col-span-1' : ''
-              }`}
+              className="group bg-card border border-border rounded-2xl overflow-hidden hover:border-primary hover:shadow-xl transition-all duration-300 flex flex-col"
             >
-              {/* Image */}
               <div className="relative h-48 overflow-hidden bg-muted">
                 <AppImage
                   src={gadget.image}
@@ -154,20 +202,17 @@ export default function GadgetsSection() {
                 </span>
               </div>
 
-              {/* Content */}
               <div className="p-5 flex flex-col flex-1">
                 <p className="text-xs text-primary font-bold uppercase tracking-wide mb-1">{gadget.brand}</p>
                 <h3 className="text-foreground font-bold text-base md:text-lg group-hover:text-primary transition-colors mb-2">
                   {gadget.name}
                 </h3>
-
-                {/* Rating */}
                 <div className="flex items-center gap-1.5 mb-3">
                   <div className="flex">
                     {[1, 2, 3, 4, 5].map((star) => (
                       <svg
                         key={star}
-                        className={`w-3.5 h-3.5 ${star <= Math.round(gadget.rating) ? 'text-amber-400' : 'text-muted'}`}
+                        className={`w-3.5 h-3.5 ${star <= Math.round(gadget.rating) ? "text-amber-400" : "text-muted"}`}
                         fill="currentColor"
                         viewBox="0 0 20 20"
                       >
@@ -175,10 +220,8 @@ export default function GadgetsSection() {
                       </svg>
                     ))}
                   </div>
-                  <span className="text-xs text-muted-foreground">{gadget.rating}/5</span>
+                  <span className="text-xs text-muted-foreground">{gadget.rating}</span>
                 </div>
-
-                {/* Highlights */}
                 <ul className="space-y-1 mb-4 flex-1">
                   {gadget.highlights.map((h) => (
                     <li key={h} className="flex items-center gap-2 text-xs text-muted-foreground">
@@ -187,12 +230,9 @@ export default function GadgetsSection() {
                     </li>
                   ))}
                 </ul>
-
-                {/* Footer */}
                 <div className="flex items-center justify-between pt-3 border-t border-border mt-auto">
-                  <span className="text-sm font-bold text-foreground">{/* <p>{gadget.price}</p> */}</span>
-                  <span className="text-primary text-xs font-semibold flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
-                    Read Review <Icon name="ArrowRightIcon" size={12} variant="outline" />
+                  <span className="text-primary text-xs font-semibold flex items-center gap-1">
+                    View gadget <Icon name="ArrowRightIcon" size={12} variant="outline" />
                   </span>
                 </div>
               </div>
@@ -200,7 +240,6 @@ export default function GadgetsSection() {
           ))}
         </div>
 
-        {/* Bottom CTA */}
         <div className="mt-10 text-center">
           <Link
             href="/product-comparison-engine"
