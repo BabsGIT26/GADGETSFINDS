@@ -16,13 +16,13 @@ export const metadata: Metadata = {
     url: 'https://www.gadgets-finds.com/product-comparison-engine',
     type: 'website',
     images: [
-    {
-      url: "https://img.rocket.new/generatedImages/rocket_gen_img_146e5507a-1766231017695.png",
-      width: 1200,
-      height: 630,
-      alt: 'Product Comparison Engine'
-    }]
-
+      {
+        url: "https://img.rocket.new/generatedImages/rocket_gen_img_146e5507a-1766231017695.png",
+        width: 1200,
+        height: 630,
+        alt: 'Product Comparison Engine'
+      }
+    ]
   },
   twitter: {
     card: 'summary_large_image',
@@ -38,8 +38,13 @@ export default function ProductComparisonEngine() {
   return (
     <>
       <Header />
-      <ComparisonEngineInteractive />
+      <main>
+        <p className="mx-auto max-w-7xl border-b border-border bg-muted/40 px-4 py-3 text-center text-sm text-muted-foreground">
+          As an Amazon Associate, Gadgets Finds earns from qualifying purchases.
+        </p>
+        <ComparisonEngineInteractive />
+      </main>
       <Footer />
-    </>);
-
+    </>
+  );
 }

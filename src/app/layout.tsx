@@ -2,6 +2,7 @@ import Script from "next/script";
 import React from 'react';
 import type { Metadata, Viewport } from 'next';
 import '../styles/index.css';
+import AmazonDisclosureGate from '@/components/common/AmazonDisclosureGate';
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
     url: 'https://www.gadgets-finds.com',
     siteName: 'Gadgets Finds',
     type: 'website',
-        images: [
+    images: [
       {
         url: "/og-home.png",
         width: 1200,
@@ -29,7 +30,6 @@ export const metadata: Metadata = {
         alt: "Gadgets Finds",
       },
     ],
-
   },
   twitter: {
     card: 'summary_large_image',
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
     creator: '@Gadgets_finds',
     title: 'Gadgets Finds — Tech News & Reviews',
     description: 'Discover the best trending gadgets with honest reviews, tech news, and expert recommendations.',
-        images: ["/og-home.png"],
+    images: ["/og-home.png"],
   },
-    icons: {
+  icons: {
     icon: [{ url: "/favicon.ico", type: "image/x-icon" }],
     apple: "/apple-touch-icon.png",
   },
@@ -63,9 +63,9 @@ const organizationSchema = {
     addressCountry: 'US'
   },
   sameAs: [
-  'https://x.com/Gadgets_finds',
-  'https://www.pinterest.com/best_gadgets_finds/'],
-
+    'https://x.com/Gadgets_finds',
+    'https://www.pinterest.com/best_gadgets_finds/'
+  ],
   contactPoint: {
     '@type': 'ContactPoint',
     email: 'info@gadgets-finds.com',
@@ -74,6 +74,7 @@ const organizationSchema = {
     availableLanguage: 'English'
   }
 };
+
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -81,9 +82,9 @@ const websiteSchema = {
   alternateName: ["GadgetsFinds", "gadgets-finds.com"],
   url: "https://www.gadgets-finds.com/",
 };
+
 export default function RootLayout({
   children
-
 }: Readonly<{children: React.ReactNode;}>) {
   return (
     <html lang="en">
@@ -95,14 +96,15 @@ export default function RootLayout({
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
-                
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
-</head>
-            <body>
+      </head>
+      <body>
+        <AmazonDisclosureGate />
         {children}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-XVZBC35EG6"
@@ -117,6 +119,6 @@ export default function RootLayout({
           `}
         </Script>
       </body>
-    </html>);
-
+    </html>
+  );
 }
