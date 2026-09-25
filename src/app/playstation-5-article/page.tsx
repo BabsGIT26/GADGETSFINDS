@@ -4,7 +4,7 @@ import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 
-const AMAZON_PS5 = "https://www.amazon.com/PlayStation%C2%AE5-console-slim-Renewed-PlayStation-5/dp/B0CP4F9J4W?th=1&gaOptInStatus=true&linkCode=ll2&tag=gadgetsfindswebsite-20";
+const AMAZON_PS5 = "https://www.amazon.com/PlayStation%C2%AE5-console-slim-Renewed-PlayStation-5/dp/B0CP4F9J4W?th=1&gaOptInStatus=true&linkCode=ll2&tag=gadgetsfindswebsite-20&linkId=e6cca9dc0766a144c3dac746bb1f9229&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl";
 const AMAZON_GTA6 = "https://www.amazon.com/s?k=Grand+Theft+Auto+VI+PS5&tag=gadgetsfindswebsite-20";
 
 export const metadata: Metadata = {
