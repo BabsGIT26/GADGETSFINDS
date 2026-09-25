@@ -32,7 +32,7 @@ const PersonalizedContentStream = () => {
   {
     id: 1,
     title: 'Best Laptops for Developers in 2026: Complete Buying Guide',
-    excerpt: 'We tested 50+ laptops to find the perfect machines for coding, from budget-friendly options to high-end workstations.',
+    excerpt: 'A 2026 buying guide to laptops for coding, from budget machines to workstations.',
     category: 'Buying Guide',
     image: "https://img.rocket.new/generatedImages/rocket_gen_img_178ed799d-1785088751486.png",
     alt: 'Modern laptop with code editor displayed on screen in dark workspace',
@@ -80,7 +80,7 @@ const PersonalizedContentStream = () => {
   {
     id: 5,
     title: 'iPhone 16 Pro vs Samsung Galaxy S26 Ultra: Ultimate Camera Showdown',
-    excerpt: 'We put the two flagship smartphones through extensive camera testing to determine the mobile photography champion.',
+    excerpt: 'How iPhone 16 Pro and Galaxy S26 Ultra compare on paper for photography.',
     category: 'Comparison',
     image: "https://images.unsplash.com/photo-1730226172459-2cb1baa93762",
     alt: 'iPhone and Samsung Galaxy smartphones side by side comparison on white background',
