@@ -139,18 +139,21 @@ const ProductCard = ({ product, onCompare, isComparing }: ProductCardProps) => {
             )}
           </div>
 
+          <p className="text-[11px] text-muted-foreground mb-2">
+            Affiliate link: we may earn a commission if you buy through this link.
+          </p>
           <div className="flex items-center space-x-2">
             <a
               href={product.affiliateLink}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow sponsored noopener noreferrer"
               className={`flex-1 px-4 py-2 rounded-md text-sm font-semibold text-center transition-colors ${
                 product.inStock
                   ? 'bg-primary text-primary-foreground hover:bg-primary/90'
                   : 'bg-muted text-muted-foreground cursor-not-allowed'
               }`}
             >
-              {product.inStock ? 'View Deal' : 'Out of Stock'}
+              {product.inStock ? 'View Deal · Affiliate link' : 'Out of Stock'}
             </a>
             <button
               className="p-2 border border-border rounded-md hover:bg-muted transition-colors"

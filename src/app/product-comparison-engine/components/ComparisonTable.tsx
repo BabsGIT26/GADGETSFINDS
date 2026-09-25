@@ -208,17 +208,20 @@ const ComparisonTable = ({ products, onRemove, onClear }: ComparisonTableProps) 
                   </td>
                   {products.map((product) => (
                     <td key={product.id} className="p-4">
+                      <p className="text-[11px] text-muted-foreground mb-2">
+                        Affiliate link: we may earn a commission if you buy through this link.
+                      </p>
                       <a
                         href={product.affiliateLink}
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="nofollow sponsored noopener noreferrer"
                         className={`block w-full px-4 py-2 rounded-md text-sm font-semibold text-center transition-colors ${
                           product.inStock
                             ? 'bg-primary text-primary-foreground hover:bg-primary/90'
                             : 'bg-muted text-muted-foreground cursor-not-allowed'
                         }`}
                       >
-                        {product.inStock ? 'View Deal' : 'Out of Stock'}
+                        {product.inStock ? 'View Deal · Affiliate link' : 'Out of Stock'}
                       </a>
                     </td>
                   ))}
