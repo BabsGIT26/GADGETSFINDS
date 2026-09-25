@@ -26,7 +26,7 @@ const TrendingStoriesCarousel = () => {
     setIsHydrated(true);
   }, []);
 
-  const stories: Story[] = [
+    const stories: Story[] = [
   {
     id: 1,
     title: 'Apple Vision Pro 2: Development Paused — Apple Pivots to Smart Glasses',
@@ -34,7 +34,7 @@ const TrendingStoriesCarousel = () => {
     category: 'Breaking News',
     image: "/assets/images/image-1769356825932.png",
     alt: 'Apple Vision Pro headset with advanced eye-tracking sensors',
-    author: 'Sarah Chen',
+    author: 'Gadgets Finds',
     readTime: '5 min read',
     trending: true,
     link: '/apple-vision-pro-2-article'
@@ -46,7 +46,7 @@ const TrendingStoriesCarousel = () => {
     category: 'Breaking News',
     image: "/assets/images/samsung_galaxy_s_twenty_six_ultra.png",
     alt: 'Samsung Galaxy S26 Ultra smartphone with advanced quad camera system',
-    author: 'Sarah Chen',
+    author: 'Gadgets Finds',
     readTime: '5 min read',
     trending: true,
     link: '/samsung-galaxy-s26-ultra-article'
@@ -54,11 +54,11 @@ const TrendingStoriesCarousel = () => {
   {
     id: 3,
     title: 'iPhone 16 Pro vs Samsung Galaxy S26 Ultra: Ultimate Camera Showdown',
-    excerpt: 'Our hands-on review reveals how Samsung\'s latest flagship redefines mobile photography with AI-powered computational imaging.',
+    excerpt: 'How iPhone 16 Pro and Galaxy S26 Ultra compare on paper for photography.',
     category: 'Reviews',
     image: "/assets/images/kPbKZWKxGPs5QqMwS3Y44D-1769358289194.jpg",
     alt: 'iPhone and Samsung Galaxy smartphones side by side comparison',
-    author: 'Marcus Rodriguez',
+    author: 'Gadgets Finds',
     readTime: '8 min read',
     trending: true,
     link: '/i-phone-16-pro-vs-samsung-comparison-article'
@@ -66,11 +66,11 @@ const TrendingStoriesCarousel = () => {
   {
     id: 4,
     title: 'NVIDIA RTX 5090 Benchmarks: Gaming Performance Breakthrough',
-    excerpt: 'Exclusive benchmark results show the RTX 5090 delivering massive performance gains over the RTX 4090 in ray-traced gaming, setting a new standard for high-end graphics.',
+    excerpt: 'Public benchmarks and reporting on RTX 5090 versus RTX 4090 in ray-traced games.',
     category: 'Hardware',
     image: "/assets/images/nvidia_rtx_5090_hero.png",
     alt: 'NVIDIA GeForce RTX 5090 Blackwell graphics card with triple-fan cooler',
-    author: 'David Park',
+    author: 'Gadgets Finds',
     readTime: '6 min read',
     trending: true,
     link: '/nvidia-rtx-6090-ti-article'
@@ -82,7 +82,7 @@ const TrendingStoriesCarousel = () => {
     category: 'AI & Robotics',
     image: "https://img.rocket.new/generatedImages/rocket_gen_img_13de748df-1772891531864.png",
     alt: 'Advanced humanoid robot with white chassis and modern design',
-    author: 'Emily Watson',
+    author: 'Gadgets Finds',
     readTime: '7 min read',
     trending: true,
     link: '/tesla-optimus-gen-3-article'
@@ -90,16 +90,15 @@ const TrendingStoriesCarousel = () => {
   {
     id: 6,
     title: 'MacBook Pro M4: Apple Silicon Reaches New Performance Heights',
-    excerpt: 'Our comprehensive review of the M4 MacBook Pro reveals unprecedented performance for creative professionals and developers.',
+    excerpt: 'MacBook Pro M4 specs and who should buy the 14-inch model.',
     category: 'Laptops',
     image: "/assets/images/macbook_pro_m_four_v2.png",
     alt: 'MacBook Pro M4 with space gray aluminum body and glowing Apple logo on wooden desk',
-    author: 'Alex Thompson',
+    author: 'Gadgets Finds',
     readTime: '10 min read',
     trending: true,
     link: '/macbook-pro-m4-article'
   }];
-
 
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1) % stories.length);
