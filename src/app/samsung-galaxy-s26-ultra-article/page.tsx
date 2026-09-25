@@ -101,7 +101,7 @@ export default function SamsungGalaxyS26UltraArticle() {
               <div className="flex items-center flex-wrap gap-4 md:gap-6 text-sm md:text-base text-gray-200/90">
                 <span className="flex items-center gap-2">
                   <Icon name="UserIcon" size={16} variant="outline" />
-                  Sarah Chen
+                  Gadgets Finds
                 </span>
                 <span>•</span>
                 <span className="flex items-center gap-2">
@@ -216,7 +216,7 @@ export default function SamsungGalaxyS26UltraArticle() {
             <div className="bg-brand-primary/10 rounded-lg p-6 my-8 border border-brand-primary/20">
               <h3 className="text-xl font-bold text-foreground mb-3">Verdict</h3>
               <p className="text-muted-foreground italic">
-                "The Galaxy S26 Ultra is a genuine flagship that delivers on its promises. The AI-powered camera system produces consistently excellent results, and the Snapdragon 8 Elite for Galaxy makes this one of the fastest Android phones available. At $1,299, it competes directly with the iPhone 16 Pro Max and justifies its premium positioning." — Sarah Chen, Senior Tech Analyst
+                "The Galaxy S26 Ultra is a genuine flagship that delivers on its promises. The AI-powered camera system produces consistently excellent results, and the Snapdragon 8 Elite for Galaxy makes this one of the fastest Android phones available. At $1,299, it competes directly with the iPhone 16 Pro Max and justifies its premium positioning." — Gadgets Finds
               </p>
             </div>
 
