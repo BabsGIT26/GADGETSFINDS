@@ -10,9 +10,31 @@ const AMAZON_GTA6 = "https://www.amazon.com/s?k=Grand+Theft+Auto+VI+PS5&tag=gadg
 export const metadata: Metadata = {
   title: "PlayStation 5 and GTA 6 — Should You Buy a PS5 in 2026? | Gadgets Finds",
   description:
-    "PS5 Slim review: specs, disc vs digital, storage, DualSense, and why GTA 6 on November 19, 2026 is PS5-only. Amazon listings with disclosure.",
+    "PS5 Slim review: specs, disc vs digital, storage, DualSense, and why GTA 6 on November 19, 2026 is PS5-only.",
   metadataBase: new URL("https://www.gadgets-finds.com"),
   alternates: { canonical: "https://www.gadgets-finds.com/playstation-5-article" },
+  openGraph: {
+    title: "PlayStation 5 — Gadgets Finds",
+    description: "PS5 Slim and GTA 6 on November 19, 2026. What to buy before launch.",
+    url: "https://www.gadgets-finds.com/playstation-5-article",
+    siteName: "Gadgets Finds",
+    type: "article",
+    images: [
+      {
+        url: "/assets/images/playstation_5.png",
+        width: 1200,
+        height: 630,
+        alt: "PlayStation 5 Slim",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@Gadgets_finds",
+    title: "PlayStation 5 — Gadgets Finds",
+    description: "PS5 Slim and GTA 6 on November 19, 2026.",
+    images: ["/assets/images/playstation_5.png"],
+  },
 };
 
 export default function Page() {
