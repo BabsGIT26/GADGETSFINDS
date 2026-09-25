@@ -468,22 +468,6 @@ export default function BestLaptopsDevelopers2026() {
             </div>
           </div>
 
-          {/* Author Bio */}
-          <div className="mt-12 pt-8 border-t border-border">
-            <div className="flex items-start space-x-4">
-              <div className="w-16 h-16 rounded-full bg-muted flex items-center justify-center">
-                <span className="text-2xl font-bold text-foreground">MR</span>
-              </div>
-              <div>
-                <h3 className="text-lg font-bold text-foreground">Michael Rodriguez</h3>
-                <p className="text-sm text-muted-foreground mb-2">Senior Technology Writer</p>
-                <p className="text-muted-foreground">
-                  Michael is a full-stack developer turned tech journalist with over 10 years of experience reviewing laptops and development tools. He specializes in helping developers find the right hardware for their workflow.
-                </p>
-              </div>
-            </div>
-          </div>
-
           {/* Final CTA */}
           <div className="mt-12 border-t border-border pt-10 text-center sm:text-left">
             <Link
