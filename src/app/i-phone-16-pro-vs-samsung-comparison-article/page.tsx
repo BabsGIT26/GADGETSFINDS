@@ -191,24 +191,6 @@ export default function iPhone16ProVsSamsungArticle() {
             )}
           </div>
 
-          {/* Author Bio */}
-          <div className="mt-12 p-6 bg-card rounded-xl">
-            <div className="flex items-start space-x-4">
-              <AppImage
-                src="https://img.rocket.new/generatedImages/rocket_gen_img_1ba7181d2-1772542315115.png"
-                alt="Marcus Rodriguez tech journalist"
-                className="w-16 h-16 rounded-full object-cover" />
-              
-
-              <div>
-                <h3 className="text-lg font-bold text-foreground mb-1">Marcus Rodriguez</h3>
-                <p className="text-muted-foreground text-sm">
-                  Senior tech journalist specializing in mobile technology and smartphone photography. With over 10 years of experience reviewing flagship devices, Marcus brings in-depth technical knowledge and real-world testing expertise to every comparison.
-                </p>
-              </div>
-            </div>
-          </div>
-
           {/* Bottom CTA – consistent with other pages */}
           <div className="mt-12 text-center">
             <Link
