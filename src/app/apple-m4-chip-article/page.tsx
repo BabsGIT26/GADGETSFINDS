@@ -86,7 +86,7 @@ export default function AppleM4ChipArticle() {
                 Apple's M4 chip — announced at Apple's own events in 2024 — delivers breakthrough 3nm architecture and unprecedented AI capabilities that redefine what's possible in Apple Silicon.
               </p>
               <div className="flex items-center flex-wrap gap-4 text-sm text-gray-200">
-                <span>Sarah Chen</span>
+                <span>Gadgets Finds</span>
                 <span>•</span>
                 <span>October 30, 2024</span>
                 <span>•</span>
@@ -115,7 +115,7 @@ export default function AppleM4ChipArticle() {
               <div>
                 <p className="font-semibold text-foreground text-sm">Launch Context</p>
                 <p className="text-muted-foreground text-sm mt-1">
-                  The Apple M4 chip was announced at <strong>Apple's own events</strong> — first in the iPad Pro in May 2024, then in the MacBook Pro and Mac mini in October 2024. Apple does not present at CES (Consumer Electronics Show). Any reference to "CES 2026" in connection with the M4 is incorrect.
+                  The Apple M4 chip was announced at <strong>Apple's own events</strong> — first in the iPad Pro in May 2024, then in the MacBook Pro and Mac mini in October 2024. Apple does not participate in CES (Consumer Electronics Show). Any reference to "CES 2026" in connection with the M4 is incorrect.
                 </p>
               </div>
             </div>
@@ -124,7 +124,7 @@ export default function AppleM4ChipArticle() {
           {/* Article Body */}
           <div className="prose prose-lg max-w-none">
             <p className="text-xl text-muted-foreground leading-relaxed mb-6">
-              Apple's M4 chip represents a significant leap in computing performance, delivering unprecedented power efficiency and AI capabilities. Announced at Apple's own events in 2024, the M4 redefines what's possible in Apple Silicon — not at a trade show, but through Apple's signature product launch events.
+              Apple's M4 chip represents a significant leap in computing performance, delivering unprecedented power efficiency and AI capabilities. Announced at Apple's own events in 2024, the M4 underscores the company's continued leadership in custom silicon design.
             </p>
 
             <h2 className="text-2xl font-bold text-foreground mt-8 mb-4">Launch Timeline</h2>
@@ -142,10 +142,10 @@ export default function AppleM4ChipArticle() {
 
             <h2 className="text-2xl font-bold text-foreground mt-8 mb-4">Revolutionary 3nm Architecture</h2>
             <p className="text-muted-foreground mb-4">
-              The M4 chip is built on an advanced 3nm process technology, packing 28 billion transistors into a remarkably efficient package. This represents a significant increase in transistor density compared to the M3, enabling substantial performance improvements while maintaining exceptional power efficiency.
+              The M4 chip is built on an advanced 3nm process technology, packing 28 billion transistors into a remarkably efficient package. This represents a significant increase in transistor density and system efficiency over previous generations.
             </p>
             <p className="text-muted-foreground mb-4">
-              Apple's custom silicon design features a 10-core CPU configuration (4 performance cores + 6 efficiency cores on the base M4). This hybrid architecture delivers up to 40% faster performance than the M3 in CPU-intensive workloads, while consuming significantly less power during typical usage.
+              Apple's custom silicon design features a 10-core CPU configuration (4 performance cores + 6 efficiency cores on the base M4). This hybrid architecture delivers up to 40% faster performance while maintaining excellent power efficiency.
             </p>
 
             <h2 className="text-2xl font-bold text-foreground mt-8 mb-4">AI Capabilities: The Neural Engine</h2>
@@ -161,12 +161,12 @@ export default function AppleM4ChipArticle() {
 
             <h2 className="text-2xl font-bold text-foreground mt-8 mb-4">Graphics Performance</h2>
             <p className="text-muted-foreground mb-4">
-              The base M4 features a 10-core GPU with hardware-accelerated ray tracing and mesh shading. Gaming and creative performance has improved substantially compared to the M3, with support for demanding applications at high frame rates. The M4 Pro and M4 Max variants offer 20-core and 40-core GPUs respectively for professional workloads.
+              The base M4 features a 10-core GPU with hardware-accelerated ray tracing and mesh shading. Gaming and creative performance has improved substantially compared to the M3, with support for high-end displays and more efficient graphics workloads.
             </p>
 
             <h2 className="text-2xl font-bold text-foreground mt-8 mb-4">Memory and Bandwidth</h2>
             <p className="text-muted-foreground mb-4">
-              The base M4 supports up to 32GB of unified memory (starting at 16GB), with the M4 Pro supporting up to 64GB and the M4 Max up to 128GB. Memory bandwidth reaches up to 546GB/s on the M4 Max, enabling seamless handling of large datasets and professional workflows.
+              The base M4 supports up to 32GB of unified memory (starting at 16GB), with the M4 Pro supporting up to 64GB and the M4 Max up to 128GB. Memory bandwidth reaches up to 546GB/s on the highest-end M4 Max configurations.
             </p>
 
             <h2 className="text-2xl font-bold text-foreground mt-8 mb-4">Products Featuring M4</h2>
@@ -211,7 +211,7 @@ export default function AppleM4ChipArticle() {
 
             <h2 className="text-2xl font-bold text-foreground mt-8 mb-4">Industry Impact</h2>
             <p className="text-muted-foreground mb-4">
-              The M4 chip solidifies Apple's position as a leader in custom silicon design, setting new benchmarks for performance, efficiency, and AI integration. The chip's on-device AI capabilities — powering Apple Intelligence features — represent a significant step in bringing practical AI to everyday computing without relying on cloud processing.
+              The M4 chip solidifies Apple's position as a leader in custom silicon design, setting new benchmarks for performance, efficiency, and AI integration. The chip's on-device AI capabilities and power efficiency make it a major step forward for laptops and mobile computing.
             </p>
           </div>
 

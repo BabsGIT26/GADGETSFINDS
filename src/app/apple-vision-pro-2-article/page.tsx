@@ -61,23 +61,16 @@ export default function AppleVisionPro2Article() {
 
           <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-transparent z-0" />
 
-          {/* Header Buttons */}
           <div className="absolute top-4 sm:top-6 left-4 sm:left-6 right-4 sm:right-6 flex justify-end items-center gap-3 z-20">
             <Link
               href="/homepage"
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 sm:px-4 sm:py-2
-                         bg-white/10 backdrop-blur-md hover:bg-white/20
-                         rounded-lg transition-colors text-white font-medium
-                         border border-white/10 text-xs sm:text-sm shadow-sm">
-
-
-              
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 sm:px-4 sm:py-2 bg-white/10 backdrop-blur-md hover:bg-white/20 rounded-lg transition-colors text-white font-medium border border-white/10 text-xs sm:text-sm shadow-sm"
+            >
               <Icon name="ArrowLeftIcon" size={16} variant="outline" />
               <span>Back to Home</span>
             </Link>
           </div>
 
-          {/* Title & Meta */}
           <div className="relative z-10 mt-auto pb-6 px-4 sm:px-6 md:px-8 lg:px-10">
             <div className="max-w-5xl mx-auto">
               <div className="mb-3 md:mb-4 flex items-center flex-wrap gap-3 mt-[3px]">
@@ -100,7 +93,7 @@ export default function AppleVisionPro2Article() {
               <div className="flex items-center flex-wrap gap-4 md:gap-6 text-sm md:text-base text-gray-200/90">
                 <span className="flex items-center gap-2">
                   <Icon name="UserIcon" size={16} variant="outline" />
-                  Sarah Chen
+                  Gadgets Finds
                 </span>
                 <span>•</span>
                 <span className="flex items-center gap-2">
@@ -112,7 +105,6 @@ export default function AppleVisionPro2Article() {
           </div>
         </div>
 
-        {/* Navigation Button */}
         <div className="max-w-5xl mx-auto px-4 py-6">
           <Link
             href="/live-news-feed"
@@ -122,11 +114,8 @@ export default function AppleVisionPro2Article() {
           </Link>
         </div>
 
-        {/* Article Content */}
         <article className="max-w-5xl mx-auto px-4 py-8">
           <div className="prose prose-lg max-w-none">
-
-            {/* Accuracy Notice */}
             <div className="not-prose mb-8 rounded-xl border border-amber-500/30 bg-amber-500/10 p-5">
               <div className="flex items-start gap-3">
                 <Icon name="ExclamationTriangleIcon" size={20} variant="solid" className="text-amber-500 mt-0.5 shrink-0" />
@@ -141,58 +130,48 @@ export default function AppleVisionPro2Article() {
 
             <h2 className="text-3xl font-bold text-foreground mb-6">What We Know: Development Paused</h2>
             <p className="text-muted-foreground mb-6">
-              Multiple credible reports from Bloomberg's Mark Gurman and other Apple analysts indicate that Apple has paused or significantly scaled back development of a direct Vision Pro successor. The original Apple Vision Pro launched in February 2024 at $3,499 — a price point that limited mainstream adoption. Rather than rushing a Vision Pro 2 to market, Apple appears to be rethinking its spatial computing strategy.
+              Multiple credible reports from Bloomberg's Mark Gurman and other Apple analysts indicate that Apple has paused or significantly scaled back development of a direct Vision Pro successor.
             </p>
 
             <h2 className="text-3xl font-bold text-foreground mb-6 mt-12">Apple's New Focus: Smart Glasses</h2>
             <p className="text-muted-foreground mb-6">
-              Instead of a full Vision Pro successor, Apple is reportedly prioritizing the development of a lighter, more affordable smart glasses product — a category that Meta has entered with its Ray-Ban Meta glasses. Apple's smart glasses are expected to be a more wearable, everyday device rather than a full spatial computing headset.
+              Instead of a full Vision Pro successor, Apple is reportedly prioritizing the development of a lighter, more affordable smart glasses product — a category that Meta has entered with the Ray-Ban Meta glasses.
             </p>
 
             <div className="bg-card rounded-lg p-6 my-8 border border-border">
               <h3 className="text-xl font-bold text-foreground mb-4">Current State of Apple's Headset Strategy</h3>
               <ul className="space-y-3 text-muted-foreground">
-                <li className="flex items-start gap-3">
-                  <Icon name="CheckCircleIcon" size={20} variant="solid" className="text-brand-primary mt-1" />
-                  <span><strong>Apple Vision Pro (Gen 1):</strong> Launched February 2024 at $3,499 — currently available</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Icon name="XCircleIcon" size={20} variant="solid" className="text-destructive mt-1" />
-                  <span><strong>Vision Pro 2 (full successor):</strong> Development reportedly paused or delayed — no confirmed timeline</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Icon name="ClockIcon" size={20} variant="outline" className="text-amber-500 mt-1" />
-                  <span><strong>Apple Smart Glasses:</strong> Reportedly in development — no confirmed specs, name, or release date</span>
-                </li>
+                <li className="flex items-start gap-3"><Icon name="CheckCircleIcon" size={20} variant="solid" className="text-brand-primary mt-1" /><span><strong>Apple Vision Pro (Gen 1):</strong> Launched February 2024 at $3,499 — currently available</span></li>
+                <li className="flex items-start gap-3"><Icon name="XCircleIcon" size={20} variant="solid" className="text-destructive mt-1" /><span><strong>Vision Pro 2 (full successor):</strong> Development reportedly paused or delayed — no confirmed timeline</span></li>
+                <li className="flex items-start gap-3"><Icon name="ClockIcon" size={20} variant="outline" className="text-amber-500 mt-1" /><span><strong>Apple Smart Glasses:</strong> Reportedly in development — no confirmed specs, name, or release date</span></li>
               </ul>
             </div>
 
             <h2 className="text-3xl font-bold text-foreground mb-6 mt-12">Why the Pivot?</h2>
             <p className="text-muted-foreground mb-6">
-              The original Vision Pro, while technologically impressive, faced significant challenges: its $3,499 price tag, heavy weight (~600g), limited battery life (~2 hours), and relatively small app ecosystem constrained mainstream adoption. Apple reportedly concluded that a Vision Pro 2 at a similar price point would face the same barriers.
+              The original Vision Pro, while technologically impressive, faced significant challenges: its $3,499 price tag, heavy weight (~600g), limited battery life (~2 hours), and relatively niche appeal.
             </p>
             <p className="text-muted-foreground mb-6">
-              Smart glasses — lighter, cheaper, and more socially acceptable to wear in public — represent a different market opportunity. Apple is said to be working on a product that could be worn throughout the day, rather than a device used for focused sessions.
+              Smart glasses — lighter, cheaper, and more socially acceptable to wear in public — represent a different market opportunity. Apple is said to be working on a product that could be much more approachable for everyday users.
             </p>
 
             <h2 className="text-3xl font-bold text-foreground mb-6 mt-12">What This Means for Spatial Computing</h2>
             <p className="text-muted-foreground mb-6">
-              Apple's strategic shift does not mean the end of spatial computing — it reflects a recalibration of how Apple believes users will adopt the technology. A more affordable, lighter smart glasses product could reach far more consumers than a premium headset, potentially building the ecosystem that a future Vision Pro successor would need to succeed.
+              Apple's strategic shift does not mean the end of spatial computing — it reflects a recalibration of how Apple believes users will adopt the technology. A more affordable, lighter form factor could unlock a wider audience over time.
             </p>
             <p className="text-muted-foreground mb-6">
-              Industry analysts expect Apple to eventually return to a full spatial computing headset, but the timeline has been pushed back significantly from earlier expectations of a 2025–2026 Vision Pro 2 launch.
+              Industry analysts expect Apple to eventually return to a full spatial computing headset, but the timeline has been pushed back significantly from earlier expectations.
             </p>
 
             <div className="bg-brand-primary/10 rounded-lg p-6 my-8 border border-brand-primary/20">
               <h3 className="text-xl font-bold text-foreground mb-3">Editor's Note</h3>
               <p className="text-muted-foreground italic">
-                "Apple's decision to pause Vision Pro 2 development and focus on smart glasses is a pragmatic response to the challenges of the spatial computing market. The original Vision Pro was a remarkable technical achievement, but its price and form factor limited its reach. Smart glasses could be the on-ramp that eventually leads consumers to embrace more immersive spatial experiences." — Sarah Chen, Senior Tech Analyst
+                "Apple's decision to pause Vision Pro 2 development and focus on smart glasses is a pragmatic response to the challenges of the spatial computing market. The original Vision Pro was a remarkable product, but it was expensive and constrained."
               </p>
             </div>
           </div>
         </article>
 
-        {/* Bottom Navigation */}
         <div className="max-w-5xl mx-auto px-4 py-8 border-t border-border">
           <Link
             href="/live-news-feed"

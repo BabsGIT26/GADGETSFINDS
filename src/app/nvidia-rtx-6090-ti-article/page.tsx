@@ -68,7 +68,8 @@ export default function NVIDIARTXArticle() {
           <div className="absolute top-4 right-4 z-50 flex items-center gap-2 sm:top-6 sm:right-6">
             <Link
               href="/homepage"
-              className="inline-flex items-center gap-2 rounded-lg border border-white/20 bg-white/15 px-3 py-1.5 text-xs sm:text-sm font-medium text-white backdrop-blur-md transition hover:bg-white/25">
+              className="inline-flex items-center gap-2 rounded-lg border border-white/20 bg-white/15 px-3 py-1.5 text-xs sm:text-sm font-medium text-white backdrop-blur-md transition hover:bg-white/20"
+            >
               <Icon name="ArrowLeftIcon" size={14} variant="outline" />
               Back to Home
             </Link>
@@ -96,7 +97,7 @@ export default function NVIDIARTXArticle() {
               <div className="mt-4 flex flex-wrap items-center gap-4 rounded-md bg-black/65 px-4 py-2 text-xs sm:text-sm text-gray-100 backdrop-blur-md shadow-sm">
                 <span className="flex items-center gap-1.5">
                   <Icon name="UserIcon" size={14} variant="outline" />
-                  David Park
+                  Gadgets Finds
                 </span>
                 <span className="text-gray-400">•</span>
                 <span className="flex items-center gap-1.5">
@@ -123,90 +124,74 @@ export default function NVIDIARTXArticle() {
           <div className="prose prose-lg prose-invert max-w-none lg:prose-xl">
             <h2>Blackwell Architecture: A New Era</h2>
             <p>
-              NVIDIA's RTX 5090 is the flagship of the GeForce RTX 50 series, built on the all-new Blackwell architecture. With 21,760 CUDA cores and 32GB of GDDR7 memory on a 512-bit memory bus, it delivers the highest performance ever seen in a consumer GPU. The card launched in January 2025 at $1,999 MSRP.
+              NVIDIA's RTX 5090 is the flagship of the GeForce RTX 50 series, built on the all-new Blackwell architecture. With 21,760 CUDA cores and 32GB of GDDR7 memory on a 512-bit memory bus, it delivers the highest performance ever seen in a consumer GPU.
             </p>
             <p>
-              The Blackwell architecture introduces fifth-generation ray tracing cores and fourth-generation Tensor cores, enabling real-time path tracing at 4K resolution alongside DLSS 4 with Multi Frame Generation — capable of generating up to 3 additional frames per rendered frame.
+              The Blackwell architecture introduces fifth-generation ray tracing cores and fourth-generation Tensor cores, enabling real-time path tracing at 4K resolution alongside DLSS 4 with Multi Frame Generation.
             </p>
 
             <h2>Gaming Benchmark Results</h2>
             <div className="not-prose my-10 rounded-xl border border-border bg-card p-6 sm:p-8">
               <h3 className="mb-5 text-2xl font-bold">4K Ultra Settings Performance</h3>
               <ul className="space-y-4 text-muted-foreground">
-                <li className="flex items-start gap-3">
-                  <Icon name="CheckCircleIcon" size={20} variant="solid" className="mt-1 text-brand-primary" />
-                  <span><strong>Cyberpunk 2077 (Path Tracing + DLSS 4):</strong> 180+ FPS</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Icon name="CheckCircleIcon" size={20} variant="solid" className="mt-1 text-brand-primary" />
-                  <span><strong>Microsoft Flight Simulator 2024:</strong> 150 FPS</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Icon name="CheckCircleIcon" size={20} variant="solid" className="mt-1 text-brand-primary" />
-                  <span><strong>Alan Wake 2 (Path Tracing):</strong> 165 FPS</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Icon name="CheckCircleIcon" size={20} variant="solid" className="mt-1 text-brand-primary" />
-                  <span><strong>Black Myth: Wukong (Max RT):</strong> 200+ FPS</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Icon name="CheckCircleIcon" size={20} variant="solid" className="mt-1 text-brand-primary" />
-                  <span><strong>Hogwarts Legacy (Max Settings):</strong> 210 FPS</span>
-                </li>
+                <li className="flex items-start gap-3"><Icon name="CheckCircleIcon" size={20} variant="solid" className="mt-1 text-brand-primary" /><span><strong>Cyberpunk 2077 (Path Tracing + DLSS 4):</strong> 180+ FPS</span></li>
+                <li className="flex items-start gap-3"><Icon name="CheckCircleIcon" size={20} variant="solid" className="mt-1 text-brand-primary" /><span><strong>Microsoft Flight Simulator 2024:</strong> 150 FPS</span></li>
+                <li className="flex items-start gap-3"><Icon name="CheckCircleIcon" size={20} variant="solid" className="mt-1 text-brand-primary" /><span><strong>Alan Wake 2 (Path Tracing):</strong> 165 FPS</span></li>
+                <li className="flex items-start gap-3"><Icon name="CheckCircleIcon" size={20} variant="solid" className="mt-1 text-brand-primary" /><span><strong>Black Myth: Wukong (Max RT):</strong> 200+ FPS</span></li>
+                <li className="flex items-start gap-3"><Icon name="CheckCircleIcon" size={20} variant="solid" className="mt-1 text-brand-primary" /><span><strong>Hogwarts Legacy (Max Settings):</strong> 210 FPS</span></li>
               </ul>
             </div>
 
             <h2>DLSS 4 with Multi Frame Generation</h2>
             <p>
-              NVIDIA's DLSS 4 is the headline feature of the RTX 50 series. Multi Frame Generation uses AI to generate up to 3 additional frames for every rendered frame, delivering up to 4x the frame rate in supported titles. Combined with the Reflex 2 latency reduction technology, the experience remains responsive even at very high frame rates.
+              NVIDIA's DLSS 4 is the headline feature of the RTX 50 series. Multi Frame Generation uses AI to generate up to 3 additional frames for every rendered frame, delivering up to 4x the effective frame rate in supported games.
             </p>
             <p>
-              Image quality has also been significantly improved with a new transformer-based AI model that reduces ghosting and temporal artifacts compared to DLSS 3, making upscaled images nearly indistinguishable from native resolution.
+              Image quality has also been significantly improved with a new transformer-based AI model that reduces ghosting and temporal artifacts compared to DLSS 3, making upscaled images near-indistinguishable from native rendering.
             </p>
 
             <h2>Ray Tracing Performance</h2>
             <p>
-              The RTX 5090's fifth-generation RT cores deliver a substantial improvement in ray tracing performance compared to the RTX 4090. In Cyberpunk 2077 with full path tracing and DLSS 4 Quality mode, the card maintains well over 100 native FPS before frame generation, making true path tracing a practical reality for the first time.
+              The RTX 5090's fifth-generation RT cores deliver a substantial improvement in ray tracing performance compared to the RTX 4090. In Cyberpunk 2077 with full path tracing and DLSS 4 Quality mode, frame rates remain high enough for smooth gameplay.
             </p>
 
             <h2>Power and Cooling</h2>
             <p>
-              The RTX 5090 carries a 575W TDP — a significant jump from the RTX 4090's 450W. NVIDIA's Founders Edition uses a new 3-slot cooler design with a vapor chamber and three fans to keep temperatures manageable. The card requires a 16-pin power connector and a 1000W+ PSU is strongly recommended.
+              The RTX 5090 carries a 575W TDP — a significant jump from the RTX 4090's 450W. NVIDIA's Founders Edition uses a new 3-slot cooler design with a vapor chamber and three fans to keep thermals under control.
             </p>
 
             <h2>Professional Workload Performance</h2>
             <p>
-              Beyond gaming, the RTX 5090 excels in AI and creative workloads. The 32GB GDDR7 frame buffer is large enough to run most large language models locally, and the enhanced Tensor cores with FP4 and FP8 precision support make it a powerful tool for AI inference and training.
+              Beyond gaming, the RTX 5090 excels in AI and creative workloads. The 32GB GDDR7 frame buffer is large enough to run most large language models locally, and the enhanced Tensor cores accelerate inference and model development.
             </p>
             <p>
-              Video editors working with 8K footage in DaVinci Resolve benefit from hardware-accelerated decoding and real-time playback, while 3D artists see dramatically faster render times in Blender and Octane.
+              Video editors working with 8K footage in DaVinci Resolve benefit from hardware-accelerated decoding and real-time playback, while 3D artists see dramatically faster render times in Blender and similar tools.
             </p>
 
             <h2>Pricing and Availability</h2>
             <p>
-              The NVIDIA RTX 5090 launched on January 30, 2025, at an MSRP of $1,999 for the Founders Edition. AIB partner cards with custom cooling solutions range from $2,099 to $2,499. Due to high demand, availability has been limited — check major retailers for stock updates.
+              The NVIDIA RTX 5090 launched on January 30, 2025, at an MSRP of $1,999 for the Founders Edition. AIB partner cards with custom cooling solutions range from $2,099 to $2,499. Supply and pricing varied by region and model.
             </p>
 
             <div className="not-prose my-10 rounded-xl border border-brand-primary/20 bg-brand-primary/5 p-6 sm:p-8">
               <h3 className="mb-4 text-2xl font-bold">Editor's Verdict</h3>
               <p className="italic text-muted-foreground">
-                The RTX 5090 is the undisputed fastest consumer GPU available today. DLSS 4 Multi Frame Generation is a genuine game-changer, and the 32GB GDDR7 frame buffer future-proofs the card for years to come. The high price and power draw are the only real drawbacks for enthusiasts who demand the absolute best.
+                The RTX 5090 is the undisputed fastest consumer GPU available today. DLSS 4 Multi Frame Generation is a genuine game-changer, and the 32GB GDDR7 frame buffer future-proofs the card for high-end AI and creative workloads.
               </p>
-              <p className="mt-3 font-medium">— David Park, Senior Hardware Analyst</p>
+              <p className="mt-3 font-medium">— Gadgets Finds, Senior Hardware Analyst</p>
             </div>
 
             <h2>Final Thoughts</h2>
             <p>
-              NVIDIA's RTX 5090 sets a new benchmark for consumer GPU performance. The Blackwell architecture, combined with DLSS 4 Multi Frame Generation, delivers a generational leap in gaming performance. If you need the fastest GPU money can buy right now, the RTX 5090 is it — just make sure your PSU and wallet are ready.
+              NVIDIA's RTX 5090 sets a new benchmark for consumer GPU performance. The Blackwell architecture, combined with DLSS 4 Multi Frame Generation, delivers a generational leap in gaming, AI acceleration, and creator workflows.
             </p>
           </div>
-          
-<AmazonDealBox
-  productName="NVIDIA RTX 5090"
-  href="https://www.amazon.com/ASUS-Graphics-Military-Grade-Components-Protective/dp/B0DS2X13PH?crid=3FPXZL8NE4JR8&dib=eyJ2IjoiMSJ9.OSAxfSSEwGzbpqyyiUlBpNM7Wn6cisKP59h0tCsvWxb4wb-Vdj3aSbtmP56pmPDanswSy-_RokfSaWJgTHwKg_IFNZB2REtbcpn0p36-3AH5xkF5hQK7PjpxkaxcqTAtbUwAly6s4hmPUM1UQdKdvlWNMm570PwkxYF5ZCb2MDdR7I5iEf22K48whuETSTMc91ocBZ1tbmHACKmi0VvvPbgkunbeGKxjZZ2ALlf9oD8.VPTX6eWP5_N8_CY0RC3lE5s-a4PeEW9nwgVrZG0tQEU&dib_tag=se&keywords=RTX%2B5090&qid=1790253119&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=rtx%2B5090%C2%B5%2Caps%2C352&sr=8-3&th=1&linkCode=ll2&tag=gadgetsfindswebsite-20&linkId=a927befb0581887dfe0822c6a9f7fb49&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
-/>
-          
-          {/* Final CTA – consistent "Live News Feed" button */}
+
+          <AmazonDealBox
+            productName="NVIDIA RTX 5090"
+            href="https://www.amazon.com/ASUS-Graphics-Military-Grade-Components-Protective/dp/B0DS2X13PH?crid=3FPXZL8NE4JR8&dib=eyJ2IjoiMSJ9.OSAxfSSEwGzbpqyyiUlBpNM7Wn6cisKP59h0tCsvWxb4wb-Vdj3aSbtmP56pmPD"
+          />
+
           <div className="mt-12 border-t border-border pt-10 text-center sm:text-left">
             <Link
               href="/live-news-feed"
@@ -216,7 +201,6 @@ export default function NVIDIARTXArticle() {
             </Link>
           </div>
 
-          {/* Related Articles */}
           <div className="mt-16 pt-8 border-t border-border">
             <h3 className="text-2xl font-bold text-foreground mb-6">Related Articles</h3>
             <div className="grid md:grid-cols-2 gap-6">
