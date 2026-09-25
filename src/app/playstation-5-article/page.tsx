@@ -61,6 +61,8 @@ export default function Page() {
             decision is the PS5 Slim (disc or digital), not a rumored PS6.
           </p>
 
+          <AmazonDealBox productName="PlayStation 5 Slim (disc)" href={AMAZON_PS5} />
+
           <h2 className="text-2xl font-bold mt-10 mb-3">What the PS5 actually is</h2>
           <p className="text-muted-foreground mb-4">
             Sony’s current home console launched in 2020 and was revised as the slimmer CFI-2000
@@ -121,22 +123,12 @@ export default function Page() {
             It is a reason not to buy a used PS4 “for GTA 6.”
           </p>
           <p className="text-muted-foreground mb-4">
-            Official hub:{" "}
-            <a
-              className="text-primary underline"
-              href="https://www.rockstargames.com/VI"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            Official hub: {" "}
+            <a className="text-primary underline" href="https://www.rockstargames.com/VI" target="_blank" rel="noopener noreferrer">
               rockstargames.com/VI
             </a>{" "}
-            and{" "}
-            <a
-              className="text-primary underline"
-              href="https://www.playstation.com/en-us/games/grand-theft-auto-vi/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            and {" "}
+            <a className="text-primary underline" href="https://www.playstation.com/en-us/games/grand-theft-auto-vi/" target="_blank" rel="noopener noreferrer">
               PlayStation’s GTA VI page
             </a>
             . Trailer stills belong to Rockstar — we don’t hotlink Google image search.
@@ -163,7 +155,6 @@ export default function Page() {
             the game listing second and only from a normal storefront.
           </p>
 
-          <AmazonDealBox productName="PlayStation 5 Slim (disc)" href={AMAZON_PS5} />
           <AmazonDealBox productName="Grand Theft Auto VI PS5" href={AMAZON_GTA6} />
         </div>
       </article>
