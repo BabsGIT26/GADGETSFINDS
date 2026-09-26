@@ -79,7 +79,7 @@ export default function Page() {
             rel="nofollow sponsored noopener noreferrer"
             className="inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-3 px-6 rounded-md mb-6"
           >
-            View product on Amazon #AD
+            View product on Amazon 
           </a>
            <p className="text-sm text-muted-foreground mb-4">
             As an Amazon Associate, Gadgets Finds earns from qualifying
