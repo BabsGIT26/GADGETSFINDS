@@ -19,8 +19,10 @@ export default function AmazonDealBox({ productName, href }: Props) {
           aria-label="View PlayStation 5 Slim on Amazon. #AD."
           className="inline-flex items-center justify-center min-w-[240px] px-8 py-4 rounded-full bg-amber-400 text-zinc-950 text-base font-extrabold hover:bg-amber-300 transition-colors"
         >
-          View product on Amazon #AD →
+          View product on Amazon  →
         </a>
+        <p> As an Amazon Associate, Gadgets Finds earns from qualifying
+</p>
       </div>
     );
   }
