@@ -64,8 +64,8 @@ export default function Page() {
           <div className="bg-red-100 border-l-4 border-red-500 p-4 mb-6">
             <p className="text-red-700 font-bold">
               Limited-time Amazon deal: Roborock Saros Z70 (Black) seen at
-              $999.98 (−50% vs $1,999.99 list). <br> Price and stock change on
-              Amazon. </br> 
+              $999.98 (−50% vs $1,999.99 list).
+              Price and stock change on Amazon. 
             </p>
           </div>
 
