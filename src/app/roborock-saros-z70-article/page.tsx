@@ -11,7 +11,8 @@ export const metadata: Metadata = {
   title:
     "Roborock Saros Z70 — $999.98 Limited Deal | Gadgets Finds",
   description:
-    "Roborock Saros Z70 Black: OmniGrip arm, 22,000Pa, 3.14-inch slim body, auto mop wash and dry. Price seen at $999.98 (−50%). Amazon price changes.",
+    "Roborock Saros Z70 Black: OmniGrip arm, 22,000Pa, 3.14-inch slim body, auto mop wash and dry. Price seen at $999.98 <br />
+    (−50%). Amazon price changes.",
   metadataBase: new URL("https://www.gadgets-finds.com"),
   alternates: {
     canonical: "https://www.gadgets-finds.com/roborock-saros-z70-article",
