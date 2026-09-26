@@ -70,7 +70,7 @@ export default function Page() {
             Flagship vac-mop with OmniGrip arm
           </h1>
 
-          <p className="text-muted-foreground mb-4">
+          <p className="text-muted-foreground mb-6">
             The Roborock Saros Z70 (Black) is a 3.14-inch robot vacuum-mop
             with 22,000Pa suction, FlexiArm edge cleaning, AdaptiLift
             chassis, and the OmniGrip five-axis arm. The listing we use is
@@ -78,20 +78,22 @@ export default function Page() {
             before you buy.
           </p>
 
-          <p className="text-muted-foreground mb-6">
-            Limited-time Amazon deal: Roborock Saros Z70 (Black) seen at
-            $999.98 (−50% vs $1,999.99 list). Price and stock change on
-            Amazon.
-          </p>
-
           <a
             href={AMAZON_ROBOROCK}
             target="_blank"
             rel="nofollow sponsored noopener noreferrer"
-            className="inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-3 px-6 rounded-md mb-8"
+            className="inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-3 px-6 rounded-md mb-6"
           >
             View product on Amazon #AD
           </a>
+
+          <div className="bg-red-100 border-l-4 border-red-500 p-4 mb-8">
+            <p className="text-red-700 font-bold">
+              Limited-time Amazon deal: Roborock Saros Z70 (Black) seen at
+              $999.98 (−50% vs $1,999.99 list). Price and stock change on
+              Amazon.
+            </p>
+          </div>
 
           <h2 className="text-2xl font-bold mt-10 mb-3">
             What the Z70 actually is
