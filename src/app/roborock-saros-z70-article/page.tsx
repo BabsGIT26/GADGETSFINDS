@@ -70,9 +70,7 @@ export default function Page() {
           <p className="text-muted-foreground mb-6">
             The Roborock Saros Z70 (Black) is a 3.14-inch robot vacuum-mop
             with 22,000Pa suction, FlexiArm edge cleaning, AdaptiLift
-            chassis, and the OmniGrip five-axis arm. The listing we use is
-            ASIN B0DSLBZV3F. Confirm color, seller, and live price on Amazon
-            before you buy.
+            chassis, and the OmniGrip five-axis arm. 
           </p>
 
           <a
