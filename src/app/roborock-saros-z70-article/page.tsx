@@ -64,8 +64,8 @@ export default function Page() {
           <div className="bg-red-100 border-l-4 border-red-500 p-4 mb-6">
             <p className="text-red-700 font-bold">
               Limited-time Amazon deal: Roborock Saros Z70 (Black) seen at
-              $999.98 (−50% vs $1,999.99 list). Price and stock change on
-              Amazon. #ad
+              $999.98 (−50% vs $1,999.99 list). <br> Price and stock change on
+              Amazon. </br> 
             </p>
           </div>
 
@@ -73,8 +73,7 @@ export default function Page() {
             Smart Home
           </p>
           <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-            Roborock Saros Z70: flagship vac-mop with an arm — only if the
-            $999 deal is still there
+            Roborock Saros Z70: flagship vac-mop with an arm 
           </h1>
           <p className="text-muted-foreground mb-8">
             The <strong>Roborock Saros Z70</strong> (Black) is a 3.14-inch
