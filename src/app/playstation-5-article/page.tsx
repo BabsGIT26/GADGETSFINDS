@@ -35,10 +35,10 @@ export default function Page() {
     <>
       <Header />
       <article className="min-h-screen bg-background pt-1 md:pt-1">
-        <div className="w-full bg-muted flex items-center justify-center py-10">
+         <div className="w-full bg-muted flex items-center justify-center py-10 pb-2">
           <AppImage src="/assets/images/playstation_5.png" alt="PlayStation 5 Slim console" className="max-h-[400px] w-auto max-w-[85%] object-contain" />
         </div>
-        <div className="container mx-auto px-4 py-10 max-w-3xl">
+        <div className="container mx-auto px-4 pt-2 pb-10 max-w-3xl">
           <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">Gaming</p>
           <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">PlayStation 5: the console to own before GTA 6</h1>
           <p className="text-muted-foreground mb-8">
