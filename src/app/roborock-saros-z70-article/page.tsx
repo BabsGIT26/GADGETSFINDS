@@ -56,10 +56,7 @@ export default function Page() {
         </div>
 
         <div className="container mx-auto px-4 py-10 max-w-3xl">
-          <p className="text-sm text-muted-foreground mb-4">
-            As an Amazon Associate, Gadgets Finds earns from qualifying
-            purchases.
-          </p>
+         
 
           <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">
             Smart Home
@@ -86,7 +83,11 @@ export default function Page() {
           >
             View product on Amazon #AD
           </a>
-
+           <p className="text-sm text-muted-foreground mb-4">
+            As an Amazon Associate, Gadgets Finds earns from qualifying
+            purchases.
+          </p>
+          
           <div className="bg-red-100 border-l-4 border-red-500 p-4 mb-8">
             <p className="text-red-700 font-bold">
               Limited-time Amazon deal: Roborock Saros Z70 (Black) seen at
