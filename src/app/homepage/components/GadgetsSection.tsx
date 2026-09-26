@@ -164,11 +164,11 @@ export default function GadgetsSection() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-10 gap-4">
           <div>
-            <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary/10 border border-primary/30 rounded-full mb-4">
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary/10 border border-primary/30 rounded-full mb-6 md:mb-4">
               <Icon name="CpuChipIcon" size={14} variant="solid" className="text-primary" />
               <span className="text-primary text-xs font-bold tracking-widest uppercase">Featured gadgets</span>
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-2 md:mt-0">
               Hot gadget <span className="text-primary">drops</span>
             </h2>
             <p className="text-muted-foreground mt-2 text-sm md:text-base max-w-lg">
