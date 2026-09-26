@@ -47,7 +47,7 @@ export default function Page() {
     <>
       <Header />
       <article className="min-h-screen bg-background pt-1 md:pt-1">
-        <div className="w-full bg-muted flex items-center justify-center py-10">
+        <div className="w-full bg-muted flex items-center justify-center py-10 pb-2">
           <AppImage
             src="/assets/images/roborock_saros_z70.png"
             alt="Roborock Saros Z70 robot vacuum and mop, black"
@@ -55,7 +55,7 @@ export default function Page() {
           />
         </div>
 
-        <div className="container mx-auto px-4 py-10 max-w-3xl">
+        <div className="container mx-auto px-4 pt-2 pb-10 max-w-3xl">
          
 
           <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">
