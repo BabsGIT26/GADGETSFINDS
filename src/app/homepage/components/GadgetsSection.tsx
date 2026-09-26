@@ -139,6 +139,18 @@ const gadgets: Gadget[] = [
     href: "/intel-arc-b-series-article",
     highlights: ["12GB GDDR6", "Released 2024", "Value GPU"],
   },
+    {
+    name: "Roborock Saros Z70",
+    brand: "Roborock",
+    category: "Robotics",
+    rating: 4.0,
+    badge: "50% off",
+    badgeColor: "bg-red-600 text-white",
+    image: "/assets/images/roborock_saros_z70.png",
+    alt: "Roborock Saros Z70 robot vacuum and mop",
+    href: "/roborock-saros-z70-article",
+    highlights: ["OmniGrip arm", "$999.98 seen", "22,000Pa"],
+  },
 ];
 
 const categories = ["All", "Laptops", "Smartphones", "GPUs", "Robotics", "Audio", "XR", "Gaming"];
