@@ -61,32 +61,37 @@ export default function Page() {
             purchases.
           </p>
 
-          <div className="bg-red-100 border-l-4 border-red-500 p-4 mb-6">
-            <p className="text-red-700 font-bold">
-              Limited-time Amazon deal: Roborock Saros Z70 (Black) seen at
-              $999.98 (−50% vs $1,999.99 list).
-              Price and stock change on Amazon. 
-            </p>
-          </div>
-
           <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">
             Smart Home
           </p>
-          <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-            Roborock Saros Z70: flagship vac-mop with an arm 
+          <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4 leading-tight">
+            Roborock Saros Z70
+            <br />
+            Flagship vac-mop with OmniGrip arm
           </h1>
-          <p className="text-muted-foreground mb-8">
-            The <strong>Roborock Saros Z70</strong> (Black) is a 3.14-inch
-            robot vacuum-mop with 22,000Pa suction, FlexiArm edge cleaning,
-            AdaptiLift chassis, and the OmniGrip five-axis arm. The listing
-            we use is ASIN <strong>B0DSLBZV3F</strong>. Confirm color, seller,
-            and live price on Amazon before you buy.
+
+          <p className="text-muted-foreground mb-4">
+            The Roborock Saros Z70 (Black) is a 3.14-inch robot vacuum-mop
+            with 22,000Pa suction, FlexiArm edge cleaning, AdaptiLift
+            chassis, and the OmniGrip five-axis arm. The listing we use is
+            ASIN B0DSLBZV3F. Confirm color, seller, and live price on Amazon
+            before you buy.
           </p>
 
-          <AmazonDealBox
-            productName="Roborock Saros Z70"
+          <p className="text-muted-foreground mb-6">
+            Limited-time Amazon deal: Roborock Saros Z70 (Black) seen at
+            $999.98 (−50% vs $1,999.99 list). Price and stock change on
+            Amazon.
+          </p>
+
+          <a
             href={AMAZON_ROBOROCK}
-          />
+            target="_blank"
+            rel="nofollow sponsored noopener noreferrer"
+            className="inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-3 px-6 rounded-md mb-8"
+          >
+            View product on Amazon #AD
+          </a>
 
           <h2 className="text-2xl font-bold mt-10 mb-3">
             What the Z70 actually is
@@ -100,11 +105,11 @@ export default function Page() {
 
           <h2 className="text-2xl font-bold mt-10 mb-3">OmniGrip arm</h2>
           <p className="text-muted-foreground mb-4">
-            OmniGrip can pick up <strong>light objects</strong> (socks,
-            tissues, similar items, about 300g max per Roborock). It is not
-            a hand that reliably moves shoes, cables, or clutter. Independent
-            reviews and Amazon feedback are mixed: the vac-mop is strong; the
-            arm is the party trick and sometimes misses or jams.
+            OmniGrip can pick up light objects (socks, tissues, similar
+            items, about 300g max per Roborock). It is not a hand that
+            reliably moves shoes, cables, or clutter. Independent reviews
+            and Amazon feedback are mixed: the vac-mop is strong; the arm
+            is the party trick and sometimes misses or jams.
           </p>
 
           <h2 className="text-2xl font-bold mt-10 mb-3">
@@ -131,10 +136,10 @@ export default function Page() {
 
           <h2 className="text-2xl font-bold mt-10 mb-3">The $999.98 deal</h2>
           <p className="text-muted-foreground mb-4">
-            List on that Amazon page is <strong>$1,999.99</strong>. The
-            limited-time price we last checked was <strong>$999.98</strong>{" "}
-            (−50%). That is the only reason to look now. At full list, wait
-            or buy a Saros / S8-class machine without the arm.
+            List on that Amazon page is $1,999.99. The limited-time price we
+            last checked was $999.98 (−50%). That is the only reason to look
+            now. At full list, wait or buy a Saros / S8-class machine without
+            the arm.
           </p>
 
           <h2 className="text-2xl font-bold mt-10 mb-3">Buy if / skip if</h2>
@@ -154,7 +159,7 @@ export default function Page() {
             Watch-outs before you click Amazon
           </h2>
           <ul className="list-disc pl-5 text-muted-foreground space-y-2 mb-4">
-            <li>Color must be <strong>Black</strong> on B0DSLBZV3F.</li>
+            <li>Color must be Black on B0DSLBZV3F.</li>
             <li>Prefer Amazon sold/shipped or a known seller.</li>
             <li>Dock needs floor space and an outlet.</li>
             <li>Amazon price and availability change without notice.</li>
@@ -162,9 +167,9 @@ export default function Page() {
 
           <h2 className="text-2xl font-bold mt-10 mb-3">Verdict</h2>
           <p className="text-muted-foreground mb-8">
-            Treat this as a <strong>half-price flagship mop-vac</strong>, not
-            a miracle butler. If B0DSLBZV3F is still near $999.98, it is a
-            serious discount. If the price snapped back to $1,999, walk away.
+            Treat this as a half-price flagship mop-vac, not a miracle
+            butler. If B0DSLBZV3F is still near $999.98, it is a serious
+            discount. If the price snapped back to $1,999, walk away.
           </p>
 
           <AmazonDealBox
