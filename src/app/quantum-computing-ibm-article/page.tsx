@@ -74,7 +74,7 @@ export default function QuantumComputingIBMArticle() {
                 IBM's latest quantum processor marks a significant milestone in the race toward practical quantum computing applications.
               </p>
               <div className="flex items-center flex-wrap gap-4 text-sm text-gray-200">
-                <span>Dr. Emily Watson</span>
+          
                 <span>•</span>
                 <span>March 10, 2026</span>
                 <span>•</span>
