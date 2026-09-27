@@ -74,7 +74,7 @@ export default function SamsungGalaxyZFold6Article() {
                 Samsung's 2024 foldable flagship brings meaningful improvements in design, durability, and performance — but the inner display crease remains visible, as noted by reviewers worldwide.
               </p>
               <div className="flex items-center flex-wrap gap-4 text-sm text-gray-200">
-                <span>David Kim</span>
+                
                 <span>•</span>
                 <span>July 10, 2024</span>
                 <span>•</span>
