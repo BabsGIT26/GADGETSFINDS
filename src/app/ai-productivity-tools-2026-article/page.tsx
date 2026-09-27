@@ -74,7 +74,7 @@ export default function AIProductivityTools2026Article() {
                 Our team tested dozens of AI productivity tools to find the ones that genuinely improve workflow efficiency.
               </p>
               <div className="flex items-center flex-wrap gap-4 text-sm text-gray-200">
-                <span>Rachel Kim</span>
+                 
                 <span>•</span>
                 <span>March 13, 2026</span>
                 <span>•</span>
