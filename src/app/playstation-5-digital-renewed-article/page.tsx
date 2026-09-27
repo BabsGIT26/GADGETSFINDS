@@ -67,9 +67,10 @@ export default function Page() {
           </p>
 
           <AmazonDealBox
-            productName="PlayStation 5 Digital Edition (Renewed)"
-            href={AMAZON_PS5_DIGITAL_RENEWED}
-          />
+  productName="PlayStation 5 Digital Edition (Renewed)"
+  href={AMAZON_PS5_DIGITAL_RENEWED}
+  compact
+/>
 
           <h2 className="text-2xl font-bold mt-10 mb-3">What this listing is</h2>
           <p className="text-muted-foreground mb-4">
