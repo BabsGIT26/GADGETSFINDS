@@ -30,6 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/intel-arc-b-series-article',
     '/macbook-pro-m4-article',
     '/meta-quest-4-article',
+    '/playstation-5-digital-renewed-article',
     '/microsoft-azure-quantum-article',
     '/nvidia-rtx-6090-ti-article',
     '/nvidia-rtx-6090-ti-live-news-article',
