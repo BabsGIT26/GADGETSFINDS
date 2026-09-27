@@ -133,7 +133,7 @@ const Header = () => {
   }, [isNotifOpen]);
 
   const navItems = [
-    { label: 'Home', href: '/homepage', icon: 'HomeIcon' },
+    { label: 'Home', href: '/', icon: 'HomeIcon' },
     { label: 'Live Feed', href: '/live-news-feed', icon: 'RssIcon' },
     { label: 'Compare Gadgets', href: '/product-comparison-engine', icon: 'ScaleIcon' },
     { label: 'CES 2026', href: '/ces-2026-hub', icon: 'CalendarIcon' },
@@ -143,7 +143,7 @@ const Header = () => {
 
   // Items shown directly in header on desktop
   const primaryNavItems = [
-    { label: 'Home', href: '/homepage', icon: 'HomeIcon' },
+    { label: 'Home', href: '/', icon: 'HomeIcon' },
     { label: 'Live Feed', href: '/live-news-feed', icon: 'RssIcon' },
     { label: 'Trends', href: '/tech-trends-2026', icon: 'ChartBarIcon' },
     { label: 'Search', href: '/unified-search', icon: 'MagnifyingGlassIcon' },
@@ -153,7 +153,7 @@ const Header = () => {
 
   // Items kept in the dropdown menu (desktop: all primary + notifications)
   const dropdownNavItems = [
-    { label: 'Home', href: '/homepage', icon: 'HomeIcon' },
+    { label: 'Home', href: '/', icon: 'HomeIcon' },
     { label: 'Live Feed', href: '/live-news-feed', icon: 'RssIcon' },
     { label: 'Trends', href: '/tech-trends-2026', icon: 'ChartBarIcon' },
     { label: 'Search', href: '/unified-search', icon: 'MagnifyingGlassIcon' },
@@ -169,7 +169,7 @@ const Header = () => {
         <div className="flex items-center h-14 md:h-16 gap-2">
           {/* Logo + Brand */}
           <div className="flex items-center flex-shrink-0">
-            <Link href="/homepage" className="flex items-center space-x-2 md:space-x-3 group flex-shrink-0">
+            <Link href="/" className="flex items-center space-x-2 md:space-x-3 group flex-shrink-0">
               <div className="relative">
                 <div className="w-8 h-8 md:w-10 md:h-10 rounded-lg bg-black flex items-center justify-center transform transition-transform group-hover:scale-105 overflow-hidden">
                   <AppImage
