@@ -88,7 +88,6 @@ export default function BestLaptopsDevelopers2026() {
               <div className="mt-4 flex flex-wrap items-center gap-4 rounded-md bg-black/65 px-4 py-2 text-xs sm:text-sm text-gray-100 backdrop-blur-md shadow-sm">
                 <span className="flex items-center gap-1.5">
                   <Icon name="UserIcon" size={14} variant="outline" />
-                  Michael Rodriguez
                 </span>
                 <span className="text-gray-400">•</span>
                 <span className="flex items-center gap-1.5">
