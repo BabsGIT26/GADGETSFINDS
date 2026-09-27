@@ -32,18 +32,15 @@ export const metadata: Metadata = {
       },
     ],
   },
-};
-
-  },
   twitter: {
     card: 'summary_large_image',
     site: '@Gadgets_finds',
     creator: '@Gadgets_finds',
     title: 'Gadgets Finds — Your Tech News & Reviews Hub',
     description:
-    'Your definitive source for tech news, reviews, and insights. Discover trending stories, compare products, and stay ahead of the tech curve.',
-    images: ["/og-home.png"],
-  }
+      'Your definitive source for tech news, reviews, and insights. Discover trending stories, compare products, and stay ahead of the tech curve.',
+    images: ['/og-home.png'],
+  },
 };
 
 export default function Homepage() {
