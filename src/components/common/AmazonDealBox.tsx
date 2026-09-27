@@ -3,11 +3,12 @@ import { resolveAmazonAffiliateUrl } from "@/lib/amazon-affiliate";
 type Props = {
   productName: string;
   href: string;
+  compact?: boolean;
 };
 
-export default function AmazonDealBox({ productName, href }: Props) {
+export default function AmazonDealBox({ productName, href, compact }: Props) {
   const affiliateHref = resolveAmazonAffiliateUrl(productName, href);
-  const isTopPs5Cta = productName === "PlayStation 5 Slim (disc)";
+  const isTopPs5Cta = compact || productName === "PlayStation 5 Slim (disc)";
 
   if (isTopPs5Cta) {
     return (
@@ -16,14 +17,15 @@ export default function AmazonDealBox({ productName, href }: Props) {
           href={affiliateHref}
           target="_blank"
           rel="nofollow sponsored noopener noreferrer"
-          aria-label="View PlayStation 5 Slim on Amazon. #AD."
+          aria-label={`View ${productName} on Amazon. #AD.`}
           className="inline-flex items-center justify-center min-w-[240px] px-8 py-4 rounded-full bg-amber-400 text-zinc-950 text-base font-extrabold hover:bg-amber-300 transition-colors"
         >
-          View product on Amazon  →
+          View product on Amazon →
         </a>
-       
-        <p> As an Amazon Associate, Gadgets Finds earns from qualifying purchases . </p>
-        
+        <p className="text-[11px] leading-relaxed text-zinc-400 mt-3">
+          As an Amazon Associate, Gadgets Finds earns from qualifying purchases. Prices and
+          availability change on Amazon.
+        </p>
       </div>
     );
   }
