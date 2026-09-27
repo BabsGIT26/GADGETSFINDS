@@ -33,13 +33,13 @@ const nextConfig = {
   },
 
       async redirects() {
-    return [
-      {
-        source: '/homepage',
-        destination: '/',
-        permanent: false,
-      },
-    ];
-  }
+  return [
+    {
+      source: '/homepage',
+      destination: '/',
+      permanent: true, // 308/301 : redirection permanente pour Google
+    },
+  ];
+},
 };
 export default nextConfig;
