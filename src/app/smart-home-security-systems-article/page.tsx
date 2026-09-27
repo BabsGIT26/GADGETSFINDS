@@ -74,7 +74,7 @@ export default function SmartHomeSecurityArticle() {
                 Comprehensive analysis of the top smart home security systems, from DIY options to professional monitoring services.
               </p>
               <div className="flex items-center flex-wrap gap-4 text-sm text-gray-200">
-                <span>Jennifer Martinez</span>
+                
                 <span>•</span>
                 <span>March 10, 2026</span>
                 <span>•</span>
