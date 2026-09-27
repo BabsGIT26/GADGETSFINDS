@@ -5,7 +5,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const staticPages = [
     '',
-    '/homepage',
     '/about-us',
     '/contact-us',
     '/privacy-policy',
@@ -58,9 +57,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const allPages = [...staticPages, ...articlePages, ...trendPages];
 
   return allPages.map((path) => ({
-    url: `${baseUrl}${path}`,
-    lastModified: new Date(),
-    changeFrequency: path === '' || path === '/homepage' ? 'daily' : 'weekly',
-    priority: path === '' || path === '/homepage' ? 1.0 : path.includes('article') ? 0.7 : 0.8,
-  }));
+  url: `${baseUrl}${path}`,
+  lastModified: new Date(),
+  changeFrequency: path === '' ? 'daily' : 'weekly',
+  priority: path === '' ? 1.0 : path.includes('article') ? 0.7 : 0.8,
+}));
 }
