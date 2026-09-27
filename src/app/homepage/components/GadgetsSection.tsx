@@ -104,6 +104,18 @@ const gadgets: Gadget[] = [
     highlights: ["Standalone VR", "Color mixed reality", "In stores"],
   },
   {
+  name: "PS5 Digital ",
+  brand: "Sony",
+  category: "Gaming",
+  rating: 4.6,
+  badge: "−19%",
+  badgeColor: "bg-red-600 text-white",
+  image: "/assets/images/playstation_5.png",
+  alt: "PlayStation 5 Digital Edition Renewed",
+  href: "/playstation-5-digital-renewed-article",
+  highlights: ["$568.99", "1 TB", "Amazon deal"],
+},
+  {
     name: "Apple Vision Pro",
     brand: "Apple",
     category: "XR",
