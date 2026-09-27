@@ -10,27 +10,29 @@ import CES2026Preview from './components/CES2026Preview';
 import GadgetsSection from './components/GadgetsSection';
 
 export const metadata: Metadata = {
-  title: 'Homepage — Gadgets Finds',
+  title: 'Gadgets Finds — Daily gadget deals',
   description:
-  'Your definitive source for tech news, reviews, and insights. Discover trending stories, compare products, and stay ahead of the tech curve with Gadgets Finds.',
+    'Your definitive source for tech news, reviews, and insights. Discover trending stories, compare products, and stay ahead of the tech curve with Gadgets Finds.',
   metadataBase: new URL('https://www.gadgets-finds.com'),
   alternates: {
-    canonical: 'https://www.gadgets-finds.com/homepage'
+    canonical: 'https://www.gadgets-finds.com/',
   },
   openGraph: {
     title: 'Gadgets Finds — Your Tech News & Reviews Hub',
     description:
-    'Your definitive source for tech news, reviews, and insights. Discover trending stories, compare products, and stay ahead of the tech curve.',
-    url: 'https://www.gadgets-finds.com/homepage',
+      'Your definitive source for tech news, reviews, and insights. Discover trending stories, compare products, and stay ahead of the tech curve.',
+    url: 'https://www.gadgets-finds.com/',
     type: 'website',
     images: [
-  {
-    url: "/og-home.png",
-    width: 1200,
-    height: 630,
-    alt: "Gadgets Finds",
+      {
+        url: '/og-home.png',
+        width: 1200,
+        height: 630,
+        alt: 'Gadgets Finds',
+      },
+    ],
   },
-],
+
 
   },
   twitter: {
