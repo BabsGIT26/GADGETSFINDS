@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+ import type { Metadata } from "next";
 import Link from "next/link";
 import AppImage from "@/components/ui/AppImage";
 import Header from "@/components/common/Header";
@@ -20,14 +20,6 @@ export default function Page() {
     <>
       <Header />
       <article className="min-h-screen bg-background pt-14 md:pt-16">
-        <div className="w-full bg-muted flex items-center justify-center py-10">
-          <AppImage
-            src="/assets/images/amazon_outlet.png"
-            alt="Amazon Outlet"
-            className="max-h-[400px] w-auto max-w-[85%] object-contain"
-          />
-        </div>
-
         <div className="container mx-auto px-4 py-10 max-w-3xl">
           <p className="text-xs text-muted-foreground mb-6 leading-relaxed">
             <span className="text-red-600 font-semibold">Disclosure:</span> Gadgets Finds is an
@@ -74,6 +66,14 @@ export default function Page() {
             Unreliable when you need one exact current flagship today. If the PS5 or phone you
             want is not in the grid, it is not hidden. It simply is not Outlet stock.
           </p>
+
+          <div className="w-full flex items-center justify-center py-6 mb-8">
+            <AppImage
+              src="/assets/images/amazon_outlet.png"
+              alt="Amazon Outlet"
+              className="max-h-[400px] w-auto max-w-full object-contain"
+            />
+          </div>
 
           <h2 className="text-2xl font-bold mt-10 mb-3">Outlet is not Warehouse</h2>
           <p className="text-muted-foreground mb-6">
