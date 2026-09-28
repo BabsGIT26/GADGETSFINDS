@@ -1,6 +1,6 @@
-import AppImage from "@/components/ui/AppImage";
 import type { Metadata } from "next";
 import Link from "next/link";
+import AppImage from "@/components/ui/AppImage";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
@@ -20,15 +20,16 @@ export default function Page() {
     <>
       <Header />
       <article className="min-h-screen bg-background pt-14 md:pt-16">
-               <div className="w-full bg-muted flex items-center justify-center py-10">
+        <div className="w-full bg-muted flex items-center justify-center py-10">
           <AppImage
             src="/assets/images/amazon_outlet.png"
             alt="Amazon Outlet"
             className="max-h-[400px] w-auto max-w-[85%] object-contain"
           />
         </div>
+
         <div className="container mx-auto px-4 py-10 max-w-3xl">
-                    <p className="text-xs text-muted-foreground mb-6 leading-relaxed">
+          <p className="text-xs text-muted-foreground mb-6 leading-relaxed">
             <span className="text-red-600 font-semibold">Disclosure:</span> Gadgets Finds is an
             Amazon Associate. We may earn from qualifying purchases if you
             <br />
@@ -43,10 +44,21 @@ export default function Page() {
             Most people never leave Amazon’s search bar. Outlet is the other door: a single grid
             where leftover inventory is priced to leave the warehouse.
           </p>
-          <p className="text-muted-foreground mb-6">
+          <p className="text-muted-foreground mb-4">
             It is Amazon’s overstock and closeout shelf — last sizes, extra colors, products that
             did not move at full price. Open it when you already know the kind of thing you want
             and you can live with last season’s finish.
+          </p>
+
+          <p className="mb-8">
+            <a
+              href={AMAZON_OUTLET}
+              target="_blank"
+              rel="nofollow sponsored noopener noreferrer"
+              className="inline-flex items-center px-5 py-2.5 rounded-full border border-amber-500 text-sm font-semibold text-foreground hover:bg-amber-400 hover:text-zinc-950 transition-colors"
+            >
+              Open Amazon Outlet →
+            </a>
           </p>
 
           <h2 className="text-2xl font-bold mt-10 mb-3">Why it exists</h2>
