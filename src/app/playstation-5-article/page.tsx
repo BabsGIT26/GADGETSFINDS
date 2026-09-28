@@ -40,7 +40,25 @@ export default function Page() {
         </div>
         <div className="container mx-auto px-4 pt-2 pb-10 max-w-3xl">
           <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">Gaming</p>
-          <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">PlayStation 5: the console to own before GTA 6</h1>
+                    <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
+            PlayStation 5 Slim Disc 1TB (Amazon Renewed)
+          </h1>
+                    <div className="mb-10 rounded-2xl border border-amber-500/40 bg-zinc-950 p-5 md:p-6">
+            <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-amber-400 mb-2">
+              Listing this page points to
+            </p>
+            <p className="text-lg md:text-xl font-bold text-white mb-2">
+              PlayStation 5 Slim Disc — 1 TB (Amazon Renewed)
+            </p>
+            <p className="text-sm text-zinc-300 mb-1">
+              Recently seen around <strong className="text-white">$579</strong> on Amazon.
+              That price changes. Confirm it on the listing before you buy.
+            </p>
+            <p className="text-xs text-zinc-400">
+              Renewed is refurbished, not a new-in-box retail Slim. Disc model: plays physical
+              games. Not the Digital Edition.
+            </p>
+          </div>
           <p className="text-muted-foreground mb-8">
             Grand Theft Auto VI is scheduled for <strong>November 19, 2026</strong> on PlayStation 5 and Xbox Series X|S. It will not run on PS4. If you still have a PS4, the hardware decision is the PS5 Slim (disc or digital), not a rumored PS6.
           </p>
