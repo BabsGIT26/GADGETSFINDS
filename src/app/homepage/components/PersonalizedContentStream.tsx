@@ -41,18 +41,19 @@ const PersonalizedContentStream = () => {
     readTime: '12 min read',
     tags: ['Laptops', 'Development', 'Buying Guide']
   },
-  {
+  { 
     id: 2,
-    title: 'Sony WH-2000XM6 Review: The New King of Noise Cancellation',
-    excerpt: 'Sony\'s latest flagship headphones set a new standard for active noise cancellation and audio quality.',
-    category: 'Review',
-    image: "https://img.rocket.new/generatedImages/rocket_gen_img_13c1b7db7-1772147463184.png",
-    alt: 'Premium black wireless headphones with silver accents on white background',
+    title: 'Amazon Outlet explained',
+    excerpt: 'Public clearance and overstock — not a secret club. How to read Outlet vs Warehouse.',
+    category: 'Guide',
+    image: "/og-home.png",
+    alt: "Gadgets Finds",
     author: '',
-    publishedDate: 'Aug 7, 2026',
-    readTime: '8 min read',
-    tags: ['Audio', 'Headphones', 'Review']
+    publishedDate: '2026-09-28',
+    readTime: '6 min read',
+    tags: ['Amazon', 'Outlet', 'Guide']
   },
+    
   {
     id: 3,
     title: 'Quantum Computing Breakthrough: IBM Announces 1000-Qubit Processor',
@@ -100,15 +101,29 @@ const PersonalizedContentStream = () => {
     publishedDate: 'Jun 14, 2026',
     readTime: '9 min read',
     tags: ['AI', 'Productivity', 'Software']
-  }];
+  },
+    {
+    id: 7,
+    title: 'Sony WH-2000XM6 Review: The New King of Noise Cancellation',
+    excerpt: 'Sony\'s latest flagship headphones set a new standard for active noise cancellation and audio quality.',
+    category: 'Review',
+    image: "https://img.rocket.new/generatedImages/rocket_gen_img_13c1b7db7-1772147463184.png",
+    alt: 'Premium black wireless headphones with silver accents on white background',
+    author: '',
+    publishedDate: 'Aug 7, 2026',
+    readTime: '8 min read',
+    tags: ['Audio', 'Headphones', 'Review']
+  },
+  ];
 
   const articleRoutes: {[key: number]: string;} = {
-    1: '/best-laptops-developers-2026',
-    2: '/sony-wh-2000xm6-review-article',
+    1: '/best-laptops-developers-2026', 
+    2: '/amazon-outlet-guide',
     3: '/quantum-computing-ibm-article',
     4: '/smart-home-security-systems-article',
     5: '/i-phone-16-pro-vs-samsung-comparison-article',
     6: '/ai-productivity-tools-2026-article'
+    7: '/sony-wh-2000xm6-review-article',
   };
 
   const getFilteredItems = (): ContentItem[] => {
