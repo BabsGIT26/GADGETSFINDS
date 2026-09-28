@@ -22,10 +22,10 @@ export default function AmazonDealBox({ productName, href, compact }: Props) {
         >
           View product on Amazon →
         </a>
-        <p className="text-[11px] leading-relaxed text-zinc-400 mt-3">
-          As an Amazon Associate, Gadgets Finds earns from qualifying purchases. Prices and
-          availability change on Amazon.
-        </p>
+             <p className="text-sm leading-relaxed text-zinc-300 mt-5">
+        As an Amazon Associate, Gadgets Finds earns from qualifying purchases. Prices and
+        availability change on Amazon.
+      </p>
       </div>
     );
   }
