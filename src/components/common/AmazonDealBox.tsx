@@ -47,7 +47,7 @@ export default function AmazonDealBox({ productName, href, compact }: Props) {
         rel="nofollow sponsored noopener noreferrer"
         className="inline-flex items-center justify-center w-full md:w-auto min-w-[240px] px-8 py-4 rounded-full bg-amber-400 text-zinc-950 text-base font-extrabold hover:bg-amber-300 transition-colors"
       >
-        View on Amazon #AD →
+        View on Amazon  →
       </a>
       <p className="text-[11px] leading-relaxed text-zinc-400 mt-5">
         As an Amazon Associate, Gadgets Finds earns from qualifying purchases. Prices and
