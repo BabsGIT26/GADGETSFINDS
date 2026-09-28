@@ -1,4 +1,4 @@
- import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Link from "next/link";
 import AppImage from "@/components/ui/AppImage";
 import Header from "@/components/common/Header";
@@ -8,8 +8,12 @@ import AmazonDealBox from "@/components/common/AmazonDealBox";
 const AMAZON_OUTLET = "https://www.amazon.com/outlet?tag=gadgetsfindswebsite-20";
 
 export const metadata: Metadata = {
-
-   openGraph: {
+  title: "Amazon Outlet — Gadgets Finds",
+  description:
+    "Amazon Outlet is the overstock and closeout shelf: how to use it for gadgets without treating it like a second store.",
+  metadataBase: new URL("https://www.gadgets-finds.com"),
+  alternates: { canonical: "https://www.gadgets-finds.com/amazon-outlet-guide" },
+  openGraph: {
     title: "Amazon Outlet — Gadgets Finds",
     description: "Amazon’s overstock and closeout shelf — how to use it.",
     url: "https://www.gadgets-finds.com/amazon-outlet-guide",
@@ -30,11 +34,6 @@ export const metadata: Metadata = {
     title: "Amazon Outlet — Gadgets Finds",
     images: ["/assets/images/amazon_outlet.png"],
   },
-  title: "Amazon Outlet — Gadgets Finds",
-  description:
-    "Amazon Outlet is the overstock and closeout shelf: how to use it for gadgets without treating it like a second store.",
-  metadataBase: new URL("https://www.gadgets-finds.com"),
-  alternates: { canonical: "https://www.gadgets-finds.com/amazon-outlet-guide" },
 };
 
 export default function Page() {
@@ -43,10 +42,10 @@ export default function Page() {
       <Header />
       <article className="min-h-screen bg-background pt-14 md:pt-16">
         <div className="container mx-auto px-4 py-10 max-w-3xl">
-          <p className="text-xs text-muted-foreground mb-6 leading-relaxed">
+          <p className="text-xs text-muted-foreground mb-6 leading-relaxed max-w-full">
             <span className="text-red-600 font-semibold">Disclosure:</span> Gadgets Finds is an
-            Amazon Associate. We may earn from qualifying purchases if you
-            buy through links on this page, at no extra cost to you.
+            Amazon Associate. We may earn from qualifying purchases if you buy through links on
+            this page, at no extra cost to you.
           </p>
 
           <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">Guides</p>
@@ -68,8 +67,9 @@ export default function Page() {
               href={AMAZON_OUTLET}
               target="_blank"
               rel="nofollow sponsored noopener noreferrer"
-                          className="inline-flex items-center px-5 py-2.5 rounded-full bg-amber-400 text-zinc-950 text-sm font-semibold hover:bg-transparent hover:text-foreground border border-amber-400 transition-colors"
-              Open Amazon Outlet →
+              className="inline-flex items-center px-5 py-2.5 rounded-full bg-amber-400 text-zinc-950 text-sm font-semibold hover:bg-transparent hover:text-foreground border border-amber-400 transition-colors"
+            >
+              Open Amazon Outlet
             </a>
           </p>
 
