@@ -8,6 +8,28 @@ import AmazonDealBox from "@/components/common/AmazonDealBox";
 const AMAZON_OUTLET = "https://www.amazon.com/outlet?tag=gadgetsfindswebsite-20";
 
 export const metadata: Metadata = {
+
+   openGraph: {
+    title: "Amazon Outlet — Gadgets Finds",
+    description: "Amazon’s overstock and closeout shelf — how to use it.",
+    url: "https://www.gadgets-finds.com/amazon-outlet-guide",
+    siteName: "Gadgets Finds",
+    type: "article",
+    images: [
+      {
+        url: "/assets/images/amazon_outlet.png",
+        width: 1200,
+        height: 630,
+        alt: "Amazon Outlet",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@Gadgets_finds",
+    title: "Amazon Outlet — Gadgets Finds",
+    images: ["/assets/images/amazon_outlet.png"],
+  },
   title: "Amazon Outlet — Gadgets Finds",
   description:
     "Amazon Outlet is the overstock and closeout shelf: how to use it for gadgets without treating it like a second store.",
