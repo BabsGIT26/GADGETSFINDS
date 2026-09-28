@@ -121,7 +121,7 @@ const PersonalizedContentStream = () => {
     3: '/quantum-computing-ibm-article',
     4: '/smart-home-security-systems-article',
     5: '/i-phone-16-pro-vs-samsung-comparison-article',
-    6: '/ai-productivity-tools-2026-article'
+    6: '/ai-productivity-tools-2026-article',
     7: '/sony-wh-2000xm6-review-article',
   };
 
