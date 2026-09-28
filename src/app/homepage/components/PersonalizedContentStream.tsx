@@ -46,7 +46,7 @@ const PersonalizedContentStream = () => {
     title: 'Amazon Outlet explained',
     excerpt: 'Public clearance and overstock — not a secret club. How to read Outlet vs Warehouse.',
     category: 'Guide',
-    image: "/og-home.png",
+    image: "/assets/images/amazon_outlet.png",
     alt: "Gadgets Finds",
     author: '',
     publishedDate: '2026-09-28',
