@@ -113,8 +113,7 @@ const PersonalizedContentStream = () => {
     publishedDate: 'Aug 7, 2026',
     readTime: '8 min read',
     tags: ['Audio', 'Headphones', 'Review']
-  },
-  ];
+  }];
 
   const articleRoutes: {[key: number]: string;} = {
     1: '/best-laptops-developers-2026', 
