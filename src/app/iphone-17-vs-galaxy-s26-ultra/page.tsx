@@ -67,7 +67,7 @@ export default function Page() {
 
           <div className="w-full flex justify-center py-6 mb-10">
             <AppImage
-              src="/assets/images/samsung_galaxy_s_twenty_six_ultra.png"
+              src="/assets/images/s26_ultra_compare.png"
               alt="Samsung Galaxy S26 Ultra"
               className="max-h-[360px] w-auto max-w-full object-contain"
             />
