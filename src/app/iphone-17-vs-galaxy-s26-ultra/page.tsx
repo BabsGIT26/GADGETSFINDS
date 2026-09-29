@@ -9,6 +9,27 @@ const AMAZON_S26 =
   "https://www.amazon.com/s?k=Samsung+Galaxy+S26+Ultra&tag=gadgetsfindswebsite-20";
 
 export const metadata: Metadata = {
+    openGraph: {
+    title: "iPhone 17 vs Galaxy S26 Ultra — Gadgets Finds",
+    description: "Display, cameras, battery, and who should buy which.",
+    url: "https://www.gadgets-finds.com/iphone-17-vs-galaxy-s26-ultra",
+    siteName: "Gadgets Finds",
+    type: "article",
+    images: [
+      {
+        url: "/assets/images/s26_ultra_compare.png",
+        width: 1200,
+        height: 630,
+        alt: "iPhone 17 vs Galaxy S26 Ultra",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@Gadgets_finds",
+    title: "iPhone 17 vs Galaxy S26 Ultra — Gadgets Finds",
+    images: ["/assets/images/s26_ultra_compare.png"],
+  },
   title: "iPhone 17 vs Galaxy S26 Ultra — Gadgets Finds",
   description:
     "iPhone 17 (6.3-inch, A19) versus Samsung Galaxy S26 Ultra: display, cameras, battery, software, and who should buy which. Prices change on Amazon.",
