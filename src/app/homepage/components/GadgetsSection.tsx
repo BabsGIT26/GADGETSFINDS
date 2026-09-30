@@ -163,6 +163,18 @@ const gadgets: Gadget[] = [
     href: "/roborock-saros-z70-article",
     highlights: ["OmniGrip arm", "$999.98 seen", "22,000Pa"],
   },
+    {
+    name: "iPhone 17 vs S26 Ultra",
+    brand: "Apple / Samsung",
+    category: "Smartphones",
+    rating: 4.7,
+    badge: "Compare",
+    badgeColor: "bg-amber-500 text-white",
+    image: "/assets/images/s26_ultra_compare.png",
+    alt: "iPhone 17 vs Galaxy S26 Ultra",
+    href: "/iphone-17-vs-galaxy-s26-ultra",
+    highlights: ["6.3 vs 6.9 display", "A19 vs Snapdragon", "Dual vs quad camera"],
+  },
 ];
 
 const categories = ["All", "Laptops", "Smartphones", "GPUs", "Robotics", "Audio", "XR", "Gaming"];
