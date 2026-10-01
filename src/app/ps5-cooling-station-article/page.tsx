@@ -42,7 +42,7 @@ export default function Page() {
     <>
       <Header />
       <article className="min-h-screen bg-background pt-14 md:pt-16">
-        <div className="container mx-auto px-4 py-10 max-w-3xl">
+                <div className="container mx-auto px-4 pt-4 pb-10 max-w-3xl">
           <p className="text-sm text-black mb-6">
             Disclosure: Gadgets Finds is an Amazon Associate. We may earn from qualifying
             purchases if you buy through links on this page, at no extra cost to you.
