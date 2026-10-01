@@ -11,12 +11,12 @@ export const metadata: Metadata = {
   description: 'NVIDIA RTX 5090 delivers flagship GPU performance for gaming, content creation, and AI workloads with the new Blackwell architecture.',
   metadataBase: new URL('https://www.gadgets-finds.com'),
   alternates: {
-    canonical: 'https://www.gadgets-finds.com/nvidia-rtx-6090-ti-article'
+    canonical: 'https://www.gadgets-finds.com/nvidia-rtx-5090-ti-article'
   },
   openGraph: {
     title: 'NVIDIA RTX 5090 Review',
     description: 'Flagship GPU performance for gaming, content creation, and AI with Blackwell architecture.',
-    url: 'https://www.gadgets-finds.com/nvidia-rtx-6090-ti-article',
+    url: 'https://www.gadgets-finds.com/nvidia-rtx-5090-ti-article',
     type: 'article',
     images: [{
       url: "https://img.rocket.new/generatedImages/rocket_gen_img_1f4342726-1777062087272.png",
