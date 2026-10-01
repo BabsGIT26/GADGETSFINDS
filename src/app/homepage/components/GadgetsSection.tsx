@@ -127,6 +127,20 @@ const gadgets: Gadget[] = [
     href: "/apple-vision-pro-article",
     highlights: ["Spatial computing", "First generation", "On sale"],
   },
+    {
+    name: "PS5 cooling station",
+    brand: "Accessory",
+    category: "Gaming",
+    rating: 4.4,
+    badge: "Stand",
+    badgeColor: "bg-amber-500 text-white",
+    image: "/assets/images/PS5_Cooling_Station.png",
+    alt: "PS5 cooling station with controller docks",
+    href: "/ps5-cooling-station-article",
+    highlights: ["3-speed fan", "Two DualSense docks", "3 USB ports"],
+  },
+
+
   {
     name: "Galaxy Z Fold 6",
     brand: "Samsung",
