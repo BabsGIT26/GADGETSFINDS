@@ -11,12 +11,12 @@ const AMAZON =
 export const metadata: Metadata = {
   title: "PS5 Cooling Station with Controller Charger — Gadgets Finds",
   description:
-    "Kammkonb PS5 stand with 3-speed fan, dual DualSense docks, and 3 USB hubs. Fits Slim, standard, and Pro. Not official Sony. Price changes on Amazon.",
+    "Vertical PS5 stand with a 3-speed fan, two DualSense docks, and three USB ports. Fits Slim, original, and Pro.",
   metadataBase: new URL("https://www.gadgets-finds.com"),
   alternates: { canonical: "https://www.gadgets-finds.com/ps5-cooling-station-article" },
   openGraph: {
     title: "PS5 Cooling Station with Controller Charger — Gadgets Finds",
-    description: "Vertical stand, 3-speed fan, two controller docks, 3 USB hubs.",
+    description: "3-speed fan, two controller docks, three USB ports.",
     url: "https://www.gadgets-finds.com/ps5-cooling-station-article",
     siteName: "Gadgets Finds",
     type: "article",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
         url: "/assets/images/PS5_Cooling_Station.png",
         width: 1200,
         height: 630,
-        alt: "PS5 cooling station with controller charging docks",
+        alt: "PS5 cooling station with controller docks",
       },
     ],
   },
@@ -50,19 +50,14 @@ export default function Page() {
 
           <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">Gaming</p>
           <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-2">
-            PS5 cooling station with controller docks
+            PS5 cooling station with controller charger
           </h1>
           <p className="text-sm text-muted-foreground mb-8">By Gadgets Finds</p>
 
-          <p className="text-muted-foreground mb-4">
-            This is a third-party vertical stand (Kammkonb, Amazon ASIN B0CXSWDHM6), not an
-            official PlayStation accessory. It holds a PS5 upright, runs a bottom fan, charges
-            two DualSense pads, and adds three USB ports plus slots for a headset, media remote,
-            and discs.
-          </p>
-          <p className="text-muted-foreground mb-8">
-            Specs below come from the listing, not a lab test. Street price has been around the
-            mid-$30s. Confirm seller, color, and price on Amazon before you buy.
+          <p className="text-muted-foreground mb-6">
+            A vertical stand that cools the console from below, charges two DualSense
+            controllers, and keeps a headset, remote, and discs in one place. It is a
+            third-party accessory, not Sony’s official base.
           </p>
 
           <p className="mb-8">
@@ -79,68 +74,41 @@ export default function Page() {
           <div className="w-full flex justify-center py-6 mb-10">
             <AppImage
               src="/assets/images/PS5_Cooling_Station.png"
-              alt="PS5 cooling station with controller charging docks"
+              alt="PS5 cooling station with controller docks"
               className="max-h-[400px] w-auto max-w-full object-contain"
             />
           </div>
 
-          <h2 className="text-2xl font-bold mt-10 mb-3">What it is for</h2>
+          <h2 className="text-2xl font-bold mt-10 mb-3">Cooling</h2>
           <p className="text-muted-foreground mb-6">
-            A vertical base that replaces the official stand if you want charging docks and a
-            fan in the same footprint. The listing claims a turbo fan with High, Mid, and Low,
-            blowing air from the bottom of the console. That can help airflow in a tight shelf.
-            It does not replace leaving the PS5 vents clear, and it is not proof the console
-            will last longer.
+            A fan under the console pushes heat out from the bottom. Three speeds: low, mid,
+            high. Useful in a tight shelf. It does not replace leaving the PS5’s own vents clear.
           </p>
 
-          <h2 className="text-2xl font-bold mt-10 mb-3">Controllers and USB</h2>
-          <ul className="list-disc pl-5 text-muted-foreground space-y-2 mb-6">
-            <li>Two docks for standard DualSense. Not for the DualSense Edge.</li>
-            <li>Listing says both pads can reach full in about 3 hours, powered by the console USB or a 5V/3A adapter.</li>
-            <li>LEDs: red while charging, green when full or on standby. Fan speed is also indicated.</li>
-            <li>Three extra USB ports for a headset dongle, camera, or similar. Overcharge / overcurrent protection is claimed by the seller.</li>
-          </ul>
-
-          <h2 className="text-2xl font-bold mt-10 mb-3">Which console it fits</h2>
+          <h2 className="text-2xl font-bold mt-10 mb-3">Charging and ports</h2>
           <p className="text-muted-foreground mb-6">
-            Seller says Slim, original (2020) standard, and Pro, disc or digital. A panel adapter
-            ships on the stand: remove it for a Slim. A screw locks the console to the base.
-            If your model is not listed on the live Amazon page, do not assume it fits. See the{" "}
+            Two docks for standard DualSense pads. The listing says a full charge takes about
+            three hours, from the console or a 5V/3A adapter. Red means charging, green means
+            full. Not compatible with DualSense Edge. Three extra USB ports cover a headset
+            dongle, camera, or similar.
+          </p>
+
+          <h2 className="text-2xl font-bold mt-10 mb-3">Fit</h2>
+          <p className="text-muted-foreground mb-6">
+            Slim, original, and Pro, disc or digital. A panel ships on the stand — remove it
+            for a Slim. A screw locks the console to the base. Console, controllers, headset,
+            remote, and games are not included. See the{" "}
             <Link href="/playstation-5-article" className="text-primary underline">
-              PS5 Slim guide
+              PS5 guide
             </Link>{" "}
-            and the{" "}
-            <Link href="/playstation-5-dualsense-article" className="text-primary underline">
-              DualSense page
-            </Link>{" "}
-            for the console and pads themselves.
+            if you are still choosing the console.
           </p>
-
-          <h2 className="text-2xl font-bold mt-10 mb-3">What is in the box</h2>
-          <ul className="list-disc pl-5 text-muted-foreground space-y-2 mb-6">
-            <li>Cooling stand</li>
-            <li>Headset holder</li>
-            <li>PS5 panel (attached)</li>
-            <li>Locking screw</li>
-          </ul>
-          <p className="text-muted-foreground mb-6">
-            Console, DualSense, headset, media remote, and game discs are not included. Disc
-            slots on the stand are storage only.
-          </p>
-
-          <h2 className="text-2xl font-bold mt-10 mb-3">Before you click</h2>
-          <ul className="list-disc pl-5 text-muted-foreground space-y-2 mb-8">
-            <li>Sold by Amazon or the brand page, not a random bundle with a different fan.</li>
-            <li>Read recent reviews for fan noise. Third-party coolers often get louder after a few months.</li>
-            <li>Do not block the PS5’s own vents with a wall or a closed cabinet.</li>
-            <li>Edge controller owners need a different dock.</li>
-          </ul>
 
           <h2 className="text-2xl font-bold mt-10 mb-3">Verdict</h2>
           <p className="text-muted-foreground mb-8">
-            Useful if you want one vertical base that charges two DualSense pads and tidies USB
-            dongles. Skip it if you only need Sony’s official stand, or if you own an Edge.
-            Price and stock move; the button opens the current listing.
+            Worth it if you want one base instead of a separate stand and charger. Skip it if
+            you only need Sony’s stand, or if you use an Edge controller. Price and stock
+            change on Amazon.
           </p>
 
           <AmazonDealBox productName="PS5 cooling station" href={AMAZON} />
