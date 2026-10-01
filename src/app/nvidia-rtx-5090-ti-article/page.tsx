@@ -69,11 +69,10 @@ export default function NVIDIARTXArticle() {
             Disclosure: Gadgets Finds is an Amazon Associate. We may earn from qualifying purchases
             if you buy through links on this page, at no extra cost to you.
           </p>
-          <p className="text-sm text-muted-foreground mb-4">By Gadgets Finds</p>
+         
           <p className="text-muted-foreground mb-6">
             The RTX 5090 is NVIDIA’s flagship GeForce card: Blackwell architecture, 32GB of GDDR7,
-            and DLSS 4 with Multi Frame Generation. Street price and the exact board partner change
-            on Amazon.
+            and DLSS 4 with Multi Frame Generation.
           </p>
 
           <p className="mb-8">
