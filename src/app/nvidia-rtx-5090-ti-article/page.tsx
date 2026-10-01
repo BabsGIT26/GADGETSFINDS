@@ -110,15 +110,7 @@ export default function NVIDIARTXArticle() {
         </div>
 
         {/* Live News Feed button right after hero – matches other pages */}
-        <div className="max-w-5xl mx-auto px-5 py-6 sm:py-8">
-          <Link
-            href="/live-news-feed"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-brand-primary text-white rounded-lg font-semibold hover:bg-brand-primary/90 transition-colors">
-            <Icon name="NewspaperIcon" size={20} variant="outline" />
-            <span>Live News Feed</span>
-          </Link>
-        </div>
-          <p className="mt-6">
+                  <div className="mt-8 mb-2">
             <a
               href="https://www.amazon.com/dp/B0DS2X13PH?tag=gadgetsfindswebsite-20"
               target="_blank"
@@ -127,7 +119,17 @@ export default function NVIDIARTXArticle() {
             >
               View on Amazon
             </a>
-          </p>
+          </div>
+
+          <div className="mt-6 border-t border-border pt-6">
+            <Link
+              href="/live-news-feed"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-brand-primary text-white rounded-lg font-semibold hover:bg-brand-primary/90 transition-colors"
+            >
+              <Icon name="NewspaperIcon" size={20} variant="outline" />
+              <span>Live News Feed</span>
+            </Link>
+          </div>
         {/* Article Body */}
         <article className="mx-auto max-w-5xl px-5 py-10 sm:px-8 sm:py-12 lg:py-16">
           <div className="prose prose-lg prose-invert max-w-none lg:prose-xl">
