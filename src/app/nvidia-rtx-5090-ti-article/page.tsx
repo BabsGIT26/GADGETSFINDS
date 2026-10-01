@@ -118,7 +118,16 @@ export default function NVIDIARTXArticle() {
             <span>Live News Feed</span>
           </Link>
         </div>
-
+          <p className="mt-6">
+            <a
+              href="https://www.amazon.com/dp/B0DS2X13PH?tag=gadgetsfindswebsite-20"
+              target="_blank"
+              rel="nofollow sponsored noopener noreferrer"
+              className="inline-flex items-center px-5 py-2.5 rounded-full bg-amber-400 text-zinc-950 text-sm font-semibold hover:bg-transparent hover:text-foreground border border-amber-400 transition-colors"
+            >
+              View on Amazon
+            </a>
+          </p>
         {/* Article Body */}
         <article className="mx-auto max-w-5xl px-5 py-10 sm:px-8 sm:py-12 lg:py-16">
           <div className="prose prose-lg prose-invert max-w-none lg:prose-xl">
