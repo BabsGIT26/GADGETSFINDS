@@ -40,7 +40,7 @@ const gadgets: Gadget[] = [
     badgeColor: "bg-green-600 text-white",
     image: "/assets/images/nvidia_rtx_six_zero_nine_zero_ti.png",
     alt: "NVIDIA RTX 5090",
-    href: "/nvidia-rtx-6090-ti-article",
+    href: "/nvidia-rtx-5090-ti-article",
     highlights: ["Blackwell", "32GB class VRAM", "4K gaming"],
   },
   {
