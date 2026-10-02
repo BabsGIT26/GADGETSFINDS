@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "/assets/images/ghost_of_yotei_og.png",
+        url: "/assets/images/ghost_of_yotei.png",
         width: 1200,
         height: 630,
         alt: "Ghost of Yotei PS5",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@Gadgets_finds",
     title: "Ghost of Yōtei Complete Edition launches today — Gadgets Finds",
-    images: ["/assets/images/ghost_of_yotei_og.png"],
+    images: ["/assets/images/ghost_of_yotei.png"],
   },
 };
 
