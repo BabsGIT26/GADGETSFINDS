@@ -19,6 +19,18 @@ interface Gadget {
 }
 
 const gadgets: Gadget[] = [
+    {
+    name: "Ghost of Yōtei Complete Edition",
+    brand: "PlayStation",
+    category: "Gaming",
+    rating: 4.8,
+    badge: "Out now",
+    badgeColor: "bg-amber-500 text-white",
+    image: "/assets/images/ghost_of_yotei.png",
+    alt: "Ghost of Yotei",
+    href: "/ghost-of-yotei-complete-edition",
+    highlights: ["Echoes of Sekigahara", "Most Wanted", "PS5 only"],
+  },
   {
     name: "MacBook Pro M4",
     brand: "Apple",
