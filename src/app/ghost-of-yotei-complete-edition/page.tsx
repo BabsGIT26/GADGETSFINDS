@@ -67,22 +67,16 @@ export default function Page() {
           </p>
 
           <div className="flex flex-wrap gap-3 mb-8">
-            <a
-              href={AMAZON_GAME}
-              target="_blank"
-              rel="nofollow sponsored noopener noreferrer"
-              className="inline-flex items-center px-5 py-2.5 rounded-full bg-amber-400 text-zinc-950 text-sm font-semibold hover:bg-transparent hover:text-foreground border border-amber-400 transition-colors"
-            >
-              Game on Amazon
-            </a>
+                      <p className="mb-8">
             <a
               href={AMAZON_BUNDLE}
               target="_blank"
               rel="nofollow sponsored noopener noreferrer"
               className="inline-flex items-center px-5 py-2.5 rounded-full bg-amber-400 text-zinc-950 text-sm font-semibold hover:bg-transparent hover:text-foreground border border-amber-400 transition-colors"
             >
-              Gold bundle on Amazon
+              Ghost of Yōtei PS5  on amazon
             </a>
+          </p>
           </div>
 
           <div className="w-full flex justify-center py-6 mb-10">
