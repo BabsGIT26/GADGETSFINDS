@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     "Ghost of Yōtei Complete Edition is out on PS5, with Echoes of Sekigahara and Most Wanted. The Gold Limited Edition Slim bundle is a separate listing.",
   metadataBase: new URL("https://www.gadgets-finds.com"),
   alternates: { canonical: "https://www.gadgets-finds.com/ghost-of-yotei-complete-edition" },
-  openGraph: {
+    openGraph: {
     title: "Ghost of Yōtei Complete Edition launches today — Gadgets Finds",
     description: "New story expansion and Most Wanted on PS5. Bundle and game listings on Amazon.",
     url: "https://www.gadgets-finds.com/ghost-of-yotei-complete-edition",
@@ -24,10 +24,10 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "/assets/images/ghost_of_yotei.png",
+        url: "/assets/images/ghost_of_yotei_og.png",
         width: 1200,
         height: 630,
-        alt: "Ghost of Yotei on PS5",
+        alt: "Ghost of Yotei PS5",
       },
     ],
   },
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@Gadgets_finds",
     title: "Ghost of Yōtei Complete Edition launches today — Gadgets Finds",
-    images: ["/assets/images/ghost_of_yotei.png"],
+    images: ["/assets/images/ghost_of_yotei_og.png"],
   },
 };
 
