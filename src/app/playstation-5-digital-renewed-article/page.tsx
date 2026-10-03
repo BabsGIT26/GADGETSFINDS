@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     canonical: "https://www.gadgets-finds.com/playstation-5-digital-renewed-article",
   },
   openGraph: {
-    title: "PS5 Digital Edition (Renewed) — $568.99",
+    title: "PS5 Digital Edition (Renewed) — $569.99",
     description: "19% off on Amazon. 1 TB Digital Edition, Renewed listing.",
     url: "https://www.gadgets-finds.com/playstation-5-digital-renewed-article",
     siteName: "Gadgets Finds",
