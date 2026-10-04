@@ -143,7 +143,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@Gadgets_finds",
     title: "12 deals worth opening before October Prime Day",
-    images: ["/assets/images/october_deals.png"],
+    images: ["/assets/images/october_deals_card.png"],
   },
 };
 
