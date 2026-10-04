@@ -34,7 +34,7 @@ const PersonalizedContentStream = () => {
     title: 'October deals we checked',
     excerpt: 'Twelve Lightning Deals seen on October 4. Prices change before you click.',
     category: 'Deals',
-    image: '/october_deals.png',
+    image: '/october_deals_card.png',
     alt: 'October deals',
     author: '',
     publishedDate: '2026-10-04',
