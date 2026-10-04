@@ -40,7 +40,7 @@ const PersonalizedContentStream = () => {
     publishedDate: '2026-10-04',
     readTime: '4 min read',
     tags: ['Deals', 'October']
-  }
+  },
   
   { 
     id: 2,
