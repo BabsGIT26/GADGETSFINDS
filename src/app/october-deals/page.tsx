@@ -130,13 +130,20 @@ export const metadata: Metadata = {
     url: "https://www.gadgets-finds.com/october-deals",
     siteName: "Gadgets Finds",
     type: "article",
-    images: [{ url: "/october_deals.png", width: 1200, height: 630, alt: "October Prime Day deals" }],
+    images: [
+      {
+        url: "/assets/images/october_deals_card.png",
+        width: 1200,
+        height: 630,
+        alt: "October Prime Day deals",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     site: "@Gadgets_finds",
     title: "12 deals worth opening before October Prime Day",
-    images: ["/october_deals.png"],
+    images: ["/assets/images/october_deals.png"],
   },
 };
 
