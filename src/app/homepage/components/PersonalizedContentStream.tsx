@@ -29,18 +29,19 @@ const PersonalizedContentStream = () => {
   const filters = ['See All', 'Latest', 'Trending', 'Reviews', 'Guides'];
 
   const contentItems: ContentItem[] = [
-  {
+     {
     id: 1,
-    title: 'Best Laptops for Developers in 2026: Complete Buying Guide',
-    excerpt: 'A 2026 buying guide to laptops for coding, from budget machines to workstations.',
-    category: 'Buying Guide',
-    image: "https://img.rocket.new/generatedImages/rocket_gen_img_178ed799d-1785088751486.png",
-    alt: 'Modern laptop with code editor displayed on screen in dark workspace',
+    title: 'October deals we checked',
+    excerpt: 'Twelve Lightning Deals seen on October 4. Prices change before you click.',
+    category: 'Deals',
+    image: '/og-home.png',
+    alt: 'October deals',
     author: '',
-    publishedDate: '2026-03-18',
-    readTime: '12 min read',
-    tags: ['Laptops', 'Development', 'Buying Guide']
-  },
+    publishedDate: '2026-10-04',
+    readTime: '4 min read',
+    tags: ['Deals', 'October']
+  }
+  
   { 
     id: 2,
     title: 'Amazon Outlet explained',
@@ -113,16 +114,30 @@ const PersonalizedContentStream = () => {
     publishedDate: 'Aug 7, 2026',
     readTime: '8 min read',
     tags: ['Audio', 'Headphones', 'Review']
+{
+    id: 8,
+    title: 'Best Laptops for Developers in 2026: Complete Buying Guide',
+    excerpt: 'A 2026 buying guide to laptops for coding, from budget machines to workstations.',
+    category: 'Buying Guide',
+    image: "https://img.rocket.new/generatedImages/rocket_gen_img_178ed799d-1785088751486.png",
+    alt: 'Modern laptop with code editor displayed on screen in dark workspace',
+    author: '',
+    publishedDate: '2026-03-18',
+    readTime: '12 min read',
+    tags: ['Laptops', 'Development', 'Buying Guide']
+  },
+      
   }];
 
   const articleRoutes: {[key: number]: string;} = {
-    1: '/best-laptops-developers-2026', 
+    1: '/october-deals', 
     2: '/amazon-outlet-guide',
     3: '/quantum-computing-ibm-article',
     4: '/smart-home-security-systems-article',
     5: '/i-phone-16-pro-vs-samsung-comparison-article',
     6: '/ai-productivity-tools-2026-article',
     7: '/sony-wh-2000xm6-review-article',
+    8: '/best-laptops-developers-2026',
   };
 
   const getFilteredItems = (): ContentItem[] => {
