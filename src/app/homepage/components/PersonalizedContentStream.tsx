@@ -113,7 +113,8 @@ const PersonalizedContentStream = () => {
     author: '',
     publishedDate: 'Aug 7, 2026',
     readTime: '8 min read',
-    tags: ['Audio', 'Headphones', 'Review']
+    tags: ['Audio', 'Headphones', 'Review'] 
+    },
 {
     id: 8,
     title: 'Best Laptops for Developers in 2026: Complete Buying Guide',
