@@ -128,7 +128,7 @@ const PersonalizedContentStream = () => {
     tags: ['Laptops', 'Development', 'Buying Guide']
   },
       
-  }];
+  ];
 
   const articleRoutes: {[key: number]: string;} = {
     1: '/october-deals', 
