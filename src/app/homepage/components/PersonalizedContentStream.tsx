@@ -29,18 +29,20 @@ const PersonalizedContentStream = () => {
   const filters = ['See All', 'Latest', 'Trending', 'Reviews', 'Guides'];
 
   const contentItems: ContentItem[] = [
-     {
+    PersonalizedContentStream.tsx
+
+  {
     id: 1,
-    title: 'October deals we checked',
-    excerpt: 'Twelve Lightning Deals seen on October 4. Prices change before you click.',
-    category: 'Deals',
-    image: '/october_deals_card.png',
-    alt: 'October deals',
-    author: '',
-    publishedDate: '2026-10-04',
-    readTime: '4 min read',
-    tags: ['Deals', 'October']
-  },
+    title: "These 12 deals are worth opening before October Prime Day",
+    excerpt: "AirPods, MacBook, Ring, Blink and more. Prices change before you click.",
+    category: "Deals",
+    image: "/assets/images/october_deals_card.jpg",
+    alt: "October Prime Day deals",
+    author: "",
+    publishedDate: "2026-10-04",
+    readTime: "4 min read",
+    tags: ["Deals", "October"]
+  }
   
   { 
     id: 2,
