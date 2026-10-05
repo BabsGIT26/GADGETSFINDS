@@ -58,10 +58,6 @@ export default function MemberTrialPage() {
             qualifying sign-ups and purchases if you use links on this page, at
             no extra cost to you.
           </p>
-          <p className="text-xs text-muted-foreground mb-6 leading-relaxed">
-            This content is provided as is and may change or be removed at any
-            time.
-          </p>
 
           <AppImage
             src="/assets/images/PRIME_OCTOBER_2026.png"
@@ -78,9 +74,7 @@ Don't miss October Prime Day 2026: Try Amazon Prime free for 30 days!
             those two days need an active Amazon Prime membership.
           </p>
           <p className="text-muted-foreground mb-8 leading-relaxed">
-            If you have never used a Prime trial, you can start 30 days free. A
-            past trial does not qualify. Cancel before the trial ends or the
-            membership bills. A trial does not lock a deal price.
+            If you have never used a Prime trial, you can start 30 days free. 
           </p>
 
           <a
@@ -89,7 +83,7 @@ Don't miss October Prime Day 2026: Try Amazon Prime free for 30 days!
             rel="nofollow sponsored noopener noreferrer"
             className="inline-flex items-center px-5 py-2.5 rounded-full bg-amber-400 text-zinc-950 text-sm font-semibold hover:bg-transparent hover:text-foreground border border-amber-400 transition-colors"
           >
-            Check if the 30-day trial is open
+            Start your free Amazon Prime trial
           </a>
 
           <h2 className="text-2xl font-bold text-foreground mt-12 mb-4">
