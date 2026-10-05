@@ -47,10 +47,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Don't miss October Prime Day 2026: Try Amazon Prime free for 30 days!",
+    title: " Try Amazon Prime free for 30 days!",
     description:
       "Eligible new members can start a 30-day Amazon Prime trial before Prime Big Deal Days, October 6–7.",
-    images: ["https://www.gadgets-finds.com/assets/images/PRIME_OCTOBER_2026.png"],
+    images: ["https://www.gadgets-finds.com/assets/images/30_day_free_trial.png"],
   },
 };
 
