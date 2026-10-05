@@ -33,7 +33,7 @@ const offers = [
 export const metadata: Metadata = {
   title: "Amazon Prime free trial: 30 days before Prime Big Deal Days",
   description:
-    "Start an Amazon Prime free trial before Prime Big Deal Days, October 6–7, 2026. Prime for Young Adults and the Prime Visa card are listed below.",
+    "Start an Amazon Prime free trial before Prime Big Deal Days, October 6–7, 2026. Prime for Young Adults and Prime Access are listed below.",
   metadataBase: new URL("https://www.gadgets-finds.com"),
   alternates: { canonical: "https://www.gadgets-finds.com/member-trial" },
   openGraph: {
@@ -44,13 +44,14 @@ export const metadata: Metadata = {
     siteName: "Gadgets Finds",
     type: "article",
     images: [{ url: "/assets/images/30_day_free_trial.png" }],
-
-    twitter: {
-  card: "summary_large_image",
-  title: "Amazon Prime free trial before Prime Big Deal Days",
-  description: "30-day Amazon Prime trial for eligible new members. Sale is October 6–7, 2026.",
-  images: ["/assets/images/30_day_free_trial.png"],
-},
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Don't miss October Prime Day 2026: Try Amazon Prime free for 30 days!",
+    description:
+      "Eligible new members can start a 30-day Amazon Prime trial before Prime Big Deal Days, October 6–7.",
+    images: ["https://www.gadgets-finds.com/assets/images/PRIME_OCTOBER_2026.png"],
+  },
   },
 };
 
