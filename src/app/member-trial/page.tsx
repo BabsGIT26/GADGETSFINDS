@@ -43,14 +43,14 @@ export const metadata: Metadata = {
     url: "https://www.gadgets-finds.com/member-trial",
     siteName: "Gadgets Finds",
     type: "article",
-    images: [{ url: "/assets/images/30_day_free_trial_EDIT.png" }],
+    images: [{ url: "/assets/images/30_day_free_trial.png" }],
   },
   twitter: {
     card: "summary_large_image",
     title: " Exclusive 48-Hour Premium Tech Sales — Up to 65% OFF !",
     description:
       "Eligible new members can start a 30-day Amazon Prime trial before Prime Big Deal Days, October 6–7.",
-    images: ["https://www.gadgets-finds.com/assets/images/30_day_free_trial_EDIT.png"],
+    images: ["https://www.gadgets-finds.com/assets/images/30_day_free_trial.png"],
   },
 };
 
