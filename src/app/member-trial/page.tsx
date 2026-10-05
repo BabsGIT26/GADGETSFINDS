@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     url: "https://www.gadgets-finds.com/member-trial",
     siteName: "Gadgets Finds",
     type: "article",
-    images: [{ url: "/assets/images/PRIME_OCTOBER_2026.png" }],
+    images: [{ url: "/assets/images/30_day_free_trial.png" }],
   },
 };
 
