@@ -44,6 +44,13 @@ export const metadata: Metadata = {
     siteName: "Gadgets Finds",
     type: "article",
     images: [{ url: "/assets/images/30_day_free_trial.png" }],
+
+    twitter: {
+  card: "summary_large_image",
+  title: "Amazon Prime free trial before Prime Big Deal Days",
+  description: "30-day Amazon Prime trial for eligible new members. Sale is October 6–7, 2026.",
+  images: ["/assets/images/PRIME_OCTOBER_2026.png"],
+},
   },
 };
 
