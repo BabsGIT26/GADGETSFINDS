@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   type: "article",
   images: [
     {
-      url: "https://www.gadgets-finds.com/assets/images/30_day_free_trial.png",
+      url: "https://www.gadgets-finds.com/assets/images/october_deals_card.png",
       width: 1200,
       height: 630,
     },
@@ -54,7 +54,7 @@ twitter: {
   card: "summary_large_image",
   title: "Exclusive 48-Hour Premium Tech Sales — Up to 65% OFF",
   description: "48-hour price drops on October 6–7. 30 days free for eligible new members.",
-  images: ["https://www.gadgets-finds.com/assets/images/30_day_free_trial.png"],
+  images: ["https://www.gadgets-finds.com/assets/images/october_deals_card.png"],
 },
 };
 
