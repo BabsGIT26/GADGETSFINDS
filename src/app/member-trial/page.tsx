@@ -37,21 +37,27 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.gadgets-finds.com"),
   alternates: { canonical: "https://www.gadgets-finds.com/member-trial" },
   openGraph: {
-    title: "Amazon Prime free trial before Prime Big Deal Days",
-    description:
-      "30-day Amazon Prime trial for eligible new members. Sale is October 6–7, 2026.",
-    url: "https://www.gadgets-finds.com/member-trial",
-    siteName: "Gadgets Finds",
-    type: "article",
-    images: [{ url: "/assets/images/30_day_free_trial.png" }],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: " Exclusive 48-Hour Premium Tech Sales — Up to 65% OFF !",
-    description:
-      "Eligible new members can start a 30-day Amazon Prime trial before Prime Big Deal Days, October 6–7.",
-    images: ["https://www.gadgets-finds.com/assets/images/30_day_free_trial.png"],
-  },
+  title: "Amazon Prime free trial before Prime Big Deal Days",
+  description:
+    "30-day Amazon Prime trial for eligible new members. Sale is October 6–7, 2026.",
+  url: "https://www.gadgets-finds.com/member-trial",
+  siteName: "Gadgets Finds",
+  type: "article",
+  images: [
+    {
+      url: "https://www.gadgets-finds.com/assets/images/30_day_free_trial.png",
+      width: 1200,
+      height: 630,
+    },
+  ],
+},
+twitter: {
+  card: "summary_large_image",
+  title: "Exclusive 48-Hour Premium Tech Sales — Up to 65% OFF ",
+  description:
+    "Eligible new members can start a 30-day Amazon Prime trial before Prime Big Deal Days, October 6–7.",
+  images: ["https://www.gadgets-finds.com/assets/images/30_day_free_trial.png"],
+},
 };
 
 export default function MemberTrialPage() {
