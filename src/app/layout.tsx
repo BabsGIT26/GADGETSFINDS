@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     creator: '@Gadgets_finds',
     title: 'Gadgets Finds — Tech News & Reviews',
     description: 'Discover the best trending gadgets with honest reviews, tech news, and expert recommendations.',
-    images: ["/og-home.png"],
+    
   },
   icons: {
     icon: [{ url: "/favicon.ico", type: "image/x-icon" }],
