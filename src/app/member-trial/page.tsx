@@ -64,6 +64,9 @@ export default function MemberTrialPage() {
   alt="Amazon Prime before Prime Big Deal Days, October 6 and 7"
   className="w-full max-h-40 md:max-h-80 object-contain mb-4 md:mb-6"
 />
+          <p className="text-[11px] md:text-xs text-muted-foreground mb-4">
+  Credit: Amazon
+</p>
 
           <h1 className="text-2xl md:text-5xl font-bold text-foreground mb-3 md:mb-4">
  Don't miss October Prime Day 2026: Try Amazon Prime free for 30 days!
@@ -109,6 +112,104 @@ export default function MemberTrialPage() {
               </li>
             ))}
           </ul>
+<div> <section className="mt-12 space-y-8 text-xs md:text-base text-muted-foreground leading-relaxed">
+  <div>
+    <h2 className="text-lg md:text-2xl font-bold text-foreground mb-3">
+      What an Amazon Prime membership includes
+    </h2>
+    <p className="mb-3">
+      Amazon Prime is a paid membership. Eligible new customers can start with
+      a free trial, usually 30 days. After that, the plan bills monthly or
+      yearly unless you cancel. Prices and the length of a trial can change,
+      and a past trial usually blocks a second one.
+    </p>
+    <p>
+      An active membership is what unlocks member pricing on Prime Big Deal
+      Days, October 6–7, 2026. A trial does not reserve a price. Lightning
+      deals and member discounts can end while you are still checking out.
+    </p>
+  </div>
+
+  <div>
+    <h2 className="text-lg md:text-2xl font-bold text-foreground mb-3">
+      Shipping and shopping
+    </h2>
+    <p className="mb-3">
+      The core benefit is fast, free delivery on eligible items, including a
+      large share of the catalog marked Prime. In many U.S. addresses that
+      means free two-day shipping, with same-day or faster windows in some
+      cities. Not every product is eligible. Third-party sellers set their own
+      shipping unless the item is fulfilled by Amazon and marked Prime.
+    </p>
+    <p>
+      Members also get early access to Lightning Deals, invite-only deals, and
+      exclusive discounts during Prime Big Deal Days and the summer Prime Day
+      event. Grocery delivery, Amazon Fresh, and Whole Foods discounts depend
+      on your ZIP code and are not included in every plan at the same rate.
+    </p>
+  </div>
+
+  <div>
+    <h2 className="text-lg md:text-2xl font-bold text-foreground mb-3">
+      Video, music, reading, and games
+    </h2>
+    <p className="mb-3">
+      Prime Video is included: movies, series, and live sports that carry the
+      Prime mark. Channels and rentals are extra. Downloads are available in
+      the app for offline viewing, with device limits set by Amazon.
+    </p>
+    <p className="mb-3">
+      Amazon Music Prime is an ad-supported catalog, not the full Music
+      Unlimited library. Prime Reading covers a rotating set of books and
+      magazines, separate from Kindle Unlimited. Prime Gaming adds free games,
+      in-game content, and a Twitch subscription on eligible accounts.
+    </p>
+    <p>
+      These extras are part of the membership, not a reason the trial will
+      stay free. Cancel in Your Account, then Memberships, before the trial
+      end date if you do not want to be billed.
+    </p>
+  </div>
+
+  <div>
+    <h2 className="text-lg md:text-2xl font-bold text-foreground mb-3">
+      Who can start a trial
+    </h2>
+    <p className="mb-3">
+      The standard Amazon Prime trial is for new members who have not used a
+      Prime free trial before. Amazon decides eligibility. A second account,
+      a shared address, or an old trial on the same payment method can be
+      declined. The trial page shows the real offer before you confirm.
+    </p>
+    <p className="mb-3">
+      Prime for Young Adults is for students and people 18 to 24. It often
+      starts with a longer free period, then a discounted rate, recently
+      listed around $7.49 a month. Age or a valid school email is checked at
+      sign-up. That rate is not guaranteed.
+    </p>
+    <p>
+      Prime Access is a separate discounted plan for qualifying government
+      assistance recipients. It is not the same link as the standard trial.
+      The Prime Visa card is issued by Chase, needs credit approval, and is
+      not a Prime trial. The sign-up gift card and 5% back rate apply only if
+      Chase approves the card and you meet its terms.
+    </p>
+  </div>
+
+  <div>
+    <h2 className="text-lg md:text-2xl font-bold text-foreground mb-3">
+      Before you use it for the October sale
+    </h2>
+    <p>
+      Start the trial early enough that the membership is active on October 6.
+      Add a payment method Amazon accepts, then check the renewal date in
+      your account. Member deals on October 6–7 still change by the hour.
+      Compare the list price on the product page, and do not treat a percent
+      off as the lowest price of the year.
+    </p>
+  </div>
+</section> </div>
+          
         </div>
       </article>
       <Footer />
