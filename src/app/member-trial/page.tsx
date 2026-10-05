@@ -36,10 +36,9 @@ export const metadata: Metadata = {
     "Start an Amazon Prime free trial before Prime Big Deal Days, October 6–7, 2026. Prime for Young Adults and Prime Access are listed below.",
   metadataBase: new URL("https://www.gadgets-finds.com"),
   alternates: { canonical: "https://www.gadgets-finds.com/member-trial" },
-  openGraph: {
-  title: "Amazon Prime free trial before Prime Big Deal Days",
-  description:
-    "30-day Amazon Prime trial for eligible new members. Sale is October 6–7, 2026.",
+   openGraph: {
+  title: "Exclusive 48-Hour Premium Tech Sales — Up to 65% OFF",
+  description: "48-hour price drops on October 6–7. 30 days free for eligible new members.",
   url: "https://www.gadgets-finds.com/member-trial",
   siteName: "Gadgets Finds",
   type: "article",
@@ -53,9 +52,8 @@ export const metadata: Metadata = {
 },
 twitter: {
   card: "summary_large_image",
-  title: "Exclusive 48-Hour Premium Tech Sales — Up to 65% OFF ",
-  description:
-    "Eligible new members can start a 30-day Amazon Prime trial before Prime Big Deal Days, October 6–7.",
+  title: "Exclusive 48-Hour Premium Tech Sales — Up to 65% OFF",
+  description: "48-hour price drops on October 6–7. 30 days free for eligible new members.",
   images: ["https://www.gadgets-finds.com/assets/images/30_day_free_trial.png"],
 },
 };
