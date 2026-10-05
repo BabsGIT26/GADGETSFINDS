@@ -22,12 +22,12 @@ const offers = [
     note: "18–24 or students. Price can change.",
   },
   {
-    name: "Prime Visa Card",
-    detail: "$150 gift card at sign-up (earn 5% back at Amazon)",
-    href: `https://www.amazon.com/credit/rewardscard?tag=${TAG}`,
-    cta: "Learn More",
-    note: "Issued by Chase. Approval required.",
-  },
+  name: "Prime Access",
+  detail: "Free trial or $6.99/month if you qualify",
+  href: `https://www.amazon.com/qualify?tag=${TAG}`,
+  cta: "Get Deal",
+  note: "For eligible assistance recipients. Amazon checks eligibility.",
+},
 ];
 
 export const metadata: Metadata = {
