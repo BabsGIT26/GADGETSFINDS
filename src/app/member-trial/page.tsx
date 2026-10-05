@@ -31,14 +31,15 @@ const offers = [
 ];
 
 export const metadata: Metadata = {
-  title: "30 days free if you still qualify for the October 6–7 sale",
+  title: "Amazon Prime free trial: 30 days before Prime Big Deal Days",
   description:
-    "Prime Big Deal Days is October 6–7, 2026. Eligible new customers can start a 30-day Prime trial and shop the member sale.",
+    "Start an Amazon Prime free trial before Prime Big Deal Days, October 6–7, 2026. Prime for Young Adults and the Prime Visa card are listed below.",
   metadataBase: new URL("https://www.gadgets-finds.com"),
   alternates: { canonical: "https://www.gadgets-finds.com/member-trial" },
   openGraph: {
-    title: "30 days free if you still qualify for the October 6–7 sale",
-    description: "Eligible new accounts only. Prices on the sale still move.",
+    title: "Amazon Prime free trial before Prime Big Deal Days",
+    description:
+      "30-day Amazon Prime trial for eligible new members. Sale is October 6–7, 2026.",
     url: "https://www.gadgets-finds.com/member-trial",
     siteName: "Gadgets Finds",
     type: "article",
@@ -69,8 +70,8 @@ export default function MemberTrialPage() {
           />
 
           <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-            30 days free if you still qualify for the October 6–7 sale
-          </h1>
+Don't miss October Prime Day 2026: Try Amazon Prime free for 30 days!
+</h1>
 
           <p className="text-muted-foreground mb-4 leading-relaxed">
             Prime Big Deal Days is October 6–7, 2026. The member prices on
@@ -99,7 +100,7 @@ export default function MemberTrialPage() {
             {offers.map((o) => (
               <li key={o.name} className="flex items-center gap-4 py-4">
                 <div className="min-w-0 flex-1">
-                  <p className="font-semibold text-violet-700">{o.name}</p>
+                 <p className="font-semibold text-blue-950">{o.name}</p>
                   <p className="text-sm text-foreground">{o.detail}</p>
                   <p className="text-xs text-muted-foreground mt-1">{o.note}</p>
                 </div>
