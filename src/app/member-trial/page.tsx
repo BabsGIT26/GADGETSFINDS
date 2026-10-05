@@ -6,6 +6,30 @@ import Footer from "@/app/homepage/components/Footer";
 const TAG = "gadgetsfindswebsite-20";
 const PRIME = `https://www.amazon.com/prime?tag=${TAG}`;
 
+const offers = [
+  {
+    name: "Amazon Prime",
+    detail: "Free for 30 days",
+    href: PRIME,
+    cta: "Get Deal",
+    note: "Eligible new customers only.",
+  },
+  {
+    name: "Prime for Young Adults",
+    detail: "$7.49/month (free trial available)",
+    href: `https://www.amazon.com/joinyoungadult?tag=${TAG}`,
+    cta: "Get Deal",
+    note: "18–24 or students. Price can change.",
+  },
+  {
+    name: "Prime Visa Card",
+    detail: "$150 gift card at sign-up (earn 5% back at Amazon)",
+    href: `https://www.amazon.com/credit/rewardscard?tag=${TAG}`,
+    cta: "Learn More",
+    note: "Issued by Chase. Approval required.",
+  },
+];
+
 export const metadata: Metadata = {
   title: "30 days free if you still qualify for the October 6–7 sale",
   description:
@@ -53,8 +77,8 @@ export default function MemberTrialPage() {
             those two days need an active Amazon Prime membership.
           </p>
           <p className="text-muted-foreground mb-8 leading-relaxed">
-            If you have never used a Prime trial, you can start 30 days free.
-            A past trial does not qualify. Cancel before the trial ends or the
+            If you have never used a Prime trial, you can start 30 days free. A
+            past trial does not qualify. Cancel before the trial ends or the
             membership bills. A trial does not lock a deal price.
           </p>
 
@@ -66,6 +90,30 @@ export default function MemberTrialPage() {
           >
             Check if the 30-day trial is open
           </a>
+
+          <h2 className="text-2xl font-bold text-foreground mt-12 mb-4">
+            The best Amazon Prime offers:
+          </h2>
+
+          <ul className="divide-y divide-border border-y border-border">
+            {offers.map((o) => (
+              <li key={o.name} className="flex items-center gap-4 py-4">
+                <div className="min-w-0 flex-1">
+                  <p className="font-semibold text-violet-700">{o.name}</p>
+                  <p className="text-sm text-foreground">{o.detail}</p>
+                  <p className="text-xs text-muted-foreground mt-1">{o.note}</p>
+                </div>
+                <a
+                  href={o.href}
+                  target="_blank"
+                  rel="nofollow sponsored noopener noreferrer"
+                  className="shrink-0 inline-flex items-center justify-center min-w-28 px-4 py-2.5 rounded-md bg-amber-400 text-zinc-950 text-sm font-semibold hover:bg-amber-300"
+                >
+                  {o.cta}
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
       </article>
       <Footer />
