@@ -52,7 +52,6 @@ export const metadata: Metadata = {
       "Eligible new members can start a 30-day Amazon Prime trial before Prime Big Deal Days, October 6–7.",
     images: ["https://www.gadgets-finds.com/assets/images/PRIME_OCTOBER_2026.png"],
   },
-  },
 };
 
 export default function MemberTrialPage() {
