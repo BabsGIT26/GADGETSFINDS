@@ -47,10 +47,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: " Try Amazon Prime free for 30 days!",
+    title: " Exclusive 48-Hour Premium Tech Sales — Up to 65% OFF !",
     description:
       "Eligible new members can start a 30-day Amazon Prime trial before Prime Big Deal Days, October 6–7.",
-    images: ["https://www.gadgets-finds.com/assets/images/30_day_free_trial.png"],
+    images: ["https://www.gadgets-finds.com/assets/images/30_day_free_trial_EDIT.png"],
   },
 };
 
