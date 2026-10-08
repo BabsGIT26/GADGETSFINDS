@@ -5,19 +5,19 @@ import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 
 const AMAZON_PS5_DIGITAL_RENEWED =
-  "https://www.amazon.com/PlayStation-5-Digital-Renewed/dp/B08Z8JV4RB?crid=1ZKHP42SRW995&dib=eyJ2IjoiMSJ9.LnCujeuiTvhXDINJUhWSLddwLnpuP7oC3a4v5CKlo_GKJyh80HbRG9EmjY_ID4eSAW-IZ3lOno0ipHJJrhb4-_PsMZPGy79QK1HMIHn23oRaJSoUBZJazCSUBbmCowdmiwZrmcxoxP5Oy3Ci50TMwfuuFDdcPbSSc8t2GWcgfqPRrqPTjqAcIOYOgn_NpUXtRy6Pwxecemqc2dXy19eHOgd7D323xD0882NSVWIGaac.20m03e3tf4_vimvVtwmoPVxTygw0WvdhdVtQxqRXIiY&dib_tag=se&keywords=PS5&qid=1790513558&s=videogames&sbo=GW1QB%2BmqAsHTPf1jTZRSDA%3D%3D&sprefix=ps5+%2Cvideogames%2C307&sr=1-10&linkCode=ll2&tag=gadgetsfindswebsite-20&linkId=da9adb3db3892201ea86e17d162f7336&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl";
+  "https://www.amazon.com/dp/B09SVM186Y?linkCode=ll2&tag=gadgetsfindswebsite-20&language=en_US&ref_=as_li_ss_tl";
 
 export const metadata: Metadata = {
-  title: "PS5 Digital Edition (Renewed) Deal — $568.99, 19% Off | Gadgets Finds",
+  title: "PS5 Digital Edition (Renewed) Deal — $569.99 | Gadgets Finds",
   description:
-    "Amazon deal: PlayStation 5 Digital Edition (Renewed), 1 TB storage, down 19% to $568.99. What this listing is, and who should buy it.",
+    "Amazon deal: Playstation 5 Digital Edition PS5 Gaming Console (Renewed), 1 TB, now $569.99.",
   metadataBase: new URL("https://www.gadgets-finds.com"),
   alternates: {
     canonical: "https://www.gadgets-finds.com/playstation-5-digital-renewed-article",
   },
   openGraph: {
     title: "PS5 Digital Edition (Renewed) — $569.99",
-    description: "19% off on Amazon. 1 TB Digital Edition, Renewed listing.",
+    description: "Renewed Digital Edition on Amazon, 1 TB, $569.99.",
     url: "https://www.gadgets-finds.com/playstation-5-digital-renewed-article",
     siteName: "Gadgets Finds",
     type: "article",
@@ -33,8 +33,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@Gadgets_finds",
-    title: "PS5 Digital Edition (Renewed) — $568.99",
-    description: "19% off on Amazon. 1 TB Digital Edition.",
+    title: "PS5 Digital Edition (Renewed) — $569.99",
+    description: "Renewed Digital Edition, 1 TB, $569.99.",
     images: ["/assets/images/playstation_5.png"],
   },
 };
@@ -57,20 +57,20 @@ export default function Page() {
             Gaming deal
           </p>
           <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-            PlayStation 5 Digital Edition (Renewed): $568.99, 19% off
+            Playstation 5 Digital Edition PS5 Gaming Console (Renewed): $569.99
           </h1>
           <p className="text-muted-foreground mb-8">
-            Amazon currently lists the <strong>PlayStation 5 Digital Edition (Renewed)</strong> at{" "}
-            <strong>$568.99</strong>, about <strong>19% off</strong>. Storage is{" "}
-            <strong>1 TB</strong>. This is the digital model: no disc drive. Price and stock change
-            on Amazon.
+            Amazon currently lists the{" "}
+            <strong>Playstation 5 Digital Edition PS5 Gaming Console (Renewed)</strong> at{" "}
+            <strong>$569.99</strong>. Storage is <strong>1 TB</strong>. This is the digital model:
+            no disc drive. Price and stock change on Amazon.
           </p>
 
           <AmazonDealBox
-  productName="PlayStation 5 Digital Edition (Renewed)"
-  href={AMAZON_PS5_DIGITAL_RENEWED}
-  compact
-/>
+            productName="Playstation 5 Digital Edition PS5 Gaming Console (Renewed)"
+            href={AMAZON_PS5_DIGITAL_RENEWED}
+            compact
+          />
 
           <h2 className="text-2xl font-bold mt-10 mb-3">What this listing is</h2>
           <p className="text-muted-foreground mb-4">
@@ -79,10 +79,10 @@ export default function Page() {
             discs or 4K Blu-rays unless you add a compatible disc drive later.
           </p>
           <ul className="list-disc pl-5 text-muted-foreground space-y-2 mb-4">
-            <li>Model: PlayStation 5 Digital Edition (Renewed)</li>
+            <li>Model: Playstation 5 Digital Edition PS5 Gaming Console (Renewed)</li>
             <li>Storage: 1 TB SSD</li>
-            <li>Deal price: $568.99 (−19%)</li>
-            <li>ASIN: B08Z8JV4RB</li>
+            <li>Deal price: $569.99</li>
+            <li>ASIN: B09SVM186Y</li>
           </ul>
 
           <h2 className="text-2xl font-bold mt-10 mb-3">Digital vs disc</h2>
@@ -96,19 +96,22 @@ export default function Page() {
           <ul className="list-disc pl-5 text-muted-foreground space-y-2 mb-4">
             <li>Check seller, condition notes, and return window on Amazon before buying.</li>
             <li>Confirm it is a complete kit: console, DualSense, HDMI, power cable.</li>
-            <li>1 TB fills up fast. Budget an official-spec internal M.2 SSD if you want several AAA games installed.</li>
+            <li>
+              1 TB fills up fast. Budget an official-spec internal M.2 SSD if you want several AAA
+              games installed.
+            </li>
             <li>Prices move. Recheck the live Amazon page.</li>
           </ul>
 
           <h2 className="text-2xl font-bold mt-10 mb-3">Verdict</h2>
           <p className="text-muted-foreground mb-4">
-            At $568.99 this Renewed Digital Edition is worth a look if you want a PS5 without a
+            At $569.99 this Renewed Digital Edition is worth a look if you want a PS5 without a
             disc drive and you accept Amazon Renewed condition. If you want physical games, skip
             this listing and get a disc Slim instead.
           </p>
 
           <AmazonDealBox
-            productName="PlayStation 5 Digital Edition (Renewed)"
+            productName="Playstation 5 Digital Edition PS5 Gaming Console (Renewed)"
             href={AMAZON_PS5_DIGITAL_RENEWED}
           />
         </div>
