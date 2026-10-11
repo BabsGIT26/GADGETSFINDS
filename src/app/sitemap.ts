@@ -18,6 +18,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/tech-trends-2026',
     '/ces-2026-hub',
     '/best-laptops-developers-2026',
+    '/october-deals',
+    '/member-trial',
+    '/amazon-outlet-guide',
+    '/iphone-17-vs-galaxy-s26-ultra',
   ];
 
   const articlePages = [
@@ -32,7 +36,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/meta-quest-4-article',
     '/playstation-5-digital-renewed-article',
     '/microsoft-azure-quantum-article',
-    '/nvidia-rtx-6090-ti-article',
     '/nvidia-rtx-6090-ti-live-news-article',
     '/openai-gpt-5-article',
     '/quantum-computing-ibm-article',
@@ -40,10 +43,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/samsung-galaxy-z-fold-6-article',
     '/smart-home-security-systems-article',
     '/sony-playstation-6-article',
-    '/sony-wh-2000xm6-review-article',
+    '/sony-wh-1000xm6-review-article',
     '/spacex-starlink-gen-3-article',
     '/tesla-optimus-gen-3-article',
     '/tesla-robotaxi-article',
+    '/nvidia-rtx-5090-article',
+    '/ghost-of-yotei-complete-edition',
+    '/playstation-5-article',
+    '/playstation-5-dualsense-article',
+    '/ps5-cooling-station-article',
+    '/meta-quest-3-article',
+    '/apple-vision-pro-article',
+    '/roborock-saros-z70-article',
   ];
 
   const trendPages = [
@@ -59,7 +70,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return allPages.map((path) => ({
   url: `${baseUrl}${path}`,
-  lastModified: new Date(),
   changeFrequency: path === '' ? 'daily' : 'weekly',
   priority: path === '' ? 1.0 : path.includes('article') ? 0.7 : 0.8,
 }));

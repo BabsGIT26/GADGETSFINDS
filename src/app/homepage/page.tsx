@@ -10,17 +10,15 @@ import CES2026Preview from './components/CES2026Preview';
 import GadgetsSection from './components/GadgetsSection';
 
 export const metadata: Metadata = {
-  title: 'Gadgets Finds — Daily gadget deals',
-  description:
-    'Your definitive source for tech news, reviews, and insights. Discover trending stories, compare products, and stay ahead of the tech curve with Gadgets Finds.',
+  title: 'Gadgets Finds — Gadget Deals, Reviews & Tech News',
+  description: 'Daily gadget deals, honest reviews, and tech news. Compare specs and prices on laptops, phones, GPUs, and gaming gear.',
   metadataBase: new URL('https://www.gadgets-finds.com'),
   alternates: {
     canonical: 'https://www.gadgets-finds.com/',
   },
   openGraph: {
-    title: 'Gadgets Finds — Your Tech News & Reviews Hub',
-    description:
-      'Your definitive source for tech news, reviews, and insights. Discover trending stories, compare products, and stay ahead of the tech curve.',
+    title: 'Gadgets Finds — Gadget Deals, Reviews & Tech News',
+    description: 'Daily gadget deals, honest reviews, and tech news. Compare specs and prices on laptops, phones, GPUs, and gaming gear.',
     url: 'https://www.gadgets-finds.com/',
     type: 'website',
     images: [
@@ -36,9 +34,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@Gadgets_finds',
     creator: '@Gadgets_finds',
-    title: 'Gadgets Finds — Your Tech News & Reviews Hub',
-    description:
-      'Your definitive source for tech news, reviews, and insights. Discover trending stories, compare products, and stay ahead of the tech curve.',
+    title: 'Gadgets Finds — Gadget Deals, Reviews & Tech News',
+    description: 'Daily gadget deals, honest reviews, and tech news. Compare specs and prices on laptops, phones, GPUs, and gaming gear.',
     images: ['/og-home.png'],
   },
 };
@@ -59,11 +56,10 @@ export default function Homepage() {
           <div className="container mx-auto px-4">
             <div className="text-center mb-8 md:mb-12">
               <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-brand-text-primary mb-3 md:mb-4 px-2">
-                Welcome to the Future of Tech
+                Gadget deals, honest reviews, and tech news
               </h1>
               <p className="text-base md:text-xl text-brand-text-secondary max-w-3xl mx-auto px-4">
-                Discover breakthrough innovations, expert reviews, and authoritative insights that
-                shape tomorrow&apos;s technology today
+                Compare specs and prices, read our reviews, and keep up with the launches that matter.
               </p>
             </div>
 

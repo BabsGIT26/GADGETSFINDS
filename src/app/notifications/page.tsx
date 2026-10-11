@@ -23,7 +23,7 @@ const mockNotifications: Notification[] = [
     description: 'NVIDIA just unveiled the RTX 6090 Ti with unprecedented performance benchmarks at CES 2026.',
     time: '2 minutes ago',
     read: false,
-    href: '/nvidia-rtx-6090-ti-article',
+    href: '/nvidia-rtx-6090-ti-live-news-article',
   },
   {
     id: 2,
@@ -41,7 +41,7 @@ const mockNotifications: Notification[] = [
     description: 'We published a full review of the Sony WH-2000XM6 headphones. See how they compare.',
     time: '3 hours ago',
     read: false,
-    href: '/sony-wh-2000xm6-review-article',
+    href: '/sony-wh-1000xm6-review-article',
   },
   {
     id: 4,

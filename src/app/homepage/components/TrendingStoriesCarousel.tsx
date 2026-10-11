@@ -31,7 +31,7 @@ const TrendingStoriesCarousel = () => {
     id: 1,
     title: 'Apple Vision Pro 2: Development Paused — Apple Pivots to Smart Glasses',
     excerpt: 'Reports from multiple credible sources indicate Apple has paused or significantly delayed a full Vision Pro successor, shifting focus to a lighter smart glasses product instead.',
-    category: 'Breaking News',
+    category: 'Report',
     image: "/assets/images/image-1769356825932.png",
     alt: 'Apple Vision Pro headset with advanced eye-tracking sensors',
     author: 'Gadgets Finds',
@@ -43,7 +43,7 @@ const TrendingStoriesCarousel = () => {
     id: 2,
     title: 'Samsung Galaxy S26 Ultra Review: AI Camera Powerhouse',
     excerpt: 'Announced February 25, 2026 and available from March 11, 2026 — the Galaxy S26 Ultra delivers Samsung\'s most advanced AI-powered photography and flagship performance to date.',
-    category: 'Breaking News',
+    category: 'Reviews',
     image: "/assets/images/samsung_galaxy_s_twenty_six_ultra.png",
     alt: 'Samsung Galaxy S26 Ultra smartphone with advanced quad camera system',
     author: 'Gadgets Finds',
@@ -73,7 +73,7 @@ const TrendingStoriesCarousel = () => {
     author: 'Gadgets Finds',
     readTime: '6 min read',
     trending: true,
-    link: '/nvidia-rtx-6090-ti-article'
+    link: '/nvidia-rtx-5090-article'
   },
   {
     id: 5,

@@ -10,13 +10,13 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Gadgets Finds — Daily gadget deals",
-  description: "Daily gadget deals and tech drops. Compare prices, read reviews, and find discounted laptops, phones, and gear on Gadgets Finds.",
+  title: "Gadgets Finds — Gadget Deals, Reviews & Tech News",
+  description: "Daily gadget deals, honest reviews, and tech news. Compare specs and prices on laptops, phones, GPUs, and gaming gear.",
   metadataBase: new URL('https://www.gadgets-finds.com'),
   
   openGraph: {
-    title: 'Gadgets Finds — Tech News & Reviews',
-    description: 'Discover the best trending gadgets with honest reviews, tech news, and expert recommendations.',
+    title: 'Gadgets Finds — Gadget Deals, Reviews & Tech News',
+    description: 'Daily gadget deals, honest reviews, and tech news. Compare specs and prices on laptops, phones, GPUs, and gaming gear.',
     url: 'https://www.gadgets-finds.com',
     siteName: 'Gadgets Finds',
     type: 'website',
@@ -25,8 +25,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@Gadgets_finds',
     creator: '@Gadgets_finds',
-    title: 'Gadgets Finds — Tech News & Reviews',
-    description: 'Discover the best trending gadgets with honest reviews, tech news, and expert recommendations.',
+    title: 'Gadgets Finds — Gadget Deals, Reviews & Tech News',
+    description: 'Daily gadget deals, honest reviews, and tech news. Compare specs and prices on laptops, phones, GPUs, and gaming gear.',
     
   },
   icons: {

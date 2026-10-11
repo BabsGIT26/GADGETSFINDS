@@ -14,21 +14,24 @@ interface ContentItem {
   alt: string;
   author: string;
   publishedDate: string;
+  expiresAt?: string;
   readTime: string;
   tags: string[];
 }
 
 const PersonalizedContentStream = () => {
   const [isHydrated, setIsHydrated] = useState(false);
+  const [now, setNow] = useState<number | null>(null);
   const [activeFilter, setActiveFilter] = useState('See All');
 
   useEffect(() => {
     setIsHydrated(true);
+    setNow(Date.now());
   }, []);
 
   const filters = ['See All', 'Latest', 'Trending', 'Reviews', 'Guides'];
 
-  const contentItems: ContentItem[] = [
+  const allContentItems: ContentItem[] = [
     {
       id: 1,
       title: "Don't miss October Prime Day 2026: Try Amazon Prime free for 30 days!",
@@ -38,6 +41,7 @@ const PersonalizedContentStream = () => {
       alt: "Amazon Prime before Prime Big Deal Days",
       author: "",
       publishedDate: "2026-10-05",
+      expiresAt: "2026-10-08",
       readTime: "5 min read",
       tags: ["Amazon", "Prime", "Deals"]
     },
@@ -50,6 +54,7 @@ const PersonalizedContentStream = () => {
       alt: "October Prime Day deals",
       author: "",
       publishedDate: "2026-10-04",
+      expiresAt: "2026-10-08",
       readTime: "4 min read",
       tags: ["Deals", "October"]
     },
@@ -139,6 +144,11 @@ const PersonalizedContentStream = () => {
     },
   ];
 
+  // Hide time-limited items (promos, events) once their expiry date has passed.
+  const contentItems = allContentItems.filter(
+    (item) => !item.expiresAt || now === null || new Date(item.expiresAt).getTime() > now
+  );
+
   const articleRoutes: { [key: number]: string } = {
     1: "/member-trial",
     2: "/october-deals",
@@ -147,7 +157,7 @@ const PersonalizedContentStream = () => {
     5: "/smart-home-security-systems-article",
     6: "/i-phone-16-pro-vs-samsung-comparison-article",
     7: "/ai-productivity-tools-2026-article",
-    8: "/sony-wh-2000xm6-review-article",
+    8: "/sony-wh-1000xm6-review-article",
     9: "/best-laptops-developers-2026",
   };
 

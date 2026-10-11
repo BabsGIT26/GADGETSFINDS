@@ -9,7 +9,7 @@ interface Gadget {
   name: string;
   brand: string;
   category: string;
-  rating: number;
+  rating?: number;
   badge?: string;
   badgeColor?: string;
   image: string;
@@ -52,7 +52,7 @@ const gadgets: Gadget[] = [
     badgeColor: "bg-green-600 text-white",
     image: "/assets/images/nvidia_rtx_six_zero_nine_zero_ti.png",
     alt: "NVIDIA RTX 5090",
-    href: "/nvidia-rtx-5090-ti-article",
+    href: "/nvidia-rtx-5090-article",
     highlights: ["Blackwell", "32GB class VRAM", "4K gaming"],
   },
   {
@@ -71,7 +71,6 @@ const gadgets: Gadget[] = [
     name: "Tesla Optimus Gen 3",
     brand: "Tesla",
     category: "Robotics",
-    rating: 4.6,
     badge: "Not retail",
     badgeColor: "bg-red-600 text-white",
     image: "/assets/images/tesla_optimus_gen_three.png",
@@ -88,7 +87,7 @@ const gadgets: Gadget[] = [
     badgeColor: "bg-violet-600 text-white",
     image: "/assets/images/sony_wh_1000xm6.png",
     alt: "Sony WH-1000XM6",
-    href: "/sony-wh-2000xm6-review-article",
+    href: "/sony-wh-1000xm6-review-article",
     highlights: ["ANC", "Wireless", "Travel"],
   },
   {
@@ -116,7 +115,7 @@ const gadgets: Gadget[] = [
     highlights: ["Standalone VR", "Color mixed reality", "In stores"],
   },
   {
-  name: "PS5 Digital ",
+  name: "PS5 Digital Edition (Renewed)",
   brand: "Sony",
   category: "Gaming",
   rating: 4.6,
@@ -222,7 +221,7 @@ export default function GadgetsSection() {
               Hot gadget <span className="text-primary">drops</span>
             </h2>
             <p className="text-muted-foreground mt-2 text-sm md:text-base max-w-lg">
-              Products you can actually look up today. Prices come later.
+              Current picks across the categories we cover. Prices change often, so check the retailer for today's price.
             </p>
           </div>
           <Link
@@ -278,12 +277,13 @@ export default function GadgetsSection() {
                 <h3 className="text-foreground font-bold text-base md:text-lg group-hover:text-primary transition-colors mb-2">
                   {gadget.name}
                 </h3>
+                {gadget.rating !== undefined && (
                 <div className="flex items-center gap-1.5 mb-3">
                   <div className="flex">
                     {[1, 2, 3, 4, 5].map((star) => (
                       <svg
                         key={star}
-                        className={`w-3.5 h-3.5 ${star <= Math.round(gadget.rating) ? "text-amber-400" : "text-muted"}`}
+                        className={`w-3.5 h-3.5 ${star <= Math.round(gadget.rating ?? 0) ? "text-amber-400" : "text-muted"}`}
                         fill="currentColor"
                         viewBox="0 0 20 20"
                       >
@@ -293,6 +293,7 @@ export default function GadgetsSection() {
                   </div>
                   <span className="text-xs text-muted-foreground">{gadget.rating}</span>
                 </div>
+                )}
                 <ul className="space-y-1 mb-4 flex-1">
                   {gadget.highlights.map((h) => (
                     <li key={h} className="flex items-center gap-2 text-xs text-muted-foreground">

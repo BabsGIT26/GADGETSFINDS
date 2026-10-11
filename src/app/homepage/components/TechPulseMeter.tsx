@@ -30,10 +30,10 @@ const TechPulseMeter = () => {
     return (
       <div className="bg-gradient-to-br from-brand-dark via-slate-900 to-brand-dark rounded-xl p-8 border border-brand-primary/20">
         <div className="flex items-center justify-between mb-6">
-          <h2 className="text-2xl font-bold text-brand-text-primary">Live Tech Pulse</h2>
+          <h2 className="text-2xl font-bold text-brand-text-primary">Tech Pulse</h2>
           <div className="flex items-center space-x-2">
             <div className="w-2 h-2 bg-brand-primary rounded-full"></div>
-            <span className="text-sm text-brand-text-secondary">Live</span>
+            <span className="text-sm text-brand-text-secondary">Editor&apos;s estimate</span>
           </div>
         </div>
         <div className="space-y-4">
@@ -59,10 +59,10 @@ const TechPulseMeter = () => {
   return (
     <div className="bg-gradient-to-br from-brand-dark via-slate-900 to-brand-dark rounded-xl p-6 md:p-8 border border-brand-primary/20 shadow-2xl">
       <div className="flex items-center justify-between mb-4 md:mb-6">
-        <h2 className="text-lg md:text-2xl font-bold text-brand-text-primary">Live Tech Pulse</h2>
+        <h2 className="text-lg md:text-2xl font-bold text-brand-text-primary">Tech Pulse</h2>
         <div className="flex items-center space-x-2">
-          <div className="w-2 h-2 bg-brand-primary rounded-full animate-pulse"></div>
-          <span className="text-xs md:text-sm text-brand-text-secondary">Live</span>
+          <div className="w-2 h-2 bg-brand-primary rounded-full"></div>
+          <span className="text-xs md:text-sm text-brand-text-secondary">Editor&apos;s estimate</span>
         </div>
       </div>
 

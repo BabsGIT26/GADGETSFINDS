@@ -43,7 +43,7 @@ const TrendingTopics = () => {
           Trending Topics
         </h3>
         <Link
-          href="/trending"
+          href="/live-news-feed"
           className="text-sm text-primary hover:text-primary/80 font-medium flex items-center gap-1"
         >
           View All

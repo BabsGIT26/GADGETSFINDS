@@ -218,7 +218,7 @@ export default function TeslaOptimusGen3Article() {
           <div className="mt-16 pt-8 border-t border-border">
             <h3 className="text-2xl font-bold text-foreground mb-6">Related Articles</h3>
             <div className="grid md:grid-cols-2 gap-6">
-              <Link href="/nvidia-rtx-6090-ti-article" className="group block">
+              <Link href="/nvidia-rtx-5090-article" className="group block">
                 <div className="rounded-lg border border-border bg-card p-5 transition hover:border-brand-primary">
                   <span className="text-xs font-bold text-brand-primary">Hardware</span>
                   <h4 className="mt-2 text-lg font-bold text-foreground group-hover:text-brand-primary">
