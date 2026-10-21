@@ -63,17 +63,21 @@ export default function Page() {
           <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
             PlayStation 5 Digital Edition — Used Very Good — $539.99
           </h1>
-          <p className="text-muted-foreground mb-8">
+          <p className="text-muted-foreground mb-6">
             Amazon currently lists this <strong>PlayStation 5 Digital Edition</strong> at{" "}
             <strong>$539.99</strong>, condition <strong>Used - Very Good</strong>. Original
             model, <strong>825GB SSD</strong>, no disc drive. Not the Slim 1TB, not a new unit.
             Price and stock change on Amazon.
           </p>
 
-          <AmazonDealBox
-            productName="PS5 Digital Edition — Used Very Good"
+          <a
             href={AMAZON}
-          />
+            target="_blank"
+            rel="nofollow sponsored noopener noreferrer"
+            className="inline-block bg-amber-400 hover:bg-amber-500 text-black font-bold px-6 py-3 rounded-md"
+          >
+            VIEW ON AMAZON
+          </a>
 
           <h2 className="text-2xl font-bold mt-10 mb-3">What this listing is</h2>
           <p className="text-muted-foreground mb-4">
@@ -86,7 +90,10 @@ export default function Page() {
             <li>Storage: 825GB SSD</li>
             <li>Condition: Used - Very Good</li>
             <li>Listed price: $539.99 (changes)</li>
-            <li>In the box on the card: console, DualSense, USB cable, HDMI cable — confirm on the live page</li>
+            <li>
+              In the box on the card: console, DualSense, USB cable, HDMI cable — confirm on the
+              live page
+            </li>
           </ul>
 
           <h2 className="text-2xl font-bold mt-10 mb-3">Digital vs disc</h2>
@@ -100,7 +107,9 @@ export default function Page() {
           <ul className="list-disc pl-5 text-muted-foreground space-y-2 mb-4">
             <li>Used - Very Good is not new. Read the condition notes and return window.</li>
             <li>Confirm seller, completeness, and that the price is still $539.99.</li>
-            <li>825GB is smaller than the Slim’s 1TB. Plan an M.2 if you install several AAA games.</li>
+            <li>
+              825GB is smaller than the Slim’s 1TB. Plan an M.2 if you install several AAA games.
+            </li>
             <li>Do not treat this price as locked.</li>
           </ul>
 
