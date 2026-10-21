@@ -79,6 +79,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <script
+  dangerouslySetInnerHTML={{
+    __html: `(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches)){document.documentElement.classList.add('dark')}}catch(e){}})();`,
+  }}
+/>
         <link
           rel="preload"
           href="/assets/images/c25f7797a5e24e21877a902e49174fd6-1768753589028.png"
