@@ -20,6 +20,18 @@ interface Gadget {
 
 const gadgets: Gadget[] = [
     {
+    name: "MacBook Pro M5 Max",
+    brand: "Apple",
+    category: "Laptops",
+    rating: 4.9,
+    badge: "M5 Max",
+    badgeColor: "bg-zinc-800 text-white",
+    image: "/assets/images/macbook_pro_m5_max.png",
+    alt: "MacBook Pro 16-inch M5 Max",
+    href: "/macbook-pro-m5-max-article",
+    highlights: ["36GB / 2TB", "18-core CPU", "Price changes"],
+  },  
+  {
     name: "Ghost of Yōtei Complete Edition",
     brand: "PlayStation",
     category: "Gaming",
