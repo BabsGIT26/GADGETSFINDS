@@ -66,9 +66,7 @@ export default function Page() {
           <p className="text-muted-foreground mb-6">
             Apple’s 2026 16.2-inch MacBook Pro with the <strong>M5 Max</strong>: 18-core CPU,
             32-core GPU, <strong>36GB</strong> unified memory, <strong>2TB</strong> SSD, Wi-Fi 7.
-            This Amazon card is the Silver finish. Apple’s list for this config is{" "}
-            <strong>$4,399</strong>. Recent Amazon price: <strong>$3,499</strong>. Price and stock
-            change.
+            This Amazon card is the Silver finish. Price and stock change.
           </p>
 
           <a
