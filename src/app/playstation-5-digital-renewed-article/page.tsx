@@ -42,8 +42,8 @@ export default function Page() {
   return (
     <>
       <Header />
-      <article className="min-h-screen bg-background pt-14 md:pt-16">
-        <div className="w-full bg-muted flex items-center justify-center py-10">
+      <article className="min-h-screen bg-background pt-1 md:pt-1">
+        <div className="w-full bg-muted flex items-center justify-center py-10 pb-2">
           <AppImage
             src="/assets/images/playstation_5.png"
             alt="PlayStation 5 Digital Edition"
@@ -51,7 +51,7 @@ export default function Page() {
           />
         </div>
 
-        <div className="container mx-auto px-4 pt-4 pb-10 max-w-3xl">
+        <div className="container mx-auto px-4 pt-2 pb-10 max-w-3xl">
           <p className="text-sm text-black mb-6">
             Disclosure: Gadgets Finds is an Amazon Associate. We may earn from qualifying
             purchases if you buy through links on this page, at no extra cost to you.
