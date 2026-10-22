@@ -121,17 +121,18 @@ export default function Page() {
             <p className="text-muted-foreground mb-4">
               Reviewers noted strong hinge feel, animations, and polish, with trade-offs in weight, camera hardware versus non-folding Pro models, and apps still catching up to the large screen.
             </p>
-            <div> 
-           <a
-              href={AMAZON_IPHONE_DUO}
-              target="_blank"
-              rel="nofollow sponsored noopener noreferrer"
-              className="inline-block bg-amber-400 hover:bg-amber-500 text-black font-bold px-6 py-3 rounded-md"
-            >
-              VIEW ON AMAZON
-            </a>
-              </div>
-            <div className="aspect-video mb-6 rounded-xl overflow-hidden">
+           <div className="mb-6"> 
+<a
+  href={AMAZON_IPHONE_DUO}
+  target="_blank"
+  rel="nofollow sponsored noopener noreferrer"
+  className="inline-block bg-amber-400 hover:bg-amber-500 text-black font-bold px-6 py-3 rounded-md"
+>
+  VIEW ON AMAZON
+</a>
+</div>
+<div className="aspect-video mb-6 rounded-xl overflow-hidden">
+  
               <iframe
                 src="https://www.youtube.com/embed/ESABTN4VtrA"
                 title="iPhone Duo Review"
@@ -245,11 +246,10 @@ export default function Page() {
           <p className="text-sm text-muted-foreground mb-8">
             Prices and stock change. Always confirm the live listing on Amazon before buying. As an Amazon Associate, Gadgets Finds earns from qualifying purchases.
           </p>
-
-          <AmazonDealBox
-            productName="Top Foldable Phones 2026"
-            href={AMAZON_ZFOLD8}
-          />
+<AmazonDealBox
+  productName="Top Foldable Phones 2026"
+  href="https://www.amazon.com/s?k=foldable+phones&tag=gadgetsfindswebsite-20"
+/>
         </div>
       </article>
       <Footer />
