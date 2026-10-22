@@ -93,11 +93,33 @@ export default function Page() {
             <li>Finish on this ASIN: Silver</li>
           </ul>
 
+          <h2 className="text-2xl font-bold mt-10 mb-3">Display and battery</h2>
+          <p className="text-muted-foreground mb-4">
+            The 16.2-inch Liquid Retina XDR stays the main reason people pick this size.
+            1000 nits sustained full-screen, 1600 nits peak on HDR, and ProMotion up to 120Hz.
+            Apple rates battery around 16–22 hours depending on the task. Real-world mixed use
+            is closer to a full workday plus travel, not a full weekend unplugged.
+          </p>
+
+          <div className="my-8 aspect-video">
+            <iframe
+              className="w-full h-full rounded-lg"
+              src="https://www.youtube.com/embed/xDHZ1bEEeUI"
+              title="MacBook Pro M5 Max review"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+
           <h2 className="text-2xl font-bold mt-10 mb-3">Who it is for</h2>
           <p className="text-muted-foreground mb-4">
             Video, 3D, large photo libraries, and on-device AI. 36GB is enough for most pro
             work. Step to 48GB or 64GB only if you already hit memory walls on an M-series Mac.
             2TB is the useful cut if you keep projects local.
+          </p>
+          <p className="text-muted-foreground mb-4">
+            It also makes sense if you want Thunderbolt 5, multiple external displays, and
+            a screen you can actually grade on without an external monitor every day.
           </p>
 
           <h2 className="text-2xl font-bold mt-10 mb-3">Before you click</h2>
