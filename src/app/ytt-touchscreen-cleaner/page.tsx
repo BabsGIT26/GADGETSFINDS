@@ -110,16 +110,18 @@ export default function Page() {
           </ul>
 
           {/* Video near the bottom */}
-          <div className="mb-10 rounded-xl overflow-hidden">
-            <video
-              src="/assets/videos/ytt-touchscreen-cleaner.mp4"
-              controls
-              playsInline
-              className="w-full h-auto"
-            >
-              Your browser does not support the video tag.
-            </video>
-          </div>
+          {/* Video near the bottom — reduced size */}
+<div className="mb-10 flex justify-center">
+  <video
+   src="/assets/videos/ytt-touchscreen-cleaner.mp4"
+    controls
+    playsInline
+    className="w-full max-w-[280px] h-auto rounded-xl"
+  >
+    Your browser does not support the video tag.
+  </video>
+</div>
+         
 
           <p className="text-sm text-muted-foreground mb-8">
             As an Amazon Associate, Gadgets Finds earns from qualifying purchases. Prices and availability change on Amazon.
