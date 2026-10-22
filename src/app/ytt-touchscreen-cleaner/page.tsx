@@ -112,7 +112,7 @@ export default function Page() {
           {/* Video near the bottom */}
           <div className="mb-10 rounded-xl overflow-hidden">
             <video
-              src="/ytt-touchscreen-cleaner.mp4"
+              src="/assets/videos/ytt-touchscreen-cleaner.mp4"
               controls
               playsInline
               className="w-full h-auto"
