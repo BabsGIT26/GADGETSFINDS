@@ -11,14 +11,14 @@ const AMAZON_PIXEL_FOLD = "https://www.amazon.com/dp/B0H6R2NGMZ?tag=gadgetsfinds
 export const metadata: Metadata = {
   title: "Best Foldable Phones 2026: iPhone Duo vs Galaxy Z Fold 8 vs Pixel 11 Pro Fold | Gadgets Finds",
   description:
-    "Premium comparison of the top foldable phones in 2026. iPhone Duo, Samsung Galaxy Z Fold 8, Galaxy Z Fold 8 Ultra, and Google Pixel 11 Pro Fold. Specs, MKBHD insights, videos, and Amazon links.",
+    "Premium comparison of the top foldable phones in 2026. iPhone Duo, Samsung Galaxy Z Fold 8, Galaxy Z Fold 8 Ultra, and Google Pixel 11 Pro Fold. Specs, reviews, and Amazon links.",
   metadataBase: new URL("https://www.gadgets-finds.com"),
   alternates: {
     canonical: "https://www.gadgets-finds.com/best-foldable-phones-2026",
   },
   openGraph: {
     title: "Best Foldable Phones 2026 Comparison",
-    description: "iPhone Duo, Galaxy Z Fold 8, Pixel 11 Pro Fold — premium foldables compared with videos and reviews.",
+    description: "iPhone Duo, Galaxy Z Fold 8, Pixel 11 Pro Fold — premium foldables compared.",
     url: "https://www.gadgets-finds.com/best-foldable-phones-2026",
     siteName: "Gadgets Finds",
     type: "article",
@@ -58,17 +58,8 @@ export default function Page() {
             Best Foldable Phones 2026
           </h1>
           <p className="text-muted-foreground mb-8 text-lg">
-            Apple finally entered the foldable market with the iPhone Duo. Samsung refined its Galaxy Z Fold 8 line, and Google improved the Pixel 11 Pro Fold. Here’s how the top premium options compare in late 2026, including insights and videos from reviewers like Marques Brownlee (MKBHD).
+            Apple finally entered the foldable market with the iPhone Duo. Samsung refined its Galaxy Z Fold 8 line, and Google improved the Pixel 11 Pro Fold. Here’s how the top premium options compare in late 2026.
           </p>
-
-          {/* Hero comparison image */}
-          <div className="mb-10 rounded-xl overflow-hidden">
-            <img
-              src="https://cdn.neowin.com/news/images/uploaded/2026/09/1790266513_foldables_16x9_gray_left_full.webp"
-              alt="iPhone Duo, Galaxy Z Fold 8 Ultra and Pixel 11 Pro Fold comparison"
-              className="w-full h-auto object-cover"
-            />
-          </div>
 
           <div className="overflow-x-auto mb-12">
             <table className="w-full text-sm border-collapse">
@@ -128,14 +119,13 @@ export default function Page() {
               Apple’s first foldable. Book-style design with a 5.4-inch cover screen and 7.6-inch inner display (nano-texture). Powered by the A20 Pro, IP68, titanium build. Starts at $1,999.
             </p>
             <p className="text-muted-foreground mb-4">
-              MKBHD tested it for over a week and called it “first-generation fun.” He praised the hinge, animations, and overall polish, but noted the weight, weaker cameras compared to Pro models, lack of Face ID (Touch ID instead), and apps that aren’t fully optimized for the large screen. His take: most people should skip it unless they specifically want the foldable experience.
+              Reviewers noted strong hinge feel, animations, and polish, with trade-offs in weight, camera hardware versus non-folding Pro models, and apps still catching up to the large screen.
             </p>
 
-            {/* MKBHD iPhone Duo video */}
             <div className="aspect-video mb-6 rounded-xl overflow-hidden">
               <iframe
                 src="https://www.youtube.com/embed/ESABTN4VtrA"
-                title="MKBHD iPhone Duo Review"
+                title="iPhone Duo Review"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
                 className="w-full h-full"
@@ -163,8 +153,8 @@ export default function Page() {
             <h2 className="text-2xl md:text-3xl font-bold mb-4">Samsung Galaxy Z Fold 8</h2>
             <div className="mb-6 rounded-xl overflow-hidden">
               <img
-                src="https://www.sammyfans.com/wp-content/uploads/2026/08/mkbhd-galaxy-z-fold-8-review-img.jpg"
-                alt="Galaxy Z Fold 8"
+                src="https://img.global.news.samsung.com/global/wp-content/uploads/2026/07/22215407/Samsung-Mobile-Galaxy-Unpacked-July-2026-Galaxy-Z-Fold8-Ultra-Galaxy-Z-Fold8-Galaxy-Z-Flip8-Launch_Thumb932.jpg"
+                alt="Samsung Galaxy Z Fold 8"
                 className="w-full h-auto"
               />
             </div>
@@ -172,20 +162,8 @@ export default function Page() {
               The lightest premium foldable right now at just 201 g. Passport-style shape with a wider cover screen (5.5") that feels more natural one-handed. Inner screen is 7.6". Snapdragon 8 Elite Gen 5, 4,800 mAh battery.
             </p>
             <p className="text-muted-foreground mb-4">
-              MKBHD was more impressed than he expected. He liked the thinner, more usable cover screen and said the form factor felt daily-drivable. Main trade-offs are the lack of a dedicated telephoto and only IP48 dust resistance.
+              Reviewers liked the thinner, more usable cover screen and said the form factor felt daily-drivable. Main trade-offs are the lack of a dedicated telephoto and only IP48 dust resistance.
             </p>
-
-            {/* MKBHD Z Fold 8 video */}
-            <div className="aspect-video mb-6 rounded-xl overflow-hidden">
-              <iframe
-                src="https://www.youtube.com/embed/Z6z_feacXW8"
-                title="MKBHD Galaxy Z Fold 8 Review"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="w-full h-full"
-              />
-            </div>
-
             <ul className="list-disc pl-5 text-muted-foreground space-y-1 mb-6">
               <li>Lightest major foldable</li>
               <li>Best cover screen usability</li>
@@ -205,6 +183,13 @@ export default function Page() {
           {/* Galaxy Z Fold 8 Ultra */}
           <section className="mb-16">
             <h2 className="text-2xl md:text-3xl font-bold mb-4">Samsung Galaxy Z Fold 8 Ultra</h2>
+            <div className="mb-6 rounded-xl overflow-hidden">
+              <img
+                src="https://content.abt.com/media/images/products/BDP_Images/samsung-galaxy-z-fold8-ultra-graphite-rear-front.jpg"
+                alt="Samsung Galaxy Z Fold 8 Ultra"
+                className="w-full h-auto"
+              />
+            </div>
             <p className="text-muted-foreground mb-4">
               The bigger, more feature-packed version. 8-inch inner screen, 6.5-inch cover, 200 MP main camera, and a thinner body. Starts around $2,099.
             </p>
@@ -226,7 +211,7 @@ export default function Page() {
             <h2 className="text-2xl md:text-3xl font-bold mb-4">Google Pixel 11 Pro Fold</h2>
             <div className="mb-6 rounded-xl overflow-hidden">
               <img
-                src="https://i.guim.co.uk/img/media/465c638d2a524d24640b81b56960b158ce2eba32/811_172_5328_4263/master/5328.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0"
+                src="https://m-cdn.phonearena.com/images/article/182546-wide-two_1200/Pixel-11-Pro-Fold-is-here-Tensor-G6-incredible-Super-Actua-display-and-HiLight.jpg"
                 alt="Google Pixel 11 Pro Fold"
                 className="w-full h-auto"
               />
