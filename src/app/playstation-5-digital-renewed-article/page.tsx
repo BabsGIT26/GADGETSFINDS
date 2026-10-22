@@ -1,4 +1,4 @@
- import type { Metadata } from "next";
+import type { Metadata } from "next";
 import AppImage from "@/components/ui/AppImage";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
@@ -106,14 +106,22 @@ export default function Page() {
           <p className="text-muted-foreground mb-4">
             Used — Very Good means the unit has been checked and works, with light cosmetic wear possible.
             Confirm the exact storage, what is included (console, DualSense, cables), seller, and return
-            window on the live Amazon page before you buy. Modern games fill storage quickly.
+            window on the live Amazon page before you buy. Modern games fill storage quickly — an
+            official-spec M.2 SSD can be added later if needed.
+          </p>
+
+          <h2 className="text-2xl font-bold mt-10 mb-3">Who should consider it</h2>
+          <p className="text-muted-foreground mb-4">
+            This listing makes sense if you want the lowest entry into the PS5 generation, you only
+            buy digital games, and you are comfortable with a used condition. Skip it if you still
+            have a library of physical discs or plan to play 4K Blu-rays.
           </p>
 
           <h2 className="text-2xl font-bold mt-10 mb-3">Watch-outs</h2>
           <ul className="list-disc pl-5 text-muted-foreground space-y-2 mb-4">
             <li>Check seller, condition notes, and return window on Amazon before buying.</li>
             <li>Confirm it is a complete kit: console, DualSense, HDMI, power cable.</li>
-            <li>Storage fills up fast. An official-spec internal M.2 SSD can be added later if needed.</li>
+            <li>Storage fills up fast. Budget an official-spec internal M.2 SSD if you want several AAA games.</li>
             <li>Prices move. Recheck the live Amazon page.</li>
           </ul>
 
