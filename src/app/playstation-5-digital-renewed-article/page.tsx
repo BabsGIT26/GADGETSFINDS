@@ -4,20 +4,20 @@ import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 
-const AMAZON =
-  "https://www.amazon.com/dp/B0966NLTZS?tag=gadgetsfindswebsite-20";
+const AMAZON_PS5_DIGITAL_RENEWED =
+  "https://www.amazon.com/dp/B09SVM186Y?linkCode=ll2&tag=gadgetsfindswebsite-20&language=en_US&ref_=as_li_ss_tl";
 
 export const metadata: Metadata = {
-  title: "PS5 Digital Edition Used Very Good — $539.99 | Gadgets Finds",
+  title: "PS5 Digital Edition (Renewed) Deal — $569.99 | Gadgets Finds",
   description:
-    "PlayStation 5 Digital Edition, Used - Very Good, listed at $539.99 on Amazon. Original model, 825GB SSD, no disc drive. Price changes.",
+    "Amazon deal: Playstation 5 Digital Edition PS5 Gaming Console (Renewed), 1 TB, now $569.99.",
   metadataBase: new URL("https://www.gadgets-finds.com"),
   alternates: {
     canonical: "https://www.gadgets-finds.com/playstation-5-digital-renewed-article",
   },
   openGraph: {
-    title: "PS5 Digital Edition — Used Very Good — $539.99",
-    description: "Used - Very Good Digital Edition, 825GB, $539.99. Price changes.",
+    title: "PS5 Digital Edition (Renewed) — $569.99",
+    description: "Renewed Digital Edition on Amazon, 1 TB, $569.99.",
     url: "https://www.gadgets-finds.com/playstation-5-digital-renewed-article",
     siteName: "Gadgets Finds",
     type: "article",
@@ -33,7 +33,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@Gadgets_finds",
-    title: "PS5 Digital Edition — Used Very Good — $539.99",
+    title: "PS5 Digital Edition (Renewed) — $569.99",
+    description: "Renewed Digital Edition, 1 TB, $569.99.",
     images: ["/assets/images/playstation_5.png"],
   },
 };
@@ -46,32 +47,27 @@ export default function Page() {
         <div className="w-full bg-muted flex items-center justify-center py-10 pb-2">
           <AppImage
             src="/assets/images/playstation_5.png"
-            alt="PlayStation 5 Digital Edition"
+            alt="PlayStation 5 Digital Edition (Renewed)"
             className="max-h-[400px] w-auto max-w-[85%] object-contain"
           />
         </div>
 
         <div className="container mx-auto px-4 pt-2 pb-10 max-w-3xl">
-          <p className="text-sm text-black mb-6">
-            Disclosure: Gadgets Finds is an Amazon Associate. We may earn from qualifying
-            purchases if you buy through links on this page, at no extra cost to you.
-          </p>
-
           <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">
             Gaming deal
           </p>
           <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-            PlayStation 5 Digital Edition — Used Very Good — $539.99
+            Playstation 5 Digital Edition PS5 Gaming Console (Renewed): $569.99
           </h1>
-          <p className="text-muted-foreground mb-6">
-            Amazon currently lists this <strong>PlayStation 5 Digital Edition</strong> at{" "}
-            <strong>$539.99</strong>, condition <strong>Used - Very Good</strong>. Original
-            model, <strong>825GB SSD</strong>, no disc drive. Not the Slim 1TB, not a new unit.
-            Price and stock change on Amazon.
+          <p className="text-muted-foreground mb-8">
+            Amazon currently lists the{" "}
+            <strong>Playstation 5 Digital Edition PS5 Gaming Console (Renewed)</strong> at{" "}
+            <strong>$569.99</strong>. Storage is <strong>1 TB</strong>. This is the digital model:
+            no disc drive. Price and stock change on Amazon.
           </p>
 
           <a
-            href={AMAZON}
+            href={AMAZON_PS5_DIGITAL_RENEWED}
             target="_blank"
             rel="nofollow sponsored noopener noreferrer"
             className="inline-block bg-amber-400 hover:bg-amber-500 text-black font-bold px-6 py-3 rounded-md"
@@ -81,48 +77,64 @@ export default function Page() {
 
           <h2 className="text-2xl font-bold mt-10 mb-3">What this listing is</h2>
           <p className="text-muted-foreground mb-4">
-            Digital means PlayStation Store only. No physical discs, no 4K Blu-ray, unless you
-            add a compatible disc drive later. The card lists 16GB GDDR6 and an 825GB SSD.
-            Condition on the listing is Used - Very Good, not New.
+            This is a <strong>Renewed</strong> Digital Edition PS5, not a brand-new disc Slim. It
+            plays PS5 and PS4 digital games from the PlayStation Store. It does not play physical
+            discs or 4K Blu-rays unless you add a compatible disc drive later.
           </p>
           <ul className="list-disc pl-5 text-muted-foreground space-y-2 mb-4">
-            <li>Model: PlayStation 5 Digital Edition (original, not Slim)</li>
-            <li>Storage: 825GB SSD</li>
-            <li>Condition: Used - Very Good</li>
-            <li>Listed price: $539.99 (changes)</li>
-            <li>
-              In the box on the card: console, DualSense, USB cable, HDMI cable — confirm on the
-              live page
-            </li>
+            <li>Model: Playstation 5 Digital Edition PS5 Gaming Console (Renewed)</li>
+            <li>Storage: 1 TB SSD</li>
+            <li>Deal price: $569.99</li>
+            <li>ASIN: B09SVM186Y</li>
           </ul>
 
           <h2 className="text-2xl font-bold mt-10 mb-3">Digital vs disc</h2>
           <p className="text-muted-foreground mb-4">
-            Buy this if you only download games. Buy a disc model if you still use physical
-            games. GTA 6’s boxed edition is a download code, so the missing drive matters less
-            for that title.
+            Buy this if you are fine with PSN downloads only. Buy a disc model if you still use
+            physical games or want 4K Blu-ray. For a download-only title like GTA 6’s boxed edition
+            (code in a box), the missing drive is less important.
           </p>
 
-          <h2 className="text-2xl font-bold mt-10 mb-3">Before you click</h2>
+          <div className="my-8 aspect-video">
+            <iframe
+              className="w-full h-full rounded-lg"
+              src="https://www.youtube.com/embed/RkC0l4iekYo"
+              title="PlayStation 5 Hardware Reveal"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+
+          <h2 className="text-2xl font-bold mt-10 mb-3">Storage and what you actually get</h2>
+          <p className="text-muted-foreground mb-4">
+            The original Digital Edition ships with a custom SSD (listed around 825GB on many cards,
+            with usable space lower after the system). 1 TB fills quickly with modern games. An
+            official-spec M.2 SSD can be added later if you want more room. Confirm the exact
+            capacity and what is included (console, DualSense, cables) on the live Amazon page
+            before you buy.
+          </p>
+
+          <h2 className="text-2xl font-bold mt-10 mb-3">Watch-outs on Renewed</h2>
           <ul className="list-disc pl-5 text-muted-foreground space-y-2 mb-4">
-            <li>Used - Very Good is not new. Read the condition notes and return window.</li>
-            <li>Confirm seller, completeness, and that the price is still $539.99.</li>
+            <li>Check seller, condition notes, and return window on Amazon before buying.</li>
+            <li>Confirm it is a complete kit: console, DualSense, HDMI, power cable.</li>
             <li>
-              825GB is smaller than the Slim’s 1TB. Plan an M.2 if you install several AAA games.
+              1 TB fills up fast. Budget an official-spec internal M.2 SSD if you want several AAA
+              games installed.
             </li>
-            <li>Do not treat this price as locked.</li>
+            <li>Prices move. Recheck the live Amazon page.</li>
           </ul>
 
           <h2 className="text-2xl font-bold mt-10 mb-3">Verdict</h2>
-          <p className="text-muted-foreground mb-8">
-            At $539.99 this is a Used Very Good Digital Edition if you want downloads only and
-            you accept used condition. Skip it if you need discs or a new unit. Open the listing
-            before you pay.
+          <p className="text-muted-foreground mb-4">
+            At $569.99 this Renewed Digital Edition is worth a look if you want a PS5 without a
+            disc drive and you accept Amazon Renewed condition. If you want physical games, skip
+            this listing and get a disc Slim instead.
           </p>
 
           <AmazonDealBox
-            productName="PS5 Digital Edition — Used Very Good"
-            href={AMAZON}
+            productName="Playstation 5 Digital Edition PS5 Gaming Console (Renewed)"
+            href={AMAZON_PS5_DIGITAL_RENEWED}
           />
         </div>
       </article>
