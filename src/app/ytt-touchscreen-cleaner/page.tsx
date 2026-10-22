@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
+import AmazonDealBox from "@/components/common/AmazonDealBox";
 
 const AMAZON = "https://www.amazon.com/Touchscreen-Cleaner-Versatile-Cleaners-Microfiber/dp/B07MB8P28S?tag=gadgetsfindswebsmediavid-20";
 
@@ -57,8 +58,8 @@ export default function Page() {
             Portable two-in-one spray and microfiber cloth for phones, iPads, laptops, car touchscreens, and other electronic devices.
           </p>
 
-          {/* First button — visible without scrolling */}
-          <div className="mb-10">
+          {/* Simple yellow button at the top — visible without scrolling */}
+          <div className="mb-6">
             <a
               href={AMAZON}
               target="_blank"
@@ -67,6 +68,15 @@ export default function Page() {
             >
               VIEW ON AMAZON
             </a>
+          </div>
+
+          {/* Product image right after the button — reduced size */}
+          <div className="mb-10 flex justify-center">
+            <img
+              src="https://m.media-amazon.com/images/I/71dnnsMpNpL._AC_UL450_SY450_QL70_.jpg"
+              alt="YTT Touchscreen Screen Cleaner Spray"
+              className="w-full max-w-[280px] h-auto rounded-xl"
+            />
           </div>
 
           <h2 className="text-2xl font-bold mt-10 mb-3">What it is</h2>
@@ -99,34 +109,27 @@ export default function Page() {
             <li>Check the live Amazon listing for current price and pack size.</li>
           </ul>
 
-          {/* Video near the end */}
+          {/* Video near the bottom */}
           <div className="mb-10 rounded-xl overflow-hidden">
             <video
               src="/ytt-touchscreen-cleaner.mp4"
               controls
               playsInline
               className="w-full h-auto"
-              poster="https://m.media-amazon.com/images/I/71dnnsMpNpL._AC_UL450_SY450_QL70_.jpg"
             >
               Your browser does not support the video tag.
             </video>
           </div>
 
-          {/* Second button */}
-          <div className="mb-8">
-            <a
-              href={AMAZON}
-              target="_blank"
-              rel="nofollow sponsored noopener noreferrer"
-              className="inline-block bg-amber-400 hover:bg-amber-500 text-black font-bold px-6 py-3 rounded-md"
-            >
-              VIEW ON AMAZON
-            </a>
-          </div>
-
-          <p className="text-sm text-muted-foreground">
+          <p className="text-sm text-muted-foreground mb-8">
             As an Amazon Associate, Gadgets Finds earns from qualifying purchases. Prices and availability change on Amazon.
           </p>
+
+          {/* Full AmazonDealBox at the bottom (black style + disclosure) */}
+          <AmazonDealBox
+            productName="YTT Touchscreen Screen Cleaner Spray"
+            href={AMAZON}
+          />
         </div>
       </article>
       <Footer />
