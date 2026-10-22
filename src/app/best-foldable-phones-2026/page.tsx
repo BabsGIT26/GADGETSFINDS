@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "https://macdailynews.com/wp-content/uploads/2026/09/260911_iphone_duo.png",
+        url: "https://images.samsung.com/africa_fr/smartphones/galaxy-z-fold8-ultra/images/galaxy-z-fold8-ultra-share-image.jpg ",
         width: 1200,
         height: 630,
         alt: "Best Foldable Phones 2026",
@@ -121,7 +121,14 @@ export default function Page() {
             <p className="text-muted-foreground mb-4">
               Reviewers noted strong hinge feel, animations, and polish, with trade-offs in weight, camera hardware versus non-folding Pro models, and apps still catching up to the large screen.
             </p>
-
+           <a
+              href={AMAZON_IPHONE_DUO}
+              target="_blank"
+              rel="nofollow sponsored noopener noreferrer"
+              className="inline-block bg-amber-400 hover:bg-amber-500 text-black font-bold px-6 py-3 rounded-md"
+            >
+              VIEW ON AMAZON
+            </a>
             <div className="aspect-video mb-6 rounded-xl overflow-hidden">
               <iframe
                 src="https://www.youtube.com/embed/ESABTN4VtrA"
@@ -138,14 +145,7 @@ export default function Page() {
               <li>No dedicated telephoto</li>
               <li>Best if you are already in the Apple ecosystem</li>
             </ul>
-            <a
-              href={AMAZON_IPHONE_DUO}
-              target="_blank"
-              rel="nofollow sponsored noopener noreferrer"
-              className="inline-block bg-amber-400 hover:bg-amber-500 text-black font-bold px-6 py-3 rounded-md"
-            >
-              VIEW ON AMAZON
-            </a>
+           
           </section>
 
           {/* Galaxy Z Fold 8 */}
