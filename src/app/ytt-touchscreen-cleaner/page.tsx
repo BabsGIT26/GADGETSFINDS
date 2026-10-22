@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "/og-home.png",
+        url: "https://m.media-amazon.com/images/I/71dnnsMpNpL._AC_UL450_SY450_QL70_.jpg",
         width: 1200,
         height: 630,
         alt: "YTT Touchscreen Screen Cleaner",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@Gadgets_finds",
     title: "YTT Touchscreen Screen Cleaner Spray",
-    images: ["/og-home.png"],
+    images: ["https://m.media-amazon.com/images/I/71dnnsMpNpL._AC_UL450_SY450_QL70_.jpg"],
   },
 };
 
@@ -58,7 +58,7 @@ export default function Page() {
           </p>
 
           {/* First button — visible without scrolling */}
-          <div className="mb-8">
+          <div className="mb-10">
             <a
               href={AMAZON}
               target="_blank"
@@ -67,19 +67,6 @@ export default function Page() {
             >
               VIEW ON AMAZON
             </a>
-          </div>
-
-          {/* TikTok video */}
-          <div className="mb-10">
-            <blockquote
-              className="tiktok-embed"
-              cite="https://www.tiktok.com/@unboxingexpert/video/7096755003356138757"
-              data-video-id="7096755003356138757"
-              style={{ maxWidth: "605px", minWidth: "325px", margin: "0 auto" }}
-            >
-              <section></section>
-            </blockquote>
-            <script async src="https://www.tiktok.com/embed.js"></script>
           </div>
 
           <h2 className="text-2xl font-bold mt-10 mb-3">What it is</h2>
@@ -106,13 +93,26 @@ export default function Page() {
           </p>
 
           <h2 className="text-2xl font-bold mt-10 mb-3">Watch-outs</h2>
-          <ul className="list-disc pl-5 text-muted-foreground space-y-2 mb-8">
+          <ul className="list-disc pl-5 text-muted-foreground space-y-2 mb-10">
             <li>Use sparingly — too much liquid can leave streaks on some screens.</li>
             <li>Not a substitute for a dedicated camera lens cleaner.</li>
             <li>Check the live Amazon listing for current price and pack size.</li>
           </ul>
 
-          {/* Second button near the bottom */}
+          {/* Video near the end */}
+          <div className="mb-10 rounded-xl overflow-hidden">
+            <video
+              src="/ytt-touchscreen-cleaner.mp4"
+              controls
+              playsInline
+              className="w-full h-auto"
+              poster="https://m.media-amazon.com/images/I/71dnnsMpNpL._AC_UL450_SY450_QL70_.jpg"
+            >
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          {/* Second button */}
           <div className="mb-8">
             <a
               href={AMAZON}
