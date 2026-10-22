@@ -121,6 +121,7 @@ export default function Page() {
             <p className="text-muted-foreground mb-4">
               Reviewers noted strong hinge feel, animations, and polish, with trade-offs in weight, camera hardware versus non-folding Pro models, and apps still catching up to the large screen.
             </p>
+            <div> 
            <a
               href={AMAZON_IPHONE_DUO}
               target="_blank"
@@ -129,6 +130,7 @@ export default function Page() {
             >
               VIEW ON AMAZON
             </a>
+              </div>
             <div className="aspect-video mb-6 rounded-xl overflow-hidden">
               <iframe
                 src="https://www.youtube.com/embed/ESABTN4VtrA"
@@ -185,7 +187,7 @@ export default function Page() {
             <h2 className="text-2xl md:text-3xl font-bold mb-4">Samsung Galaxy Z Fold 8 Ultra</h2>
             <div className="mb-6 rounded-xl overflow-hidden">
               <img
-                src="https://content.abt.com/media/images/products/BDP_Images/samsung-galaxy-z-fold8-ultra-graphite-rear-front.jpg"
+                src="https://media.nextmobiles.com/wp-content/uploads/2026/07/Samsung-Galaxy-Z-Fold-8-Ultra-blog-Next-Mobiles.jpeg"
                 alt="Samsung Galaxy Z Fold 8 Ultra"
                 className="w-full h-auto"
               />
