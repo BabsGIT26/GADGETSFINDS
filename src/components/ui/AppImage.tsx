@@ -64,7 +64,7 @@ function AppImage({
         setHasError(false);
     };
 
-    const commonClassName = `${className} ${isLoading && !priority ? 'bg-gray-200' : ''} ${onClick ? 'cursor-pointer hover:opacity-90 transition-opacity' : ''}`;
+   const commonClassName = `${className} rounded-xl ${isLoading && !priority ? 'bg-gray-200' : ''} ${onClick ? 'cursor-pointer hover:opacity-90 transition-opacity' : ''}`;
 
     // For external URLs or when in doubt, use regular img tag
     if (isExternal && !isLocal) {
