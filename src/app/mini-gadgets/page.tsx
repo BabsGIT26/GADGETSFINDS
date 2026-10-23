@@ -24,7 +24,14 @@ const gadgets = [
     image: "https://m.media-amazon.com/images/I/71dnnsMpNpL._AC_UL450_SY450_QL70_.jpg",
     excerpt: "Two-in-one spray and microfiber cloth for phones, tablets, laptops, and car screens.",
   },
+  {
+  title: "Outlet Extender Stick for Behind Couch",
+  href: "/outlet-extender-stick",
+  image: "https://m.media-amazon.com/images/I/51DW7RN3fEL.jpg",
+  excerpt: "Bring hard-to-reach outlets behind couches and desks within easy reach.",
+},
   // Add more mini gadgets here later
+  
 ];
 
 export default function Page() {
