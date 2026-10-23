@@ -58,7 +58,6 @@ export default function Page() {
             Portable two-in-one spray and microfiber cloth for phones, iPads, laptops, car touchscreens, and other electronic devices.
           </p>
 
-          {/* Simple yellow button at the top — visible without scrolling */}
           <div className="mb-6">
             <a
               href={AMAZON}
@@ -70,7 +69,6 @@ export default function Page() {
             </a>
           </div>
 
-          {/* Product image right after the button — reduced size */}
           <div className="mb-10 flex justify-center">
             <img
               src="https://m.media-amazon.com/images/I/71dnnsMpNpL._AC_UL450_SY450_QL70_.jpg"
@@ -81,53 +79,42 @@ export default function Page() {
 
           <h2 className="text-2xl font-bold mt-10 mb-3">What it is</h2>
           <p className="text-muted-foreground mb-4">
-            A compact screen cleaner that combines a spray bottle with a microfiber cloth. The design is meant to be carried in a bag or kept in a car so you can clean fingerprints and smudges without hunting for wipes.
+            A compact screen cleaner that combines a spray bottle with an attached microfiber cloth. The goal is simple: clean fingerprints and smudges on the go without carrying separate wipes and a bottle.
           </p>
 
-          <h2 className="text-2xl font-bold mt-10 mb-3">Where it works</h2>
+          <h2 className="text-2xl font-bold mt-10 mb-3">How it works</h2>
+          <p className="text-muted-foreground mb-4">
+            You spray a small amount onto the cloth (or lightly onto the screen if you prefer), then wipe. Because the cloth stays attached to the bottle, it’s harder to lose one of the two pieces. Most people use it on phones, tablets, laptop screens, and car touchscreens.
+          </p>
+
+          <h2 className="text-2xl font-bold mt-10 mb-3">Who it’s useful for</h2>
           <ul className="list-disc pl-5 text-muted-foreground space-y-2 mb-4">
-            <li>Smartphone and tablet screens</li>
-            <li>Laptop and monitor displays</li>
-            <li>Car touchscreens and navigation systems</li>
-            <li>Other glass and glossy electronic surfaces</li>
+            <li>People who constantly wipe fingerprints off their phone</li>
+            <li>Drivers who deal with smudges on the car screen</li>
+            <li>Anyone who prefers a reusable option over disposable wipes</li>
           </ul>
 
-          <h2 className="text-2xl font-bold mt-10 mb-3">How people use it</h2>
-          <p className="text-muted-foreground mb-4">
-            Spray a small amount on the cloth (not directly on the screen if you prefer), then wipe. The attached cloth stays with the bottle, so the cleaner is less likely to get separated from the wipe.
-          </p>
-
-          <h2 className="text-2xl font-bold mt-10 mb-3">Who it is for</h2>
-          <p className="text-muted-foreground mb-4">
-            Anyone who deals with frequent fingerprints on phones, tablets, or car screens and wants a reusable option instead of disposable wipes.
-          </p>
-
-          <h2 className="text-2xl font-bold mt-10 mb-3">Watch-outs</h2>
+          <h2 className="text-2xl font-bold mt-10 mb-3">Limitations</h2>
           <ul className="list-disc pl-5 text-muted-foreground space-y-2 mb-10">
-            <li>Use sparingly — too much liquid can leave streaks on some screens.</li>
-            <li>Not a substitute for a dedicated camera lens cleaner.</li>
-            <li>Check the live Amazon listing for current price and pack size.</li>
+            <li>Not ideal for camera lenses or very sensitive coatings</li>
+            <li>Too much liquid can leave streaks on some screens</li>
+            <li>Results vary depending on the type of screen and how dirty it is</li>
           </ul>
 
-          {/* Video near the bottom */}
-         {/* YouTube Short — same design as MacBook page */}
-<div className="my-8 aspect-video">
-  <iframe
-    className="w-full h-full rounded-lg"
-    src="https://www.youtube.com/embed/iftP7v5lzD4"
-    title="YTT Touchscreen Cleaner"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowFullScreen
-  />
-</div>
- 
-         
+          <div className="my-8 aspect-video">
+            <iframe
+              className="w-full h-full rounded-lg"
+              src="https://www.youtube.com/embed/iftP7v5lzD4"
+              title="YTT Touchscreen Cleaner"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
 
           <p className="text-sm text-muted-foreground mb-8">
             As an Amazon Associate, Gadgets Finds earns from qualifying purchases. Prices and availability change on Amazon.
           </p>
 
-          {/* Full AmazonDealBox at the bottom (black style + disclosure) */}
           <AmazonDealBox
             productName="YTT Touchscreen Screen Cleaner Spray"
             href={AMAZON}
