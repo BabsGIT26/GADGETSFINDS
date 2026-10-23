@@ -43,7 +43,7 @@ export default function Page() {
             Small tools and accessories that solve everyday annoyances.
           </p>
 
-          <div className="grid grid-cols-1 gap-6 max-w-xs">
+           <div className="grid grid-cols-1 gap-6 max-w-[110px]"> 
             {gadgets.map((item) => (
               <Link
                 key={item.href}
