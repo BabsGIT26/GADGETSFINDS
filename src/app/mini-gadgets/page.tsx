@@ -50,13 +50,12 @@ export default function Page() {
                 href={item.href}
                 className="group block bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden hover:border-red-600 transition-colors"
               >
-                 <div className="bg-zinc-800 overflow-hidden">
-  <img
-    src={item.image}
-    alt={item.title}
-    className="w-full h-auto object-contain"
-  />
-</div>
+                <div className="bg-zinc-800 overflow-hidden">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-auto object-contain"
+                  />
                 </div>
                 <div className="p-4">
                   <h2 className="font-semibold text-lg mb-2 group-hover:text-red-500 transition-colors">
