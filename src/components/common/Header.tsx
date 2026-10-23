@@ -147,6 +147,7 @@ const toggleTheme = () => {
 
   const navItems = [
     { label: 'Home', href: '/', icon: 'HomeIcon' },
+    { label: 'Mini Gadgets', href: '/mini-gadgets', icon: 'CubeIcon' },
     { label: 'Live Feed', href: '/live-news-feed', icon: 'RssIcon' },
     { label: 'Compare Gadgets', href: '/product-comparison-engine', icon: 'ScaleIcon' },
     { label: 'CES 2026', href: '/ces-2026-hub', icon: 'CalendarIcon' },
@@ -157,6 +158,7 @@ const toggleTheme = () => {
   // Items shown directly in header on desktop
   const primaryNavItems = [
     { label: 'Home', href: '/', icon: 'HomeIcon' },
+    { label: 'Mini Gadgets', href: '/mini-gadgets', icon: 'CubeIcon' },
     { label: 'Live Feed', href: '/live-news-feed', icon: 'RssIcon' },
     { label: 'Trends', href: '/tech-trends-2026', icon: 'ChartBarIcon' },
     { label: 'Search', href: '/unified-search', icon: 'MagnifyingGlassIcon' },
@@ -167,6 +169,7 @@ const toggleTheme = () => {
   // Items kept in the dropdown menu (desktop: all primary + notifications)
   const dropdownNavItems = [
     { label: 'Home', href: '/', icon: 'HomeIcon' },
+    { label: 'Mini Gadgets', href: '/mini-gadgets', icon: 'CubeIcon' },
     { label: 'Live Feed', href: '/live-news-feed', icon: 'RssIcon' },
     { label: 'Trends', href: '/tech-trends-2026', icon: 'ChartBarIcon' },
     { label: 'Search', href: '/unified-search', icon: 'MagnifyingGlassIcon' },
