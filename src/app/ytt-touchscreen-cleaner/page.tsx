@@ -110,16 +110,17 @@ export default function Page() {
           </ul>
 
           {/* Video near the bottom */}
-          {/* Video near the bottom — reduced size */}
+        {/* YouTube Short — reduced size */}
 <div className="mb-10 flex justify-center">
-  <video
-   src="/assets/videos/ytt-touchscreen-cleaner.mp4"
-    controls
-    playsInline
-    className="w-full max-w-[280px] h-auto rounded-xl"
-  >
-    Your browser does not support the video tag.
-  </video>
+  <div className="w-full max-w-[200px] aspect-[9/16] rounded-xl overflow-hidden">
+    <iframe
+      src="https://www.youtube.com/embed/iftP7v5lzD4"
+      title="YTT Touchscreen Cleaner"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+      className="w-full h-full"
+    />
+  </div>
 </div>
          
 
