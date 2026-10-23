@@ -43,29 +43,31 @@ export default function Page() {
             Small tools and accessories that solve everyday annoyances.
           </p>
 
-           <div className="grid grid-cols-1 gap-6 max-w-[110px]"> 
+            <div className="grid grid-cols-1 gap-6 max-w-[200px]">
             {gadgets.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
                 className="group block bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden hover:border-red-600 transition-colors"
               >
-                <div className="bg-zinc-800 overflow-hidden">
+                <div className="aspect-square bg-zinc-800 overflow-hidden">
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="w-full h-auto object-contain"
+                    className="w-full h-full object-contain"
                   />
                 </div>
-                <div className="p-4">
-                  <h2 className="font-semibold text-lg mb-2 group-hover:text-red-500 transition-colors">
+
+                <div className="p-2">
+                  <h2 className="font-semibold text-sm mb-1 group-hover:text-red-500 transition-colors">
                     {item.title}
                   </h2>
-                  <p className="text-sm text-gray-400 line-clamp-2">{item.excerpt}</p>
-                  <span className="inline-block mt-3 text-red-500 text-sm font-medium">
+                  <p className="text-xs text-gray-400 line-clamp-2">{item.excerpt}</p>
+                  <span className="inline-block mt-2 text-red-500 text-xs font-medium">
                     View →
                   </span>
                 </div>
+                
               </Link>
             ))}
           </div>
