@@ -95,7 +95,7 @@ export default function Page() {
             <li>Current price and included accessories on the Amazon listing</li>
           </ul>
 
-          <div className="my-8 aspect-video">
+                     <div className="my-8 aspect-video">
             <iframe
               className="w-full h-full rounded-lg"
               src="https://www.youtube.com/embed/RGU_XLSoH9A"
