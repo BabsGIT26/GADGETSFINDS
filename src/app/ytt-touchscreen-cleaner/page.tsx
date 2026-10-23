@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+ import type { Metadata } from "next";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
@@ -79,26 +79,39 @@ export default function Page() {
 
           <h2 className="text-2xl font-bold mt-10 mb-3">What it is</h2>
           <p className="text-muted-foreground mb-4">
-            A compact screen cleaner that combines a spray bottle with an attached microfiber cloth. The goal is simple: clean fingerprints and smudges on the go without carrying separate wipes and a bottle.
+            The YTT is a small all-in-one screen cleaner. It combines a fine mist spray bottle with a microfiber cloth sleeve that stays attached. The idea is to clean fingerprints and oily marks without carrying a separate bottle and cloth. It’s roughly the size of a large lipstick and fits in a bag, car console, or laptop sleeve.
           </p>
-
-          <h2 className="text-2xl font-bold mt-10 mb-3">How it works</h2>
           <p className="text-muted-foreground mb-4">
-            You spray a small amount onto the cloth (or lightly onto the screen if you prefer), then wipe. Because the cloth stays attached to the bottle, it’s harder to lose one of the two pieces. Most people use it on phones, tablets, laptop screens, and car touchscreens.
+            Most versions contain about 15 ml of cleaning solution. The liquid is generally alcohol-free and designed for glass and coated screens. Users typically report that a couple of sprays are enough for a phone or tablet.
           </p>
 
-          <h2 className="text-2xl font-bold mt-10 mb-3">Who it’s useful for</h2>
-          <ul className="list-disc pl-5 text-muted-foreground space-y-2 mb-4">
-            <li>People who constantly wipe fingerprints off their phone</li>
-            <li>Drivers who deal with smudges on the car screen</li>
-            <li>Anyone who prefers a reusable option over disposable wipes</li>
-          </ul>
+          <div className="my-8 flex justify-center">
+            <img
+              src="https://media-cldnry.s-nbcnews.com/image/upload/t_social_share_1200x630_center,f_auto,q_auto:best/newscms/2022_40/1912888/221003-screen-cleaners-2x1-aw.jpg"
+              alt="YTT screen cleaner in use"
+              className="w-full max-w-md rounded-xl"
+            />
+          </div>
 
-          <h2 className="text-2xl font-bold mt-10 mb-3">Limitations</h2>
+          <h2 className="text-2xl font-bold mt-10 mb-3">How people use it</h2>
+          <p className="text-muted-foreground mb-4">
+            The common method is to spray a light mist onto the screen (or onto the cloth), then wipe with the microfiber side. Because the cloth is attached, you don’t have to hunt for a separate wipe. Many reviewers say it works better than dry cloths alone on oily fingerprints.
+          </p>
+          <p className="text-muted-foreground mb-4">
+            It’s frequently used on phones, iPads, MacBooks, and car touchscreens. Some people also try it on monitors and smart TVs. Results are generally better on smaller screens; large TVs can require more liquid and more wiping.
+          </p>
+
+          <h2 className="text-2xl font-bold mt-10 mb-3">Strengths and limitations</h2>
+          <ul className="list-disc pl-5 text-muted-foreground space-y-2 mb-4">
+            <li>Convenient for daily fingerprint removal</li>
+            <li>Portable and less likely to lose the cloth</li>
+            <li>Works on most modern phone and tablet screens</li>
+          </ul>
           <ul className="list-disc pl-5 text-muted-foreground space-y-2 mb-10">
-            <li>Not ideal for camera lenses or very sensitive coatings</li>
-            <li>Too much liquid can leave streaks on some screens</li>
-            <li>Results vary depending on the type of screen and how dirty it is</li>
+            <li>Too much liquid can leave streaks on some coatings</li>
+            <li>Not ideal for camera lenses or specialized anti-reflective glass</li>
+            <li>The cloth eventually needs cleaning or replacement</li>
+            <li>Effectiveness varies by screen type and how dirty it is</li>
           </ul>
 
           <div className="my-8 aspect-video">
