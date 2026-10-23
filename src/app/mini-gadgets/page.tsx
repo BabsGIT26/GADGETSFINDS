@@ -43,14 +43,14 @@ export default function Page() {
             Small tools and accessories that solve everyday annoyances.
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-sm mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {gadgets.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
                 className="group block bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden hover:border-red-600 transition-colors"
               >
-                <div className="aspect-square bg-zinc-800 overflow-hidden">
+                <div className="aspect-[4/3] bg-zinc-800 overflow-hidden">
                   <img
                     src={item.image}
                     alt={item.title}
