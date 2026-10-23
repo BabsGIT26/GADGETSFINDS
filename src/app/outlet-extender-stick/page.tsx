@@ -58,7 +58,6 @@ export default function Page() {
             Extendable stick that brings outlets hidden behind couches, desks, and beds within easy reach without moving furniture.
           </p>
 
-          {/* Simple yellow button at the top */}
           <div className="mb-6">
             <a
               href={AMAZON}
@@ -70,7 +69,6 @@ export default function Page() {
             </a>
           </div>
 
-          {/* Product image right after the button */}
           <div className="mb-10 flex justify-center">
             <img
               src="https://m.media-amazon.com/images/I/51DW7RN3fEL.jpg"
@@ -79,36 +77,28 @@ export default function Page() {
             />
           </div>
 
-          <h2 className="text-2xl font-bold mt-10 mb-3">What it is</h2>
+          <h2 className="text-2xl font-bold mt-10 mb-3">What problem it solves</h2>
           <p className="text-muted-foreground mb-4">
-            A telescoping outlet extender designed for outlets blocked by furniture. It plugs into the wall and extends the outlets forward so you can reach them without pulling the couch or desk away from the wall.
+            Many living rooms and bedrooms have outlets that become unreachable once a couch, bed, or desk is pushed against the wall. This extender plugs into the wall outlet and brings the sockets forward so you can access them without moving heavy furniture.
           </p>
 
-          <h2 className="text-2xl font-bold mt-10 mb-3">Key features</h2>
-          <ul className="list-disc pl-5 text-muted-foreground space-y-2 mb-4">
-            <li>Extendable length for different furniture depths</li>
-            <li>Rotating head for flexible positioning</li>
-            <li>Multiple outlets on the front face</li>
-            <li>Slim design that fits behind couches and desks</li>
-          </ul>
-
-          <h2 className="text-2xl font-bold mt-10 mb-3">Where it helps</h2>
+          <h2 className="text-2xl font-bold mt-10 mb-3">How people use it</h2>
           <p className="text-muted-foreground mb-4">
-            Useful behind sofas, beds, nightstands, and desks where the outlet is hard to reach. It keeps the furniture flush against the wall while still giving you access to power.
+            The stick is usually placed behind a sofa or nightstand. The front end has outlets (and sometimes USB ports depending on the model), so you can plug in lamps, chargers, or other devices more easily. Some versions also rotate, which helps when the original outlet is at an awkward angle.
           </p>
 
-          <h2 className="text-2xl font-bold mt-10 mb-3">Watch-outs</h2>
+          <h2 className="text-2xl font-bold mt-10 mb-3">Things to check before buying</h2>
           <ul className="list-disc pl-5 text-muted-foreground space-y-2 mb-10">
-            <li>Check the maximum extension length on the listing before buying.</li>
-            <li>Confirm it matches your outlet type (standard US plug).</li>
-            <li>Price and available ports vary by seller.</li>
+            <li>Maximum extension length (some are 22–34 inches, others differ)</li>
+            <li>Whether it includes USB ports or only AC outlets</li>
+            <li>If the rotating head matches your setup</li>
+            <li>Current price and included accessories on the Amazon listing</li>
           </ul>
 
-          {/* YouTube video — same style as MacBook page */}
           <div className="my-8 aspect-video">
             <iframe
               className="w-full h-full rounded-lg"
-              src="https://youtube.com/shorts/RGU_XLSoH9A?si=_Q-5Itl37y-ei7Hr"
+              src="https://www.youtube.com/embed/RGU_XLSoH9A"
               title="Outlet Extender Stick"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
@@ -119,7 +109,6 @@ export default function Page() {
             As an Amazon Associate, Gadgets Finds earns from qualifying purchases. Prices and availability change on Amazon.
           </p>
 
-          {/* Full AmazonDealBox at the bottom */}
           <AmazonDealBox
             productName="Outlet Extender Stick for Behind Couch"
             href={AMAZON}
