@@ -110,18 +110,17 @@ export default function Page() {
           </ul>
 
           {/* Video near the bottom */}
-        {/* YouTube Short — reduced size */}
-<div className="mb-10 flex justify-center">
-  <div className="w-full max-w-[200px] aspect-[9/16] rounded-xl overflow-hidden">
-    <iframe
-      src="https://www.youtube.com/embed/iftP7v5lzD4"
-      title="YTT Touchscreen Cleaner"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen
-      className="w-full h-full"
-    />
-  </div>
+         {/* YouTube Short — same design as MacBook page */}
+<div className="my-8 aspect-video">
+  <iframe
+    className="w-full h-full rounded-lg"
+    src="https://www.youtube.com/embed/iftP7v5lzD4"
+    title="YTT Touchscreen Cleaner"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  />
 </div>
+ 
          
 
           <p className="text-sm text-muted-foreground mb-8">
