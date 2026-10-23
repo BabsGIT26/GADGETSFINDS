@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+ import type { Metadata } from "next";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
@@ -77,25 +77,49 @@ export default function Page() {
             />
           </div>
 
-          <h2 className="text-2xl font-bold mt-10 mb-3">What problem it solves</h2>
+          <h2 className="text-2xl font-bold mt-10 mb-3">The problem it solves</h2>
           <p className="text-muted-foreground mb-4">
-            Many living rooms and bedrooms have outlets that become unreachable once a couch, bed, or desk is pushed against the wall. This extender plugs into the wall outlet and brings the sockets forward so you can access them without moving heavy furniture.
+            In many homes, wall outlets end up blocked once a couch, bed, or desk is placed against the wall. Reaching them usually means moving heavy furniture or crawling behind it. Outlet extender sticks plug into the wall outlet and bring the sockets forward so you can use them more easily.
+          </p>
+          <p className="text-muted-foreground mb-4">
+            Most models are telescoping and range from roughly 18 to 35 inches when extended. Some also rotate at the base or the head, which helps when the original outlet is horizontal or in a tight corner.
           </p>
 
-          <h2 className="text-2xl font-bold mt-10 mb-3">How people use it</h2>
+          <div className="my-8 flex justify-center">
+            <img
+              src="https://s.yimg.com/lo/mysterio/api/b4a489a9106ad419e74f886e1491c42324ee363187f7bc2f204c62ba6955fbaa/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2F71rvcckj7dl._ac_sl1500__5767.jpg"
+              alt="Outlet extender behind a couch"
+              className="w-full max-w-lg rounded-xl"
+            />
+          </div>
+
+          <h2 className="text-2xl font-bold mt-10 mb-3">Typical features</h2>
           <p className="text-muted-foreground mb-4">
-            The stick is usually placed behind a sofa or nightstand. The front end has outlets (and sometimes USB ports depending on the model), so you can plug in lamps, chargers, or other devices more easily. Some versions also rotate, which helps when the original outlet is at an awkward angle.
+            Common versions include two or more AC outlets on the front face. Higher-end models add USB-A and USB-C ports so you can charge phones and tablets without extra adapters. A few include a small ledge or shelf for resting a phone while charging.
+          </p>
+          <p className="text-muted-foreground mb-4">
+            Installation is usually just plugging it into the wall. Some come with adhesive strips if you want to mount it more securely, though many people simply let it rest behind the furniture.
           </p>
 
-          <h2 className="text-2xl font-bold mt-10 mb-3">Things to check before buying</h2>
+          <h2 className="text-2xl font-bold mt-10 mb-3">Who finds it useful</h2>
+          <ul className="list-disc pl-5 text-muted-foreground space-y-2 mb-4">
+            <li>People with outlets blocked by sofas or beds</li>
+            <li>Renters who can’t easily move furniture</li>
+            <li>Anyone who wants easier access for chargers and lamps</li>
+          </ul>
+          <p className="text-muted-foreground mb-4">
+            It’s less useful if you need a very long run (traditional extension cords are better for that) or if you want a full power strip with surge protection on the floor.
+          </p>
+
+          <h2 className="text-2xl font-bold mt-10 mb-3">Things to check</h2>
           <ul className="list-disc pl-5 text-muted-foreground space-y-2 mb-10">
-            <li>Maximum extension length (some are 22–34 inches, others differ)</li>
-            <li>Whether it includes USB ports or only AC outlets</li>
-            <li>If the rotating head matches your setup</li>
-            <li>Current price and included accessories on the Amazon listing</li>
+            <li>Maximum and minimum extension length</li>
+            <li>Number and type of outlets (AC only vs AC + USB)</li>
+            <li>Whether the head rotates and how far</li>
+            <li>Build quality and current price on the listing</li>
           </ul>
 
-                     <div className="my-8 aspect-video">
+          <div className="my-8 aspect-video">
             <iframe
               className="w-full h-full rounded-lg"
               src="https://www.youtube.com/embed/RGU_XLSoH9A"
