@@ -108,7 +108,7 @@ export default function Page() {
           <div className="my-8 aspect-video">
             <iframe
               className="w-full h-full rounded-lg"
-              src="https://www.youtube.com/embed/iftP7v5lzD4"
+              src="https://youtube.com/shorts/RGU_XLSoH9A?si=_Q-5Itl37y-ei7Hr"
               title="Outlet Extender Stick"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
