@@ -29,32 +29,18 @@ const PersonalizedContentStream = () => {
   const filters = ['See All', 'Latest', 'Trending', 'Reviews', 'Guides'];
 
   const contentItems: ContentItem[] = [
-
-      {
-  id: 10,
-  title: "iPhone Duo Cases",
-  excerpt: "Clear, silicone, leather, and protective options designed for the iPhone Duo.",
-  category: "Accessories",
-  image: "/assets/images/iphone_duo_cases.png",
-  alt: "iPhone Duo Cases",
-  author: "Gadgets Finds",
-  publishedDate: "October 24, 2026",
-  readTime: "3 min read",
-  tags: ["iPhone Duo", "Cases", "Accessories"],
-},
     
-    {
-      id: 1,
-      title: "Don't miss October Prime Day 2026: Try Amazon Prime free for 30 days!",
-      excerpt: "Eligible new members can start a 30-day Amazon Prime trial before Prime Big Deal Days, October 6–7.",
-      category: "Deals",
-      image: "/assets/images/PRIME_OCTOBER_2026.png",
-      alt: "Amazon Prime before Prime Big Deal Days",
-      author: "",
-      publishedDate: "2026-10-05",
-      readTime: "5 min read",
-      tags: ["Amazon", "Prime", "Deals"]
-    },
+    { id: 1,
+      title: "iPhone Duo Cases",
+        excerpt: "Clear, silicone, leather, and protective options designed for the iPhone Duo.",
+        category: "Accessories",
+        image: "/assets/images/iphone_duo_cases.png",
+        alt: "iPhone Duo Cases",
+        author: "Gadgets Finds",
+        publishedDate: "October 24, 2026",
+        readTime: "3 min read",
+        tags: ["iPhone Duo", "Cases", "Accessories"],
+    }
     {
       id: 2,
       title: "These 12 deals are worth opening before October Prime Day",
@@ -151,12 +137,24 @@ const PersonalizedContentStream = () => {
       readTime: "12 min read",
       tags: ["Laptops", "Development", "Buying Guide"]
     },
+    {
+      id: 10,
+      title: "Don't miss October Prime Day 2026: Try Amazon Prime free for 30 days!",
+      excerpt: "Eligible new members can start a 30-day Amazon Prime trial before Prime Big Deal Days, October 6–7.",
+      category: "Deals",
+      image: "/assets/images/PRIME_OCTOBER_2026.png",
+      alt: "Amazon Prime before Prime Big Deal Days",
+      author: "",
+      publishedDate: "2026-10-05",
+      readTime: "5 min read",
+      tags: ["Amazon", "Prime", "Deals"]
+    },
   ];
 
   const articleRoutes: { [key: number]: string } = {
 
-   10: '/iphone-duo-cases',
-    1: "/member-trial",
+   
+    1:"/iphone-duo-cases", 
     2: "/october-deals",
     3: "/amazon-outlet-guide",
     4: "/quantum-computing-ibm-article",
@@ -165,6 +163,7 @@ const PersonalizedContentStream = () => {
     7: "/ai-productivity-tools-2026-article",
     8: "/sony-wh-2000xm6-review-article",
     9: "/best-laptops-developers-2026",
+    10:  "/member-trial",
   };
 
   const getFilteredItems = (): ContentItem[] => {
