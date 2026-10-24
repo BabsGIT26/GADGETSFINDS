@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+ import type { Metadata } from "next";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 
@@ -8,14 +8,14 @@ const AMAZON_LEATHER = "https://www.amazon.com/s?k=iPhone+Duo+case+leather&tag=g
 const AMAZON_ALL = "https://www.amazon.com/s?k=iPhone+Duo+phone+case&tag=gadgetsfindswebsmediavid-20";
 
 export const metadata: Metadata = {
-  title: "iPhone Duo Cases — Clear, Silicone & Leather Options",
+  title: "iPhone Duo Cases — Clear, Silicone & Leather",
   description:
-    "A curated selection of cases for the iPhone Duo. Clear, silicone, and leather options in multiple colors.",
+    "A selection of cases for the iPhone Duo. Clear, silicone, and leather options.",
   metadataBase: new URL("https://www.gadgets-finds.com"),
   alternates: { canonical: "https://www.gadgets-finds.com/iphone-duo-cases" },
   openGraph: {
     title: "iPhone Duo Cases",
-    description: "Clean, protective cases for the iPhone Duo.",
+    description: "Clear, silicone, and leather cases for the iPhone Duo.",
     url: "https://www.gadgets-finds.com/iphone-duo-cases",
     siteName: "Gadgets Finds",
     type: "article",
@@ -26,50 +26,44 @@ const cases = [
   {
     name: "Clear Case",
     color: "Transparent",
-    description: "Shows the original finish. Slim and protective.",
+    description: "Shows the original finish. Slim profile.",
     href: AMAZON_CLEAR,
-    bg: "bg-zinc-100",
-    accent: "border-zinc-300",
+    image: "https://m.media-amazon.com/images/I/71a1k6r0cJL._AC_SL1500_.jpg",
   },
   {
     name: "Silicone Case",
     color: "Midnight",
-    description: "Soft-touch silicone with a refined matte finish.",
+    description: "Soft-touch matte finish.",
     href: AMAZON_SILICONE,
-    bg: "bg-zinc-900",
-    accent: "border-zinc-700",
+    image: "https://m.media-amazon.com/images/I/61oQ2a1v3sL._AC_SL1500_.jpg",
   },
   {
     name: "Silicone Case",
     color: "Starlight",
-    description: "Light and clean. Easy to grip.",
+    description: "Light and easy to grip.",
     href: AMAZON_SILICONE,
-    bg: "bg-stone-100",
-    accent: "border-stone-300",
+    image: "https://m.media-amazon.com/images/I/71Yk2v3b0QL._AC_SL1500_.jpg",
   },
   {
     name: "Silicone Case",
     color: "Pink",
-    description: "Soft color with a smooth feel.",
+    description: "Soft color, smooth surface.",
     href: AMAZON_SILICONE,
-    bg: "bg-rose-100",
-    accent: "border-rose-200",
+    image: "https://m.media-amazon.com/images/I/71g9t4x8m3L._AC_SL1500_.jpg",
   },
   {
     name: "Leather Case",
     color: "Black",
-    description: "Premium leather that develops a natural patina.",
+    description: "Develops a natural patina.",
     href: AMAZON_LEATHER,
-    bg: "bg-zinc-800",
-    accent: "border-zinc-600",
+    image: "https://m.media-amazon.com/images/I/71w3b5n9p2L._AC_SL1500_.jpg",
   },
   {
     name: "Leather Case",
     color: "Brown",
-    description: "Warm tone that ages well over time.",
+    description: "Warm tone that ages well.",
     href: AMAZON_LEATHER,
-    bg: "bg-amber-900",
-    accent: "border-amber-700",
+    image: "https://m.media-amazon.com/images/I/71c8d2k4n1L._AC_SL1500_.jpg",
   },
 ];
 
@@ -79,52 +73,54 @@ export default function Page() {
       <Header />
       <main className="min-h-screen bg-white text-zinc-900">
         {/* Hero */}
-        <section className="pt-28 pb-20 px-6 text-center">
-          <p className="text-sm tracking-widest uppercase text-zinc-500 mb-4">
-            For iPhone Duo
+        <section className="pt-20 pb-12 px-6 text-center">
+          <p className="text-xs tracking-widest uppercase text-zinc-500 mb-3">
+            iPhone Duo
           </p>
-          <h1 className="text-5xl md:text-7xl font-semibold tracking-tight mb-6">
+          <h1 className="text-4xl md:text-5xl font-semibold tracking-tight mb-4">
             Cases
           </h1>
-          <p className="max-w-xl mx-auto text-lg text-zinc-600 leading-relaxed">
-            Designed to complement the iPhone Duo. Thin, precise, and available in clear, silicone, and leather finishes.
+          <p className="max-w-md mx-auto text-base text-zinc-600">
+            Clear, silicone, and leather options designed to fit the iPhone Duo.
           </p>
         </section>
 
         {/* Disclosure */}
-        <div className="max-w-2xl mx-auto px-6 mb-16 text-center">
+        <div className="max-w-xl mx-auto px-6 mb-10 text-center">
           <p className="text-xs text-zinc-500">
             <span className="text-red-600 font-medium">Disclosure:</span> Gadgets Finds is an Amazon Associate. We may earn from qualifying purchases if you buy through links on this page, at no extra cost to you.
           </p>
         </div>
 
         {/* Cases grid */}
-        <section className="max-w-6xl mx-auto px-6 pb-24">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <section className="max-w-5xl mx-auto px-6 pb-16">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-5">
             {cases.map((item) => (
               <a
                 key={item.name + item.color}
                 href={item.href}
                 target="_blank"
                 rel="nofollow sponsored noopener noreferrer"
-                className="group block rounded-3xl border border-zinc-200 overflow-hidden hover:shadow-lg transition-shadow duration-300"
+                className="group block rounded-2xl border border-zinc-200 overflow-hidden hover:shadow-md transition-shadow"
               >
-                <div className={`${item.bg} aspect-[4/5] flex items-end p-6`}>
-                  <div className="w-full">
-                    <div className={`h-32 rounded-2xl border ${item.accent} bg-white/40 backdrop-blur-sm`} />
-                  </div>
+                <div className="aspect-square bg-zinc-50 overflow-hidden">
+                  <img
+                    src={item.image}
+                    alt={`${item.name} ${item.color}`}
+                    className="w-full h-full object-contain"
+                  />
                 </div>
-                <div className="p-6 bg-white">
-                  <p className="text-xs uppercase tracking-widest text-zinc-500 mb-1">
+                <div className="p-4 bg-white">
+                  <p className="text-[10px] uppercase tracking-widest text-zinc-500 mb-1">
                     {item.color}
                   </p>
-                  <h2 className="text-xl font-medium mb-2 group-hover:text-zinc-700">
+                  <h2 className="text-sm font-medium mb-1 group-hover:text-zinc-700">
                     {item.name}
                   </h2>
-                  <p className="text-sm text-zinc-600 leading-relaxed mb-4">
+                  <p className="text-xs text-zinc-600 leading-snug mb-2">
                     {item.description}
                   </p>
-                  <span className="text-sm font-medium text-zinc-900 group-hover:underline">
+                  <span className="text-xs font-medium text-zinc-900 group-hover:underline">
                     View on Amazon →
                   </span>
                 </div>
@@ -133,16 +129,24 @@ export default function Page() {
           </div>
         </section>
 
-        {/* Bottom note */}
-        <section className="border-t border-zinc-200 py-16 text-center px-6">
-          <p className="text-sm text-zinc-500 max-w-md mx-auto">
-            Availability and colors change. Always confirm the exact model and finish on the Amazon listing before purchasing.
+        {/* Content under cards */}
+        <section className="max-w-2xl mx-auto px-6 pb-20">
+          <h2 className="text-2xl font-semibold mb-4">About these cases</h2>
+          <p className="text-sm text-zinc-600 mb-4 leading-relaxed">
+            Clear cases show the original finish of the iPhone Duo while adding light protection against scratches. Silicone cases offer a soft-touch surface and come in several colors. Leather cases develop a natural patina over time and feel more premium.
           </p>
+          <p className="text-sm text-zinc-600 mb-4 leading-relaxed">
+            Most of these options are designed to be thin so the phone stays close to its original size. Button covers and precise cutouts are standard on the better versions. Availability of exact colors and materials changes, so it is worth checking the current listing.
+          </p>
+          <p className="text-sm text-zinc-600 mb-8 leading-relaxed">
+            None of these cases include MagSafe-style magnets unless specifically stated on the product page. If wireless charging or a wallet attachment matters to you, confirm the details before buying.
+          </p>
+
           <a
             href={AMAZON_ALL}
             target="_blank"
             rel="nofollow sponsored noopener noreferrer"
-            className="inline-block mt-6 text-sm font-medium border border-zinc-900 px-6 py-3 rounded-full hover:bg-zinc-900 hover:text-white transition-colors"
+            className="inline-block text-sm font-medium border border-zinc-900 px-5 py-2.5 rounded-full hover:bg-zinc-900 hover:text-white transition-colors"
           >
             See all iPhone Duo cases
           </a>
