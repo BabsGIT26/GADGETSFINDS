@@ -29,6 +29,20 @@ const PersonalizedContentStream = () => {
   const filters = ['See All', 'Latest', 'Trending', 'Reviews', 'Guides'];
 
   const contentItems: ContentItem[] = [
+
+      {
+  id: 10,
+  title: "iPhone Duo Cases",
+  excerpt: "Clear, silicone, leather, and protective options designed for the iPhone Duo.",
+  category: "Accessories",
+  image: "/assets/images/iphone_duo_cases.png",
+  alt: "iPhone Duo Cases",
+  author: "Gadgets Finds",
+  publishedDate: "October 24, 2026",
+  readTime: "3 min read",
+  tags: ["iPhone Duo", "Cases", "Accessories"],
+},
+    
     {
       id: 1,
       title: "Don't miss October Prime Day 2026: Try Amazon Prime free for 30 days!",
@@ -140,6 +154,8 @@ const PersonalizedContentStream = () => {
   ];
 
   const articleRoutes: { [key: number]: string } = {
+
+   10: '/iphone-duo-cases',
     1: "/member-trial",
     2: "/october-deals",
     3: "/amazon-outlet-guide",
