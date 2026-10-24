@@ -23,6 +23,7 @@ const cases = [
     description: "Official Apple case. Thin, light, MagSafe compatible.",
     href: "https://www.amazon.com/Apple-iPhone-Duo-Case-complement/dp/B0HJBCCRYD?tag=gadgetsfindswebsmediavid-20",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlIdhTux50lVoW7HkrQGv5brL8gYDk3EeG-ADXgRYvjw&s=10",
+    bg: "bg-zinc-100",
   },
   {
     name: "FNTCASE MagSafe Case",
@@ -30,6 +31,7 @@ const cases = [
     description: "Strong magnets, translucent matte finish, screen protector included.",
     href: "https://www.amazon.com/FNTCASE-iPhone-Duo-Magsafe-Black/dp/B0HDST6F85?tag=gadgetsfindswebsmediavid-20",
     image: "https://fntcase.com/cdn/shop/files/1-_1_7bc141f2-c808-497d-81b6-3959e4f3ba4d_1570x.jpg?v=1789371604",
+    bg: "bg-zinc-900",
   },
   {
     name: "TORRAS Q3 Spin",
@@ -37,6 +39,7 @@ const cases = [
     description: "Hinge protection with 360° rotating stand.",
     href: "https://www.amazon.com/s?k=TORRAS+Q3+Spin+iPhone+Duo&tag=gadgetsfindswebsmediavid-20",
     image: "https://torraslife.com/cdn/shop/files/c76aa41848c0d10d159b5d6dd1accb60_0910a191-b87e-4cc9-80b9-4fddc739f638.png?v=1789663999&width=1024",
+    bg: "bg-zinc-800",
   },
   {
     name: "Spigen Ultra Hybrid Pro",
@@ -44,6 +47,7 @@ const cases = [
     description: "Clear case that shows the phone color. Hinge coverage.",
     href: "https://www.amazon.com/s?k=Spigen+Ultra+Hybrid+Pro+iPhone+Duo&tag=gadgetsfindswebsmediavid-20",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhIzQ19wkDu8VkAfZSFxuL8TPNiVzPMUbTPHPCHp6THA&s=10",
+    bg: "bg-zinc-100",
   },
   {
     name: "OtterBox Defender Series",
@@ -51,6 +55,7 @@ const cases = [
     description: "Rugged protection with articulating hinge cover.",
     href: "https://www.amazon.com/OtterBox-Foldable-iPhone-Defender-Case/dp/B0HGNPW2NG?tag=gadgetsfindswebsmediavid-20",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAUqeqtDpU1olo7HSIqPdtONBlQO9AfkBrGMylPHG8dA&s=10",
+    bg: "bg-zinc-900",
   },
   {
     name: "Pitaka Aramid Case",
@@ -58,6 +63,7 @@ const cases = [
     description: "Thin aramid fiber with MagSafe support.",
     href: "https://www.amazon.com/s?k=Pitaka+iPhone+Duo+aramid&tag=gadgetsfindswebsmediavid-20",
     image: "https://www.bigw.com.au/medias/sys_master/images/images/hf1/h2f/172314000392222.jpg",
+    bg: "bg-zinc-800",
   },
 ];
 
@@ -94,7 +100,7 @@ export default function Page() {
                 rel="nofollow sponsored noopener noreferrer"
                 className="group block rounded-2xl border border-zinc-200 overflow-hidden hover:shadow-md transition-shadow"
               >
-                <div className="aspect-square bg-zinc-50 overflow-hidden">
+                <div className={`${item.bg} aspect-square overflow-hidden`}>
                   <img
                     src={item.image}
                     alt={`${item.name} ${item.color}`}
