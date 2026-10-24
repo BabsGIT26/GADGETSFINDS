@@ -40,7 +40,7 @@ const PersonalizedContentStream = () => {
         publishedDate: "October 24, 2026",
         readTime: "3 min read",
         tags: ["iPhone Duo", "Cases", "Accessories"],
-    }
+    },
     {
       id: 2,
       title: "These 12 deals are worth opening before October Prime Day",
