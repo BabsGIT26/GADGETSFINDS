@@ -13,6 +13,23 @@ export const metadata: Metadata = {
     url: "https://www.gadgets-finds.com/iphone-duo-cases",
     siteName: "Gadgets Finds",
     type: "article",
+    images: [
+      {
+        url: "https://the-gadgeteer.com/wp-content/uploads/2026/10/iphone-duo-five-cases-hero-final-1280x720.jpg",
+        width: 1280,
+        height: 720,
+        alt: "iPhone Duo Cases",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@Gadgets_finds",
+    title: "iPhone Duo Cases",
+    description: "Clear, silicone, and protective cases for the iPhone Duo.",
+    images: [
+      "https://the-gadgeteer.com/wp-content/uploads/2026/10/iphone-duo-five-cases-hero-final-1280x720.jpg",
+    ],
   },
 };
 
