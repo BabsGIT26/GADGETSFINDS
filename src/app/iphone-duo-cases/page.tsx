@@ -1,4 +1,4 @@
- import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 
@@ -9,8 +9,7 @@ const AMAZON_ALL = "https://www.amazon.com/s?k=iPhone+Duo+phone+case&tag=gadgets
 
 export const metadata: Metadata = {
   title: "iPhone Duo Cases — Clear, Silicone & Leather",
-  description:
-    "A selection of cases for the iPhone Duo. Clear, silicone, and leather options.",
+  description: "A selection of cases for the iPhone Duo. Clear, silicone, and leather options.",
   metadataBase: new URL("https://www.gadgets-finds.com"),
   alternates: { canonical: "https://www.gadgets-finds.com/iphone-duo-cases" },
   openGraph: {
@@ -28,42 +27,42 @@ const cases = [
     color: "Transparent",
     description: "Shows the original finish. Slim profile.",
     href: AMAZON_CLEAR,
-    image: "https://m.media-amazon.com/images/I/71a1k6r0cJL._AC_SL1500_.jpg",
+    bg: "bg-zinc-100",
   },
   {
     name: "Silicone Case",
     color: "Midnight",
     description: "Soft-touch matte finish.",
     href: AMAZON_SILICONE,
-    image: "https://m.media-amazon.com/images/I/61oQ2a1v3sL._AC_SL1500_.jpg",
+    bg: "bg-zinc-900",
   },
   {
     name: "Silicone Case",
     color: "Starlight",
     description: "Light and easy to grip.",
     href: AMAZON_SILICONE,
-    image: "https://m.media-amazon.com/images/I/71Yk2v3b0QL._AC_SL1500_.jpg",
+    bg: "bg-stone-100",
   },
   {
     name: "Silicone Case",
     color: "Pink",
     description: "Soft color, smooth surface.",
     href: AMAZON_SILICONE,
-    image: "https://m.media-amazon.com/images/I/71g9t4x8m3L._AC_SL1500_.jpg",
+    bg: "bg-rose-100",
   },
   {
     name: "Leather Case",
     color: "Black",
     description: "Develops a natural patina.",
     href: AMAZON_LEATHER,
-    image: "https://m.media-amazon.com/images/I/71w3b5n9p2L._AC_SL1500_.jpg",
+    bg: "bg-zinc-800",
   },
   {
     name: "Leather Case",
     color: "Brown",
     description: "Warm tone that ages well.",
     href: AMAZON_LEATHER,
-    image: "https://m.media-amazon.com/images/I/71c8d2k4n1L._AC_SL1500_.jpg",
+    bg: "bg-amber-900",
   },
 ];
 
@@ -72,7 +71,6 @@ export default function Page() {
     <>
       <Header />
       <main className="min-h-screen bg-white text-zinc-900">
-        {/* Hero */}
         <section className="pt-20 pb-12 px-6 text-center">
           <p className="text-xs tracking-widest uppercase text-zinc-500 mb-3">
             iPhone Duo
@@ -85,14 +83,12 @@ export default function Page() {
           </p>
         </section>
 
-        {/* Disclosure */}
         <div className="max-w-xl mx-auto px-6 mb-10 text-center">
           <p className="text-xs text-zinc-500">
             <span className="text-red-600 font-medium">Disclosure:</span> Gadgets Finds is an Amazon Associate. We may earn from qualifying purchases if you buy through links on this page, at no extra cost to you.
           </p>
         </div>
 
-        {/* Cases grid */}
         <section className="max-w-5xl mx-auto px-6 pb-16">
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-5">
             {cases.map((item) => (
@@ -103,13 +99,7 @@ export default function Page() {
                 rel="nofollow sponsored noopener noreferrer"
                 className="group block rounded-2xl border border-zinc-200 overflow-hidden hover:shadow-md transition-shadow"
               >
-                <div className="aspect-square bg-zinc-50 overflow-hidden">
-                  <img
-                    src={item.image}
-                    alt={`${item.name} ${item.color}`}
-                    className="w-full h-full object-contain"
-                  />
-                </div>
+                <div className={`${item.bg} aspect-square`} />
                 <div className="p-4 bg-white">
                   <p className="text-[10px] uppercase tracking-widest text-zinc-500 mb-1">
                     {item.color}
@@ -129,7 +119,6 @@ export default function Page() {
           </div>
         </section>
 
-        {/* Content under cards */}
         <section className="max-w-2xl mx-auto px-6 pb-20">
           <h2 className="text-2xl font-semibold mb-4">About these cases</h2>
           <p className="text-sm text-zinc-600 mb-4 leading-relaxed">
@@ -155,4 +144,4 @@ export default function Page() {
       <Footer />
     </>
   );
-}
+} 
