@@ -69,19 +69,19 @@ const gadgets = [
   {
     title: "Anker MagGo Power Bank",
     href: "/anker-maggo-power-bank",
-    image: "https://m.media-amazon.com/images/I/61Vl80yE99L._CR36,33,726,726_._FMjpg_._SL34_.jpg",
+    image: "https://m.media-amazon.com/images/I/61DzAk62YOL.jpg",
     excerpt: "Qi2 MagSafe power bank with smart display and foldable stand.",
   },
   {
     title: "KeySmart SmartCard Tracker",
     href: "/keysmart-smartcard-tracker",
-    image: "https://m.media-amazon.com/images/I/C1dVSEOpi-L._CR0,36,2316,2316_._FMjpg_._SL34_.jpg",
+    image: "https://m.media-amazon.com/images/I/71zeGEFy1aL.jpg",
     excerpt: "Ultra-thin credit card size Find My tracker that recharges wirelessly.",
   },
   {
     title: "OLIGHT iMini 2 Flashlight",
     href: "/olight-imini-2-flashlight",
-    image: "https://m.media-amazon.com/images/I/314LgReRHbL._SL500_.jpg",
+    image: "https://m.media-amazon.com/images/I/51vdV5DwSrL.jpg",
     excerpt: "Tiny rechargeable keychain flashlight with magnetic base.",
   },
   {
@@ -99,13 +99,13 @@ const gadgets = [
   {
     title: "Mini Electric Air Duster",
     href: "/mini-electric-air-duster",
-    image: "https://m.media-amazon.com/images/I/51G0lmD3T5L.jpg",
+    image: "https://m.media-amazon.com/images/I/81SEN6oNw1L._AC_SX425_.jpg",
     excerpt: "Cordless compressed air duster for keyboards and electronics.",
   },
   {
     title: "USB-C Cable Organizer",
     href: "/usb-c-cable-organizer",
-    image: "https://m.media-amazon.com/images/I/61rNbqA6c6L.jpg",
+    image: "https://m.media-amazon.com/images/I/61wCD0dNMUL.jpg",
     excerpt: "Magnetic cable holder that keeps your desk tidy.",
   },
   {
@@ -117,13 +117,13 @@ const gadgets = [
   {
     title: "LED Keychain Light",
     href: "/led-keychain-light",
-    image: "https://m.media-amazon.com/images/I/314LgReRHbL._SL500_.jpg",
+    image: "https://m.media-amazon.com/images/I/61pU8V8MjAL.jpg",
     excerpt: "Bright rechargeable keychain light for everyday carry.",
   },
   {
     title: "Mini SSD Enclosure",
     href: "/mini-ssd-enclosure",
-    image: "https://m.media-amazon.com/images/I/51NSj7CbggL.jpg",
+    image: "https://m.media-amazon.com/images/I/61DdBzVRhmL.jpg",
     excerpt: "Compact MagSafe-compatible enclosure for NVMe SSDs.",
   },
 ];
