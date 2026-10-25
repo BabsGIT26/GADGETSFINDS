@@ -4,7 +4,7 @@ import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 
 const AMAZON = "https://www.amazon.com/OLIGHT-Rechargeable-Keychain-Flashlight-Emergencies/dp/B0C54ZH8WW?tag=gadgetsfindswebsmediavid-20";
-const IMAGE = "https://m.media-amazon.com/images/I/41hVvLW+9qL._AC_SR100,100_QL65_.jpg";
+const IMAGE = "https://m.media-amazon.com/images/I/51vdV5DwSrL.jpg";
 
 export const metadata: Metadata = {
   title: "OLIGHT iMini 2 Flashlight Review — Gadgets Finds",
