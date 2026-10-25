@@ -4,7 +4,7 @@ import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 
 const AMAZON = "https://www.amazon.com/UGREEN-Charger-Foldable-Compact-Adapter/dp/B0CBJQMC9H?tag=gadgetsfindswebsmediavid-20";
-const IMAGE = "https://m.media-amazon.com/images/I/51nKMY3u+hL.jpg";
+const IMAGE = "https://m.media-amazon.com/images/I/21QwqmpWChL.jpg";
 
 export const metadata: Metadata = {
   title: "UGREEN Nexode Mini 30W Review — Gadgets Finds",

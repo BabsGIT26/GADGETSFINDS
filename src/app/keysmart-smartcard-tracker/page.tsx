@@ -4,7 +4,7 @@ import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 
 const AMAZON = "https://www.amazon.com/KeySmart-SmartCard-MFI-Certified-Compatible-Rechargeable/dp/B0G7NB2MH9?tag=gadgetsfindswebsmediavid-20";
-const IMAGE = "https://m.media-amazon.com/images/I/61Qd9Z9caRL.jpg";
+const IMAGE = "https://m.media-amazon.com/images/I/71zeGEFy1aL._AC_UL165_SR165,165_.jpg";
 
 export const metadata: Metadata = {
   title: "KeySmart SmartCard Tracker Review — Gadgets Finds",
