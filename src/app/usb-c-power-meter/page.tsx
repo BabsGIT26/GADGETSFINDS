@@ -32,8 +32,11 @@ export default function Page() {
             <span className="text-red-600 font-semibold">Disclosure:</span> Gadgets Finds is an Amazon Associate. We may earn from qualifying purchases.
           </p>
 
-          <div className="mb-4">
-            <Link href="/mini-gadgets" className="inline-flex items-center text-sm text-red-500 hover:text-red-400 font-medium">
+          <div className="flex justify-end mb-6">
+            <Link
+              href="/mini-gadgets"
+              className="inline-flex items-center gap-1.5 px-4 py-2.5 bg-zinc-800 hover:bg-red-600 border border-zinc-700 hover:border-red-600 text-sm text-white font-medium rounded-lg transition-colors shadow-sm"
+            >
               ← Back to Mini Gadgets
             </Link>
           </div>
