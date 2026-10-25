@@ -4,6 +4,7 @@ import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 
 const AMAZON = "https://www.amazon.com/s?k=magnetic+phone+cooler+card&tag=gadgetsfindswebsmediavid-20";
+const IMAGE = "https://m.media-amazon.com/images/I/51FsefzzP3L.jpg";
 
 export const metadata: Metadata = {
   title: "Phone Cooler Ice Card Review — Gadgets Finds",
@@ -16,6 +17,7 @@ export const metadata: Metadata = {
     url: "https://www.gadgets-finds.com/phone-cooler-ice-card",
     siteName: "Gadgets Finds",
     type: "article",
+    images: [{ url: IMAGE, width: 1200, height: 630, alt: "Phone Cooler Ice Card" }],
   },
 };
 
@@ -42,7 +44,7 @@ export default function Page() {
           </div>
 
           <div className="mb-10 flex justify-center">
-            <img src="https://m.media-amazon.com/images/I/71a+X9p+J8L._AC_SL1500_.jpg" alt="Phone Cooler Ice Card" className="w-full max-w-[280px] h-auto rounded-xl" />
+            <img src={IMAGE} alt="Phone Cooler Ice Card" className="w-full max-w-[280px] h-auto rounded-xl" />
           </div>
 
           <h2 className="text-2xl font-bold mt-10 mb-3">What it is</h2>

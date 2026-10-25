@@ -4,6 +4,7 @@ import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 
 const AMAZON = "https://www.amazon.com/s?k=OBSBOT+Meet+2+webcam&tag=gadgetsfindswebsmediavid-20";
+const IMAGE = "https://m.media-amazon.com/images/I/51nKMY3u+hL.jpg";
 
 export const metadata: Metadata = {
   title: "Ultra-Mini Webcam Review — Gadgets Finds",
@@ -16,6 +17,7 @@ export const metadata: Metadata = {
     url: "https://www.gadgets-finds.com/ultra-mini-webcam",
     siteName: "Gadgets Finds",
     type: "article",
+    images: [{ url: IMAGE, width: 1200, height: 630, alt: "Ultra-Mini Webcam" }],
   },
 };
 
@@ -42,7 +44,7 @@ export default function Page() {
           </div>
 
           <div className="mb-10 flex justify-center">
-            <img src="https://m.media-amazon.com/images/I/61+Webcam+Mini.jpg" alt="Ultra-Mini Webcam" className="w-full max-w-[280px] h-auto rounded-xl" />
+            <img src={IMAGE} alt="Ultra-Mini Webcam" className="w-full max-w-[280px] h-auto rounded-xl" />
           </div>
 
           <h2 className="text-2xl font-bold mt-10 mb-3">What it is</h2>
