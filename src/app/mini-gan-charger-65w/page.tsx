@@ -3,7 +3,7 @@ import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 
-const AMAZON = "https://www.amazon.com/s?k=UGREEN+Nexode+65W+GaN+charger&tag=gadgetsfindswebsmediavid-20";
+const AMAZON = "https://www.amazon.com/UGREEN-Gallium-Nitride-Charger-Black/dp/B091BGMKYS?tag=gadgetsfindswebsmediavid-20";
 const IMAGE = "https://m.media-amazon.com/images/I/51nKMY3u+hL.jpg";
 
 export const metadata: Metadata = {

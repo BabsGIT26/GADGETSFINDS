@@ -3,7 +3,7 @@ import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 
-const AMAZON = "https://www.amazon.com/Apple-AirTag/dp/B0932QJ2JZ?tag=gadgetsfindswebsmediavid-20";
+const AMAZON = "https://www.amazon.com/Apple-AirTag-2nd-Generation-Precision/dp/B0GJTFXNRX?tag=gadgetsfindswebsmediavid-20";
 const IMAGE = "https://m.media-amazon.com/images/I/61Qd9Z9caRL.jpg";
 
 export const metadata: Metadata = {
