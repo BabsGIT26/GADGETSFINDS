@@ -4,7 +4,7 @@ import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 
 const AMAZON = "https://www.amazon.com/s?k=rechargeable+LED+keychain+light&tag=gadgetsfindswebsmediavid-20";
-const IMAGE = "https://m.media-amazon.com/images/I/51DW7RN3fEL.jpg";
+const IMAGE = "https://m.media-amazon.com/images/I/61pU8V8MjAL.jpg";
 
 export const metadata: Metadata = {
   title: "LED Keychain Light Review — Gadgets Finds",
