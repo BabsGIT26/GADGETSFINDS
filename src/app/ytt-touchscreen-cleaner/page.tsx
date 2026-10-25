@@ -49,17 +49,6 @@ export default function Page() {
             page, at no extra cost to you. Prices and availability change on Amazon.
           </p>
 
-          <div className="flex justify-end mt-2 mb-6">
-            <div className="border-2 border-red-500 rounded px-1 py-0.5">
-              <Link
-                href="/mini-gadgets"
-                className="inline-flex items-center gap-1 px-2.5 py-1 bg-red-600 hover:bg-red-700 text-white font-medium text-xs rounded transition-colors"
-              >
-                ← Back to Mini Gadgets
-              </Link>
-            </div>
-          </div>
-
           <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">
             Screen Care
           </p>
@@ -144,6 +133,15 @@ export default function Page() {
             productName="YTT Touchscreen Screen Cleaner Spray"
             href={AMAZON}
           />
+
+          <div className="flex justify-end mt-8 mb-2">
+            <Link
+              href="/mini-gadgets"
+              className="inline-flex items-center gap-1 px-3 py-1.5 bg-red-600 hover:bg-red-700 text-white font-medium text-xs rounded transition-colors"
+            >
+              ← Back to Mini Gadgets
+            </Link>
+          </div>
         </div>
       </article>
       <Footer />
