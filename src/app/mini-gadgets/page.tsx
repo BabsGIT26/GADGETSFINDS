@@ -63,7 +63,7 @@ const gadgets = [
   {
     title: "Ultra-Mini Webcam",
     href: "/ultra-mini-webcam",
-    image: "https://m.media-amazon.com/images/I/71K3I5p0FDL.jpg",
+    image: "https://m.media-amazon.com/images/I/51OZ72zdwsL.jpg",
     excerpt: "Tiny 4K webcam that fits in a pocket for video calls.",
   },
 ];

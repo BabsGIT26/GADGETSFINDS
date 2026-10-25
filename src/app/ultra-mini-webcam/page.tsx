@@ -4,7 +4,7 @@ import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 
 const AMAZON = "https://www.amazon.com/OBSBOT-Lightweight-Microphone-Space-Grey/dp/B0D9W7J9SK?tag=gadgetsfindswebsmediavid-20";
-const IMAGE = "https://m.media-amazon.com/images/I/71K3I5p0FDL.jpg";
+const IMAGE = "https://m.media-amazon.com/images/I/51OZ72zdwsL.jpg";
 
 export const metadata: Metadata = {
   title: "Ultra-Mini Webcam Review — Gadgets Finds",
@@ -49,12 +49,12 @@ export default function Page() {
 
           <h2 className="text-2xl font-bold mt-10 mb-3">What it is</h2>
           <p className="text-muted-foreground mb-4">
-            Ultra-mini webcams like the OBSBOT Meet 2 or Opal Tadpole are designed to be extremely compact while still offering 4K or high-quality 1080p video. They connect via USB-C and often include a small stand or clip.
+            Ultra-mini webcams like the OBSBOT Meet 2 are designed to be extremely compact while still offering 4K video. They connect via USB-C and often include a small stand or clip.
           </p>
 
           <h2 className="text-2xl font-bold mt-10 mb-3">How people use it</h2>
           <p className="text-muted-foreground mb-4">
-            Throw it in a laptop bag or pocket when traveling. Plug it in for video calls when the built-in laptop camera isn’t good enough. Some models have a mute button right on the cable.
+            Throw it in a laptop bag or pocket when traveling. Plug it in for video calls when the built-in laptop camera isn’t good enough. Some models have AI framing and gesture controls.
           </p>
 
           <h2 className="text-2xl font-bold mt-10 mb-3">Strengths and limitations</h2>
