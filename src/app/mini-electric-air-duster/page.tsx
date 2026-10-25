@@ -4,7 +4,7 @@ import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 
 const AMAZON = "https://www.amazon.com/s?k=electric+air+duster+compressed&tag=gadgetsfindswebsmediavid-20";
-const IMAGE = "https://m.media-amazon.com/images/I/71K3I5p0FDL.jpg";
+const IMAGE = "https://m.media-amazon.com/images/I/81SEN6oNw1L._AC_SX425_.jpg";
 
 export const metadata: Metadata = {
   title: "Mini Electric Air Duster Review — Gadgets Finds",
