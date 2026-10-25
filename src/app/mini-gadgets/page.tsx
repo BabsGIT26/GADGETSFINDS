@@ -33,13 +33,13 @@ const gadgets = [
   {
     title: "Ultra-Slim Magnetic Power Bank",
     href: "/ultra-slim-magnetic-power-bank",
-    image: "https://m.media-amazon.com/images/I/71X5X9p+J8L._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/I/51FsefzzP3L.jpg",
     excerpt: "Ultra-thin MagSafe-compatible power bank with Qi2 wireless charging.",
   },
   {
     title: "Apple AirTag",
     href: "/apple-airtag",
-    image: "https://m.media-amazon.com/images/I/71b5q4z+H9L._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/I/61Qd9Z9caRL.jpg",
     excerpt: "Precision tracker that works with the Find My network.",
   },
   {
@@ -51,19 +51,19 @@ const gadgets = [
   {
     title: "Mini GaN Charger 65W",
     href: "/mini-gan-charger-65w",
-    image: "https://m.media-amazon.com/images/I/61+kXq8+X8L._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/I/51nKMY3u+hL.jpg",
     excerpt: "Compact GaN charger with multiple ports for phones and laptops.",
   },
   {
     title: "Phone Cooler Ice Card",
     href: "/phone-cooler-ice-card",
-    image: "https://m.media-amazon.com/images/I/71a+X9p+J8L._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/I/51FsefzzP3L.jpg",
     excerpt: "Magnetic phone cooler that keeps your phone cool during gaming.",
   },
   {
     title: "Ultra-Mini Webcam",
     href: "/ultra-mini-webcam",
-    image: "https://m.media-amazon.com/images/I/61+Webcam+Mini.jpg",
+    image: "https://m.media-amazon.com/images/I/51nKMY3u+hL.jpg",
     excerpt: "Tiny 4K webcam that fits in a pocket for video calls.",
   },
 ];
