@@ -32,17 +32,6 @@ export default function Page() {
             <span className="text-red-600 font-semibold">Disclosure:</span> Gadgets Finds is an Amazon Associate. We may earn from qualifying purchases.
           </p>
 
-          <div className="flex justify-end mt-2 mb-6">
-            <div className="border-2 border-red-500 rounded px-1 py-0.5">
-              <Link
-                href="/mini-gadgets"
-                className="inline-flex items-center gap-1 px-2.5 py-1 bg-red-600 hover:bg-red-700 text-white font-medium text-xs rounded transition-colors"
-              >
-                ← Back to Mini Gadgets
-              </Link>
-            </div>
-          </div>
-
           <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">Tracking</p>
           <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">KeySmart SmartCard Tracker</h1>
           <p className="text-muted-foreground mb-6">
@@ -81,6 +70,15 @@ export default function Page() {
           </ul>
 
           <AmazonDealBox productName="KeySmart SmartCard Tracker" href={AMAZON} />
+
+          <div className="flex justify-end mt-8 mb-2">
+            <Link
+              href="/mini-gadgets"
+              className="inline-flex items-center gap-1 px-3 py-1.5 bg-red-600 hover:bg-red-700 text-white font-medium text-xs rounded transition-colors"
+            >
+              ← Back to Mini Gadgets
+            </Link>
+          </div>
         </div>
       </article>
       <Footer />
