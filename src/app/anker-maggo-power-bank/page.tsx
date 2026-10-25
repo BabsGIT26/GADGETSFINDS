@@ -4,7 +4,7 @@ import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 
 const AMAZON = "https://www.amazon.com/Anker-Certified-Ultra-Fast-MagSafe-Compatible-Portable/dp/B0CFDQ9QH5?tag=gadgetsfindswebsmediavid-20";
-const IMAGE = "https://m.media-amazon.com/images/I/31JWEOn6oBL.jpg";
+const IMAGE = "https://m.media-amazon.com/images/I/61DzAk62YOL.jpg";
 
 export const metadata: Metadata = {
   title: "Anker MagGo Power Bank Review — Gadgets Finds",
