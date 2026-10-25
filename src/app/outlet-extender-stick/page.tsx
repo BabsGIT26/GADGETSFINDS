@@ -1,7 +1,8 @@
- import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
+import Link from "next/link";
 
 const AMAZON = "https://www.amazon.com/Extender-Stick-360%C2%B0-Rotating-Adjustable-Protection/dp/B0H3P79YX2?tag=gadgetsfindswebsmediavid-20";
 
@@ -47,6 +48,12 @@ export default function Page() {
             Amazon Associate. We may earn from qualifying purchases if you buy through links on this
             page, at no extra cost to you. Prices and availability change on Amazon.
           </p>
+
+          <div className="mb-4">
+            <Link href="/mini-gadgets" className="inline-flex items-center text-sm text-red-500 hover:text-red-400 font-medium">
+              ← Back to Mini Gadgets
+            </Link>
+          </div>
 
           <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">
             Home
