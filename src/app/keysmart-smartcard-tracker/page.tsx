@@ -28,15 +28,20 @@ export default function Page() {
       <Header />
       <article className="min-h-screen bg-background pt-14 md:pt-16">
         <div className="container mx-auto px-4 py-10 max-w-3xl">
+          <div className="flex justify-end mb-6">
+            <div className="inline-block bg-zinc-900 border-2 border-red-500 rounded-2xl p-1.5 shadow-xl shadow-red-500/25">
+              <Link
+                href="/mini-gadgets"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-bold text-sm rounded-xl transition-all duration-200 shadow-md hover:shadow-lg"
+              >
+                ← Back to Mini Gadgets
+              </Link>
+            </div>
+          </div>
+
           <p className="text-xs text-muted-foreground mb-6 leading-relaxed">
             <span className="text-red-600 font-semibold">Disclosure:</span> Gadgets Finds is an Amazon Associate. We may earn from qualifying purchases.
           </p>
-
-          <div className="mb-4">
-            <Link href="/mini-gadgets" className="inline-flex items-center text-sm text-red-500 hover:text-red-400 font-medium">
-              ← Back to Mini Gadgets
-            </Link>
-          </div>
 
           <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">Tracking</p>
           <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">KeySmart SmartCard Tracker</h1>
