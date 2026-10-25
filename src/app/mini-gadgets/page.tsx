@@ -89,7 +89,7 @@ export default function Page() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="group block bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden hover:border-red-600 transition-colors"
+                className="group flex flex-col bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden hover:border-red-600 transition-colors h-full"
               >
                 <div className="aspect-square bg-zinc-800 overflow-hidden">
                   <img
@@ -99,11 +99,11 @@ export default function Page() {
                   />
                 </div>
 
-                <div className="p-2">
+                <div className="p-2 flex flex-col flex-1">
                   <h2 className="font-semibold text-sm mb-1 group-hover:text-red-500 transition-colors">
                     {item.title}
                   </h2>
-                  <p className="text-xs text-gray-400 line-clamp-2">{item.excerpt}</p>
+                  <p className="text-xs text-gray-400 line-clamp-2 flex-1">{item.excerpt}</p>
                   <span className="inline-block mt-2 text-red-500 text-xs font-medium">
                     View →
                   </span>
