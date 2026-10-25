@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
+import Link from "next/link";
 
 const AMAZON = "https://www.amazon.com/s?k=mini+phone+tripod+portable&tag=gadgetsfindswebsmediavid-20";
 const IMAGE = "https://m.media-amazon.com/images/I/71dnnsMpNpL._AC_UL450_SY450_QL70_.jpg";
@@ -30,6 +31,12 @@ export default function Page() {
           <p className="text-xs text-muted-foreground mb-6 leading-relaxed">
             <span className="text-red-600 font-semibold">Disclosure:</span> Gadgets Finds is an Amazon Associate. We may earn from qualifying purchases.
           </p>
+
+          <div className="mb-4">
+            <Link href="/mini-gadgets" className="inline-flex items-center text-sm text-red-500 hover:text-red-400 font-medium">
+              ← Back to Mini Gadgets
+            </Link>
+          </div>
 
           <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">Video</p>
           <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">Portable Phone Tripod</h1>
