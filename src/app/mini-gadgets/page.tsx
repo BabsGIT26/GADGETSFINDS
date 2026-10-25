@@ -25,13 +25,47 @@ const gadgets = [
     excerpt: "Two-in-one spray and microfiber cloth for phones, tablets, laptops, and car screens.",
   },
   {
-  title: "Outlet Extender Stick for Behind Couch",
-  href: "/outlet-extender-stick",
-  image: "https://m.media-amazon.com/images/I/51DW7RN3fEL.jpg",
-  excerpt: "Bring hard-to-reach outlets behind couches and desks within easy reach.",
-},
-  // Add more mini gadgets here later
-  
+    title: "Outlet Extender Stick for Behind Couch",
+    href: "/outlet-extender-stick",
+    image: "https://m.media-amazon.com/images/I/51DW7RN3fEL.jpg",
+    excerpt: "Bring hard-to-reach outlets behind couches and desks within easy reach.",
+  },
+  {
+    title: "Ultra-Slim Magnetic Power Bank",
+    href: "/ultra-slim-magnetic-power-bank",
+    image: "https://m.media-amazon.com/images/I/71X5X9p+J8L._AC_SL1500_.jpg",
+    excerpt: "Ultra-thin MagSafe-compatible power bank with Qi2 wireless charging.",
+  },
+  {
+    title: "Apple AirTag",
+    href: "/apple-airtag",
+    image: "https://m.media-amazon.com/images/I/71b5q4z+H9L._AC_SL1500_.jpg",
+    excerpt: "Precision tracker that works with the Find My network.",
+  },
+  {
+    title: "USB-C Power Meter",
+    href: "/usb-c-power-meter",
+    image: "https://m.media-amazon.com/images/I/61xiYeMNojL.jpg",
+    excerpt: "Test voltage, current, and wattage of your chargers and cables.",
+  },
+  {
+    title: "Mini GaN Charger 65W",
+    href: "/mini-gan-charger-65w",
+    image: "https://m.media-amazon.com/images/I/61+kXq8+X8L._AC_SL1500_.jpg",
+    excerpt: "Compact GaN charger with multiple ports for phones and laptops.",
+  },
+  {
+    title: "Phone Cooler Ice Card",
+    href: "/phone-cooler-ice-card",
+    image: "https://m.media-amazon.com/images/I/71a+X9p+J8L._AC_SL1500_.jpg",
+    excerpt: "Magnetic phone cooler that keeps your phone cool during gaming.",
+  },
+  {
+    title: "Ultra-Mini Webcam",
+    href: "/ultra-mini-webcam",
+    image: "https://m.media-amazon.com/images/I/61+Webcam+Mini.jpg",
+    excerpt: "Tiny 4K webcam that fits in a pocket for video calls.",
+  },
 ];
 
 export default function Page() {
@@ -50,7 +84,7 @@ export default function Page() {
             Small tools and accessories that solve everyday annoyances.
           </p>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
             {gadgets.map((item) => (
               <Link
                 key={item.href}
@@ -74,7 +108,6 @@ export default function Page() {
                     View →
                   </span>
                 </div>
-                
               </Link>
             ))}
           </div>
