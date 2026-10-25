@@ -4,6 +4,7 @@ import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 
 const AMAZON = "https://www.amazon.com/s?k=UGREEN+Magflow+Air+ultra+slim+power+bank&tag=gadgetsfindswebsmediavid-20";
+const IMAGE = "https://m.media-amazon.com/images/I/51FsefzzP3L.jpg";
 
 export const metadata: Metadata = {
   title: "Ultra-Slim Magnetic Power Bank Review — Gadgets Finds",
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
     url: "https://www.gadgets-finds.com/ultra-slim-magnetic-power-bank",
     siteName: "Gadgets Finds",
     type: "article",
-    images: [{ url: "https://m.media-amazon.com/images/I/71X5X9p+J8L._AC_SL1500_.jpg", width: 1200, height: 630, alt: "Ultra-Slim Magnetic Power Bank" }],
+    images: [{ url: IMAGE, width: 1200, height: 630, alt: "Ultra-Slim Magnetic Power Bank" }],
   },
 };
 
@@ -43,7 +44,7 @@ export default function Page() {
           </div>
 
           <div className="mb-10 flex justify-center">
-            <img src="https://m.media-amazon.com/images/I/71X5X9p+J8L._AC_SL1500_.jpg" alt="Ultra-Slim Magnetic Power Bank" className="w-full max-w-[280px] h-auto rounded-xl" />
+            <img src={IMAGE} alt="Ultra-Slim Magnetic Power Bank" className="w-full max-w-[280px] h-auto rounded-xl" />
           </div>
 
           <h2 className="text-2xl font-bold mt-10 mb-3">What it is</h2>
