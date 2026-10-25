@@ -4,7 +4,7 @@ import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 
 const AMAZON = "https://www.amazon.com/s?k=magnetic+cable+organizer+USB-C&tag=gadgetsfindswebsmediavid-20";
-const IMAGE = "https://m.media-amazon.com/images/I/51OZ72zdwsL.jpg";
+const IMAGE = "https://m.media-amazon.com/images/I/61wCD0dNMUL.jpg";
 
 export const metadata: Metadata = {
   title: "USB-C Cable Organizer Review — Gadgets Finds",
