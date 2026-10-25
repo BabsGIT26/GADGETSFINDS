@@ -3,8 +3,8 @@ import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 
-const AMAZON = "https://www.amazon.com/s?k=magnetic+phone+cooler+card&tag=gadgetsfindswebsmediavid-20";
-const IMAGE = "https://m.media-amazon.com/images/I/51FsefzzP3L.jpg";
+const AMAZON = "https://www.amazon.com/Phone-Cooler-Magnetic-Semiconductor-Streaming/dp/B0DYTYJ7WJ?tag=gadgetsfindswebsmediavid-20";
+const IMAGE = "https://m.media-amazon.com/images/I/71K3I5p0FDL.jpg";
 
 export const metadata: Metadata = {
   title: "Phone Cooler Ice Card Review — Gadgets Finds",

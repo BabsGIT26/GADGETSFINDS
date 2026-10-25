@@ -3,8 +3,8 @@ import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 
-const AMAZON = "https://www.amazon.com/s?k=OBSBOT+Meet+2+webcam&tag=gadgetsfindswebsmediavid-20";
-const IMAGE = "https://m.media-amazon.com/images/I/51nKMY3u+hL.jpg";
+const AMAZON = "https://www.amazon.com/OBSBOT-Lightweight-Microphone-Space-Grey/dp/B0D9W7J9SK?tag=gadgetsfindswebsmediavid-20";
+const IMAGE = "https://m.media-amazon.com/images/I/71K3I5p0FDL.jpg";
 
 export const metadata: Metadata = {
   title: "Ultra-Mini Webcam Review — Gadgets Finds",

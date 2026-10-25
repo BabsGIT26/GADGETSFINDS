@@ -3,7 +3,7 @@ import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 
-const AMAZON = "https://www.amazon.com/s?k=UGREEN+Magflow+Air+ultra+slim+power+bank&tag=gadgetsfindswebsmediavid-20";
+const AMAZON = "https://www.amazon.com/UGREEN-5000mAh-Ultra-Magnetic-Power/dp/B0F6NFHB31?tag=gadgetsfindswebsmediavid-20";
 const IMAGE = "https://m.media-amazon.com/images/I/51FsefzzP3L.jpg";
 
 export const metadata: Metadata = {
