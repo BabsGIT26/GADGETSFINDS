@@ -5,15 +5,15 @@ import AmazonDealBox from "@/components/common/AmazonDealBox";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Lowest Prices for NVIDIA RTX 50-Series GPUs on Amazon Right Now — Gadgets Finds",
+  title: "Lowest Prices for NVIDIA RTX 50-Series GPUs Right Now — Gadgets Finds",
   description:
-    "Current lowest prices for high-end RTX 5090, 5080, 5070 Ti, 5070, and 5060 Ti cards on Amazon as prices skyrocket. Check stock and deals.",
+    "Current lowest prices for high-end RTX 5090, 5080, 5070 Ti, 5070, and 5060 Ti cards as prices skyrocket. Check stock and deals.",
   metadataBase: new URL("https://www.gadgets-finds.com"),
   alternates: {
     canonical: "https://www.gadgets-finds.com/nvidia-rtx-50-series-lowest-prices-amazon",
   },
   openGraph: {
-    title: "NVIDIA RTX 50-Series Lowest Amazon Prices Right Now",
+    title: "NVIDIA RTX 50-Series Lowest Prices Right Now",
     description: "Best current deals on RTX 5090, 5080, 5070 Ti and more as GPU prices climb.",
     url: "https://www.gadgets-finds.com/nvidia-rtx-50-series-lowest-prices-amazon",
     siteName: "Gadgets Finds",
@@ -23,13 +23,13 @@ export const metadata: Metadata = {
         url: "https://m.media-amazon.com/images/I/811IbTkEvnL.jpg",
         width: 1200,
         height: 630,
-        alt: "NVIDIA RTX 50-Series GPUs lowest prices on Amazon",
+        alt: "NVIDIA RTX 50-Series GPUs lowest prices",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "NVIDIA RTX 50-Series Lowest Amazon Prices Right Now",
+    title: "NVIDIA RTX 50-Series Lowest Prices Right Now",
     description: "Best current deals on RTX 5090, 5080, 5070 Ti and more as GPU prices climb.",
     images: ["https://m.media-amazon.com/images/I/811IbTkEvnL.jpg"],
   },
@@ -47,10 +47,10 @@ export default function Page() {
 
           <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">GPUs</p>
           <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 leading-tight">
-            Lowest Prices for NVIDIA RTX 50-Series GPUs on Amazon Right Now
+            Lowest Prices for NVIDIA RTX 50-Series GPUs Right Now
           </h1>
           <p className="text-muted-foreground mb-6 text-sm md:text-base">
-            High-end NVIDIA RTX 50-series graphics cards are in high demand and prices have skyrocketed far above original MSRP. Here are the lowest prices we found on Amazon at the time of writing for the main models. Stock is limited and these numbers can change by the hour.
+            High-end NVIDIA RTX 50-series graphics cards are in high demand and prices have skyrocketed far above original MSRP. Here are the lowest prices we found at the time of writing for the main models. Stock is limited and these numbers can change by the hour.
           </p>
 
           {/* RTX 5090 */}
@@ -225,7 +225,7 @@ export default function Page() {
           <h2 className="text-xl md:text-2xl font-bold mt-8 md:mt-10 mb-2 md:mb-3">What to know before buying</h2>
           <ul className="list-disc pl-5 text-muted-foreground space-y-1.5 md:space-y-2 mb-4 text-sm md:text-base">
             <li>Prices on high-end RTX 50-series cards are currently far above original launch MSRP due to strong demand.</li>
-            <li>Always check the live Amazon page for current price, stock, seller rating, and return policy.</li>
+            <li>Always check the live page for current price, stock, seller rating, and return policy.</li>
             <li>Confirm you are buying the exact model (VRAM amount, cooler type, etc.) and not a different SKU.</li>
             <li>Delivery dates and availability can shift quickly.</li>
             <li>These listings were the lowest we spotted at the time of writing — they may no longer be the cheapest by the time you read this.</li>
