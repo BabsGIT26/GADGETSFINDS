@@ -25,10 +25,10 @@ export default function Page() {
   return (
     <>
       <Header />
-      <article className="min-h-screen bg-background pt-14 md:pt-16">
-        <div className="container mx-auto px-4 py-8 md:py-10 max-w-4xl text-sm md:text-base">
+      <article className="min-h-screen bg-background pt-28 md:pt-20 lg:pt-16">
+        <div className="container mx-auto px-4 py-6 md:py-10 max-w-4xl text-sm md:text-base">
           <p className="text-xs text-muted-foreground mb-4 leading-relaxed">
-            As an Amazon Associate, we may earn from qualifying purchases if you buy through links on this page, at no extra cost to you.
+            As an Amazon Associate, we may earn from qualifying purchases if you buy through links on this page.
           </p>
 
           <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">GPUs</p>
