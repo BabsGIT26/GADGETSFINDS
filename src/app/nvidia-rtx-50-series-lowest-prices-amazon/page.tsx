@@ -26,7 +26,7 @@ export default function Page() {
     <>
       <Header />
       <article className="min-h-screen bg-background pt-14 md:pt-16">
-        <div className="container mx-auto px-4 py-10 max-w-3xl">
+        <div className="container mx-auto px-4 py-10 max-w-4xl">
           <p className="text-xs text-muted-foreground mb-6 leading-relaxed">
             <span className="text-red-600 font-semibold">Disclosure:</span> Gadgets Finds is an Amazon Associate. We may earn from qualifying purchases if you buy through links on this page, at no extra cost to you. Prices and availability change constantly on Amazon — especially for high-end GPUs. Always confirm the live listing, seller, and stock before buying.
           </p>
@@ -39,145 +39,175 @@ export default function Page() {
             High-end NVIDIA RTX 50-series graphics cards are in high demand and prices have skyrocketed far above original MSRP. Here are the lowest prices we found on Amazon at the time of writing for the main models. Stock is limited and these numbers can change by the hour.
           </p>
 
-          <h2 className="text-2xl font-bold mt-10 mb-3">RTX 5090</h2>
-          <p className="text-muted-foreground mb-2">
-            <strong>Lowest price:</strong> $7,680.96<br />
-            <strong>Card:</strong> ASUS ROG Astral GeForce RTX 5090 32GB GDDR7 OC Edition<br />
-            <strong>ASIN:</strong> B0DTHV8THW<br />
-            <strong>Status:</strong> Currently unavailable (out of stock)
-          </p>
-          <div className="mb-4">
-            <a
-              href="https://www.amazon.com/dp/B0DTHV8THW?tag=gadgetsfindswebsmediavid-20"
-              target="_blank"
-              rel="nofollow sponsored noopener noreferrer"
-              className="inline-block bg-amber-400 hover:bg-amber-500 text-black font-bold px-6 py-3 rounded-md"
-            >
-              VIEW RTX 5090 ON AMAZON
-            </a>
+          {/* RTX 5090 */}
+          <div className="flex flex-col md:flex-row gap-6 items-start mt-10 mb-8">
+            <div className="flex-1">
+              <h2 className="text-2xl font-bold mb-3">RTX 5090</h2>
+              <p className="text-muted-foreground mb-2">
+                <strong>Lowest price:</strong> $7,680.96<br />
+                <strong>Card:</strong> ASUS ROG Astral GeForce RTX 5090 32GB GDDR7 OC Edition<br />
+                <strong>ASIN:</strong> B0DTHV8THW<br />
+                <strong>Status:</strong> Currently unavailable (out of stock)
+              </p>
+              <div className="mb-2">
+                <a
+                  href="https://www.amazon.com/dp/B0DTHV8THW?tag=gadgetsfindswebsmediavid-20"
+                  target="_blank"
+                  rel="nofollow sponsored noopener noreferrer"
+                  className="inline-block bg-amber-400 hover:bg-amber-500 text-black font-bold px-6 py-3 rounded-md"
+                >
+                  VIEW RTX 5090 ON AMAZON
+                </a>
+              </div>
+            </div>
+            <img
+              src="https://m.media-amazon.com/images/I/811IbTkEvnL.jpg"
+              alt="ASUS ROG Astral GeForce RTX 5090 32GB GDDR7 OC Edition"
+              className="w-48 h-auto rounded-lg object-contain flex-shrink-0 mx-auto md:mx-0"
+            />
           </div>
-          <img
-            src="https://m.media-amazon.com/images/I/811IbTkEvnL.jpg"
-            alt="ASUS ROG Astral GeForce RTX 5090 32GB GDDR7 OC Edition"
-            className="w-48 h-auto mx-auto mb-8 rounded-lg object-contain"
-          />
 
-          <h2 className="text-2xl font-bold mt-10 mb-3">RTX 5080</h2>
-          <p className="text-muted-foreground mb-2">
-            <strong>Lowest price:</strong> $2,211.17<br />
-            <strong>Card:</strong> PNY NVIDIA GeForce RTX 5080 Triple-Fan 16GB GDDR7<br />
-            <strong>ASIN:</strong> B0DYRZZJZ1<br />
-            <strong>Delivery:</strong> FREE delivery Tue, Nov 3<br />
-            <strong>Note:</strong> Customers report strong performance; mixed feedback on noise levels.
-          </p>
-          <div className="mb-4">
-            <a
-              href="https://www.amazon.com/dp/B0DYRZZJZ1?tag=gadgetsfindswebsmediavid-20"
-              target="_blank"
-              rel="nofollow sponsored noopener noreferrer"
-              className="inline-block bg-amber-400 hover:bg-amber-500 text-black font-bold px-6 py-3 rounded-md"
-            >
-              VIEW RTX 5080 ON AMAZON
-            </a>
+          {/* RTX 5080 */}
+          <div className="flex flex-col md:flex-row gap-6 items-start mt-10 mb-8">
+            <div className="flex-1">
+              <h2 className="text-2xl font-bold mb-3">RTX 5080</h2>
+              <p className="text-muted-foreground mb-2">
+                <strong>Lowest price:</strong> $2,211.17<br />
+                <strong>Card:</strong> PNY NVIDIA GeForce RTX 5080 Triple-Fan 16GB GDDR7<br />
+                <strong>ASIN:</strong> B0DYRZZJZ1<br />
+                <strong>Delivery:</strong> FREE delivery Tue, Nov 3<br />
+                <strong>Note:</strong> Customers report strong performance; mixed feedback on noise levels.
+              </p>
+              <div className="mb-2">
+                <a
+                  href="https://www.amazon.com/dp/B0DYRZZJZ1?tag=gadgetsfindswebsmediavid-20"
+                  target="_blank"
+                  rel="nofollow sponsored noopener noreferrer"
+                  className="inline-block bg-amber-400 hover:bg-amber-500 text-black font-bold px-6 py-3 rounded-md"
+                >
+                  VIEW RTX 5080 ON AMAZON
+                </a>
+              </div>
+            </div>
+            <img
+              src="https://m.media-amazon.com/images/I/71oOraaImGL.jpg"
+              alt="PNY NVIDIA GeForce RTX 5080 Triple-Fan 16GB GDDR7"
+              className="w-48 h-auto rounded-lg object-contain flex-shrink-0 mx-auto md:mx-0"
+            />
           </div>
-          <img
-            src="https://m.media-amazon.com/images/I/71oOraaImGL.jpg"
-            alt="PNY NVIDIA GeForce RTX 5080 Triple-Fan 16GB GDDR7"
-            className="w-48 h-auto mx-auto mb-8 rounded-lg object-contain"
-          />
 
-          <h2 className="text-2xl font-bold mt-10 mb-3">RTX 5070 Ti</h2>
-          <p className="text-muted-foreground mb-2">
-            <strong>Lowest price:</strong> $1,389.99<br />
-            <strong>Card:</strong> ASUS TUF Gaming GeForce RTX 5070 Ti 16GB GDDR7 OC Edition<br />
-            <strong>ASIN:</strong> B0DS6WTXGP<br />
-            <strong>Delivery:</strong> Nov 8–12
-          </p>
-          <div className="mb-4">
-            <a
-              href="https://www.amazon.com/dp/B0DS6WTXGP?tag=gadgetsfindswebsmediavid-20"
-              target="_blank"
-              rel="nofollow sponsored noopener noreferrer"
-              className="inline-block bg-amber-400 hover:bg-amber-500 text-black font-bold px-6 py-3 rounded-md"
-            >
-              VIEW RTX 5070 Ti ON AMAZON
-            </a>
+          {/* RTX 5070 Ti */}
+          <div className="flex flex-col md:flex-row gap-6 items-start mt-10 mb-8">
+            <div className="flex-1">
+              <h2 className="text-2xl font-bold mb-3">RTX 5070 Ti</h2>
+              <p className="text-muted-foreground mb-2">
+                <strong>Lowest price:</strong> $1,389.99<br />
+                <strong>Card:</strong> ASUS TUF Gaming GeForce RTX 5070 Ti 16GB GDDR7 OC Edition<br />
+                <strong>ASIN:</strong> B0DS6WTXGP<br />
+                <strong>Delivery:</strong> Nov 8–12
+              </p>
+              <div className="mb-2">
+                <a
+                  href="https://www.amazon.com/dp/B0DS6WTXGP?tag=gadgetsfindswebsmediavid-20"
+                  target="_blank"
+                  rel="nofollow sponsored noopener noreferrer"
+                  className="inline-block bg-amber-400 hover:bg-amber-500 text-black font-bold px-6 py-3 rounded-md"
+                >
+                  VIEW RTX 5070 Ti ON AMAZON
+                </a>
+              </div>
+            </div>
+            <img
+              src="https://m.media-amazon.com/images/I/81POeoI3lSL.jpg"
+              alt="ASUS TUF Gaming GeForce RTX 5070 Ti 16GB GDDR7 OC Edition"
+              className="w-48 h-auto rounded-lg object-contain flex-shrink-0 mx-auto md:mx-0"
+            />
           </div>
-          <img
-            src="https://m.media-amazon.com/images/I/81POeoI3lSL.jpg"
-            alt="ASUS TUF Gaming GeForce RTX 5070 Ti 16GB GDDR7 OC Edition"
-            className="w-48 h-auto mx-auto mb-8 rounded-lg object-contain"
-          />
 
-          <h2 className="text-2xl font-bold mt-10 mb-3">RTX 5070</h2>
-          <p className="text-muted-foreground mb-2">
-            <strong>Lowest price:</strong> $999.99<br />
-            <strong>Card:</strong> NVIDIA GeForce RTX 5070 12GB GDDR7 Founders Edition<br />
-            <strong>ASIN:</strong> B0F7XHBT13<br />
-            <strong>Delivery:</strong> Nov 5<br />
-            <strong>Note:</strong> Official NVIDIA reference design.
-          </p>
-          <div className="mb-4">
-            <a
-              href="https://www.amazon.com/dp/B0F7XHBT13?tag=gadgetsfindswebsmediavid-20"
-              target="_blank"
-              rel="nofollow sponsored noopener noreferrer"
-              className="inline-block bg-amber-400 hover:bg-amber-500 text-black font-bold px-6 py-3 rounded-md"
-            >
-              VIEW RTX 5070 ON AMAZON
-            </a>
+          {/* RTX 5070 */}
+          <div className="flex flex-col md:flex-row gap-6 items-start mt-10 mb-8">
+            <div className="flex-1">
+              <h2 className="text-2xl font-bold mb-3">RTX 5070</h2>
+              <p className="text-muted-foreground mb-2">
+                <strong>Lowest price:</strong> $999.99<br />
+                <strong>Card:</strong> NVIDIA GeForce RTX 5070 12GB GDDR7 Founders Edition<br />
+                <strong>ASIN:</strong> B0F7XHBT13<br />
+                <strong>Delivery:</strong> Nov 5<br />
+                <strong>Note:</strong> Official NVIDIA reference design.
+              </p>
+              <div className="mb-2">
+                <a
+                  href="https://www.amazon.com/dp/B0F7XHBT13?tag=gadgetsfindswebsmediavid-20"
+                  target="_blank"
+                  rel="nofollow sponsored noopener noreferrer"
+                  className="inline-block bg-amber-400 hover:bg-amber-500 text-black font-bold px-6 py-3 rounded-md"
+                >
+                  VIEW RTX 5070 ON AMAZON
+                </a>
+              </div>
+            </div>
+            <img
+              src="https://www.techpowerup.com/gpu-specs/images-new/b/12306-front-thumb.jpg"
+              alt="NVIDIA GeForce RTX 5070 12GB GDDR7 Founders Edition"
+              className="w-48 h-auto rounded-lg object-contain flex-shrink-0 mx-auto md:mx-0"
+            />
           </div>
-          <img
-            src="https://www.techpowerup.com/gpu-specs/images-new/b/12306-front-thumb.jpg"
-            alt="NVIDIA GeForce RTX 5070 12GB GDDR7 Founders Edition"
-            className="w-48 h-auto mx-auto mb-8 rounded-lg object-contain"
-          />
 
-          <h2 className="text-2xl font-bold mt-10 mb-3">RTX 5060 Ti (8GB)</h2>
-          <p className="text-muted-foreground mb-2">
-            <strong>Lowest price:</strong> $547.99<br />
-            <strong>Card:</strong> ASUS Dual GeForce RTX 5060 Ti 8GB GDDR7 OC Edition<br />
-            <strong>ASIN:</strong> B0F7W1KVT3<br />
-            <strong>Delivery:</strong> Nov 3
-          </p>
-          <div className="mb-4">
-            <a
-              href="https://www.amazon.com/dp/B0F7W1KVT3?tag=gadgetsfindswebsmediavid-20"
-              target="_blank"
-              rel="nofollow sponsored noopener noreferrer"
-              className="inline-block bg-amber-400 hover:bg-amber-500 text-black font-bold px-6 py-3 rounded-md"
-            >
-              VIEW RTX 5060 Ti 8GB ON AMAZON
-            </a>
+          {/* RTX 5060 Ti 8GB */}
+          <div className="flex flex-col md:flex-row gap-6 items-start mt-10 mb-8">
+            <div className="flex-1">
+              <h2 className="text-2xl font-bold mb-3">RTX 5060 Ti (8GB)</h2>
+              <p className="text-muted-foreground mb-2">
+                <strong>Lowest price:</strong> $547.99<br />
+                <strong>Card:</strong> ASUS Dual GeForce RTX 5060 Ti 8GB GDDR7 OC Edition<br />
+                <strong>ASIN:</strong> B0F7W1KVT3<br />
+                <strong>Delivery:</strong> Nov 3
+              </p>
+              <div className="mb-2">
+                <a
+                  href="https://www.amazon.com/dp/B0F7W1KVT3?tag=gadgetsfindswebsmediavid-20"
+                  target="_blank"
+                  rel="nofollow sponsored noopener noreferrer"
+                  className="inline-block bg-amber-400 hover:bg-amber-500 text-black font-bold px-6 py-3 rounded-md"
+                >
+                  VIEW RTX 5060 Ti 8GB ON AMAZON
+                </a>
+              </div>
+            </div>
+            <img
+              src="https://m.media-amazon.com/images/I/41LK8D7pR7L._SL500_.jpg"
+              alt="ASUS Dual GeForce RTX 5060 Ti 8GB GDDR7 OC Edition"
+              className="w-48 h-auto rounded-lg object-contain flex-shrink-0 mx-auto md:mx-0"
+            />
           </div>
-          <img
-            src="https://m.media-amazon.com/images/I/41LK8D7pR7L._SL500_.jpg"
-            alt="ASUS Dual GeForce RTX 5060 Ti 8GB GDDR7 OC Edition"
-            className="w-48 h-auto mx-auto mb-8 rounded-lg object-contain"
-          />
 
-          <h2 className="text-2xl font-bold mt-10 mb-3">RTX 5060 Ti (16GB)</h2>
-          <p className="text-muted-foreground mb-2">
-            <strong>Lowest price:</strong> $788.99<br />
-            <strong>Card:</strong> ASUS Prime GeForce RTX 5060 Ti 16GB GDDR7<br />
-            <strong>ASIN:</strong> B0F4RZDFD5<br />
-            <strong>Delivery:</strong> Nov 2–4
-          </p>
-          <div className="mb-4">
-            <a
-              href="https://www.amazon.com/dp/B0F4RZDFD5?tag=gadgetsfindswebsmediavid-20"
-              target="_blank"
-              rel="nofollow sponsored noopener noreferrer"
-              className="inline-block bg-amber-400 hover:bg-amber-500 text-black font-bold px-6 py-3 rounded-md"
-            >
-              VIEW RTX 5060 Ti 16GB ON AMAZON
-            </a>
+          {/* RTX 5060 Ti 16GB */}
+          <div className="flex flex-col md:flex-row gap-6 items-start mt-10 mb-8">
+            <div className="flex-1">
+              <h2 className="text-2xl font-bold mb-3">RTX 5060 Ti (16GB)</h2>
+              <p className="text-muted-foreground mb-2">
+                <strong>Lowest price:</strong> $788.99<br />
+                <strong>Card:</strong> ASUS Prime GeForce RTX 5060 Ti 16GB GDDR7<br />
+                <strong>ASIN:</strong> B0F4RZDFD5<br />
+                <strong>Delivery:</strong> Nov 2–4
+              </p>
+              <div className="mb-2">
+                <a
+                  href="https://www.amazon.com/dp/B0F4RZDFD5?tag=gadgetsfindswebsmediavid-20"
+                  target="_blank"
+                  rel="nofollow sponsored noopener noreferrer"
+                  className="inline-block bg-amber-400 hover:bg-amber-500 text-black font-bold px-6 py-3 rounded-md"
+                >
+                  VIEW RTX 5060 Ti 16GB ON AMAZON
+                </a>
+              </div>
+            </div>
+            <img
+              src="https://m.media-amazon.com/images/I/81aN+w8d4GL.jpg"
+              alt="ASUS Prime GeForce RTX 5060 Ti 16GB GDDR7"
+              className="w-48 h-auto rounded-lg object-contain flex-shrink-0 mx-auto md:mx-0"
+            />
           </div>
-          <img
-            src="https://m.media-amazon.com/images/I/81aN+w8d4GL.jpg"
-            alt="ASUS Prime GeForce RTX 5060 Ti 16GB GDDR7"
-            className="w-48 h-auto mx-auto mb-8 rounded-lg object-contain"
-          />
 
           <h2 className="text-2xl font-bold mt-10 mb-3">What to know before buying</h2>
           <ul className="list-disc pl-5 text-muted-foreground space-y-2 mb-4">
