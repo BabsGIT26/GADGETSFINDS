@@ -25,8 +25,8 @@ export default function Page() {
   return (
     <>
       <Header />
-      <article className="min-h-screen bg-background pt-28 md:pt-20 lg:pt-16">
-        <div className="container mx-auto px-4 py-6 md:py-10 max-w-4xl text-sm md:text-base">
+      <article className="min-h-screen bg-background pt-20 md:pt-16">
+        <div className="container mx-auto px-4 py-4 md:py-8 max-w-4xl text-sm md:text-base">
           <p className="text-xs text-muted-foreground mb-4 leading-relaxed">
             As an Amazon Associate, we may earn from qualifying purchases if you buy through links on this page.
           </p>
@@ -46,8 +46,7 @@ export default function Page() {
               <p className="text-muted-foreground mb-2 text-sm md:text-base">
                 <strong>Lowest price:</strong> $7,680.96<br />
                 <strong>Card:</strong> ASUS ROG Astral GeForce RTX 5090 32GB GDDR7 OC Edition<br />
-                <strong>ASIN:</strong> B0DTHV8THW<br />
-                <strong>Status:</strong> Currently unavailable (out of stock)
+                <strong>ASIN:</strong> B0DTHV8THW
               </p>
               <div className="mb-2">
                 <a
