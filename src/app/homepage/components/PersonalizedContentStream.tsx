@@ -163,7 +163,7 @@ const PersonalizedContentStream = () => {
   ];
 
   const articleRoutes: { [key: number]: string } = {
-    11: "/nvidia-rtx-50-series-lowest-prices-amazon",
+    11: "/nvidia-rtx-50-series-lowest-prices",
     1: "/iphone-duo-cases",
     2: "/october-deals",
     3: "/amazon-outlet-guide",
