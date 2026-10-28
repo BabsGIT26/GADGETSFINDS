@@ -29,7 +29,18 @@ const PersonalizedContentStream = () => {
   const filters = ['See All', 'Latest', 'Trending', 'Reviews', 'Guides'];
 
   const contentItems: ContentItem[] = [
-    
+    {
+      id: 11,
+      title: "Lowest Prices for NVIDIA RTX 50-Series GPUs on Amazon Right Now",
+      excerpt: "Current lowest prices for RTX 5090, 5080, 5070 Ti, 5070, and 5060 Ti as prices skyrocket. Check stock and deals.",
+      category: "Deals",
+      image: "https://m.media-amazon.com/images/I/811IbTkEvnL.jpg",
+      alt: "ASUS ROG Astral GeForce RTX 5090",
+      author: "Gadgets Finds",
+      publishedDate: "October 28, 2026",
+      readTime: "5 min read",
+      tags: ["GPUs", "NVIDIA", "RTX 50", "Deals", "Amazon"],
+    },
     { id: 1,
       title: "iPhone Duo Cases",
         excerpt: "Clear, silicone, leather, and protective options designed for the iPhone Duo.",
@@ -152,9 +163,8 @@ const PersonalizedContentStream = () => {
   ];
 
   const articleRoutes: { [key: number]: string } = {
-
-   
-    1:"/iphone-duo-cases", 
+    11: "/nvidia-rtx-50-series-lowest-prices-amazon",
+    1: "/iphone-duo-cases",
     2: "/october-deals",
     3: "/amazon-outlet-guide",
     4: "/quantum-computing-ibm-article",
@@ -163,7 +173,7 @@ const PersonalizedContentStream = () => {
     7: "/ai-productivity-tools-2026-article",
     8: "/sony-wh-2000xm6-review-article",
     9: "/best-laptops-developers-2026",
-    10:  "/member-trial",
+    10: "/member-trial",
   };
 
   const getFilteredItems = (): ContentItem[] => {
