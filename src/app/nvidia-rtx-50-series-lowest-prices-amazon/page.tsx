@@ -36,8 +36,7 @@ export default function Page() {
             Lowest Prices for NVIDIA RTX 50-Series GPUs on Amazon Right Now
           </h1>
           <p className="text-muted-foreground mb-6">
-            High-end NVIDIA RTX 50-series graphics cards are in high demand and prices have skyrocketed far above original MSRP. Here are the lowest prices we found on Amazon at the time of writing for the main models. Stock is limited and these numbers can change by the hour.
-          </p>
+            High-end NVIDIA RTX 50-series graphics cards are in high demand and prices have skyrocketed far above original MSRP. Here are the lowest prices we found on Amazon at the time of writing for the main models.         </p>
 
           {/* RTX 5090 */}
           <div className="flex flex-col md:flex-row gap-6 items-start mt-10 mb-8">
