@@ -18,6 +18,20 @@ export const metadata: Metadata = {
     url: "https://www.gadgets-finds.com/nvidia-rtx-50-series-lowest-prices-amazon",
     siteName: "Gadgets Finds",
     type: "article",
+    images: [
+      {
+        url: "https://m.media-amazon.com/images/I/811IbTkEvnL.jpg",
+        width: 1200,
+        height: 630,
+        alt: "NVIDIA RTX 50-Series GPUs lowest prices on Amazon",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "NVIDIA RTX 50-Series Lowest Amazon Prices Right Now",
+    description: "Best current deals on RTX 5090, 5080, 5070 Ti and more as GPU prices climb.",
+    images: ["https://m.media-amazon.com/images/I/811IbTkEvnL.jpg"],
   },
 };
 
