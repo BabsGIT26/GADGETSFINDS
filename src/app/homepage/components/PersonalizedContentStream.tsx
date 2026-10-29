@@ -30,6 +30,18 @@ const PersonalizedContentStream = () => {
 
   const contentItems: ContentItem[] = [
     {
+      id: 12,
+      title: "Apple's First Touchscreen MacBook Pro with PROLED XDR OLED Display",
+      excerpt: "Tandem OLED, 2000 nits, touch, Dynamic Island, M5 Pro & Max. The biggest MacBook Pro redesign in years.",
+      category: "News",
+      image: "https://images.macrumors.com/t/2bugNDX7f6zrI_wlLg7-bwMKe2U=/2500x/article-new/2026/10/Apple-MacBook-Pro-with-PROLED-XDR-Display-family-lineup-feature.jpg",
+      alt: "Apple MacBook Pro with PROLED XDR Display",
+      author: "Gadgets Finds",
+      publishedDate: "October 29, 2026",
+      readTime: "8 min read",
+      tags: ["Apple", "MacBook Pro", "OLED", "Touchscreen"],
+    },
+    {
       id: 11,
       title: "Lowest Prices for NVIDIA RTX 50-Series GPUs on Amazon Right Now",
       excerpt: "Current lowest prices for RTX 5090, 5080, 5070 Ti, 5070, and 5060 Ti as prices skyrocket. Check stock and deals.",
@@ -163,6 +175,7 @@ const PersonalizedContentStream = () => {
   ];
 
   const articleRoutes: { [key: number]: string } = {
+    12: "/apple-macbook-pro-oled-proled-xdr",
     11: "/nvidia-rtx-50-series-lowest-prices",
     1: "/iphone-duo-cases",
     2: "/october-deals",
