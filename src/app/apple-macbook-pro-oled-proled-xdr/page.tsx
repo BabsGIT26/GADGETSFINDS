@@ -61,6 +61,19 @@ export default function Page() {
             </a>
           </div>
 
+          <div className="my-6">
+            <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+              <iframe
+                className="absolute top-0 left-0 w-full h-full rounded-lg"
+                src="https://www.youtube.com/embed/hnZI5uUSdEo"
+                title="New MacBook Pro with PROLED XDR Display"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+
           <p className="text-muted-foreground mb-6 text-sm md:text-base leading-relaxed">
             On October 28, 2026, Apple finally did what many thought it never would. At its “Pro and Tell” event in Los Angeles, the company unveiled the all-new MacBook Pro with PROLED XDR Display — the first Mac ever with a touchscreen, and the first MacBook Pro to use OLED. Available in 14-inch and 16-inch sizes, it pairs a stunning tandem OLED panel with M5 Pro and M5 Max chips, a Dynamic Island, a glowing Apple logo, and a thinner, lighter design. Pre-orders are open now, with availability starting November 6.
           </p>
@@ -88,20 +101,6 @@ export default function Page() {
               alt="MacBook Pro PROLED XDR family lineup"
               className="w-36 md:w-56 h-auto rounded-lg object-contain flex-shrink-0 mx-auto md:mx-0"
             />
-          </div>
-
-          <div className="my-8">
-            <h2 className="text-xl md:text-2xl font-bold mb-4">Watch Apple's Official Promo</h2>
-            <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
-              <iframe
-                className="absolute top-0 left-0 w-full h-full rounded-lg"
-                src="https://www.youtube.com/embed/hnZI5uUSdEo"
-                title="New MacBook Pro with PROLED XDR Display"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
           </div>
 
           <div className="flex flex-col md:flex-row gap-6 items-start mt-10 mb-8">
