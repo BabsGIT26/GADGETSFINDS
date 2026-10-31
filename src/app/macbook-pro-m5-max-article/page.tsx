@@ -42,15 +42,7 @@ export default function Page() {
   return (
     <>
       <Header />
-      <article className="min-h-screen bg-background pt-14 md:pt-16">
-        <div className="w-full bg-muted flex items-center justify-center py-10 pb-2">
-          <AppImage
-            src="/assets/images/macbook_pro_m5_max.png"
-            alt="Apple MacBook Pro 16-inch M5 Max"
-            className="max-h-[400px] w-auto max-w-[85%] object-contain"
-          />
-        </div>
-
+      <article className="min-h-screen bg-background pt-28 md:pt-16">
         <div className="container mx-auto px-4 pt-2 pb-10 max-w-3xl">
           <p className="text-sm text-foreground mb-6">
             Disclosure: Gadgets Finds is an Amazon Associate. We may earn from qualifying
@@ -78,6 +70,24 @@ export default function Page() {
             VIEW ON AMAZON
           </a>
 
+          <div className="my-8 aspect-video">
+            <iframe
+              className="w-full h-full rounded-lg"
+              src="https://www.youtube.com/embed/xDHZ1bEEeUI"
+              title="MacBook Pro M5 Max review"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+
+          <div className="w-full bg-muted flex items-center justify-center py-8 mt-2 mb-6 rounded-lg">
+            <AppImage
+              src="/assets/images/macbook_pro_m5_max.png"
+              alt="Apple MacBook Pro 16-inch M5 Max"
+              className="max-h-[400px] w-auto max-w-[85%] object-contain"
+            />
+          </div>
+
           <h2 className="text-2xl font-bold mt-10 mb-3">What this config is</h2>
           <p className="text-muted-foreground mb-4">
             M5 Max is the high chip in the 2026 MacBook Pro line. This exact card is the 32-core
@@ -100,16 +110,6 @@ export default function Page() {
             Apple rates battery around 16–22 hours depending on the task. Real-world mixed use
             is closer to a full workday plus travel, not a full weekend unplugged.
           </p>
-
-          <div className="my-8 aspect-video">
-            <iframe
-              className="w-full h-full rounded-lg"
-              src="https://www.youtube.com/embed/xDHZ1bEEeUI"
-              title="MacBook Pro M5 Max review"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-          </div>
 
           <h2 className="text-2xl font-bold mt-10 mb-3">Who it is for</h2>
           <p className="text-muted-foreground mb-4">
