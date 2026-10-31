@@ -80,14 +80,6 @@ export default function Page() {
             />
           </div>
 
-          <div className="w-full bg-muted flex items-center justify-center py-8 mt-2 mb-6 rounded-lg">
-            <AppImage
-              src="/assets/images/macbook_pro_m5_max.png"
-              alt="Apple MacBook Pro 16-inch M5 Max"
-              className="max-h-[400px] w-auto max-w-[85%] object-contain"
-            />
-          </div>
-
           <h2 className="text-2xl font-bold mt-10 mb-3">What this config is</h2>
           <p className="text-muted-foreground mb-4">
             M5 Max is the high chip in the 2026 MacBook Pro line. This exact card is the 32-core
@@ -135,6 +127,14 @@ export default function Page() {
             The right MacBook Pro if you want M5 Max power with 2TB already on board. Skip it if
             you only browse and write. Open the Amazon listing before you treat $3,499 as live.
           </p>
+
+          <div className="flex justify-center mb-8">
+            <AppImage
+              src="/assets/images/macbook_pro_m5_max.png"
+              alt="Apple MacBook Pro 16-inch M5 Max"
+              className="max-h-[400px] w-auto max-w-[85%] object-contain"
+            />
+          </div>
 
           <AmazonDealBox
             productName="MacBook Pro 16 M5 Max 36GB 2TB"
