@@ -8,7 +8,7 @@ const AMAZON =
   "https://www.amazon.com/dp/B0DCD9LGHY?tag=dealsfinder05-20";
 
 const IMAGE =
-  "https://media.gamestop.com/i/gamestop/20015278/Microsoft-Xbox-Series-X-All-Digital-Console-1TB-SSD---4K-Gaming---120FPS---Robot-White";
+  "https://m.media-amazon.com/images/I/51bq1shHXEL.jpg";
 
 export const metadata: Metadata = {
   title: "Xbox Series X Digital 1TB Robot White — Gadgets Finds",
