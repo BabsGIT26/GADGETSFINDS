@@ -4,7 +4,7 @@ import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 
 const AMAZON =
-  "https://www.amazon.com/dp/B0DCD9LGHY?tag=dealsfinder05-20";
+  "https://www.amazon.com/dp/B0DCD9LGHY?tag=gadgetsfindswebsite-20";
 
 const OG_IMAGE =
   "https://i5.walmartimages.com/seo/Microsoft-Xbox-Series-X-1TB-All-Digital-Robot-White-Console-with-Mytrix-High-Speed-HDMI-Robot-White-All-Digital-Xbox_a8dc999d-ac15-4e82-9f95-de3180348647.198f3b0d3a2fa0ef73e6ddb0928ffbcc.jpeg";
