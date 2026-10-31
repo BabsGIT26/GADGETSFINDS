@@ -30,6 +30,18 @@ const PersonalizedContentStream = () => {
 
   const contentItems: ContentItem[] = [
     {
+      id: 13,
+      title: "Xbox Series X Digital 1TB Robot White",
+      excerpt: "All-digital Series X with 1TB SSD, true 4K up to 120 FPS, matching white controller. Price and stock change.",
+      category: "Gaming",
+      image: "https://media.gamestop.com/i/gamestop/20015278/Microsoft-Xbox-Series-X-All-Digital-Console-1TB-SSD---4K-Gaming---120FPS---Robot-White",
+      alt: "Xbox Series X Digital Robot White",
+      author: "Gadgets Finds",
+      publishedDate: "October 31, 2026",
+      readTime: "5 min read",
+      tags: ["Xbox", "Series X", "Digital", "Robot White"],
+    },
+    {
       id: 12,
       title: "Apple's First Touchscreen MacBook Pro with PROLED XDR OLED Display",
       excerpt: "Tandem OLED, 2000 nits, touch, Dynamic Island, M5 Pro & Max. The biggest MacBook Pro redesign in years.",
@@ -175,6 +187,7 @@ const PersonalizedContentStream = () => {
   ];
 
   const articleRoutes: { [key: number]: string } = {
+    13: "/xbox-series-x-digital-article",
     12: "/apple-macbook-pro-oled-proled-xdr",
     11: "/nvidia-rtx-50-series-lowest-prices",
     1: "/iphone-duo-cases",

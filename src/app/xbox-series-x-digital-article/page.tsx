@@ -7,6 +7,9 @@ import AmazonDealBox from "@/components/common/AmazonDealBox";
 const AMAZON =
   "https://www.amazon.com/dp/B0DCD9LGHY?tag=dealsfinder05-20";
 
+const IMAGE =
+  "https://media.gamestop.com/i/gamestop/20015278/Microsoft-Xbox-Series-X-All-Digital-Console-1TB-SSD---4K-Gaming---120FPS---Robot-White";
+
 export const metadata: Metadata = {
   title: "Xbox Series X Digital 1TB Robot White — Gadgets Finds",
   description:
@@ -23,7 +26,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "https://m.media-amazon.com/images/I/51nR5b1K+XL._AC_SL1500_.jpg",
+        url: IMAGE,
         width: 1200,
         height: 630,
         alt: "Xbox Series X Digital Robot White",
@@ -34,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@Gadgets_finds",
     title: "Xbox Series X Digital 1TB — Robot White",
-    images: ["https://m.media-amazon.com/images/I/51nR5b1K+XL._AC_SL1500_.jpg"],
+    images: [IMAGE],
   },
 };
 
@@ -43,14 +46,6 @@ export default function Page() {
     <>
       <Header />
       <article className="min-h-screen bg-background pt-1 md:pt-1">
-        <div className="w-full bg-muted flex items-center justify-center py-10 pb-2">
-          <AppImage
-            src="https://m.media-amazon.com/images/I/51nR5b1K+XL._AC_SL1500_.jpg"
-            alt="Xbox Series X All-Digital Robot White"
-            className="max-h-[400px] w-auto max-w-[85%] object-contain"
-          />
-        </div>
-
         <div className="container mx-auto px-4 pt-2 pb-10 max-w-3xl">
           <p className="text-sm text-foreground mb-6">
             Disclosure: Gadgets Finds is an Amazon Associate. We may earn from qualifying
@@ -77,6 +72,14 @@ export default function Page() {
           >
             VIEW ON AMAZON
           </a>
+
+          <div className="w-full bg-muted flex items-center justify-center py-8 mt-8 mb-6 rounded-lg">
+            <AppImage
+              src={IMAGE}
+              alt="Xbox Series X All-Digital Robot White"
+              className="max-h-[400px] w-auto max-w-[85%] object-contain"
+            />
+          </div>
 
           <h2 className="text-2xl font-bold mt-10 mb-3">What this console is</h2>
           <p className="text-muted-foreground mb-4">
