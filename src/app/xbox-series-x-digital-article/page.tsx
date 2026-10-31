@@ -1,14 +1,10 @@
 import type { Metadata } from "next";
-import AppImage from "@/components/ui/AppImage";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 
 const AMAZON =
   "https://www.amazon.com/dp/B0DCD9LGHY?tag=dealsfinder05-20";
-
-const IMAGE =
-  "https://m.media-amazon.com/images/I/51bq1shHXEL.jpg";
 
 export const metadata: Metadata = {
   title: "Xbox Series X Digital 1TB Robot White — Gadgets Finds",
@@ -26,7 +22,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: IMAGE,
+        url: "https://m.media-amazon.com/images/I/51bq1shHXEL.jpg",
         width: 1200,
         height: 630,
         alt: "Xbox Series X Digital Robot White",
@@ -37,7 +33,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@Gadgets_finds",
     title: "Xbox Series X Digital 1TB — Robot White",
-    images: [IMAGE],
+    images: ["https://m.media-amazon.com/images/I/51bq1shHXEL.jpg"],
   },
 };
 
@@ -73,11 +69,13 @@ export default function Page() {
             VIEW ON AMAZON
           </a>
 
-          <div className="w-full bg-muted flex items-center justify-center py-8 mt-8 mb-6 rounded-lg">
-            <AppImage
-              src={IMAGE}
-              alt="Xbox Series X All-Digital Robot White"
-              className="max-h-[400px] w-auto max-w-[85%] object-contain"
+          <div className="my-8 aspect-video">
+            <iframe
+              className="w-full h-full rounded-lg"
+              src="https://www.youtube.com/embed/0tUqIHwHDEc"
+              title="Xbox Series X Digital overview"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
             />
           </div>
 
@@ -103,16 +101,6 @@ export default function Page() {
             Backward compatibility covers thousands of Xbox One, Xbox 360, and original Xbox titles,
             many of them enhanced.
           </p>
-
-          <div className="my-8 aspect-video">
-            <iframe
-              className="w-full h-full rounded-lg"
-              src="https://www.youtube.com/embed/0tUqIHwHDEc"
-              title="Xbox Series X Digital overview"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-          </div>
 
           <h2 className="text-2xl font-bold mt-10 mb-3">Who it is for</h2>
           <p className="text-muted-foreground mb-4">
