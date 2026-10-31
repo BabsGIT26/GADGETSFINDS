@@ -34,7 +34,7 @@ const PersonalizedContentStream = () => {
       title: "Xbox Series X Digital 1TB Robot White",
       excerpt: "All-digital Series X with 1TB SSD, true 4K up to 120 FPS, matching white controller. Price and stock change.",
       category: "Gaming",
-      image: "https://media.gamestop.com/i/gamestop/20015278/Microsoft-Xbox-Series-X-All-Digital-Console-1TB-SSD---4K-Gaming---120FPS---Robot-White",
+      image: "https://m.media-amazon.com/images/I/51bq1shHXEL.jpg",
       alt: "Xbox Series X Digital Robot White",
       author: "Gadgets Finds",
       publishedDate: "October 31, 2026",
