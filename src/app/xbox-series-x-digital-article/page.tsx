@@ -44,7 +44,7 @@ export default function Page() {
   return (
     <>
       <Header />
-      <article className="min-h-screen bg-background">
+      <article className="min-h-screen bg-background pt-14 md:pt-16">
         <div className="container mx-auto px-4 pt-2 pb-10 max-w-3xl">
           <p className="text-sm text-foreground mb-3">
             Disclosure: Gadgets Finds is an Amazon Associate. We may earn from qualifying
