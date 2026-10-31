@@ -12,7 +12,7 @@ export default function AmazonDisclosureGate() {
   if (!pathname?.endsWith("-article")) return null;
 
   return (
-    <p className="border-b border-border bg-muted/40 px-4 py-3 text-center text-sm text-muted-foreground">
+    <p className="mt-14 md:mt-16 border-b border-border bg-muted/60 px-4 py-2 text-center text-sm text-foreground">
       {AMAZON_DISCLOSURE}
     </p>
   );
