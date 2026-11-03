@@ -19,7 +19,7 @@ export default function Page() {
   return (
     <>
       <Header />
-      <article className="min-h-screen bg-background pt-14 md:pt-16">
+      <article className="min-h-screen bg-background pt-28 md:pt-16">
         <div className="w-full bg-muted flex items-center justify-center py-10">
           <AppImage
             src="/assets/images/macbook_pro_m_four.png"
