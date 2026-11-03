@@ -5,19 +5,19 @@ import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 
 const AMAZON_PS5_DIGITAL =
-  "https://www.amazon.com/gp/product/B0966NLTZS?tag=gadgetsfindswebsite-20";
+  "https://www.amazon.com/dp/B08FC6MR62?tag=babs_cr7-20";
 
 export const metadata: Metadata = {
-  title: "PS5 Digital Edition Used Very Good — $539.99 | Gadgets Finds",
+  title: "PS5 Digital Edition — Gadgets Finds",
   description:
-    "Amazon listing: Playstation 5 Digital Edition, Used Very Good, $539.99. Price and stock change.",
+    "PlayStation 5 Digital Edition: no disc drive, ultra-high speed SSD, DualSense included. Price and stock change on Amazon.",
   metadataBase: new URL("https://www.gadgets-finds.com"),
   alternates: {
     canonical: "https://www.gadgets-finds.com/playstation-5-digital-renewed-article",
   },
   openGraph: {
-    title: "PS5 Digital Edition — Used Very Good $539.99",
-    description: "Used Very Good Digital Edition on Amazon. Price changes.",
+    title: "PS5 Digital Edition — Gadgets Finds",
+    description: "All-digital PS5 with ultra-high speed SSD and DualSense. Price changes.",
     url: "https://www.gadgets-finds.com/playstation-5-digital-renewed-article",
     siteName: "Gadgets Finds",
     type: "article",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@Gadgets_finds",
-    title: "PS5 Digital Edition — Used Very Good $539.99",
+    title: "PS5 Digital Edition — Gadgets Finds",
     images: ["/assets/images/playstation_5.png"],
   },
 };
@@ -52,16 +52,20 @@ export default function Page() {
         </div>
 
         <div className="container mx-auto px-4 pt-2 pb-10 max-w-3xl">
+          <p className="text-sm text-foreground mb-3">
+            Disclosure: Gadgets Finds is an Amazon Associate. We may earn from qualifying
+            purchases if you buy through links on this page, at no extra cost to you.
+          </p>
+
           <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">
             Gaming deal
           </p>
           <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-            PS5 Digital Edition — Used Very Good: $539.99
+            PlayStation 5 Digital Edition
           </h1>
           <p className="text-muted-foreground mb-8">
-            Amazon currently lists a{" "}
-            <strong>PlayStation 5 Digital Edition (Used — Very Good)</strong> at{" "}
-            <strong>$539.99</strong>. No disc drive. Price and stock change on Amazon.
+            The all-digital PlayStation 5: ultra-high speed SSD, DualSense controller, and no disc drive.
+            Price and stock change on Amazon.
           </p>
 
           <a
@@ -75,15 +79,15 @@ export default function Page() {
 
           <h2 className="text-2xl font-bold mt-10 mb-3">What this listing is</h2>
           <p className="text-muted-foreground mb-4">
-            This is a <strong>Used — Very Good</strong> Digital Edition PS5, not a brand-new disc Slim.
-            It plays PS5 and PS4 digital games from the PlayStation Store. It does not play physical
-            discs or 4K Blu-rays unless you add a compatible disc drive later.
+            This is the original <strong>PlayStation 5 Digital Edition</strong> (ASIN B08FC6MR62),
+            not a disc model. It plays PS5 and PS4 digital games from the PlayStation Store.
+            It does not play physical discs or 4K Blu-rays unless you add a compatible disc drive later.
           </p>
           <ul className="list-disc pl-5 text-muted-foreground space-y-2 mb-4">
-            <li>Condition: Used — Very Good</li>
-            <li>Model: Digital Edition (no disc drive)</li>
-            <li>Deal price: $539.99</li>
-            <li>ASIN: B0966NLTZS</li>
+            <li>Model: PlayStation 5 Digital Edition</li>
+            <li>Disc drive: None — digital games only</li>
+            <li>Includes: Console, DualSense wireless controller, HDMI cable, power cable</li>
+            <li>ASIN: B08FC6MR62</li>
           </ul>
 
           <h2 className="text-2xl font-bold mt-10 mb-3">Digital vs disc</h2>
@@ -102,24 +106,22 @@ export default function Page() {
             />
           </div>
 
-          <h2 className="text-2xl font-bold mt-10 mb-3">Storage and condition notes</h2>
+          <h2 className="text-2xl font-bold mt-10 mb-3">Storage notes</h2>
           <p className="text-muted-foreground mb-4">
-            Used — Very Good means the unit has been checked and works, with light cosmetic wear possible.
-            Confirm the exact storage, what is included (console, DualSense, cables), seller, and return
-            window on the live Amazon page before you buy. Modern games fill storage quickly — an
-            official-spec M.2 SSD can be added later if needed.
+            Confirm the exact storage, what is included, seller, and return window on the live
+            Amazon page before you buy. Modern games fill storage quickly — an official-spec M.2 SSD
+            can be added later if needed.
           </p>
 
           <h2 className="text-2xl font-bold mt-10 mb-3">Who should consider it</h2>
           <p className="text-muted-foreground mb-4">
-            This listing makes sense if you want the lowest entry into the PS5 generation, you only
-            buy digital games, and you are comfortable with a used condition. Skip it if you still
-            have a library of physical discs or plan to play 4K Blu-rays.
+            This listing makes sense if you want a PS5 and you only buy digital games.
+            Skip it if you still have a library of physical discs or plan to play 4K Blu-rays.
           </p>
 
           <h2 className="text-2xl font-bold mt-10 mb-3">Watch-outs</h2>
           <ul className="list-disc pl-5 text-muted-foreground space-y-2 mb-4">
-            <li>Check seller, condition notes, and return window on Amazon before buying.</li>
+            <li>Check seller, condition (new vs used), and return window on Amazon before buying.</li>
             <li>Confirm it is a complete kit: console, DualSense, HDMI, power cable.</li>
             <li>Storage fills up fast. Budget an official-spec internal M.2 SSD if you want several AAA games.</li>
             <li>Prices move. Recheck the live Amazon page.</li>
@@ -127,13 +129,12 @@ export default function Page() {
 
           <h2 className="text-2xl font-bold mt-10 mb-3">Verdict</h2>
           <p className="text-muted-foreground mb-4">
-            At $539.99 this Used Very Good Digital Edition is worth a look if you want a PS5 without a
-            disc drive and you accept used condition. If you want physical games, skip this listing
-            and get a disc Slim instead.
+            The right PS5 if you are all-digital and do not need a disc drive. Open the Amazon
+            listing to check the current price, condition, and stock before you decide.
           </p>
 
           <AmazonDealBox
-            productName="PS5 Digital Edition Used Very Good"
+            productName="PlayStation 5 Digital Edition"
             href={AMAZON_PS5_DIGITAL}
           />
         </div>
