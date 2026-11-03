@@ -65,7 +65,7 @@ export default function NVIDIARTXArticle() {
         </div>
 
         <article className="mx-auto max-w-5xl px-5 pt-6 pb-10 sm:px-8">
-          <p className="text-sm text-black mb-4">
+          <p className="text-sm text-foreground mb-4">
             Disclosure: Gadgets Finds is an Amazon Associate. We may earn from qualifying purchases
             if you buy through links on this page, at no extra cost to you.
           </p>
