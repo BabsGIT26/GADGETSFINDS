@@ -64,7 +64,7 @@ export default function MemberTrialPage() {
       <Header />
       <article className="min-h-screen bg-background pt-28 md:pt-24">
         <div className="container mx-auto px-4 pt-2 pb-10 max-w-3xl">
-          <p className="text-xs md:text-sm text-black mb-2 leading-relaxed">
+          <p className="text-xs md:text-sm text-foreground mb-2 leading-relaxed">
   Disclosure: Gadgets Finds is an Amazon Associate. We may earn from
   qualifying sign-ups and purchases if you use links on this page, at
   no extra cost to you.
@@ -108,7 +108,7 @@ export default function MemberTrialPage() {
             {offers.map((o) => (
               <li key={o.name} className="flex items-center gap-4 py-4">
                 <div className="min-w-0 flex-1">
-                 <p className="font-semibold text-blue-950">{o.name}</p>
+                 <p className="font-semibold text-foreground">{o.name}</p>
                   <p className="text-sm text-foreground">{o.detail}</p>
                   <p className="text-xs text-muted-foreground mt-1">{o.note}</p>
                 </div>
