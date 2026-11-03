@@ -46,7 +46,7 @@ export default function Page() {
   return (
     <>
       <Header />
-      <article className="min-h-screen bg-background pt-1 md:pt-1">
+      <article className="min-h-screen bg-background pt-28 md:pt-16">
         <div className="w-full bg-muted flex items-center justify-center py-10 pb-2">
           <AppImage
             src="/assets/images/roborock_saros_z70.png"
