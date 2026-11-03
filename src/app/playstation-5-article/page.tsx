@@ -34,7 +34,7 @@ export default function Page() {
   return (
     <>
       <Header />
-      <article className="min-h-screen bg-background pt-1 md:pt-1">
+      <article className="min-h-screen bg-background pt-28 md:pt-16">
          <div className="w-full bg-muted flex items-center justify-center py-10 pb-2">
           <AppImage src="/assets/images/playstation_5.png" alt="PlayStation 5 Slim console" className="max-h-[400px] w-auto max-w-[85%] object-contain" />
         </div>
