@@ -153,7 +153,7 @@ export default function Page() {
       <Header />
       <article className="min-h-screen bg-background pt-31 md:pt-16">
         <div className="container mx-auto px-4 pt-2 pb-10 max-w-3xl">
-          <p className="text-sm text-black mb-3 leading-relaxed">
+          <p className="text-sm text-foreground mb-3 leading-relaxed">
             Disclosure: Gadgets Finds is an Amazon Associate. We may earn from qualifying
             purchases if you buy through links on this page, at no extra cost to you.
           </p>
@@ -178,7 +178,8 @@ export default function Page() {
                 <h2 className="text-2xl font-bold text-foreground mb-2">{d.name}</h2>
                 <p className="text-sm text-foreground mb-3">
                   <span className="font-semibold">{d.price}</span>
-                  {" · "}list {d.was}{" · "}{d.off} when checked
+                  {" · "}
+                  list {d.was}{" · "}{d.off} when checked
                 </p>
                 <p className="text-base text-muted-foreground mb-4 leading-relaxed">{d.text}</p>
                 <a
