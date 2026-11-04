@@ -30,6 +30,18 @@ const PersonalizedContentStream = () => {
 
   const contentItems: ContentItem[] = [
     {
+      id: 14,
+      title: "MacBook Air 13-inch M5 — 16GB, 512GB, Silver",
+      excerpt: "2026 Air with M5, 13.6-inch Liquid Retina, Touch ID, Wi-Fi 7. List $1,299; Amazon has been near $1,099. Price changes.",
+      category: "Laptops",
+      image: "https://m.media-amazon.com/images/I/71txEBdkjxL.jpg",
+      alt: "MacBook Air 13-inch M5 Silver",
+      author: "Gadgets Finds",
+      publishedDate: "November 4, 2026",
+      readTime: "5 min read",
+      tags: ["Apple", "MacBook Air", "M5", "Laptop"],
+    },
+    {
       id: 13,
       title: "Xbox Series X Digital 1TB Robot White",
       excerpt: "All-digital Series X with 1TB SSD, true 4K up to 120 FPS, matching white controller. Price and stock change.",
@@ -187,6 +199,7 @@ const PersonalizedContentStream = () => {
   ];
 
   const articleRoutes: { [key: number]: string } = {
+    14: "/macbook-air-m5-13-article",
     13: "/xbox-series-x-digital-article",
     12: "/apple-macbook-pro-oled-proled-xdr",
     11: "/nvidia-rtx-50-series-lowest-prices",
