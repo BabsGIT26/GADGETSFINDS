@@ -75,8 +75,8 @@ export default function Page() {
           <div className="my-8 aspect-video">
             <iframe
               className="w-full h-full rounded-lg"
-              src="https://www.youtube.com/embed/6-5J1-4j7nA"
-              title="MacBook Air M5 overview"
+              src="https://www.youtube.com/embed/URwVV5tTJIA"
+              title="The MacBook Air with M5"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />
