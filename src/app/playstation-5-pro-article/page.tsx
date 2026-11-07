@@ -75,8 +75,8 @@ export default function Page() {
           <div className="my-8 aspect-video">
             <iframe
               className="w-full h-full rounded-lg"
-              src="https://www.youtube.com/embed/afKNpFXnxqA"
-              title="PlayStation 5 Pro"
+              src="https://www.youtube.com/embed/6HaRMiTfvks"
+              title="PlayStation 5 Pro Console - Reveal Trailer"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />
