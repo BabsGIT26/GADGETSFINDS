@@ -5,9 +5,9 @@ import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 
 const AMAZON =
-  "https://www.amazon.com/dp/B0DGY63Z2H?tag=gadgetsfindswebsite-20";
+  "https://www.amazon.com/dp/B0FTMY4YZ2?tag=gadgetsfindswebsite-20";
 
-const OG_IMAGE = "https://m.media-amazon.com/images/I/61vR3ovb2UL.jpg";
+const OG_IMAGE = "https://m.media-amazon.com/images/I/51f-7a6i5PL.jpg";
 
 export const metadata: Metadata = {
   title: "PlayStation 5 Pro — 2TB | Gadgets Finds",
@@ -85,7 +85,7 @@ export default function Page() {
           <h2 className="text-2xl font-bold mt-10 mb-3">What this console is</h2>
           <p className="text-muted-foreground mb-4">
             The PS5 Pro is the higher-end PS5. Same game library, more GPU power, and a bigger SSD.
-            ASIN B0DGY63Z2H. It plays PS5 and PS4 games. Pro-enhanced titles get the extra graphics features.
+            ASIN B0FTMY4YZ2. It plays PS5 and PS4 games. Pro-enhanced titles get the extra graphics features.
           </p>
           <ul className="list-disc pl-5 text-muted-foreground space-y-2 mb-4">
             <li>Console: PlayStation 5 Pro (digital — no disc drive)</li>
