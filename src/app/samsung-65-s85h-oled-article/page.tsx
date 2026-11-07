@@ -7,7 +7,7 @@ import AmazonDealBox from "@/components/common/AmazonDealBox";
 const AMAZON =
   "https://www.amazon.com/dp/B0GQ6YWP33?tag=gadgetsfindswebsite-20";
 
-const OG_IMAGE = "https://m.media-amazon.com/images/I/818JZQW4xWL.jpg";
+const OG_IMAGE = "https://eftm.com/wp-content/uploads/2026/03/Samsung-OLED-S85H-scaled.jpg";
 
 export const metadata: Metadata = {
   title: "Samsung 65-Inch S85H Series OLED 4K Smart TV (2026) | Gadgets Finds",
@@ -138,7 +138,7 @@ export default function Page() {
 
           <div className="w-full flex justify-center py-6 mb-10">
             <AppImage
-              src={OG_IMAGE}
+              src="https://m.media-amazon.com/images/I/818JZQW4xWL.jpg"
               alt="Samsung 65-Inch S85H Series OLED TV"
               className="max-h-[400px] w-auto max-w-full object-contain"
             />
