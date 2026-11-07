@@ -30,6 +30,18 @@ const PersonalizedContentStream = () => {
 
   const contentItems: ContentItem[] = [
     {
+      id: 15,
+      title: "PlayStation 5 Pro — 2TB",
+      excerpt: "Stronger GPU, PSSR, faster ray tracing, 2TB SSD, DualSense. No disc drive. Price and stock change.",
+      category: "Gaming",
+      image: "https://m.media-amazon.com/images/I/61vR3ovb2UL.jpg",
+      alt: "PlayStation 5 Pro",
+      author: "Gadgets Finds",
+      publishedDate: "November 7, 2026",
+      readTime: "5 min read",
+      tags: ["PS5", "PS5 Pro", "Sony", "Console"],
+    },
+    {
       id: 14,
       title: "MacBook Air 13-inch M5 — 16GB, 512GB, Silver",
       excerpt: "2026 Air with M5, 13.6-inch Liquid Retina, Touch ID, Wi-Fi 7. List $1,299; Amazon has been near $1,099. Price changes.",
@@ -199,6 +211,7 @@ const PersonalizedContentStream = () => {
   ];
 
   const articleRoutes: { [key: number]: string } = {
+    15: "/playstation-5-pro-article",
     14: "/macbook-air-m5-13-article",
     13: "/xbox-series-x-digital-article",
     12: "/apple-macbook-pro-oled-proled-xdr",
