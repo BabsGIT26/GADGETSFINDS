@@ -34,7 +34,7 @@ const PersonalizedContentStream = () => {
       title: "PlayStation 5 Pro — 2TB",
       excerpt: "Stronger GPU, PSSR, faster ray tracing, 2TB SSD, DualSense. No disc drive. Price and stock change.",
       category: "Gaming",
-      image: "https://m.media-amazon.com/images/I/61vR3ovb2UL.jpg",
+      image: "https://m.media-amazon.com/images/I/51f-7a6i5PL.jpg",
       alt: "PlayStation 5 Pro",
       author: "Gadgets Finds",
       publishedDate: "November 7, 2026",
