@@ -30,6 +30,18 @@ const PersonalizedContentStream = () => {
 
   const contentItems: ContentItem[] = [
     {
+      id: 16,
+      title: "Samsung 65-Inch S85H Series OLED 4K Smart TV (2026)",
+      excerpt: "Vision AI, NQ4 AI Gen2, OLED HDR, 4K AI Upscaling, Premium Gaming Pack. Price and stock change.",
+      category: "TVs",
+      image: "https://m.media-amazon.com/images/I/818JZQW4xWL.jpg",
+      alt: "Samsung 65-Inch S85H OLED",
+      author: "Gadgets Finds",
+      publishedDate: "November 7, 2026",
+      readTime: "5 min read",
+      tags: ["Samsung", "OLED", "TV", "S85H"],
+    },
+    {
       id: 15,
       title: "PlayStation 5 Pro — 2TB",
       excerpt: "Stronger GPU, PSSR, faster ray tracing, 2TB SSD, DualSense. No disc drive. Price and stock change.",
@@ -211,6 +223,7 @@ const PersonalizedContentStream = () => {
   ];
 
   const articleRoutes: { [key: number]: string } = {
+    16: "/samsung-65-s85h-oled-article",
     15: "/playstation-5-pro-article",
     14: "/macbook-air-m5-13-article",
     13: "/xbox-series-x-digital-article",
