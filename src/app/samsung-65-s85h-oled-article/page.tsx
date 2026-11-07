@@ -71,11 +71,30 @@ export default function Page() {
             VIEW ON AMAZON
           </a>
 
+          <div className="my-8 aspect-video">
+            <iframe
+              className="w-full h-full rounded-lg"
+              src="https://www.youtube.com/embed/A1BcTPpHlqs"
+              title="Samsung S85H OLED Review"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+
           <h2 className="text-2xl font-bold mt-10 mb-3">What this TV is</h2>
           <p className="text-muted-foreground mb-4">
             The S85H is Samsung’s 2026 entry OLED (model QN65S85HAEXZA / 65S85H). ASIN B0GQ6YWP33.
             It uses a WOLED panel with self-illuminating pixels for near-infinite contrast.
           </p>
+
+          <div className="w-full flex justify-center py-6 mb-6">
+            <AppImage
+              src="https://eftm.com/wp-content/uploads/2026/03/Samsung-OLED-S85H-scaled.jpg"
+              alt="Samsung S85H OLED in a living room"
+              className="max-h-[400px] w-auto max-w-full object-contain rounded-lg"
+            />
+          </div>
+
           <ul className="list-disc pl-5 text-muted-foreground space-y-2 mb-4">
             <li>Size: 65-inch class, 4K (3840 x 2160)</li>
             <li>Panel: OLED with OLED HDR</li>
@@ -92,6 +111,15 @@ export default function Page() {
           <p className="text-muted-foreground mb-4">
             Buy it if you want true OLED blacks and color in a 65-inch size without stepping up to Samsung’s higher QD-OLED lines. Strong for movies and for 4K/120Hz gaming on PS5 or Xbox.
           </p>
+
+          <div className="w-full flex justify-center py-6 mb-6">
+            <AppImage
+              src="https://cdn.mos.cms.futurecdn.net/sUoRqwztUWf4789WKCgPwa-2000-80.jpg"
+              alt="Samsung S85H OLED showing city skyline"
+              className="max-h-[400px] w-auto max-w-full object-contain rounded-lg"
+            />
+          </div>
+
           <p className="text-muted-foreground mb-4">
             Skip it if you need the brightest possible HDR for a very bright room, or if you prefer Dolby Vision (this model focuses on HDR10+).
           </p>
