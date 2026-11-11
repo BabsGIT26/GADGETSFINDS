@@ -5,7 +5,7 @@ import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 
 const AMAZON_PS5_DIGITAL =
-  "https://www.amazon.com/dp/B08FC6MR62?tag=gadgetsfindswebsite-20";
+  "https://www.amazon.com/dp/B08FC6MR62?lv=shuf&channelId=1&plpRedirect=mhFallback&linkCode=ll2&tag=gadgetsfindswebsite-20&linkId=418f59604801832232dee3270f98f8d0&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl";
 
 export const metadata: Metadata = {
   title: "PS5 Digital Edition — Gadgets Finds",
