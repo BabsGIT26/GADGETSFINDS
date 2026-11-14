@@ -8,6 +8,7 @@ import NewsletterSubscription from './components/NewsletterSubscription';
 import Footer from './components/Footer';
 import CES2026Preview from './components/CES2026Preview';
 import GadgetsSection from './components/GadgetsSection';
+import MiniGadgetsSection from './components/MiniGadgetsSection';
 
 export const metadata: Metadata = {
   title: 'Gadgets Finds — Daily gadget deals',
@@ -48,6 +49,7 @@ export default function Homepage() {
     <div className="min-h-screen bg-background">
       <Header />
             <GadgetsSection />
+            <MiniGadgetsSection />
       <main className="pt-36 md:pt-20">
 <section className="py-8 md:py-16 bg-background">
           <div className="container mx-auto px-4">
@@ -63,7 +65,7 @@ export default function Homepage() {
               </h1>
               <p className="text-base md:text-xl text-brand-text-secondary max-w-3xl mx-auto px-4">
                 Discover breakthrough innovations, expert reviews, and authoritative insights that
-                shape tomorrow&apos;s technology today
+                shape tomorrow's technology today
               </p>
             </div>
 
