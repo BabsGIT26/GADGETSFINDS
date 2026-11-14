@@ -5,7 +5,7 @@ import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 
 const AMAZON =
-  "https://www.amazon.com/dp/B0HB4HCB8L?tag=gadgetsfindswebsite-20";
+  "https://www.amazon.com/dp/B0HB4HCB8L?tag=00linktree-pinterest-20";
 
 const OG_IMAGE = "https://m.media-amazon.com/images/I/91NgubSWmjL.jpg";
 
