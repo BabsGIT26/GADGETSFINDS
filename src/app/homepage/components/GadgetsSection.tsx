@@ -213,6 +213,18 @@ const gadgets: Gadget[] = [
     href: "/iphone-17-vs-galaxy-s26-ultra",
     highlights: ["6.3 vs 6.9 display", "A19 vs Snapdragon", "Dual vs quad camera"],
   },
+  {
+    name: "GenZ Semi-Auto Slingshot",
+    brand: "Outdoor",
+    category: "Gaming",
+    rating: 4.5,
+    badge: "Rapid Fire",
+    badgeColor: "bg-red-600 text-white",
+    image: "https://m.media-amazon.com/images/I/91NgubSWmjL.jpg",
+    alt: "Semi-automatic rapid fire slingshot",
+    href: "/genz-semi-automatic-slingshot-article",
+    highlights: ["Magazine fed", "CNC aluminum", "Price changes"],
+  },
 ];
 
 const categories = ["All", "Laptops", "Smartphones", "GPUs", "Robotics", "Audio", "XR", "Gaming"];
