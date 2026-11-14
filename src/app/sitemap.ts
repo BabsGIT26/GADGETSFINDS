@@ -44,6 +44,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/spacex-starlink-gen-3-article',
     '/tesla-optimus-gen-3-article',
     '/tesla-robotaxi-article',
+    '/genz-semi-automatic-slingshot-article',
   ];
 
   const trendPages = [
