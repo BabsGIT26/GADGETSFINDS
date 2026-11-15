@@ -45,6 +45,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/tesla-optimus-gen-3-article',
     '/tesla-robotaxi-article',
     '/genz-semi-automatic-slingshot-article',
+    '/logitech-g29-driving-force-article',
   ];
 
   const trendPages = [
