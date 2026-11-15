@@ -34,7 +34,7 @@ const PersonalizedContentStream = () => {
       title: "Logitech G29 Driving Force Racing Wheel and Pedals",
       excerpt: "Dual-motor force feedback, stainless steel paddle shifters, leather cover. For PS5, PS4, PC and Mac. Price changes.",
       category: "Gaming",
-      image: "https://m.media-amazon.com/images/I/61n0gQ9vBKL.jpg",
+      image: "https://m.media-amazon.com/images/I/71ywUl+M-JL.jpg",
       alt: "Logitech G29 Driving Force Racing Wheel and Pedals",
       author: "Gadgets Finds",
       publishedDate: "November 15, 2026",
