@@ -3,11 +3,10 @@ import AppImage from "@/components/ui/AppImage";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
+import AmazonButton from "@/components/common/AmazonButton";
 
 const AMAZON =
   "https://www.amazon.com/dp/B00Z0UWWYC?tag=gadgetsfindswebsite-20";
-
-const TRACKED = `/api/go?url=${encodeURIComponent(AMAZON)}`;
 
 const OG_IMAGE = "https://m.media-amazon.com/images/I/71ywUl+M-JL.jpg";
 
@@ -128,14 +127,7 @@ export default function Page() {
             Dual-motor force feedback racing wheel with stainless steel paddle shifters, hand-stitched leather cover, and adjustable three-pedal set. Compatible with PS5, PS4, PC and Mac. Price and stock change on Amazon.
           </p>
 
-          <a
-            href={TRACKED}
-            target="_blank"
-            rel="nofollow sponsored noopener noreferrer"
-            className="inline-block bg-amber-400 hover:bg-amber-500 text-black font-bold px-6 py-3 rounded-md"
-          >
-            VIEW ON AMAZON
-          </a>
+          <AmazonButton href={AMAZON} />
 
           <div className="my-8 aspect-video">
             <iframe
