@@ -153,7 +153,7 @@ export default function Page() {
           <div className="w-full flex justify-center py-6 mb-6">
             <AppImage
               src="https://m.media-amazon.com/images/I/71ywUl+M-JL.jpg"
-              alt="Logitech G29 Driving Force Racing Wheel and Pedals"
+              alt="Logitech G29 Driving Force Racing Wheel and Pedals full kit"
               className="max-h-[400px] w-auto max-w-full object-contain rounded-lg"
             />
           </div>
@@ -176,7 +176,7 @@ export default function Page() {
 
           <div className="w-full flex justify-center py-6 mb-6">
             <AppImage
-              src="https://m.media-amazon.com/images/I/61n0gQ9vBKL.jpg"
+              src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/4223/4223000_sd.jpg"
               alt="Logitech G29 wheel and pedals side by side"
               className="max-h-[400px] w-auto max-w-full object-contain rounded-lg"
             />
@@ -224,7 +224,7 @@ export default function Page() {
 
           <div className="w-full flex justify-center py-6 mb-10">
             <AppImage
-              src={OG_IMAGE}
+              src="https://m.media-amazon.com/images/I/61n0gQ9vBKL.jpg"
               alt="Logitech G29 Driving Force"
               className="max-h-[400px] w-auto max-w-full object-contain"
             />
