@@ -4,7 +4,7 @@ export async function sendXConversion({
   eventSourceUrl,
   identifiers,
 }: {
-  eventId: string; // e.g. "tw-pwfa9-xxxxx"
+  eventId: string;
   conversionId?: string;
   eventSourceUrl?: string;
   identifiers: Array<{
@@ -16,8 +16,17 @@ export async function sendXConversion({
   }>;
 }) {
   const token = process.env.X_PIXEL_TOKEN;
+
+  console.log("[X-CAPI] Attempting to send conversion", {
+    eventId,
+    hasToken: !!token,
+    tokenLength: token?.length || 0,
+    eventSourceUrl,
+    identifiersCount: identifiers.length,
+  });
+
   if (!token) {
-    console.warn("X_PIXEL_TOKEN not set — skipping conversion");
+    console.error("[X-CAPI] X_PIXEL_TOKEN is missing");
     return { ok: false, reason: "missing_token" };
   }
 
@@ -33,18 +42,36 @@ export async function sendXConversion({
     ],
   };
 
-  const res = await fetch(
-    "https://ads-api.x.com/12/measurement/conversions/pwfa9",
-    {
-      method: "POST",
-      headers: {
-        "X-Pixel-Token": token,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(payload),
-    }
-  );
+  try {
+    const res = await fetch(
+      "https://ads-api.x.com/12/measurement/conversions/pwfa9",
+      {
+        method: "POST",
+        headers: {
+          "X-Pixel-Token": token,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      }
+    );
 
-  const data = await res.json().catch(() => ({}));
-  return { ok: res.ok, status: res.status, data };
+    const text = await res.text();
+    let data: any = {};
+    try {
+      data = JSON.parse(text);
+    } catch {
+      data = { raw: text };
+    }
+
+    console.log("[X-CAPI] Response", {
+      status: res.status,
+      ok: res.ok,
+      data,
+    });
+
+    return { ok: res.ok, status: res.status, data };
+  } catch (err) {
+    console.error("[X-CAPI] Fetch error", err);
+    return { ok: false, error: String(err) };
+  }
 }
