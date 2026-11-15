@@ -1,3 +1,5 @@
+"use client";
+
 import { resolveAmazonAffiliateUrl } from "@/lib/amazon-affiliate";
 
 type Props = {
@@ -8,6 +10,25 @@ type Props = {
 
 function trackedUrl(href: string) {
   return `/api/go?url=${encodeURIComponent(href)}`;
+}
+
+function fireAmazonClick() {
+  if (typeof window !== "undefined" && (window as any).twq) {
+    (window as any).twq("event", "tw-pwfa9-rj4tg", {
+      value: null,
+      contents: [
+        {
+          content_type: null,
+          content_id: null,
+          content_name: null,
+          content_price: null,
+          num_items: null,
+          content_group_id: null,
+        },
+      ],
+      conversion_id: null,
+    });
+  }
 }
 
 export default function AmazonDealBox({ productName, href, compact }: Props) {
@@ -22,15 +43,16 @@ export default function AmazonDealBox({ productName, href, compact }: Props) {
           href={tracked}
           target="_blank"
           rel="nofollow sponsored noopener noreferrer"
+          onClick={fireAmazonClick}
           aria-label={`View ${productName} on Amazon. #AD.`}
           className="inline-flex items-center justify-center min-w-[240px] px-8 py-4 rounded-full bg-amber-400 text-zinc-950 text-base font-extrabold hover:bg-amber-300 transition-colors"
         >
           View product on Amazon →
         </a>
-             <p className="text-sm leading-relaxed text-black-300 mt-5">
-        As an Amazon Associate, Gadgets Finds earns from qualifying purchases. Prices and
-        availability change on Amazon.
-      </p>
+        <p className="text-sm leading-relaxed text-black-300 mt-5">
+          As an Amazon Associate, Gadgets Finds earns from qualifying purchases. Prices and
+          availability change on Amazon.
+        </p>
       </div>
     );
   }
@@ -50,6 +72,7 @@ export default function AmazonDealBox({ productName, href, compact }: Props) {
         href={tracked}
         target="_blank"
         rel="nofollow sponsored noopener noreferrer"
+        onClick={fireAmazonClick}
         className="inline-flex items-center justify-center w-full md:w-auto min-w-[240px] px-8 py-4 rounded-full bg-amber-400 text-zinc-950 text-base font-extrabold hover:bg-amber-300 transition-colors"
       >
         View on Amazon  →
