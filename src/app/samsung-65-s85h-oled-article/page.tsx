@@ -3,6 +3,7 @@ import AppImage from "@/components/ui/AppImage";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
+import AmazonButton from "@/components/common/AmazonButton";
 
 const AMAZON =
   "https://www.amazon.com/dp/B0GQ6YWP33?tag=gadgetsfindswebsite-20";
@@ -62,14 +63,7 @@ export default function Page() {
             4K AI Upscaling, Color Booster Pro, and a Premium Gaming Pack. Price and stock change on Amazon.
           </p>
 
-          <a
-            href={AMAZON}
-            target="_blank"
-            rel="nofollow sponsored noopener noreferrer"
-            className="inline-block bg-amber-400 hover:bg-amber-500 text-black font-bold px-6 py-3 rounded-md"
-          >
-            VIEW ON AMAZON
-          </a>
+          <AmazonButton href={AMAZON} />
 
           <div className="my-8 aspect-video">
             <iframe
