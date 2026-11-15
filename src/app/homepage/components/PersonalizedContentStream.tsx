@@ -30,6 +30,18 @@ const PersonalizedContentStream = () => {
 
   const contentItems: ContentItem[] = [
     {
+      id: 17,
+      title: "Logitech G29 Driving Force Racing Wheel and Pedals",
+      excerpt: "Dual-motor force feedback, stainless steel paddle shifters, leather cover. For PS5, PS4, PC and Mac. Price changes.",
+      category: "Gaming",
+      image: "https://m.media-amazon.com/images/I/61n0gQ9vBKL.jpg",
+      alt: "Logitech G29 Driving Force Racing Wheel and Pedals",
+      author: "Gadgets Finds",
+      publishedDate: "November 15, 2026",
+      readTime: "5 min read",
+      tags: ["Logitech", "G29", "Racing Wheel", "PS5"],
+    },
+    {
       id: 16,
       title: "Samsung 65-Inch S85H Series OLED 4K Smart TV (2026)",
       excerpt: "Vision AI, NQ4 AI Gen2, OLED HDR, 4K AI Upscaling, Premium Gaming Pack. Price and stock change.",
@@ -223,6 +235,7 @@ const PersonalizedContentStream = () => {
   ];
 
   const articleRoutes: { [key: number]: string } = {
+    17: "/logitech-g29-driving-force-article",
     16: "/samsung-65-s85h-oled-article",
     15: "/playstation-5-pro-article",
     14: "/macbook-air-m5-13-article",
