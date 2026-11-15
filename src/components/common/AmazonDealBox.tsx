@@ -6,15 +6,20 @@ type Props = {
   compact?: boolean;
 };
 
+function trackedUrl(href: string) {
+  return `/api/go?url=${encodeURIComponent(href)}`;
+}
+
 export default function AmazonDealBox({ productName, href, compact }: Props) {
   const affiliateHref = resolveAmazonAffiliateUrl(productName, href);
+  const tracked = trackedUrl(affiliateHref);
   const isTopPs5Cta = compact || productName === "PlayStation 5 Slim (disc)";
 
   if (isTopPs5Cta) {
     return (
       <div className="my-8">
         <a
-          href={affiliateHref}
+          href={tracked}
           target="_blank"
           rel="nofollow sponsored noopener noreferrer"
           aria-label={`View ${productName} on Amazon. #AD.`}
@@ -42,7 +47,7 @@ export default function AmazonDealBox({ productName, href, compact }: Props) {
         Live price and stock are on Amazon. We may earn a commission if you buy through this link.
       </p>
       <a
-        href={affiliateHref}
+        href={tracked}
         target="_blank"
         rel="nofollow sponsored noopener noreferrer"
         className="inline-flex items-center justify-center w-full md:w-auto min-w-[240px] px-8 py-4 rounded-full bg-amber-400 text-zinc-950 text-base font-extrabold hover:bg-amber-300 transition-colors"
