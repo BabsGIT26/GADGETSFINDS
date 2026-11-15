@@ -7,6 +7,8 @@ import AmazonDealBox from "@/components/common/AmazonDealBox";
 const AMAZON =
   "https://www.amazon.com/dp/B0GR19X8DC?tag=gadgetsfindswebsite-20";
 
+const TRACKED = `/api/go?url=${encodeURIComponent(AMAZON)}`;
+
 const OG_IMAGE = "https://m.media-amazon.com/images/I/71txEBdkjxL.jpg";
 
 export const metadata: Metadata = {
@@ -64,7 +66,7 @@ export default function Page() {
           </p>
 
           <a
-            href={AMAZON}
+            href={TRACKED}
             target="_blank"
             rel="nofollow sponsored noopener noreferrer"
             className="inline-block bg-amber-400 hover:bg-amber-500 text-black font-bold px-6 py-3 rounded-md"
