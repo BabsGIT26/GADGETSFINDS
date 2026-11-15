@@ -150,14 +150,6 @@ export default function Page() {
             The Logitech G29 Driving Force is one of the most popular entry-level sim racing wheels. It uses dual motors and helical gearing to deliver force feedback so you feel tire slip, understeer, oversteer, and road texture. The wheel offers up to 900 degrees of lock-to-lock rotation, matching the range of many real cars.
           </p>
 
-          <div className="w-full flex justify-center py-6 mb-6">
-            <AppImage
-              src="https://m.media-amazon.com/images/I/71ywUl+M-JL.jpg"
-              alt="Logitech G29 Driving Force Racing Wheel and Pedals full kit"
-              className="max-h-[400px] w-auto max-w-full object-contain rounded-lg"
-            />
-          </div>
-
           <ul className="list-disc pl-5 text-muted-foreground space-y-2 mb-4">
             <li>Dual-motor force feedback with helical gearing and anti-backlash system</li>
             <li>900-degree lock-to-lock rotation</li>
@@ -173,14 +165,6 @@ export default function Page() {
           <p className="text-muted-foreground mb-4">
             Beginners and casual sim racers who want a complete, ready-to-use wheel and pedals package that works on both PlayStation and PC. It is still one of the most supported and widely available starter wheels.
           </p>
-
-          <div className="w-full flex justify-center py-6 mb-6">
-            <AppImage
-              src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/4223/4223000_sd.jpg"
-              alt="Logitech G29 wheel and pedals side by side"
-              className="max-h-[400px] w-auto max-w-full object-contain rounded-lg"
-            />
-          </div>
 
           <p className="text-muted-foreground mb-4">
             Skip it if you specifically want the smoother, more detailed feel of a modern direct-drive wheel or higher torque. The G29 remains a solid, reliable option for most people starting out or playing casually.
@@ -224,8 +208,8 @@ export default function Page() {
 
           <div className="w-full flex justify-center py-6 mb-10">
             <AppImage
-              src="https://m.media-amazon.com/images/I/61n0gQ9vBKL.jpg"
-              alt="Logitech G29 Driving Force"
+              src={OG_IMAGE}
+              alt="Logitech G29 Driving Force Racing Wheel and Pedals"
               className="max-h-[400px] w-auto max-w-full object-contain"
             />
           </div>
