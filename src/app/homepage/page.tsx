@@ -50,11 +50,11 @@ export default function Homepage() {
     <div className="min-h-screen bg-background">
       <Header />
 
-      {/* Spacer so content starts below the fixed header */}
-      <div className="h-14 md:h-16" />
+      {/* Spacer so content starts below the fixed header (taller on mobile because of nav strip) */}
+      <div className="h-28 md:h-16" />
 
       {/* Early Black Friday banner — visible under header */}
-      <div className="bg-red-600 text-white text-center py-2.5 px-4 text-sm font-medium sticky top-14 md:top-16 z-40">
+      <div className="bg-red-600 text-white text-center py-2.5 px-4 text-sm font-medium sticky top-28 md:top-16 z-40">
         <Link href="/early-black-friday-deals" className="hover:underline">
           Early Black Friday Deals — 50% off or more. Check the latest prices →
         </Link>
