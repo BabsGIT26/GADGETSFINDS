@@ -4,6 +4,7 @@ import AppImage from "@/components/ui/AppImage";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
+import CommentSection from "@/components/comments/CommentSection";
 
 const AMAZON =
   "https://www.amazon.com/dp/B0CXSWDHM6?tag=gadgetsfindswebsite-20";
@@ -112,6 +113,8 @@ export default function Page() {
           </p>
 
           <AmazonDealBox productName="PS5 cooling station" href={AMAZON} />
+
+          <CommentSection articleSlug="ps5-cooling-station-article" />
         </div>
       </article>
       <Footer />
