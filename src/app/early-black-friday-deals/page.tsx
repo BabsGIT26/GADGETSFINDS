@@ -1,19 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import type { Metadata } from "next";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonButton from "@/components/common/AmazonButton";
-
-export const metadata: Metadata = {
-  title: "Early Black Friday Deals | Gadgets Finds",
-  description: "Early Black Friday deals with 50% or more off on gadgets, gaming, and more. Prices and stock change on Amazon.",
-  metadataBase: new URL("https://www.gadgets-finds.com"),
-  alternates: {
-    canonical: "https://www.gadgets-finds.com/early-black-friday-deals",
-  },
-};
 
 const deals = [
   {
