@@ -3,6 +3,7 @@ import AppImage from "@/components/ui/AppImage";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
+import CommentSection from "@/components/comments/CommentSection";
 
 const AMAZON_PS5_DIGITAL =
   "https://www.amazon.com/dp/B08FC6MR62?lv=shuf&channelId=1&plpRedirect=mhFallback&linkCode=ll2&tag=gadgetsfindswebsite-20&linkId=418f59604801832232dee3270f98f8d0&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl";
@@ -137,6 +138,8 @@ export default function Page() {
             productName="PlayStation 5 Digital Edition"
             href={AMAZON_PS5_DIGITAL}
           />
+
+          <CommentSection articleSlug="playstation-5-digital-renewed-article" />
         </div>
       </article>
       <Footer />
