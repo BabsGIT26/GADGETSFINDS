@@ -35,7 +35,7 @@ const deals = [
     original: "$69.99",
     discount: "66%",
     asin: "B0B1N7LJD3",
-    image: "https://m.media-amazon.com/images/I/61+8e5b0J0L.jpg",
+    image: "https://m.media-amazon.com/images/I/61vPg1U2TdL.jpg",
   },
   {
     name: "Dyson V9 Motorbar Cordless Vacuum",
@@ -59,7 +59,7 @@ const deals = [
     original: "$69.99",
     discount: "50%",
     asin: "B0H8QND851",
-    image: "https://m.media-amazon.com/images/I/71xf3vrARiL.jpg",
+    image: "https://m.media-amazon.com/images/I/61EdXiKSHjL.jpg",
   },
   {
     name: "Blink Mini Pan-Tilt 2K+",
@@ -67,7 +67,7 @@ const deals = [
     original: "$49.99",
     discount: "60%",
     asin: "B0GZLXWN8X",
-    image: "https://m.media-amazon.com/images/I/61gB5g0Q0L.jpg",
+    image: "https://m.media-amazon.com/images/I/61vPg1U2TdL.jpg",
   },
   {
     name: "Marvel’s Spider-Man 2 — PS5",
@@ -83,7 +83,7 @@ const deals = [
     original: "$139.99",
     discount: "50%",
     asin: "B0B8F5H5R6",
-    image: "https://m.media-amazon.com/images/I/71K8e5b0J0L.jpg",
+    image: "https://m.media-amazon.com/images/I/71ehxvCwvJL.jpg",
   },
   {
     name: "HP Everyday Slim Laptop (2027)",
