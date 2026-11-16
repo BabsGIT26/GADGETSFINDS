@@ -30,6 +30,14 @@ const deals = [
     image: "https://m.media-amazon.com/images/I/611FshOQWjL.jpg",
   },
   {
+    name: "Ring Battery Doorbell 2K",
+    price: "$39.99",
+    original: "$99.99",
+    discount: "60%",
+    asin: "B0C1G1R6N5",
+    image: "https://kotaku.com/app/uploads/2026/11/Ring-Battery-Doorbell-2K.jpg",
+  },
+  {
     name: "Blink Outdoor 4 — Add-on Camera",
     price: "$23.99",
     original: "$69.99",
@@ -60,6 +68,14 @@ const deals = [
     discount: "50%",
     asin: "B0H8QND851",
     image: "https://m.media-amazon.com/images/I/61EdXiKSHjL.jpg",
+  },
+  {
+    name: "Keurig K-Express Coffee Maker",
+    price: "$59.99",
+    original: "$109.99",
+    discount: "45%",
+    asin: "B07N9G2X2S",
+    image: "https://m.media-amazon.com/images/I/61X8e5b0J0L.jpg",
   },
   {
     name: "Blink Mini Pan-Tilt 2K+",
