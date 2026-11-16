@@ -4,6 +4,7 @@ import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 import AmazonButton from "@/components/common/AmazonButton";
+import CommentSection from "@/components/comments/CommentSection";
 
 const AMAZON =
   "https://www.amazon.com/dp/B00Z0UWWYC?tag=gadgetsfindswebsite-20";
@@ -212,6 +213,8 @@ export default function Page() {
             productName="Logitech G29 Driving Force Racing Wheel and Pedals"
             href={AMAZON}
           />
+
+          <CommentSection articleSlug="logitech-g29-driving-force-article" />
         </div>
       </article>
       <Footer />
