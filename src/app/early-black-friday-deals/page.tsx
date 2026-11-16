@@ -117,6 +117,55 @@ const deals = [
     asin: "B0H4L4J1VC",
     image: "https://i5.walmartimages.com/seo/Compressed-Air-Duster-280000-RPM-Electric-Air-Duster-Rechargeable-Air-Duster-C-Keyboard-Cleaner-4-Speeds_21e0e1b2-47a8-4d17-98e5-2a11ea17fc78.a48f2377561d3c3d327c8505ed04067f.jpeg",
   },
+  // New deals
+  {
+    name: "Ring Outdoor Cam 2K",
+    price: "$49.99",
+    original: "$99.99",
+    discount: "50%",
+    asin: "B0FWDSZ6Q2",
+    image: "https://m.media-amazon.com/images/I/61x5eQvJ8bL.jpg",
+  },
+  {
+    name: "Fire TV Stick HD",
+    price: "$19.99",
+    original: "$39.99",
+    discount: "50%",
+    asin: "B0CQMRKRV5",
+    image: "https://m.media-amazon.com/images/I/51GHEdUznQL._AC_SL1000_.jpg",
+  },
+  {
+    name: "Skullcandy Crusher ANC 2 Headphones",
+    price: "$119.99",
+    original: "$239.99",
+    discount: "50%",
+    asin: "B0C9L8ZR6Q",
+    image: "https://m.media-amazon.com/images/I/71ew5pFViAL.jpg",
+  },
+  {
+    name: "Blink Mini 2K+ Camera",
+    price: "$15.99",
+    original: "$39.99",
+    discount: "60%",
+    asin: "B0F3BC8661",
+    image: "https://m.media-amazon.com/images/I/61Qj+3mYqYL.jpg",
+  },
+  {
+    name: "Ring Indoor Cam 2K",
+    price: "$24.99",
+    original: "$59.99",
+    discount: "58%",
+    asin: "B0F3BDK2M5",
+    image: "https://m.media-amazon.com/images/I/51nY+5QjQYL.jpg",
+  },
+  {
+    name: "Soundcore P31i Noise Cancelling Earbuds",
+    price: "$29.99",
+    original: "$59.99",
+    discount: "50%",
+    asin: "B0D2Y2H8SG",
+    image: "https://m.media-amazon.com/images/I/61+Qj3mYqYL.jpg",
+  },
 ];
 
 export default function Page() {
