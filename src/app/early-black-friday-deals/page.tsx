@@ -167,7 +167,7 @@ export default function Page() {
             Prices and stock change on Amazon.
           </p>
 
-          <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-2">
+          <h1 className="text-3xl md:text-4xl font-bold text-red-600 mb-2">
             Early Black Friday Deals
           </h1>
           <p className="text-muted-foreground mb-8">
