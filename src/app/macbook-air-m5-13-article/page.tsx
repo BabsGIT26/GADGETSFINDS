@@ -4,6 +4,7 @@ import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 import AmazonButton from "@/components/common/AmazonButton";
+import CommentSection from "@/components/comments/CommentSection";
 
 const AMAZON =
   "https://www.amazon.com/dp/B0GR19X8DC?tag=gadgetsfindswebsite-20";
@@ -142,6 +143,8 @@ export default function Page() {
             productName="MacBook Air 13-inch M5 Silver"
             href={AMAZON}
           />
+
+          <CommentSection articleSlug="macbook-air-m5-13-article" />
         </div>
       </article>
       <Footer />
