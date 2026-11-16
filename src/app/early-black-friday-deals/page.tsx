@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import type { Metadata } from "next";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
@@ -144,6 +147,9 @@ const deals = [
 ];
 
 export default function Page() {
+  const [showAll, setShowAll] = useState(false);
+  const visibleDeals = showAll ? deals : deals.slice(0, 8);
+
   return (
     <>
       <Header />
@@ -162,7 +168,7 @@ export default function Page() {
           </p>
 
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            {deals.map((deal) => {
+            {visibleDeals.map((deal) => {
               const href = `https://www.amazon.com/dp/${deal.asin}?tag=gadgetsfindswebsite-20`;
               return (
                 <div
@@ -193,6 +199,17 @@ export default function Page() {
               );
             })}
           </div>
+
+          {!showAll && deals.length > 8 && (
+            <div className="text-center mt-8">
+              <button
+                onClick={() => setShowAll(true)}
+                className="px-6 py-2.5 bg-primary text-primary-foreground rounded-md font-medium text-sm hover:opacity-90 transition-opacity"
+              >
+                View More
+              </button>
+            </div>
+          )}
         </div>
       </main>
       <Footer />
