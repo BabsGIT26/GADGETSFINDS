@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
+import CommentSection from "@/components/comments/CommentSection";
 
 const AMAZON =
   "https://www.amazon.com/dp/B0DCD9LGHY?tag=gadgetsfindswebsite-20";
@@ -133,6 +134,8 @@ export default function Page() {
             productName="Xbox Series X Digital 1TB Robot White"
             href={AMAZON}
           />
+
+          <CommentSection articleSlug="xbox-series-x-digital-article" />
         </div>
       </article>
       <Footer />
