@@ -19,15 +19,15 @@ const deals = [
     original: "$69.99",
     discount: "50%",
     asin: "B0H9SYK5Q7",
-    image: "https://m.media-amazon.com/images/I/71xf3vrARiL._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/I/71xf3vrARiL.jpg",
   },
   {
     name: "Stanley Quencher H2.0 — 40 oz Black",
     price: "$22.50",
     original: "$45.00",
     discount: "50%",
-    asin: "B0C6F1T6N8",
-    image: "https://m.media-amazon.com/images/I/71K8e5b0J0L._AC_SL1500_.jpg",
+    asin: "B0CP9Z1S51",
+    image: "https://m.media-amazon.com/images/I/611FshOQWjL.jpg",
   },
   {
     name: "Blink Outdoor 4 — Add-on Camera",
@@ -35,15 +35,15 @@ const deals = [
     original: "$69.99",
     discount: "66%",
     asin: "B0B1N7LJD3",
-    image: "https://m.media-amazon.com/images/I/61gB5g0Q0L._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/I/61+8e5b0J0L.jpg",
   },
   {
     name: "Dyson V9 Motorbar Cordless Vacuum",
     price: "$269.95",
     original: "$599.99",
     discount: "55%",
-    asin: "B0B8F5H5R5",
-    image: "https://m.media-amazon.com/images/I/61X8e5b0J0L._AC_SL1500_.jpg",
+    asin: "B0FCVM3PZN",
+    image: "https://m.media-amazon.com/images/I/61X8e5b0J0L.jpg",
   },
   {
     name: "Blink Battery Doorbell 2K+ + Outdoor Bundle",
@@ -51,7 +51,7 @@ const deals = [
     original: "$410+",
     discount: "71%",
     asin: "B0GNVFFZRP",
-    image: "https://m.media-amazon.com/images/I/71gB5g0Q0L._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/I/71gB5g0Q0L.jpg",
   },
   {
     name: "EA Sports NHL 27 — PS5",
@@ -59,7 +59,7 @@ const deals = [
     original: "$69.99",
     discount: "50%",
     asin: "B0H8QND851",
-    image: "https://m.media-amazon.com/images/I/71xf3vrARiL._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/I/71xf3vrARiL.jpg",
   },
   {
     name: "Blink Mini Pan-Tilt 2K+",
@@ -67,7 +67,7 @@ const deals = [
     original: "$49.99",
     discount: "60%",
     asin: "B0GZLXWN8X",
-    image: "https://m.media-amazon.com/images/I/61gB5g0Q0L._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/I/61gB5g0Q0L.jpg",
   },
   {
     name: "Marvel’s Spider-Man 2 — PS5",
@@ -75,7 +75,7 @@ const deals = [
     original: "$69.99",
     discount: "57%",
     asin: "B0C7WQRCPB",
-    image: "https://m.media-amazon.com/images/I/81K8e5b0J0L._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/I/81WUPcfQ9OL.jpg",
   },
   {
     name: "CHEFMAN Multifunctional Air Fryer+",
@@ -83,7 +83,7 @@ const deals = [
     original: "$139.99",
     discount: "50%",
     asin: "B0B8F5H5R6",
-    image: "https://m.media-amazon.com/images/I/71K8e5b0J0L._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/I/71K8e5b0J0L.jpg",
   },
   {
     name: "HP Everyday Slim Laptop (2027)",
@@ -91,7 +91,7 @@ const deals = [
     original: "$699.99",
     discount: "54%",
     asin: "B0H4L4J1VD",
-    image: "https://m.media-amazon.com/images/I/61X8e5b0J0L._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/I/61X8e5b0J0L.jpg",
   },
   {
     name: "Compressed Air Duster 280,000 RPM",
@@ -99,7 +99,7 @@ const deals = [
     original: "$83.99",
     discount: "65%",
     asin: "B0H4L4J1VC",
-    image: "https://m.media-amazon.com/images/I/61gB5g0Q0L._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/I/61gB5g0Q0L.jpg",
   },
 ];
 
