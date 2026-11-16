@@ -3,6 +3,7 @@ import AppImage from "@/components/ui/AppImage";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
+import CommentSection from "@/components/comments/CommentSection";
 
 const AMAZON =
   "https://www.amazon.com/dp/B0HB4HCB8L?tag=00linktree-pinterest-20";
@@ -147,6 +148,8 @@ export default function Page() {
             productName="GenZ Semi-Automatic Slingshot Rapid Fire Steel Ball Shooter"
             href={AMAZON}
           />
+
+          <CommentSection articleSlug="genz-semi-automatic-slingshot-article" />
         </div>
       </article>
       <Footer />
