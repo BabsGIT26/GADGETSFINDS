@@ -147,6 +147,7 @@ const toggleTheme = () => {
 
   const navItems = [
     { label: 'Home', href: '/', icon: 'HomeIcon' },
+    { label: 'Black Friday', href: '/early-black-friday-deals', icon: 'TagIcon' },
     { label: 'Mini Gadgets', href: '/mini-gadgets', icon: 'CubeIcon' },
     { label: 'Live Feed', href: '/live-news-feed', icon: 'RssIcon' },
     { label: 'Compare Gadgets', href: '/product-comparison-engine', icon: 'ScaleIcon' },
@@ -158,6 +159,7 @@ const toggleTheme = () => {
   // Items shown directly in header on desktop
   const primaryNavItems = [
     { label: 'Home', href: '/', icon: 'HomeIcon' },
+    { label: 'Black Friday', href: '/early-black-friday-deals', icon: 'TagIcon' },
     { label: 'Mini Gadgets', href: '/mini-gadgets', icon: 'CubeIcon' },
     { label: 'Live Feed', href: '/live-news-feed', icon: 'RssIcon' },
     { label: 'Trends', href: '/tech-trends-2026', icon: 'ChartBarIcon' },
@@ -169,6 +171,7 @@ const toggleTheme = () => {
   // Items kept in the dropdown menu (desktop: all primary + notifications)
   const dropdownNavItems = [
     { label: 'Home', href: '/', icon: 'HomeIcon' },
+    { label: 'Black Friday', href: '/early-black-friday-deals', icon: 'TagIcon' },
     { label: 'Mini Gadgets', href: '/mini-gadgets', icon: 'CubeIcon' },
     { label: 'Live Feed', href: '/live-news-feed', icon: 'RssIcon' },
     { label: 'Trends', href: '/tech-trends-2026', icon: 'ChartBarIcon' },
@@ -293,7 +296,7 @@ const toggleTheme = () => {
                       <div className="flex flex-col items-center justify-center py-12 text-center px-4">
                         <Icon name="BellSlashIcon" size={36} variant="outline" className="text-muted-foreground mb-3" />
                         <p className="text-sm font-medium text-muted-foreground">No notifications</p>
-                        <p className="text-xs text-muted-foreground mt-1">You&apos;re all caught up!</p>
+                        <p className="text-xs text-muted-foreground mt-1">You're all caught up!</p>
                       </div>
                     ) : (
                       filteredNotifs.map((notification) => {
@@ -419,172 +422,34 @@ const toggleTheme = () => {
                   key={item.href}
                   href={item.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className={`
-                    flex items-center space-x-3 px-4 py-3 rounded-lg font-medium text-base transition-colors
-                    ${isActive(item.href) ? 'text-primary bg-primary/10' : 'text-muted-foreground hover:text-foreground hover:bg-muted'}
-                  `}
+                  className={`flex items-center space-x-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${
+                    isActive(item.href)
+                      ? 'text-primary bg-primary/10' : 'text-foreground hover:bg-muted'
+                  }`}
                 >
-                  {item.icon && <Icon name={item.icon} size={20} variant="outline" />}
+                  <Icon name={item.icon} size={18} variant="outline" />
                   <span>{item.label}</span>
                 </Link>
               ))}
             </div>
-
-            {/* On desktop: show all nav items in dropdown too */}
+            {/* On desktop: show dropdown items */}
             <div className="hidden lg:block">
               {dropdownNavItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className={`
-                    flex items-center space-x-3 px-4 py-3 rounded-lg font-medium text-base transition-colors
-                    ${isActive(item.href) ? 'text-primary bg-primary/10' : 'text-muted-foreground hover:text-foreground hover:bg-muted'}
-                  `}
+                  className={`flex items-center space-x-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${
+                    isActive(item.href)
+                      ? 'text-primary bg-primary/10' : 'text-foreground hover:bg-muted'
+                  }`}
                 >
-                  {item.icon && <Icon name={item.icon} size={20} variant="outline" />}
+                  <Icon name={item.icon} size={18} variant="outline" />
                   <span>{item.label}</span>
                 </Link>
               ))}
             </div>
-
-            {/* Notifications in menu */}
-            <button
-              onClick={() => {
-                setIsMobileMenuOpen(false);
-                setIsNotifOpen(true);
-              }}
-              className="w-full flex items-center justify-between px-4 py-3 rounded-lg font-medium text-base text-muted-foreground hover:text-foreground hover:bg-muted transition-colors min-h-[44px]"
-            >
-              <div className="flex items-center space-x-3">
-                <Icon name="BellIcon" size={20} variant="outline" />
-                <span>Notifications</span>
-              </div>
-              {unreadCount > 0 && (
-                <span className="w-5 h-5 bg-red-500 text-white text-xs font-bold rounded-full flex items-center justify-center">
-                  {unreadCount}
-                </span>
-              )}
-            </button>
-
-            {/* Subscribe button */}
-            <div className="pt-4 border-t border-border mt-2">
-              <button className="w-full px-4 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors min-h-[44px]">
-                Subscribe
-              </button>
-            </div>
           </nav>
-        </div>
-      )}
-
-      {/* Mobile notification overlay — only shown on small screens when triggered from menu */}
-      {isNotifOpen && (
-        <div
-          className="lg:hidden fixed inset-0 z-40 bg-black/40"
-          onClick={() => setIsNotifOpen(false)}
-        >
-          <div
-            className="absolute right-4 top-16 w-80 bg-card border border-border rounded-xl shadow-2xl overflow-hidden"
-            onClick={(e) => e.stopPropagation()}
-            onTouchStart={(e) => e.stopPropagation()}
-            onTouchMove={(e) => e.stopPropagation()}
-            onTouchEnd={(e) => e.stopPropagation()}
-          >
-            {/* Header */}
-            <div className="flex items-center justify-between px-4 py-3 border-b border-border">
-              <h3 className="font-bold text-base text-foreground">Notifications</h3>
-              <div className="flex items-center space-x-3">
-                {unreadCount > 0 && (
-                  <button
-                    onClick={(e) => { e.stopPropagation(); markAllRead(); }}
-                    onTouchEnd={(e) => { e.stopPropagation(); e.preventDefault(); markAllRead(); }}
-                    className="text-xs text-blue-600 hover:text-blue-700 font-medium"
-                  >
-                    Mark all read
-                  </button>
-                )}
-                <button
-                  onClick={(e) => { e.stopPropagation(); setIsNotifOpen(false); }}
-                  onTouchEnd={(e) => { e.stopPropagation(); e.preventDefault(); setIsNotifOpen(false); }}
-                  className="text-muted-foreground hover:text-foreground"
-                >
-                  <Icon name="XMarkIcon" size={18} variant="outline" />
-                </button>
-              </div>
-            </div>
-
-            {/* Filter Tabs */}
-            <div className="flex border-b border-border">
-              <button
-                onClick={(e) => { e.stopPropagation(); setNotifFilter('all'); }}
-                onTouchEnd={(e) => { e.stopPropagation(); e.preventDefault(); setNotifFilter('all'); }}
-                className={`flex-1 py-2.5 text-sm font-medium transition-colors ${
-                  notifFilter === 'all' ? 'text-blue-600 border-b-2 border-blue-600' : 'text-muted-foreground hover:text-foreground'
-                }`}
-              >
-                All
-              </button>
-              <button
-                onClick={(e) => { e.stopPropagation(); setNotifFilter('unread'); }}
-                onTouchEnd={(e) => { e.stopPropagation(); e.preventDefault(); setNotifFilter('unread'); }}
-                className={`flex-1 py-2.5 text-sm font-medium transition-colors ${
-                  notifFilter === 'unread' ? 'text-blue-600 border-b-2 border-blue-600' : 'text-muted-foreground hover:text-foreground'
-                }`}
-              >
-                Unread {unreadCount > 0 && `(${unreadCount})`}
-              </button>
-            </div>
-
-            {/* List */}
-            <div className="max-h-[60vh] overflow-y-auto">
-              {filteredNotifs.length === 0 ? (
-                <div className="flex flex-col items-center justify-center py-10 text-center px-4">
-                  <Icon name="BellSlashIcon" size={32} variant="outline" className="text-muted-foreground mb-2" />
-                  <p className="text-sm text-muted-foreground">No notifications</p>
-                </div>
-              ) : (
-                filteredNotifs.map((notification) => {
-                  const config = typeConfig[notification.type];
-                  return (
-                    <Link
-                      key={notification.id}
-                      href={notification.href}
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        markRead(notification.id);
-                        setIsNotifOpen(false);
-                      }}
-                      onTouchEnd={(e) => {
-                        e.stopPropagation();
-                        markRead(notification.id);
-                        setIsNotifOpen(false);
-                      }}
-                      className={`flex items-start space-x-3 px-4 py-3 hover:bg-muted transition-colors border-b border-border/50 last:border-0 ${
-                        !notification.read ? 'bg-blue-50/30' : ''
-                      }`}
-                    >
-                      <div className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center mt-0.5 ${config.color}`}>
-                        <Icon name={config.icon} size={14} variant="solid" />
-                      </div>
-                      <div className="flex-1 min-w-0">
-                        <div className="flex items-center space-x-1.5 mb-0.5">
-                          <span className={`text-[10px] font-bold uppercase tracking-wide ${config.color.split(' ')[0]}`}>
-                            {config.label}
-                          </span>
-                          {!notification.read && (
-                            <span className="w-1.5 h-1.5 bg-blue-500 rounded-full"></span>
-                          )}
-                        </div>
-                        <p className="text-sm font-semibold text-foreground line-clamp-1">{notification.title}</p>
-                        <p className="text-xs text-muted-foreground mt-0.5 line-clamp-2">{notification.description}</p>
-                        <p className="text-[11px] text-muted-foreground mt-1">{notification.time}</p>
-                      </div>
-                    </Link>
-                  );
-                })
-              )}
-            </div>
-          </div>
         </div>
       )}
     </header>
