@@ -156,10 +156,9 @@ const toggleTheme = () => {
     { label: 'Search', href: '/unified-search', icon: 'MagnifyingGlassIcon' },
   ];
 
-  // Items shown directly in header on desktop
+  // Items shown directly in header on desktop (Black Friday removed to avoid overflow)
   const primaryNavItems = [
     { label: 'Home', href: '/', icon: 'HomeIcon' },
-    { label: 'Black Friday', href: '/early-black-friday-deals', icon: 'TagIcon' },
     { label: 'Mini Gadgets', href: '/mini-gadgets', icon: 'CubeIcon' },
     { label: 'Live Feed', href: '/live-news-feed', icon: 'RssIcon' },
     { label: 'Trends', href: '/tech-trends-2026', icon: 'ChartBarIcon' },
@@ -168,7 +167,7 @@ const toggleTheme = () => {
     { label: 'CES 2026', href: '/ces-2026-hub', icon: 'CalendarIcon' },
   ];
 
-  // Items kept in the dropdown menu (desktop: all primary + notifications)
+  // Items kept in the dropdown menu
   const dropdownNavItems = [
     { label: 'Home', href: '/', icon: 'HomeIcon' },
     { label: 'Black Friday', href: '/early-black-friday-deals', icon: 'TagIcon' },
@@ -209,13 +208,13 @@ const toggleTheme = () => {
             </Link>
           </div>
 
-          {/* Desktop primary nav links — stretched across full width */}
-          <nav className="hidden lg:flex flex-1 items-center justify-between px-4">
+          {/* Desktop primary nav links */}
+          <nav className="hidden lg:flex flex-1 items-center justify-center gap-1 px-2">
             {primaryNavItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className={`flex items-center space-x-1.5 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+                className={`flex items-center space-x-1.5 px-2.5 py-2 rounded-lg text-sm font-medium transition-colors whitespace-nowrap ${
                   isActive(item.href)
                     ? 'text-primary bg-primary/10' : 'text-muted-foreground hover:text-foreground hover:bg-muted'
                 }`}
@@ -230,7 +229,7 @@ const toggleTheme = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Follow Gadgets Finds on X (Twitter)"
-              className="flex items-center px-3 py-2 rounded-lg text-sm font-medium transition-colors text-muted-foreground hover:text-foreground hover:bg-muted"
+              className="flex items-center px-2.5 py-2 rounded-lg text-sm font-medium transition-colors text-muted-foreground hover:text-foreground hover:bg-muted"
             >
               <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
@@ -240,7 +239,7 @@ const toggleTheme = () => {
             <div className="relative" ref={notifRef}>
               <button
                 onClick={() => setIsNotifOpen((prev) => !prev)}
-                className={`flex items-center space-x-1.5 px-3 py-2 rounded-lg text-sm font-medium transition-colors relative ${
+                className={`flex items-center space-x-1.5 px-2.5 py-2 rounded-lg text-sm font-medium transition-colors relative ${
                   isNotifOpen ? 'text-primary bg-primary/10' : 'text-muted-foreground hover:text-foreground hover:bg-muted'
                 }`}
               >
