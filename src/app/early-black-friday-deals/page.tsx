@@ -217,6 +217,15 @@ export default function Page() {
               </button>
             </div>
           )}
+
+          <div className="text-center mt-10">
+            <AmazonButton
+              href="https://www.amazon.com/deals?&linkCode=ll2&tag=gadgetsfindswebsite-20&linkId=19abd9c9095f43007bb1681ce0f8ccc1&language=en_US&ref_=as_li_ss_tl"
+              className="px-8 py-3 text-base"
+            >
+              See more Early Black Friday deals on Amazon
+            </AmazonButton>
+          </div>
         </div>
       </main>
       <Footer />
