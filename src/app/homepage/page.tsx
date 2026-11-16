@@ -50,8 +50,11 @@ export default function Homepage() {
     <div className="min-h-screen bg-background">
       <Header />
 
-      {/* Early Black Friday banner */}
-      <div className="bg-red-600 text-white text-center py-2.5 px-4 text-sm font-medium">
+      {/* Spacer so content starts below the fixed header */}
+      <div className="h-14 md:h-16" />
+
+      {/* Early Black Friday banner — visible under header */}
+      <div className="bg-red-600 text-white text-center py-2.5 px-4 text-sm font-medium sticky top-14 md:top-16 z-40">
         <Link href="/early-black-friday-deals" className="hover:underline">
           Early Black Friday Deals — 50% off or more. Check the latest prices →
         </Link>
@@ -59,7 +62,7 @@ export default function Homepage() {
 
       <GadgetsSection />
       <MiniGadgetsSection />
-      <main className="pt-36 md:pt-20">
+      <main className="pt-0">
         <section className="py-8 md:py-16 bg-background">
           <div className="container mx-auto px-4">
             <PersonalizedContentStream />
