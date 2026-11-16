@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import Header from '@/components/common/Header';
 import TrendingStoriesCarousel from './components/TrendingStoriesCarousel';
 import PersonalizedContentStream from './components/PersonalizedContentStream';
@@ -48,15 +49,23 @@ export default function Homepage() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-            <GadgetsSection />
-            <MiniGadgetsSection />
+
+      {/* Early Black Friday banner */}
+      <div className="bg-red-600 text-white text-center py-2.5 px-4 text-sm font-medium">
+        <Link href="/early-black-friday-deals" className="hover:underline">
+          Early Black Friday Deals — 50% off or more. Check the latest prices →
+        </Link>
+      </div>
+
+      <GadgetsSection />
+      <MiniGadgetsSection />
       <main className="pt-36 md:pt-20">
-<section className="py-8 md:py-16 bg-background">
+        <section className="py-8 md:py-16 bg-background">
           <div className="container mx-auto px-4">
             <PersonalizedContentStream />
           </div>
         </section>
-        
+
         <section className="bg-gradient-to-br from-brand-dark via-slate-900 to-brand-dark py-8 md:py-16 lg:py-24">
           <div className="container mx-auto px-4">
             <div className="text-center mb-8 md:mb-12">
@@ -97,6 +106,6 @@ export default function Homepage() {
       </main>
 
       <Footer />
-    </div>);
-
+    </div>
+  );
 }
