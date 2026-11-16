@@ -3,6 +3,7 @@ import AppImage from "@/components/ui/AppImage";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
+import CommentSection from "@/components/comments/CommentSection";
 
 const AMAZON =
   "https://www.amazon.com/dp/B0GR1F53WV?tag=gadgetsfindswebsite-20";
@@ -140,6 +141,8 @@ export default function Page() {
             productName="MacBook Pro 16 M5 Max 36GB 2TB"
             href={AMAZON}
           />
+
+          <CommentSection articleSlug="macbook-pro-m5-max-article" />
         </div>
       </article>
       <Footer />
