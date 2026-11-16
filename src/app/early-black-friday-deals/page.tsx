@@ -34,7 +34,7 @@ const deals = [
     price: "$39.99",
     original: "$99.99",
     discount: "60%",
-    asin: "B0C1G1R6N5",
+    asin: "B0G2D1R15Q",
     image: "https://kotaku.com/app/uploads/2026/11/Ring-Battery-Doorbell-2K.jpg",
   },
   {
@@ -74,8 +74,8 @@ const deals = [
     price: "$59.99",
     original: "$109.99",
     discount: "45%",
-    asin: "B07N9G2X2S",
-    image: "https://m.media-amazon.com/images/I/61X8e5b0J0L.jpg",
+    asin: "B09715G57M",
+    image: "https://m.media-amazon.com/images/I/617ScgWbpLL.jpg",
   },
   {
     name: "Blink Mini Pan-Tilt 2K+",
@@ -98,8 +98,8 @@ const deals = [
     price: "$69.99",
     original: "$139.99",
     discount: "50%",
-    asin: "B0B8F5H5R6",
-    image: "https://m.media-amazon.com/images/I/71ehxvCwvJL.jpg",
+    asin: "B08DL8WH9V",
+    image: "https://chefman.com/cdn/shop/files/RJ38-10-RDO-V2_INFO-1.jpg?v=1738269664",
   },
   {
     name: "HP Everyday Slim Laptop (2027)",
