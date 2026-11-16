@@ -35,7 +35,7 @@ const deals = [
     original: "$69.99",
     discount: "66%",
     asin: "B0B1N7LJD3",
-    image: "https://m.media-amazon.com/images/I/61vPg1U2TdL.jpg",
+    image: "https://www.trustedreviews.com/wp-content/uploads/sites/7/2026/09/hero-tr.jpg",
   },
   {
     name: "Dyson V9 Motorbar Cordless Vacuum",
@@ -43,7 +43,7 @@ const deals = [
     original: "$599.99",
     discount: "55%",
     asin: "B0FCVM3PZN",
-    image: "https://m.media-amazon.com/images/I/71MIJ2pvp2L.jpg",
+    image: "https://i5.walmartimages.com/seo/Dyson-V9-Motorbar-Cordless-Vacuum-Nickel-New_e6b02de1-a5ca-42c9-bba1-783f1cb5c77c.c7e90543c1bb8f574aaea50cfb0aecae.jpeg",
   },
   {
     name: "Blink Battery Doorbell 2K+ + Outdoor Bundle",
@@ -51,7 +51,7 @@ const deals = [
     original: "$410+",
     discount: "71%",
     asin: "B0GNVFFZRP",
-    image: "https://m.media-amazon.com/images/I/61vPg1U2TdL.jpg",
+    image: "https://lifehacker.com/imagery/articles/01M3KJG4896P11FWW2XT7TMYH2/hero-image.fill.size_1200x675.png",
   },
   {
     name: "EA Sports NHL 27 — PS5",
@@ -67,7 +67,7 @@ const deals = [
     original: "$49.99",
     discount: "60%",
     asin: "B0GZLXWN8X",
-    image: "https://m.media-amazon.com/images/I/61vPg1U2TdL.jpg",
+    image: "https://www.androidauthority.com/wp-content/uploads/2026/08/Blink-Mini-Pan-Tilt-Camera-Press-Image.jpg",
   },
   {
     name: "Marvel’s Spider-Man 2 — PS5",
@@ -99,7 +99,7 @@ const deals = [
     original: "$83.99",
     discount: "65%",
     asin: "B0H4L4J1VC",
-    image: "https://m.media-amazon.com/images/I/71ehxvCwvJL.jpg",
+    image: "https://i5.walmartimages.com/seo/Compressed-Air-Duster-280000-RPM-Electric-Air-Duster-Rechargeable-Air-Duster-C-Keyboard-Cleaner-4-Speeds_21e0e1b2-47a8-4d17-98e5-2a11ea17fc78.a48f2377561d3c3d327c8505ed04067f.jpeg",
   },
 ];
 
