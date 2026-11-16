@@ -43,7 +43,7 @@ const deals = [
     original: "$599.99",
     discount: "55%",
     asin: "B0FCVM3PZN",
-    image: "https://m.media-amazon.com/images/I/61X8e5b0J0L.jpg",
+    image: "https://m.media-amazon.com/images/I/71MIJ2pvp2L.jpg",
   },
   {
     name: "Blink Battery Doorbell 2K+ + Outdoor Bundle",
@@ -51,7 +51,7 @@ const deals = [
     original: "$410+",
     discount: "71%",
     asin: "B0GNVFFZRP",
-    image: "https://m.media-amazon.com/images/I/71gB5g0Q0L.jpg",
+    image: "https://m.media-amazon.com/images/I/61vPg1U2TdL.jpg",
   },
   {
     name: "EA Sports NHL 27 — PS5",
@@ -90,8 +90,8 @@ const deals = [
     price: "$319.99",
     original: "$699.99",
     discount: "54%",
-    asin: "B0H4L4J1VD",
-    image: "https://m.media-amazon.com/images/I/61X8e5b0J0L.jpg",
+    asin: "B0H3KV46ZX",
+    image: "https://m.media-amazon.com/images/I/71MIJ2pvp2L.jpg",
   },
   {
     name: "Compressed Air Duster 280,000 RPM",
@@ -99,7 +99,7 @@ const deals = [
     original: "$83.99",
     discount: "65%",
     asin: "B0H4L4J1VC",
-    image: "https://m.media-amazon.com/images/I/61gB5g0Q0L.jpg",
+    image: "https://m.media-amazon.com/images/I/71ehxvCwvJL.jpg",
   },
 ];
 
