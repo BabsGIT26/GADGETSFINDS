@@ -199,7 +199,12 @@ export default function Page() {
                     <span className="text-base font-bold text-foreground">{deal.price}</span>
                     <span className="text-xs text-muted-foreground line-through">{deal.original}</span>
                   </div>
-                  <AmazonButton href={href} className="w-full text-center text-xs py-2">
+                  <AmazonButton
+                    href={href}
+                    productName={deal.name}
+                    asin={deal.asin}
+                    className="w-full text-center text-xs py-2"
+                  >
                     View on Amazon
                   </AmazonButton>
                 </div>
@@ -224,6 +229,14 @@ export default function Page() {
               href="https://www.amazon.com/deals?&linkCode=ll2&tag=gadgetsfindswebsite-20&linkId=19abd9c9095f43007bb1681ce0f8ccc1&language=en_US&ref_=as_li_ss_tl"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => {
+                if (typeof window !== "undefined" && (window as any).gtag) {
+                  (window as any).gtag("event", "amazon_click", {
+                    product_name: "See more Early Black Friday deals",
+                    asin: "deals-page",
+                  });
+                }
+              }}
               className="group relative block w-full max-w-md rounded-xl border-2 border-red-600 bg-red-50 dark:bg-red-950/40 p-4 shadow-lg hover:shadow-xl transition-shadow overflow-hidden"
             >
               <div className="absolute top-2 right-2 flex items-center gap-1.5">
