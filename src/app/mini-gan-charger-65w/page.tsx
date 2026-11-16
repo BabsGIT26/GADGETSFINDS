@@ -3,6 +3,7 @@ import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 import Link from "next/link";
+import CommentSection from "@/components/comments/CommentSection";
 
 const AMAZON = "https://www.amazon.com/UGREEN-Gallium-Nitride-Charger-Black/dp/B091BGMKYS?tag=gadgetsfindswebsmediavid-20";
 const IMAGE = "https://m.media-amazon.com/images/I/51nKMY3u+hL.jpg";
@@ -70,6 +71,8 @@ export default function Page() {
           </ul>
 
           <AmazonDealBox productName="Mini GaN Charger 65W" href={AMAZON} />
+
+          <CommentSection articleSlug="mini-gan-charger-65w" />
 
           <div className="flex justify-end mt-8 mb-2">
             <Link
