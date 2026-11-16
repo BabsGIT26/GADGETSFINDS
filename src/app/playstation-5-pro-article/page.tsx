@@ -4,6 +4,7 @@ import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 import AmazonButton from "@/components/common/AmazonButton";
+import CommentSection from "@/components/comments/CommentSection";
 
 const AMAZON =
   "https://www.amazon.com/dp/B0FTMY4YZ2?tag=gadgetsfindswebsite-20";
@@ -128,6 +129,8 @@ export default function Page() {
             productName="PlayStation 5 Pro — 2TB"
             href={AMAZON}
           />
+
+          <CommentSection articleSlug="playstation-5-pro-article" />
         </div>
       </article>
       <Footer />
