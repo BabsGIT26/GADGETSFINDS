@@ -134,11 +134,28 @@ const deals = [
     asin: "B0FNWCYLZN",
     image: "https://m.media-amazon.com/images/I/61fZoNoybhL.jpg",
   },
+  // Deals from 40%
+  {
+    name: "Vitamix 5200 Professional-Grade Blender",
+    price: "$299.95",
+    original: "$499.95",
+    discount: "40%",
+    asin: "B000W3V2JM",
+    image: "https://m.media-amazon.com/images/I/71VJqR3rT+L._AC_SL1500_.jpg",
+  },
+  {
+    name: "Keurig K-Express Coffee Maker",
+    price: "$59.99",
+    original: "$109.99",
+    discount: "45%",
+    asin: "B09715G57M",
+    image: "https://m.media-amazon.com/images/I/617ScgWbpLL.jpg",
+  },
 ];
 
 export default function Page() {
   const [showAll, setShowAll] = useState(false);
-  const visibleDeals = showAll ? deals : deals.slice(0, 8);
+  const visibleDeals = showAll ? deals : deals.slice(0, 16);
 
   return (
     <>
@@ -154,7 +171,7 @@ export default function Page() {
             Early Black Friday Deals
           </h1>
           <p className="text-muted-foreground mb-8">
-            Deals with 50% or more off. Always check the current price on Amazon before buying.
+            Deals with 40% or more off. Always check the current price on Amazon before buying.
           </p>
 
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
@@ -190,7 +207,7 @@ export default function Page() {
             })}
           </div>
 
-          {!showAll && deals.length > 8 && (
+          {!showAll && deals.length > 16 && (
             <div className="text-center mt-8">
               <button
                 onClick={() => setShowAll(true)}
