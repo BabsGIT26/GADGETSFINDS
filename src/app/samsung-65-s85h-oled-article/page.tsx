@@ -4,6 +4,7 @@ import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 import AmazonButton from "@/components/common/AmazonButton";
+import CommentSection from "@/components/comments/CommentSection";
 
 const AMAZON =
   "https://www.amazon.com/dp/B0GQ6YWP33?tag=gadgetsfindswebsite-20";
@@ -142,6 +143,8 @@ export default function Page() {
             productName="Samsung 65-Inch S85H Series OLED 4K Smart TV (2026)"
             href={AMAZON}
           />
+
+          <CommentSection articleSlug="samsung-65-s85h-oled-article" />
         </div>
       </article>
       <Footer />
