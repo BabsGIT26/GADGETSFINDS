@@ -114,8 +114,8 @@ const deals = [
     price: "$49.99",
     original: "$99.99",
     discount: "50%",
-    asin: "B0FWDSZ6Q2",
-    image: "https://m.media-amazon.com/images/I/61x5eQvJ8bL.jpg",
+    asin: "B0C5QRZ47P",
+    image: "https://m.media-amazon.com/images/I/61x5eQvJ8bL._AC_SL1500_.jpg",
   },
   {
     name: "Fire TV Stick HD",
@@ -138,8 +138,8 @@ const deals = [
     price: "$29.99",
     original: "$59.99",
     discount: "50%",
-    asin: "B0D2Y2H8SG",
-    image: "https://m.media-amazon.com/images/I/61+Qj3mYqYL.jpg",
+    asin: "B0FNWCYLZN",
+    image: "https://m.media-amazon.com/images/I/61Qj3mYqYL._AC_SL1500_.jpg",
   },
 ];
 
