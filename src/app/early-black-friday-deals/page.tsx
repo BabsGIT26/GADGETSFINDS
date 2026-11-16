@@ -218,13 +218,40 @@ export default function Page() {
             </div>
           )}
 
-          <div className="text-center mt-10">
-            <AmazonButton
+          {/* Live limited-time mini box */}
+          <div className="mt-10 flex justify-center">
+            <a
               href="https://www.amazon.com/deals?&linkCode=ll2&tag=gadgetsfindswebsite-20&linkId=19abd9c9095f43007bb1681ce0f8ccc1&language=en_US&ref_=as_li_ss_tl"
-              className="px-8 py-3 text-base"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative block w-full max-w-md rounded-xl border-2 border-red-600 bg-red-50 dark:bg-red-950/40 p-4 shadow-lg hover:shadow-xl transition-shadow overflow-hidden"
             >
-              See more Early Black Friday deals on Amazon
-            </AmazonButton>
+              <div className="absolute top-2 right-2 flex items-center gap-1.5">
+                <span className="relative flex h-2.5 w-2.5">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-red-600"></span>
+                </span>
+                <span className="text-[10px] font-bold text-red-600 uppercase tracking-wide animate-pulse">
+                  Live
+                </span>
+              </div>
+
+              <div className="text-center">
+                <p className="text-xs font-bold text-red-600 uppercase tracking-wider mb-1 animate-pulse">
+                  Limited Time Deal
+                </p>
+                <p className="text-lg font-extrabold text-red-700 dark:text-red-400 leading-tight">
+                  See more Early Black Friday deals
+                </p>
+                <p className="text-sm font-semibold text-red-600 mt-1">
+                  on Amazon →
+                </p>
+              </div>
+
+              <div className="mt-3 h-1 bg-red-200 dark:bg-red-900 rounded-full overflow-hidden">
+                <div className="h-full bg-red-600 animate-pulse" style={{ width: '70%' }} />
+              </div>
+            </a>
           </div>
         </div>
       </main>
