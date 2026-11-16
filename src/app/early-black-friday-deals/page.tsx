@@ -140,8 +140,8 @@ const deals = [
     price: "$299.95",
     original: "$499.95",
     discount: "40%",
-    asin: "B000W3V2JM",
-    image: "https://m.media-amazon.com/images/I/71VJqR3rT+L._AC_SL1500_.jpg",
+    asin: "B008H4SLV6",
+    image: "https://m.media-amazon.com/images/I/71SwPHuwR-L.jpg",
   },
   {
     name: "Keurig K-Express Coffee Maker",
