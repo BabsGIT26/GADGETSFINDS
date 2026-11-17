@@ -45,14 +45,18 @@ const IMAGES = {
   stand: "/assets/images/ps5-vertical-stand.jpg",
 } as const;
 
-function ProductPhoto({ src, alt }: { src: string; alt: string }) {
+function ProductPhoto({ src, alt, wide = false }: { src: string; alt: string; wide?: boolean }) {
   return (
-    <div className="border-b border-border bg-white py-6">
+    <div className={wide ? "border-b border-border bg-white" : "border-b border-border bg-white py-6"}>
       <img
         src={src}
         alt={alt}
         referrerPolicy="no-referrer"
-        className="mx-auto block w-auto h-auto max-h-72 md:max-h-80 max-w-full object-contain"
+        className={
+          wide
+            ? "block w-full h-auto object-cover"
+            : "mx-auto block w-auto h-auto max-h-72 md:max-h-80 max-w-full object-contain"
+        }
       />
     </div>
   );
@@ -87,7 +91,7 @@ export default function Page() {
           </p>
 
           <div className="mb-8 bg-card border border-border rounded-2xl overflow-hidden shadow-sm">
-            <ProductPhoto src={IMAGES.ssd} alt="WD_BLACK SN850P NVMe SSD with heatsink for PS5" />
+            <ProductPhoto src={IMAGES.ssd} alt="WD_BLACK SN850P NVMe SSD with heatsink for PS5" wide />
             <div className="p-6 md:p-8">
               <h3 className="text-2xl font-bold mb-4">
                 <a href={amazonHref(AMAZON.ssd)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">WD_BLACK SN850P</a>
@@ -131,7 +135,7 @@ export default function Page() {
 
           <h2 className="text-2xl md:text-3xl font-bold mt-16 mb-4">2. DualSense Edge</h2>
           <div className="mb-8 bg-card border border-border rounded-2xl overflow-hidden shadow-sm">
-            <ProductPhoto src={IMAGES.edge} alt="DualSense Edge wireless controller, front and back" />
+            <ProductPhoto src={IMAGES.edge} alt="DualSense Edge wireless controller, front and back" wide />
             <div className="p-6 md:p-8">
               <h3 className="text-2xl font-bold mb-4">
                 <a href={amazonHref(AMAZON.edge)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">DualSense Edge</a>
