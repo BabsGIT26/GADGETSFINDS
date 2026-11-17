@@ -16,7 +16,7 @@ const AMAZON = {
   lefant: "https://www.amazon.com/dp/B0CYLVMLHP?tag=gadgetsfindswebsite-20",
   eufy: "https://www.amazon.com/dp/B088CZM63F?tag=gadgetsfindswebsite-20",
   q5: "https://www.amazon.com/dp/B09N3JKFFY?tag=gadgetsfindswebsite-20",
-  roomba: "https://www.amazon.com/dp/B095XCB5DK?tag=gadgetsfindswebsite-20",
+  roomba: "https://www.amazon.com/dp/B08SP5GYJP?tag=gadgetsfindswebsite-20",
 } as const;
 
 function amazonHref(url: string) {
@@ -44,14 +44,18 @@ const IMAGES = {
   roomba: "/assets/images/roomba-600-series.jpg",
 } as const;
 
-function ProductPhoto({ src, alt }: { src: string; alt: string }) {
+function ProductPhoto({ src, alt, wide = false }: { src: string; alt: string; wide?: boolean }) {
   return (
-    <div className="bg-white border-b border-border">
+    <div className={wide ? "border-b border-border" : "bg-white border-b border-border"}>
       <img
         src={src}
         alt={alt}
         referrerPolicy="no-referrer"
-        className="mx-auto block w-full max-w-2xl h-auto max-h-[420px] object-contain"
+        className={
+          wide
+            ? "block w-full h-auto object-cover"
+            : "mx-auto block w-full max-w-2xl h-auto max-h-[420px] object-contain"
+        }
       />
     </div>
   );
@@ -121,8 +125,7 @@ export default function Page() {
           <div className="mb-16 bg-card border border-border rounded-2xl overflow-hidden shadow-sm">
             <ProductPhoto src={IMAGES.lefant} alt="Lefant M210 Pro robot vacuum" />
             <div className="p-6 md:p-8">
-              <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-full mb-3">Best Overall Value</span>
-              <h3 className="text-2xl font-bold mb-4"><a href={amazonHref(AMAZON.lefant)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">Lefant M210 Pro — Best Overall Value</a></h3>
+              <h3 className="text-2xl font-bold mb-4"><a href={amazonHref(AMAZON.lefant)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">Lefant M210 Pro</a></h3>
               <ul className="text-sm text-muted-foreground space-y-1 mb-6">
                 <li><strong className="text-foreground">Typical price:</strong> $179–$229</li>
                 <li><strong className="text-foreground">Claimed suction:</strong> Approximately 4,000 Pa</li>
@@ -149,7 +152,7 @@ export default function Page() {
                   <p className="text-sm text-muted-foreground">Mapping remains basic. It can still get stuck on cables, low thresholds, or certain rug edges. The dustbin fills relatively quickly in homes with heavy shedding.</p>
                 </div>
               </div>
-              <p className="mt-6 text-sm font-medium">Best suited for: Buyers who want the best everyday cleaner under $250 without waiting for sales.</p>
+              <p className="mt-6 text-sm font-medium">Verdict: Best overall value. Best suited for: Buyers who want the best everyday cleaner under $250 without waiting for sales.</p>
               <ViewOnAmazon href={AMAZON.lefant} name="Lefant M210 Pro" />
             </div>
           </div>
@@ -157,8 +160,7 @@ export default function Page() {
           <div className="mb-16 bg-card border border-border rounded-2xl overflow-hidden shadow-sm">
             <ProductPhoto src={IMAGES.eufy} alt="eufy RoboVac G30 robot vacuum" />
             <div className="p-6 md:p-8">
-              <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-full mb-3">Best for Pet Hair</span>
-              <h3 className="text-2xl font-bold mb-4"><a href={amazonHref(AMAZON.eufy)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">eufy RoboVac G30 — Best for Pet Hair</a></h3>
+              <h3 className="text-2xl font-bold mb-4"><a href={amazonHref(AMAZON.eufy)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">eufy RoboVac G30</a></h3>
               <ul className="text-sm text-muted-foreground space-y-1 mb-6">
                 <li><strong className="text-foreground">Typical price:</strong> $199–$249</li>
                 <li><strong className="text-foreground">Suction:</strong> Roughly 2,000–2,500 Pa in boost mode</li>
@@ -185,16 +187,16 @@ export default function Page() {
                   <p className="text-sm text-muted-foreground">Peak suction is lower than the Lefant M210 Pro. No advanced mapping or virtual barriers. Runtime is slightly shorter than top competitors.</p>
                 </div>
               </div>
-              <p className="mt-6 text-sm font-medium">Best suited for: Households with dogs or cats that shed regularly.</p>
+              <p className="mt-6 text-sm font-medium">Verdict: Best for pet hair. Best suited for: Households with dogs or cats that shed regularly.</p>
+              <p className="mt-3 text-sm text-muted-foreground">The original eufy RoboVac G30 is currently unavailable on Amazon.</p>
               <ViewOnAmazon href={AMAZON.eufy} name="eufy RoboVac G30" />
             </div>
           </div>
 
           <div className="mb-16 bg-card border border-border rounded-2xl overflow-hidden shadow-sm">
-            <ProductPhoto src={IMAGES.q5} alt="Roborock Q5 robot vacuum" />
+            <ProductPhoto src={IMAGES.q5} alt="Roborock Q5 robot vacuum" wide />
             <div className="p-6 md:p-8">
-              <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-full mb-3">Best Performance When Discounted</span>
-              <h3 className="text-2xl font-bold mb-4"><a href={amazonHref(AMAZON.q5)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">Roborock Q5 — Best Performance When Discounted</a></h3>
+              <h3 className="text-2xl font-bold mb-4"><a href={amazonHref(AMAZON.q5)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">Roborock Q5</a></h3>
               <ul className="text-sm text-muted-foreground space-y-1 mb-6">
                 <li><strong className="text-foreground">Typical price:</strong> $279–$349 (frequently approaches or dips under $300 during sales)</li>
                 <li><strong className="text-foreground">Suction:</strong> Approximately 2,700 Pa</li>
@@ -218,16 +220,16 @@ export default function Page() {
                   <p className="text-sm text-muted-foreground">Only competitive in this guide when discounted close to $300. The dustbin is smaller than some rivals. It is still a step below Roborock’s higher-end models in obstacle avoidance.</p>
                 </div>
               </div>
-              <p className="mt-6 text-sm font-medium">Best suited for: Buyers who monitor prices and want the best navigation available near the $300 mark.</p>
+              <p className="mt-6 text-sm font-medium">Verdict: Best performance when discounted. Best suited for: Buyers who monitor prices and want the best navigation available near the $300 mark.</p>
+              <p className="mt-3 text-sm text-muted-foreground">The original Roborock Q5 is currently unavailable on Amazon.</p>
               <ViewOnAmazon href={AMAZON.q5} name="Roborock Q5" />
             </div>
           </div>
 
           <div className="mb-16 bg-card border border-border rounded-2xl overflow-hidden shadow-sm">
-            <ProductPhoto src={IMAGES.roomba} alt="iRobot Roomba 694, a 600 series robot vacuum" />
+            <ProductPhoto src={IMAGES.roomba} alt="iRobot Roomba 694, a 600 series robot vacuum" wide />
             <div className="p-6 md:p-8">
-              <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-full mb-3">Best Simple Option</span>
-              <h3 className="text-2xl font-bold mb-4"><a href={amazonHref(AMAZON.roomba)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">iRobot Roomba 600 Series (Renewed) — Best Simple Option</a></h3>
+              <h3 className="text-2xl font-bold mb-4"><a href={amazonHref(AMAZON.roomba)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">iRobot Roomba 600 Series</a></h3>
               <ul className="text-sm text-muted-foreground space-y-1 mb-6">
                 <li><strong className="text-foreground">Typical price:</strong> $149–$199 for renewed units</li>
                 <li><strong className="text-foreground">Suction:</strong> Moderate</li>
@@ -247,8 +249,8 @@ export default function Page() {
                   <p className="text-sm text-muted-foreground">Outdated navigation, lower suction than newer competitors, shorter runtime, and minimal smart features.</p>
                 </div>
               </div>
-              <p className="mt-6 text-sm font-medium">Best suited for: Users who want a basic machine that requires almost no learning curve.</p>
-              <ViewOnAmazon href={AMAZON.roomba} name="iRobot Roomba 694 renewed" />
+              <p className="mt-6 text-sm font-medium">Verdict: Best simple option. Best suited for: Users who want a basic machine that requires almost no learning curve.</p>
+              <ViewOnAmazon href={AMAZON.roomba} name="iRobot Roomba 600 Series" />
             </div>
           </div>
 
@@ -261,7 +263,7 @@ export default function Page() {
                   <th className="text-left p-3 font-semibold">Lefant M210 Pro</th>
                   <th className="text-left p-3 font-semibold">eufy RoboVac G30</th>
                   <th className="text-left p-3 font-semibold">Roborock Q5</th>
-                  <th className="text-left p-3 font-semibold">Roomba 600 Renewed</th>
+                  <th className="text-left p-3 font-semibold">Roomba 600 Series</th>
                 </tr>
               </thead>
               <tbody>
@@ -283,7 +285,7 @@ export default function Page() {
             <li><strong className="text-foreground">Best overall under $250:</strong> Lefant M210 Pro</li>
             <li><strong className="text-foreground">Homes with moderate to heavy pet shedding:</strong> eufy RoboVac G30</li>
             <li><strong className="text-foreground">Want mapping and can wait for a discount:</strong> Roborock Q5</li>
-            <li><strong className="text-foreground">Prefer the simplest possible option:</strong> Roomba 600 Series renewed</li>
+            <li><strong className="text-foreground">Prefer the simplest possible option:</strong> Roomba 600 Series</li>
             <li><strong className="text-foreground">Mostly hard floors (tile, hardwood, laminate):</strong> Any of the top three perform well</li>
             <li><strong className="text-foreground">Significant carpet coverage:</strong> Prioritize the Lefant M210 Pro or Roborock Q5 for stronger suction</li>
             <li><strong className="text-foreground">Apartments under 1,000 sq ft:</strong> All recommended models are sufficient</li>
