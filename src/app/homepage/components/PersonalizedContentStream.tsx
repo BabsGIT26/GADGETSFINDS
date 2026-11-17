@@ -384,6 +384,11 @@ const PersonalizedContentStream = () => {
 
   const filteredItems = getFilteredItems();
 
+  const guideIds = [25, 24, 23, 22, 21, 20, 19, 18];
+  const guideItems = guideIds
+    .map((id) => contentItems.find((item) => item.id === id))
+    .filter((item): item is ContentItem => Boolean(item));
+
   if (!isHydrated) {
     return (
       <div className="space-y-6">
@@ -391,8 +396,12 @@ const PersonalizedContentStream = () => {
           <h2 className="text-2xl font-bold text-foreground">Recommended</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {contentItems.slice(0, 3).map((item) => (
-            <div key={item.id} className="bg-card rounded-xl overflow-hidden shadow-md">
+          {guideItems.map((item) => (
+            <Link
+              key={item.id}
+              href={articleRoutes[item.id] || "/"}
+              className="bg-card rounded-xl overflow-hidden shadow-md"
+            >
               <div className="relative h-48 overflow-hidden">
                 <AppImage src={item.image} alt={item.alt} className="w-full h-full object-cover" />
               </div>
@@ -403,7 +412,7 @@ const PersonalizedContentStream = () => {
                 <h3 className="text-lg font-bold text-foreground mb-2">{item.title}</h3>
                 <p className="text-sm text-muted-foreground">{item.excerpt}</p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
