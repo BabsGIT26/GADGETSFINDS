@@ -39,7 +39,7 @@ function ViewOnAmazon({ href, name }: { href: string; name: string }) {
 
 const IMAGES = {
   lefant: "/assets/images/lefant-m210-pro.jpg",
-  eufy: "/assets/images/eufy-robovac-g30.jpg",
+  eufy: "/assets/images/eufy-robovac-g30-wide.jpg",
   q5: "/assets/images/roborock-q5.jpg",
   roomba: "/assets/images/roomba-600-series.jpg",
 } as const;
@@ -158,7 +158,7 @@ export default function Page() {
           </div>
 
           <div className="mb-16 bg-card border border-border rounded-2xl overflow-hidden shadow-sm">
-            <ProductPhoto src={IMAGES.eufy} alt="eufy RoboVac G30 robot vacuum" />
+            <ProductPhoto src={IMAGES.eufy} alt="eufy RoboVac G30 robot vacuum" wide />
             <div className="p-6 md:p-8">
               <h3 className="text-2xl font-bold mb-4"><a href={amazonHref(AMAZON.eufy)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">eufy RoboVac G30</a></h3>
               <ul className="text-sm text-muted-foreground space-y-1 mb-6">
