@@ -92,10 +92,10 @@ const PersonalizedContentStream = () => {
     {
       id: 20,
       title: "Best Smartwatches Under $350 in 2026",
-      excerpt: "Apple Watch SE, Samsung Galaxy Watch, Garmin, and Pixel Watch options by phone and use case.",
+      excerpt: "Apple Watch SE 3, Galaxy Watch 7, Forerunner 165, and Pixel Watch 3, matched to the phone you already own.",
       category: "Buying Guide",
-      image: "https://m.media-amazon.com/images/I/71aN3iQ6TDL.jpg",
-      alt: "Smartwatches under $350",
+      image: "/assets/images/apple-watch-se-3.jpg",
+      alt: "Apple Watch SE 3",
       author: "Gadgets Finds",
       publishedDate: "November 17, 2026",
       readTime: "8 min read",
