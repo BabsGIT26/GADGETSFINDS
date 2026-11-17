@@ -8,6 +8,7 @@ const AMAZON = "https://www.amazon.com/OLIGHT-Rechargeable-Keychain-Flashlight-E
 const IMAGE = "https://m.media-amazon.com/images/I/51vdV5DwSrL.jpg";
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "OLIGHT iMini 2 Flashlight Review — Gadgets Finds",
   description: "Tiny rechargeable keychain flashlight with magnetic base and USB charging. 50 lumens.",
   metadataBase: new URL("https://www.gadgets-finds.com"),

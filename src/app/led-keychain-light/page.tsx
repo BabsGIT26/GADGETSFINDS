@@ -8,6 +8,7 @@ const AMAZON = "https://www.amazon.com/s?k=rechargeable+LED+keychain+light&tag=g
 const IMAGE = "https://m.media-amazon.com/images/I/61pU8V8MjAL.jpg";
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "LED Keychain Light Review — Gadgets Finds",
   description: "Bright rechargeable keychain light for everyday carry. Useful for finding keys or lighting small areas.",
   metadataBase: new URL("https://www.gadgets-finds.com"),

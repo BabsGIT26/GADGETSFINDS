@@ -9,6 +9,7 @@ const AMAZON = "https://www.amazon.com/OBSBOT-Lightweight-Microphone-Space-Grey/
 const IMAGE = "https://m.media-amazon.com/images/I/51OZ72zdwsL.jpg";
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Ultra-Mini Webcam Review — Gadgets Finds",
   description: "A tiny 4K webcam small enough to fit in a pocket. Ideal for travel and video calls.",
   metadataBase: new URL("https://www.gadgets-finds.com"),

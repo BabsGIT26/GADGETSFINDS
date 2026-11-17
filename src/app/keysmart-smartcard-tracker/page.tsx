@@ -8,6 +8,7 @@ const AMAZON = "https://www.amazon.com/KeySmart-SmartCard-MFI-Certified-Compatib
 const IMAGE = "https://m.media-amazon.com/images/I/71zeGEFy1aL._AC_UL165_SR165,165_.jpg";
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "KeySmart SmartCard Tracker Review — Gadgets Finds",
   description: "Ultra-thin credit card size tracker that works with Apple Find My and Google Find Hub. Recharges wirelessly.",
   metadataBase: new URL("https://www.gadgets-finds.com"),

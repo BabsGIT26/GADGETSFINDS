@@ -8,6 +8,7 @@ const AMAZON = "https://www.amazon.com/s?k=electric+air+duster+compressed&tag=ga
 const IMAGE = "https://m.media-amazon.com/images/I/81SEN6oNw1L._AC_SX425_.jpg";
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Mini Electric Air Duster Review — Gadgets Finds",
   description: "Cordless compressed air duster for cleaning keyboards, electronics, and hard-to-reach areas.",
   metadataBase: new URL("https://www.gadgets-finds.com"),

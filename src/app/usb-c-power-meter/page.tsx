@@ -8,6 +8,7 @@ const AMAZON = "https://www.amazon.com/Eversame-Voltmeter-Ammeter-Voltage-Curren
 const IMAGE = "https://m.media-amazon.com/images/I/61xiYeMNojL.jpg";
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "USB-C Power Meter Review — Gadgets Finds",
   description: "Test the real voltage, current, and wattage of your USB-C chargers, cables, and power banks.",
   metadataBase: new URL("https://www.gadgets-finds.com"),

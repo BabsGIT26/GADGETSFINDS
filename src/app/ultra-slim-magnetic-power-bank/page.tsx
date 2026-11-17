@@ -8,6 +8,7 @@ const AMAZON = "https://www.amazon.com/UGREEN-5000mAh-Ultra-Magnetic-Power/dp/B0
 const IMAGE = "https://m.media-amazon.com/images/I/51FsefzzP3L.jpg";
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Ultra-Slim Magnetic Power Bank Review — Gadgets Finds",
   description: "Ultra-thin MagSafe-compatible power bank with Qi2 wireless charging. Fits in a pocket and snaps onto your phone.",
   metadataBase: new URL("https://www.gadgets-finds.com"),

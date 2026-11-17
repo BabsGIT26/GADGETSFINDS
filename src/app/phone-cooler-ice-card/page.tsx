@@ -8,6 +8,7 @@ const AMAZON = "https://www.amazon.com/Phone-Cooler-Magnetic-Semiconductor-Strea
 const IMAGE = "https://m.media-amazon.com/images/I/71K3I5p0FDL.jpg";
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Phone Cooler Ice Card Review — Gadgets Finds",
   description: "Magnetic phone cooler that attaches to the back of your phone to reduce heat during gaming or charging.",
   metadataBase: new URL("https://www.gadgets-finds.com"),

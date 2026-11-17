@@ -6,6 +6,7 @@ import Header from '@/components/common/Header';
 import Footer from '@/app/homepage/components/Footer';
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: 'Tesla Robotaxi Article — Gadgets Finds',
   description: 'Tesla Robotaxi autonomous vehicle service launches with advanced self-driving technology.',
   metadataBase: new URL('https://www.gadgets-finds.com'),

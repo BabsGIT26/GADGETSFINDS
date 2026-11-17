@@ -8,6 +8,7 @@ const AMAZON = "https://www.amazon.com/UGREEN-Charger-Foldable-Compact-Adapter/d
 const IMAGE = "https://m.media-amazon.com/images/I/21QwqmpWChL.jpg";
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "UGREEN Nexode Mini 30W Review — Gadgets Finds",
   description: "Ultra-compact GaN 30W USB-C charger with foldable plug. Charges phones and tablets quickly.",
   metadataBase: new URL("https://www.gadgets-finds.com"),

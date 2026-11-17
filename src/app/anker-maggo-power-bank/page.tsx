@@ -8,6 +8,7 @@ const AMAZON = "https://www.amazon.com/Anker-Certified-Ultra-Fast-MagSafe-Compat
 const IMAGE = "https://m.media-amazon.com/images/I/61DzAk62YOL.jpg";
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Anker MagGo Power Bank Review — Gadgets Finds",
   description: "Qi2 certified MagSafe power bank with smart display and foldable stand. 10,000mAh capacity.",
   metadataBase: new URL("https://www.gadgets-finds.com"),

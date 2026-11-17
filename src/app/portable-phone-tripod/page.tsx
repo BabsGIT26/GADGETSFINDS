@@ -8,6 +8,7 @@ const AMAZON = "https://www.amazon.com/s?k=mini+phone+tripod+portable&tag=gadget
 const IMAGE = "https://m.media-amazon.com/images/I/71dnnsMpNpL._AC_UL450_SY450_QL70_.jpg";
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Portable Phone Tripod Review — Gadgets Finds",
   description: "Foldable mini tripod with phone clamp for video calls, photos, and content creation.",
   metadataBase: new URL("https://www.gadgets-finds.com"),

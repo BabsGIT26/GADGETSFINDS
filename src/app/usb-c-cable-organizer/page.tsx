@@ -8,6 +8,7 @@ const AMAZON = "https://www.amazon.com/s?k=magnetic+cable+organizer+USB-C&tag=ga
 const IMAGE = "https://m.media-amazon.com/images/I/61wCD0dNMUL.jpg";
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "USB-C Cable Organizer Review — Gadgets Finds",
   description: "Magnetic cable holder that keeps charging cables tidy on your desk or nightstand.",
   metadataBase: new URL("https://www.gadgets-finds.com"),

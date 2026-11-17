@@ -8,6 +8,7 @@ const AMAZON = "https://www.amazon.com/s?k=MagSafe+SSD+enclosure+USB-C&tag=gadge
 const IMAGE = "https://m.media-amazon.com/images/I/61DdBzVRhmL.jpg";
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Mini SSD Enclosure Review — Gadgets Finds",
   description: "Compact MagSafe-compatible enclosure for NVMe SSDs. Expand storage on your phone or laptop.",
   metadataBase: new URL("https://www.gadgets-finds.com"),

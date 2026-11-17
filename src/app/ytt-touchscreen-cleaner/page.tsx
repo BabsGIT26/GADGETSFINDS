@@ -7,6 +7,7 @@ import Link from "next/link";
 const AMAZON = "https://www.amazon.com/Touchscreen-Cleaner-Versatile-Cleaners-Microfiber/dp/B07MB8P28S?tag=gadgetsfindswebsmediavid-20";
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "YTT Touchscreen Screen Cleaner Spray Review — Gadgets Finds",
   description:
     "Portable two-in-one screen cleaner spray and microfiber cloth for phones, iPads, laptops, car touchscreens, and other devices.",

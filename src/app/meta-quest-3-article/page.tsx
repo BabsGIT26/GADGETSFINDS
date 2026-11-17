@@ -7,6 +7,7 @@ import AmazonDealBox from "@/components/common/AmazonDealBox";
 const AMAZON = "https://www.amazon.com/dp/B0CD1JTBSC?tag=gadgetsfindswebsite-20";
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Meta Quest 3 Review — Gadgets Finds",
   description: "Meta Quest 3 standalone VR headset: mixed reality, games, and who should buy it.",
   metadataBase: new URL("https://www.gadgets-finds.com"),

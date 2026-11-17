@@ -6,6 +6,7 @@ import Header from '@/components/common/Header';
 import Footer from '@/app/homepage/components/Footer';
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: 'Tesla Optimus Gen 3: Specs, AI5 Chip & Release Date — Gadgets Finds',
   description: 'Tesla Optimus Gen 3 features 22 DOF tendon-driven hands, the AI5 chip, and Grok AI. Factory deployment underway in 2026; consumer availability targeted for late 2027.',
   metadataBase: new URL('https://www.gadgets-finds.com'),

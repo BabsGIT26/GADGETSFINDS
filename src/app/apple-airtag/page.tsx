@@ -9,6 +9,7 @@ const AMAZON = "https://www.amazon.com/Apple-AirTag-2nd-Generation-Precision/dp/
 const IMAGE = "https://m.media-amazon.com/images/I/61Qd9Z9caRL.jpg";
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Apple AirTag Review — Gadgets Finds",
   description: "Precision item tracker that works with the Find My network. Attach it to keys, bags, or luggage.",
   metadataBase: new URL("https://www.gadgets-finds.com"),

@@ -7,6 +7,7 @@ import AmazonDealBox from "@/components/common/AmazonDealBox";
 const AMAZON = "https://www.amazon.com/s?k=Apple+Vision+Pro&tag=gadgetsfindswebsite-20";
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Apple Vision Pro Review — Gadgets Finds",
   description:
     "Apple Vision Pro first-generation spatial computer: who it is for and what to know before buying.",

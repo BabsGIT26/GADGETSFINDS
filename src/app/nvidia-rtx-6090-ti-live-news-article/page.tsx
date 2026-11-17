@@ -6,6 +6,7 @@ import Header from '@/components/common/Header';
 import Footer from '@/app/homepage/components/Footer';
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: 'NVIDIA RTX 5090 Live News — Gadgets Finds',
   description: 'Breaking news on NVIDIA RTX 5090 launch with performance benchmarks and availability details.',
   metadataBase: new URL('https://www.gadgets-finds.com'),

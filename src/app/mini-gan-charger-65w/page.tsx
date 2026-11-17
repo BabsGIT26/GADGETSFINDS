@@ -9,6 +9,7 @@ const AMAZON = "https://www.amazon.com/UGREEN-Gallium-Nitride-Charger-Black/dp/B
 const IMAGE = "https://m.media-amazon.com/images/I/51nKMY3u+hL.jpg";
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Mini GaN Charger 65W Review — Gadgets Finds",
   description: "Compact GaN wall charger with multiple ports. Charges phones and laptops without taking much space.",
   metadataBase: new URL("https://www.gadgets-finds.com"),

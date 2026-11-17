@@ -8,6 +8,7 @@ const AMAZON = "https://www.amazon.com/s?k=MagSafe+wallet+stand&tag=gadgetsfinds
 const IMAGE = "https://m.media-amazon.com/images/I/51FsefzzP3L.jpg";
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Magnetic Phone Stand Wallet Review — Gadgets Finds",
   description: "MagSafe wallet that doubles as a kickstand. Holds cards and props your phone for viewing.",
   metadataBase: new URL("https://www.gadgets-finds.com"),

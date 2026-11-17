@@ -31,6 +31,7 @@ const offers = [
 ];
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Amazon Prime free trial: 30 days before Prime Big Deal Days",
   description:
     "Start an Amazon Prime free trial before Prime Big Deal Days, October 6–7, 2026. Prime for Young Adults and Prime Access are listed below.",
