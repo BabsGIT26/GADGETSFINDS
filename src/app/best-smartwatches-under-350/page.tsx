@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
+import RelatedGuides from "@/components/common/RelatedGuides";
 
 export const metadata: Metadata = {
   title: "Best Smartwatches Under $350 in 2026 | Gadgets Finds",
@@ -273,6 +274,8 @@ export default function Page() {
           <p className="text-muted-foreground mb-8 leading-relaxed">
             Prices move, and color and band size change the ASIN. Use the button under the review, then confirm GPS versus LTE and the band length on the page you land on.
           </p>
+
+          <RelatedGuides current="/best-smartwatches-under-350" />
 
           <AmazonDealBox
             productName="Smartwatches"

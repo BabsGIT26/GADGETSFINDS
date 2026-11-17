@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
+import RelatedGuides from "@/components/common/RelatedGuides";
 
 export const metadata: Metadata = {
   title: "Best Cheap Tablets Under $150 in 2026 | Gadgets Finds",
@@ -338,6 +339,8 @@ export default function Page() {
           <p className="text-muted-foreground mb-8 leading-relaxed">
             Prices move weekly. Open the button under the review and read the current configuration, the ad-supported toggle, and the seller before you pay. The buttons go to the original new listings named above.
           </p>
+
+          <RelatedGuides current="/best-cheap-tablets-under-150" />
 
           <AmazonDealBox
             productName="Tablets Under $150"

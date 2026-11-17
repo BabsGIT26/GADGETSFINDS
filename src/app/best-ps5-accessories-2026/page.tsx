@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
+import RelatedGuides from "@/components/common/RelatedGuides";
 
 export const metadata: Metadata = {
   title: "Best PS5 Accessories Worth Buying in 2026 | Gadgets Finds",
@@ -334,6 +335,8 @@ export default function Page() {
           <p className="text-muted-foreground mb-6 leading-relaxed">
             The DualSense Charging Station and the PlayStation Vertical Stand come after those. The dock, CFI-ZDS1, charges two controllers, including an Edge, in about three hours. The stand, CFI-ZVS1, screws a Slim or a Pro down if you insist on vertical. Neither one belongs ahead of storage or audio. Prices move, and a listing can sell through. Use the button under each review, confirm you are looking at the original new product, and check the live price before you order.
           </p>
+
+          <RelatedGuides current="/best-ps5-accessories-2026" />
 
           <AmazonDealBox
             productName="PS5 Accessories"

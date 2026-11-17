@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
+import RelatedGuides from "@/components/common/RelatedGuides";
 
 export const metadata: Metadata = {
   title: "Best Portable Chargers for Travel in 2026 | Gadgets Finds",
@@ -280,6 +281,8 @@ export default function Page() {
           <p className="text-muted-foreground mb-8 leading-relaxed">
             Prices move. Open the button under the review and check the watt-hour marking, the cable type, and whether a charging base is actually in the box before you pay.
           </p>
+
+          <RelatedGuides current="/best-portable-chargers-for-travel" />
 
           <AmazonDealBox
             productName="Portable Chargers and Power Banks"

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
+import RelatedGuides from "@/components/common/RelatedGuides";
 
 export const metadata: Metadata = {
   title: "Best Amazon Deals This Week (50%+ Off) | Gadgets Finds",
@@ -270,6 +271,8 @@ export default function Page() {
           <p className="text-muted-foreground mb-8 leading-relaxed">
             Black Friday week starts November 19, so these numbers can move in either direction. The button under each review is the listing. The price on that page, the afternoon you buy, is the one that counts.
           </p>
+
+          <RelatedGuides current="/best-amazon-deals-this-week" />
 
           <AmazonDealBox
             productName="Amazon Today's Deals"

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
+import RelatedGuides from "@/components/common/RelatedGuides";
 
 export const metadata: Metadata = {
   title: "Roborock vs Roomba in 2026: Which Is Better? | Gadgets Finds",
@@ -236,6 +237,8 @@ export default function Page() {
           <p className="text-muted-foreground mb-8 leading-relaxed">
             Buy the original new listing on each card. If a seller substitutes a renewed unit, or an older Qrevo S, or a Roomba without the AutoWash dock, you are not buying the robot this comparison is about. Confirm the live price before you check out.
           </p>
+
+          <RelatedGuides current="/roborock-vs-roomba-2026" />
 
           <AmazonDealBox
             productName="Roborock and Roomba Robot Vacuums"

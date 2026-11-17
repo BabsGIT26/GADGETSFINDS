@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
+import RelatedGuides from "@/components/common/RelatedGuides";
 
 export const metadata: Metadata = {
   title: "Best Budget Robot Vacuums Under $300 in 2026 — Full In-Depth Guide | Gadgets Finds",
@@ -342,6 +343,8 @@ export default function Page() {
               Prices, promotions, and stock change frequently on Amazon. Always confirm the current price, recent customer feedback, and return policy before ordering.
             </p>
           </div>
+
+          <RelatedGuides current="/best-budget-robot-vacuums-under-300" />
 
           <AmazonDealBox
             productName="Robot Vacuums Under $300"
