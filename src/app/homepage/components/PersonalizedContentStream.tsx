@@ -80,10 +80,10 @@ const PersonalizedContentStream = () => {
     {
       id: 21,
       title: "Best Portable Chargers for Travel in 2026",
-      excerpt: "20,000mAh and slim options with USB-C PD. Capacity, airline rules, and top picks.",
+      excerpt: "Four new Anker banks: 20,000mAh at 87W, a pocket Nano, a 99.54Wh laptop Prime, and a 3-in-1 with a wall plug.",
       category: "Buying Guide",
-      image: "https://m.media-amazon.com/images/I/71NTYCShRCL.jpg",
-      alt: "Portable charger power bank",
+      image: "/assets/images/anker-20k-87w.jpg",
+      alt: "Anker 20,000mAh power bank",
       author: "Gadgets Finds",
       publishedDate: "November 17, 2026",
       readTime: "7 min read",
