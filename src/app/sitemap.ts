@@ -57,12 +57,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/tech-trends-2026/autonomous-vehicles-achieve-level-5-certification',
   ];
 
-  const allPages = [...staticPages, ...articlePages, ...trendPages];
+  const buyingGuides = [
+    '/best-cheap-tablets-under-150',
+    '/best-portable-chargers-for-travel',
+    '/best-smartwatches-under-350',
+    '/best-mini-gadgets-under-30',
+    '/best-amazon-deals-this-week',
+    '/best-ps5-accessories-2026',
+    '/best-budget-robot-vacuums-under-300',
+    '/roborock-vs-roomba-2026',
+  ];
+
+  const allPages = [...staticPages, ...buyingGuides, ...articlePages, ...trendPages];
 
   return allPages.map((path) => ({
-  url: `${baseUrl}${path}`,
-  lastModified: new Date(),
-  changeFrequency: path === '' ? 'daily' : 'weekly',
-  priority: path === '' ? 1.0 : path.includes('article') ? 0.7 : 0.8,
-}));
+    url: `${baseUrl}${path}`,
+    lastModified: new Date(),
+    changeFrequency: path === '' || path === '/best-amazon-deals-this-week' ? 'daily' : 'weekly',
+    priority: path === '' ? 1.0 : buyingGuides.includes(path) ? 0.9 : path.includes('article') ? 0.7 : 0.8,
+  }));
 }
