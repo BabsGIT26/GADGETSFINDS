@@ -116,13 +116,13 @@ const PersonalizedContentStream = () => {
     {
       id: 18,
       title: "Best Amazon Deals This Week (50%+ Off)",
-      excerpt: "How to find genuine deep discounts. Categories that hit 50%+ and tips to verify real deals.",
+      excerpt: "Newest Fire TV Stick 4K at $19.99, the 4K Plus at $29.99, the Select at $17.99, and the Cube at $89.99. Prices checked November 17.",
       category: "Deals",
-      image: "/assets/images/october_deals_card.png",
-      alt: "Amazon deals 50% off",
+      image: "/assets/images/fire-tv-stick-4k.jpg",
+      alt: "Amazon Fire TV Stick 4K",
       author: "Gadgets Finds",
       publishedDate: "November 17, 2026",
-      readTime: "5 min read",
+      readTime: "8 min read",
       tags: ["Amazon", "Deals", "50% Off", "Guide"],
     },
     {
