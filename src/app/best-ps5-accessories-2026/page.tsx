@@ -45,14 +45,18 @@ const IMAGES = {
   stand: "/assets/images/ps5-vertical-stand.jpg",
 } as const;
 
-function ProductPhoto({ src, alt }: { src: string; alt: string }) {
+function ProductPhoto({ src, alt, compact = false }: { src: string; alt: string; compact?: boolean }) {
   return (
-    <div className="border-b border-border bg-white">
+    <div className={compact ? "border-b border-border bg-white py-6" : "border-b border-border bg-white"}>
       <img
         src={src}
         alt={alt}
         referrerPolicy="no-referrer"
-        className="block w-full h-auto object-cover"
+        className={
+          compact
+            ? "mx-auto block w-auto h-auto max-h-72 md:max-h-80 max-w-full object-contain"
+            : "block w-full h-auto object-cover"
+        }
       />
     </div>
   );
@@ -172,7 +176,7 @@ export default function Page() {
 
           <h2 className="text-2xl md:text-3xl font-bold mt-16 mb-4">3. Headset</h2>
           <div className="mb-8 bg-card border border-border rounded-2xl overflow-hidden shadow-sm">
-            <ProductPhoto src={IMAGES.pulse} alt="PlayStation PULSE Elite wireless headset" />
+            <ProductPhoto src={IMAGES.pulse} alt="PlayStation PULSE Elite wireless headset" compact />
             <div className="p-6 md:p-8">
               <h3 className="text-2xl font-bold mb-4">
                 <a href={amazonHref(AMAZON.pulse)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">PULSE Elite</a>
@@ -210,7 +214,7 @@ export default function Page() {
 
           <h2 className="text-2xl md:text-3xl font-bold mt-16 mb-4">4. Controller Charging Station</h2>
           <div className="mb-8 bg-card border border-border rounded-2xl overflow-hidden shadow-sm">
-            <ProductPhoto src={IMAGES.dock} alt="Official DualSense Charging Station with two controllers" />
+            <ProductPhoto src={IMAGES.dock} alt="Official DualSense Charging Station with two controllers" compact />
             <div className="p-6 md:p-8">
               <h3 className="text-2xl font-bold mb-4">
                 <a href={amazonHref(AMAZON.dock)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">DualSense Charging Station</a>
