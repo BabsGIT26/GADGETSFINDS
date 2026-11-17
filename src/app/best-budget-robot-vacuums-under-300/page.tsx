@@ -8,13 +8,6 @@ export const metadata: Metadata = {
   description: "The best robot vacuums under $300 in 2026. Full comparison of Lefant M210 Pro, eufy RoboVac G30, Roborock Q5, and Roomba 600 series.",
   metadataBase: new URL("https://www.gadgets-finds.com"),
   alternates: { canonical: "https://www.gadgets-finds.com/best-budget-robot-vacuums-under-300" },
-  openGraph: {
-    title: "Best Budget Robot Vacuums Under $300 in 2026",
-    description: "Strong cleaning performance without overspending.",
-    url: "https://www.gadgets-finds.com/best-budget-robot-vacuums-under-300",
-    type: "article",
-    images: [{ url: "https://m.media-amazon.com/images/I/71q8iN2sN5L.jpg", width: 1200, height: 630 }],
-  },
 };
 
 export default function Page() {
@@ -22,34 +15,13 @@ export default function Page() {
     <>
       <Header />
       <article className="min-h-screen bg-background pt-14 md:pt-16">
-        {/* Hero */}
-        <div className="relative h-[420px] md:h-[520px] overflow-hidden">
-          <img
-            src="https://m.media-amazon.com/images/I/71q8iN2sN5L.jpg"
-            alt="Robot vacuum cleaning a modern home"
-            className="absolute inset-0 w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
-          <div className="relative z-10 h-full flex items-end">
-            <div className="container mx-auto px-4 pb-12 max-w-5xl">
-              <span className="inline-block px-3 py-1 bg-amber-400 text-black text-xs font-bold rounded-full mb-4">
-                Buying Guide • 2026
-              </span>
-              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4">
-                Best Budget Robot Vacuums Under $300
-              </h1>
-              <p className="text-white/90 text-lg md:text-xl max-w-3xl">
-                Full in-depth guide to the strongest options for daily cleaning, pet hair, and value.
-              </p>
-            </div>
-          </div>
-        </div>
-
         <div className="container mx-auto px-4 py-10 max-w-4xl">
-          <p className="text-xs text-muted-foreground mb-8 leading-relaxed">
+          <p className="text-xs text-muted-foreground mb-6 leading-relaxed">
             <span className="text-red-600 font-semibold">Disclosure:</span> Gadgets Finds is an Amazon Associate. We may earn from qualifying purchases if you buy through links on this page, at no extra cost to you. Prices and availability change on Amazon.
           </p>
 
+          <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">Buying Guide</p>
+          <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">Best Budget Robot Vacuums Under $300 in 2026 — Full In-Depth Guide</h1>
           <p className="text-muted-foreground mb-2 text-sm">Last updated: November 2026</p>
           <p className="text-muted-foreground mb-6 text-lg leading-relaxed">
             Robot vacuums priced under $300 have improved significantly over the past two years. In 2026, several models in this range can handle daily cleaning in apartments and smaller homes with far better consistency than older budget robots. While they still lag behind $600–$1,000 flagships in obstacle avoidance, multi-floor mapping, and self-emptying capability, the gap has narrowed enough that many people no longer need to spend premium prices for acceptable results.
@@ -57,19 +29,6 @@ export default function Page() {
           <p className="text-muted-foreground mb-10 leading-relaxed">
             This guide covers the strongest options currently available around or under $300 on Amazon. Recommendations are based on suction performance, navigation quality, pet hair handling, edge cleaning, battery life, app reliability, maintenance demands, and typical street pricing.
           </p>
-
-          {/* Video */}
-          <div className="mb-12 rounded-2xl overflow-hidden shadow-xl border border-border">
-            <div className="aspect-video">
-              <iframe
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                title="Robot vacuum comparison"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="w-full h-full"
-              />
-            </div>
-          </div>
 
           <h2 className="text-2xl md:text-3xl font-bold mt-12 mb-6">What Separates Good Budget Robots from Weak Ones</h2>
           <p className="text-muted-foreground mb-6">Under $300, manufacturers cut costs in specific areas. Understanding these trade-offs helps avoid disappointment:</p>
@@ -94,11 +53,6 @@ export default function Page() {
 
           {/* Lefant */}
           <div className="mb-16 bg-card border border-border rounded-2xl overflow-hidden shadow-sm">
-            <img
-              src="https://m.media-amazon.com/images/I/61+Q6Rh3OQL.jpg"
-              alt="Lefant robot vacuum"
-              className="w-full h-64 object-cover"
-            />
             <div className="p-6 md:p-8">
               <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-full mb-3">Best Overall Value</span>
               <h3 className="text-2xl font-bold mb-4">Lefant M210 Pro</h3>
@@ -130,11 +84,6 @@ export default function Page() {
 
           {/* eufy */}
           <div className="mb-16 bg-card border border-border rounded-2xl overflow-hidden shadow-sm">
-            <img
-              src="https://m.media-amazon.com/images/I/71NTYCShRCL.jpg"
-              alt="eufy robot vacuum"
-              className="w-full h-64 object-cover"
-            />
             <div className="p-6 md:p-8">
               <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-full mb-3">Best for Pet Hair</span>
               <h3 className="text-2xl font-bold mb-4">eufy RoboVac G30</h3>
@@ -166,11 +115,6 @@ export default function Page() {
 
           {/* Roborock */}
           <div className="mb-16 bg-card border border-border rounded-2xl overflow-hidden shadow-sm">
-            <img
-              src="https://m.media-amazon.com/images/I/71aN3iQ6TDL.jpg"
-              alt="Roborock robot vacuum"
-              className="w-full h-64 object-cover"
-            />
             <div className="p-6 md:p-8">
               <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-full mb-3">Best Performance When Discounted</span>
               <h3 className="text-2xl font-bold mb-4">Roborock Q5</h3>
