@@ -104,10 +104,10 @@ const PersonalizedContentStream = () => {
     {
       id: 19,
       title: "Best Mini Gadgets Under $30 in 2026",
-      excerpt: "Practical low-cost picks: magnetic stands, USB-C hubs, trackers, cable organizers, and more.",
+      excerpt: "An Anker 45W charger, a 5-in-1 hub, a 100W cable two-pack, and a Galaxy SmartTag2, each under $30.",
       category: "Buying Guide",
-      image: "https://m.media-amazon.com/images/I/61+Q6Rh3OQL.jpg",
-      alt: "Mini gadgets under $30",
+      image: "/assets/images/anker-nano-45w.jpg",
+      alt: "Anker Nano 45W charger",
       author: "Gadgets Finds",
       publishedDate: "November 17, 2026",
       readTime: "6 min read",
