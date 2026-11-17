@@ -5,9 +5,9 @@ import AmazonDealBox from "@/components/common/AmazonDealBox";
 import RelatedGuides from "@/components/common/RelatedGuides";
 
 export const metadata: Metadata = {
-  title: "Best Amazon Deals This Week (50%+ Off) | Gadgets Finds",
+  title: "Best Amazon Deals This Week | Gadgets Finds",
   description:
-    "Four Amazon Fire TV deals checked on November 17, 2026, each more than half off: the new Stick 4K, the 4K Plus, the 4K Select, and the Fire TV Cube.",
+    "Fire TV deals checked on November 17, 2026. The prices below were real that day. Confirm the current price before you buy.",
   metadataBase: new URL("https://www.gadgets-finds.com"),
   alternates: { canonical: "https://www.gadgets-finds.com/best-amazon-deals-this-week" },
 };
