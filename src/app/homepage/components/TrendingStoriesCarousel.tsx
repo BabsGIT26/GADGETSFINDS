@@ -73,7 +73,7 @@ const TrendingStoriesCarousel = () => {
     author: 'Gadgets Finds',
     readTime: '6 min read',
     trending: true,
-    link: '/nvidia-rtx-6090-ti-article'
+    link: '/nvidia-rtx-5090-ti-article'
   },
   {
     id: 5,
@@ -128,6 +128,12 @@ const TrendingStoriesCarousel = () => {
             </span>
             <h3 className="text-3xl font-bold text-white mb-3">{stories[0].title}</h3>
             <p className="text-brand-text-secondary mb-4 line-clamp-2">{stories[0].excerpt}</p>
+            <Link
+              href={stories[0].link || "/live-news-feed"}
+              className="inline-flex items-center space-x-2 px-4 py-2 bg-brand-primary text-white rounded-lg font-semibold text-sm"
+            >
+              <span>Read More</span>
+            </Link>
             <div className="flex items-center space-x-4 text-sm text-brand-text-secondary">
               <span>{stories[0].author}</span>
               <span>•</span>
