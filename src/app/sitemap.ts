@@ -32,8 +32,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/meta-quest-4-article',
     '/playstation-5-digital-renewed-article',
     '/microsoft-azure-quantum-article',
-    '/nvidia-rtx-6090-ti-article',
-    '/nvidia-rtx-6090-ti-live-news-article',
     '/openai-gpt-5-article',
     '/quantum-computing-ibm-article',
     '/samsung-galaxy-s26-ultra-article',
@@ -42,8 +40,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/sony-playstation-6-article',
     '/sony-wh-2000xm6-review-article',
     '/spacex-starlink-gen-3-article',
-    '/tesla-optimus-gen-3-article',
-    '/tesla-robotaxi-article',
     '/genz-semi-automatic-slingshot-article',
     '/logitech-g29-driving-force-article',
   ];
