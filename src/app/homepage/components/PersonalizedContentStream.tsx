@@ -68,10 +68,10 @@ const PersonalizedContentStream = () => {
     {
       id: 22,
       title: "Best Cheap Tablets Under $150 in 2026",
-      excerpt: "Fire HD 10, Galaxy Tab, Lenovo, and renewed iPad options for streaming and light use.",
+      excerpt: "Fire HD 10, Galaxy Tab A9+, Fire HD 8, and Lenovo Tab One. New listings only, with the prices that actually fit under $150.",
       category: "Buying Guide",
-      image: "https://m.media-amazon.com/images/I/61NGnpjoRDL.jpg",
-      alt: "Budget tablets under $150",
+      image: "/assets/images/fire-hd-10.jpg",
+      alt: "Amazon Fire HD 10 tablet",
       author: "Gadgets Finds",
       publishedDate: "November 17, 2026",
       readTime: "8 min read",
