@@ -39,7 +39,7 @@ function ViewOnAmazon({ href, name }: { href: string; name: string }) {
 
 const IMAGES = {
   lefant: "/assets/images/lefant-m210-pro.jpg",
-  eufy: "/assets/images/eufy-robovac-g30-wide.jpg",
+  eufy: "/assets/images/eufy-robovac-g30-hq.jpg",
   q5: "/assets/images/roborock-q5.jpg",
   roomba: "/assets/images/roomba-600-series.jpg",
 } as const;
