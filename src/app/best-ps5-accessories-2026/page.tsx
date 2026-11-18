@@ -3,7 +3,7 @@ import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 import RelatedGuides from "@/components/common/RelatedGuides";
-import GuideFaq, { ProductListJsonLd, ShortAnswer } from "@/components/common/GuideFaq";
+import GuideFaq, { ProductListJsonLd } from "@/components/common/GuideFaq";
 
 export const metadata: Metadata = {
   title: "Best PS5 Accessories Worth Buying in 2026 | Gadgets Finds",
@@ -77,9 +77,6 @@ export default function Page() {
           <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">Buying Guide</p>
           <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">Best PS5 Accessories Worth Buying in 2026</h1>
           <p className="text-muted-foreground mb-2 text-sm">Last updated: November 2026</p>
-          <ShortAnswer>
-            <p>Buy the WD_BLACK SN850P first if the console is full. Then the PULSE Elite if you play with headphones. The DualSense Edge is optional. Skip RGB plates, clip-on fans, no-name controllers, and any USB drive sold as PS5 game storage.</p>
-          </ShortAnswer>
           <ProductListJsonLd name="Best PS5 accessories in 2026" url="/best-ps5-accessories-2026" products={["WD_BLACK SN850P 2TB", "PlayStation PULSE Elite", "DualSense Edge", "DualSense Charging Station", "PlayStation Vertical Stand"]} />
           <p className="text-muted-foreground mb-8 text-lg leading-relaxed">
             The PlayStation 5 is a strong console on its own. A handful of accessories still change how it feels day to day: more room for games you can actually launch, a controller you can tune, a headset that does not die mid-session, and a dock or stand that removes a small daily annoyance. Most of the rest is decoration.

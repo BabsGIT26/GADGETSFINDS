@@ -3,8 +3,7 @@ import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 import RelatedGuides from "@/components/common/RelatedGuides";
-import Link from "next/link";
-import GuideFaq, { ProductListJsonLd, ShortAnswer } from "@/components/common/GuideFaq";
+import GuideFaq, { ProductListJsonLd } from "@/components/common/GuideFaq";
 
 export const metadata: Metadata = {
   title: "Roborock vs Roomba in 2026: Which Is Better? | Gadgets Finds",
@@ -67,12 +66,6 @@ export default function Page() {
           <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">Comparison</p>
           <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">Roborock vs Roomba in 2026: Which Is Better?</h1>
           <p className="text-muted-foreground mb-2 text-sm">Last updated: November 2026</p>
-          <ShortAnswer>
-            <p>
-              Roborock is the better buy for most people in 2026. The Qrevo S Pro has been selling near $400, against a $699.99 list, and it usually costs less than the Roomba Combo 10 Max. Pick Roomba only if you want the camera and the price gap has closed. If $300 is the ceiling, use the{" "}
-              <Link href="/best-budget-robot-vacuums-under-300" className="underline underline-offset-4">budget robot vacuum guide</Link> instead.
-            </p>
-          </ShortAnswer>
           <ProductListJsonLd name="Roborock vs Roomba in 2026" url="/roborock-vs-roomba-2026" products={["Roborock Qrevo S Pro", "iRobot Roomba Combo 10 Max"]} />
           <p className="text-muted-foreground mb-8 text-lg leading-relaxed">
             Roborock and iRobot’s Roomba remain two of the most popular robot vacuum brands. Both have improved, but they still take different approaches. Roborock focuses on strong suction, LiDAR navigation, and feature-rich mopping docks at prices that undercut a comparable Roomba. Roomba emphasizes a familiar app, camera-based obstacle avoidance, and a parts ecosystem people already know how to shop for.

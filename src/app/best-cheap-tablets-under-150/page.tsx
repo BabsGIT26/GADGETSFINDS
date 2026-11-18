@@ -3,7 +3,7 @@ import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 import RelatedGuides from "@/components/common/RelatedGuides";
-import GuideFaq, { ProductListJsonLd, ShortAnswer } from "@/components/common/GuideFaq";
+import GuideFaq, { ProductListJsonLd } from "@/components/common/GuideFaq";
 
 export const metadata: Metadata = {
   title: "Best Cheap Tablets Under $150 in 2026 | Gadgets Finds",
@@ -73,9 +73,6 @@ export default function Page() {
           <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">Buying Guide</p>
           <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">Best Cheap Tablets Under $150 in 2026</h1>
           <p className="text-muted-foreground mb-2 text-sm">Last updated: November 2026</p>
-          <ShortAnswer>
-            <p>Buy the Amazon Fire HD 10. It is the large new tablet that usually stays under $150. Take the Galaxy Tab A9+ only when the US 64 GB model is at or under $150. Skip no-name tablets under $80, and do not treat a renewed iPad as the same purchase.</p>
-          </ShortAnswer>
           <ProductListJsonLd name="Best cheap tablets under $150" url="/best-cheap-tablets-under-150" products={["Amazon Fire HD 10", "Samsung Galaxy Tab A9+", "Amazon Fire HD 10 Kids", "Amazon Fire HD 8", "Lenovo Tab One"]} />
           <p className="text-muted-foreground mb-6 text-lg leading-relaxed">
             A tablet under $150 in 2026 is a streaming, reading, and browsing machine. It is not a laptop replacement, and it is not going to edit video or keep a dozen heavy apps happy at once. The useful ones in this range have a screen you can watch for an hour without squinting, a battery that lasts a travel day, and storage you can expand when 32 GB fills up.

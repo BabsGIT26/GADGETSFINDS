@@ -3,8 +3,7 @@ import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 import RelatedGuides from "@/components/common/RelatedGuides";
-import Link from "next/link";
-import { FaqJsonLd, ProductListJsonLd, ShortAnswer } from "@/components/common/GuideFaq";
+import { FaqJsonLd, ProductListJsonLd } from "@/components/common/GuideFaq";
 
 export const metadata: Metadata = {
   title: "Best Robot Vacuums Under $300 in 2026 | Gadgets Finds",
@@ -80,12 +79,6 @@ export default function Page() {
           </h1>
           <p className="text-muted-foreground mb-1 text-sm">Last updated: November 2026</p>
           <p className="text-muted-foreground mb-8 text-sm">Approximate length: 2,300+ words</p>
-          <ShortAnswer>
-            <p>
-              Buy the Lefant M210 Pro if you want one robot under $250. Choose the eufy RoboVac G30 if pet hair is the job. Wait for the Roborock Q5 only when it is actually near $300. Skip bounce-navigation robots and do not expect a self-empty dock at this price. If the budget is higher, read{" "}
-              <Link href="/roborock-vs-roomba-2026" className="underline underline-offset-4">Roborock vs Roomba</Link>.
-            </p>
-          </ShortAnswer>
 
           <p className="text-muted-foreground mb-4 text-lg leading-relaxed">
             Robot vacuums priced under $300 have improved significantly over the past two years. In 2026, several models in this range can handle daily cleaning in apartments and smaller homes with far better consistency than older budget robots. While they still lag behind $600–$1,000 flagships in obstacle avoidance, multi-floor mapping, and self-emptying capability, the gap has narrowed enough that many people no longer need to spend premium prices for acceptable results.
