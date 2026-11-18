@@ -16,6 +16,7 @@ interface Story {
   readTime: string;
   trending: boolean;
   link?: string;
+  fit?: "contain";
 }
 
 const TrendingStoriesCarousel = () => {
@@ -85,7 +86,8 @@ const TrendingStoriesCarousel = () => {
     author: 'Gadgets Finds',
     readTime: '8 min read',
     trending: true,
-    link: '/best-cheap-tablets-under-150'
+    link: '/best-cheap-tablets-under-150',
+    fit: 'contain',
   },
   {
     id: 6,
@@ -119,7 +121,7 @@ const TrendingStoriesCarousel = () => {
           <AppImage
             src={stories[0].image}
             alt={stories[0].alt}
-            className="w-full h-full object-cover" />
+            className={stories[0].fit === "contain" ? "w-full h-full object-contain bg-black" : "w-full h-full object-cover"} />
 
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
           <div className="absolute bottom-0 left-0 right-0 p-8">
@@ -151,7 +153,7 @@ const TrendingStoriesCarousel = () => {
         <AppImage
           src={stories[currentIndex].image}
           alt={stories[currentIndex].alt}
-          className="w-full h-full object-cover" />
+          className={stories[currentIndex].fit === "contain" ? "w-full h-full object-contain bg-black" : "w-full h-full object-cover"} />
 
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
 

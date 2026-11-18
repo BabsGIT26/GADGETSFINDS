@@ -16,6 +16,7 @@ interface ContentItem {
   publishedDate: string;
   readTime: string;
   tags: string[];
+  fit?: "contain";
 }
 
 const PersonalizedContentStream = () => {
@@ -64,6 +65,7 @@ const PersonalizedContentStream = () => {
       publishedDate: "November 17, 2026",
       readTime: "10 min read",
       tags: ["Roborock", "Roomba", "Robot Vacuum", "Comparison"],
+      fit: "contain",
     },
     {
       id: 22,
@@ -76,6 +78,7 @@ const PersonalizedContentStream = () => {
       publishedDate: "November 17, 2026",
       readTime: "8 min read",
       tags: ["Tablets", "Fire HD", "Budget", "Buying Guide"],
+      fit: "contain",
     },
     {
       id: 21,
@@ -88,6 +91,7 @@ const PersonalizedContentStream = () => {
       publishedDate: "November 17, 2026",
       readTime: "7 min read",
       tags: ["Power Bank", "Travel", "Anker", "Buying Guide"],
+      fit: "contain",
     },
     {
       id: 20,
@@ -112,6 +116,7 @@ const PersonalizedContentStream = () => {
       publishedDate: "November 17, 2026",
       readTime: "6 min read",
       tags: ["Mini Gadgets", "Accessories", "Budget", "Buying Guide"],
+      fit: "contain",
     },
     {
       id: 18,
@@ -124,6 +129,7 @@ const PersonalizedContentStream = () => {
       publishedDate: "November 17, 2026",
       readTime: "8 min read",
       tags: ["Amazon", "Deals", "50% Off", "Guide"],
+      fit: "contain",
     },
     {
       id: 17,
@@ -148,6 +154,7 @@ const PersonalizedContentStream = () => {
       publishedDate: "November 7, 2026",
       readTime: "5 min read",
       tags: ["Samsung", "OLED", "TV", "S85H"],
+      fit: "contain",
     },
     {
       id: 15,
@@ -184,6 +191,7 @@ const PersonalizedContentStream = () => {
       publishedDate: "October 31, 2026",
       readTime: "5 min read",
       tags: ["Xbox", "Series X", "Digital", "Robot White"],
+      fit: "contain",
     },
     {
       id: 12,
@@ -321,12 +329,13 @@ const PersonalizedContentStream = () => {
       title: "Best Amazon Deals This Week",
       excerpt: "Fire TV prices checked on November 17, 2026. Confirm the current price before you buy.",
       category: "Deals",
-      image: "/assets/images/fire-tv-stick-4k-2026.jpg",
+      image: "/assets/images/fire-tv-stick-4k.jpg",
       alt: "Amazon Fire TV Stick 4K",
       author: "Gadgets Finds",
       publishedDate: "November 17, 2026",
       readTime: "8 min read",
-      tags: ["Amazon", "Fire TV", "Deals"]
+      tags: ["Amazon", "Fire TV", "Deals"],
+      fit: "contain",
     },
   ];
 
@@ -403,7 +412,7 @@ const PersonalizedContentStream = () => {
               className="bg-card rounded-xl overflow-hidden shadow-md"
             >
               <div className="relative h-48 overflow-hidden">
-                <AppImage src={item.image} alt={item.alt} className="w-full h-full object-cover" />
+                <AppImage src={item.image} alt={item.alt} className={item.fit === "contain" ? "w-full h-full object-contain bg-white" : "w-full h-full object-cover"} />
               </div>
               <div className="p-5">
                 <span className="inline-block px-2 py-1 bg-primary/10 text-primary text-xs font-semibold rounded mb-2">
@@ -449,7 +458,7 @@ const PersonalizedContentStream = () => {
             className="bg-card rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow"
           >
             <div className="relative h-48 overflow-hidden">
-              <AppImage src={item.image} alt={item.alt} className="w-full h-full object-cover" />
+              <AppImage src={item.image} alt={item.alt} className={item.fit === "contain" ? "w-full h-full object-contain bg-white" : "w-full h-full object-cover"} />
             </div>
             <div className="p-5">
               <span className="inline-block px-2 py-1 bg-primary/10 text-primary text-xs font-semibold rounded mb-2">

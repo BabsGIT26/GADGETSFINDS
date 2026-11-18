@@ -16,6 +16,7 @@ interface Gadget {
   alt: string;
   href: string;
   highlights: string[];
+  contain?: boolean;
 }
 
 const gadgets: Gadget[] = [
@@ -150,6 +151,7 @@ const gadgets: Gadget[] = [
     alt: "Amazon Fire HD 10 tablet",
     href: "/best-cheap-tablets-under-150",
     highlights: ["Fire HD 10", "Galaxy Tab A9+", "Lenovo Tab One"],
+    contain: true,
   },
     {
     name: "PS5 cooling station",
@@ -274,7 +276,7 @@ export default function GadgetsSection() {
                 <AppImage
                   src={gadget.image}
                   alt={gadget.alt}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className={gadget.contain ? "w-full h-full object-contain bg-black" : "w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"}
                 />
                 {gadget.badge && (
                   <span className={`absolute top-3 left-3 text-xs font-bold px-2 py-1 rounded-full ${gadget.badgeColor}`}>
