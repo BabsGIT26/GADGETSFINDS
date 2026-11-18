@@ -33,7 +33,7 @@ const PersonalizedContentStream = () => {
     {
       id: 26,
       title: "Samsung 990 PRO 4TB Review",
-      excerpt: "PCIe 4.0 NVMe up to 7,450 MB/s. The MZ-V9P4T0B/AM box has no heatsink. Read that before you buy it for a PS5.",
+      excerpt: "Samsung’s 4TB PCIe 4.0 SSD, rated to 7,450 MB/s. Model MZ-V9P4T0B/AM.",
       category: "Storage",
       image: "/assets/images/samsung-990-pro-4tb.jpg",
       alt: "Samsung 990 PRO 4TB NVMe SSD",
