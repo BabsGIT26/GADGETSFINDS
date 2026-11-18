@@ -6,7 +6,7 @@ import AmazonDealBox from "@/components/common/AmazonDealBox";
 
 const AMAZON_IPHONE = "https://www.amazon.com/s?k=iPhone+17&tag=gadgetsfindswebsite-20";
 const AMAZON_S26 =
-  "https://www.amazon.com/dp/B0G4SWDH8P?tag=gadgetsfindswebsite-20";
+  "https://www.amazon.com/s?k=Samsung+Galaxy+S26+Ultra+256GB+Black+unlocked&tag=gadgetsfindswebsite-20";
 
 export const metadata: Metadata = {
     openGraph: {
