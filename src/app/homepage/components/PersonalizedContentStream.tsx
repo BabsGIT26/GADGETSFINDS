@@ -123,13 +123,12 @@ const PersonalizedContentStream = () => {
       title: "Best Amazon Deals This Week",
       excerpt: "Newest Fire TV Stick 4K at $19.99, the 4K Plus at $29.99, the Select at $17.99, and the Cube at $89.99. Prices checked November 17.",
       category: "Deals",
-      image: "/assets/images/fire-tv-stick-4k.jpg",
-      alt: "Amazon Fire TV Stick 4K",
+      image: "/assets/images/fire-tv-stick-4k-card.jpg",
+      alt: "Amazon Fire TV Stick 4K with remote",
       author: "Gadgets Finds",
       publishedDate: "November 17, 2026",
       readTime: "8 min read",
       tags: ["Amazon", "Deals", "50% Off", "Guide"],
-      fit: "contain",
     },
     {
       id: 17,
@@ -329,13 +328,12 @@ const PersonalizedContentStream = () => {
       title: "Best Amazon Deals This Week",
       excerpt: "Fire TV prices checked on November 17, 2026. Confirm the current price before you buy.",
       category: "Deals",
-      image: "/assets/images/fire-tv-stick-4k.jpg",
-      alt: "Amazon Fire TV Stick 4K",
+      image: "/assets/images/fire-tv-stick-4k-card.jpg",
+      alt: "Amazon Fire TV Stick 4K with remote",
       author: "Gadgets Finds",
       publishedDate: "November 17, 2026",
       readTime: "8 min read",
       tags: ["Amazon", "Fire TV", "Deals"],
-      fit: "contain",
     },
   ];
 
@@ -411,8 +409,12 @@ const PersonalizedContentStream = () => {
               href={articleRoutes[item.id] || "/"}
               className="bg-card rounded-xl overflow-hidden shadow-md"
             >
-              <div className="relative h-48 overflow-hidden">
-                <AppImage src={item.image} alt={item.alt} className={item.fit === "contain" ? "w-full h-full object-contain bg-white" : "w-full h-full object-cover"} />
+              <div className="relative h-48 overflow-hidden bg-white">
+                {item.fit === "contain" ? (
+                  <img src={item.image} alt={item.alt} className="w-full h-full object-contain" />
+                ) : (
+                  <AppImage src={item.image} alt={item.alt} className="w-full h-full object-cover" />
+                )}
               </div>
               <div className="p-5">
                 <span className="inline-block px-2 py-1 bg-primary/10 text-primary text-xs font-semibold rounded mb-2">
@@ -457,8 +459,12 @@ const PersonalizedContentStream = () => {
             href={articleRoutes[item.id] || "/"}
             className="bg-card rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow"
           >
-            <div className="relative h-48 overflow-hidden">
-              <AppImage src={item.image} alt={item.alt} className={item.fit === "contain" ? "w-full h-full object-contain bg-white" : "w-full h-full object-cover"} />
+            <div className="relative h-48 overflow-hidden bg-white">
+              {item.fit === "contain" ? (
+                <img src={item.image} alt={item.alt} className="w-full h-full object-contain" />
+              ) : (
+                <AppImage src={item.image} alt={item.alt} className="w-full h-full object-cover" />
+              )}
             </div>
             <div className="p-5">
               <span className="inline-block px-2 py-1 bg-primary/10 text-primary text-xs font-semibold rounded mb-2">
