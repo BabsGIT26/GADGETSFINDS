@@ -18,8 +18,8 @@ export const metadata: Metadata = {
     type: "article",
     images: [{
       url: "https://www.gadgets-finds.com/assets/images/samsung-990-pro-4tb.jpg",
-      width: 1600,
-      height: 1200,
+      width: 547,
+      height: 365,
       alt: "Samsung 990 PRO 4TB NVMe SSD",
     }],
   },
