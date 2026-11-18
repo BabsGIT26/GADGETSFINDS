@@ -96,18 +96,18 @@ export default function Page() {
           </ul>
 
           <h2 className="text-2xl md:text-3xl font-bold mt-16 mb-4">1. Amazon Fire HD 10</h2>
-          <div className="mb-8 bg-card border border-border rounded-2xl overflow-hidden shadow-sm">
+          <div className="mb-8 bg-card border-2 border-amber-400/60 rounded-2xl overflow-hidden shadow-sm">
             <ProductPhoto src={IMAGES.hd10} alt="Amazon Fire HD 10 tablet, black, front and back" />
             <div className="p-6 md:p-8">
               <h3 className="text-2xl font-bold mb-4">
                 <a href={amazonHref(AMAZON.hd10)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">Amazon Fire HD 10</a>
               </h3>
               <ul className="text-sm text-muted-foreground space-y-1 mb-6">
-                <li><strong className="text-foreground">Listing:</strong> 13th generation, 2023, 32 GB, black, sold new</li>
-                <li><strong className="text-foreground">Screen:</strong> 10.1-inch IPS, 1920 x 1200, 224 ppi</li>
-                <li><strong className="text-foreground">Chip and memory:</strong> MediaTek MT8186A, 3 GB RAM</li>
-                <li><strong className="text-foreground">Storage:</strong> 32 GB, microSD up to 1 TB</li>
-                <li><strong className="text-foreground">Battery:</strong> Amazon rates up to 13 hours; 9 W adapter in the box</li>
+                <li><strong className="text-amber-500">Listing:</strong> 13th generation, 2023, 32 GB, black, sold new</li>
+                <li><strong className="text-amber-500">Screen:</strong> 10.1-inch IPS, 1920 x 1200, 224 ppi</li>
+                <li><strong className="text-amber-500">Chip and memory:</strong> MediaTek MT8186A, 3 GB RAM</li>
+                <li><strong className="text-amber-500">Storage:</strong> 32 GB, microSD up to 1 TB</li>
+                <li><strong className="text-amber-500">Battery:</strong> Amazon rates up to 13 hours; 9 W adapter in the box</li>
               </ul>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 This is the tablet most people should buy if they already live in Prime Video, Kindle, and Alexa. The 2023 Fire HD 10, Amazon’s 13th generation, uses a MediaTek MT8186A with two Cortex-A76 cores up to 2.05 GHz and six Cortex-A55 cores up to 2.0 GHz, plus a Mali-G52 GPU. Amazon says it is about 25 percent faster than the 2021 model. With 3 GB of RAM it is fine for one video app, a browser tab, and Kindle. It is not fine for a split screen full of heavy games.
@@ -137,18 +137,18 @@ export default function Page() {
           </div>
 
           <h2 className="text-2xl md:text-3xl font-bold mt-16 mb-4">2. Samsung Galaxy Tab A9+</h2>
-          <div className="mb-8 bg-card border border-border rounded-2xl overflow-hidden shadow-sm">
+          <div className="mb-8 bg-card border-2 border-amber-400/60 rounded-2xl overflow-hidden shadow-sm">
             <ProductPhoto src={IMAGES.a9} alt="Samsung Galaxy Tab A9+ graphite tablet, front and back" />
             <div className="p-6 md:p-8">
               <h3 className="text-2xl font-bold mb-4">
                 <a href={amazonHref(AMAZON.a9)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">Samsung Galaxy Tab A9+</a>
               </h3>
               <ul className="text-sm text-muted-foreground space-y-1 mb-6">
-                <li><strong className="text-foreground">Listing:</strong> US version, 2024, 11-inch, 64 GB, graphite, tablet only, sold new</li>
-                <li><strong className="text-foreground">Screen:</strong> 11-inch TFT, 1920 x 1200, 90 Hz</li>
-                <li><strong className="text-foreground">Memory:</strong> 4 GB RAM, 64 GB, microSD up to 1 TB</li>
-                <li><strong className="text-foreground">Audio:</strong> Four speakers, Dolby Atmos</li>
-                <li><strong className="text-foreground">List price:</strong> $219.99, recently seen at $149.99</li>
+                <li><strong className="text-amber-500">Listing:</strong> US version, 2024, 11-inch, 64 GB, graphite, tablet only, sold new</li>
+                <li><strong className="text-amber-500">Screen:</strong> 11-inch TFT, 1920 x 1200, 90 Hz</li>
+                <li><strong className="text-amber-500">Memory:</strong> 4 GB RAM, 64 GB, microSD up to 1 TB</li>
+                <li><strong className="text-amber-500">Audio:</strong> Four speakers, Dolby Atmos</li>
+                <li><strong className="text-amber-500">List price:</strong> $219.99, recently seen at $149.99</li>
               </ul>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 The Galaxy Tab A9+ is the Android tablet in this guide, and it only fits the budget on sale. Samsung’s US listing for the 64 GB graphite Wi-Fi model carries a $219.99 list. It has recently been offered at $149.99, which is the number that puts it in this article. If the live price is back over $150, do not stretch for it. The Fire HD 10 is the better buy at full Samsung price.
@@ -178,18 +178,18 @@ export default function Page() {
           </div>
 
           <h2 className="text-2xl md:text-3xl font-bold mt-16 mb-4">3. Amazon Fire HD 10 Kids</h2>
-          <div className="mb-8 bg-card border border-border rounded-2xl overflow-hidden shadow-sm">
+          <div className="mb-8 bg-card border-2 border-amber-400/60 rounded-2xl overflow-hidden shadow-sm">
             <ProductPhoto src={IMAGES.kids} alt="Amazon Fire HD 10 Kids tablet in a blue kid-proof case" />
             <div className="p-6 md:p-8">
               <h3 className="text-2xl font-bold mb-4">
                 <a href={amazonHref(AMAZON.kids)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">Amazon Fire HD 10 Kids</a>
               </h3>
               <ul className="text-sm text-muted-foreground space-y-1 mb-6">
-                <li><strong className="text-foreground">Listing:</strong> 2023 Kids model, ages 3–7, 32 GB, blue, sold new</li>
-                <li><strong className="text-foreground">In the box:</strong> Tablet, kid-proof case, USB-C cable, 9 W adapter</li>
-                <li><strong className="text-foreground">Included service:</strong> 1 year of Amazon Kids+, then a monthly renewal</li>
-                <li><strong className="text-foreground">Guarantee:</strong> 2-year worry-free replacement if it breaks</li>
-                <li><strong className="text-foreground">List price:</strong> $189.99, recently seen at $104.99</li>
+                <li><strong className="text-amber-500">Listing:</strong> 2023 Kids model, ages 3–7, 32 GB, blue, sold new</li>
+                <li><strong className="text-amber-500">In the box:</strong> Tablet, kid-proof case, USB-C cable, 9 W adapter</li>
+                <li><strong className="text-amber-500">Included service:</strong> 1 year of Amazon Kids+, then a monthly renewal</li>
+                <li><strong className="text-amber-500">Guarantee:</strong> 2-year worry-free replacement if it breaks</li>
+                <li><strong className="text-amber-500">List price:</strong> $189.99, recently seen at $104.99</li>
               </ul>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 The Fire HD 10 Kids is the same 10.1-inch 2023 tablet, wrapped for a child. Amazon aims this blue bundle at ages 3 to 7. The case is the product: a thick bumper with a built-in stand, so a drop off a couch is the expected use, not an accident you have to argue about. Amazon includes a 2-year worry-free guarantee. If the tablet breaks in that window, they replace it. That promise is the reason to pay more than a bare Fire HD 10.
@@ -219,18 +219,18 @@ export default function Page() {
           </div>
 
           <h2 className="text-2xl md:text-3xl font-bold mt-16 mb-4">4. Amazon Fire HD 8</h2>
-          <div className="mb-8 bg-card border border-border rounded-2xl overflow-hidden shadow-sm">
+          <div className="mb-8 bg-card border-2 border-amber-400/60 rounded-2xl overflow-hidden shadow-sm">
             <ProductPhoto src={IMAGES.hd8} alt="Amazon Fire HD 8 2024 tablet, black" />
             <div className="p-6 md:p-8">
               <h3 className="text-2xl font-bold mb-4">
                 <a href={amazonHref(AMAZON.hd8)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">Amazon Fire HD 8 (2024)</a>
               </h3>
               <ul className="text-sm text-muted-foreground space-y-1 mb-6">
-                <li><strong className="text-foreground">Listing:</strong> 2024 model, 32 GB, black, ad-supported, sold new</li>
-                <li><strong className="text-foreground">Screen:</strong> 8-inch HD, 1280 x 800</li>
-                <li><strong className="text-foreground">Memory:</strong> 3 GB RAM, 32 GB storage, microSD up to 1 TB</li>
-                <li><strong className="text-foreground">Cameras:</strong> 5 MP rear, 2 MP front</li>
-                <li><strong className="text-foreground">Recently seen:</strong> $99.99</li>
+                <li><strong className="text-amber-500">Listing:</strong> 2024 model, 32 GB, black, ad-supported, sold new</li>
+                <li><strong className="text-amber-500">Screen:</strong> 8-inch HD, 1280 x 800</li>
+                <li><strong className="text-amber-500">Memory:</strong> 3 GB RAM, 32 GB storage, microSD up to 1 TB</li>
+                <li><strong className="text-amber-500">Cameras:</strong> 5 MP rear, 2 MP front</li>
+                <li><strong className="text-amber-500">Recently seen:</strong> $99.99</li>
               </ul>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 The 2024 Fire HD 8 is the compact tablet that stays under $150 without waiting for a sale. The linked configuration is the black 32 GB ad-supported model, recently listed at $99.99. It is the one to buy when the Fire HD 10 is out of stock, or when the tablet has to live in a bag rather than on a table.
@@ -257,18 +257,18 @@ export default function Page() {
           </div>
 
           <h2 className="text-2xl md:text-3xl font-bold mt-16 mb-4">5. Lenovo Tab One</h2>
-          <div className="mb-8 bg-card border border-border rounded-2xl overflow-hidden shadow-sm">
+          <div className="mb-8 bg-card border-2 border-amber-400/60 rounded-2xl overflow-hidden shadow-sm">
             <ProductPhoto src={IMAGES.lenovo} alt="Lenovo Tab One with its folio case used as a stand" />
             <div className="p-6 md:p-8">
               <h3 className="text-2xl font-bold mb-4">
                 <a href={amazonHref(AMAZON.lenovo)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">Lenovo Tab One</a>
               </h3>
               <ul className="text-sm text-muted-foreground space-y-1 mb-6">
-                <li><strong className="text-foreground">Listing:</strong> 8.7-inch, 4 GB RAM, 64 GB, folio case included, sold new</li>
-                <li><strong className="text-foreground">Screen:</strong> 8.7-inch, 1340 x 800</li>
-                <li><strong className="text-foreground">Chip:</strong> MediaTek Helio G85, Mali-G52 MC2</li>
-                <li><strong className="text-foreground">Software:</strong> Android, with the Play Store</li>
-                <li><strong className="text-foreground">Battery claim:</strong> Up to 12.5 hours of YouTube</li>
+                <li><strong className="text-amber-500">Listing:</strong> 8.7-inch, 4 GB RAM, 64 GB, folio case included, sold new</li>
+                <li><strong className="text-amber-500">Screen:</strong> 8.7-inch, 1340 x 800</li>
+                <li><strong className="text-amber-500">Chip:</strong> MediaTek Helio G85, Mali-G52 MC2</li>
+                <li><strong className="text-amber-500">Software:</strong> Android, with the Play Store</li>
+                <li><strong className="text-amber-500">Battery claim:</strong> Up to 12.5 hours of YouTube</li>
               </ul>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 The Lenovo Tab One is here for one reason: it is a small Android tablet with the Play Store and a folio case in the box. That case folds into a stand, which is the thing a bare Fire tablet makes you buy later. The panel is 8.7 inches at 1340 x 800, so it is a little taller than the Fire HD 8 and still well short of the Fire HD 10 or the Tab A9+. Lenovo’s own card lists a MediaTek Helio G85, a Mali-G52 MC2 GPU, 4 GB of RAM, and 64 GB of storage. The listing claims up to 12.5 hours of YouTube streaming.
@@ -295,9 +295,9 @@ export default function Page() {
           </div>
 
           <h2 className="text-2xl font-bold mt-16 mb-4">Quick comparison</h2>
-          <div className="overflow-x-auto mb-10">
+          <div className="overflow-x-auto mb-10 rounded-xl border-2 border-amber-400/70">
             <table className="w-full text-sm border-collapse">
-              <thead>
+              <thead className="bg-amber-400/15">
                 <tr className="border-b">
                   <th className="text-left p-3">Tablet</th>
                   <th className="text-left p-3">OS</th>
@@ -335,13 +335,14 @@ export default function Page() {
           </ul>
 
           <h2 className="text-2xl font-bold mt-10 mb-4">Final verdict</h2>
+          <div className="rounded-2xl border-2 border-amber-400 bg-amber-400/10 p-6 md:p-8 mb-8">
           <p className="text-muted-foreground mb-6 leading-relaxed">
             Buy the Amazon Fire HD 10. It is the large screen that actually lives under $150 most of the time, and for streaming and reading the missing Play Store does not matter. Step up to the Galaxy Tab A9+ only on the days Amazon has the US 64 GB model at or under $150. That is the one with the better display, the speakers, and real Android. Use the Fire HD 10 Kids for a young child when the bundle is on sale, the Fire HD 8 when you want to spend about $100, and the Lenovo Tab One when you want a small Android tablet and the price has not drifted back over the line.
           </p>
           <p className="text-muted-foreground mb-8 leading-relaxed">
             Prices move weekly. Open the button under the review and read the current configuration, the ad-supported toggle, and the seller before you pay. The buttons go to the original new listings named above.
           </p>
-
+          </div>
           <GuideFaq
             items={[
               { q: "What is the best tablet under $150 in 2026?", a: "The Amazon Fire HD 10. It is the large new tablet that usually stays under $150, and it is enough for streaming and reading." },

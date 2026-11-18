@@ -88,18 +88,18 @@ export default function Page() {
           </ul>
 
           <h2 className="text-2xl md:text-3xl font-bold mt-16 mb-4">1. Anker Nano 45W charger</h2>
-          <div className="mb-8 bg-card border border-border rounded-2xl overflow-hidden shadow-sm">
+          <div className="mb-8 bg-card border-2 border-amber-400/60 rounded-2xl overflow-hidden shadow-sm">
             <ProductPhoto src={IMAGES.charger} alt="Anker Nano 45W USB-C charger with a foldable US plug and a USB-C cable" />
             <div className="p-6 md:p-8">
               <h3 className="text-2xl font-bold mb-4">
                 <a href={amazonHref(AMAZON.charger)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">Anker Nano Charger (45W) with 6 ft cable</a>
               </h3>
               <ul className="text-sm text-muted-foreground space-y-1 mb-6">
-                <li><strong className="text-foreground">Listing:</strong> Model B2692, charger plus a 6 ft USB-C cable, sold new</li>
-                <li><strong className="text-foreground">Output:</strong> 45W max on one USB-C port, with PPS</li>
-                <li><strong className="text-foreground">Size:</strong> 1.3 × 1.26 × 1.45 in, charger 2.11 oz</li>
-                <li><strong className="text-foreground">Plug:</strong> Folding US prongs, 100–240V input</li>
-                <li><strong className="text-foreground">Recently seen:</strong> $25.99</li>
+                <li><strong className="text-amber-500">Listing:</strong> Model B2692, charger plus a 6 ft USB-C cable, sold new</li>
+                <li><strong className="text-amber-500">Output:</strong> 45W max on one USB-C port, with PPS</li>
+                <li><strong className="text-amber-500">Size:</strong> 1.3 × 1.26 × 1.45 in, charger 2.11 oz</li>
+                <li><strong className="text-amber-500">Plug:</strong> Folding US prongs, 100–240V input</li>
+                <li><strong className="text-amber-500">Recently seen:</strong> $25.99</li>
               </ul>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 This is the one to buy if the charger in your bag is a 5W block from a phone that is already gone. Anker’s listing is the Nano 45W, model B2692, sold with a 6-foot USB-C to USB-C cable. One port, 45 watts. The published steps are 15W, 27W, and 45W, plus PPS, so a phone that wants a specific voltage can ask for it. The body is 1.3 × 1.26 × 1.45 inches and 2.11 ounces. The prongs fold. Input is 100–240V, so the brick itself can take a foreign outlet. The prongs are the North American pair, so you still need a passive adapter outside the US and Canada.
@@ -126,18 +126,18 @@ export default function Page() {
           </div>
 
           <h2 className="text-2xl md:text-3xl font-bold mt-16 mb-4">2. Anker 5-in-1 USB-C hub</h2>
-          <div className="mb-8 bg-card border border-border rounded-2xl overflow-hidden shadow-sm">
+          <div className="mb-8 bg-card border-2 border-amber-400/60 rounded-2xl overflow-hidden shadow-sm">
             <ProductPhoto src={IMAGES.hub} alt="Grey Anker 5-in-1 USB-C hub with HDMI, USB-A, USB-C, and a power-in port" />
             <div className="p-6 md:p-8">
               <h3 className="text-2xl font-bold mb-4">
                 <a href={amazonHref(AMAZON.hub)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">Anker 5-in-1 USB-C Hub (4K HDMI)</a>
               </h3>
               <ul className="text-sm text-muted-foreground space-y-1 mb-6">
-                <li><strong className="text-foreground">Listing:</strong> Grey 5-in-1, sold new</li>
-                <li><strong className="text-foreground">Ports:</strong> HDMI, USB-C data, two USB-A, USB-C power in</li>
-                <li><strong className="text-foreground">Data:</strong> up to 5 Gbps on the USB-C and USB-A ports</li>
-                <li><strong className="text-foreground">Power:</strong> up to 85W passed through to the laptop</li>
-                <li><strong className="text-foreground">Recently seen:</strong> $25.99</li>
+                <li><strong className="text-amber-500">Listing:</strong> Grey 5-in-1, sold new</li>
+                <li><strong className="text-amber-500">Ports:</strong> HDMI, USB-C data, two USB-A, USB-C power in</li>
+                <li><strong className="text-amber-500">Data:</strong> up to 5 Gbps on the USB-C and USB-A ports</li>
+                <li><strong className="text-amber-500">Power:</strong> up to 85W passed through to the laptop</li>
+                <li><strong className="text-amber-500">Recently seen:</strong> $25.99</li>
               </ul>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 A laptop with two USB-C ports runs out of holes the first time you want a monitor and a mouse. This grey Anker hub is the cheap fix. Anker’s bullets list a 4K HDMI port, a 5 Gbps USB-C data port, two 5 Gbps USB-A ports, and a USB-C power-in port. Pass-through to the computer is up to 85W. The power-in side is described as up to 100W, which is the charger you plug in, not 100W delivered to the laptop. The hub keeps some of that for itself. The charger is not in the box. The 45W brick above is enough for a phone and a light tablet through this hub. A MacBook that wants 60W or more needs a bigger charger than the one in the first review.
@@ -164,18 +164,18 @@ export default function Page() {
           </div>
 
           <h2 className="text-2xl md:text-3xl font-bold mt-16 mb-4">3. Anker 100W cable, two-pack</h2>
-          <div className="mb-8 bg-card border border-border rounded-2xl overflow-hidden shadow-sm">
+          <div className="mb-8 bg-card border-2 border-amber-400/60 rounded-2xl overflow-hidden shadow-sm">
             <ProductPhoto src={IMAGES.cable} alt="Two Anker 100W USB-C to USB-C braided cables" />
             <div className="p-6 md:p-8">
               <h3 className="text-2xl font-bold mb-4">
                 <a href={amazonHref(AMAZON.cable)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">Anker USB-C to USB-C Cable (100W, 2-pack, 6 ft)</a>
               </h3>
               <ul className="text-sm text-muted-foreground space-y-1 mb-6">
-                <li><strong className="text-foreground">Listing:</strong> Anker 333, model A8757, two black 6 ft cables, sold new</li>
-                <li><strong className="text-foreground">Power:</strong> up to 100W with a charger that can supply it</li>
-                <li><strong className="text-foreground">Video:</strong> not supported</li>
-                <li><strong className="text-foreground">Build:</strong> nylon, rated for about 5,000 bends</li>
-                <li><strong className="text-foreground">Recently seen:</strong> $12.99</li>
+                <li><strong className="text-amber-500">Listing:</strong> Anker 333, model A8757, two black 6 ft cables, sold new</li>
+                <li><strong className="text-amber-500">Power:</strong> up to 100W with a charger that can supply it</li>
+                <li><strong className="text-amber-500">Video:</strong> not supported</li>
+                <li><strong className="text-amber-500">Build:</strong> nylon, rated for about 5,000 bends</li>
+                <li><strong className="text-amber-500">Recently seen:</strong> $12.99</li>
               </ul>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 The charger above already includes one cable. This two-pack is the spare, and it is the better cable. Anker rates each one at 100W and 6 feet, in nylon, with a stated life of about 5,000 bends. The model on the listing is the 333, A8757. At $12.99 you are paying about $6.50 a cable, which is the point of buying them before the one in your bag frays at the plug. Anker’s warranty language on this cable is the long one, “everlasting,” which in practice means you deal with Anker rather than a marketplace seller who disappears.
@@ -202,18 +202,18 @@ export default function Page() {
           </div>
 
           <h2 className="text-2xl md:text-3xl font-bold mt-16 mb-4">4. Samsung Galaxy SmartTag2</h2>
-          <div className="mb-8 bg-card border border-border rounded-2xl overflow-hidden shadow-sm">
+          <div className="mb-8 bg-card border-2 border-amber-400/60 rounded-2xl overflow-hidden shadow-sm">
             <ProductPhoto src={IMAGES.tag} alt="Black Samsung Galaxy SmartTag2 tracker" />
             <div className="p-6 md:p-8">
               <h3 className="text-2xl font-bold mb-4">
                 <a href={amazonHref(AMAZON.tag)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">Samsung Galaxy SmartTag2 (1 pack, black)</a>
               </h3>
               <ul className="text-sm text-muted-foreground space-y-1 mb-6">
-                <li><strong className="text-foreground">Listing:</strong> 2023 SmartTag2, one black tag, sold new</li>
-                <li><strong className="text-foreground">Radio:</strong> Bluetooth and ultra-wideband, not GPS</li>
-                <li><strong className="text-foreground">Rating:</strong> IP67</li>
-                <li><strong className="text-foreground">Battery:</strong> replaceable CR2032, not included, up to 500 days in Samsung’s long-life figure</li>
-                <li><strong className="text-foreground">Recently seen:</strong> $25</li>
+                <li><strong className="text-amber-500">Listing:</strong> 2023 SmartTag2, one black tag, sold new</li>
+                <li><strong className="text-amber-500">Radio:</strong> Bluetooth and ultra-wideband, not GPS</li>
+                <li><strong className="text-amber-500">Rating:</strong> IP67</li>
+                <li><strong className="text-amber-500">Battery:</strong> replaceable CR2032, not included, up to 500 days in Samsung’s long-life figure</li>
+                <li><strong className="text-amber-500">Recently seen:</strong> $25</li>
               </ul>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 The SmartTag2 is the tracker to buy if the phone is a Galaxy. The linked listing is one black tag, the 2023 model, recently $25. You register it in SmartThings Find. Nearby it can ring. On a compatible Galaxy phone, Search Nearby and Compass View use ultra-wideband to point you at the tag when you are already in the room. Farther away, the location comes from other Galaxy phones in Samsung’s network, the same idea as Find My, on a different crowd. It does not have a GPS chip, even though some marketplace titles say “GPS locator.” If the tag is in a place with no Galaxy phones nearby, the map will not update. That is how every crowd-sourced tracker works.
@@ -240,9 +240,9 @@ export default function Page() {
           </div>
 
           <h2 className="text-2xl font-bold mt-16 mb-4">Quick comparison</h2>
-          <div className="overflow-x-auto mb-10">
+          <div className="overflow-x-auto mb-10 rounded-xl border-2 border-amber-400/70">
             <table className="w-full text-sm border-collapse">
-              <thead>
+              <thead className="bg-amber-400/15">
                 <tr className="border-b">
                   <th className="text-left p-3">Gadget</th>
                   <th className="text-left p-3">What it does</th>
@@ -269,13 +269,14 @@ export default function Page() {
           </ul>
 
           <h2 className="text-2xl font-bold mt-10 mb-4">Final verdict</h2>
+          <div className="rounded-2xl border-2 border-amber-400 bg-amber-400/10 p-6 md:p-8 mb-8">
           <p className="text-muted-foreground mb-6 leading-relaxed">
             Spend the $26 on the Anker Nano 45W if you buy only one thing. It is a real 45W charger, the cable is in the box, and it fits the budget with room for tax to be the thing you check before you click. Add the two-pack of 100W cables when the first lead starts to kink, and remember they will not drive a screen. Add the grey 5-in-1 hub when the laptop is the device that is short of ports, and do not expect 4K at 60Hz just because the word 4K is on the box. Add the SmartTag2 only if you already live on a Galaxy phone, and put a battery in the cart with it.
           </p>
           <p className="text-muted-foreground mb-8 leading-relaxed">
             Prices at this level move by a few dollars and cross $30 without a press release. Open the button under the review and confirm the pack size, the color, and the price before you pay.
           </p>
-
+          </div>
           <GuideFaq
             items={[
               { q: "What is the best gadget under $30?", a: "The Anker Nano 45W charger. It is a real 45 watt charger, the cable is in the box, and it fits the budget." },

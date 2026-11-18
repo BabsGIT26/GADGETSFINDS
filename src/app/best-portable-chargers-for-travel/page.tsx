@@ -92,18 +92,18 @@ export default function Page() {
           </ul>
 
           <h2 className="text-2xl md:text-3xl font-bold mt-16 mb-4">1. Anker 20,000mAh 87W</h2>
-          <div className="mb-8 bg-card border border-border rounded-2xl overflow-hidden shadow-sm">
+          <div className="mb-8 bg-card border-2 border-amber-400/60 rounded-2xl overflow-hidden shadow-sm">
             <ProductPhoto src={IMAGES.twenty} alt="Anker 20,000mAh power bank with a built-in USB-C cable" />
             <div className="p-6 md:p-8">
               <h3 className="text-2xl font-bold mb-4">
                 <a href={amazonHref(AMAZON.twenty)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">Anker 20,000mAh Power Bank (87W)</a>
               </h3>
               <ul className="text-sm text-muted-foreground space-y-1 mb-6">
-                <li><strong className="text-foreground">Listing:</strong> Model A1383, built-in USB-C cable, sold new</li>
-                <li><strong className="text-foreground">Capacity:</strong> 20,000mAh</li>
-                <li><strong className="text-foreground">Output:</strong> 87W shared across three ports, up to 65W on one device</li>
-                <li><strong className="text-foreground">Size:</strong> 6.2 × 2.9 × 1.0 in, 15.5 oz</li>
-                <li><strong className="text-foreground">Recently seen:</strong> $69.99</li>
+                <li><strong className="text-amber-500">Listing:</strong> Model A1383, built-in USB-C cable, sold new</li>
+                <li><strong className="text-amber-500">Capacity:</strong> 20,000mAh</li>
+                <li><strong className="text-amber-500">Output:</strong> 87W shared across three ports, up to 65W on one device</li>
+                <li><strong className="text-amber-500">Size:</strong> 6.2 × 2.9 × 1.0 in, 15.5 oz</li>
+                <li><strong className="text-amber-500">Recently seen:</strong> $69.99</li>
               </ul>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 This is the bank to buy if you want one pack for a trip and you do not want to think about it again. Anker’s listing is the 20,000mAh model A1383 with a built-in USB-C cable and three ports. The shared output is 87W. One device can take up to 65W, which is enough to move a 14-inch laptop rather than only a phone. Anker says the built-in cable can take an iPhone 15 Pro to about 58 percent, or a MacBook Air to about 52 percent, in 30 minutes, and that a 65W wall charger refills the bank itself in about an hour and a half.
@@ -130,18 +130,18 @@ export default function Page() {
           </div>
 
           <h2 className="text-2xl md:text-3xl font-bold mt-16 mb-4">2. Anker Nano 10,000mAh 30W</h2>
-          <div className="mb-8 bg-card border border-border rounded-2xl overflow-hidden shadow-sm">
+          <div className="mb-8 bg-card border-2 border-amber-400/60 rounded-2xl overflow-hidden shadow-sm">
             <ProductPhoto src={IMAGES.nano} alt="Anker Nano 10,000mAh 30W power bank with a built-in USB-C cable" />
             <div className="p-6 md:p-8">
               <h3 className="text-2xl font-bold mb-4">
                 <a href={amazonHref(AMAZON.nano)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">Anker Nano Power Bank (10,000mAh, 30W)</a>
               </h3>
               <ul className="text-sm text-muted-foreground space-y-1 mb-6">
-                <li><strong className="text-foreground">Listing:</strong> 10,000mAh, built-in USB-C cable, sold new</li>
-                <li><strong className="text-foreground">Energy:</strong> 36Wh, from two 5,000mAh cells at 7.2 V</li>
-                <li><strong className="text-foreground">Output:</strong> 30W on the USB-C cable, up to 22.5W on USB-A</li>
-                <li><strong className="text-foreground">Size:</strong> 4.09 × 2.06 × 1.02 in, 7.58 oz</li>
-                <li><strong className="text-foreground">Recently seen:</strong> about $50 to $55</li>
+                <li><strong className="text-amber-500">Listing:</strong> 10,000mAh, built-in USB-C cable, sold new</li>
+                <li><strong className="text-amber-500">Energy:</strong> 36Wh, from two 5,000mAh cells at 7.2 V</li>
+                <li><strong className="text-amber-500">Output:</strong> 30W on the USB-C cable, up to 22.5W on USB-A</li>
+                <li><strong className="text-amber-500">Size:</strong> 4.09 × 2.06 × 1.02 in, 7.58 oz</li>
+                <li><strong className="text-amber-500">Recently seen:</strong> about $50 to $55</li>
               </ul>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 The Nano is the bank that disappears in a bag. Anker lists it at 4.09 × 2.06 × 1.02 inches and 7.58 ounces, with a built-in USB-C cable about 0.6 feet long, plus a USB-C port and a USB-A port. The cable does 30W in both directions. Anker says the bank can reach 50 percent in about 45 minutes and a full charge in about an hour and a half on a 30W charger, and that an iPhone 14 can hit about 50 percent in 30 minutes from the bank. The energy rating published for this model is 36Wh, so the airline question does not come up.
@@ -168,18 +168,18 @@ export default function Page() {
           </div>
 
           <h2 className="text-2xl md:text-3xl font-bold mt-16 mb-4">3. Anker Prime 27,650mAh</h2>
-          <div className="mb-8 bg-card border border-border rounded-2xl overflow-hidden shadow-sm">
+          <div className="mb-8 bg-card border-2 border-amber-400/60 rounded-2xl overflow-hidden shadow-sm">
             <ProductPhoto src={IMAGES.prime} alt="Anker Prime 27,650mAh 250W power bank" />
             <div className="p-6 md:p-8">
               <h3 className="text-2xl font-bold mb-4">
                 <a href={amazonHref(AMAZON.prime)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">Anker Prime 27,650mAh (250W)</a>
               </h3>
               <ul className="text-sm text-muted-foreground space-y-1 mb-6">
-                <li><strong className="text-foreground">Listing:</strong> Power bank only, charging base not included, sold new</li>
-                <li><strong className="text-foreground">Capacity:</strong> 27,650mAh, labeled 99.54Wh</li>
-                <li><strong className="text-foreground">Output:</strong> 250W total, up to 140W on one USB-C port</li>
-                <li><strong className="text-foreground">Recharge:</strong> Anker quotes about 37 minutes at 170W using two chargers</li>
-                <li><strong className="text-foreground">Recently seen:</strong> $179.99</li>
+                <li><strong className="text-amber-500">Listing:</strong> Power bank only, charging base not included, sold new</li>
+                <li><strong className="text-amber-500">Capacity:</strong> 27,650mAh, labeled 99.54Wh</li>
+                <li><strong className="text-amber-500">Output:</strong> 250W total, up to 140W on one USB-C port</li>
+                <li><strong className="text-amber-500">Recharge:</strong> Anker quotes about 37 minutes at 170W using two chargers</li>
+                <li><strong className="text-amber-500">Recently seen:</strong> $179.99</li>
               </ul>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 The Prime is the bank you buy when the thing that dies is a laptop, not a phone. Anker rates it at 27,650mAh and, more importantly, 99.54 watt-hours. That figure is printed so the pack sits just under the 100Wh line. The listing says it meets TSA rules for carry-on. It does not meet the rules for a checked bag. Because it is so close to the limit, keep the watt-hour label easy to show. A gate agent who only sees “27,650mAh” may ask.
@@ -209,18 +209,18 @@ export default function Page() {
           </div>
 
           <h2 className="text-2xl md:text-3xl font-bold mt-16 mb-4">4. Anker Nano 3-in-1</h2>
-          <div className="mb-8 bg-card border border-border rounded-2xl overflow-hidden shadow-sm">
+          <div className="mb-8 bg-card border-2 border-amber-400/60 rounded-2xl overflow-hidden shadow-sm">
             <ProductPhoto src={IMAGES.fusion} alt="Anker Nano 3-in-1 power bank with foldable wall prongs and a built-in USB-C cable" />
             <div className="p-6 md:p-8">
               <h3 className="text-2xl font-bold mb-4">
                 <a href={amazonHref(AMAZON.fusion)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">Anker Nano 3-in-1 (10,000mAh, 30W)</a>
               </h3>
               <ul className="text-sm text-muted-foreground space-y-1 mb-6">
-                <li><strong className="text-foreground">Listing:</strong> Model A1637, USB-C cable, black, sold new</li>
-                <li><strong className="text-foreground">What is built in:</strong> 10,000mAh battery, foldable wall prongs, USB-C cable</li>
-                <li><strong className="text-foreground">Output:</strong> 30W, plugged in or from the battery</li>
-                <li><strong className="text-foreground">Size:</strong> 4.25 × 2.01 × 1.22 in, about 8.82 oz</li>
-                <li><strong className="text-foreground">Recently seen:</strong> $52.99</li>
+                <li><strong className="text-amber-500">Listing:</strong> Model A1637, USB-C cable, black, sold new</li>
+                <li><strong className="text-amber-500">What is built in:</strong> 10,000mAh battery, foldable wall prongs, USB-C cable</li>
+                <li><strong className="text-amber-500">Output:</strong> 30W, plugged in or from the battery</li>
+                <li><strong className="text-amber-500">Size:</strong> 4.25 × 2.01 × 1.22 in, about 8.82 oz</li>
+                <li><strong className="text-amber-500">Recently seen:</strong> $52.99</li>
               </ul>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 The 3-in-1 is the Nano with a wall plug folded into the body. Model A1637 is a 10,000mAh, 30W pack, a built-in USB-C cable, and US-style prongs. Anker lists it at 4.25 × 2.01 × 1.22 inches and about 8.82 ounces. In a hotel you plug it straight into the outlet and charge the phone, or you charge the bank. On the move the prongs fold away and it behaves like a normal power bank. Anker’s claim for this model is an iPhone 15 Pro from empty to about 50 percent in 25 minutes.
@@ -247,9 +247,9 @@ export default function Page() {
           </div>
 
           <h2 className="text-2xl font-bold mt-16 mb-4">Quick comparison</h2>
-          <div className="overflow-x-auto mb-10">
+          <div className="overflow-x-auto mb-10 rounded-xl border-2 border-amber-400/70">
             <table className="w-full text-sm border-collapse">
-              <thead>
+              <thead className="bg-amber-400/15">
                 <tr className="border-b">
                   <th className="text-left p-3">Bank</th>
                   <th className="text-left p-3">Capacity</th>
@@ -277,13 +277,14 @@ export default function Page() {
           </ul>
 
           <h2 className="text-2xl font-bold mt-10 mb-4">Final verdict</h2>
+          <div className="rounded-2xl border-2 border-amber-400 bg-amber-400/10 p-6 md:p-8 mb-8">
           <p className="text-muted-foreground mb-6 leading-relaxed">
             Buy the Anker 20,000mAh 87W with the built-in cable. It is the size and the wattage that match a normal trip, and Anker already calls that listing fit for airline travel as long as you confirm the watt-hours on the label. Drop to the Nano when ounces matter. Step up to the Prime only when a laptop has to survive the flight and $180 is acceptable. Use the 3-in-1 when the goal is to pack one object instead of three, and only if a US plug is what you need.
           </p>
           <p className="text-muted-foreground mb-8 leading-relaxed">
             Prices move. Open the button under the review and check the watt-hour marking, the cable type, and whether a charging base is actually in the box before you pay.
           </p>
-
+          </div>
           <GuideFaq
             items={[
               { q: "What is the best portable charger for travel?", a: "The Anker 20,000mAh 87W with the built-in USB-C cable. It covers a phone and can help a laptop, and it is the default for a normal trip." },

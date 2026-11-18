@@ -88,18 +88,18 @@ export default function Page() {
           </ul>
 
           <h2 className="text-2xl md:text-3xl font-bold mt-16 mb-4">1. Fire TV Stick 4K, newest model</h2>
-          <div className="mb-8 bg-card border border-border rounded-2xl overflow-hidden shadow-sm">
+          <div className="mb-8 bg-card border-2 border-amber-400/60 rounded-2xl overflow-hidden shadow-sm">
             <ProductPhoto src={IMAGES.stick} alt="Amazon Fire TV Stick 4K newest model with the new remote" />
             <div className="p-6 md:p-8">
               <h3 className="text-2xl font-bold mb-4">
                 <a href={amazonHref(AMAZON.stick)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">Amazon Fire TV Stick 4K (newest model)</a>
               </h3>
               <ul className="text-sm text-muted-foreground space-y-1 mb-6">
-                <li><strong className="text-foreground">Checked price:</strong> $19.99, list $59.99, about 67% off</li>
-                <li><strong className="text-foreground">Picture:</strong> 4K, HDR10+</li>
-                <li><strong className="text-foreground">Wireless:</strong> Wi-Fi 6</li>
-                <li><strong className="text-foreground">Power:</strong> Direct Power from the TV’s USB port, wall adapter not required</li>
-                <li><strong className="text-foreground">In the box:</strong> the new Fire TV remote with a navigation ring</li>
+                <li><strong className="text-amber-500">Checked price:</strong> $19.99, list $59.99, about 67% off</li>
+                <li><strong className="text-amber-500">Picture:</strong> 4K, HDR10+</li>
+                <li><strong className="text-amber-500">Wireless:</strong> Wi-Fi 6</li>
+                <li><strong className="text-amber-500">Power:</strong> Direct Power from the TV’s USB port, wall adapter not required</li>
+                <li><strong className="text-amber-500">In the box:</strong> the new Fire TV remote with a navigation ring</li>
               </ul>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 This is the deal. Amazon’s newest Stick 4K was $19.99 against a $59.99 list price, which is $40 off. The page describes 4K with HDR10+, Wi-Fi 6, and Direct Power, meaning the stick can draw power from a USB port on the TV with the included cable instead of a wall brick. The remote is the new one: a navigation ring, TV power and volume, and buttons for the shortcut panel, the Fire TV menu, and live TV. Alexa+ is the voice layer Amazon is advertising for search and smart-home controls. That is a feature of the software, not a promise that every Alexa service stays free.
@@ -126,17 +126,17 @@ export default function Page() {
           </div>
 
           <h2 className="text-2xl md:text-3xl font-bold mt-16 mb-4">2. Fire TV Stick 4K Plus</h2>
-          <div className="mb-8 bg-card border border-border rounded-2xl overflow-hidden shadow-sm">
+          <div className="mb-8 bg-card border-2 border-amber-400/60 rounded-2xl overflow-hidden shadow-sm">
             <ProductPhoto src={IMAGES.plus} alt="Amazon Fire TV Stick 4K Plus with its remote" />
             <div className="p-6 md:p-8">
               <h3 className="text-2xl font-bold mb-4">
                 <a href={amazonHref(AMAZON.plus)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">Amazon Fire TV Stick 4K Plus</a>
               </h3>
               <ul className="text-sm text-muted-foreground space-y-1 mb-6">
-                <li><strong className="text-foreground">Checked price:</strong> $29.99, list $69.99, about 57% off</li>
-                <li><strong className="text-foreground">Picture and sound:</strong> Dolby Vision, HDR10+, Dolby Atmos</li>
-                <li><strong className="text-foreground">Wireless:</strong> Wi-Fi 6</li>
-                <li><strong className="text-foreground">Software:</strong> the 2026 Fire TV interface, Alexa+</li>
+                <li><strong className="text-amber-500">Checked price:</strong> $29.99, list $69.99, about 57% off</li>
+                <li><strong className="text-amber-500">Picture and sound:</strong> Dolby Vision, HDR10+, Dolby Atmos</li>
+                <li><strong className="text-amber-500">Wireless:</strong> Wi-Fi 6</li>
+                <li><strong className="text-amber-500">Software:</strong> the 2026 Fire TV interface, Alexa+</li>
               </ul>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 The Plus was $29.99 against $69.99. Amazon’s page calls it the next generation of its best-selling 4K stick and lists Wi-Fi 6 plus Dolby Vision, HDR10+, and Dolby Atmos. That is the actual difference from the $20 stick, whose page stops at HDR10+. Dolby Vision only matters if the television and the app both support it. On a set that does, the $10 gap is the reason to step up. On a set that does not, you paid $10 for a logo.
@@ -163,17 +163,17 @@ export default function Page() {
           </div>
 
           <h2 className="text-2xl md:text-3xl font-bold mt-16 mb-4">3. Fire TV Stick 4K Select</h2>
-          <div className="mb-8 bg-card border border-border rounded-2xl overflow-hidden shadow-sm">
+          <div className="mb-8 bg-card border-2 border-amber-400/60 rounded-2xl overflow-hidden shadow-sm">
             <ProductPhoto src={IMAGES.select} alt="Amazon Fire TV Stick 4K Select streaming stick and remote" />
             <div className="p-6 md:p-8">
               <h3 className="text-2xl font-bold mb-4">
                 <a href={amazonHref(AMAZON.select)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">Amazon Fire TV Stick 4K Select</a>
               </h3>
               <ul className="text-sm text-muted-foreground space-y-1 mb-6">
-                <li><strong className="text-foreground">Checked price:</strong> $17.99, list $49.99, about 64% off</li>
-                <li><strong className="text-foreground">Picture:</strong> 4K, HDR10+</li>
-                <li><strong className="text-foreground">Body:</strong> about 3.9 × 1.2 × 0.6 in, 1.5 oz</li>
-                <li><strong className="text-foreground">Inside:</strong> quad-core 1.7 GHz, 8 GB storage</li>
+                <li><strong className="text-amber-500">Checked price:</strong> $17.99, list $49.99, about 64% off</li>
+                <li><strong className="text-amber-500">Picture:</strong> 4K, HDR10+</li>
+                <li><strong className="text-amber-500">Body:</strong> about 3.9 × 1.2 × 0.6 in, 1.5 oz</li>
+                <li><strong className="text-amber-500">Inside:</strong> quad-core 1.7 GHz, 8 GB storage</li>
               </ul>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 The Select was $17.99 against a $49.99 list, so the percentage looks as good as the newest stick. The hardware Amazon prints for it is a quad-core 1.7 GHz processor, 8 GB of storage, and a body about 3.9 by 1.2 by 0.6 inches at 1.5 ounces. Picture is 4K with HDR10+. The page also carries the 2026 Fire TV software, so the menu is current even if the stick is the cheaper one.
@@ -200,18 +200,18 @@ export default function Page() {
           </div>
 
           <h2 className="text-2xl md:text-3xl font-bold mt-16 mb-4">4. Fire TV Cube</h2>
-          <div className="mb-8 bg-card border border-border rounded-2xl overflow-hidden shadow-sm">
+          <div className="mb-8 bg-card border-2 border-amber-400/60 rounded-2xl overflow-hidden shadow-sm">
             <ProductPhoto src={IMAGES.cube} alt="Amazon Fire TV Cube hands-free streaming player" />
             <div className="p-6 md:p-8">
               <h3 className="text-2xl font-bold mb-4">
                 <a href={amazonHref(AMAZON.cube)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">Amazon Fire TV Cube</a>
               </h3>
               <ul className="text-sm text-muted-foreground space-y-1 mb-6">
-                <li><strong className="text-foreground">Checked price:</strong> $89.99, list $199.99, about 55% off</li>
-                <li><strong className="text-foreground">Processor:</strong> octa-core, listed as twice the Fire TV Stick 4K Max</li>
-                <li><strong className="text-foreground">Wireless:</strong> Wi-Fi 6E</li>
-                <li><strong className="text-foreground">Picture and sound:</strong> Dolby Vision, HDR, Dolby Atmos</li>
-                <li><strong className="text-foreground">Extra:</strong> hands-free microphones and speakers, HDMI switching</li>
+                <li><strong className="text-amber-500">Checked price:</strong> $89.99, list $199.99, about 55% off</li>
+                <li><strong className="text-amber-500">Processor:</strong> octa-core, listed as twice the Fire TV Stick 4K Max</li>
+                <li><strong className="text-amber-500">Wireless:</strong> Wi-Fi 6E</li>
+                <li><strong className="text-amber-500">Picture and sound:</strong> Dolby Vision, HDR, Dolby Atmos</li>
+                <li><strong className="text-amber-500">Extra:</strong> hands-free microphones and speakers, HDMI switching</li>
               </ul>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 The Cube was $89.99 against $199.99. That is $110 off, and it is a different object from the sticks. Amazon calls it the fastest Fire TV media player, with an octa-core processor it says is twice a Fire TV Stick 4K Max, and it is the one with Wi-Fi 6E. Dolby Vision, HDR, and Dolby Atmos are on the page. So are hands-free microphones, so Alexa can hear you without the remote, and HDMI switching, so the Cube can sit between the TV and a cable box, a console, or a webcam. There is a microphone off button. Use it.
@@ -238,9 +238,9 @@ export default function Page() {
           </div>
 
           <h2 className="text-2xl font-bold mt-16 mb-4">Prices checked on November 17</h2>
-          <div className="overflow-x-auto mb-10">
+          <div className="overflow-x-auto mb-10 rounded-xl border-2 border-amber-400/70">
             <table className="w-full text-sm border-collapse">
-              <thead>
+              <thead className="bg-amber-400/15">
                 <tr className="border-b">
                   <th className="text-left p-3">Device</th>
                   <th className="text-left p-3">Sale</th>
@@ -267,13 +267,14 @@ export default function Page() {
           </p>
 
           <h2 className="text-2xl font-bold mt-10 mb-4">Final verdict</h2>
+          <div className="rounded-2xl border-2 border-amber-400 bg-amber-400/10 p-6 md:p-8 mb-8">
           <p className="text-muted-foreground mb-6 leading-relaxed">
             On November 17 the purchase was the newest Fire TV Stick 4K at $19.99. It is the current stick, the cut is $40, and the 4K Select at $17.99 is not different enough to save the two dollars. Spend $29.99 on the 4K Plus only when the television uses Dolby Vision. Spend $89.99 on the Cube only when you want Wi-Fi 6E, hands-free Alexa, and an HDMI switch in the living room.
           </p>
           <p className="text-muted-foreground mb-8 leading-relaxed">
             Black Friday week starts November 19, so these numbers can move in either direction. The button under each review is the listing. The price on that page, the afternoon you buy, is the one that counts.
           </p>
-
+          </div>
           <GuideFaq
             items={[
               { q: "What is the best Amazon deal this week?", a: "On November 17 it was the newest Fire TV Stick 4K at $19.99, against a $59.99 list price. Confirm the live price before you buy." },

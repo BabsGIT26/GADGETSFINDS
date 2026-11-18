@@ -25,10 +25,10 @@ export default function GuideFaq({ items }: { items: FaqItem[] }) {
     <section className="mt-10 mb-4">
       <FaqJsonLd items={items} />
       <h2 className="text-2xl font-bold mb-4">Questions people ask before buying</h2>
-      <div className="space-y-5">
+      <div className="space-y-4">
         {items.map((item) => (
-          <div key={item.q}>
-            <h3 className="font-semibold mb-1">{item.q}</h3>
+          <div key={item.q} className="rounded-xl border-2 border-amber-400 bg-amber-400/10 p-5">
+            <h3 className="font-semibold text-amber-500 mb-1">{item.q}</h3>
             <p className="text-muted-foreground leading-relaxed">{item.a}</p>
           </div>
         ))}

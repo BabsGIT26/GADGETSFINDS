@@ -93,18 +93,18 @@ export default function Page() {
             Modern games are large, and the console will not play PS5 games from a typical USB hard drive. USB extended storage can hold media and PS4 games, and it can archive PS5 installs, but those PS5 games still have to be copied back to internal or M.2 storage before they launch. An internal drive is the upgrade that removes that shuttle. Sony's expansion bay takes a PCIe Gen4 x4 NVMe SSD in a Socket 3, Key M slot, in 2230, 2242, 2260, 2280, or 22110 length, with a sequential read of at least 5,500 MB/s. The heatsink, including any thermal plate, has to stay within 25 mm wide and 11.25 mm tall: no more than 8.0 mm above the board and 2.45 mm below it. A bare drive that meets the speed number can still throttle or fail to seat if the cooler is missing or too tall.
           </p>
 
-          <div className="mb-8 bg-card border border-border rounded-2xl overflow-hidden shadow-sm">
+          <div className="mb-8 bg-card border-2 border-amber-400/60 rounded-2xl overflow-hidden shadow-sm">
             <ProductPhoto src={IMAGES.ssd} alt="WD_BLACK SN850P NVMe SSD with heatsink for PS5" wide />
             <div className="p-6 md:p-8">
               <h3 className="text-2xl font-bold mb-4">
                 <a href={amazonHref(AMAZON.ssd)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">WD_BLACK SN850P</a>
               </h3>
               <ul className="text-sm text-muted-foreground space-y-1 mb-6">
-                <li><strong className="text-foreground">Model linked:</strong> 2TB heatsink, WDBBYV0020BNC-WRSN</li>
-                <li><strong className="text-foreground">Interface:</strong> PCIe Gen4 x4, M.2 2280</li>
-                <li><strong className="text-foreground">Rated speed:</strong> Up to 7,300 MB/s read and 6,600 MB/s write</li>
-                <li><strong className="text-foreground">Heatsink:</strong> Integrated, 80 x 24.46 x 9.89 mm, PlayStation logo</li>
-                <li><strong className="text-foreground">Endurance and warranty:</strong> 1,200 TBW, 5-year limited warranty</li>
+                <li><strong className="text-amber-500">Model linked:</strong> 2TB heatsink, WDBBYV0020BNC-WRSN</li>
+                <li><strong className="text-amber-500">Interface:</strong> PCIe Gen4 x4, M.2 2280</li>
+                <li><strong className="text-amber-500">Rated speed:</strong> Up to 7,300 MB/s read and 6,600 MB/s write</li>
+                <li><strong className="text-amber-500">Heatsink:</strong> Integrated, 80 x 24.46 x 9.89 mm, PlayStation logo</li>
+                <li><strong className="text-amber-500">Endurance and warranty:</strong> 1,200 TBW, 5-year limited warranty</li>
               </ul>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 The WD_BLACK SN850P is Western Digital's officially licensed drive for the PlayStation 5. The 2TB model in this card, part number WDBBYV0020BNC-WRSN, is tested and certified for the console, and it ships with the heatsink already fitted. That cooler is shaped for the PS5 bay rather than a desktop motherboard, and at 9.89 mm tall it sits inside Sony's 11.25 mm limit. You do not add a second heatsink on top. The gold-finger end seats in the M.2 slot the same way a PC drive does.
@@ -137,18 +137,18 @@ export default function Page() {
           </div>
 
           <h2 className="text-2xl md:text-3xl font-bold mt-16 mb-4">2. DualSense Edge</h2>
-          <div className="mb-8 bg-card border border-border rounded-2xl overflow-hidden shadow-sm">
+          <div className="mb-8 bg-card border-2 border-amber-400/60 rounded-2xl overflow-hidden shadow-sm">
             <ProductPhoto src={IMAGES.edge} alt="DualSense Edge wireless controller, front and back" wide />
             <div className="p-6 md:p-8">
               <h3 className="text-2xl font-bold mb-4">
                 <a href={amazonHref(AMAZON.edge)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">DualSense Edge</a>
               </h3>
               <ul className="text-sm text-muted-foreground space-y-1 mb-6">
-                <li><strong className="text-foreground">Listing:</strong> Original white controller, sold new</li>
-                <li><strong className="text-foreground">List price:</strong> $199.99, recently seen nearer $160</li>
-                <li><strong className="text-foreground">Back buttons:</strong> Two slots, lever and half-dome sets included</li>
-                <li><strong className="text-foreground">Battery and weight:</strong> 1,050 mAh built-in, about 325 g</li>
-                <li><strong className="text-foreground">Cable:</strong> Braided USB-C, about 9.1 ft, with a lock</li>
+                <li><strong className="text-amber-500">Listing:</strong> Original white controller, sold new</li>
+                <li><strong className="text-amber-500">List price:</strong> $199.99, recently seen nearer $160</li>
+                <li><strong className="text-amber-500">Back buttons:</strong> Two slots, lever and half-dome sets included</li>
+                <li><strong className="text-amber-500">Battery and weight:</strong> 1,050 mAh built-in, about 325 g</li>
+                <li><strong className="text-amber-500">Cable:</strong> Braided USB-C, about 9.1 ft, with a lock</li>
               </ul>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 The DualSense Edge is Sony's pro controller for the PS5. It is still a DualSense: the same haptics, adaptive triggers, and layout, with a longer rubberized grip and a set of controls a standard pad does not have. The link on this card is the original white controller sold new. Midnight Black is a different listing. Do not substitute a unit described as renewed or refurbished if you want a new controller.
@@ -178,18 +178,18 @@ export default function Page() {
           </div>
 
           <h2 className="text-2xl md:text-3xl font-bold mt-16 mb-4">3. Headset</h2>
-          <div className="mb-8 bg-card border border-border rounded-2xl overflow-hidden shadow-sm">
+          <div className="mb-8 bg-card border-2 border-amber-400/60 rounded-2xl overflow-hidden shadow-sm">
             <ProductPhoto src={IMAGES.pulse} alt="PlayStation PULSE Elite wireless headset" />
             <div className="p-6 md:p-8">
               <h3 className="text-2xl font-bold mb-4">
                 <a href={amazonHref(AMAZON.pulse)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">PULSE Elite</a>
               </h3>
               <ul className="text-sm text-muted-foreground space-y-1 mb-6">
-                <li><strong className="text-foreground">Type:</strong> Official over-ear headset, planar magnetic drivers</li>
-                <li><strong className="text-foreground">Wireless:</strong> PlayStation Link USB adapter, plus Bluetooth</li>
-                <li><strong className="text-foreground">Battery:</strong> Sony rates about 30 hours</li>
-                <li><strong className="text-foreground">Mic:</strong> Retractable boom</li>
-                <li><strong className="text-foreground">Typical price:</strong> Around $149</li>
+                <li><strong className="text-amber-500">Type:</strong> Official over-ear headset, planar magnetic drivers</li>
+                <li><strong className="text-amber-500">Wireless:</strong> PlayStation Link USB adapter, plus Bluetooth</li>
+                <li><strong className="text-amber-500">Battery:</strong> Sony rates about 30 hours</li>
+                <li><strong className="text-amber-500">Mic:</strong> Retractable boom</li>
+                <li><strong className="text-amber-500">Typical price:</strong> Around $149</li>
               </ul>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 Television speakers are fine until someone else is in the room, or until you want footsteps and voice chat in the same mix. The PULSE Elite is Sony's current over-ear headset for that job. The link is the official new headset, not a renewed listing and not the older Pulse 3D. The Pulse 3D used a different driver and a much shorter battery. Do not buy that older model thinking it is this one.
@@ -216,18 +216,18 @@ export default function Page() {
           </div>
 
           <h2 className="text-2xl md:text-3xl font-bold mt-16 mb-4">4. Controller Charging Station</h2>
-          <div className="mb-8 bg-card border border-border rounded-2xl overflow-hidden shadow-sm">
+          <div className="mb-8 bg-card border-2 border-amber-400/60 rounded-2xl overflow-hidden shadow-sm">
             <ProductPhoto src={IMAGES.dock} alt="Official DualSense Charging Station with two controllers" />
             <div className="p-6 md:p-8">
               <h3 className="text-2xl font-bold mb-4">
                 <a href={amazonHref(AMAZON.dock)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">DualSense Charging Station</a>
               </h3>
               <ul className="text-sm text-muted-foreground space-y-1 mb-6">
-                <li><strong className="text-foreground">Model:</strong> CFI-ZDS1, Sony's official dock</li>
-                <li><strong className="text-foreground">Capacity:</strong> One or two controllers at once</li>
-                <li><strong className="text-foreground">Charge time:</strong> About 3 hours from empty</li>
-                <li><strong className="text-foreground">Power:</strong> AC adapter in the box, 5.1 V, 2.8 A</li>
-                <li><strong className="text-foreground">Size:</strong> About 52 x 62 x 159 mm, roughly 180 g</li>
+                <li><strong className="text-amber-500">Model:</strong> CFI-ZDS1, Sony's official dock</li>
+                <li><strong className="text-amber-500">Capacity:</strong> One or two controllers at once</li>
+                <li><strong className="text-amber-500">Charge time:</strong> About 3 hours from empty</li>
+                <li><strong className="text-amber-500">Power:</strong> AC adapter in the box, 5.1 V, 2.8 A</li>
+                <li><strong className="text-amber-500">Size:</strong> About 52 x 62 x 159 mm, roughly 180 g</li>
               </ul>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 A charging station does not make the console faster. It stops the other problem: two controllers, one cable, and a USB port you would rather leave free for a headset dongle or an external drive. Sony's DualSense Charging Station, model CFI-ZDS1, is the official dock. Some Amazon titles shorten or mistype that model as CF1-ZDS1. The listing linked here is the station itself, with the AC adapter, not a cable-only adapter kit.
@@ -254,18 +254,18 @@ export default function Page() {
           </div>
 
           <h2 className="text-2xl md:text-3xl font-bold mt-16 mb-4">5. Vertical Stand</h2>
-          <div className="mb-8 bg-card border border-border rounded-2xl overflow-hidden shadow-sm">
+          <div className="mb-8 bg-card border-2 border-amber-400/60 rounded-2xl overflow-hidden shadow-sm">
             <ProductPhoto src={IMAGES.stand} alt="Official PlayStation vertical stand for PS5 consoles" />
             <div className="p-6 md:p-8">
               <h3 className="text-2xl font-bold mb-4">
                 <a href={amazonHref(AMAZON.stand)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">PlayStation Vertical Stand</a>
               </h3>
               <ul className="text-sm text-muted-foreground space-y-1 mb-6">
-                <li><strong className="text-foreground">Model:</strong> CFI-ZVS1, official Sony stand</li>
-                <li><strong className="text-foreground">Fits:</strong> CFI-1000, Slim CFI-2000 and CFI-2100, and PS5 Pro</li>
-                <li><strong className="text-foreground">In the box:</strong> Stand, mounting screw, console attachment, manual</li>
-                <li><strong className="text-foreground">Size:</strong> About 190 x 190 mm, 42 mm tall, roughly 30 g</li>
-                <li><strong className="text-foreground">Price:</strong> List $29.99, recently tracked near $29</li>
+                <li><strong className="text-amber-500">Model:</strong> CFI-ZVS1, official Sony stand</li>
+                <li><strong className="text-amber-500">Fits:</strong> CFI-1000, Slim CFI-2000 and CFI-2100, and PS5 Pro</li>
+                <li><strong className="text-amber-500">In the box:</strong> Stand, mounting screw, console attachment, manual</li>
+                <li><strong className="text-amber-500">Size:</strong> About 190 x 190 mm, 42 mm tall, roughly 30 g</li>
+                <li><strong className="text-amber-500">Price:</strong> List $29.99, recently tracked near $29</li>
               </ul>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 The launch PS5 included a stand that worked both flat and upright. Sony stopped putting a vertical stand in the box with the Slim and the PS5 Pro. Those consoles can still stand upright on their own, and airflow does not require a ring under them. What they lack is a wide, screwed-down base. In a household with kids, pets, or a narrow shelf, that is the difference between a console that stays put and one that tips when someone brushes past it. A disc-drive console is the more top-heavy of the two.
@@ -308,9 +308,9 @@ export default function Page() {
           <p className="text-muted-foreground mb-4 leading-relaxed">
             Buy in this order unless your setup already covers a row. A Pro with 2 TB free can skip the SSD. Someone who never uses headphones can skip the headset. Everyone else should resist starting with the stand.
           </p>
-          <div className="overflow-x-auto mb-10">
+          <div className="overflow-x-auto mb-10 rounded-xl border-2 border-amber-400/70">
             <table className="w-full text-sm border-collapse">
-              <thead>
+              <thead className="bg-amber-400/15">
                 <tr className="border-b">
                   <th className="text-left p-3">Accessory</th>
                   <th className="text-left p-3">Priority</th>
@@ -328,6 +328,7 @@ export default function Page() {
           </div>
 
           <h2 className="text-2xl md:text-3xl font-bold mt-10 mb-4">Final Verdict</h2>
+          <div className="rounded-2xl border-2 border-amber-400 bg-amber-400/10 p-6 md:p-8 mb-8">
           <p className="text-muted-foreground mb-4 leading-relaxed">
             Start with the WD_BLACK SN850P if you are deleting games to install the next one. The 2TB heatsink model, WDBBYV0020BNC-WRSN, is the officially licensed drive, it plays games from the expansion bay, and it is the correct shape for the slot. Pay the 2026 price, not the price this category had two years ago, and do not buy a USB drive hoping it will do the same job. On a PS5 Pro that still has free space, spend the money elsewhere.
           </p>
@@ -337,7 +338,7 @@ export default function Page() {
           <p className="text-muted-foreground mb-6 leading-relaxed">
             The DualSense Charging Station and the PlayStation Vertical Stand come after those. The dock, CFI-ZDS1, charges two controllers, including an Edge, in about three hours. The stand, CFI-ZVS1, screws a Slim or a Pro down if you insist on vertical. Neither one belongs ahead of storage or audio. Prices move, and a listing can sell through. Use the button under each review, confirm you are looking at the original new product, and check the live price before you order.
           </p>
-
+          </div>
           <GuideFaq
             items={[
               { q: "What PS5 accessory should I buy first?", a: "The WD_BLACK SN850P 2TB if you are deleting games to install new ones. A PS5 Pro with free space can skip the SSD." },

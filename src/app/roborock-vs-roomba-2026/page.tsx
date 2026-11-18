@@ -77,19 +77,19 @@ export default function Page() {
             Prices move. The figures below are list prices and recent street ranges, not a promise of what the cart will show tomorrow. Both links go to the original new listing, not a renewed or refurbished unit, and not a search page.
           </p>
 
-          <div className="mb-16 bg-card border border-border rounded-2xl overflow-hidden shadow-sm">
+          <div className="mb-16 bg-card border-2 border-amber-400/60 rounded-2xl overflow-hidden shadow-sm">
             <ProductPhoto src={IMAGES.qrevo} alt="Roborock Qrevo S Pro robot vacuum and mop with dock" />
             <div className="p-6 md:p-8">
               <h2 className="text-2xl font-bold mb-4">
                 <a href={amazonHref(AMAZON.qrevo)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">Roborock Qrevo S Pro</a>
               </h2>
               <ul className="text-sm text-muted-foreground space-y-1 mb-6">
-                <li><strong className="text-foreground">Listing:</strong> Original new black Qrevo S Pro, not the older Qrevo S and not a renewed unit</li>
-                <li><strong className="text-foreground">Suction:</strong> 18,500 Pa</li>
-                <li><strong className="text-foreground">Navigation:</strong> PreciSense LiDAR, plus Reactive Tech obstacle avoidance</li>
-                <li><strong className="text-foreground">Mopping:</strong> Dual spinning mops that lift</li>
-                <li><strong className="text-foreground">Dock:</strong> Self-empty, self-refill, 167°F mop washing, warm-air drying</li>
-                <li><strong className="text-foreground">List price:</strong> $699.99, recently seen on sale near $400</li>
+                <li><strong className="text-amber-500">Listing:</strong> Original new black Qrevo S Pro, not the older Qrevo S and not a renewed unit</li>
+                <li><strong className="text-amber-500">Suction:</strong> 18,500 Pa</li>
+                <li><strong className="text-amber-500">Navigation:</strong> PreciSense LiDAR, plus Reactive Tech obstacle avoidance</li>
+                <li><strong className="text-amber-500">Mopping:</strong> Dual spinning mops that lift</li>
+                <li><strong className="text-amber-500">Dock:</strong> Self-empty, self-refill, 167°F mop washing, warm-air drying</li>
+                <li><strong className="text-amber-500">List price:</strong> $699.99, recently seen on sale near $400</li>
               </ul>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 The Qrevo S Pro is the Roborock used for this 2026 comparison because it shows the brand’s current formula in one box: a high pascal number, a LiDAR tower, spinning mops, and a dock that does more than hold a dust bag. Roborock rates suction at 18,500 Pa. That number is a marketing figure, not a lab measurement of every carpet in your house, but it sits well above the older midrange robots that topped out around 2,000 to 5,000 Pa.
@@ -105,18 +105,18 @@ export default function Page() {
             </div>
           </div>
 
-          <div className="mb-16 bg-card border border-border rounded-2xl overflow-hidden shadow-sm">
+          <div className="mb-16 bg-card border-2 border-amber-400/60 rounded-2xl overflow-hidden shadow-sm">
             <ProductPhoto src={IMAGES.roomba} alt="iRobot Roomba Combo 10 Max robot vacuum and mop with AutoWash dock" />
             <div className="p-6 md:p-8">
               <h2 className="text-2xl font-bold mb-4">
                 <a href={amazonHref(AMAZON.roomba)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">Roomba Combo 10 Max</a>
               </h2>
               <ul className="text-sm text-muted-foreground space-y-1 mb-6">
-                <li><strong className="text-foreground">Listing:</strong> Original new Combo 10 Max with AutoWash dock, model X085020</li>
-                <li><strong className="text-foreground">Navigation:</strong> PrecisionVision camera system, not LiDAR</li>
-                <li><strong className="text-foreground">Mopping:</strong> Retracting mop pad with SmartScrub back-and-forth pressure</li>
-                <li><strong className="text-foreground">Dock:</strong> AutoWash base empties the bin, refills water, and washes and dries the pad</li>
-                <li><strong className="text-foreground">List price:</strong> $1,399, recently seen from the high $700s to about $1,000</li>
+                <li><strong className="text-amber-500">Listing:</strong> Original new Combo 10 Max with AutoWash dock, model X085020</li>
+                <li><strong className="text-amber-500">Navigation:</strong> PrecisionVision camera system, not LiDAR</li>
+                <li><strong className="text-amber-500">Mopping:</strong> Retracting mop pad with SmartScrub back-and-forth pressure</li>
+                <li><strong className="text-amber-500">Dock:</strong> AutoWash base empties the bin, refills water, and washes and dries the pad</li>
+                <li><strong className="text-amber-500">List price:</strong> $1,399, recently seen from the high $700s to about $1,000</li>
               </ul>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 The Combo 10 Max is the Roomba used here because it is iRobot’s current answer to a Roborock dock combo, not a leftover 600-series robot. The robot vacuums and mops. The pad retracts so the robot can cross carpet without dragging a wet cloth over it. SmartScrub adds a back-and-forth pass with downward pressure on hard floors. The AutoWash dock empties the bin, refills the robot, and washes and dries the pad, which is the maintenance story Roomba is selling in 2026.
@@ -133,9 +133,9 @@ export default function Page() {
           </div>
 
           <h2 className="text-2xl font-bold mt-10 mb-4">Quick Verdict</h2>
-          <div className="overflow-x-auto mb-10">
+          <div className="overflow-x-auto mb-10 rounded-xl border-2 border-amber-400/70">
             <table className="w-full text-sm border-collapse">
-              <thead>
+              <thead className="bg-amber-400/15">
                 <tr className="border-b">
                   <th className="text-left p-3">Category</th>
                   <th className="text-left p-3">Winner</th>
@@ -217,29 +217,36 @@ export default function Page() {
           </p>
 
           <h2 className="text-2xl font-bold mt-10 mb-4">Who Should Buy Which</h2>
-          <p className="text-muted-foreground mb-2"><strong>Choose Roborock if you want:</strong></p>
-          <ul className="list-disc pl-5 text-muted-foreground space-y-1 mb-4">
-            <li>Stronger pickup, including the 18,500 Pa Qrevo S Pro</li>
-            <li>A LiDAR map that still works with the lights off</li>
-            <li>Spinning mops, mop lift, and a dock that washes them</li>
-            <li>More performance for the money at recent prices</li>
-          </ul>
-          <p className="text-muted-foreground mb-2"><strong>Choose Roomba if you want:</strong></p>
-          <ul className="list-disc pl-5 text-muted-foreground space-y-1 mb-8">
-            <li>The simpler iRobot app and a first clean with fewer settings</li>
-            <li>Camera avoidance aimed at pet waste, cords, and shoes</li>
-            <li>Parts you can identify without a model-number search</li>
-            <li>The Combo 10 Max dock specifically, and a price you have compared live</li>
-          </ul>
+          <div className="grid md:grid-cols-2 gap-4 mb-8">
+            <div className="rounded-xl border-2 border-sky-400 bg-sky-400/10 p-5">
+              <h3 className="font-bold text-sky-500 mb-2">Choose Roborock if you want</h3>
+              <ul className="list-disc pl-5 text-sm text-muted-foreground space-y-1">
+                <li>Stronger pickup, including the 18,500 Pa Qrevo S Pro</li>
+                <li>A LiDAR map that still works with the lights off</li>
+                <li>Spinning mops, mop lift, and a dock that washes them</li>
+                <li>More performance for the money at recent prices</li>
+              </ul>
+            </div>
+            <div className="rounded-xl border-2 border-emerald-400 bg-emerald-400/10 p-5">
+              <h3 className="font-bold text-emerald-500 mb-2">Choose Roomba if you want</h3>
+              <ul className="list-disc pl-5 text-sm text-muted-foreground space-y-1">
+                <li>The simpler iRobot app and a first clean with fewer settings</li>
+                <li>Camera avoidance aimed at pet waste, cords, and shoes</li>
+                <li>Parts you can identify without a model-number search</li>
+                <li>The Combo 10 Max dock specifically, and a price you have compared live</li>
+              </ul>
+            </div>
+          </div>
 
           <h2 className="text-2xl font-bold mt-10 mb-4">Final Recommendation</h2>
+          <div className="rounded-2xl border-2 border-amber-400 bg-amber-400/10 p-6 md:p-8 mb-8">
           <p className="text-muted-foreground mb-4 leading-relaxed">
             In 2026, Roborock is the better choice for most people. The Qrevo S Pro is the clean example: more published suction, LiDAR instead of a camera that needs light, two mops instead of one, and a dock that washes those mops, usually for less than the Roomba Combo 10 Max. Roomba remains the right call if you want the familiar app, you care more about obstacle recognition than a laser map, and you would rather buy a brand whose replacement parts you already know how to find.
           </p>
           <p className="text-muted-foreground mb-8 leading-relaxed">
             Buy the original new listing on each card. If a seller substitutes a renewed unit, or an older Qrevo S, or a Roomba without the AutoWash dock, you are not buying the robot this comparison is about. Confirm the live price before you check out.
           </p>
-
+          </div>
           <GuideFaq
             items={[
               { q: "Is Roborock or Roomba better in 2026?", a: "Roborock is the better choice for most people. The Qrevo S Pro offers LiDAR, higher published suction, and a dock that washes the mops, usually for less than the Roomba Combo 10 Max." },

@@ -80,26 +80,38 @@ export default function Page() {
           </p>
 
           <h2 className="text-2xl md:text-3xl font-bold mt-12 mb-4">What actually changes the watch you should buy</h2>
-          <ul className="list-disc pl-5 text-muted-foreground space-y-2 mb-8">
-            <li><strong className="text-foreground">The phone.</strong> If it is an iPhone, start with the SE 3. If it is a Galaxy, start with the Watch 7. If it is a Pixel or another Android phone and you live in Google’s apps, look at the Pixel Watch 3. If the point is running, look at the Forerunner regardless of the phone.</li>
-            <li><strong className="text-foreground">Battery.</strong> Apple and Google are built around a nightly charge. Samsung usually clears a day and a half. Garmin is measured in days, then in GPS hours.</li>
-            <li><strong className="text-foreground">GPS versus a phone in your pocket.</strong> All four here have their own GPS. That is what you want if you run without the phone.</li>
-            <li><strong className="text-foreground">Health claims.</strong> Heart rate is on all of them. An ECG or a sleep-apnea notification is a regulated feature, not a doctor, and it is missing on some of these models on purpose.</li>
-          </ul>
+          <div className="grid md:grid-cols-2 gap-4 mb-8">
+            <div className="rounded-xl border-2 border-sky-400 bg-sky-400/10 p-5">
+              <h3 className="font-bold text-sky-500 mb-2">The phone</h3>
+              <p className="text-sm text-muted-foreground">If it is an iPhone, start with the SE 3. If it is a Galaxy, start with the Watch 7. If it is a Pixel or another Android phone and you live in Google’s apps, look at the Pixel Watch 3. If the point is running, look at the Forerunner regardless of the phone.</p>
+            </div>
+            <div className="rounded-xl border-2 border-violet-400 bg-violet-400/10 p-5">
+              <h3 className="font-bold text-violet-500 mb-2">Battery</h3>
+              <p className="text-sm text-muted-foreground">Apple and Google are built around a nightly charge. Samsung usually clears a day and a half. Garmin is measured in days, then in GPS hours.</p>
+            </div>
+            <div className="rounded-xl border-2 border-emerald-400 bg-emerald-400/10 p-5">
+              <h3 className="font-bold text-emerald-500 mb-2">GPS versus a phone in your pocket</h3>
+              <p className="text-sm text-muted-foreground">All four here have their own GPS. That is what you want if you run without the phone.</p>
+            </div>
+            <div className="rounded-xl border-2 border-rose-400 bg-rose-400/10 p-5">
+              <h3 className="font-bold text-rose-500 mb-2">Health claims</h3>
+              <p className="text-sm text-muted-foreground">Heart rate is on all of them. An ECG or a sleep-apnea notification is a regulated feature, not a doctor, and it is missing on some of these models on purpose.</p>
+            </div>
+          </div>
 
           <h2 className="text-2xl md:text-3xl font-bold mt-16 mb-4">1. Apple Watch SE 3</h2>
-          <div className="mb-8 bg-card border border-border rounded-2xl overflow-hidden shadow-sm">
+          <div className="mb-8 bg-card border-2 border-amber-400/60 rounded-2xl overflow-hidden shadow-sm">
             <ProductPhoto src={IMAGES.se} alt="Apple Watch SE 3 GPS 40mm in Midnight with a sport band" />
             <div className="p-6 md:p-8">
               <h3 className="text-2xl font-bold mb-4">
                 <a href={amazonHref(AMAZON.se)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">Apple Watch SE 3 (GPS, 40mm)</a>
               </h3>
               <ul className="text-sm text-muted-foreground space-y-1 mb-6">
-                <li><strong className="text-foreground">Listing:</strong> Midnight aluminum, Midnight sport band S/M, GPS, model MEH94LW/A, sold new</li>
-                <li><strong className="text-foreground">Chip and display:</strong> S10, always-on Retina, Ion-X glass</li>
-                <li><strong className="text-foreground">Case:</strong> 40 × 34 × 10.7 mm, 26.3 g</li>
-                <li><strong className="text-foreground">Battery:</strong> up to 18 hours, with faster charging than the SE 2</li>
-                <li><strong className="text-foreground">Recently seen:</strong> $199, list $249</li>
+                <li><strong className="text-amber-500">Listing:</strong> Midnight aluminum, Midnight sport band S/M, GPS, model MEH94LW/A, sold new</li>
+                <li><strong className="text-amber-500">Chip and display:</strong> S10, always-on Retina, Ion-X glass</li>
+                <li><strong className="text-amber-500">Case:</strong> 40 × 34 × 10.7 mm, 26.3 g</li>
+                <li><strong className="text-amber-500">Battery:</strong> up to 18 hours, with faster charging than the SE 2</li>
+                <li><strong className="text-amber-500">Recently seen:</strong> $199, list $249</li>
               </ul>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 The current SE is the third generation, released in September 2025. The linked watch is the GPS 40mm in Midnight with the small/medium sport band, not a cellular model and not an AppleCare bundle. Apple’s case weight for this GPS size is 26.3 grams. It uses the S10 chip and, unlike the SE 2, it has an always-on display, so the time stays visible without a wrist raise. Apple rates the battery at up to 18 hours and says this generation charges faster than the SE 2, including a short top-up that can put hours back on the watch. Water resistance is 50 meters. It is still a swim-proof sports watch, not a dive computer.
@@ -126,18 +138,18 @@ export default function Page() {
           </div>
 
           <h2 className="text-2xl md:text-3xl font-bold mt-16 mb-4">2. Samsung Galaxy Watch 7</h2>
-          <div className="mb-8 bg-card border border-border rounded-2xl overflow-hidden shadow-sm">
+          <div className="mb-8 bg-card border-2 border-amber-400/60 rounded-2xl overflow-hidden shadow-sm">
             <ProductPhoto src={IMAGES.galaxy} alt="Samsung Galaxy Watch 7 40mm in Cream" />
             <div className="p-6 md:p-8">
               <h3 className="text-2xl font-bold mb-4">
                 <a href={amazonHref(AMAZON.galaxy)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">Samsung Galaxy Watch 7 (40mm, Bluetooth)</a>
               </h3>
               <ul className="text-sm text-muted-foreground space-y-1 mb-6">
-                <li><strong className="text-foreground">Listing:</strong> 40mm Bluetooth, Cream, US version, one-year warranty, sold new</li>
-                <li><strong className="text-foreground">Display:</strong> 1.3-inch Super AMOLED, 432 × 432, sapphire crystal</li>
-                <li><strong className="text-foreground">Case:</strong> 40.4 × 40.4 × 9.7 mm, 28.8 g, 5 ATM and IP68</li>
-                <li><strong className="text-foreground">Inside:</strong> Exynos W1000, 2 GB RAM, 32 GB, dual-frequency GPS</li>
-                <li><strong className="text-foreground">Recently seen:</strong> $149.99, list $249.99</li>
+                <li><strong className="text-amber-500">Listing:</strong> 40mm Bluetooth, Cream, US version, one-year warranty, sold new</li>
+                <li><strong className="text-amber-500">Display:</strong> 1.3-inch Super AMOLED, 432 × 432, sapphire crystal</li>
+                <li><strong className="text-amber-500">Case:</strong> 40.4 × 40.4 × 9.7 mm, 28.8 g, 5 ATM and IP68</li>
+                <li><strong className="text-amber-500">Inside:</strong> Exynos W1000, 2 GB RAM, 32 GB, dual-frequency GPS</li>
+                <li><strong className="text-amber-500">Recently seen:</strong> $149.99, list $249.99</li>
               </ul>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 The Watch 7 is the 2024 Galaxy watch, and in late 2026 it is the one that routinely sits well under $200 while the newer Watch 8 and Watch 9 do not. The linked style is the 40mm Bluetooth model in Cream, sold as a US version with a one-year manufacturer warranty. Confirm those three words on the page: 40mm, Bluetooth, and not Renewed. The LTE versions add a carrier plan. The green and silver colors are the same watch with a different band.
@@ -164,18 +176,18 @@ export default function Page() {
           </div>
 
           <h2 className="text-2xl md:text-3xl font-bold mt-16 mb-4">3. Garmin Forerunner 165</h2>
-          <div className="mb-8 bg-card border border-border rounded-2xl overflow-hidden shadow-sm">
+          <div className="mb-8 bg-card border-2 border-amber-400/60 rounded-2xl overflow-hidden shadow-sm">
             <ProductPhoto src={IMAGES.garmin} alt="Garmin Forerunner 165 running watch in black" />
             <div className="p-6 md:p-8">
               <h3 className="text-2xl font-bold mb-4">
                 <a href={amazonHref(AMAZON.garmin)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">Garmin Forerunner 165</a>
               </h3>
               <ul className="text-sm text-muted-foreground space-y-1 mb-6">
-                <li><strong className="text-foreground">Listing:</strong> 43mm, Black, model 010-02863-20, sold new</li>
-                <li><strong className="text-foreground">Display:</strong> 1.2-inch AMOLED, 390 × 390, touchscreen</li>
-                <li><strong className="text-foreground">Case:</strong> 43 × 43 × 11.6 mm, 39 g, 5 ATM</li>
-                <li><strong className="text-foreground">Battery:</strong> up to 11 days as a watch, about 4 days with always-on, up to 19 hours of GPS</li>
-                <li><strong className="text-foreground">Recently seen:</strong> about $192, list $249.99</li>
+                <li><strong className="text-amber-500">Listing:</strong> 43mm, Black, model 010-02863-20, sold new</li>
+                <li><strong className="text-amber-500">Display:</strong> 1.2-inch AMOLED, 390 × 390, touchscreen</li>
+                <li><strong className="text-amber-500">Case:</strong> 43 × 43 × 11.6 mm, 39 g, 5 ATM</li>
+                <li><strong className="text-amber-500">Battery:</strong> up to 11 days as a watch, about 4 days with always-on, up to 19 hours of GPS</li>
+                <li><strong className="text-amber-500">Recently seen:</strong> about $192, list $249.99</li>
               </ul>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 The Forerunner 165 is a running watch that happens to tell the time, not a mini phone. Garmin’s figures for this model are the ones that matter if you train: up to 11 days in smartwatch mode, about 4 days if you leave the AMOLED always on, up to 20 days in a battery-saver mode, and up to 19 hours with GPS only. All-systems GNSS is a little shorter, around 17 hours. That is a week of runs without hunting a charger, which none of the other three here can claim.
@@ -202,18 +214,18 @@ export default function Page() {
           </div>
 
           <h2 className="text-2xl md:text-3xl font-bold mt-16 mb-4">4. Google Pixel Watch 3</h2>
-          <div className="mb-8 bg-card border border-border rounded-2xl overflow-hidden shadow-sm">
+          <div className="mb-8 bg-card border-2 border-amber-400/60 rounded-2xl overflow-hidden shadow-sm">
             <ProductPhoto src={IMAGES.pixel} alt="Google Pixel Watch 3 with a light band" />
             <div className="p-6 md:p-8">
               <h3 className="text-2xl font-bold mb-4">
                 <a href={amazonHref(AMAZON.pixel)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">Google Pixel Watch 3 (41mm, Wi-Fi)</a>
               </h3>
               <ul className="text-sm text-muted-foreground space-y-1 mb-6">
-                <li><strong className="text-foreground">Listing:</strong> 41mm, Champagne Gold case, Hazel band, Wi-Fi, sold new</li>
-                <li><strong className="text-foreground">Display:</strong> Actua LTPO AMOLED, up to 2,000 nits, Gorilla Glass 5</li>
-                <li><strong className="text-foreground">Case:</strong> 12.3 mm thick, about 31 g without the band, 5 ATM and IP68</li>
-                <li><strong className="text-foreground">Battery:</strong> 306 mAh, up to 24 hours with the display always on, up to 36 hours in Battery Saver</li>
-                <li><strong className="text-foreground">Recently seen:</strong> $249.99</li>
+                <li><strong className="text-amber-500">Listing:</strong> 41mm, Champagne Gold case, Hazel band, Wi-Fi, sold new</li>
+                <li><strong className="text-amber-500">Display:</strong> Actua LTPO AMOLED, up to 2,000 nits, Gorilla Glass 5</li>
+                <li><strong className="text-amber-500">Case:</strong> 12.3 mm thick, about 31 g without the band, 5 ATM and IP68</li>
+                <li><strong className="text-amber-500">Battery:</strong> 306 mAh, up to 24 hours with the display always on, up to 36 hours in Battery Saver</li>
+                <li><strong className="text-amber-500">Recently seen:</strong> $249.99</li>
               </ul>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 The Pixel Watch 3 is the clean Wear OS watch. The linked one is the 41mm Wi-Fi model in Champagne Gold with the Hazel band, not the LTE version and not the 45mm. Google rates this size at about 31 grams without the band and 12.3 mm thick, with a 306 mAh battery. The promise is up to 24 hours with the always-on display and up to 36 hours in Battery Saver. A 50 percent charge is about 24 minutes on the 41mm. That is a nightly charger, same idea as the Apple Watch, with a saver mode that can stretch a second day if you are careful.
@@ -240,9 +252,9 @@ export default function Page() {
           </div>
 
           <h2 className="text-2xl font-bold mt-16 mb-4">Quick comparison</h2>
-          <div className="overflow-x-auto mb-10">
+          <div className="overflow-x-auto mb-10 rounded-xl border-2 border-amber-400/70">
             <table className="w-full text-sm border-collapse">
-              <thead>
+              <thead className="bg-amber-400/15">
                 <tr className="border-b">
                   <th className="text-left p-3">Watch</th>
                   <th className="text-left p-3">Phone</th>
@@ -270,13 +282,14 @@ export default function Page() {
           </ul>
 
           <h2 className="text-2xl font-bold mt-10 mb-4">Final verdict</h2>
+          <div className="rounded-2xl border-2 border-amber-400 bg-amber-400/10 p-6 md:p-8 mb-8">
           <p className="text-muted-foreground mb-6 leading-relaxed">
             Match the watch to the phone first. The Apple Watch SE 3 is the one to buy for an iPhone, and at about $199 it is the current SE rather than a leftover second generation. The Galaxy Watch 7 is the Android watch that still feels current at about $150, with the caveat that Samsung’s health features want a Samsung phone. The Forerunner 165 is the better product the moment training matters more than apps, on either phone. The Pixel Watch 3 is the right small Wear OS watch if you already live in Google’s software and you accept a nightly charge.
           </p>
           <p className="text-muted-foreground mb-8 leading-relaxed">
             Prices move, and color and band size change the ASIN. Use the button under the review, then confirm GPS versus LTE and the band length on the page you land on.
           </p>
-
+          </div>
           <GuideFaq
             items={[
               { q: "What is the best smartwatch under $350?", a: "It depends on the phone. The Apple Watch SE 3 is the buy for an iPhone. The Galaxy Watch 7 is the buy for a Samsung phone. Garmin is the one that works well on either." },
