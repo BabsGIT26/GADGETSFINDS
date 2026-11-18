@@ -77,9 +77,6 @@ export default function Page() {
             The Samsung 990 PRO 4TB is a PCIe 4.0 NVMe SSD for desktops, laptops, and the PlayStation 5 expansion bay. Samsung rates sequential performance at 7,450 MB/s read and 6,900 MB/s write. The reviewed model is MZ-V9P4T0B/AM.
           </p>
           <ViewOnAmazon href={AMAZON} name="Samsung 990 PRO 4TB" />
-          <p className="text-muted-foreground mt-8 mb-10 leading-relaxed">
-            Retail packaging for this module is also marked MZ-V9P4T0BW. Samsung sells a separate 4TB with an attached heatsink under MZ-V9P4T0CW. The button above opens the MZ-V9P4T0B/AM listing.
-          </p>
 
           <h2 className="text-2xl md:text-3xl font-bold mt-12 mb-4">What the 4TB 990 PRO actually is</h2>
           <div className="grid md:grid-cols-2 gap-4 mb-8">
