@@ -3,6 +3,7 @@ import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 import RelatedGuides from "@/components/common/RelatedGuides";
+import GuideFaq, { ProductListJsonLd, ShortAnswer } from "@/components/common/GuideFaq";
 
 export const metadata: Metadata = {
   title: "Best Amazon Deals This Week | Gadgets Finds",
@@ -70,6 +71,10 @@ export default function Page() {
           <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">Deals</p>
           <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">Best Amazon Deals This Week</h1>
           <p className="text-muted-foreground mb-2 text-sm">Prices checked: November 17, 2026</p>
+          <ShortAnswer>
+            <p>On November 17 the buy was the newest Fire TV Stick 4K at $19.99, down from $59.99. Skip the HD stick at $15.99. Take the 4K Plus at $29.99 only if the TV uses Dolby Vision. These prices can move when Black Friday week starts on November 19.</p>
+          </ShortAnswer>
+          <ProductListJsonLd name="Best Amazon deals this week" url="/best-amazon-deals-this-week" products={["Fire TV Stick 4K", "Fire TV Stick 4K Plus", "Fire TV Stick 4K Select", "Fire TV Cube"]} />
           <p className="text-muted-foreground mb-6 text-lg leading-relaxed">
             Amazon’s early Black Friday sale is already cutting its own streaming boxes by more than half. The official sale week starts November 19. These four prices were on the product pages on November 17, and a streaming stick is the kind of deal that can vanish overnight. Open the button, then read the price on Amazon before you pay.
           </p>
@@ -272,6 +277,13 @@ export default function Page() {
             Black Friday week starts November 19, so these numbers can move in either direction. The button under each review is the listing. The price on that page, the afternoon you buy, is the one that counts.
           </p>
 
+          <GuideFaq
+            items={[
+              { q: "What is the best Amazon deal this week?", a: "On November 17 it was the newest Fire TV Stick 4K at $19.99, against a $59.99 list price. Confirm the live price before you buy." },
+              { q: "Is the cheaper Fire TV Stick HD a better deal?", a: "No. It was $15.99 the same day. Four dollars is not worth giving up 4K and the new remote." },
+              { q: "When do these Fire TV prices change?", a: "Black Friday week starts November 19, 2026. The November 17 prices can move in either direction." },
+            ]}
+          />
           <RelatedGuides current="/best-amazon-deals-this-week" />
 
           <AmazonDealBox

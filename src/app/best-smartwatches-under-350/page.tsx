@@ -3,6 +3,7 @@ import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 import RelatedGuides from "@/components/common/RelatedGuides";
+import GuideFaq, { ProductListJsonLd, ShortAnswer } from "@/components/common/GuideFaq";
 
 export const metadata: Metadata = {
   title: "Best Smartwatches Under $350 in 2026 | Gadgets Finds",
@@ -70,6 +71,10 @@ export default function Page() {
           <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">Buying Guide</p>
           <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">Best Smartwatches Under $350 in 2026</h1>
           <p className="text-muted-foreground mb-2 text-sm">Last updated: November 2026</p>
+          <ShortAnswer>
+            <p>Match the watch to the phone. Apple Watch SE 3, about $199, for an iPhone. Galaxy Watch 7, about $150, for a Samsung phone. Garmin Forerunner 165 if you run. Pixel Watch 3 if you already use Fitbit. Skip renewed listings.</p>
+          </ShortAnswer>
+          <ProductListJsonLd name="Best smartwatches under $350" url="/best-smartwatches-under-350" products={["Apple Watch SE 3", "Samsung Galaxy Watch 7", "Garmin Forerunner 165", "Google Pixel Watch 3"]} />
           <p className="text-muted-foreground mb-6 text-lg leading-relaxed">
             Under $350 you can buy a current watch from Apple, Samsung, Garmin, or Google. You cannot buy one watch that is the best on an iPhone and an Android phone at the same time. The Apple Watch only pairs with an iPhone. The Galaxy Watch and the Pixel Watch want an Android phone. Garmin is the one that stays useful on either.
           </p>
@@ -275,6 +280,13 @@ export default function Page() {
             Prices move, and color and band size change the ASIN. Use the button under the review, then confirm GPS versus LTE and the band length on the page you land on.
           </p>
 
+          <GuideFaq
+            items={[
+              { q: "What is the best smartwatch under $350?", a: "It depends on the phone. The Apple Watch SE 3 is the buy for an iPhone. The Galaxy Watch 7 is the buy for a Samsung phone. Garmin is the one that works well on either." },
+              { q: "Can an Apple Watch pair with an Android phone?", a: "No. The Apple Watch only pairs with an iPhone. An Android phone should look at the Galaxy Watch 7, the Pixel Watch 3, or the Garmin Forerunner 165." },
+              { q: "Which watch lasts more than a day?", a: "The Garmin Forerunner 165. Apple, Samsung, and Pixel watches in this guide are closer to a day or two of normal use." },
+            ]}
+          />
           <RelatedGuides current="/best-smartwatches-under-350" />
 
           <AmazonDealBox

@@ -64,7 +64,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/roborock-vs-roomba-2026',
   ];
 
-  const allPages = [...staticPages, ...buyingGuides, ...articlePages, ...trendPages];
+  const productPages = [
+    '/macbook-pro-m5-max-article',
+    '/macbook-air-m5-13-article',
+    '/apple-macbook-pro-oled-proled-xdr',
+    '/nvidia-rtx-5090-ti-article',
+    '/nvidia-rtx-50-series-lowest-prices',
+    '/iphone-17-vs-galaxy-s26-ultra',
+    '/playstation-5-article',
+    '/playstation-5-pro-article',
+    '/playstation-5-dualsense-article',
+    '/ps5-cooling-station-article',
+    '/xbox-series-x-digital-article',
+    '/roborock-saros-z70-article',
+    '/samsung-65-s85h-oled-article',
+    '/ghost-of-yotei-complete-edition',
+    '/early-black-friday-deals',
+    '/amazon-outlet-guide',
+  ];
+
+  const allPages = [...staticPages, ...buyingGuides, ...productPages, ...articlePages, ...trendPages];
 
   return allPages.map((path) => ({
     url: `${baseUrl}${path}`,
