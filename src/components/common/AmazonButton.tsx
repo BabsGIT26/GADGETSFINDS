@@ -34,14 +34,7 @@ export default function AmazonButton({
       });
     }
 
-    // GA4 per-product click
-    if (typeof window !== "undefined" && (window as any).gtag) {
-      (window as any).gtag("event", "amazon_click", {
-        product_name: productName || "unknown",
-        asin: asin || "unknown",
-        link_url: href,
-      });
-    }
+    // GA4 is recorded once for every Amazon link by AmazonClickTracker.
   }
 
   return (

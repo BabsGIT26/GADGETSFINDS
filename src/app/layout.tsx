@@ -3,6 +3,7 @@ import React from 'react';
 import type { Metadata, Viewport } from 'next';
 import '../styles/index.css';
 import AmazonDisclosureGate from '@/components/common/AmazonDisclosureGate';
+import AmazonClickTracker from '@/components/common/AmazonClickTracker';
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -100,6 +101,7 @@ export default function RootLayout({
       </head>
       <body>
         <AmazonDisclosureGate />
+        <AmazonClickTracker />
         {children}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-XVZBC35EG6"
