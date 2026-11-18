@@ -11,6 +11,25 @@ export const metadata: Metadata = {
     "New tablets that can actually land under $150 in 2026: Fire HD 10, Galaxy Tab A9+, Fire HD 10 Kids, Fire HD 8, and Lenovo Tab One. Exact listings, not renewed units.",
   metadataBase: new URL("https://www.gadgets-finds.com"),
   alternates: { canonical: "https://www.gadgets-finds.com/best-cheap-tablets-under-150" },
+  openGraph: {
+    title: 'Best Cheap Tablets Under $150 in 2026',
+    description: 'Fire HD 10, Galaxy Tab A9+, Fire HD 10 Kids, Fire HD 8, and Lenovo Tab One.',
+    url: 'https://www.gadgets-finds.com/best-cheap-tablets-under-150',
+    siteName: "Gadgets Finds",
+    type: "article",
+    images: [{
+      url: 'https://www.gadgets-finds.com/assets/images/fire-hd-10.jpg',
+      alt: 'Amazon Fire HD 10 tablet',
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@Gadgets_finds",
+    creator: "@Gadgets_finds",
+    title: 'Best Cheap Tablets Under $150 in 2026',
+    description: 'Fire HD 10, Galaxy Tab A9+, Fire HD 10 Kids, Fire HD 8, and Lenovo Tab One.',
+    images: ['https://www.gadgets-finds.com/assets/images/fire-hd-10.jpg'],
+  },
 };
 
 const AMAZON = {

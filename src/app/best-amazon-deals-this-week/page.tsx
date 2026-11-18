@@ -11,6 +11,25 @@ export const metadata: Metadata = {
     "Fire TV deals checked on November 17, 2026. The prices below were real that day. Confirm the current price before you buy.",
   metadataBase: new URL("https://www.gadgets-finds.com"),
   alternates: { canonical: "https://www.gadgets-finds.com/best-amazon-deals-this-week" },
+  openGraph: {
+    title: 'Best Amazon Deals This Week',
+    description: 'Fire TV prices checked on November 17, 2026. Confirm the current price before you buy.',
+    url: 'https://www.gadgets-finds.com/best-amazon-deals-this-week',
+    siteName: "Gadgets Finds",
+    type: "article",
+    images: [{
+      url: 'https://www.gadgets-finds.com/assets/images/fire-tv-stick-4k-card.jpg',
+      alt: 'Amazon Fire TV Stick 4K',
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@Gadgets_finds",
+    creator: "@Gadgets_finds",
+    title: 'Best Amazon Deals This Week',
+    description: 'Fire TV prices checked on November 17, 2026. Confirm the current price before you buy.',
+    images: ['https://www.gadgets-finds.com/assets/images/fire-tv-stick-4k-card.jpg'],
+  },
 };
 
 const AMAZON = {

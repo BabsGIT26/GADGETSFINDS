@@ -11,6 +11,25 @@ export const metadata: Metadata = {
     "Four new gadgets under $30: an Anker 45W charger with cable, a 5-in-1 USB-C hub, a 100W cable two-pack, and a Galaxy SmartTag2. Exact listings and the limits.",
   metadataBase: new URL("https://www.gadgets-finds.com"),
   alternates: { canonical: "https://www.gadgets-finds.com/best-mini-gadgets-under-30" },
+  openGraph: {
+    title: 'Best Mini Gadgets Under $30 in 2026',
+    description: 'Anker Nano 45W, a 5-in-1 USB-C hub, a 100W cable two-pack, and a Galaxy SmartTag2.',
+    url: 'https://www.gadgets-finds.com/best-mini-gadgets-under-30',
+    siteName: "Gadgets Finds",
+    type: "article",
+    images: [{
+      url: 'https://www.gadgets-finds.com/assets/images/anker-nano-45w.jpg',
+      alt: 'Anker Nano 45W charger',
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@Gadgets_finds",
+    creator: "@Gadgets_finds",
+    title: 'Best Mini Gadgets Under $30 in 2026',
+    description: 'Anker Nano 45W, a 5-in-1 USB-C hub, a 100W cable two-pack, and a Galaxy SmartTag2.',
+    images: ['https://www.gadgets-finds.com/assets/images/anker-nano-45w.jpg'],
+  },
 };
 
 const AMAZON = {

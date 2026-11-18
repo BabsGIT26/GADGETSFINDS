@@ -10,6 +10,27 @@ export const metadata: Metadata = {
     "Samsung 990 PRO 4TB, model MZ-V9P4T0B/AM. PCIe 4.0 NVMe rated to 7,450 MB/s read and 6,900 MB/s write, with a 5-year or 2,400 TBW warranty.",
   metadataBase: new URL("https://www.gadgets-finds.com"),
   alternates: { canonical: "https://www.gadgets-finds.com/samsung-990-pro-4tb-article" },
+  openGraph: {
+    title: 'Samsung 990 PRO 4TB Review',
+    description: 'PCIe 4.0 NVMe SSD, model MZ-V9P4T0B/AM. Rated to 7,450 MB/s read and 6,900 MB/s write.',
+    url: 'https://www.gadgets-finds.com/samsung-990-pro-4tb-article',
+    siteName: "Gadgets Finds",
+    type: "article",
+    images: [{
+      url: "https://www.gadgets-finds.com/assets/images/samsung-990-pro-4tb.jpg",
+      width: 1600,
+      height: 1200,
+      alt: "Samsung 990 PRO 4TB NVMe SSD",
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@Gadgets_finds",
+    creator: "@Gadgets_finds",
+    title: 'Samsung 990 PRO 4TB Review',
+    description: 'PCIe 4.0 NVMe SSD, model MZ-V9P4T0B/AM. Rated to 7,450 MB/s read and 6,900 MB/s write.',
+    images: ['https://www.gadgets-finds.com/assets/images/samsung-990-pro-4tb.jpg'],
+  },
 };
 
 const AMAZON = "https://www.amazon.com/dp/B0CHGT1KFJ?tag=gadgetsfindswebsite-20";

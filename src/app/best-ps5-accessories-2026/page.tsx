@@ -11,6 +11,25 @@ export const metadata: Metadata = {
     "The PS5 accessories worth buying in 2026: WD_BLACK SN850P SSD, DualSense Edge, PULSE Elite, the official charging station, and the vertical stand.",
   metadataBase: new URL("https://www.gadgets-finds.com"),
   alternates: { canonical: "https://www.gadgets-finds.com/best-ps5-accessories-2026" },
+  openGraph: {
+    title: 'Best PS5 Accessories Worth Buying in 2026',
+    description: 'WD_BLACK SN850P, DualSense Edge, PULSE Elite, the charging station, and the vertical stand.',
+    url: 'https://www.gadgets-finds.com/best-ps5-accessories-2026',
+    siteName: "Gadgets Finds",
+    type: "article",
+    images: [{
+      url: 'https://www.gadgets-finds.com/assets/images/wd-black-sn850p.jpg',
+      alt: 'WD_BLACK SN850P SSD for PS5',
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@Gadgets_finds",
+    creator: "@Gadgets_finds",
+    title: 'Best PS5 Accessories Worth Buying in 2026',
+    description: 'WD_BLACK SN850P, DualSense Edge, PULSE Elite, the charging station, and the vertical stand.',
+    images: ['https://www.gadgets-finds.com/assets/images/wd-black-sn850p.jpg'],
+  },
 };
 
 const AMAZON = {

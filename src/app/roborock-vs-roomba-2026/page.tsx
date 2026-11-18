@@ -10,6 +10,25 @@ export const metadata: Metadata = {
   description: "Direct comparison of Roborock and Roomba robot vacuums in 2026. Suction, navigation, mopping, value, and which brand wins for most people.",
   metadataBase: new URL("https://www.gadgets-finds.com"),
   alternates: { canonical: "https://www.gadgets-finds.com/roborock-vs-roomba-2026" },
+  openGraph: {
+    title: 'Roborock vs Roomba in 2026',
+    description: 'Suction, navigation, mopping, and which robot vacuum is the better buy in 2026.',
+    url: 'https://www.gadgets-finds.com/roborock-vs-roomba-2026',
+    siteName: "Gadgets Finds",
+    type: "article",
+    images: [{
+      url: 'https://www.gadgets-finds.com/assets/images/roborock-qrevo-s-pro.jpg',
+      alt: 'Roborock Qrevo S Pro robot vacuum',
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@Gadgets_finds",
+    creator: "@Gadgets_finds",
+    title: 'Roborock vs Roomba in 2026',
+    description: 'Suction, navigation, mopping, and which robot vacuum is the better buy in 2026.',
+    images: ['https://www.gadgets-finds.com/assets/images/roborock-qrevo-s-pro.jpg'],
+  },
 };
 
 const AMAZON = {

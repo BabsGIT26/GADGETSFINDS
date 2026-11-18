@@ -11,6 +11,25 @@ export const metadata: Metadata = {
     "Four new Anker power banks for travel in 2026: a 20,000mAh 87W bank, a 10,000mAh Nano, a 99.54Wh Prime, and a 3-in-1 with a wall plug. Airline rules included.",
   metadataBase: new URL("https://www.gadgets-finds.com"),
   alternates: { canonical: "https://www.gadgets-finds.com/best-portable-chargers-for-travel" },
+  openGraph: {
+    title: 'Best Portable Chargers for Travel in 2026',
+    description: 'Anker 20,000mAh 87W, Nano 10,000mAh, Prime 99.54Wh, and the Nano 3-in-1.',
+    url: 'https://www.gadgets-finds.com/best-portable-chargers-for-travel',
+    siteName: "Gadgets Finds",
+    type: "article",
+    images: [{
+      url: 'https://www.gadgets-finds.com/assets/images/anker-20k-87w.jpg',
+      alt: 'Anker 20,000mAh portable charger',
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@Gadgets_finds",
+    creator: "@Gadgets_finds",
+    title: 'Best Portable Chargers for Travel in 2026',
+    description: 'Anker 20,000mAh 87W, Nano 10,000mAh, Prime 99.54Wh, and the Nano 3-in-1.',
+    images: ['https://www.gadgets-finds.com/assets/images/anker-20k-87w.jpg'],
+  },
 };
 
 const AMAZON = {

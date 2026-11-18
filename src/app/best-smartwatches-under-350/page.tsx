@@ -11,6 +11,25 @@ export const metadata: Metadata = {
     "Four new smartwatches under $350: Apple Watch SE 3, Samsung Galaxy Watch 7, Garmin Forerunner 165, and Pixel Watch 3. Phone match, battery, and exact listings.",
   metadataBase: new URL("https://www.gadgets-finds.com"),
   alternates: { canonical: "https://www.gadgets-finds.com/best-smartwatches-under-350" },
+  openGraph: {
+    title: 'Best Smartwatches Under $350 in 2026',
+    description: 'Apple Watch SE 3, Galaxy Watch 7, Garmin Forerunner 165, and Pixel Watch 3.',
+    url: 'https://www.gadgets-finds.com/best-smartwatches-under-350',
+    siteName: "Gadgets Finds",
+    type: "article",
+    images: [{
+      url: 'https://www.gadgets-finds.com/assets/images/apple-watch-se-3.jpg',
+      alt: 'Apple Watch SE 3',
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@Gadgets_finds",
+    creator: "@Gadgets_finds",
+    title: 'Best Smartwatches Under $350 in 2026',
+    description: 'Apple Watch SE 3, Galaxy Watch 7, Garmin Forerunner 165, and Pixel Watch 3.',
+    images: ['https://www.gadgets-finds.com/assets/images/apple-watch-se-3.jpg'],
+  },
 };
 
 const AMAZON = {
