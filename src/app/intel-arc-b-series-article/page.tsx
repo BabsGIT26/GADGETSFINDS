@@ -211,7 +211,7 @@ export default function IntelArcBSeriesArticle() {
           </div>
                     <AmazonDealBox
             productName="Intel Arc B580"
-            href="https://www.amazon.com/s?k=Intel+Arc+B580&tag=gadgetsfindswebsite-20"
+            href="https://www.amazon.com/dp/B0DW9DHXND?tag=gadgetsfindswebsite-20"
           />
           
           {/* Share Section */}

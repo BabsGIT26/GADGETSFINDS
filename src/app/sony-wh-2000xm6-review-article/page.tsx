@@ -241,7 +241,7 @@ export default function SonyWH2000XM6Article() {
           </div>
 <AmazonDealBox
   productName="Sony WH-1000XM6"
-  href="https://www.amazon.com/s?k=Sony+WH-1000XM6&tag=gadgetsfindswebsite-20"
+  href="https://www.amazon.com/dp/B0F3PT1VBL?tag=gadgetsfindswebsite-20"
 />
           {/* Tags */}
           <div className="flex flex-wrap gap-2 mt-12 pt-8 border-t border-border">

@@ -5,7 +5,7 @@ import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 
-const AMAZON = "https://www.amazon.com/s?k=MacBook+Pro+M4&tag=gadgetsfindswebsite-20";
+const AMAZON = "https://www.amazon.com/dp/B0DLHBYRPS?tag=gadgetsfindswebsite-20";
 
 export const metadata: Metadata = {
   title: "MacBook Pro M4 Review — Gadgets Finds",

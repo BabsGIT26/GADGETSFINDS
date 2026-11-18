@@ -227,7 +227,7 @@ export default function SamsungGalaxyS26UltraArticle() {
           </div>
           <AmazonDealBox
   productName="Samsung Galaxy S26 Ultra"
-  href="https://www.amazon.com/s?k=Samsung+Galaxy+S26+Ultra&tag=gadgetsfindswebsite-20"
+  href="https://www.amazon.com/dp/B0G4SWDH8P?tag=gadgetsfindswebsite-20"
 />
         </article>
 
