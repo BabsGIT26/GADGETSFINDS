@@ -231,7 +231,18 @@ const getArticleRoute = (article: Article): string => {
   if (MOCK_ARTICLE_ROUTES[article.id]) {
     return MOCK_ARTICLE_ROUTES[article.id];
   }
-  return "/live-news-feed";
+  const articleData = encodeURIComponent(JSON.stringify({
+    id: article.id,
+    title: article.title,
+    excerpt: article.excerpt,
+    category: article.category,
+    image: article.image,
+    alt: article.alt,
+    author: article.author,
+    publishedAt: article.publishedAt,
+    readTime: article.readTime
+  }));
+  return `/article-detail-page?data=${articleData}`;
 };
 
 

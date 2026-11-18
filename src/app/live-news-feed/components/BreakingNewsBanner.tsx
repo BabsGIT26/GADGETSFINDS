@@ -51,7 +51,7 @@ const BreakingNewsBanner = ({ breakingNews: propBreakingNews }: BreakingNewsBann
           
           <div className="flex-1 min-w-0">
             <Link
-              href={breakingNews[currentIndex]?.href || "/live-news-feed"}
+              href={breakingNews[currentIndex]?.href || `/article-detail-page?id=${breakingNews[currentIndex]?.id}`}
               className="block hover:underline"
             >
               <p className="text-sm font-medium truncate">

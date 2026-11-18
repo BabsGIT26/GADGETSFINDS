@@ -51,7 +51,7 @@ const NewsCard = ({ article }: NewsCardProps) => {
     const routeMap: Record<string, string> = {
       '1': '/apple-m4-chip-article',
       '2': '/google-gemini-3-article',
-      '4': '/samsung-galaxy-z-fold-6-article',
+            '4': '/samsung-galaxy-z-fold-6-article',
       '5': '/meta-quest-4-article',
       '6': '/microsoft-azure-quantum-article',
       '7': '/nvidia-rtx-5090-ti-article',
@@ -66,7 +66,19 @@ const NewsCard = ({ article }: NewsCardProps) => {
       return routeMap[id];
     }
 
-    return "/live-news-feed";
+    const articleData = encodeURIComponent(JSON.stringify({
+      id: article.id,
+      title: article.title,
+      excerpt: article.excerpt,
+      category: article.category,
+      image: article.image,
+      alt: article.alt,
+      author: article.author,
+      publishedAt: article.publishedAt,
+      readTime: article.readTime
+    }));
+
+    return `/article-detail-page?data=${articleData}`;
   };
 
   // Close share dropdown on outside click
