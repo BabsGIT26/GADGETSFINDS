@@ -78,6 +78,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/xbox-series-x-digital-article',
     '/roborock-saros-z70-article',
     '/samsung-65-s85h-oled-article',
+    '/samsung-990-pro-4tb-article',
     '/ghost-of-yotei-complete-edition',
     '/early-black-friday-deals',
     '/amazon-outlet-guide',

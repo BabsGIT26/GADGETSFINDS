@@ -31,6 +31,19 @@ const PersonalizedContentStream = () => {
 
   const contentItems: ContentItem[] = [
     {
+      id: 26,
+      title: "Samsung 990 PRO 4TB Review",
+      excerpt: "PCIe 4.0 NVMe up to 7,450 MB/s. The MZ-V9P4T0B/AM box has no heatsink. Read that before you buy it for a PS5.",
+      category: "Storage",
+      image: "/assets/images/samsung-990-pro-4tb.jpg",
+      alt: "Samsung 990 PRO 4TB NVMe SSD",
+      author: "Gadgets Finds",
+      publishedDate: "November 18, 2026",
+      readTime: "8 min read",
+      tags: ["Samsung", "SSD", "990 PRO", "Storage"],
+      fit: "contain",
+    },
+    {
       id: 25,
       title: "Best Budget Robot Vacuums Under $300 (2026)",
       excerpt: "Strong cleaning, better navigation, and solid pet hair performance without spending $500+.",
@@ -338,6 +351,7 @@ const PersonalizedContentStream = () => {
   ];
 
   const articleRoutes: { [key: number]: string } = {
+    26: "/samsung-990-pro-4tb-article",
     25: "/best-budget-robot-vacuums-under-300",
     24: "/best-ps5-accessories-2026",
     23: "/roborock-vs-roomba-2026",
@@ -391,7 +405,7 @@ const PersonalizedContentStream = () => {
 
   const filteredItems = getFilteredItems();
 
-  const guideIds = [25, 24, 23, 22, 21, 20, 19, 18];
+  const guideIds = [26, 25, 24, 23, 22, 21, 20, 19];
   const guideItems = guideIds
     .map((id) => contentItems.find((item) => item.id === id))
     .filter((item): item is ContentItem => Boolean(item));
