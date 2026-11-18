@@ -77,15 +77,15 @@ const TrendingStoriesCarousel = () => {
   },
   {
     id: 5,
-    title: 'Tesla Optimus Gen 3: Specs, AI5 Chip & What You Need to Know',
-    excerpt: 'Tesla\'s third-generation Optimus robot features 22 DOF tendon-driven hands, AI5 chip, and Grok AI — targeting $20K–$30K at scale, with factory deployment underway and consumer availability targeted for late 2027.',
-    category: 'AI & Robotics',
-    image: "https://img.rocket.new/generatedImages/rocket_gen_img_13de748df-1772891531864.png",
-    alt: 'Advanced humanoid robot with white chassis and modern design',
+    title: 'Best Cheap Tablets Under $150 in 2026',
+    excerpt: 'Fire HD 10, Galaxy Tab A9+, Fire HD 8, and Lenovo Tab One. New listings only.',
+    category: 'Buying Guide',
+    image: '/assets/images/fire-hd-10.jpg',
+    alt: 'Amazon Fire HD 10 tablet',
     author: 'Gadgets Finds',
-    readTime: '7 min read',
+    readTime: '8 min read',
     trending: true,
-    link: '/tesla-optimus-gen-3-article'
+    link: '/best-cheap-tablets-under-150'
   },
   {
     id: 6,

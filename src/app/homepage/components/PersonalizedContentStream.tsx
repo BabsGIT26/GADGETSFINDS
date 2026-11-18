@@ -318,15 +318,15 @@ const PersonalizedContentStream = () => {
     },
     {
       id: 10,
-      title: "Don't miss October Prime Day 2026: Try Amazon Prime free for 30 days!",
-      excerpt: "Eligible new members can start a 30-day Amazon Prime trial before Prime Big Deal Days, October 6–7.",
+      title: "Best Amazon Deals This Week",
+      excerpt: "Fire TV prices checked on November 17, 2026. Confirm the current price before you buy.",
       category: "Deals",
-      image: "/assets/images/PRIME_OCTOBER_2026.png",
-      alt: "Amazon Prime before Prime Big Deal Days",
-      author: "",
-      publishedDate: "2026-10-05",
-      readTime: "5 min read",
-      tags: ["Amazon", "Prime", "Deals"]
+      image: "/assets/images/fire-tv-stick-4k-2026.jpg",
+      alt: "Amazon Fire TV Stick 4K",
+      author: "Gadgets Finds",
+      publishedDate: "November 17, 2026",
+      readTime: "8 min read",
+      tags: ["Amazon", "Fire TV", "Deals"]
     },
   ];
 
@@ -355,7 +355,7 @@ const PersonalizedContentStream = () => {
     7: "/ai-productivity-tools-2026-article",
     8: "/sony-wh-2000xm6-review-article",
     9: "/best-laptops-developers-2026",
-    10: "/member-trial",
+    10: "/best-amazon-deals-this-week",
   };
 
   const getFilteredItems = (): ContentItem[] => {

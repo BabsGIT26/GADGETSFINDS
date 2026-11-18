@@ -80,16 +80,16 @@ const gadgets: Gadget[] = [
     highlights: ["S Pen", "200MP class camera", "Galaxy AI"],
   },
   {
-    name: "Tesla Optimus Gen 3",
-    brand: "Tesla",
+    name: "Robot vacuums under $300",
+    brand: "Buying guide",
     category: "Robotics",
-    rating: 4.6,
-    badge: "Not retail",
-    badgeColor: "bg-red-600 text-white",
-    image: "/assets/images/tesla_optimus_gen_three.png",
-    alt: "Tesla Optimus Gen 3",
-    href: "/tesla-optimus-gen-3-article",
-    highlights: ["Humanoid", "Target $20K–$30K", "Not sold to public yet"],
+    rating: 4.8,
+    badge: "Guide",
+    badgeColor: "bg-emerald-600 text-white",
+    image: "/assets/images/eufy-robovac-g30-hq.jpg",
+    alt: "eufy RoboVac G30 robot vacuum",
+    href: "/best-budget-robot-vacuums-under-300",
+    highlights: ["Lefant M210 Pro", "eufy G30", "Roborock Q5"],
   },
   {
     name: "Sony WH-1000XM6",
@@ -116,16 +116,16 @@ const gadgets: Gadget[] = [
     highlights: ["On sale now", "4K gaming", "DualSense"],
   },
   {
-    name: "Meta Quest 3",
-    brand: "Meta",
-    category: "XR",
-    rating: 4.5,
-    badge: "VR",
-    badgeColor: "bg-indigo-600 text-white",
-    image: "/assets/images/meta_quest_3.png",
-    alt: "Meta Quest 3",
-    href: "/meta-quest-3-article",
-    highlights: ["Standalone VR", "Color mixed reality", "In stores"],
+    name: "PS5 accessories",
+    brand: "Buying guide",
+    category: "Gaming",
+    rating: 4.7,
+    badge: "Guide",
+    badgeColor: "bg-emerald-600 text-white",
+    image: "/assets/images/dualsense-edge.jpg",
+    alt: "DualSense Edge wireless controller",
+    href: "/best-ps5-accessories-2026",
+    highlights: ["SSD", "DualSense Edge", "Charging dock"],
   },
     {
     name: "PS5 Digital",
@@ -140,16 +140,16 @@ const gadgets: Gadget[] = [
     highlights: ["Digital Edition", "825GB SSD", "Price changes"],
   },
   {
-    name: "Apple Vision Pro",
-    brand: "Apple",
-    category: "XR",
-    rating: 4.4,
-    badge: "Released 2024",
-    badgeColor: "bg-zinc-700 text-white",
-    image: "/assets/images/apple_vision_pro.png",
-    alt: "Apple Vision Pro",
-    href: "/apple-vision-pro-article",
-    highlights: ["Spatial computing", "First generation", "On sale"],
+    name: "Tablets under $150",
+    brand: "Buying guide",
+    category: "Laptops",
+    rating: 4.6,
+    badge: "Guide",
+    badgeColor: "bg-emerald-600 text-white",
+    image: "/assets/images/fire-hd-10.jpg",
+    alt: "Amazon Fire HD 10 tablet",
+    href: "/best-cheap-tablets-under-150",
+    highlights: ["Fire HD 10", "Galaxy Tab A9+", "Lenovo Tab One"],
   },
     {
     name: "PS5 cooling station",
@@ -215,7 +215,7 @@ const gadgets: Gadget[] = [
   },
 ];
 
-const categories = ["All", "Laptops", "Smartphones", "GPUs", "Robotics", "Audio", "XR", "Gaming"];
+const categories = ["All", "Laptops", "Smartphones", "GPUs", "Robotics", "Audio", "Gaming"];
 
 export default function GadgetsSection() {
   const [active, setActive] = useState("All");
