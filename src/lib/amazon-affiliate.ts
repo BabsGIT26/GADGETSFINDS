@@ -10,7 +10,6 @@ const VERIFIED_ASINS: Record<string, string> = {
   "intel arc b580": "B0DVS6MSP9",
   "samsung galaxy z fold 6": "B0D18SMB1X",
   "sony wh-1000xm6": "B0F3PT1VBL",
-  "samsung galaxy s26 ultra": "B0D3HV5Z2Q",
 };
 
 function addAffiliateTag(href: string) {
