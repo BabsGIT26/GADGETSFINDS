@@ -64,22 +64,6 @@ const mockArticles: Article[] = [
   comments: 187
 },
 {
-  id: '3',
-  title: 'Tesla Autonomous Robotaxi Fleet Launch Confirmed for Q2 2026',
-  excerpt: 'Elon Musk announces commercial rollout of fully autonomous taxi service in major cities, marking a pivotal moment in transportation history.',
-  category: 'Emerging Tech',
-  urgency: 'high',
-  image: "https://images.unsplash.com/photo-1685984350996-a4a4bc52f24b",
-  alt: 'Modern white autonomous electric vehicle on city street at sunset',
-  author: 'Emily Watson',
-  authorImage: "https://img.rocket.new/generatedImages/rocket_gen_img_13bdacd03-1763298932646.png",
-  authorAlt: 'Young Caucasian woman with blonde hair in professional blazer',
-  publishedAt: '28 min ago',
-  readTime: 6,
-  views: 8456,
-  comments: 156
-},
-{
   id: '4',
   title: 'Samsung Galaxy Z Fold 6 Review: Refined Foldable, Crease Still Present',
   excerpt: 'Samsung\'s 2024 foldable flagship brings meaningful improvements in design and durability — but the inner display crease remains visible, as confirmed by reviewers worldwide.',
@@ -232,11 +216,10 @@ const BLOCKED_ARTICLE_TITLES = [
 const MOCK_ARTICLE_ROUTES: Record<string, string> = {
   '1': '/apple-m4-chip-article',
   '2': '/google-gemini-3-article',
-  '3': '/tesla-robotaxi-article',
   '4': '/samsung-galaxy-z-fold-6-article',
   '5': '/meta-quest-4-article',
   '6': '/microsoft-azure-quantum-article',
-  '7': '/nvidia-rtx-6090-ti-live-news-article',
+  '7': '/nvidia-rtx-5090-ti-article',
   '8': '/sony-playstation-6-article',
   '9': '/ibm-quantum-processor-article',
   '10': '/spacex-starlink-gen-3-article',
@@ -248,18 +231,7 @@ const getArticleRoute = (article: Article): string => {
   if (MOCK_ARTICLE_ROUTES[article.id]) {
     return MOCK_ARTICLE_ROUTES[article.id];
   }
-  const articleData = encodeURIComponent(JSON.stringify({
-    id: article.id,
-    title: article.title,
-    excerpt: article.excerpt,
-    category: article.category,
-    image: article.image,
-    alt: article.alt,
-    author: article.author,
-    publishedAt: article.publishedAt,
-    readTime: article.readTime
-  }));
-  return `/article-detail-page?data=${articleData}`;
+  return "/live-news-feed";
 };
 
 
