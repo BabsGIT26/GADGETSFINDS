@@ -6,6 +6,7 @@ import Header from '@/components/common/Header';
 import Footer from '@/app/homepage/components/Footer';
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: 'Meta Quest 4: What We Know — Not Yet Announced — Gadgets Finds',
   description: 'Meta Quest 4 has not been officially announced. Roadmaps suggest a possible 2027+ release. Claims of "8K per eye" resolution are unconfirmed and technically implausible for a consumer headset.',
   metadataBase: new URL('https://www.gadgets-finds.com'),

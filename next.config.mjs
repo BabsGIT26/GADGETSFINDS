@@ -35,9 +35,15 @@ const nextConfig = {
       async redirects() {
   return [
     {
+      source: '/:path*',
+      has: [{ type: 'host', value: 'gadgets-finds.com' }],
+      destination: 'https://www.gadgets-finds.com/:path*',
+      permanent: true,
+    },
+    {
       source: '/homepage',
       destination: '/',
-      permanent: true, // 308/301 : redirection permanente pour Google
+      permanent: true,
     },
   ];
 },

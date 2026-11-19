@@ -6,6 +6,7 @@ import Header from '@/components/common/Header';
 import Footer from '@/app/homepage/components/Footer';
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: 'Sony PlayStation 6: What We Know So Far — Gadgets Finds',
   description: 'Sony has not officially announced the PlayStation 6. Here is what rumors, analyst reports, and industry insiders suggest about a possible 2027–2028 release window.',
   metadataBase: new URL('https://www.gadgets-finds.com'),

@@ -6,6 +6,7 @@ import AppIcon from '@/components/ui/AppIcon';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: 'Sustainable Tech Manufacturing Becomes Industry Standard — Tech Trends 2026 — Gadgets Finds',
   description: 'Sustainable manufacturing practices become the industry standard with eco-friendly materials and carbon-neutral production.',
   metadataBase: new URL('https://www.gadgets-finds.com'),

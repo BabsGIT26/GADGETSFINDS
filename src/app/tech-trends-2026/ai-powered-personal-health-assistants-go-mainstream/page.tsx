@@ -6,6 +6,7 @@ import AppIcon from '@/components/ui/AppIcon';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: 'AI-Powered Personal Health Assistants Go Mainstream — Tech Trends 2026 — Gadgets Finds',
   description: 'AI-powered personal health assistants become mainstream with real-time health monitoring and personalized wellness recommendations.',
   metadataBase: new URL('https://www.gadgets-finds.com'),

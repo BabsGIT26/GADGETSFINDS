@@ -6,6 +6,7 @@ import Header from '@/components/common/Header';
 import Footer from '@/app/homepage/components/Footer';
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: 'Apple Vision Pro 2: Development Paused, Apple Pivots to Smart Glasses — Gadgets Finds',
   description: 'Apple Vision Pro 2 development has reportedly been paused or significantly delayed. Apple is now prioritizing smart glasses over a full Vision Pro successor.',
   metadataBase: new URL('https://www.gadgets-finds.com'),

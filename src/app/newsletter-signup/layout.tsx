@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: 'Newsletter Signup — Stay Ahead with Gadgets Finds',
   description: 'Subscribe to Gadgets Finds newsletters for daily tech news, weekly deep dives, product alerts, and exclusive CES coverage delivered to your inbox.',
   metadataBase: new URL('https://www.gadgets-finds.com'),

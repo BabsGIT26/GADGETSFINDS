@@ -6,6 +6,7 @@ import Header from '@/components/common/Header';
 import Footer from '@/app/homepage/components/Footer';
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: 'OpenAI GPT-5 Family: GPT-5.5 and GPT-5.6 in 2026 — Gadgets Finds',
   description: 'OpenAI has released GPT-5.5 and GPT-5.6 variants in 2026, building on the GPT-5 foundation. Here is what the GPT-5 family delivers and how it advances AI reasoning.',
   metadataBase: new URL('https://www.gadgets-finds.com'),

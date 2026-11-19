@@ -6,6 +6,7 @@ import Header from '@/components/common/Header';
 import Footer from '@/app/homepage/components/Footer';
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: 'Apple M4 Chip Review: 40% Performance Boost Over M3 — Gadgets Finds',
   description: 'Apple M4 chip features breakthrough 3nm architecture and unprecedented AI capabilities, delivering 40% faster performance than M3. Launched at Apple events in 2024.',
   metadataBase: new URL('https://www.gadgets-finds.com'),

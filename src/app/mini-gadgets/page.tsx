@@ -4,6 +4,7 @@ import Footer from "@/app/homepage/components/Footer";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "Mini Gadgets — Gadgets Finds",
   description: "Small useful gadgets for everyday carry. Screen cleaners, tools, and compact accessories.",
   metadataBase: new URL("https://www.gadgets-finds.com"),

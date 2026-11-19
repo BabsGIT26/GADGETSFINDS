@@ -6,51 +6,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages = [
     '',
     '/about-us',
-    '/contact-us',
     '/privacy-policy',
     '/terms-of-service',
     '/cookies',
-    '/careers',
-    '/newsletter-signup',
-    '/live-news-feed',
-    '/product-comparison-engine',
-    '/unified-search',
-    '/tech-trends-2026',
     '/ces-2026-hub',
     '/best-laptops-developers-2026',
   ];
 
   const articlePages = [
-    '/apple-m4-chip-article',
-    '/apple-vision-pro-2-article',
     '/ai-productivity-tools-2026-article',
-    '/google-gemini-3-article',
-    '/ibm-quantum-processor-article',
     '/i-phone-16-pro-vs-samsung-comparison-article',
-    '/intel-arc-b-series-article',
     '/macbook-pro-m4-article',
-    '/meta-quest-4-article',
     '/playstation-5-digital-renewed-article',
-    '/microsoft-azure-quantum-article',
-    '/openai-gpt-5-article',
-    '/quantum-computing-ibm-article',
     '/samsung-galaxy-s26-ultra-article',
     '/samsung-galaxy-z-fold-6-article',
     '/smart-home-security-systems-article',
-    '/sony-playstation-6-article',
     '/sony-wh-2000xm6-review-article',
-    '/spacex-starlink-gen-3-article',
     '/genz-semi-automatic-slingshot-article',
     '/logitech-g29-driving-force-article',
-  ];
-
-  const trendPages = [
-    '/tech-trends-2026/6g-networks-begin-global-rollout',
-    '/tech-trends-2026/quantum-computing-reaches-commercial-viability',
-    '/tech-trends-2026/ai-powered-personal-health-assistants-go-mainstream',
-    '/tech-trends-2026/neural-interface-technology-enters-consumer-market',
-    '/tech-trends-2026/sustainable-tech-manufacturing-becomes-industry-standard',
-    '/tech-trends-2026/autonomous-vehicles-achieve-level-5-certification',
   ];
 
   const buyingGuides = [
@@ -84,7 +57,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/amazon-outlet-guide',
   ];
 
-  const allPages = [...staticPages, ...buyingGuides, ...productPages, ...articlePages, ...trendPages];
+  const allPages = [...staticPages, ...buyingGuides, ...productPages, ...articlePages];
 
   return allPages.map((path) => ({
     url: `${baseUrl}${path}`,

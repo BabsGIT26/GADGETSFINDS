@@ -6,6 +6,7 @@ import Header from '@/components/common/Header';
 import Footer from '@/app/homepage/components/Footer';
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: 'SpaceX Starlink Gen 3 Article — Gadgets Finds',
   description: 'SpaceX Starlink Gen 3 satellites deliver faster speeds and improved global internet coverage.',
   metadataBase: new URL('https://www.gadgets-finds.com'),

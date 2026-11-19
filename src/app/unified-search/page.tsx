@@ -4,6 +4,7 @@ import Footer from '@/app/homepage/components/Footer';
 import Header from '@/components/common/Header';
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: 'Unified Search — Find Tech News, Products & Trends',
   description: 'Search across tech news, product comparisons, and industry trends all in one place. Unified search engine for comprehensive tech discovery.',
   metadataBase: new URL('https://www.gadgets-finds.com'),

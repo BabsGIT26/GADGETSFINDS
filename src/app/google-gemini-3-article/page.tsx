@@ -6,6 +6,7 @@ import Header from '@/components/common/Header';
 import Footer from '@/app/homepage/components/Footer';
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: 'Google Gemini 3 Pro: New Standard for AI Language Models — Gadgets Finds',
   description: 'Google Gemini 3 Pro launched in late 2025, with further Gemini 3 variants including Flash models following in 2026. Here is what the Gemini 3 family delivers.',
   metadataBase: new URL('https://www.gadgets-finds.com'),

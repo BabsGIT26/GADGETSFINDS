@@ -4,6 +4,7 @@ import TechTrendsInteractive from './components/TechTrendsInteractive';
 import Footer from '@/app/homepage/components/Footer';
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: 'Tech Trends 2026 — Future Predictions & Industry Impact — Gadgets Finds',
   description: 'Discover the technological innovations shaping tomorrow with expert predictions, industry impact assessments, and real-time accuracy tracking from Gadgets Finds Future Tech Observatory.',
   metadataBase: new URL('https://www.gadgets-finds.com'),

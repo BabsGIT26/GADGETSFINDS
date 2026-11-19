@@ -7,6 +7,7 @@ import Footer from '@/app/homepage/components/Footer';
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: 'Intel Arc B-Series Graphics Cards Deliver Breakthrough Performance — Gadgets Finds',
   description: 'Intel Arc B-Series GPUs offer competitive performance at mid-range prices, challenging NVIDIA and AMD with advanced ray tracing and AI capabilities.',
   metadataBase: new URL('https://www.gadgets-finds.com'),

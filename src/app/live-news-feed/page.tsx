@@ -4,6 +4,7 @@ import LiveNewsFeedInteractive from './components/LiveNewsFeedInteractive';
 import Footer from '@/app/homepage/components/Footer';
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: 'Live News Feed — Real-Time Tech News & Updates — Gadgets Finds',
   description: 'Stay updated with real-time tech news, breaking stories, and industry developments. Get instant access to the latest innovations, product launches, and expert analysis from the world of technology.',
   metadataBase: new URL('https://www.gadgets-finds.com'),

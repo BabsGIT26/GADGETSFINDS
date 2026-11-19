@@ -6,6 +6,7 @@ import Header from '@/components/common/Header';
 import Footer from '@/app/homepage/components/Footer';
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: 'Microsoft Azure Quantum Article — Gadgets Finds',
   description: 'Microsoft Azure Quantum advances quantum computing with cloud-based quantum services and hybrid algorithms.',
   metadataBase: new URL('https://www.gadgets-finds.com'),

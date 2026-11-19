@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: 'Contact Gadgets Finds — Get in Touch with Our Team',
   description: 'Have questions or partnership inquiries? Contact Gadgets Finds via email, phone, or social media. We respond within 24-48 hours.',
   metadataBase: new URL('https://www.gadgets-finds.com'),

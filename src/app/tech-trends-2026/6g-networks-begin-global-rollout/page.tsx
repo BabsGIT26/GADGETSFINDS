@@ -6,6 +6,7 @@ import AppIcon from '@/components/ui/AppIcon';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: '6G Networks Begin Global Rollout — Tech Trends 2026 — Gadgets Finds',
   description: 'Next-generation 6G networks launch in major cities, offering 100x faster speeds than 5G, enabling holographic communications and advanced IoT.',
   metadataBase: new URL('https://www.gadgets-finds.com'),

@@ -6,6 +6,7 @@ import AppIcon from '@/components/ui/AppIcon';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: 'Neural Interface Technology Enters Consumer Market — Tech Trends 2026 — Gadgets Finds',
   description: 'Neural interface technology becomes consumer-ready with brain-computer interfaces for gaming, communication, and health monitoring.',
   metadataBase: new URL('https://www.gadgets-finds.com'),

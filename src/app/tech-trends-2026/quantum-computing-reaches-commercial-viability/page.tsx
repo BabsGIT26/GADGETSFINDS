@@ -6,6 +6,7 @@ import AppIcon from '@/components/ui/AppIcon';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: 'Quantum Computing Reaches Commercial Viability — Tech Trends 2026 — Gadgets Finds',
   description: 'Quantum computing achieves commercial viability with practical applications in drug discovery, optimization, and cryptography.',
   metadataBase: new URL('https://www.gadgets-finds.com'),

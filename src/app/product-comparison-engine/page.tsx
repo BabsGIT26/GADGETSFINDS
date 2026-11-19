@@ -4,6 +4,7 @@ import ComparisonEngineInteractive from './components/ComparisonEngineInteractiv
 import Footer from '@/app/homepage/components/Footer';
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: 'Compare Gadgets — Compare Tech Products — Gadgets Finds',
   description: 'Compare tech products side-by-side with intelligent filtering, expert scores, user ratings, and comprehensive specifications to make informed purchasing decisions.',
   metadataBase: new URL('https://www.gadgets-finds.com'),

@@ -6,6 +6,7 @@ import AppIcon from '@/components/ui/AppIcon';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: 'Autonomous Vehicles Achieve Level 5 Certification — Tech Trends 2026 — Gadgets Finds',
   description: 'Autonomous vehicles achieve Level 5 certification with fully self-driving capabilities in all conditions.',
   metadataBase: new URL('https://www.gadgets-finds.com'),

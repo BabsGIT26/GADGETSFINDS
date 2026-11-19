@@ -6,6 +6,7 @@ import Header from '@/components/common/Header';
 import Footer from '@/app/homepage/components/Footer';
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: 'Quantum Computing IBM Article — Gadgets Finds',
   description: 'IBM quantum computing advances with new processor architecture and quantum algorithms for enterprise applications.',
   metadataBase: new URL('https://www.gadgets-finds.com'),

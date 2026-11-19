@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: 'Careers at Gadgets Finds — Join Our Tech Journalism Team',
   description: 'Join Gadgets Finds and help shape the future of tech journalism. Explore open positions in editorial, technical, marketing, and operations.',
   metadataBase: new URL('https://www.gadgets-finds.com'),
