@@ -94,7 +94,7 @@ const toggleTheme = () => {
             description: a.description || '',
             time: timeAgo(a.publishedAt),
             read: readIds.has(`news-${i}`),
-            href: '/live-news-feed',
+            href: '/',
           }));
 
         setNotifications(notifs);
@@ -147,34 +147,32 @@ const toggleTheme = () => {
 
   const navItems = [
     { label: 'Home', href: '/', icon: 'HomeIcon' },
+    { label: 'Vacuums', href: '/best-budget-robot-vacuums-under-300', icon: 'SparklesIcon' },
     { label: 'Mini Gadgets', href: '/mini-gadgets', icon: 'CubeIcon' },
-    { label: 'Live Feed', href: '/live-news-feed', icon: 'RssIcon' },
-    { label: 'Compare Gadgets', href: '/product-comparison-engine', icon: 'ScaleIcon' },
-    { label: 'CES 2026', href: '/ces-2026-hub', icon: 'CalendarIcon' },
-    { label: 'Trends', href: '/tech-trends-2026', icon: 'ChartBarIcon' },
+    { label: 'Tablets', href: '/best-cheap-tablets-under-150', icon: 'DevicePhoneMobileIcon' },
+    { label: 'PS5 gear', href: '/best-ps5-accessories-2026', icon: 'PuzzlePieceIcon' },
+    { label: 'Chargers', href: '/best-portable-chargers-for-travel', icon: 'BoltIcon' },
     { label: 'Search', href: '/unified-search', icon: 'MagnifyingGlassIcon' },
   ];
 
   // Items shown directly in header on desktop (Black Friday removed to avoid overflow)
   const primaryNavItems = [
     { label: 'Home', href: '/', icon: 'HomeIcon' },
+    { label: 'Vacuums', href: '/best-budget-robot-vacuums-under-300', icon: 'SparklesIcon' },
     { label: 'Mini Gadgets', href: '/mini-gadgets', icon: 'CubeIcon' },
-    { label: 'Live Feed', href: '/live-news-feed', icon: 'RssIcon' },
-    { label: 'Trends', href: '/tech-trends-2026', icon: 'ChartBarIcon' },
-    { label: 'Search', href: '/unified-search', icon: 'MagnifyingGlassIcon' },
-    { label: 'Compare Gadgets', href: '/product-comparison-engine', icon: 'ScaleIcon' },
-    { label: 'CES 2026', href: '/ces-2026-hub', icon: 'CalendarIcon' },
+    { label: 'Tablets', href: '/best-cheap-tablets-under-150', icon: 'DevicePhoneMobileIcon' },
+    { label: 'Chargers', href: '/best-portable-chargers-for-travel', icon: 'BoltIcon' },
+    { label: 'PS5 gear', href: '/best-ps5-accessories-2026', icon: 'PuzzlePieceIcon' },
   ];
 
   // Items kept in the dropdown menu
   const dropdownNavItems = [
     { label: 'Home', href: '/', icon: 'HomeIcon' },
+    { label: 'Vacuums', href: '/best-budget-robot-vacuums-under-300', icon: 'SparklesIcon' },
     { label: 'Mini Gadgets', href: '/mini-gadgets', icon: 'CubeIcon' },
-    { label: 'Live Feed', href: '/live-news-feed', icon: 'RssIcon' },
-    { label: 'Trends', href: '/tech-trends-2026', icon: 'ChartBarIcon' },
-    { label: 'Search', href: '/unified-search', icon: 'MagnifyingGlassIcon' },
-    { label: 'Compare Gadgets', href: '/product-comparison-engine', icon: 'ScaleIcon' },
-    { label: 'CES 2026', href: '/ces-2026-hub', icon: 'CalendarIcon' },
+    { label: 'Tablets', href: '/best-cheap-tablets-under-150', icon: 'DevicePhoneMobileIcon' },
+    { label: 'PS5 gear', href: '/best-ps5-accessories-2026', icon: 'PuzzlePieceIcon' },
+    { label: 'Chargers', href: '/best-portable-chargers-for-travel', icon: 'BoltIcon' },
   ];
 
   const isActive = (href: string) => pathname === href;

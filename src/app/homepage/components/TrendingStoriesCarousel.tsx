@@ -30,15 +30,16 @@ const TrendingStoriesCarousel = () => {
     const stories: Story[] = [
   {
     id: 1,
-    title: 'Apple Vision Pro 2: Development Paused — Apple Pivots to Smart Glasses',
-    excerpt: 'Reports from multiple credible sources indicate Apple has paused or significantly delayed a full Vision Pro successor, shifting focus to a lighter smart glasses product instead.',
-    category: 'Breaking News',
-    image: "/assets/images/image-1769356825932.png",
-    alt: 'Apple Vision Pro headset with advanced eye-tracking sensors',
+    title: 'Best Budget Robot Vacuums Under $300',
+    excerpt: 'Lefant, eufy, and Roborock under $300. What each one is for, and what to skip.',
+    category: 'Buying Guide',
+    image: '/assets/images/lefant-m210-pro.jpg',
+    alt: 'Lefant robot vacuum',
     author: 'Gadgets Finds',
-    readTime: '5 min read',
+    readTime: '12 min read',
     trending: true,
-    link: '/apple-vision-pro-2-article'
+    link: '/best-budget-robot-vacuums-under-300',
+    fit: 'contain',
   },
   {
     id: 2,
@@ -131,7 +132,7 @@ const TrendingStoriesCarousel = () => {
             <h3 className="text-3xl font-bold text-white mb-3">{stories[0].title}</h3>
             <p className="text-brand-text-secondary mb-4 line-clamp-2">{stories[0].excerpt}</p>
             <Link
-              href={stories[0].link || "/live-news-feed"}
+              href={stories[0].link || "/best-budget-robot-vacuums-under-300"}
               className="inline-flex items-center space-x-2 px-4 py-2 bg-brand-primary text-white rounded-lg font-semibold text-sm"
             >
               <span>Read More</span>
@@ -183,7 +184,7 @@ const TrendingStoriesCarousel = () => {
               <span>{stories[currentIndex].readTime}</span>
             </div>
             <Link
-              href={stories[currentIndex].link || '/live-news-feed'}
+              href={stories[currentIndex].link || '/best-budget-robot-vacuums-under-300'}
               className="inline-flex items-center space-x-2 px-3 md:px-4 py-1.5 md:py-2 bg-brand-primary text-white rounded-lg font-semibold text-xs md:text-sm hover:bg-brand-primary/90 transition-colors">
 
               <span>Read More</span>

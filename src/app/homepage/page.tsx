@@ -5,7 +5,6 @@ import PersonalizedContentStream from './components/PersonalizedContentStream';
 import QuickAccessGrid from './components/QuickAccessGrid';
 import NewsletterSubscription from './components/NewsletterSubscription';
 import Footer from './components/Footer';
-import CES2026Preview from './components/CES2026Preview';
 import GadgetsSection from './components/GadgetsSection';
 import MiniGadgetsSection from './components/MiniGadgetsSection';
 
@@ -84,8 +83,6 @@ export default function Homepage() {
             <QuickAccessGrid />
           </div>
         </section>
-
-        <CES2026Preview />
 
         <section className="py-8 md:py-16 bg-background">
           <div className="container mx-auto px-4">

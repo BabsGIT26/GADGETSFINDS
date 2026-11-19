@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: 'https://www.gadgets-finds.com/sony-wh-2000xm6-review-article',
     type: 'article',
     images: [{
-      url: "https://img.rocket.new/generatedImages/rocket_gen_img_12a4d5808-1764677183408.png",
+      url: "https://www.gadgets-finds.com/assets/images/sony_wh_1000xm6.png",
       width: 1200,
       height: 630,
       alt: 'Sony WH-2000XM6 Headphones'
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     creator: '@Gadgets_finds',
     title: 'Sony WH-2000XM6 Review',
     description: 'Premium noise cancellation and exceptional audio quality.',
-    images: ['https://www.gadgets-finds.com/assets/images/c25f7797a5e24e21877a902e49174fd6-1768753589028.png']
+    images: ['https://www.gadgets-finds.com/assets/images/sony_wh_1000xm6.png']
   }
 };
 
@@ -40,7 +40,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Sony WH-2000XM6 Review',
   description: 'Sony WH-2000XM6 headphones deliver premium noise cancellation and exceptional audio quality.',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1f2ff3d53-1764671534694.png",
+  image: "https://www.gadgets-finds.com/assets/images/sony_wh_1000xm6.png",
   datePublished: '2026-01-25',
   dateModified: '2026-01-25',
   author: { '@type': 'Organization', name: 'Gadgets Finds' },
@@ -56,8 +56,8 @@ export default function SonyWH2000XM6Article() {
         {/* Hero Section */}
         <div className="relative h-[400px] md:h-[500px] w-full">
           <AppImage
-            src="https://img.rocket.new/generatedImages/rocket_gen_img_13c1b7db7-1772147463184.png"
-            alt="Premium black wireless headphones with silver accents on white background"
+            src="/assets/images/sony_wh_1000xm6.png"
+            alt="Sony WH-1000XM6 wireless headphones"
             className="w-full h-full object-cover" />
           
 

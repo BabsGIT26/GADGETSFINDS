@@ -21,14 +21,14 @@ const Footer = () => {
       { label: 'Contact', href: '/contact-us' },
     ],
     Resources: [
-      { label: 'Comparisons', href: '/product-comparison-engine' },
-      { label: 'Tech Trends', href: '/tech-trends-2026' },
-      { label: 'Live News', href: '/live-news-feed' },
+      { label: 'Robot vacuums', href: '/best-budget-robot-vacuums-under-300' },
+      { label: 'Tablets under $150', href: '/best-cheap-tablets-under-150' },
+      { label: 'PS5 accessories', href: '/best-ps5-accessories-2026' },
     ],
     Community: [
-      { label: 'Events', href: '/ces-2026-hub' },
-      { label: 'Search', href: '/unified-search' },
-      { label: 'Newsletter', href: '/newsletter-signup' },
+      { label: 'Travel chargers', href: '/best-portable-chargers-for-travel' },
+      { label: 'Smartwatches', href: '/best-smartwatches-under-350' },
+      { label: 'Mini gadgets', href: '/best-mini-gadgets-under-30' },
     ],
     Legal: [
       { label: 'Privacy Policy', href: '/privacy-policy' },
@@ -79,7 +79,7 @@ const Footer = () => {
                 <span className="font-display font-bold text-lg md:text-xl text-brand-text-primary tracking-tight">
                   Gadgets Finds
                 </span>
-                <span className="font-mono text-xs text-brand-primary tracking-wider">Tech News & Reviews</span>
+                <span className="font-mono text-xs text-brand-primary tracking-wider">Gadget buying guides</span>
               </div>
             </Link>
             <p className="text-brand-text-secondary text-sm mb-3 md:mb-4">

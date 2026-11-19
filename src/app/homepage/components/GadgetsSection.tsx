@@ -240,7 +240,7 @@ export default function GadgetsSection() {
             </p>
           </div>
           <Link
-            href="/product-comparison-engine"
+            href="/roborock-vs-roomba-2026"
             className="inline-flex items-center gap-2 px-5 py-3 border border-border rounded-lg text-foreground font-semibold text-sm hover:bg-muted transition-all shrink-0 self-start md:self-auto"
           >
             Compare Gadgets

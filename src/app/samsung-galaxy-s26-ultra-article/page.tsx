@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: 'https://www.gadgets-finds.com/samsung-galaxy-s26-ultra-article',
     type: 'article',
     images: [{
-      url: "https://img.rocket.new/generatedImages/rocket_gen_img_1f98b28e8-1772328373491.png",
+      url: "https://www.gadgets-finds.com/assets/images/samsung_galaxy_s_twenty_six_ultra.png",
       width: 1200,
       height: 630,
       alt: 'Samsung Galaxy S26 Ultra'
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     creator: '@Gadgets_finds',
     title: 'Samsung Galaxy S26 Ultra Review',
     description: 'Announced Feb 25, released Mar 11 2026. Advanced AI camera, Snapdragon 8 Elite for Galaxy, S Pen.',
-    images: ['https://www.gadgets-finds.com/assets/images/c25f7797a5e24e21877a902e49174fd6-1768753589028.png']
+    images: ['https://www.gadgets-finds.com/assets/images/samsung_galaxy_s_twenty_six_ultra.png']
   }
 };
 
@@ -40,7 +40,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Samsung Galaxy S26 Ultra Review',
   description: 'Samsung Galaxy S26 Ultra review: announced February 25, 2026 and released March 11, 2026.',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_14b3fbe0c-1784399365185.png",
+  image: "https://www.gadgets-finds.com/assets/images/samsung_galaxy_s_twenty_six_ultra.png",
   datePublished: '2026-03-11',
   dateModified: '2026-08-12',
   author: { '@type': 'Organization', name: 'Gadgets Finds' },

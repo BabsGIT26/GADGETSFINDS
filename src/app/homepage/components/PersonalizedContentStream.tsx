@@ -134,7 +134,7 @@ const PersonalizedContentStream = () => {
     {
       id: 18,
       title: "Best Amazon Deals This Week",
-      excerpt: "Newest Fire TV Stick 4K at $19.99, the 4K Plus at $29.99, the Select at $17.99, and the Cube at $89.99. Prices checked November 17.",
+      excerpt: "Fire TV Stick 4K, 4K Plus, 4K Select, and Fire TV Cube. Open the guide, then read the live price on Amazon.",
       category: "Deals",
       image: "/assets/images/fire-tv-stick-4k-card.jpg",
       alt: "Amazon Fire TV Stick 4K with remote",
@@ -183,7 +183,7 @@ const PersonalizedContentStream = () => {
     {
       id: 14,
       title: "MacBook Air 13-inch M5 — 16GB, 512GB, Silver",
-      excerpt: "2026 Air with M5, 13.6-inch Liquid Retina, Touch ID, Wi-Fi 7. List $1,299; Amazon has been near $1,099. Price changes.",
+      excerpt: "2026 Air with M5, 13.6-inch Liquid Retina, Touch ID, and Wi-Fi 7. The price on Amazon is the one that counts.",
       category: "Laptops",
       image: "https://m.media-amazon.com/images/I/71txEBdkjxL.jpg",
       alt: "MacBook Air 13-inch M5 Silver",
@@ -317,8 +317,8 @@ const PersonalizedContentStream = () => {
       title: "Sony WH-2000XM6 Review: The New King of Noise Cancellation",
       excerpt: "Sony's latest flagship headphones set a new standard for active noise cancellation and audio quality.",
       category: "Review",
-      image: "https://img.rocket.new/generatedImages/rocket_gen_img_13c1b7db7-1772147463184.png",
-      alt: "Premium black wireless headphones with silver accents on white background",
+      image: "/assets/images/sony_wh_1000xm6.png",
+      alt: "Sony WH-1000XM6 wireless headphones",
       author: "",
       publishedDate: "Aug 7, 2026",
       readTime: "8 min read",

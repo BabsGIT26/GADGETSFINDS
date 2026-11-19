@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.gadgets-finds.com'),
   
   openGraph: {
-    title: 'Gadgets Finds — Tech News & Reviews',
-    description: 'Discover the best trending gadgets with honest reviews, tech news, and expert recommendations.',
+    title: 'Gadgets Finds — Gadget Buying Guides for 2026',
+    description: 'Buying guides for robot vacuums, PS5 accessories, tablets under $150, travel chargers, smartwatches under $350, and mini gadgets.',
     url: 'https://www.gadgets-finds.com',
     siteName: 'Gadgets Finds',
     type: 'website',
@@ -26,8 +26,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@Gadgets_finds',
     creator: '@Gadgets_finds',
-    title: 'Gadgets Finds — Tech News & Reviews',
-    description: 'Discover the best trending gadgets with honest reviews, tech news, and expert recommendations.',
+    title: 'Gadgets Finds — Gadget Buying Guides for 2026',
+    description: 'Buying guides for robot vacuums, PS5 accessories, tablets under $150, travel chargers, smartwatches under $350, and mini gadgets.',
     
   },
   icons: {
