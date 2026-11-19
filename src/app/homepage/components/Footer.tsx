@@ -22,6 +22,7 @@ const Footer = () => {
     ],
     Resources: [
       { label: 'Robot vacuums', href: '/best-budget-robot-vacuums-under-300' },
+      { label: 'Black Friday vacuums', href: '/black-friday-robot-vacuums' },
       { label: 'Tablets under $150', href: '/best-cheap-tablets-under-150' },
       { label: 'PS5 accessories', href: '/best-ps5-accessories-2026' },
     ],

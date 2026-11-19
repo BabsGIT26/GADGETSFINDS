@@ -102,8 +102,15 @@ export default function Page() {
           <p className="text-muted-foreground mb-4 text-lg leading-relaxed">
             Robot vacuums priced under $300 have improved significantly over the past two years. In 2026, several models in this range can handle daily cleaning in apartments and smaller homes with far better consistency than older budget robots. While they still lag behind $600–$1,000 flagships in obstacle avoidance, multi-floor mapping, and self-emptying capability, the gap has narrowed enough that many people no longer need to spend premium prices for acceptable results.
           </p>
-          <p className="text-muted-foreground mb-10 leading-relaxed">
+          <p className="text-muted-foreground mb-4 leading-relaxed">
             This guide covers the strongest options currently available around or under $300 on Amazon. Recommendations are based on suction performance, navigation quality, pet hair handling, edge cleaning, battery life, app reliability, maintenance demands, and typical street pricing.
+          </p>
+          <p className="text-muted-foreground mb-10 leading-relaxed">
+            For a shorter Black Friday list, with smaller photos and more models, see{" "}
+            <a href="/black-friday-robot-vacuums" className="underline decoration-amber-500/80 underline-offset-4 hover:text-foreground">
+              Black Friday robot vacuums
+            </a>
+            .
           </p>
 
           <h2 className="text-2xl md:text-3xl font-bold mt-12 mb-4">What Separates Good Budget Robots from Weak Ones</h2>

@@ -34,6 +34,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/best-amazon-deals-this-week',
     '/best-ps5-accessories-2026',
     '/best-budget-robot-vacuums-under-300',
+    '/black-friday-robot-vacuums',
     '/roborock-vs-roomba-2026',
   ];
 

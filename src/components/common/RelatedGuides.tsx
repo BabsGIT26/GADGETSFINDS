@@ -2,6 +2,7 @@ import Link from "next/link";
 
 const GUIDES = [
   { href: "/best-budget-robot-vacuums-under-300", title: "Best budget robot vacuums under $300" },
+  { href: "/black-friday-robot-vacuums", title: "Black Friday robot vacuums" },
   { href: "/roborock-vs-roomba-2026", title: "Roborock vs Roomba in 2026" },
   { href: "/best-ps5-accessories-2026", title: "Best PS5 accessories in 2026" },
   { href: "/best-cheap-tablets-under-150", title: "Best cheap tablets under $150" },
