@@ -53,7 +53,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/samsung-65-s85h-oled-article',
     '/samsung-990-pro-4tb-article',
     '/ghost-of-yotei-complete-edition',
-    '/early-black-friday-deals',
     '/amazon-outlet-guide',
   ];
 

@@ -147,7 +147,6 @@ const toggleTheme = () => {
 
   const navItems = [
     { label: 'Home', href: '/', icon: 'HomeIcon' },
-    { label: 'Black Friday', href: '/early-black-friday-deals', icon: 'TagIcon' },
     { label: 'Mini Gadgets', href: '/mini-gadgets', icon: 'CubeIcon' },
     { label: 'Live Feed', href: '/live-news-feed', icon: 'RssIcon' },
     { label: 'Compare Gadgets', href: '/product-comparison-engine', icon: 'ScaleIcon' },
@@ -170,7 +169,6 @@ const toggleTheme = () => {
   // Items kept in the dropdown menu
   const dropdownNavItems = [
     { label: 'Home', href: '/', icon: 'HomeIcon' },
-    { label: 'Black Friday', href: '/early-black-friday-deals', icon: 'TagIcon' },
     { label: 'Mini Gadgets', href: '/mini-gadgets', icon: 'CubeIcon' },
     { label: 'Live Feed', href: '/live-news-feed', icon: 'RssIcon' },
     { label: 'Trends', href: '/tech-trends-2026', icon: 'ChartBarIcon' },

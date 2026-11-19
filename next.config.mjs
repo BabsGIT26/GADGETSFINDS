@@ -45,6 +45,11 @@ const nextConfig = {
       destination: '/',
       permanent: true,
     },
+    {
+      source: '/early-black-friday-deals',
+      destination: '/',
+      permanent: true,
+    },
   ];
 },
 };
