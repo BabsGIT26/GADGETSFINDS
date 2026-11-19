@@ -3,7 +3,6 @@ import Header from '@/components/common/Header';
 import TrendingStoriesCarousel from './components/TrendingStoriesCarousel';
 import PersonalizedContentStream from './components/PersonalizedContentStream';
 import QuickAccessGrid from './components/QuickAccessGrid';
-import TechPulseMeter from './components/TechPulseMeter';
 import NewsletterSubscription from './components/NewsletterSubscription';
 import Footer from './components/Footer';
 import CES2026Preview from './components/CES2026Preview';
@@ -83,12 +82,6 @@ export default function Homepage() {
         <section className="py-8 md:py-16 bg-background">
           <div className="container mx-auto px-4">
             <QuickAccessGrid />
-          </div>
-        </section>
-
-        <section className="py-8 md:py-16 bg-background">
-          <div className="container mx-auto px-4">
-            <TechPulseMeter />
           </div>
         </section>
 
