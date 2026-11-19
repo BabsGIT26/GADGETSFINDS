@@ -29,6 +29,18 @@ const TrendingStoriesCarousel = () => {
 
     const stories: Story[] = [
   {
+    id: 0,
+    title: 'Black Friday Robot Vacuums',
+    excerpt: 'Dock, mop station, or a robot you empty yourself. What each one is for before you open Amazon.',
+    category: 'Buying Guide',
+    image: '/assets/images/black-friday-robot-vacuum.webp',
+    alt: 'Black robot vacuum on a Black Friday graphic',
+    author: 'Gadgets Finds',
+    readTime: '6 min read',
+    trending: true,
+    link: '/black-friday-robot-vacuums',
+  },
+  {
     id: 1,
     title: 'Best Budget Robot Vacuums Under $300',
     excerpt: 'Lefant, eufy, and Roborock under $300. What each one is for, and what to skip.',

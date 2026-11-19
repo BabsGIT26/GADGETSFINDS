@@ -31,6 +31,18 @@ const PersonalizedContentStream = () => {
 
   const contentItems: ContentItem[] = [
     {
+      id: 27,
+      title: "Black Friday Robot Vacuums",
+      excerpt: "Dock, mop station, or a robot you empty yourself. Short notes on the models showing on Amazon, then the listing.",
+      category: "Buying Guide",
+      image: "/assets/images/black-friday-robot-vacuum.webp",
+      alt: "Black robot vacuum on a Black Friday graphic",
+      author: "Gadgets Finds",
+      publishedDate: "November 19, 2026",
+      readTime: "6 min read",
+      tags: ["Robot Vacuum", "Black Friday", "Buying Guide"],
+    },
+    {
       id: 26,
       title: "Samsung 990 PRO 4TB Review",
       excerpt: "PCIe 4.0 NVMe up to 7,450 MB/s. The MZ-V9P4T0B/AM box has no heatsink. Read that before you buy it for a PS5.",
@@ -351,6 +363,7 @@ const PersonalizedContentStream = () => {
   ];
 
   const articleRoutes: { [key: number]: string } = {
+    27: "/black-friday-robot-vacuums",
     26: "/samsung-990-pro-4tb-article",
     25: "/best-budget-robot-vacuums-under-300",
     24: "/best-ps5-accessories-2026",

@@ -12,6 +12,13 @@ interface QuickAccessItem {
 const QuickAccessGrid = () => {
   const quickAccessItems: QuickAccessItem[] = [
     {
+      title: 'Black Friday vacuums',
+      description: 'Dock, mop station, or a simple robot. Read the note first.',
+      icon: 'SparklesIcon',
+      href: '/black-friday-robot-vacuums',
+      color: 'from-red-500 to-amber-500',
+    },
+    {
       title: 'Robot vacuums',
       description: 'What is worth buying under $300, and what to skip',
       icon: 'SparklesIcon',

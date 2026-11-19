@@ -21,6 +21,18 @@ interface Gadget {
 
 const gadgets: Gadget[] = [
     {
+    name: "Black Friday robot vacuums",
+    brand: "Buying guide",
+    category: "Robotics",
+    rating: 4.8,
+    badge: "Black Friday",
+    badgeColor: "bg-red-600 text-white",
+    image: "/assets/images/black-friday-robot-vacuum.webp",
+    alt: "Black robot vacuum on a Black Friday graphic",
+    href: "/black-friday-robot-vacuums",
+    highlights: ["Dock or no dock", "Mop or vacuum only", "Read the note first"],
+  },
+    {
     name: "MacBook Pro M5 Max",
     brand: "Apple",
     category: "Laptops",
