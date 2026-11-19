@@ -19,8 +19,8 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "https://www.gadgets-finds.com/assets/images/eufy-c10.jpg",
-        alt: "eufy C10 robot vacuum with self-empty dock",
+        url: "https://cms-uploads.mumsnet.com/cache/containers/images/black-friday-robot-vacuum.png/e13af740e22cfc3e9c96c1eff15ee0f7/black-friday-robot-vacuum.webp",
+        alt: "Black Friday robot vacuums",
       },
     ],
   },
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     creator: "@Gadgets_finds",
     title: "Black Friday Robot Vacuums",
     description: "How to choose between the dock robots, the mop station, and the simple robots on sale.",
-    images: ["https://www.gadgets-finds.com/assets/images/eufy-c10.jpg"],
+    images: ["https://cms-uploads.mumsnet.com/cache/containers/images/black-friday-robot-vacuum.png/e13af740e22cfc3e9c96c1eff15ee0f7/black-friday-robot-vacuum.webp"],
   },
 };
 
