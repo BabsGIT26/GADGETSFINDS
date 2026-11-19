@@ -34,6 +34,11 @@ export const metadata: Metadata = {
     icon: [{ url: "/favicon.ico", type: "image/x-icon" }],
     apple: "/apple-touch-icon.png",
   },
+  verification: {
+    other: {
+      "msvalidate.01": "5371D550AD732A7DAF35159E9641D9D6",
+    },
+  },
 };
 
 const organizationSchema = {
