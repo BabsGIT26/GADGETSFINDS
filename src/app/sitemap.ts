@@ -35,6 +35,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/best-ps5-accessories-2026',
     '/best-budget-robot-vacuums-under-300',
     '/black-friday-robot-vacuums',
+    '/black-friday-robot-vacuums/eufy-c10',
+    '/black-friday-robot-vacuums/ecovacs-t90-pro-omni',
+    '/black-friday-robot-vacuums/roborock-q7-m5-plus',
+    '/black-friday-robot-vacuums/shark-ai-ultra',
+    '/black-friday-robot-vacuums/ilife-a30s',
+    '/black-friday-robot-vacuums/eufy-l60',
+    '/black-friday-robot-vacuums/lefant-m210-pro',
     '/roborock-vs-roomba-2026',
   ];
 
