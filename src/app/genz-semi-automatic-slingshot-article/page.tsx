@@ -10,7 +10,7 @@ const AMAZON =
 
 const TRACKED = `/api/go?url=${encodeURIComponent(AMAZON)}`;
 
-const OG_IMAGE = "/assets/images/original/gadget.jpg";
+const OG_IMAGE = "https://m.media-amazon.com/images/I/91NgubSWmjL.jpg";
 
 export const metadata: Metadata = {
   title: "GenZ Semi-Automatic Slingshot Rapid Fire Steel Ball Shooter | Gadgets Finds",
@@ -90,7 +90,7 @@ export default function Page() {
 
           <div className="w-full flex justify-center py-6 mb-6">
             <AppImage
-              src="/assets/images/original/gadget.jpg"
+              src="https://m.media-amazon.com/images/I/71gQB6ZQV7L.jpg"
               alt="CNC aluminum semi-automatic slingshot kit with magazines and steel balls"
               className="max-h-[400px] w-auto max-w-full object-contain rounded-lg"
             />
@@ -113,7 +113,7 @@ export default function Page() {
 
           <div className="w-full flex justify-center py-6 mb-6">
             <AppImage
-              src="/assets/images/original/gadget.jpg"
+              src="https://m.media-amazon.com/images/I/614Ys7NGCsL.jpg"
               alt="Semi-automatic slingshot in outdoor setting"
               className="max-h-[400px] w-auto max-w-full object-contain rounded-lg"
             />

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     siteName: "Gadgets Finds",
     type: "article",
     images: [{
-      url: 'https://www.gadgets-finds.com/assets/images/original/tablet.jpg',
+      url: 'https://www.gadgets-finds.com/assets/images/fire-hd-10.jpg',
       alt: 'Amazon Fire HD 10 tablet',
     }],
   },
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     creator: "@Gadgets_finds",
     title: 'Best Cheap Tablets Under $150 in 2026',
     description: 'Fire HD 10, Galaxy Tab A9+, Fire HD 10 Kids, Fire HD 8, and Lenovo Tab One.',
-    images: ['https://www.gadgets-finds.com/assets/images/original/tablet.jpg'],
+    images: ['https://www.gadgets-finds.com/assets/images/fire-hd-10.jpg'],
   },
 };
 
@@ -59,11 +59,11 @@ function ViewOnAmazon({ href, name }: { href: string; name: string }) {
 }
 
 const IMAGES = {
-  hd10: "/assets/images/original/tablet.jpg",
-  a9: "/assets/images/original/tablet.jpg",
-  kids: "/assets/images/original/tablet.jpg",
-  hd8: "/assets/images/original/tablet.jpg",
-  lenovo: "/assets/images/original/tablet.jpg",
+  hd10: "/assets/images/fire-hd-10.jpg",
+  a9: "/assets/images/galaxy-tab-a9-plus.jpg",
+  kids: "/assets/images/fire-hd-10-kids.jpg",
+  hd8: "/assets/images/fire-hd-8-2024.jpg",
+  lenovo: "/assets/images/lenovo-tab-one.jpg",
 } as const;
 
 function ProductPhoto({ src, alt }: { src: string; alt: string }) {

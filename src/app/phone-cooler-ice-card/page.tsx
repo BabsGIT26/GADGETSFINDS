@@ -5,7 +5,7 @@ import AmazonDealBox from "@/components/common/AmazonDealBox";
 import Link from "next/link";
 
 const AMAZON = "https://www.amazon.com/Phone-Cooler-Magnetic-Semiconductor-Streaming/dp/B0DYTYJ7WJ?tag=gadgetsfindswebsmediavid-20";
-const IMAGE = "/assets/images/original/phone.jpg";
+const IMAGE = "https://m.media-amazon.com/images/I/71K3I5p0FDL.jpg";
 
 export const metadata: Metadata = {
   robots: { index: false, follow: true },

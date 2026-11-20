@@ -24,7 +24,7 @@ export const WATCHES: Watch[] = [
   {
     slug: "apple-watch-se-3-40mm",
     name: "Apple Watch SE 3 GPS 40mm",
-    image: "/assets/images/original/watch-b.jpg",
+    image: "/assets/images/apple-watch-se-3-40mm.jpg",
     alt: "Apple Watch SE 3 with a midnight aluminum case and navy sport band",
     asin: "B0HJB1CGR3",
     card: "The smaller Apple watch on this list. GPS only, 40mm midnight case, navy band in S/M. For an iPhone, not for leaving the phone at home.",
@@ -43,7 +43,7 @@ export const WATCHES: Watch[] = [
   {
     slug: "apple-watch-series-12-42mm",
     name: "Apple Watch Series 12 GPS 42mm",
-    image: "/assets/images/original/watch-a.jpg",
+    image: "/assets/images/apple-watch-series-12-42.jpg",
     alt: "Apple Watch Series 12 GPS 42mm in black aluminum with a black sport band",
     asin: "B0HJBCX8VS",
     card: "Current Apple watch, GPS only, 42mm black case, black sport band in S/M. The one to buy when the iPhone stays with you.",
@@ -62,7 +62,7 @@ export const WATCHES: Watch[] = [
   {
     slug: "apple-watch-series-12-cellular-46mm",
     name: "Apple Watch Series 12 GPS + Cellular 46mm",
-    image: "/assets/images/original/watch-a.jpg",
+    image: "/assets/images/apple-watch-series-12-cellular-46.jpg",
     alt: "Apple Watch Series 12 GPS and Cellular 46mm in black aluminum",
     asin: "B0HJ9RYJGL",
     card: "The Series 12 that can leave the iPhone at home. 46mm black case, black sport band in M/L. Cellular is a carrier plan on top of the watch.",
@@ -81,7 +81,7 @@ export const WATCHES: Watch[] = [
   {
     slug: "garmin-venu-4",
     name: "Garmin Venu 4 45mm",
-    image: "/assets/images/original/watch-b.jpg",
+    image: "/assets/images/garmin-venu-4.jpg",
     alt: "Garmin Venu 4 45mm fitness smartwatch with a black silicone band",
     asin: "B0FRG18TLS",
     card: "The everyday Garmin. Bright round screen, GPS, a flashlight, and a long app list. Works with an iPhone or an Android phone.",
@@ -100,7 +100,7 @@ export const WATCHES: Watch[] = [
   {
     slug: "garmin-instinct-3-amoled",
     name: "Garmin Instinct 3 AMOLED 45mm",
-    image: "/assets/images/original/watch-c.jpg",
+    image: "/assets/images/garmin-instinct-3-amoled.jpg",
     alt: "Garmin Instinct 3 AMOLED 45mm rugged GPS watch in black",
     asin: "B0DSC8JF59",
     card: "The rugged Garmin. 45mm, metal-reinforced bezel, AMOLED screen, multi-band GPS, and a flashlight. Built to be knocked, not to match an iPhone.",
@@ -119,7 +119,7 @@ export const WATCHES: Watch[] = [
   {
     slug: "whoop-5-peak",
     name: "WHOOP 5.0 Peak (12-month membership)",
-    image: "/assets/images/original/watch-c.jpg",
+    image: "/assets/images/whoop-5-peak.jpg",
     alt: "WHOOP 5.0 screenless fitness band with a black band and a charging pack",
     asin: "B0DY2SWV16",
     card: "Not a smartwatch. A screenless band sold with 12 months of WHOOP Peak. Buy it for recovery data, not for a watch face.",
@@ -138,7 +138,7 @@ export const WATCHES: Watch[] = [
   {
     slug: "carbinox-edge",
     name: "CARBINOX Edge",
-    image: "/assets/images/original/watch-c.jpg",
+    image: "/assets/images/carbinox-edge.jpg",
     alt: "CARBINOX Edge stainless steel GPS smartwatch in black",
     asin: "B0G56N4239",
     card: "Budget GPS watch in stainless steel. Dual-band GPS and Bluetooth calling on the listing. Not Apple, and not Garmin.",

@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "/assets/images/original/tablet.jpg",
+        url: "https://m.media-amazon.com/images/I/71dnnsMpNpL._AC_UL450_SY450_QL70_.jpg",
         width: 1200,
         height: 630,
         alt: "YTT Touchscreen Screen Cleaner",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@Gadgets_finds",
     title: "YTT Touchscreen Screen Cleaner Spray",
-    images: ["/assets/images/original/gadget.jpg"],
+    images: ["https://m.media-amazon.com/images/I/71dnnsMpNpL._AC_UL450_SY450_QL70_.jpg"],
   },
 };
 
@@ -73,7 +73,7 @@ export default function Page() {
 
           <div className="mb-10 flex justify-center">
             <img
-              src="/assets/images/original/gadget.jpg"
+              src="https://m.media-amazon.com/images/I/71dnnsMpNpL._AC_UL450_SY450_QL70_.jpg"
               alt="YTT Touchscreen Screen Cleaner Spray"
               className="w-full max-w-[280px] h-auto rounded-xl"
             />

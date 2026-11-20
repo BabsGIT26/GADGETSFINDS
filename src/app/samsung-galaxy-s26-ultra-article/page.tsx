@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: 'https://www.gadgets-finds.com/samsung-galaxy-s26-ultra-article',
     type: 'article',
     images: [{
-      url: "https://www.gadgets-finds.com/assets/images/original/gadget.jpg",
+      url: "https://www.gadgets-finds.com/assets/images/samsung_galaxy_s_twenty_six_ultra.png",
       width: 1200,
       height: 630,
       alt: 'Samsung Galaxy S26 Ultra'
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     creator: '@Gadgets_finds',
     title: 'Samsung Galaxy S26 Ultra Review',
     description: 'Announced Feb 25, released Mar 11 2026. Advanced AI camera, Snapdragon 8 Elite for Galaxy, S Pen.',
-    images: ['https://www.gadgets-finds.com/assets/images/original/gadget.jpg']
+    images: ['https://www.gadgets-finds.com/assets/images/samsung_galaxy_s_twenty_six_ultra.png']
   }
 };
 
@@ -40,7 +40,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Samsung Galaxy S26 Ultra Review',
   description: 'Samsung Galaxy S26 Ultra review: announced February 25, 2026 and released March 11, 2026.',
-  image: "https://www.gadgets-finds.com/assets/images/original/gadget.jpg",
+  image: "https://www.gadgets-finds.com/assets/images/samsung_galaxy_s_twenty_six_ultra.png",
   datePublished: '2026-03-11',
   dateModified: '2026-08-12',
   author: { '@type': 'Organization', name: 'Gadgets Finds' },
@@ -56,7 +56,7 @@ export default function SamsungGalaxyS26UltraArticle() {
         {/* Hero Section */}
         <div className="relative min-h-[50vh] md:h-[60vh] overflow-hidden flex flex-col">
           <AppImage
-            src="/assets/images/original/gadget.jpg"
+            src="/assets/images/samsung_galaxy_s_twenty_six_ultra.png"
             alt="Samsung Galaxy S26 Ultra smartphone with advanced quad camera system"
             className="absolute inset-0 w-full h-full object-cover" />
 

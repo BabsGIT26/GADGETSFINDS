@@ -9,7 +9,7 @@ import CommentSection from "@/components/comments/CommentSection";
 const AMAZON =
   "https://www.amazon.com/dp/B0GR19X8DC?tag=gadgetsfindswebsite-20";
 
-const OG_IMAGE = "/assets/images/original/laptop.jpg";
+const OG_IMAGE = "https://m.media-amazon.com/images/I/71txEBdkjxL.jpg";
 
 export const metadata: Metadata = {
   title: "MacBook Air 13-inch M5 — 16GB, 512GB, Silver | Gadgets Finds",

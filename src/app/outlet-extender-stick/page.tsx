@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "/assets/images/original/tv.jpg",
+        url: "https://m.media-amazon.com/images/I/51DW7RN3fEL.jpg",
         width: 1200,
         height: 630,
         alt: "Outlet Extender Stick",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@Gadgets_finds",
     title: "Outlet Extender Stick for Behind Couch",
-    images: ["/assets/images/original/tv.jpg"],
+    images: ["https://m.media-amazon.com/images/I/51DW7RN3fEL.jpg"],
   },
 };
 
@@ -72,7 +72,7 @@ export default function Page() {
 
           <div className="mb-10 flex justify-center">
             <img
-              src="/assets/images/original/tv.jpg"
+              src="https://m.media-amazon.com/images/I/51DW7RN3fEL.jpg"
               alt="Outlet Extender Stick for Behind Couch"
               className="w-full max-w-[280px] h-auto rounded-xl"
             />

@@ -5,7 +5,7 @@ import AmazonDealBox from "@/components/common/AmazonDealBox";
 import Link from "next/link";
 
 const AMAZON = "https://www.amazon.com/Anker-Certified-Ultra-Fast-MagSafe-Compatible-Portable/dp/B0CFDQ9QH5?tag=gadgetsfindswebsmediavid-20";
-const IMAGE = "/assets/images/original/charger.jpg";
+const IMAGE = "https://m.media-amazon.com/images/I/61DzAk62YOL.jpg";
 
 export const metadata: Metadata = {
   robots: { index: false, follow: true },

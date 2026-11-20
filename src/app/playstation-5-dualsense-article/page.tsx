@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "/assets/images/original/controller.jpg",
+        url: "/assets/images/PS5_dualsense.png",
         width: 1200,
         height: 630,
         alt: "PlayStation DualSense wireless controller",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@Gadgets_finds",
     title: "PS5 DualSense Wireless Controller — Gadgets Finds",
-    images: ["/assets/images/original/controller.jpg"],
+    images: ["/assets/images/PS5_dualsense.png"],
   },
 };
 
@@ -77,7 +77,7 @@ export default function Page() {
 
           <div className="w-full flex justify-center py-6 mb-10">
             <AppImage
-              src="/assets/images/original/controller.jpg"
+              src="/assets/images/PS5_dualsense.png"
               alt="PlayStation DualSense wireless controller"
               className="max-h-[400px] w-auto max-w-full object-contain"
             />

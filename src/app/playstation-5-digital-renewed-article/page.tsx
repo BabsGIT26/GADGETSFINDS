@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "/assets/images/original/controller.jpg",
+        url: "/assets/images/playstation_5.png",
         width: 1200,
         height: 630,
         alt: "PlayStation 5 Digital Edition",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@Gadgets_finds",
     title: "PS5 Digital Edition — Gadgets Finds",
-    images: ["/assets/images/original/controller.jpg"],
+    images: ["/assets/images/playstation_5.png"],
   },
 };
 
@@ -46,7 +46,7 @@ export default function Page() {
       <article className="min-h-screen bg-background pt-28 md:pt-16">
         <div className="w-full bg-muted flex items-center justify-center py-10 pb-2">
           <AppImage
-            src="/assets/images/original/controller.jpg"
+            src="/assets/images/playstation_5.png"
             alt="PlayStation 5 Digital Edition"
             className="max-h-[400px] w-auto max-w-[85%] object-contain"
           />

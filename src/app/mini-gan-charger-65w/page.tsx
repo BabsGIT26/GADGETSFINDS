@@ -6,7 +6,7 @@ import Link from "next/link";
 import CommentSection from "@/components/comments/CommentSection";
 
 const AMAZON = "https://www.amazon.com/UGREEN-Gallium-Nitride-Charger-Black/dp/B091BGMKYS?tag=gadgetsfindswebsmediavid-20";
-const IMAGE = "/assets/images/original/charger.jpg";
+const IMAGE = "https://m.media-amazon.com/images/I/51nKMY3u+hL.jpg";
 
 export const metadata: Metadata = {
   robots: { index: false, follow: true },

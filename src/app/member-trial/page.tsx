@@ -72,7 +72,7 @@ export default function MemberTrialPage() {
 </p>
 
          <AppImage
-  src="/assets/images/original/gadget.jpg"
+  src="/assets/images/PRIME_OCTOBER_2026.png"
   alt="Amazon Prime before Prime Big Deal Days, October 6 and 7"
   className="w-full max-h-40 md:max-h-80 object-contain mb-4 md:mb-6"
 />

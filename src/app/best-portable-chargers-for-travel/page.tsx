@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     siteName: "Gadgets Finds",
     type: "article",
     images: [{
-      url: 'https://www.gadgets-finds.com/assets/images/original/charger.jpg',
+      url: 'https://www.gadgets-finds.com/assets/images/anker-20k-87w.jpg',
       alt: 'Anker 20,000mAh portable charger',
     }],
   },
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     creator: "@Gadgets_finds",
     title: 'Best Portable Chargers for Travel in 2026',
     description: 'Anker 20,000mAh 87W, Nano 10,000mAh, Prime 99.54Wh, and the Nano 3-in-1.',
-    images: ['https://www.gadgets-finds.com/assets/images/original/charger.jpg'],
+    images: ['https://www.gadgets-finds.com/assets/images/anker-20k-87w.jpg'],
   },
 };
 
@@ -58,10 +58,10 @@ function ViewOnAmazon({ href, name }: { href: string; name: string }) {
 }
 
 const IMAGES = {
-  twenty: "/assets/images/original/charger.jpg",
-  nano: "/assets/images/original/charger.jpg",
-  prime: "/assets/images/original/charger.jpg",
-  fusion: "/assets/images/original/charger.jpg",
+  twenty: "/assets/images/anker-20k-87w.jpg",
+  nano: "/assets/images/anker-nano-10k.jpg",
+  prime: "/assets/images/anker-prime-27650.jpg",
+  fusion: "/assets/images/anker-nano-3in1.jpg",
 } as const;
 
 function ProductPhoto({ src, alt }: { src: string; alt: string }) {

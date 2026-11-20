@@ -133,7 +133,7 @@ export default function Page() {
 
           <div className="w-full flex justify-center py-6 mb-10">
             <AppImage
-              src="/assets/images/original/tv.jpg"
+              src="https://m.media-amazon.com/images/I/818JZQW4xWL.jpg"
               alt="Samsung 65-Inch S85H Series OLED TV"
               className="max-h-[400px] w-auto max-w-full object-contain"
             />

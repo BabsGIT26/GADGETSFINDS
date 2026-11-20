@@ -6,7 +6,7 @@ import Link from "next/link";
 import CommentSection from "@/components/comments/CommentSection";
 
 const AMAZON = "https://www.amazon.com/Apple-AirTag-2nd-Generation-Precision/dp/B0GJTFXNRX?tag=gadgetsfindswebsmediavid-20";
-const IMAGE = "/assets/images/original/gadget.jpg";
+const IMAGE = "https://m.media-amazon.com/images/I/61Qd9Z9caRL.jpg";
 
 export const metadata: Metadata = {
   robots: { index: false, follow: true },

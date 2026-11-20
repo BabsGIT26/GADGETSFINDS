@@ -6,7 +6,7 @@ import Link from "next/link";
 import CommentSection from "@/components/comments/CommentSection";
 
 const AMAZON = "https://www.amazon.com/OBSBOT-Lightweight-Microphone-Space-Grey/dp/B0D9W7J9SK?tag=gadgetsfindswebsmediavid-20";
-const IMAGE = "/assets/images/original/gadget.jpg";
+const IMAGE = "https://m.media-amazon.com/images/I/51OZ72zdwsL.jpg";
 
 export const metadata: Metadata = {
   robots: { index: false, follow: true },

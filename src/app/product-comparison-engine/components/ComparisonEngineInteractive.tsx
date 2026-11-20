@@ -34,7 +34,7 @@ const ComparisonEngineInteractive = () => {
     originalPrice: 3999,
     rating: 4.8,
     reviewCount: 2847,
-    image: "/assets/images/original/laptop.jpg",
+    image: "/assets/images/macbook_pro_m_four_v2.png",
     imageAlt: 'MacBook Pro 16-inch with M4 Max chip featuring sleek aluminum design and Liquid Retina XDR display',
     features: ['M4 Max Chip', '64GB RAM', '2TB SSD', 'Liquid Retina XDR'],
     expertScore: 96,

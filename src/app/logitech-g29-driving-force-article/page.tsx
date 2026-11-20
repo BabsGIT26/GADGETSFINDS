@@ -9,7 +9,7 @@ import CommentSection from "@/components/comments/CommentSection";
 const AMAZON =
   "https://www.amazon.com/dp/B00Z0UWWYC?tag=gadgetsfindswebsite-20";
 
-const OG_IMAGE = "/assets/images/original/gadget.jpg";
+const OG_IMAGE = "https://m.media-amazon.com/images/I/71ywUl+M-JL.jpg";
 
 export const metadata: Metadata = {
   title: "Logitech G29 Driving Force Racing Wheel and Pedals Review | Gadgets Finds",
