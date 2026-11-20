@@ -65,18 +65,14 @@ const IMAGES = {
   roomba: "/assets/images/roomba-600-series.jpg",
 } as const;
 
-function ProductPhoto({ src, alt, wide = false }: { src: string; alt: string; wide?: boolean }) {
+function ProductPhoto({ src, alt }: { src: string; alt: string }) {
   return (
-    <div className={wide ? "border-b border-border" : "bg-white border-b border-border"}>
+    <div className="border-b border-border">
       <img
         src={src}
         alt={alt}
         referrerPolicy="no-referrer"
-        className={
-          wide
-            ? "block w-full h-auto object-cover"
-            : "mx-auto block w-full max-w-2xl h-auto max-h-[420px] object-contain"
-        }
+        className="block w-full h-auto"
       />
     </div>
   );
@@ -185,7 +181,7 @@ export default function Page() {
           </div>
 
           <div className="mb-16 bg-card border-2 border-amber-400/60 rounded-2xl overflow-hidden shadow-sm">
-            <ProductPhoto src={IMAGES.eufy} alt="eufy RoboVac G30 robot vacuum" wide />
+            <ProductPhoto src={IMAGES.eufy} alt="eufy RoboVac G30 robot vacuum" />
             <div className="p-6 md:p-8">
               <h3 className="text-2xl font-bold mb-4"><a href={amazonHref(AMAZON.eufy)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">eufy RoboVac G30</a></h3>
               <ul className="text-sm text-muted-foreground space-y-1 mb-6">
@@ -219,7 +215,7 @@ export default function Page() {
           </div>
 
           <div className="mb-16 bg-card border-2 border-amber-400/60 rounded-2xl overflow-hidden shadow-sm">
-            <ProductPhoto src={IMAGES.q5} alt="Roborock Q5 robot vacuum" wide />
+            <ProductPhoto src={IMAGES.q5} alt="Roborock Q5 robot vacuum" />
             <div className="p-6 md:p-8">
               <h3 className="text-2xl font-bold mb-4"><a href={amazonHref(AMAZON.q5)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">Roborock Q5</a></h3>
               <ul className="text-sm text-muted-foreground space-y-1 mb-6">
@@ -251,7 +247,7 @@ export default function Page() {
           </div>
 
           <div className="mb-16 bg-card border-2 border-amber-400/60 rounded-2xl overflow-hidden shadow-sm">
-            <ProductPhoto src={IMAGES.roomba} alt="iRobot Roomba 694, a 600 series robot vacuum" wide />
+            <ProductPhoto src={IMAGES.roomba} alt="iRobot Roomba 694, a 600 series robot vacuum" />
             <div className="p-6 md:p-8">
               <h3 className="text-2xl font-bold mb-4"><a href={amazonHref(AMAZON.roomba)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">iRobot Roomba 600 Series</a></h3>
               <ul className="text-sm text-muted-foreground space-y-1 mb-6">

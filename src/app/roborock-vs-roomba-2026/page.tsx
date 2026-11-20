@@ -61,12 +61,12 @@ const IMAGES = {
 
 function ProductPhoto({ src, alt }: { src: string; alt: string }) {
   return (
-    <div className="border-b border-border bg-white py-6">
+    <div className="border-b border-border">
       <img
         src={src}
         alt={alt}
         referrerPolicy="no-referrer"
-        className="mx-auto block w-auto h-auto max-h-72 md:max-h-80 max-w-full object-contain"
+        className="block w-full h-auto"
       />
     </div>
   );
