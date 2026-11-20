@@ -19,8 +19,8 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "https://cms-uploads.mumsnet.com/cache/containers/images/black-friday-robot-vacuum.png/e13af740e22cfc3e9c96c1eff15ee0f7/black-friday-robot-vacuum.webp",
-        alt: "Black Friday robot vacuums",
+        url: "https://phandroid.com/wp-content/uploads/2022/06/ecovacs-x1-omni-8.jpg",
+        alt: "Robot vacuum docked in its station",
       },
     ],
   },
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     creator: "@Gadgets_finds",
     title: "Black Friday Robot Vacuums",
     description: "How to choose between the dock robots, the mop station, and the simple robots on sale.",
-    images: ["https://cms-uploads.mumsnet.com/cache/containers/images/black-friday-robot-vacuum.png/e13af740e22cfc3e9c96c1eff15ee0f7/black-friday-robot-vacuum.webp"],
+    images: ["https://phandroid.com/wp-content/uploads/2022/06/ecovacs-x1-omni-8.jpg"],
   },
 };
 
