@@ -29,6 +29,7 @@ const Footer = () => {
     Community: [
       { label: 'Travel chargers', href: '/best-portable-chargers-for-travel' },
       { label: 'Smartwatches', href: '/best-smartwatches-under-350' },
+      { label: 'Black Friday watches', href: '/black-friday-smartwatches' },
       { label: 'Mini gadgets', href: '/best-mini-gadgets-under-30' },
     ],
     Legal: [

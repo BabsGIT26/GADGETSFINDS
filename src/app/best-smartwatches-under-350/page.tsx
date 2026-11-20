@@ -95,7 +95,11 @@ export default function Page() {
             Under $350 you can buy a current watch from Apple, Samsung, Garmin, or Google. You cannot buy one watch that is the best on an iPhone and an Android phone at the same time. The Apple Watch only pairs with an iPhone. The Galaxy Watch and the Pixel Watch want an Android phone. Garmin is the one that stays useful on either.
           </p>
           <p className="text-muted-foreground mb-10 leading-relaxed">
-            This guide stays on four new listings. Each title links to that product, and each review ends with its own View on Amazon button. None of them is renewed. Open the page and check the case size, the band length, and whether the box says GPS or LTE before you pay. A cellular plan is a monthly bill this article is not recommending.
+            This guide stays on four new listings. Each title links to that product, and each review ends with its own View on Amazon button. None of them is renewed. Open the page and check the case size, the band length, and whether the box says GPS or LTE before you pay. A cellular plan is a monthly bill this article is not recommending. The sale list, including the Series 12 and the Garmin Venu 4, is the{" "}
+            <a href="/black-friday-smartwatches" className="underline decoration-amber-500/80 underline-offset-4 hover:text-foreground">
+              Black Friday smartwatch page
+            </a>
+            .
           </p>
 
           <h2 className="text-2xl md:text-3xl font-bold mt-12 mb-4">What actually changes the watch you should buy</h2>

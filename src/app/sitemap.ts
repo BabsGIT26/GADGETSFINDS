@@ -42,6 +42,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/black-friday-robot-vacuums/ilife-a30s',
     '/black-friday-robot-vacuums/eufy-l60',
     '/black-friday-robot-vacuums/lefant-m210-pro',
+    '/black-friday-smartwatches',
+    '/black-friday-smartwatches/apple-watch-se-3-40mm',
+    '/black-friday-smartwatches/apple-watch-series-12-42mm',
+    '/black-friday-smartwatches/apple-watch-series-12-cellular-46mm',
+    '/black-friday-smartwatches/garmin-venu-4',
+    '/black-friday-smartwatches/garmin-instinct-3-amoled',
+    '/black-friday-smartwatches/whoop-5-peak',
+    '/black-friday-smartwatches/carbinox-edge',
     '/roborock-vs-roomba-2026',
   ];
 

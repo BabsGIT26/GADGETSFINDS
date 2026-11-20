@@ -19,6 +19,13 @@ const QuickAccessGrid = () => {
       color: 'from-red-500 to-amber-500',
     },
     {
+      title: 'Black Friday watches',
+      description: 'Apple, Garmin, WHOOP, or a budget GPS watch',
+      icon: 'DevicePhoneMobileIcon',
+      href: '/black-friday-smartwatches',
+      color: 'from-sky-500 to-indigo-500',
+    },
+    {
       title: 'Robot vacuums',
       description: 'What is worth buying under $300, and what to skip',
       icon: 'SparklesIcon',

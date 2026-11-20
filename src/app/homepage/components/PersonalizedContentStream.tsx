@@ -43,6 +43,19 @@ const PersonalizedContentStream = () => {
       tags: ["Robot Vacuum", "Black Friday", "Buying Guide"],
     },
     {
+      id: 28,
+      title: "Black Friday Smartwatches",
+      excerpt: "Apple Watch, Garmin, a WHOOP membership, or a budget GPS watch. The phone decides it before the listing does.",
+      category: "Buying Guide",
+      image: "/assets/images/apple-watch-series-12-42.jpg",
+      alt: "Apple Watch Series 12 GPS 42mm in black",
+      author: "Gadgets Finds",
+      publishedDate: "November 20, 2026",
+      readTime: "7 min read",
+      tags: ["Smartwatch", "Black Friday", "Apple Watch", "Garmin"],
+      fit: "contain",
+    },
+    {
       id: 26,
       title: "Samsung 990 PRO 4TB Review",
       excerpt: "PCIe 4.0 NVMe up to 7,450 MB/s. The MZ-V9P4T0B/AM box has no heatsink. Read that before you buy it for a PS5.",
@@ -364,6 +377,7 @@ const PersonalizedContentStream = () => {
 
   const articleRoutes: { [key: number]: string } = {
     27: "/black-friday-robot-vacuums",
+    28: "/black-friday-smartwatches",
     26: "/samsung-990-pro-4tb-article",
     25: "/best-budget-robot-vacuums-under-300",
     24: "/best-ps5-accessories-2026",

@@ -10,6 +10,13 @@ const PRODUCT_NAMES: Record<string, string> = {
   B0G5YDVR99: "ILIFE A30s",
   B0CYNVGN26: "eufy L60 (Renewed)",
   B0CYL7273B: "Lefant M210 Pro",
+  B0HJBCX8VS: "Apple Watch Series 12 GPS 42mm",
+  B0HJB1CGR3: "Apple Watch SE 3 GPS 40mm",
+  B0HJ9RYJGL: "Apple Watch Series 12 GPS + Cellular 46mm",
+  B0FRG18TLS: "Garmin Venu 4 45mm",
+  B0DSC8JF59: "Garmin Instinct 3 AMOLED 45mm",
+  B0DY2SWV16: "WHOOP 5.0 Peak (12-month membership)",
+  B0G56N4239: "CARBINOX Edge",
 };
 
 function productName(link: HTMLAnchorElement, asin: string) {

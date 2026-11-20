@@ -8,6 +8,7 @@ const GUIDES = [
   { href: "/best-cheap-tablets-under-150", title: "Best cheap tablets under $150" },
   { href: "/best-portable-chargers-for-travel", title: "Best portable chargers for travel" },
   { href: "/best-smartwatches-under-350", title: "Best smartwatches under $350" },
+  { href: "/black-friday-smartwatches", title: "Black Friday smartwatches" },
   { href: "/best-mini-gadgets-under-30", title: "Best mini gadgets under $30" },
   { href: "/best-amazon-deals-this-week", title: "Best Amazon deals this week" },
 ] as const;
