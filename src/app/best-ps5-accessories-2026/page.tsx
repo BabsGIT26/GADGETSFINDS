@@ -138,7 +138,7 @@ export default function Page() {
                 A Samsung 990 Pro with its own heatsink is a common unofficial alternative that also clears Sony's 5,500 MB/s floor, provided the cooler still fits the height limit. It is not PlayStation-licensed and it is not the drive linked on this card. Buy that one only if you have already checked the heatsink dimensions against the bay.
               </p>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                This page does not pin an Amazon price because it moves. Open the listing and read the current number. The link is the 2TB heatsink model, not a 1TB drive and not a heatsink-less SN850 sold for PCs.
+                Ignore the old $80–$180 price band. In late 2026 a 2TB officially licensed PS5 drive has been selling from around $300 on sale up to several hundred dollars. This page does not pin an exact Amazon price because it moves. Open the listing and read the current number. The link is the 2TB heatsink model, not a 1TB drive and not a heatsink-less SN850 sold for PCs.
               </p>
               <div className="grid md:grid-cols-2 gap-6 mt-6">
                 <div>
@@ -164,6 +164,7 @@ export default function Page() {
               </h3>
               <ul className="text-sm text-muted-foreground space-y-1 mb-6">
                 <li><strong className="text-amber-500">Listing:</strong> Original white controller, sold new</li>
+                <li><strong className="text-amber-500">List price:</strong> $199.99, recently seen nearer $160</li>
                 <li><strong className="text-amber-500">Back buttons:</strong> Two slots, lever and half-dome sets included</li>
                 <li><strong className="text-amber-500">Battery and weight:</strong> 1,050 mAh built-in, about 325 g</li>
                 <li><strong className="text-amber-500">Cable:</strong> Braided USB-C, about 9.1 ft, with a lock</li>
@@ -175,10 +176,10 @@ export default function Page() {
                 Two back-button slots sit under the grips. The box includes both shapes Sony ships: a lever paddle and a half-dome. Either can be mapped to another button, which is the practical gain in shooters and fighting games. You keep your thumbs on the sticks while jump, slide, or a paddle input lives underneath. Trigger stops on L2 and R2 shorten the throw in three positions, which helps when a game does not need the full adaptive-trigger travel. Stick sensitivity and dead zones are adjustable, and the controller stores profiles you can swap with the function buttons without leaving the game. Sony allows up to four profiles on the pad.
               </p>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                The stick modules unlatch. If a stick starts to drift, you replace the module instead of the whole controller. Extra modules are sold separately. The kit also includes extra stick caps in different heights, a carrying case, and a braided USB-C cable about 9.1 feet long with a connector lock so the plug does not walk out during a match. It works on PS5 consoles, including the Pro, and on PC over USB or Bluetooth.
+                The stick modules unlatch. If a stick starts to drift, you replace the module instead of the whole controller. Extra modules are sold separately and have commonly been about $20 each. The kit also includes extra stick caps in different heights, a carrying case, and a braided USB-C cable about 9.1 feet long with a connector lock so the plug does not walk out during a match. It works on PS5 consoles, including the Pro, and on PC over USB or Bluetooth.
               </p>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                The tradeoff is battery and price. Sony's manual lists a built-in 1,050 mAh battery and a weight of about 325 g, heavier than a standard DualSense. Battery life is moderately shorter than the regular pad. With haptics and the speaker in use, a session often lands around five to six hours, not an all-day charge. It is still a luxury next to a standard DualSense. Confirm the live price on Amazon. Buy it if you will use the back buttons or you want a repairable stick. Skip it if a standard controller already does everything you need.
+                The tradeoff is battery and price. Sony's manual lists a built-in 1,050 mAh battery and a weight of about 325 g, heavier than a standard DualSense. Battery life is moderately shorter than the regular pad. With haptics and the speaker in use, a session often lands around five to six hours, not an all-day charge. The list price is $199.99. New white stock has recently been closer to $160, so the street price is better than it was at launch, but it is still a luxury next to a $70 DualSense. Buy it if you will use the back buttons or you want a repairable stick. Skip it if a standard controller already does everything you need.
               </p>
               <div className="grid md:grid-cols-2 gap-6 mt-6">
                 <div>
@@ -207,6 +208,7 @@ export default function Page() {
                 <li><strong className="text-amber-500">Wireless:</strong> PlayStation Link USB adapter, plus Bluetooth</li>
                 <li><strong className="text-amber-500">Battery:</strong> Sony rates about 30 hours</li>
                 <li><strong className="text-amber-500">Mic:</strong> Retractable boom</li>
+                <li><strong className="text-amber-500">Typical price:</strong> Around $149</li>
               </ul>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 Television speakers are fine until someone else is in the room, or until you want footsteps and voice chat in the same mix. The PULSE Elite is Sony's current over-ear headset for that job. The link is the official new headset, not a renewed listing and not the older Pulse 3D. The Pulse 3D used a different driver and a much shorter battery. Do not buy that older model thinking it is this one.
@@ -215,7 +217,7 @@ export default function Page() {
                 The Elite uses planar magnetic drivers, the same family of driver Sony brought over after acquiring Audeze, in a closed-back design. Wireless play on a PS5 goes through PlayStation Link. The box includes the USB adapter, and the same adapter also connects the headset to a PC or a Mac. Bluetooth is there for a phone or a second device, and the headset also works with a PlayStation Portal. A 3.5 mm wired connection is available when you do not want a dongle. On-ear controls cover volume and mic mute, and the boom mic retracts into the ear cup when you are listening alone. Sony rates battery life at about 30 hours. Independent tests have often run longer than that on the dongle, so 30 hours is a floor rather than a stretch claim. Charging is USB-C. A hanger is included so the headset can sit on a desk and charge instead of living on the floor.
               </p>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                Tempest 3D Audio is a console feature, not something the headset has to license separately. Any decent headphone can play it. What you pay for here is the official wireless path, the mic, the battery, and a fit that is meant for long sessions rather than a phone call. The weight is about 340 g. There is no active noise cancelling. If you already own a comfortable headset you like on PC, you do not need to replace it just because it lacks a PlayStation logo. If you want one headset that pairs cleanly with the console, the Portal, and a computer, this is the official one to buy. Confirm the live price on Amazon.
+                Tempest 3D Audio is a console feature, not something the headset has to license separately. Any decent headphone can play it. What you pay for here is the official wireless path, the mic, the battery, and a fit that is meant for long sessions rather than a phone call. The weight is about 340 g. There is no active noise cancelling. If you already own a comfortable headset you like on PC, you do not need to replace it just because it lacks a PlayStation logo. If you want one headset that pairs cleanly with the console, the Portal, and a computer, this is the official one to buy, usually around $149.
               </p>
               <div className="grid md:grid-cols-2 gap-6 mt-6">
                 <div>
@@ -253,7 +255,7 @@ export default function Page() {
                 You seat a controller onto the contacts until it clicks. The light bar blinks orange while it charges and turns off when the battery is full. Sony's manual says a fully drained controller takes about three hours, whether you dock one pad or two. The included adapter is rated 100–240 V in and 5.1 V, 2.8 A out, so the dock does not borrow power from the console. The station is about 52 mm wide, 62 mm tall, and 159 mm deep, and it weighs about 180 g. It matches the white-and-black look of the console instead of adding a third-party brick covered in LEDs.
               </p>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                The same contacts fit a DualSense Edge. Sony's own product photos show an Edge seated on this dock next to a standard controller, which is what the picture on this card shows. You do not need a separate Edge-only cradle. Stock on the official station comes and goes. Skip no-name docks that wobble or only charge through a loose USB plug. Confirm the live price on Amazon.
+                The same contacts fit a DualSense Edge. Sony's own product photos show an Edge seated on this dock next to a standard controller, which is what the picture on this card shows. You do not need a separate Edge-only cradle. Stock on the official station comes and goes. Expect it in the same $25–$50 band as the rest of the category, and skip no-name docks that wobble or only charge through a loose USB plug.
               </p>
               <div className="grid md:grid-cols-2 gap-6 mt-6">
                 <div>
@@ -282,12 +284,13 @@ export default function Page() {
                 <li><strong className="text-amber-500">Fits:</strong> CFI-1000, Slim CFI-2000 and CFI-2100, and PS5 Pro</li>
                 <li><strong className="text-amber-500">In the box:</strong> Stand, mounting screw, console attachment, manual</li>
                 <li><strong className="text-amber-500">Size:</strong> About 190 x 190 mm, 42 mm tall, roughly 30 g</li>
+                <li><strong className="text-amber-500">Price:</strong> List $29.99, recently tracked near $29</li>
               </ul>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 The launch PS5 included a stand that worked both flat and upright. Sony stopped putting a vertical stand in the box with the Slim and the PS5 Pro. Those consoles can still stand upright on their own, and airflow does not require a ring under them. What they lack is a wide, screwed-down base. In a household with kids, pets, or a narrow shelf, that is the difference between a console that stays put and one that tips when someone brushes past it. A disc-drive console is the more top-heavy of the two.
               </p>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                The official PlayStation Vertical Stand, model CFI-ZVS1, is a chrome ring with a black plate that screws into the console. Sony lists it for the original CFI-1000 group, the Slim CFI-2000 and CFI-2100 groups, and the PS5 Pro. The box includes the stand, a mounting screw, a console attachment, and a short manual. Dimensions are about 42 mm high and 190 mm across, and the stand itself is only about 30 g. It is not a light-up third-party base and it is not a horizontal foot. The link is Sony's stand. Confirm the live price on Amazon.
+                The official PlayStation Vertical Stand, model CFI-ZVS1, is a chrome ring with a black plate that screws into the console. Sony lists it for the original CFI-1000 group, the Slim CFI-2000 and CFI-2100 groups, and the PS5 Pro. The box includes the stand, a mounting screw, a console attachment, and a short manual. Dimensions are about 42 mm high and 190 mm across, and the stand itself is only about 30 g. It is not a light-up third-party base and it is not a horizontal foot. The link is Sony's stand, list price $29.99, recently tracked around $29.
               </p>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 Buy it if the console lives upright in a spot where a bump is likely, or if you simply want the official base under a Slim or a Pro. Leave it if the console is horizontal, or if your original launch unit still has the stand it came with. A cheap RGB stand does not cool the console and often blocks the lower vents. That is a worse trade than using no stand at all.
@@ -313,8 +316,8 @@ export default function Page() {
           </p>
           <ul className="list-disc pl-5 text-muted-foreground space-y-3 mb-8 leading-relaxed">
             <li>RGB light strips, shell plates, and decorative covers. They change the look and nothing else. Some plates also cover vents the console uses.</li>
-            <li>Clip-on cooling fans and extra exhaust gadgets. The PS5 already moves a lot of air. A fan strapped over an intake usually adds noise and can disturb the path Sony designed. Fix real heat problems by giving the console open space, not by buying a clip-on blower.</li>
-            <li>No-name controllers. Stick drift is the failure you are trying to avoid, and an unbranded pad with no replaceable modules is a worse bet than a standard DualSense. If you want repairable sticks, that is the Edge, not an unbranded pad with macro buttons.</li>
+            <li>Clip-on cooling fans and extra exhaust gadgets. The PS5 already moves a lot of air. A fan strapped over an intake usually adds noise and can disturb the path Sony designed. Fix real heat problems by giving the console open space, not by buying a $30 blower.</li>
+            <li>No-name controllers. Stick drift is the failure you are trying to avoid, and a $30 pad with no replaceable modules is a worse bet than a standard DualSense. If you want repairable sticks, that is the Edge, not an unbranded pad with macro buttons.</li>
             <li>The media remote, unless the PS5 is the television you actually watch. It is a real Sony product and a poor default purchase for someone who mostly plays games.</li>
             <li>USB hard drives bought as "PS5 storage upgrades." They do not play PS5 games. Use them for PS4 libraries and for parking installs you are willing to copy back later. The drive that plays PS5 games is the internal M.2.</li>
             <li>A second heatsink for a drive that already has one, and any SSD whose cooler exceeds 11.25 mm. It will not seat, or it will force the bay cover.</li>
@@ -349,7 +352,7 @@ export default function Page() {
             Start with the WD_BLACK SN850P if you are deleting games to install the next one. The 2TB heatsink model, WDBBYV0020BNC-WRSN, is the officially licensed drive, it plays games from the expansion bay, and it is the correct shape for the slot. Pay the 2026 price, not the price this category had two years ago, and do not buy a USB drive hoping it will do the same job. On a PS5 Pro that still has free space, spend the money elsewhere.
           </p>
           <p className="text-muted-foreground mb-4 leading-relaxed">
-            The PULSE Elite is the headset to add if you play with headphones and you want the official wireless path, a retractable mic, and a battery Sony rates around 30 hours. The DualSense Edge is the best controller in the lineup and an optional one: back buttons, trigger stops, profiles, and stick modules you can replace, and a shorter battery than the standard pad. Confirm the live price on Amazon. Get the white new listing, not Midnight Black and not a renewed unit, unless you have decided you want that other color on purpose.
+            The PULSE Elite is the headset to add if you play with headphones and you want the official wireless path, a retractable mic, and a battery Sony rates around 30 hours. The DualSense Edge is the best controller in the lineup and an optional one: back buttons, trigger stops, profiles, and stick modules you can replace, at a list price of $199.99 and a shorter battery than the standard pad. Get the white new listing, not Midnight Black and not a renewed unit, unless you have decided you want that other color on purpose.
           </p>
           <p className="text-muted-foreground mb-6 leading-relaxed">
             The DualSense Charging Station and the PlayStation Vertical Stand come after those. The dock, CFI-ZDS1, charges two controllers, including an Edge, in about three hours. The stand, CFI-ZVS1, screws a Slim or a Pro down if you insist on vertical. Neither one belongs ahead of storage or audio. Prices move, and a listing can sell through. Use the button under each review, confirm you are looking at the original new product, and check the live price before you order.
@@ -359,7 +362,7 @@ export default function Page() {
             items={[
               { q: "What PS5 accessory should I buy first?", a: "The WD_BLACK SN850P 2TB if you are deleting games to install new ones. A PS5 Pro with free space can skip the SSD." },
               { q: "Does a USB hard drive play PS5 games?", a: "No. USB storage can hold PS4 games and parked installs. PS5 games have to run from the internal SSD or an M.2 drive in the expansion bay." },
-              { q: "Is the DualSense Edge worth it?", a: "Only if you want back buttons, trigger stops, and stick modules you can replace. The battery is shorter than a standard DualSense. Confirm the live price on Amazon." },
+              { q: "Is the DualSense Edge worth it?", a: "Only if you want back buttons, trigger stops, and stick modules you can replace. It lists at $199.99 and the battery is shorter than a standard DualSense." },
               { q: "Which PS5 accessories are a waste of money?", a: "RGB plates, clip-on cooling fans, no-name controllers, and a second heatsink for a drive that already has one." },
             ]}
           />

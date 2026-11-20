@@ -142,7 +142,7 @@ export const VACUUMS: Vacuum[] = [
     alt: "Lefant M210 Pro robot vacuum in white",
     asin: "B0CYL7273B",
     card: "The simple daily robot from the budget guide. No dock. You empty it. Fine for a small home.",
-    fit: "The white M210 Pro is the budget robot from our longer under-$300 guide. Lefant sells it as a slim vacuum with app and voice control, several cleaning modes, and a stated runtime around 120 minutes. In that guide it is the everyday pick for hard floors and moderate pet hair, not a mapping flagship.",
+    fit: "The white M210 Pro is the budget robot from our longer under-$300 guide, and it is the listing that currently has a buy box. Lefant sells it as a slim vacuum with app and voice control, several cleaning modes, and a stated runtime around 120 minutes. In that guide it is the everyday pick for hard floors and moderate pet hair, not a mapping flagship.",
     skip: "Skip it if you need no-go zones, a mop, or a dock. A house that sheds heavily will fill this bin. Then look at the ILIFE if you still do not want a dock, or at the eufy C10 if you do.",
     points: [
       "No dock, so it takes one charging pad and nothing else.",

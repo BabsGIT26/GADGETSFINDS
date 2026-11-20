@@ -8,12 +8,12 @@ import { FaqJsonLd, ProductListJsonLd } from "@/components/common/GuideFaq";
 export const metadata: Metadata = {
   title: "Best Robot Vacuums Under $300 in 2026 | Gadgets Finds",
   description:
-    "Best robot vacuums under $300 in 2026: Lefant M210 Pro for most homes, eufy G30 for pet hair, and Roborock Q5 when the live price still fits. What to skip.",
+    "Best robot vacuums under $300 in 2026: Lefant M210 Pro for most homes, eufy G30 for pet hair, and Roborock Q5 when it drops near $300. What to skip.",
   metadataBase: new URL("https://www.gadgets-finds.com"),
   alternates: { canonical: "https://www.gadgets-finds.com/best-budget-robot-vacuums-under-300" },
   openGraph: {
     title: 'Best Robot Vacuums Under $300 in 2026',
-    description: 'Lefant M210 Pro for most homes, eufy G30 for pet hair, and Roborock Q5 when the live price still fits.',
+    description: 'Lefant M210 Pro for most homes, eufy G30 for pet hair, and Roborock Q5 when it drops near $300.',
     url: 'https://www.gadgets-finds.com/best-budget-robot-vacuums-under-300',
     siteName: "Gadgets Finds",
     type: "article",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     site: "@Gadgets_finds",
     creator: "@Gadgets_finds",
     title: 'Best Robot Vacuums Under $300 in 2026',
-    description: 'Lefant M210 Pro for most homes, eufy G30 for pet hair, and Roborock Q5 when the live price still fits.',
+    description: 'Lefant M210 Pro for most homes, eufy G30 for pet hair, and Roborock Q5 when it drops near $300.',
     images: ['https://www.gadgets-finds.com/assets/images/eufy-robovac-g30-hq.jpg'],
   },
 };
@@ -100,10 +100,10 @@ export default function Page() {
           <p className="text-muted-foreground mb-8 text-sm">Approximate length: 2,300+ words</p>
 
           <p className="text-muted-foreground mb-4 text-lg leading-relaxed">
-            Robot vacuums priced under $300 have improved significantly over the past two years. In 2026, several models in this range can handle daily cleaning in apartments and smaller homes with far better consistency than older budget robots. They still lag flagship robots in obstacle avoidance, multi-floor mapping, and self-emptying. The gap has narrowed enough that many people no longer need a flagship for acceptable results.
+            Robot vacuums priced under $300 have improved significantly over the past two years. In 2026, several models in this range can handle daily cleaning in apartments and smaller homes with far better consistency than older budget robots. While they still lag behind $600–$1,000 flagships in obstacle avoidance, multi-floor mapping, and self-emptying capability, the gap has narrowed enough that many people no longer need to spend premium prices for acceptable results.
           </p>
           <p className="text-muted-foreground mb-4 leading-relaxed">
-            This guide covers robots aimed at a budget under $300. Open Amazon for the live price. Recommendations are based on suction, navigation, pet hair, edge cleaning, battery, the app, and maintenance, not a saved price.
+            This guide covers the strongest options currently available around or under $300 on Amazon. Recommendations are based on suction performance, navigation quality, pet hair handling, edge cleaning, battery life, app reliability, maintenance demands, and typical street pricing.
           </p>
           <p className="text-muted-foreground mb-10 leading-relaxed">
             For a shorter Black Friday list, with smaller photos and more models, see{" "}
@@ -155,13 +155,14 @@ export default function Page() {
             <div className="p-6 md:p-8">
               <h3 className="text-2xl font-bold mb-4"><a href={amazonHref(AMAZON.lefant)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">Lefant M210 Pro</a></h3>
               <ul className="text-sm text-muted-foreground space-y-1 mb-6">
+                <li><strong className="text-amber-500">Typical price:</strong> $179–$229</li>
                 <li><strong className="text-amber-500">Claimed suction:</strong> Approximately 4,000 Pa</li>
                 <li><strong className="text-amber-500">Navigation:</strong> Gyroscopic with structured cleaning paths</li>
                 <li><strong className="text-amber-500">Runtime:</strong> Up to 120 minutes</li>
                 <li><strong className="text-amber-500">Dustbin capacity:</strong> Around 600 ml</li>
               </ul>
               <p className="text-muted-foreground mb-4">
-                The Lefant M210 Pro currently offers one of the strongest combinations of suction and cleaning logic in this guide. Unlike older random robots, it follows more deliberate paths, which reduces the number of passes needed to clean a room thoroughly.
+                The Lefant M210 Pro currently offers one of the strongest combinations of suction and cleaning logic under $250. Unlike older random robots, it follows more deliberate paths, which reduces the number of passes needed to clean a room thoroughly.
               </p>
               <p className="text-muted-foreground mb-4">
                 On hard floors it removes fine dust, crumbs, and small debris effectively. On low- and medium-pile carpet it handles most everyday dirt and moderate amounts of pet hair. High-pile rugs reduce efficiency, which is normal at this price. Edge cleaning is above average for the category thanks to a reasonably aggressive side brush.
@@ -179,7 +180,7 @@ export default function Page() {
                   <p className="text-sm text-muted-foreground">Mapping remains basic. It can still get stuck on cables, low thresholds, or certain rug edges. The dustbin fills relatively quickly in homes with heavy shedding.</p>
                 </div>
               </div>
-              <p className="mt-6 text-sm font-medium">Verdict: Best overall value. Best suited for buyers who want the everyday cleaner in this guide.</p>
+              <p className="mt-6 text-sm font-medium">Verdict: Best overall value. Best suited for: Buyers who want the best everyday cleaner under $250 without waiting for sales.</p>
               <ViewOnAmazon href={AMAZON.lefant} name="Lefant M210 Pro" />
             </div>
           </div>
@@ -189,6 +190,7 @@ export default function Page() {
             <div className="p-6 md:p-8">
               <h3 className="text-2xl font-bold mb-4"><a href={amazonHref(AMAZON.eufy)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">eufy RoboVac G30</a></h3>
               <ul className="text-sm text-muted-foreground space-y-1 mb-6">
+                <li><strong className="text-amber-500">Typical price:</strong> $199–$249</li>
                 <li><strong className="text-amber-500">Suction:</strong> Roughly 2,000–2,500 Pa in boost mode</li>
                 <li><strong className="text-amber-500">Navigation:</strong> Gyroscopic</li>
                 <li><strong className="text-amber-500">Runtime:</strong> Approximately 100–110 minutes</li>
@@ -223,13 +225,14 @@ export default function Page() {
             <div className="p-6 md:p-8">
               <h3 className="text-2xl font-bold mb-4"><a href={amazonHref(AMAZON.q5)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">Roborock Q5</a></h3>
               <ul className="text-sm text-muted-foreground space-y-1 mb-6">
+                <li><strong className="text-amber-500">Typical price:</strong> $279–$349 (frequently approaches or dips under $300 during sales)</li>
                 <li><strong className="text-amber-500">Suction:</strong> Approximately 2,700 Pa</li>
                 <li><strong className="text-amber-500">Navigation:</strong> LiDAR</li>
                 <li><strong className="text-amber-500">Runtime:</strong> Up to 150 minutes</li>
                 <li><strong className="text-amber-500">Dustbin:</strong> Around 470 ml</li>
               </ul>
               <p className="text-muted-foreground mb-4">
-                When the live Amazon price still fits this guide, the Q5 becomes the strongest option on this list. LiDAR navigation allows it to create accurate maps, support no-go zones, and clean individual rooms — features that remain uncommon under $350.
+                When priced near $300, the Q5 becomes the strongest option on this list. LiDAR navigation allows it to create accurate maps, support no-go zones, and clean individual rooms — features that remain uncommon under $350.
               </p>
               <p className="text-muted-foreground mb-4">
                 It moves in efficient straight lines and covers floor space more thoroughly than gyroscopic robots. Automatic carpet boost increases suction on rugs. Obstacle avoidance is better than most budget models, although thin cables and very dark surfaces can still cause issues. Overall debris and pet hair pickup is strong.
@@ -241,7 +244,7 @@ export default function Page() {
                 </div>
                 <div>
                   <p className="font-semibold text-amber-600 mb-2">Limitations</p>
-                  <p className="text-sm text-muted-foreground">Only competitive in this guide when the live Amazon price still fits the budget. The dustbin is smaller than some rivals. It is still a step below Roborock’s higher-end models in obstacle avoidance.</p>
+                  <p className="text-sm text-muted-foreground">Only competitive in this guide when discounted close to $300. The dustbin is smaller than some rivals. It is still a step below Roborock’s higher-end models in obstacle avoidance.</p>
                 </div>
               </div>
               <p className="mt-6 text-sm font-medium">Verdict: Best performance when discounted. Best suited for: Buyers who monitor prices and want the best navigation available near the $300 mark.</p>
@@ -255,6 +258,7 @@ export default function Page() {
             <div className="p-6 md:p-8">
               <h3 className="text-2xl font-bold mb-4"><a href={amazonHref(AMAZON.roomba)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">iRobot Roomba 600 Series</a></h3>
               <ul className="text-sm text-muted-foreground space-y-1 mb-6">
+                <li><strong className="text-amber-500">Typical price:</strong> $149–$199 for renewed units</li>
                 <li><strong className="text-amber-500">Suction:</strong> Moderate</li>
                 <li><strong className="text-amber-500">Navigation:</strong> Basic adaptive</li>
                 <li><strong className="text-amber-500">Runtime:</strong> 60–90 minutes</li>
@@ -297,14 +301,15 @@ export default function Page() {
                 <tr className="border-t"><td className="p-3">Mapping capability</td><td className="p-3">Limited</td><td className="p-3">Limited</td><td className="p-3">Good</td><td className="p-3">None</td></tr>
                 <tr className="border-t bg-muted/30"><td className="p-3">App experience</td><td className="p-3">Good</td><td className="p-3">Very Good</td><td className="p-3">Excellent</td><td className="p-3">Basic</td></tr>
                 <tr className="border-t"><td className="p-3">Edge cleaning</td><td className="p-3">Above average</td><td className="p-3">Average</td><td className="p-3">Good</td><td className="p-3">Average</td></tr>
-                                <tr className="border-t"><td className="p-3">Ideal user</td><td className="p-3">Most people</td><td className="p-3">Pet owners</td><td className="p-3">Sale hunters</td><td className="p-3">Simplicity seekers</td></tr>
+                <tr className="border-t bg-muted/30"><td className="p-3">Typical price range</td><td className="p-3">$180–$220</td><td className="p-3">$200–$250</td><td className="p-3">$280–$320</td><td className="p-3">$150–$200</td></tr>
+                <tr className="border-t"><td className="p-3">Ideal user</td><td className="p-3">Most people</td><td className="p-3">Pet owners</td><td className="p-3">Sale hunters</td><td className="p-3">Simplicity seekers</td></tr>
               </tbody>
             </table>
           </div>
 
           <h2 className="text-2xl md:text-3xl font-bold mt-12 mb-6">Recommendations by Home Type and Needs</h2>
           <ul className="space-y-3 mb-12 text-muted-foreground">
-            <li><strong className="text-amber-500">Best overall in this guide:</strong> Lefant M210 Pro</li>
+            <li><strong className="text-amber-500">Best overall under $250:</strong> Lefant M210 Pro</li>
             <li><strong className="text-amber-500">Homes with moderate to heavy pet shedding:</strong> eufy RoboVac G30</li>
             <li><strong className="text-amber-500">Want mapping and can wait for a discount:</strong> Roborock Q5</li>
             <li><strong className="text-amber-500">Prefer the simplest possible option:</strong> Roomba 600 Series</li>
@@ -373,7 +378,7 @@ export default function Page() {
           <h2 className="text-2xl md:text-3xl font-bold mt-12 mb-6">Final Verdict</h2>
           <div className="bg-amber-400/10 border-2 border-amber-400 rounded-2xl p-6 md:p-8 mb-10">
             <p className="text-muted-foreground leading-relaxed mb-4">
-              The Lefant M210 Pro is the strongest all-around recommendation for most buyers in this guide. It combines useful suction with more efficient cleaning patterns than typical budget robots. Households focused on pet hair should lean toward the eufy RoboVac G30. Buyers who want the best navigation should open the Roborock Q5 and keep it only if the live Amazon price still fits this guide.
+              The Lefant M210 Pro is the strongest all-around recommendation for most buyers right now under $250. It combines useful suction with more efficient cleaning patterns than typical budget robots. Households focused on pet hair should lean toward the eufy RoboVac G30. Buyers who monitor prices should watch the Roborock Q5 — when it approaches $300, it offers the best overall performance on this list thanks to LiDAR navigation.
             </p>
             <p className="text-muted-foreground">
               Prices, promotions, and stock change frequently on Amazon. Always confirm the current price, recent customer feedback, and return policy before ordering.
