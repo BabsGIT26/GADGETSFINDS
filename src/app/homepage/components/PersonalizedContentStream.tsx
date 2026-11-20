@@ -432,7 +432,7 @@ const PersonalizedContentStream = () => {
 
   const filteredItems = getFilteredItems();
 
-  const guideIds = [26, 25, 24, 23, 22, 21, 20, 19];
+  const guideIds = [28, 27, 26, 25, 24, 23, 22, 21];
   const guideItems = guideIds
     .map((id) => contentItems.find((item) => item.id === id))
     .filter((item): item is ContentItem => Boolean(item));
