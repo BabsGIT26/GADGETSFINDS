@@ -66,8 +66,8 @@ export default async function Page({ params }: Props) {
               Back to the Black Friday list
             </a>
           </p>
-          <div className="bg-white rounded-xl border border-border mb-8 h-48 flex items-center justify-center px-4">
-            <img src={item.image} alt={item.alt} className="max-h-44 w-auto max-w-full object-contain" />
+          <div className="bg-white rounded-xl border border-border mb-8 h-64 flex items-center justify-center px-4">
+            <img src={item.image} alt={item.alt} className="max-h-60 w-auto max-w-full object-contain" />
           </div>
           <h2 className="text-xl font-bold mb-2">Who it is for</h2>
           <p className="text-muted-foreground leading-relaxed mb-6">{item.fit}</p>
