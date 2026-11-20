@@ -9,7 +9,7 @@ import CommentSection from "@/components/comments/CommentSection";
 const AMAZON =
   "https://www.amazon.com/dp/B0FTMY4YZ2?tag=gadgetsfindswebsite-20";
 
-const OG_IMAGE = "https://m.media-amazon.com/images/I/51f-7a6i5PL.jpg";
+const OG_IMAGE = "/assets/images/original/controller.jpg";
 
 export const metadata: Metadata = {
   title: "PlayStation 5 Pro — 2TB | Gadgets Finds",

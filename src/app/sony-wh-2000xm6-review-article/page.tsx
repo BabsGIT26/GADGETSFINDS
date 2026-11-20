@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: 'https://www.gadgets-finds.com/sony-wh-2000xm6-review-article',
     type: 'article',
     images: [{
-      url: "https://www.gadgets-finds.com/assets/images/sony_wh_1000xm6.png",
+      url: "https://www.gadgets-finds.com/assets/images/original/audio.jpg",
       width: 1200,
       height: 630,
       alt: 'Sony WH-2000XM6 Headphones'
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     creator: '@Gadgets_finds',
     title: 'Sony WH-2000XM6 Review',
     description: 'Premium noise cancellation and exceptional audio quality.',
-    images: ['https://www.gadgets-finds.com/assets/images/sony_wh_1000xm6.png']
+    images: ['https://www.gadgets-finds.com/assets/images/original/audio.jpg']
   }
 };
 
@@ -40,7 +40,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Sony WH-2000XM6 Review',
   description: 'Sony WH-2000XM6 headphones deliver premium noise cancellation and exceptional audio quality.',
-  image: "https://www.gadgets-finds.com/assets/images/sony_wh_1000xm6.png",
+  image: "https://www.gadgets-finds.com/assets/images/original/audio.jpg",
   datePublished: '2026-01-25',
   dateModified: '2026-01-25',
   author: { '@type': 'Organization', name: 'Gadgets Finds' },
@@ -56,7 +56,7 @@ export default function SonyWH2000XM6Article() {
         {/* Hero Section */}
         <div className="relative h-[400px] md:h-[500px] w-full">
           <AppImage
-            src="/assets/images/sony_wh_1000xm6.png"
+            src="/assets/images/original/audio.jpg"
             alt="Sony WH-1000XM6 wireless headphones"
             className="w-full h-full object-cover" />
           

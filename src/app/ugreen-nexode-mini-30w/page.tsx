@@ -5,7 +5,7 @@ import AmazonDealBox from "@/components/common/AmazonDealBox";
 import Link from "next/link";
 
 const AMAZON = "https://www.amazon.com/UGREEN-Charger-Foldable-Compact-Adapter/dp/B0CBJQMC9H?tag=gadgetsfindswebsmediavid-20";
-const IMAGE = "https://m.media-amazon.com/images/I/21QwqmpWChL.jpg";
+const IMAGE = "/assets/images/original/charger.jpg";
 
 export const metadata: Metadata = {
   robots: { index: false, follow: true },

@@ -5,7 +5,7 @@ import AmazonDealBox from "@/components/common/AmazonDealBox";
 import Link from "next/link";
 
 const AMAZON = "https://www.amazon.com/UGREEN-5000mAh-Ultra-Magnetic-Power/dp/B0F6NFHB31?tag=gadgetsfindswebsmediavid-20";
-const IMAGE = "https://m.media-amazon.com/images/I/51FsefzzP3L.jpg";
+const IMAGE = "/assets/images/original/charger.jpg";
 
 export const metadata: Metadata = {
   robots: { index: false, follow: true },

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     siteName: "Gadgets Finds",
     type: "article",
     images: [{
-      url: 'https://www.gadgets-finds.com/assets/images/fire-tv-stick-4k-card.jpg',
+      url: 'https://www.gadgets-finds.com/assets/images/original/tv.jpg',
       alt: 'Amazon Fire TV Stick 4K',
     }],
   },
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     creator: "@Gadgets_finds",
     title: 'Best Amazon Deals This Week',
     description: 'Fire TV prices checked on November 17, 2026. Confirm the current price before you buy.',
-    images: ['https://www.gadgets-finds.com/assets/images/fire-tv-stick-4k-card.jpg'],
+    images: ['https://www.gadgets-finds.com/assets/images/original/tv.jpg'],
   },
 };
 
@@ -58,10 +58,10 @@ function ViewOnAmazon({ href, name }: { href: string; name: string }) {
 }
 
 const IMAGES = {
-  stick: "/assets/images/fire-tv-stick-4k.jpg",
-  plus: "/assets/images/fire-tv-stick-4k-plus.jpg",
-  select: "/assets/images/fire-tv-stick-4k-select.jpg",
-  cube: "/assets/images/fire-tv-cube.jpg",
+  stick: "/assets/images/original/tv.jpg",
+  plus: "/assets/images/original/tv.jpg",
+  select: "/assets/images/original/tv.jpg",
+  cube: "/assets/images/original/tv.jpg",
 } as const;
 
 function ProductPhoto({ src, alt }: { src: string; alt: string }) {

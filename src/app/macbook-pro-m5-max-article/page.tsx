@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "/assets/images/macbook_pro_m5_max.png",
+        url: "/assets/images/original/laptop.jpg",
         width: 1200,
         height: 630,
         alt: "Apple MacBook Pro 16-inch M5 Max",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@Gadgets_finds",
     title: "MacBook Pro 16 M5 Max — 36GB / 2TB",
-    images: ["/assets/images/macbook_pro_m5_max.png"],
+    images: ["/assets/images/original/laptop.jpg"],
   },
 };
 
@@ -131,7 +131,7 @@ export default function Page() {
 
           <div className="flex justify-center mb-8">
             <AppImage
-              src="/assets/images/macbook_pro_m5_max.png"
+              src="/assets/images/original/laptop.jpg"
               alt="Apple MacBook Pro 16-inch M5 Max"
               className="max-h-[400px] w-auto max-w-[85%] object-contain"
             />

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     siteName: "Gadgets Finds",
     type: "article",
     images: [{
-      url: 'https://www.gadgets-finds.com/assets/images/wd-black-sn850p.jpg',
+      url: 'https://www.gadgets-finds.com/assets/images/original/gadget.jpg',
       alt: 'WD_BLACK SN850P SSD for PS5',
     }],
   },
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     creator: "@Gadgets_finds",
     title: 'Best PS5 Accessories Worth Buying in 2026',
     description: 'WD_BLACK SN850P, DualSense Edge, PULSE Elite, the charging station, and the vertical stand.',
-    images: ['https://www.gadgets-finds.com/assets/images/wd-black-sn850p.jpg'],
+    images: ['https://www.gadgets-finds.com/assets/images/original/gadget.jpg'],
   },
 };
 
@@ -59,11 +59,11 @@ function ViewOnAmazon({ href, name }: { href: string; name: string }) {
 }
 
 const IMAGES = {
-  ssd: "/assets/images/wd-black-sn850p.jpg",
-  edge: "/assets/images/dualsense-edge.jpg",
-  pulse: "/assets/images/pulse-elite.jpg",
-  dock: "/assets/images/dualsense-charging-station.jpg",
-  stand: "/assets/images/ps5-vertical-stand.jpg",
+  ssd: "/assets/images/original/gadget.jpg",
+  edge: "/assets/images/original/controller.jpg",
+  pulse: "/assets/images/original/audio.jpg",
+  dock: "/assets/images/original/controller.jpg",
+  stand: "/assets/images/original/controller.jpg",
 } as const;
 
 function ProductPhoto({ src, alt, wide = false }: { src: string; alt: string; wide?: boolean }) {

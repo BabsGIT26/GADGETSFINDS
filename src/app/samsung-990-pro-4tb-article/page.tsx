@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     siteName: "Gadgets Finds",
     type: "article",
     images: [{
-      url: "https://www.gadgets-finds.com/assets/images/samsung-990-pro-4tb.jpg",
+      url: "https://www.gadgets-finds.com/assets/images/original/gadget.jpg",
       width: 547,
       height: 365,
       alt: "Samsung 990 PRO 4TB NVMe SSD",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     creator: "@Gadgets_finds",
     title: 'Samsung 990 PRO 4TB Review',
     description: 'PCIe 4.0 NVMe SSD, model MZ-V9P4T0B/AM. Rated to 7,450 MB/s read and 6,900 MB/s write.',
-    images: ['https://www.gadgets-finds.com/assets/images/samsung-990-pro-4tb.jpg'],
+    images: ['https://www.gadgets-finds.com/assets/images/original/gadget.jpg'],
   },
 };
 
@@ -102,7 +102,7 @@ export default function Page() {
           <div className="mb-8 bg-card border-2 border-amber-400/60 rounded-2xl overflow-hidden shadow-sm">
             <div className="border-b border-border bg-white py-6">
               <img
-                src="/assets/images/samsung-990-pro-4tb.jpg"
+                src="/assets/images/original/gadget.jpg"
                 alt="Samsung 990 PRO 4TB NVMe SSD"
                 className="mx-auto block w-auto h-auto max-h-72 md:max-h-80 max-w-full object-contain"
               />

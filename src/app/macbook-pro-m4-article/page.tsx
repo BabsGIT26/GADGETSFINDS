@@ -22,7 +22,7 @@ export default function Page() {
       <article className="min-h-screen bg-background pt-28 md:pt-16">
         <div className="w-full bg-muted flex items-center justify-center py-10">
           <AppImage
-            src="/assets/images/macbook_pro_m_four.png"
+            src="/assets/images/original/laptop.jpg"
             alt="MacBook Pro M4"
             className="max-h-[400px] w-auto max-w-[85%] object-contain"
           />

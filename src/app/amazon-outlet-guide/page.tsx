@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "/assets/images/amazon_outlet.png",
+        url: "/assets/images/original/gadget.jpg",
         width: 1200,
         height: 630,
         alt: "Amazon Outlet",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@Gadgets_finds",
     title: "Amazon Outlet — Gadgets Finds",
-    images: ["/assets/images/amazon_outlet.png"],
+    images: ["/assets/images/original/gadget.jpg"],
   },
 };
 
@@ -89,7 +89,7 @@ export default function Page() {
 
           <div className="w-full flex items-center justify-center py-6 mb-8">
             <AppImage
-              src="/assets/images/amazon_outlet.png"
+              src="/assets/images/original/gadget.jpg"
               alt="Amazon Outlet"
               className="max-h-[400px] w-auto max-w-full object-contain"
             />

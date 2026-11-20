@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     siteName: "Gadgets Finds",
     type: "article",
     images: [{
-      url: 'https://www.gadgets-finds.com/assets/images/roborock-qrevo-s-pro.jpg',
+      url: 'https://www.gadgets-finds.com/assets/images/original/vacuum-b.jpg',
       alt: 'Roborock Qrevo S Pro robot vacuum',
     }],
   },
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     creator: "@Gadgets_finds",
     title: 'Roborock vs Roomba in 2026',
     description: 'Suction, navigation, mopping, and which robot vacuum is the better buy in 2026.',
-    images: ['https://www.gadgets-finds.com/assets/images/roborock-qrevo-s-pro.jpg'],
+    images: ['https://www.gadgets-finds.com/assets/images/original/vacuum-b.jpg'],
   },
 };
 
@@ -55,8 +55,8 @@ function ViewOnAmazon({ href, name }: { href: string; name: string }) {
 }
 
 const IMAGES = {
-  qrevo: "/assets/images/roborock-qrevo-s-pro.jpg",
-  roomba: "/assets/images/roomba-combo-10-max.jpg",
+  qrevo: "/assets/images/original/vacuum-b.jpg",
+  roomba: "/assets/images/original/vacuum-b.jpg",
 } as const;
 
 function ProductPhoto({ src, alt }: { src: string; alt: string }) {

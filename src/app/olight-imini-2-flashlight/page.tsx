@@ -5,7 +5,7 @@ import AmazonDealBox from "@/components/common/AmazonDealBox";
 import Link from "next/link";
 
 const AMAZON = "https://www.amazon.com/OLIGHT-Rechargeable-Keychain-Flashlight-Emergencies/dp/B0C54ZH8WW?tag=gadgetsfindswebsmediavid-20";
-const IMAGE = "https://m.media-amazon.com/images/I/51vdV5DwSrL.jpg";
+const IMAGE = "/assets/images/original/gadget.jpg";
 
 export const metadata: Metadata = {
   robots: { index: false, follow: true },

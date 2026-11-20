@@ -19,14 +19,14 @@ export const metadata: Metadata = {
     url: "https://www.gadgets-finds.com/playstation-5-article",
     siteName: "Gadgets Finds",
     type: "article",
-    images: [{ url: "/assets/images/playstation_5.png", width: 1200, height: 630, alt: "PlayStation 5 Slim" }],
+    images: [{ url: "/assets/images/original/controller.jpg", width: 1200, height: 630, alt: "PlayStation 5 Slim" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@Gadgets_finds",
     title: "PlayStation 5 — Gadgets Finds",
     description: "PS5 Slim and GTA 6 on November 19, 2026.",
-    images: ["/assets/images/playstation_5.png"],
+    images: ["/assets/images/original/controller.jpg"],
   },
 };
 
@@ -36,7 +36,7 @@ export default function Page() {
       <Header />
       <article className="min-h-screen bg-background pt-28 md:pt-16">
          <div className="w-full bg-muted flex items-center justify-center py-10 pb-2">
-          <AppImage src="/assets/images/playstation_5.png" alt="PlayStation 5 Slim console" className="max-h-[400px] w-auto max-w-[85%] object-contain" />
+          <AppImage src="/assets/images/original/controller.jpg" alt="PlayStation 5 Slim console" className="max-h-[400px] w-auto max-w-[85%] object-contain" />
         </div>
         <div className="container mx-auto px-4 pt-2 pb-10 max-w-3xl">
           <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">Gaming</p>

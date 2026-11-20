@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "https://m.media-amazon.com/images/I/811IbTkEvnL.jpg",
+        url: "/assets/images/original/laptop.jpg",
         width: 1200,
         height: 630,
         alt: "NVIDIA RTX 50-Series GPUs lowest prices",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "NVIDIA RTX 50-Series Lowest Prices Right Now",
     description: "Best current deals on RTX 5090, 5080, 5070 Ti and more as GPU prices climb.",
-    images: ["https://m.media-amazon.com/images/I/811IbTkEvnL.jpg"],
+    images: ["/assets/images/original/laptop.jpg"],
   },
 };
 
@@ -74,7 +74,7 @@ export default function Page() {
               </div>
             </div>
             <img
-              src="https://m.media-amazon.com/images/I/811IbTkEvnL.jpg"
+              src="/assets/images/original/laptop.jpg"
               alt="ASUS ROG Astral GeForce RTX 5090 32GB GDDR7 OC Edition"
               className="w-36 md:w-48 h-auto rounded-lg object-contain flex-shrink-0 mx-auto md:mx-0"
             />
@@ -103,7 +103,7 @@ export default function Page() {
               </div>
             </div>
             <img
-              src="https://m.media-amazon.com/images/I/71oOraaImGL.jpg"
+              src="/assets/images/original/laptop.jpg"
               alt="PNY NVIDIA GeForce RTX 5080 Triple-Fan 16GB GDDR7"
               className="w-36 md:w-48 h-auto rounded-lg object-contain flex-shrink-0 mx-auto md:mx-0"
             />
@@ -131,7 +131,7 @@ export default function Page() {
               </div>
             </div>
             <img
-              src="https://m.media-amazon.com/images/I/81POeoI3lSL.jpg"
+              src="/assets/images/original/laptop.jpg"
               alt="ASUS TUF Gaming GeForce RTX 5070 Ti 16GB GDDR7 OC Edition"
               className="w-36 md:w-48 h-auto rounded-lg object-contain flex-shrink-0 mx-auto md:mx-0"
             />
@@ -188,7 +188,7 @@ export default function Page() {
               </div>
             </div>
             <img
-              src="https://m.media-amazon.com/images/I/41LK8D7pR7L._SL500_.jpg"
+              src="/assets/images/original/laptop.jpg"
               alt="ASUS Dual GeForce RTX 5060 Ti 8GB GDDR7 OC Edition"
               className="w-36 md:w-48 h-auto rounded-lg object-contain flex-shrink-0 mx-auto md:mx-0"
             />
@@ -216,7 +216,7 @@ export default function Page() {
               </div>
             </div>
             <img
-              src="https://m.media-amazon.com/images/I/81aN+w8d4GL.jpg"
+              src="/assets/images/original/laptop.jpg"
               alt="ASUS Prime GeForce RTX 5060 Ti 16GB GDDR7"
               className="w-36 md:w-48 h-auto rounded-lg object-contain flex-shrink-0 mx-auto md:mx-0"
             />

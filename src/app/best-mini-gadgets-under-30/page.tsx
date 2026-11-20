@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     siteName: "Gadgets Finds",
     type: "article",
     images: [{
-      url: 'https://www.gadgets-finds.com/assets/images/anker-nano-45w.jpg',
+      url: 'https://www.gadgets-finds.com/assets/images/original/charger.jpg',
       alt: 'Anker Nano 45W charger',
     }],
   },
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     creator: "@Gadgets_finds",
     title: 'Best Mini Gadgets Under $30 in 2026',
     description: 'Anker Nano 45W, a 5-in-1 USB-C hub, a 100W cable two-pack, and a Galaxy SmartTag2.',
-    images: ['https://www.gadgets-finds.com/assets/images/anker-nano-45w.jpg'],
+    images: ['https://www.gadgets-finds.com/assets/images/original/charger.jpg'],
   },
 };
 
@@ -58,9 +58,9 @@ function ViewOnAmazon({ href, name }: { href: string; name: string }) {
 }
 
 const IMAGES = {
-  charger: "/assets/images/anker-nano-45w.jpg",
-  hub: "/assets/images/anker-5in1-hub.jpg",
-  cable: "/assets/images/anker-100w-cable.jpg",
+  charger: "/assets/images/original/charger.jpg",
+  hub: "/assets/images/original/charger.jpg",
+  cable: "/assets/images/original/charger.jpg",
   tag: "/assets/images/galaxy-smarttag2.jpg",
 } as const;
 

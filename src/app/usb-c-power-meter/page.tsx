@@ -5,7 +5,7 @@ import AmazonDealBox from "@/components/common/AmazonDealBox";
 import Link from "next/link";
 
 const AMAZON = "https://www.amazon.com/Eversame-Voltmeter-Ammeter-Voltage-Current/dp/B07MGQZHGM?tag=gadgetsfindswebsmediavid-20";
-const IMAGE = "https://m.media-amazon.com/images/I/61xiYeMNojL.jpg";
+const IMAGE = "/assets/images/original/gadget.jpg";
 
 export const metadata: Metadata = {
   robots: { index: false, follow: true },

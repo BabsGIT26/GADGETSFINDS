@@ -14,7 +14,7 @@ const deals = [
     was: "$249",
     off: "28% off",
     href: s("Apple AirPods Pro 3"),
-    image: "/assets/images/airpods_pro_3.png",
+    image: "/assets/images/original/audio.jpg",
     text: "In-ear Apple buds with active noise cancelling, spatial audio, and a USB-C case. This generation adds live translation, heart-rate sensing, and a hearing-aid feature on the listing. At $179 against a $249 list price, it is one of the clearer cuts in the set, if the Lightning Deal is still on.",
   },
   {
@@ -23,7 +23,7 @@ const deals = [
     was: "$1,299",
     off: "15% off",
     href: s("MacBook Air 13 M5 512GB"),
-    image: "/assets/images/macbook_air_13_m5.png",
+    image: "/assets/images/original/laptop.jpg",
     text: "The smaller Air: 13.6-inch Liquid Retina, M5, 16GB memory, 512GB storage, midnight. Enough for school, writing, and light photo work without the 15-inch price. The deal is $200 off the list price, not a clearance.",
   },
   {
@@ -32,7 +32,7 @@ const deals = [
     was: "$154.99",
     off: "53% off",
     href: s("Amazon Fire HD 10"),
-    image: "/assets/images/fire_hd_10.png",
+    image: "/assets/images/original/tablet.jpg",
     text: "A 10.1-inch Full HD tablet with 4GB of RAM and 32GB of storage, in black. It is for video, books, and a browser, not for replacing a laptop. Half off the list price is why it is here. Storage is tight if you download a lot.",
   },
   {
@@ -41,7 +41,7 @@ const deals = [
     was: "$1,499",
     off: "13% off",
     href: s("MacBook Air 15 M5 512GB"),
-    image: "/assets/images/macbook_air_15_m5.png",
+    image: "/assets/images/original/laptop.jpg",
     text: "Same M5, 16GB, and 512GB as the 13-inch, on a 15.3-inch screen. Sky Blue on this card. Buy it if you want the larger display. The cut is only $200, so compare it with the 13-inch before you pay the difference.",
   },
   {
@@ -50,7 +50,7 @@ const deals = [
     was: "$799.99",
     off: "50% off",
     href: s("iRobot Roomba 415X"),
-    image: "/assets/images/roomba_415x.png",
+    image: "/assets/images/original/vacuum-a.jpg",
     text: "A robot vacuum and mop with a dock that empties itself. The listing cites 20,000Pa, obstacle avoidance, and a pet-hair setup. Half off is the reason to look. Confirm the dock is in the box, and that your rooms are not all thick carpet.",
   },
   {
@@ -59,7 +59,7 @@ const deals = [
     was: "$99.99",
     off: "60% off",
     href: s("Ring Battery Doorbell 2K"),
-    image: "/assets/images/ring_doorbell_2k.png",
+    image: "/assets/images/original/gadget.jpg",
     text: "A battery doorbell with 2K video, wide angle, and two-way talk. No wiring. Speckled gray on this listing. Stored video needs a Ring plan, which is not in the $39.99. The hardware discount is real. The subscription is separate.",
   },
   {
@@ -68,7 +68,7 @@ const deals = [
     was: "$249.99",
     off: "40% off",
     href: s("Echo Show 11"),
-    image: "/assets/images/echo_show_11.png",
+    image: "/assets/images/original/tv.jpg",
     text: "An 11-inch Alexa screen with a larger viewing area and spatial audio, in graphite. Useful for timers, cameras, and a recipe while you cook. Forty percent off the list price. It is still an Alexa device, not a tablet.",
   },
   {
@@ -77,7 +77,7 @@ const deals = [
     was: "$479.99",
     off: "31% off",
     href: s("Dyson Cyclone V10 Origin"),
-    image: "/assets/images/dyson_v10_origin.png",
+    image: "/assets/images/original/vacuum-a.jpg",
     text: "Dyson’s cordless stick in the Origin trim, $150 under the list price. Lighter than a corded vacuum, with a smaller tool set than the higher V10 kits. Check the head included on the card so you are not buying a bare motor.",
   },
   {
@@ -86,7 +86,7 @@ const deals = [
     was: "$599",
     off: "17% off",
     href: s("iPad mini A17 Pro 128GB"),
-    image: "/assets/images/ipad_mini_a17.png",
+    image: "/assets/images/original/tablet.jpg",
     text: "The 8.3-inch iPad, A17 Pro, 128GB, Wi-Fi, space gray. Easy to hold for reading and notes. The cut is $100, the smallest percent on this page. Skip it if you need a laptop keyboard. This is the mini, not the Air.",
   },
   {
@@ -95,7 +95,7 @@ const deals = [
     was: "$179.99",
     off: "50% off",
     href: s("Ring Floodlight Cam Wired Plus"),
-    image: "/assets/images/ring_floodlight_cam.png",
+    image: "/assets/images/original/gadget.jpg",
     text: "A wired outdoor camera with motion floodlights and 1080p, in white. It needs power at the mount, unlike the battery doorbell above. Half off the list price. Same Ring plan question if you want saved clips.",
   },
   {
@@ -104,7 +104,7 @@ const deals = [
     was: "$299.99",
     off: "50% off",
     href: s("Beats Studio Pro"),
-    image: "/assets/images/beats_studio_pro.png",
+    image: "/assets/images/original/audio.jpg",
     text: "Over-ear Beats with active noise cancelling, USB-C, and a listed 40-hour battery. Works with Apple and Android. Black on this card. Half off is a real cut for this model. Not a substitute for AirPods if you live in the Apple auto-switch.",
   },
   {
@@ -113,7 +113,7 @@ const deals = [
     was: "$299.99",
     off: "65% off",
     href: s("Blink Outdoor 4 5 camera system"),
-    image: "/assets/images/blink_outdoor_4.png",
+    image: "/assets/images/original/gadget.jpg",
     text: "Five wireless cameras plus the Sync Module. The listing says 1080p and a two-year battery. The deepest cut on the page, against a $299.99 list. Cloud storage is a Blink plan, not part of the hardware price.",
   },
 ];

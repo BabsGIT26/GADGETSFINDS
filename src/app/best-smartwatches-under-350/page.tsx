@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     siteName: "Gadgets Finds",
     type: "article",
     images: [{
-      url: 'https://www.gadgets-finds.com/assets/images/apple-watch-se-3.jpg',
+      url: 'https://www.gadgets-finds.com/assets/images/original/watch-b.jpg',
       alt: 'Apple Watch SE 3',
     }],
   },
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     creator: "@Gadgets_finds",
     title: 'Best Smartwatches Under $350 in 2026',
     description: 'Apple Watch SE 3, Galaxy Watch 7, Garmin Forerunner 165, and Pixel Watch 3.',
-    images: ['https://www.gadgets-finds.com/assets/images/apple-watch-se-3.jpg'],
+    images: ['https://www.gadgets-finds.com/assets/images/original/watch-b.jpg'],
   },
 };
 
@@ -58,10 +58,10 @@ function ViewOnAmazon({ href, name }: { href: string; name: string }) {
 }
 
 const IMAGES = {
-  se: "/assets/images/apple-watch-se-3.jpg",
-  galaxy: "/assets/images/galaxy-watch-7.jpg",
-  garmin: "/assets/images/forerunner-165.jpg",
-  pixel: "/assets/images/pixel-watch-3.jpg",
+  se: "/assets/images/original/watch-b.jpg",
+  galaxy: "/assets/images/original/watch-a.jpg",
+  garmin: "/assets/images/original/watch-c.jpg",
+  pixel: "/assets/images/original/watch-a.jpg",
 } as const;
 
 function ProductPhoto({ src, alt }: { src: string; alt: string }) {

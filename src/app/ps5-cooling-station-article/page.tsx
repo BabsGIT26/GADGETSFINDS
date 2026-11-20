@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "/assets/images/PS5_Cooling_Station.png",
+        url: "/assets/images/original/controller.jpg",
         width: 1200,
         height: 630,
         alt: "PS5 cooling station with controller docks",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@Gadgets_finds",
     title: "PS5 Cooling Station with Controller Charger — Gadgets Finds",
-    images: ["/assets/images/PS5_Cooling_Station.png"],
+    images: ["/assets/images/original/controller.jpg"],
   },
 };
 
@@ -74,7 +74,7 @@ export default function Page() {
 
           <div className="w-full flex justify-center py-6 mb-10">
             <AppImage
-              src="/assets/images/PS5_Cooling_Station.png"
+              src="/assets/images/original/controller.jpg"
               alt="PS5 cooling station with controller docks"
               className="max-h-[400px] w-auto max-w-full object-contain"
             />
