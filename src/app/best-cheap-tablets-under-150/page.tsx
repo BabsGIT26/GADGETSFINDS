@@ -100,7 +100,7 @@ export default function Page() {
             This guide stays on five new listings. Each title links to that exact product, and each review ends with its own View on Amazon button. None of them is a renewed, refurbished, or “like new” unit. A new iPad is outside this budget, and a renewed older iPad is a different kind of purchase. That option is discussed at the end, without a button.
           </p>
           <p className="text-muted-foreground mb-10 leading-relaxed">
-            Two of the five only belong in a $150 guide when Amazon has them on sale. The Galaxy Tab A9+ lists at $219.99 and the Fire HD 10 Kids lists at $189.99. Both have recently been seen under $150. If the live price is back above the line, skip that card and buy the Fire HD 10 or the Fire HD 8 instead.
+            Two of the five only belong in this guide when the live Amazon price is inside the budget. If it is not, skip that card and buy the Fire HD 10 or the Fire HD 8 instead.
           </p>
 
           <h2 className="text-2xl md:text-3xl font-bold mt-12 mb-4">What $150 actually buys</h2>
@@ -138,7 +138,7 @@ export default function Page() {
                 The linked card is the 32 GB black model. A lower street price on Fire tablets usually means lock-screen ads. Amazon sells an ad-free option as a separate choice, and it costs more. Read the style selector on the live page before you assume the screensaver is clean. User-available storage is less than 32 GB because Fire OS keeps a slice. Plan on a microSD card if you download shows.
               </p>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                Street price moves a lot. The list has sat around $140, and the same 32 GB black tablet has been seen near $70 on a deep cut. At either number it is the safest large screen under $150, as long as you accept Fire OS. If you need the Play Store every day, go to the Galaxy Tab A9+ when it is on sale, or the Lenovo Tab One when that one is actually under $150.
+                The Fire HD 10 is the large screen in this guide, as long as you accept Fire OS. Confirm the live price on Amazon. If you need the Play Store every day, open the Galaxy Tab A9+ or the Lenovo Tab One and keep it only if that live price still fits this guide.
               </p>
               <div className="grid md:grid-cols-2 gap-6 mt-6">
                 <div>
@@ -167,10 +167,9 @@ export default function Page() {
                 <li><strong className="text-amber-500">Screen:</strong> 11-inch TFT, 1920 x 1200, 90 Hz</li>
                 <li><strong className="text-amber-500">Memory:</strong> 4 GB RAM, 64 GB, microSD up to 1 TB</li>
                 <li><strong className="text-amber-500">Audio:</strong> Four speakers, Dolby Atmos</li>
-                <li><strong className="text-amber-500">List price:</strong> $219.99, recently seen at $149.99</li>
               </ul>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                The Galaxy Tab A9+ is the Android tablet in this guide, and it only fits the budget on sale. Samsung’s US listing for the 64 GB graphite Wi-Fi model carries a $219.99 list. It has recently been offered at $149.99, which is the number that puts it in this article. If the live price is back over $150, do not stretch for it. The Fire HD 10 is the better buy at full Samsung price.
+                The Galaxy Tab A9+ is the Android tablet in this guide, and it only fits when the live Amazon price is inside the budget. If it is not, do not stretch. Buy the Fire HD 10 instead.
               </p>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 The screen is the reason to wait for that sale. It is an 11-inch 1920 x 1200 panel at 90 Hz, brighter and smoother than the 60 Hz Fire HD 10. Samsung’s own listing calls out about 480 nits. Four speakers with Dolby Atmos are louder and more even than the stereo pair on a Fire tablet, which matters if this is the device that plays shows in a bedroom. Storage is 64 GB with 4 GB of RAM, and the microSD slot goes to 1 TB. That is a more comfortable starting point than 32 GB.
@@ -188,7 +187,7 @@ export default function Page() {
                 </div>
                 <div>
                   <p className="font-semibold text-amber-600 mb-2">Limitations</p>
-                  <p className="text-sm text-muted-foreground">List price is $219.99. Buy it for this guide only when the live price is at or under $150. No S Pen.</p>
+                  <p className="text-sm text-muted-foreground">Buy it for this guide only when the live Amazon price is inside the budget. No S Pen.</p>
                 </div>
               </div>
               <p className="mt-6 text-sm font-medium">Verdict: Best Android experience under $150, and only when the sale price is actually under $150.</p>
@@ -208,16 +207,15 @@ export default function Page() {
                 <li><strong className="text-amber-500">In the box:</strong> Tablet, kid-proof case, USB-C cable, 9 W adapter</li>
                 <li><strong className="text-amber-500">Included service:</strong> 1 year of Amazon Kids+, then a monthly renewal</li>
                 <li><strong className="text-amber-500">Guarantee:</strong> 2-year worry-free replacement if it breaks</li>
-                <li><strong className="text-amber-500">List price:</strong> $189.99, recently seen at $104.99</li>
               </ul>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 The Fire HD 10 Kids is the same 10.1-inch 2023 tablet, wrapped for a child. Amazon aims this blue bundle at ages 3 to 7. The case is the product: a thick bumper with a built-in stand, so a drop off a couch is the expected use, not an accident you have to argue about. Amazon includes a 2-year worry-free guarantee. If the tablet breaks in that window, they replace it. That promise is the reason to pay more than a bare Fire HD 10.
               </p>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                The bundle also includes one year of Amazon Kids+. That is the ad-free catalog of books, games, and videos, with a parent dashboard for time limits and content. Amazon’s listing says the subscription renews monthly after the year, starting around $5.99 plus tax, and that you can cancel from the parent dashboard. Budget for that renewal or cancel it. The tablet itself does not show the lock-screen ads used on the cheap adult Fire HD 10.
+                The bundle also includes one year of Amazon Kids+. That is the ad-free catalog of books, games, and videos, with a parent dashboard for time limits and content. Amazon’s listing says the Kids+ subscription renews after the included year, and that you can cancel from the parent dashboard. Read that renewal price on Amazon before you keep it. The tablet itself does not show the lock-screen ads used on the cheap adult Fire HD 10.
               </p>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                Hardware matches the adult 32 GB model closely enough that you should not buy the Kids edition for speed. You buy it for the case, the guarantee, and the parent controls. Storage is still 32 GB plus microSD up to 1 TB. Amazon still quotes about 13 hours of battery. The list price is $189.99, which is over this guide’s ceiling. It has recently been seen at $104.99. At that sale price the case and the two-year replacement are worth it. At $190, buy the regular Fire HD 10 and a separate case.
+                Hardware matches the adult 32 GB model closely enough that you should not buy the Kids edition for speed. You buy it for the case, the guarantee, and the parent controls. Storage is still 32 GB plus microSD up to 1 TB. Amazon still quotes about 13 hours of battery. The Kids bundle only belongs in this guide when the live Amazon price is inside the budget. If it is not, buy the regular Fire HD 10 and a separate case.
               </p>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 Older kids who want Roblox accounts, a real browser, and the Play Store will outgrow Fire OS. This card is for younger children. The link is the blue standalone Kids tablet, not a Disney-themed bundle and not a used unit.
@@ -229,7 +227,7 @@ export default function Page() {
                 </div>
                 <div>
                   <p className="font-semibold text-amber-600 mb-2">Limitations</p>
-                  <p className="text-sm text-muted-foreground">List price is $189.99. Kids+ renews after the first year. Same Fire OS limits as the adult tablet.</p>
+                  <p className="text-sm text-muted-foreground">Kids+ renews after the first year. Same Fire OS limits as the adult tablet. Confirm the live price on Amazon.</p>
                 </div>
               </div>
               <p className="mt-6 text-sm font-medium">Verdict: The kids pick when the sale price is under $150. Skip it at full list.</p>
@@ -249,10 +247,9 @@ export default function Page() {
                 <li><strong className="text-amber-500">Screen:</strong> 8-inch HD, 1280 x 800</li>
                 <li><strong className="text-amber-500">Memory:</strong> 3 GB RAM, 32 GB storage, microSD up to 1 TB</li>
                 <li><strong className="text-amber-500">Cameras:</strong> 5 MP rear, 2 MP front</li>
-                <li><strong className="text-amber-500">Recently seen:</strong> $99.99</li>
               </ul>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                The 2024 Fire HD 8 is the compact tablet that stays under $150 without waiting for a sale. The linked configuration is the black 32 GB ad-supported model, recently listed at $99.99. It is the one to buy when the Fire HD 10 is out of stock, or when the tablet has to live in a bag rather than on a table.
+                The 2024 Fire HD 8 is the compact tablet in this guide. The linked configuration is the black 32 GB ad-supported model. Buy it when you want the smaller screen, or when the Fire HD 10 listing is not the one you want. Confirm the live price on Amazon.
               </p>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 The screen is 8 inches at 1280 x 800. That is a clear step down from the Fire HD 10’s 1920 x 1200 panel. Text is fine. Movies are fine on a nightstand and cramped on a couch across the room. The 2024 refresh kept that panel and raised the 32 GB model to 3 GB of RAM, which Amazon describes as 50 percent more than the 2022 release. The processor is still a hexa-core part around 2 GHz. Amazon rates battery life at up to 13 hours of mixed reading, video, and music. The rear camera moved to 5 megapixels. The front camera stays at 2 megapixels, so video calls are the weak spot.
@@ -263,14 +260,14 @@ export default function Page() {
               <div className="grid md:grid-cols-2 gap-6 mt-6">
                 <div>
                   <p className="font-semibold text-green-600 mb-2">Strengths</p>
-                  <p className="text-sm text-muted-foreground">Usually around $100, light enough to carry, 3 GB of RAM on the 2024 32 GB model, and expandable storage.</p>
+                  <p className="text-sm text-muted-foreground">Light enough to carry, 3 GB of RAM on the 2024 32 GB model, and expandable storage.</p>
                 </div>
                 <div>
                   <p className="font-semibold text-amber-600 mb-2">Limitations</p>
                   <p className="text-sm text-muted-foreground">1280 x 800 is a soft screen next to the HD 10. Fire OS and lock-screen ads are still there. The front camera is only 2 megapixels.</p>
                 </div>
               </div>
-              <p className="mt-6 text-sm font-medium">Verdict: The easy under-$100 pick. Best suited for reading and one-person video, not a shared living-room screen.</p>
+              <p className="mt-6 text-sm font-medium">Verdict: The compact pick. Best suited for reading and one-person video, not a shared living-room screen.</p>
               <ViewOnAmazon href={AMAZON.hd8} name="Amazon Fire HD 8" />
             </div>
           </div>
@@ -296,7 +293,7 @@ export default function Page() {
                 Four gigabytes of RAM and full Android make this a better app tablet than either Fire model. Chrome, Gmail, Maps, and whatever else you install from the Play Store behave like they do on a cheap Android phone. The Helio G85 is an old mid-range phone chip. It is smooth for video and browsing and ordinary for games. Lenovo’s software support will not match Samsung’s. Treat the Tab One as a two- or three-year device, not something you will still be updating in 2029.
               </p>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                Price is the catch. The same listing has been seen around $110, which is a strong buy, and it has also sat between roughly $160 and $180, which is too much. At $180 you are paying Galaxy Tab A9+ money for a smaller, slower screen. Open the listing. If it is over $150, close it and buy the Fire HD 8, or wait for the A9+ sale. The link is the folio-case model with 4 GB and 64 GB, not a marketplace bundle that pads the storage number with a microSD card.
+                Price is the catch. Open the listing. If the live Amazon price is outside this guide, close it and buy the Fire HD 8. The link is the folio-case model with 4 GB and 64 GB, not a marketplace bundle that pads the storage number with a microSD card.
               </p>
               <div className="grid md:grid-cols-2 gap-6 mt-6">
                 <div>
@@ -340,14 +337,14 @@ export default function Page() {
             A new iPad is not a $150 tablet. Apple’s current lineup starts well above this ceiling, and an older new iPad still does when you can find one. A certified renewed iPad 9th generation or similar sometimes appears near $150, and the software on that hardware is genuinely better than a new Fire tablet: longer updates, a faster interface, and the App Store. It is also a used device with a shorter warranty and no expandable storage. This page does not link one. If you go looking, read the condition, the battery note, and the seller yourself. Do not treat a renewed listing as the same thing as the five new tablets above.
           </p>
           <p className="text-muted-foreground mb-8 leading-relaxed">
-            No-name Android tablets under $80 are easy to find and hard to trust. Many ship with 2 GB of RAM advertised as more, a charger you should not leave plugged in overnight, and no security updates. The Lenovo and the Samsung are the Android options here because the maker is identifiable and the listing is a current model.
+            No-name Android tablets at the bottom of the market are easy to find and hard to trust. Many ship with 2 GB of RAM advertised as more, a charger you should not leave plugged in overnight, and no security updates. The Lenovo and the Samsung are the Android options here because the maker is identifiable and the listing is a current model.
           </p>
 
           <h2 className="text-2xl font-bold mt-10 mb-4">How to choose</h2>
           <ul className="list-disc pl-5 text-muted-foreground space-y-2 mb-8">
             <li>Prime Video and Kindle, one household screen: Fire HD 10.</li>
             <li>You need Gmail, Chrome, and the Play Store, and the A9+ is at or under $150: Galaxy Tab A9+.</li>
-            <li>A child ages 3 to 7, and the Kids bundle is on sale: Fire HD 10 Kids. At $190, buy the adult HD 10 instead.</li>
+            <li>A child ages 3 to 7, and the live price of the Kids bundle is inside this guide: Fire HD 10 Kids. If it is not, buy the adult HD 10 instead.</li>
             <li>You want the cheapest new tablet that is still from a real brand: Fire HD 8.</li>
             <li>You want Android in a small size with a stand, and the Tab One is under $150: Lenovo Tab One.</li>
             <li>Add a microSD card to any of them if you download video. 32 GB does not survive a vacation.</li>
@@ -356,7 +353,7 @@ export default function Page() {
           <h2 className="text-2xl font-bold mt-10 mb-4">Final verdict</h2>
           <div className="rounded-2xl border-2 border-amber-400 bg-amber-400/10 p-6 md:p-8 mb-8">
           <p className="text-muted-foreground mb-6 leading-relaxed">
-            Buy the Amazon Fire HD 10. It is the large screen that actually lives under $150 most of the time, and for streaming and reading the missing Play Store does not matter. Step up to the Galaxy Tab A9+ only on the days Amazon has the US 64 GB model at or under $150. That is the one with the better display, the speakers, and real Android. Use the Fire HD 10 Kids for a young child when the bundle is on sale, the Fire HD 8 when you want to spend about $100, and the Lenovo Tab One when you want a small Android tablet and the price has not drifted back over the line.
+            Buy the Amazon Fire HD 10. It is the large screen that actually lives under $150 most of the time, and for streaming and reading the missing Play Store does not matter. Step up to the Galaxy Tab A9+ only on the days Amazon has the US 64 GB model at or under $150. That is the one with the better display, the speakers, and real Android. Use the Fire HD 10 Kids for a young child when the live price is inside this guide, the Fire HD 8 when you want the smaller tablet, and the Lenovo Tab One when you want a small Android tablet and the live price still fits.
           </p>
           <p className="text-muted-foreground mb-8 leading-relaxed">
             Prices move weekly. Open the button under the review and read the current configuration, the ad-supported toggle, and the seller before you pay. The buttons go to the original new listings named above.
@@ -365,9 +362,9 @@ export default function Page() {
           <GuideFaq
             items={[
               { q: "What is the best tablet under $150 in 2026?", a: "The Amazon Fire HD 10. It is the large new tablet that usually stays under $150, and it is enough for streaming and reading." },
-              { q: "Is a Galaxy Tab A9+ under $150?", a: "Only on sale. The list price is $219.99. Buy it when the US 64 GB model is at or under $150. Otherwise take the Fire HD 10." },
+              { q: "Is a Galaxy Tab A9+ in this guide?", a: "Only when the live Amazon price is inside the budget. Otherwise take the Fire HD 10." },
               { q: "Should I buy a renewed iPad instead?", a: "A renewed older iPad can be better software, but it is a used device with a shorter warranty. This guide does not treat it as the same purchase as a new Fire or Galaxy tablet." },
-              { q: "What cheap tablets should I skip?", a: "No-name Android tablets under $80. Many ship with little RAM, a charger you should not trust, and no security updates." },
+              { q: "What cheap tablets should I skip?", a: "No-name Android tablets. Many ship with little RAM, a charger you should not trust, and no security updates." },
             ]}
           />
           <RelatedGuides current="/best-cheap-tablets-under-150" />
