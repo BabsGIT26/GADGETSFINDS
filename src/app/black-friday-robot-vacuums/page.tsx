@@ -8,7 +8,7 @@ import { VACUUMS, amazonUrl } from "./vacuums";
 export const metadata: Metadata = {
   title: "Black Friday Robot Vacuums | Gadgets Finds",
   description:
-    "Which Black Friday robot vacuum to open: a dock, a mop station, or a simple robot you empty yourself. Notes on the eufy C10, Roborock Q7 M5+, Shark, ILIFE, ECOVACS, and Lefant.",
+    "Which Black Friday robot vacuum to open first: the Roborock Qrevo 2 Pro, the Qrevo Curv 2 Flow, or a smaller dock, mop, or a robot you empty yourself.",
   metadataBase: new URL("https://www.gadgets-finds.com"),
   alternates: { canonical: "https://www.gadgets-finds.com/black-friday-robot-vacuums" },
   openGraph: {
@@ -45,7 +45,7 @@ const FAQ = [
   },
   {
     q: "Which of these actually mop?",
-    a: "The ECOVACS T90 Pro Omni and the Roborock Q7 M5+ mop. The eufy C10, Shark AI Ultra, ILIFE A30s, eufy L60, and Lefant M210 Pro vacuum. Do not buy a vacuum-only robot and expect a clean mop line.",
+    a: "The Roborock Qrevo 2 Pro, the Roborock Qrevo Curv 2 Flow, the ECOVACS T90 Pro Omni, and the Roborock Q7 M5+ mop. The eufy C10, Shark AI Ultra, ILIFE A30s, eufy L60, and Lefant M210 Pro vacuum. The two Qrevo 2 Pro listings are the same robot in black and white.",
   },
   {
     q: "Is the eufy L60 the same kind of listing as the others?",
@@ -66,10 +66,13 @@ export default function Page() {
           <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">By Gadgets Finds · November 2026</p>
           <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Black Friday robot vacuums</h1>
           <p className="text-muted-foreground mb-4 leading-relaxed">
-            These are the robots showing on Amazon during the sale. They are not the same kind of purchase. Split them before you open a listing.
+            These are the robots showing on Amazon during the sale. They are not the same kind of purchase. The first three are the full Roborock stations. Open those before the smaller robots if you want a dock that empties the bin and deals with the mop.
           </p>
           <p className="text-muted-foreground mb-4 leading-relaxed">
-            A robot with no dock, the Lefant M210 Pro or the ILIFE A30s, is the buy when you will empty the bin yourself. A vacuum with a dock, the eufy C10, the Shark AI Ultra, or the renewed eufy L60, is the buy when pet hair fills a bin in a day. A vacuum that also mops, the Roborock Q7 M5+ or the ECOVACS T90 Pro Omni, is the buy when hard floors are the real job and you have room for a bigger base.
+            The Roborock Qrevo 2 Pro, in black and in white, is one robot in two colors. It uses spinning mops. The Roborock Qrevo Curv 2 Flow is the other station, with a roller mop Roborock says cleans itself during the run. Neither of those is the Q7 M5+ further down the page.
+          </p>
+          <p className="text-muted-foreground mb-4 leading-relaxed">
+            Under those, split the rest. A robot with no dock, the Lefant M210 Pro or the ILIFE A30s, is the buy when you will empty the bin yourself. A vacuum with a dock, the eufy C10, the Shark AI Ultra, or the renewed eufy L60, is the buy when pet hair fills a bin in a day. A smaller mop robot, the Roborock Q7 M5+ or the ECOVACS T90 Pro Omni, is the buy when you want the floor washed and you do not want the largest station.
           </p>
           <p className="text-muted-foreground mb-8 leading-relaxed">
             Read the short note first. The Amazon button is there after that, and it does not open until you click it. The price on Amazon is the only price. The longer budget comparison is still the{" "}
