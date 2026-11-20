@@ -95,14 +95,14 @@ export default function Page() {
             Thirty dollars is enough for a charger, a hub, a spare cable, or a tracker that you will still be using in a year. It is not enough for a gadget whose only job is to look clever in a photo. The useful ones at this price are boring on purpose: they add a port, they replace a lost cable, or they make a keyring findable.
           </p>
           <p className="text-muted-foreground mb-10 leading-relaxed">
-            This guide stays on four new listings that were selling under $30 when the page was checked. Each title links to that product, and each review ends with its own View on Amazon button. None of them is renewed. A no-name “50,000mAh” brick and a Bluetooth tracker that pretends to be an AirTag are left out on purpose.
+            This guide stays on four new listings aimed at a budget under $30. Confirm the live price on Amazon before you buy. Each title links to that product, and each review ends with its own View on Amazon button. None of them is renewed. A no-name power bank with an unbelievable capacity and a Bluetooth tracker that pretends to be an AirTag are left out on purpose.
           </p>
 
           <h2 className="text-2xl md:text-3xl font-bold mt-12 mb-4">What is worth $30</h2>
           <ul className="list-disc pl-5 text-muted-foreground space-y-2 mb-8">
             <li>It fixes something you already do every week: charging, plugging in a monitor, or finding keys.</li>
             <li>The wattage, the ports, and the phone it works with are printed, not implied.</li>
-            <li>The brand will still answer if the cable dies. A lifetime claim on a $13 cable is only useful if the seller is still there.</li>
+            <li>The brand will still answer if the cable dies. A lifetime claim on a cable is only useful if the seller is still there.</li>
             <li>It stays under $30 after you notice the pack size. A four-pack of trackers is not a $30 gadget even if each tag averages less.</li>
           </ul>
 
@@ -118,7 +118,6 @@ export default function Page() {
                 <li><strong className="text-amber-500">Output:</strong> 45W max on one USB-C port, with PPS</li>
                 <li><strong className="text-amber-500">Size:</strong> 1.3 × 1.26 × 1.45 in, charger 2.11 oz</li>
                 <li><strong className="text-amber-500">Plug:</strong> Folding US prongs, 100–240V input</li>
-                <li><strong className="text-amber-500">Recently seen:</strong> $25.99</li>
               </ul>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 This is the one to buy if the charger in your bag is a 5W block from a phone that is already gone. Anker’s listing is the Nano 45W, model B2692, sold with a 6-foot USB-C to USB-C cable. One port, 45 watts. The published steps are 15W, 27W, and 45W, plus PPS, so a phone that wants a specific voltage can ask for it. The body is 1.3 × 1.26 × 1.45 inches and 2.11 ounces. The prongs fold. Input is 100–240V, so the brick itself can take a foreign outlet. The prongs are the North American pair, so you still need a passive adapter outside the US and Canada.
@@ -127,7 +126,7 @@ export default function Page() {
                 Forty-five watts is the right ceiling for a phone, a tablet, and a thin laptop that charges over USB-C. It will not run a gaming laptop. Anker’s own note on this page matters if you own a Samsung: S22 through S24 Plus and Ultra models need a 5A cable for Super Fast Charging, while S25 Plus and S25 Ultra can use a 3A or a 5A cable. The box includes a cable. It does not print that cable’s amp rating in the spec table, so if you are counting on the fastest Samsung mode, check the cable marking before you assume 45W is what the phone will take. An iPhone will take what the iPhone allows, which is less than 45W, and that is normal.
               </p>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                Anker lists ActiveShield and an 18-month warranty. There is no second port. If you need to charge a phone and a watch at the same time, this is the wrong brick. At $25.99 it is the whole kit: wall plug and cable, under the $30 line, and small enough that you stop leaving it at home.
+                Anker lists ActiveShield and an 18-month warranty. There is no second port. If you need to charge a phone and a watch at the same time, this is the wrong brick. It is the whole kit: wall plug and cable, and small enough that you stop leaving it at home. Keep it only if the live Amazon price is inside this guide.
               </p>
               <div className="grid md:grid-cols-2 gap-6 mt-6">
                 <div>
@@ -156,7 +155,6 @@ export default function Page() {
                 <li><strong className="text-amber-500">Ports:</strong> HDMI, USB-C data, two USB-A, USB-C power in</li>
                 <li><strong className="text-amber-500">Data:</strong> up to 5 Gbps on the USB-C and USB-A ports</li>
                 <li><strong className="text-amber-500">Power:</strong> up to 85W passed through to the laptop</li>
-                <li><strong className="text-amber-500">Recently seen:</strong> $25.99</li>
               </ul>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 A laptop with two USB-C ports runs out of holes the first time you want a monitor and a mouse. This grey Anker hub is the cheap fix. Anker’s bullets list a 4K HDMI port, a 5 Gbps USB-C data port, two 5 Gbps USB-A ports, and a USB-C power-in port. Pass-through to the computer is up to 85W. The power-in side is described as up to 100W, which is the charger you plug in, not 100W delivered to the laptop. The hub keeps some of that for itself. The charger is not in the box. The 45W brick above is enough for a phone and a light tablet through this hub. A MacBook that wants 60W or more needs a bigger charger than the one in the first review.
@@ -165,12 +163,12 @@ export default function Page() {
                 Read the refresh rate before you buy it for a game. This listing says 4K. It does not say 60Hz. Anker’s newer 7-in-1 is the one that prints 4K at 60Hz, and it is a different product with card slots and a higher price. Use this 5-in-1 for a second screen, a keyboard, and a drive. Do not buy it because you think it is a dock with Ethernet or an SD card reader. Those holes are not here. Anker also notes that an iPad wants about a 45W wall charger if you expect full power through the hub.
               </p>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                At $25.99 it is under the cap, and the cable to the laptop is attached, so there is one less lead to lose. It will not add ports to a phone that does not support USB-C display output. Plug it into the laptop, not into a charging-only phone port, and check that the laptop’s port is a full USB-C port rather than a charge-only one.
+                The cable to the laptop is attached, so there is one less lead to lose. Keep it only if the live Amazon price is inside this guide. It will not add ports to a phone that does not support USB-C display output. Plug it into the laptop, not into a charging-only phone port, and check that the laptop’s port is a full USB-C port rather than a charge-only one.
               </p>
               <div className="grid md:grid-cols-2 gap-6 mt-6">
                 <div>
                   <p className="font-semibold text-green-600 mb-2">Strengths</p>
-                  <p className="text-sm text-muted-foreground">HDMI plus three data ports and laptop charging, in one grey bar, for about $26.</p>
+                  <p className="text-sm text-muted-foreground">HDMI plus three data ports and laptop charging, in one grey bar.</p>
                 </div>
                 <div>
                   <p className="font-semibold text-amber-600 mb-2">Limitations</p>
@@ -194,10 +192,9 @@ export default function Page() {
                 <li><strong className="text-amber-500">Power:</strong> up to 100W with a charger that can supply it</li>
                 <li><strong className="text-amber-500">Video:</strong> not supported</li>
                 <li><strong className="text-amber-500">Build:</strong> nylon, rated for about 5,000 bends</li>
-                <li><strong className="text-amber-500">Recently seen:</strong> $12.99</li>
               </ul>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                The charger above already includes one cable. This two-pack is the spare, and it is the better cable. Anker rates each one at 100W and 6 feet, in nylon, with a stated life of about 5,000 bends. The model on the listing is the 333, A8757. At $12.99 you are paying about $6.50 a cable, which is the point of buying them before the one in your bag frays at the plug. Anker’s warranty language on this cable is the long one, “everlasting,” which in practice means you deal with Anker rather than a marketplace seller who disappears.
+                The charger above already includes one cable. This two-pack is the spare, and it is the better cable. Anker rates each one at 100W and 6 feet, in nylon, with a stated life of about 5,000 bends. The model on the listing is the 333, A8757. Buy the pair before the one in your bag frays at the plug, and confirm the live price on Amazon. Anker’s warranty language on this cable is the long one, “everlasting,” which in practice means you deal with Anker rather than a marketplace seller who disappears.
               </p>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 The limit is printed on the page and it is easy to miss. These cables charge and they move data. They do not carry video. You cannot run a monitor from this lead. That job belongs to the hub, or to a cable whose listing says DisplayPort Alt Mode. One hundred watts also only happens if the charger can send 100 watts. Paired with the 45W Nano, the cable is not the bottleneck. The brick is. Do not buy the 3-foot or 10-foot length by accident, and do not grab the five-pack if you only needed two. The link is the black 6-foot two-pack.
@@ -208,7 +205,7 @@ export default function Page() {
               <div className="grid md:grid-cols-2 gap-6 mt-6">
                 <div>
                   <p className="font-semibold text-green-600 mb-2">Strengths</p>
-                  <p className="text-sm text-muted-foreground">100W, 6 feet, two of them, under $13. Nylon instead of a slick rubber jacket that splits.</p>
+                  <p className="text-sm text-muted-foreground">100W, 6 feet, two of them. Nylon instead of a slick rubber jacket that splits.</p>
                 </div>
                 <div>
                   <p className="font-semibold text-amber-600 mb-2">Limitations</p>
@@ -232,16 +229,15 @@ export default function Page() {
                 <li><strong className="text-amber-500">Radio:</strong> Bluetooth and ultra-wideband, not GPS</li>
                 <li><strong className="text-amber-500">Rating:</strong> IP67</li>
                 <li><strong className="text-amber-500">Battery:</strong> replaceable CR2032, not included, up to 500 days in Samsung’s long-life figure</li>
-                <li><strong className="text-amber-500">Recently seen:</strong> $25</li>
               </ul>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                The SmartTag2 is the tracker to buy if the phone is a Galaxy. The linked listing is one black tag, the 2023 model, recently $25. You register it in SmartThings Find. Nearby it can ring. On a compatible Galaxy phone, Search Nearby and Compass View use ultra-wideband to point you at the tag when you are already in the room. Farther away, the location comes from other Galaxy phones in Samsung’s network, the same idea as Find My, on a different crowd. It does not have a GPS chip, even though some marketplace titles say “GPS locator.” If the tag is in a place with no Galaxy phones nearby, the map will not update. That is how every crowd-sourced tracker works.
+                The SmartTag2 is the tracker to buy if the phone is a Galaxy. The linked listing is one black tag, the 2023 model. You register it in SmartThings Find. Nearby it can ring. On a compatible Galaxy phone, Search Nearby and Compass View use ultra-wideband to point you at the tag when you are already in the room. Farther away, the location comes from other Galaxy phones in Samsung’s network, the same idea as Find My, on a different crowd. It does not have a GPS chip, even though some marketplace titles say “GPS locator.” If the tag is in a place with no Galaxy phones nearby, the map will not update. That is how every crowd-sourced tracker works.
               </p>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 Samsung rates the battery at up to 500 days. That figure is the long-life mode, not a promise if you ring it every morning. The cell is a CR2032, and this listing does not include one. Buy a battery with the tag or the first week is a trip back to the store. The case is IP67, so rain and a wet bag are fine. It is not a dive tracker. The ring in the body is how you attach it to keys. A four-pack is a better price per tag only if you will actually tag four things. This card is the single.
               </p>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                Do not buy it for an iPhone. AirTag is the Apple version, and a single first-generation AirTag was sitting above $30 from third-party sellers when this page was checked, which is why it is not the pick here. The 2026 AirTag 2 is the newer Apple tag, and a four-pack of those blows the $30 cap immediately. On the Samsung side, skip the international SmartTag2 listing if you want the US pack this button opens. And skip any “AirTag compatible” tag from a brand you have never heard of. Those apps are the product, and the app is usually the part that disappears.
+                Do not buy it for an iPhone. AirTag is the Apple version, and a single AirTag often sits outside this guide, which is why it is not the pick here. The 2026 AirTag 2 is the newer Apple tag, and a four-pack of those is outside this guide. On the Samsung side, skip the international SmartTag2 listing if you want the US pack this button opens. And skip any “AirTag compatible” tag from a brand you have never heard of. Those apps are the product, and the app is usually the part that disappears.
               </p>
               <div className="grid md:grid-cols-2 gap-6 mt-6">
                 <div>
@@ -266,14 +262,13 @@ export default function Page() {
                   <th className="text-left p-3">Gadget</th>
                   <th className="text-left p-3">What it does</th>
                   <th className="text-left p-3">Watch-out</th>
-                  <th className="text-left p-3">Recently seen</th>
                 </tr>
               </thead>
               <tbody>
-                <tr className="border-b"><td className="p-3">Nano 45W</td><td className="p-3">Charges one device, cable included</td><td className="p-3">US plug, one port</td><td className="p-3">$25.99</td></tr>
-                <tr className="border-b"><td className="p-3">5-in-1 hub</td><td className="p-3">HDMI and USB on a laptop</td><td className="p-3">4K rate not stated, no charger</td><td className="p-3">$25.99</td></tr>
-                <tr className="border-b"><td className="p-3">100W cables</td><td className="p-3">Two 6 ft charge-and-data leads</td><td className="p-3">No video</td><td className="p-3">$12.99</td></tr>
-                <tr><td className="p-3">SmartTag2</td><td className="p-3">Finds keys from a Galaxy phone</td><td className="p-3">Not GPS, battery extra</td><td className="p-3">$25</td></tr>
+                <tr className="border-b"><td className="p-3">Nano 45W</td><td className="p-3">Charges one device, cable included</td><td className="p-3">US plug, one port</td></tr>
+                <tr className="border-b"><td className="p-3">5-in-1 hub</td><td className="p-3">HDMI and USB on a laptop</td><td className="p-3">4K rate not stated, no charger</td></tr>
+                <tr className="border-b"><td className="p-3">100W cables</td><td className="p-3">Two 6 ft charge-and-data leads</td><td className="p-3">No video</td></tr>
+                <tr><td className="p-3">SmartTag2</td><td className="p-3">Finds keys from a Galaxy phone</td><td className="p-3">Not GPS, battery extra</td></tr>
               </tbody>
             </table>
           </div>
@@ -290,7 +285,7 @@ export default function Page() {
           <h2 className="text-2xl font-bold mt-10 mb-4">Final verdict</h2>
           <div className="rounded-2xl border-2 border-amber-400 bg-amber-400/10 p-6 md:p-8 mb-8">
           <p className="text-muted-foreground mb-6 leading-relaxed">
-            Spend the $26 on the Anker Nano 45W if you buy only one thing. It is a real 45W charger, the cable is in the box, and it fits the budget with room for tax to be the thing you check before you click. Add the two-pack of 100W cables when the first lead starts to kink, and remember they will not drive a screen. Add the grey 5-in-1 hub when the laptop is the device that is short of ports, and do not expect 4K at 60Hz just because the word 4K is on the box. Add the SmartTag2 only if you already live on a Galaxy phone, and put a battery in the cart with it.
+            Buy the Anker Nano 45W if you buy only one thing. It is a real 45W charger, the cable is in the box, and it fits the budget with room for tax to be the thing you check before you click. Add the two-pack of 100W cables when the first lead starts to kink, and remember they will not drive a screen. Add the grey 5-in-1 hub when the laptop is the device that is short of ports, and do not expect 4K at 60Hz just because the word 4K is on the box. Add the SmartTag2 only if you already live on a Galaxy phone, and put a battery in the cart with it.
           </p>
           <p className="text-muted-foreground mb-8 leading-relaxed">
             Prices at this level move by a few dollars and cross $30 without a press release. Open the button under the review and confirm the pack size, the color, and the price before you pay.

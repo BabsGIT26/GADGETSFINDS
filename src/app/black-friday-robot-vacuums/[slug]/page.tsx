@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: `https://www.gadgets-finds.com${path}`,
       siteName: "Gadgets Finds",
       type: "article",
-      images: [{ url: `https://www.gadgets-finds.com${item.image}`, alt: item.alt }],
+      images: [{ url: "https://www.gadgets-finds.com/assets/images/og-black-friday-vacuums.jpg", alt: item.alt }],
     },
     twitter: {
       card: "summary_large_image",
@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       creator: "@Gadgets_finds",
       title: `${item.name} — who it is for`,
       description: item.card,
-      images: [`https://www.gadgets-finds.com${item.image}`],
+      images: ["https://www.gadgets-finds.com/assets/images/og-black-friday-vacuums.jpg"],
     },
   };
 }
@@ -66,9 +66,6 @@ export default async function Page({ params }: Props) {
               Back to the Black Friday list
             </a>
           </p>
-          <div className="bg-white rounded-xl border border-border mb-8 h-48 flex items-center justify-center px-4">
-            <img src={item.image} alt={item.alt} className="max-h-44 w-auto max-w-full object-contain" />
-          </div>
           <h2 className="text-xl font-bold mb-2">Who it is for</h2>
           <p className="text-muted-foreground leading-relaxed mb-6">{item.fit}</p>
           <h2 className="text-xl font-bold mb-2">What you are actually buying</h2>

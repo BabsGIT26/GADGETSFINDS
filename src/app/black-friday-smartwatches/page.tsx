@@ -19,8 +19,8 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "https://www.apple.com/assets-www/en_WW/watch/01_og/watch_og_9cde5b638.png",
-        alt: "Apple Watch",
+        url: "https://www.gadgets-finds.com/assets/images/og-black-friday-watches.jpg",
+        alt: "A plain smartwatch on a dark background",
       },
     ],
   },
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     creator: "@Gadgets_finds",
     title: "Black Friday Smartwatches",
     description: "iPhone, Garmin, a screenless membership band, or a budget GPS watch. Read the note before the listing.",
-    images: ["https://www.apple.com/assets-www/en_WW/watch/01_og/watch_og_9cde5b638.png"],
+    images: ["https://www.gadgets-finds.com/assets/images/og-black-friday-watches.jpg"],
   },
 };
 
@@ -79,9 +79,6 @@ export default function Page() {
           <div className="grid sm:grid-cols-2 gap-4">
             {WATCHES.map((item) => (
               <div key={item.slug} className="bg-card border border-border rounded-xl overflow-hidden flex flex-col">
-                <a href={`/black-friday-smartwatches/${item.slug}`} className="bg-white h-36 flex items-center justify-center px-3">
-                  <img src={item.image} alt={item.alt} className="max-h-32 w-auto max-w-full object-contain" />
-                </a>
                 <div className="p-4 flex flex-col flex-1">
                   <h2 className="text-base font-bold">
                     <a href={`/black-friday-smartwatches/${item.slug}`} className="hover:text-amber-700">

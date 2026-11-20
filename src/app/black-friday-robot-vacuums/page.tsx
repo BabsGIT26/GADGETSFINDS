@@ -19,8 +19,8 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "https://cms-uploads.mumsnet.com/cache/containers/images/black-friday-robot-vacuum.png/e13af740e22cfc3e9c96c1eff15ee0f7/black-friday-robot-vacuum.webp",
-        alt: "Black Friday robot vacuums",
+        url: "https://www.gadgets-finds.com/assets/images/og-black-friday-vacuums.jpg",
+        alt: "A plain robot vacuum on a dark background",
       },
     ],
   },
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     creator: "@Gadgets_finds",
     title: "Black Friday Robot Vacuums",
     description: "How to choose between the dock robots, the mop station, and the simple robots on sale.",
-    images: ["https://cms-uploads.mumsnet.com/cache/containers/images/black-friday-robot-vacuum.png/e13af740e22cfc3e9c96c1eff15ee0f7/black-friday-robot-vacuum.webp"],
+    images: ["https://www.gadgets-finds.com/assets/images/og-black-friday-vacuums.jpg"],
   },
 };
 
@@ -88,9 +88,6 @@ export default function Page() {
           <div className="grid sm:grid-cols-2 gap-4">
             {VACUUMS.map((item) => (
               <div key={item.slug} className="bg-card border border-border rounded-xl overflow-hidden flex flex-col">
-                <a href={`/black-friday-robot-vacuums/${item.slug}`} className="bg-white h-36 flex items-center justify-center px-3">
-                  <img src={item.image} alt={item.alt} className="max-h-32 w-auto max-w-full object-contain" />
-                </a>
                 <div className="p-4 flex flex-col flex-1">
                   <h2 className="text-base font-bold">
                     <a href={`/black-friday-robot-vacuums/${item.slug}`} className="hover:text-amber-700">
