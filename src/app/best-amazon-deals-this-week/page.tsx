@@ -275,7 +275,7 @@ export default function Page() {
             The Fire TV Stick HD is a bad purchase next to a current 4K stick. A small gap is not worth giving up 4K and the new remote. A percent-off banner on a no-name Android box is the other thing to skip. The seller, the review count, and the return window matter more than the crossed-out price.
           </p>
           <p className="text-muted-foreground mb-8 leading-relaxed">
-            Echo speakers were also in a Prime-member coupon sale on November 17, often advertised at half off. Those coupons are not the same as the Fire TV buy-box prices above, and they can be limited to one device per account. If you go looking, clip nothing until the cart shows the final number.
+            Echo speakers were also in a Prime-member coupon sale. Those coupons are not the same as the Fire TV offer, and they can be limited to one device per account. If you go looking, clip nothing until the cart shows the final number.
           </p>
 
           <h2 className="text-2xl font-bold mt-10 mb-4">Final verdict</h2>
@@ -301,7 +301,7 @@ export default function Page() {
             href="https://www.amazon.com/gp/goldbox?tag=gadgetsfindswebsite-20"
           />
 
-          <p className="text-sm text-muted-foreground mt-8">Streaming apps bill separately. A half-off stick does not include Netflix, Disney+, or a Game Pass subscription.</p>
+          <p className="text-sm text-muted-foreground mt-8">Streaming apps bill separately. A Fire TV stick does not include Netflix, Disney+, or a Game Pass subscription.</p>
         </div>
       </article>
       <Footer />
