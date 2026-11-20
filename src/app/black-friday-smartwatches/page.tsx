@@ -19,8 +19,8 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "https://www.gadgets-finds.com/assets/images/apple-watch-series-12-42.jpg",
-        alt: "Apple Watch Series 12 GPS 42mm in black",
+        url: "https://www.apple.com/assets-www/en_WW/watch/01_og/watch_og_9cde5b638.png",
+        alt: "Apple Watch",
       },
     ],
   },
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     creator: "@Gadgets_finds",
     title: "Black Friday Smartwatches",
     description: "iPhone, Garmin, a screenless membership band, or a budget GPS watch. Read the note before the listing.",
-    images: ["https://www.gadgets-finds.com/assets/images/apple-watch-series-12-42.jpg"],
+    images: ["https://www.apple.com/assets-www/en_WW/watch/01_og/watch_og_9cde5b638.png"],
   },
 };
 
