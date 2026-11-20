@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     siteName: "Gadgets Finds",
     type: "article",
     images: [{
-      url: 'https://www.gadgets-finds.com/assets/images/eufy-robovac-g30-hq.jpg',
+      url: 'https://www.gadgets-finds.com/assets/images/eufy-robovac-g30-floor.jpg',
       alt: 'eufy RoboVac G30 robot vacuum',
     }],
   },
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     creator: "@Gadgets_finds",
     title: 'Best Robot Vacuums Under $300 in 2026',
     description: 'Lefant M210 Pro for most homes, eufy G30 for pet hair, and Roborock Q5 when the live price still fits.',
-    images: ['https://www.gadgets-finds.com/assets/images/eufy-robovac-g30-hq.jpg'],
+    images: ['https://www.gadgets-finds.com/assets/images/eufy-robovac-g30-floor.jpg'],
   },
 };
 
@@ -60,7 +60,7 @@ function ViewOnAmazon({ href, name }: { href: string; name: string }) {
 
 const IMAGES = {
   lefant: "/assets/images/lefant-m210-pro.jpg",
-  eufy: "/assets/images/eufy-robovac-g30-hq.jpg",
+  eufy: "/assets/images/eufy-robovac-g30-floor.jpg",
   q5: "/assets/images/roborock-q5.jpg",
   roomba: "/assets/images/roomba-600-series.jpg",
 } as const;

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     siteName: "Gadgets Finds",
     type: "article",
     images: [{
-      url: 'https://www.gadgets-finds.com/assets/images/anker-nano-45w.jpg',
+      url: 'https://www.gadgets-finds.com/assets/images/anker-nano-45w-hero.jpg',
       alt: 'Anker Nano 45W charger',
     }],
   },
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     creator: "@Gadgets_finds",
     title: 'Best Mini Gadgets Under $30 in 2026',
     description: 'Anker Nano 45W, a 5-in-1 USB-C hub, a 100W cable two-pack, and a Galaxy SmartTag2.',
-    images: ['https://www.gadgets-finds.com/assets/images/anker-nano-45w.jpg'],
+    images: ['https://www.gadgets-finds.com/assets/images/anker-nano-45w-hero.jpg'],
   },
 };
 
@@ -58,7 +58,7 @@ function ViewOnAmazon({ href, name }: { href: string; name: string }) {
 }
 
 const IMAGES = {
-  charger: "/assets/images/anker-nano-45w.jpg",
+  charger: "/assets/images/anker-nano-45w-hero.jpg",
   hub: "/assets/images/anker-5in1-hub.jpg",
   cable: "/assets/images/anker-100w-cable.jpg",
   tag: "/assets/images/galaxy-smarttag2.jpg",
@@ -66,12 +66,12 @@ const IMAGES = {
 
 function ProductPhoto({ src, alt }: { src: string; alt: string }) {
   return (
-    <div className="border-b border-border bg-white py-6">
+    <div className="border-b border-border">
       <img
         src={src}
         alt={alt}
         referrerPolicy="no-referrer"
-        className="mx-auto block w-auto h-auto max-h-72 md:max-h-80 max-w-full object-contain"
+        className="block w-full h-auto"
       />
     </div>
   );

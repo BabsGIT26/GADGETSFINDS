@@ -112,7 +112,7 @@ const gadgets: Gadget[] = [
     rating: 4.8,
     badge: "Guide",
     badgeColor: "bg-emerald-600 text-white",
-    image: "/assets/images/eufy-robovac-g30-hq.jpg",
+    image: "/assets/images/eufy-robovac-g30-floor.jpg",
     alt: "eufy RoboVac G30 robot vacuum",
     href: "/best-budget-robot-vacuums-under-300",
     highlights: ["Lefant M210 Pro", "eufy G30", "Roborock Q5"],
