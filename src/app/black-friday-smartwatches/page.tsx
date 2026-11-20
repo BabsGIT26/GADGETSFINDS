@@ -68,23 +68,7 @@ export default function Page() {
           </p>
 
           <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">By Gadgets Finds · November 2026</p>
-          <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Black Friday smartwatches</h1>
-          <p className="text-muted-foreground mb-4 leading-relaxed">
-            These listings are on sale at the same time. They are not the same kind of product. Split them by the phone in your pocket before you open Amazon.
-          </p>
-          <p className="text-muted-foreground mb-4 leading-relaxed">
-            An iPhone points you at the three Apple Watches. The SE 3 GPS 40mm is the smaller one. The Series 12 GPS 42mm is the current watch that still needs the phone nearby. The Series 12 GPS + Cellular 46mm is the one that can leave the phone at home, after you add a carrier plan. Each listing is one case size and one band length.
-          </p>
-          <p className="text-muted-foreground mb-4 leading-relaxed">
-            An Android phone, or a person who wants the same watch on either phone, points you at Garmin. The Venu 4 is the everyday fitness watch. The Instinct 3 AMOLED is the rugged one. The CARBINOX Edge is the budget GPS watch, and it is not Garmin software. The WHOOP is not a watch at all. It is a screenless band with 12 months of membership in the box.
-          </p>
-          <p className="text-muted-foreground mb-8 leading-relaxed">
-            Read the short note first. The Amazon button is there after that, and it does not open until you click it. The price on Amazon is the only price. The longer comparison is still the{" "}
-            <a href="/best-smartwatches-under-350" className="underline decoration-amber-500/80 underline-offset-4 hover:text-foreground">
-              smartwatch guide under $350
-            </a>
-            .
-          </p>
+          <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-8">Black Friday smartwatches</h1>
 
           <ProductListJsonLd
             name="Black Friday smartwatches"
@@ -126,6 +110,21 @@ export default function Page() {
               </div>
             ))}
           </div>
+
+          <h2 className="text-2xl font-bold mt-10 mb-4">How to choose</h2>
+          <p className="text-muted-foreground mb-4 leading-relaxed">
+            On an iPhone, start with the three Apple Watches. The SE 3 GPS 40mm is the smaller model. The Series 12 GPS 42mm is the current watch, and it still needs the iPhone nearby. The Series 12 GPS + Cellular 46mm can leave the phone at home once a carrier plan is added. Each listing is one case size and one band length.
+          </p>
+          <p className="text-muted-foreground mb-4 leading-relaxed">
+            On an Android phone, or if the watch should work with either phone, start with Garmin. The Venu 4 is the everyday fitness watch. The Instinct 3 AMOLED is the rugged model. The CARBINOX Edge is the budget GPS watch, and it does not run Garmin software. The WHOOP is not a watch. It is a screenless band sold with 12 months of membership.
+          </p>
+          <p className="text-muted-foreground mb-8 leading-relaxed">
+            Read the short note on a model before you open its Amazon listing. The button stays on this page until you click it. The price on Amazon is the only price. A longer comparison is in the{" "}
+            <a href="/best-smartwatches-under-350" className="underline decoration-amber-500/80 underline-offset-4 hover:text-foreground">
+              smartwatch guide under $350
+            </a>
+            .
+          </p>
 
           <GuideFaq items={FAQ} />
           <RelatedGuides current="/black-friday-smartwatches" />
