@@ -113,15 +113,6 @@ export default function SamsungGalaxyS26UltraArticle() {
           </div>
         </div>
 
-        {/* Navigation Button */}
-        <div className="max-w-5xl mx-auto px-4 py-6">
-          <Link
-            href="/live-news-feed"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-brand-primary text-white rounded-lg font-semibold hover:bg-brand-primary/90 transition-colors">
-            <Icon name="NewspaperIcon" size={20} variant="outline" />
-            <span>Live News Feed</span>
-          </Link>
-        </div>
 
         {/* Article Content */}
         <article className="max-w-5xl mx-auto px-4 py-8">
@@ -231,15 +222,6 @@ export default function SamsungGalaxyS26UltraArticle() {
 />
         </article>
 
-        {/* Bottom Navigation */}
-        <div className="max-w-5xl mx-auto px-4 py-8 border-t border-border">
-          <Link
-            href="/live-news-feed"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-brand-primary text-white rounded-lg font-semibold hover:bg-brand-primary/90 transition-colors">
-            <Icon name="NewspaperIcon" size={20} variant="outline" />
-            <span>Live News Feed</span>
-          </Link>
-        </div>
       </div>
       <Footer />
     </>);

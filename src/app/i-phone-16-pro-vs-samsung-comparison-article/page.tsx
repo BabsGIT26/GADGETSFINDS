@@ -86,16 +86,6 @@ export default function iPhone16ProVsSamsungArticle() {
 
         {/* Article Content */}
         <div className="max-w-4xl mx-auto px-6 py-12">
-          {/* Live News Feed button – placed where Share/Save used to be */}
-          <div className="mb-8 pb-8 border-b border-border">
-            <Link
-              href="/live-news-feed"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-brand-primary text-white rounded-lg font-semibold hover:bg-brand-primary/90 transition-colors">
-              
-              <Icon name="NewspaperIcon" size={20} variant="outline" />
-              <span>Live News Feed</span>
-            </Link>
-          </div>
 
           {/* Article Body */}
           <div className="prose prose-lg max-w-none">
@@ -191,16 +181,6 @@ export default function iPhone16ProVsSamsungArticle() {
             )}
           </div>
 
-          {/* Bottom CTA – consistent with other pages */}
-          <div className="mt-12 text-center">
-            <Link
-              href="/live-news-feed"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-brand-primary text-white rounded-lg font-semibold hover:bg-brand-primary/90 transition-colors">
-              
-              <Icon name="NewspaperIcon" size={20} variant="outline" />
-              <span>Live News Feed</span>
-            </Link>
-          </div>
         </div>
       </div>
       <Footer />

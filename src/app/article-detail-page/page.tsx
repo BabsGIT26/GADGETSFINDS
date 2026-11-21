@@ -517,11 +517,11 @@ The Galaxy Z Fold 6 is the most refined foldable phone yet. While it's still exp
           <h1 className="text-3xl font-bold text-foreground mb-4">Article Not Found</h1>
           <p className="text-muted-foreground mb-8">The article you're looking for doesn't exist or has been removed.</p>
           <Link
-            href="/live-news-feed"
+            href="/"
             className="inline-flex items-center space-x-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors">
 
             <Icon name="ArrowLeftIcon" size={20} variant="outline" />
-            <span>Back to News Feed</span>
+            <span>Back to Home</span>
           </Link>
         </div>
       </div>);
@@ -536,7 +536,7 @@ The Galaxy Z Fold 6 is the most refined foldable phone yet. While it's still exp
           <nav className="flex items-center space-x-2 text-sm text-muted-foreground">
             <Link href="/homepage" className="hover:text-foreground transition-colors">Home</Link>
             <Icon name="ChevronRightIcon" size={16} variant="outline" />
-            <Link href="/live-news-feed" className="hover:text-foreground transition-colors">News</Link>
+            <Link href="/" className="hover:text-foreground transition-colors">Home</Link>
             <Icon name="ChevronRightIcon" size={16} variant="outline" />
             <span className="text-foreground font-medium">{article.category}</span>
           </nav>

@@ -1,27 +1,7 @@
 'use client';
 
-import NewsCard from '@/app/live-news-feed/components/NewsCard';
 import ProductCard from '@/app/product-comparison-engine/components/ProductCard';
-import TrendCard from '@/app/tech-trends-2026/components/TrendCard';
 import Icon from '@/components/ui/AppIcon';
-
-interface Article {
-  id: string;
-  title: string;
-  excerpt: string;
-  category: string;
-  urgency: 'breaking' | 'high' | 'normal';
-  image: string;
-  alt: string;
-  author: string;
-  authorImage: string;
-  authorAlt: string;
-  publishedAt: string;
-  readTime: number;
-  views: number;
-  comments: number;
-  type: 'news';
-}
 
 interface Product {
   id: string;
@@ -42,47 +22,17 @@ interface Product {
   type: 'product';
 }
 
-interface Trend {
-  id: number;
-  title: string;
-  category: string;
-  image: string;
-  alt: string;
-  impactScore: number;
-  predictionAccuracy: number;
-  timeframe: string;
-  description: string;
-  industries: string[];
-  expertName: string;
-  expertRole: string;
-  expertImage: string;
-  expertAlt: string;
-  type: 'trend';
-}
-
-type SearchResult = Article | Product | Trend;
-
 interface SearchResultsProps {
-  results: SearchResult[];
+  results: { type: string }[];
   isSearching: boolean;
   searchQuery: string;
 }
 
 const SearchResults = ({ results, isSearching, searchQuery }: SearchResultsProps) => {
-  const newsResults = results.filter(r => r.type === 'news') as Article[];
-  const productResults = results.filter(r => r.type === 'product') as Product[];
-  const trendResults = results.filter(r => r.type === 'trend') as Trend[];
+  const productResults = results.filter((item) => item.type === 'product') as Product[];
 
   const handleCompare = (productId: string) => {
     console.log('Compare product:', productId);
-  };
-
-  const handleShare = (trendId: number) => {
-    console.log('Share trend:', trendId);
-  };
-
-  const handleDownload = (trendId: number) => {
-    console.log('Download trend:', trendId);
   };
 
   if (isSearching) {
@@ -119,22 +69,6 @@ const SearchResults = ({ results, isSearching, searchQuery }: SearchResultsProps
         </h2>
       </div>
 
-      {newsResults.length > 0 && (
-        <div>
-          <div className="flex items-center gap-2 mb-4">
-            <Icon name="NewspaperIcon" size={24} variant="outline" className="text-primary" />
-            <h3 className="text-xl font-bold text-foreground">
-              News Articles ({newsResults.length})
-            </h3>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {newsResults.map((article) => (
-              <NewsCard key={article.id} article={article} />
-            ))}
-          </div>
-        </div>
-      )}
-
       {productResults.length > 0 && (
         <div>
           <div className="flex items-center gap-2 mb-4">
@@ -150,27 +84,6 @@ const SearchResults = ({ results, isSearching, searchQuery }: SearchResultsProps
                 product={product}
                 onCompare={handleCompare}
                 isComparing={false}
-              />
-            ))}
-          </div>
-        </div>
-      )}
-
-      {trendResults.length > 0 && (
-        <div>
-          <div className="flex items-center gap-2 mb-4">
-            <Icon name="ChartBarIcon" size={24} variant="outline" className="text-primary" />
-            <h3 className="text-xl font-bold text-foreground">
-              Tech Trends ({trendResults.length})
-            </h3>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {trendResults.map((trend) => (
-              <TrendCard
-                key={trend.id}
-                trend={trend}
-                onShare={handleShare}
-                onDownload={handleDownload}
               />
             ))}
           </div>

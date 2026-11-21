@@ -99,16 +99,6 @@ export default function BestLaptopsDevelopers2026() {
           </div>
         </div>
 
-        {/* Live News Feed button right after hero – matches other pages */}
-        <div className="max-w-5xl mx-auto px-5 py-6 sm:py-8">
-          <Link
-            href="/live-news-feed"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-brand-primary text-white rounded-lg font-semibold hover:bg-brand-primary/90 transition-colors">
-            
-            <Icon name="NewspaperIcon" size={20} variant="outline" />
-            <span>Live News Feed</span>
-          </Link>
-        </div>
 
         {/* Article Body */}
         <article className="mx-auto max-w-5xl px-5 py-10 sm:px-8 sm:py-12 lg:py-16">
@@ -453,16 +443,6 @@ export default function BestLaptopsDevelopers2026() {
             </div>
           </div>
 
-          {/* Final CTA */}
-          <div className="mt-12 border-t border-border pt-10 text-center sm:text-left">
-            <Link
-              href="/live-news-feed"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-brand-primary text-white rounded-lg font-semibold hover:bg-brand-primary/90 transition-colors">
-              
-              <Icon name="NewspaperIcon" size={20} variant="outline" />
-              <span>Live News Feed</span>
-            </Link>
-          </div>
 
           {/* Related Articles */}
           <div className="mt-16 pt-8 border-t border-border">
@@ -473,14 +453,6 @@ export default function BestLaptopsDevelopers2026() {
                   <span className="text-xs font-bold text-brand-primary">Laptops</span>
                   <h4 className="mt-2 text-lg font-bold text-foreground group-hover:text-brand-primary">
                     MacBook Pro M4: Apple Silicon Reaches New Heights
-                  </h4>
-                </div>
-              </Link>
-              <Link href="/apple-vision-pro-2-article" className="group block">
-                <div className="rounded-lg border border-border bg-card p-5 transition hover:border-brand-primary">
-                  <span className="text-xs font-bold text-brand-primary">Breaking News</span>
-                  <h4 className="mt-2 text-lg font-bold text-foreground group-hover:text-brand-primary">
-                    Apple Vision Pro 2 Leaked: Revolutionary Eye-Tracking Technology
                   </h4>
                 </div>
               </Link>

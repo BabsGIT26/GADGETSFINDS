@@ -9,12 +9,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/privacy-policy',
     '/terms-of-service',
     '/cookies',
-    '/ces-2026-hub',
     '/best-laptops-developers-2026',
   ];
 
   const articlePages = [
-    '/ai-productivity-tools-2026-article',
     '/i-phone-16-pro-vs-samsung-comparison-article',
     '/macbook-pro-m4-article',
     '/playstation-5-digital-renewed-article',

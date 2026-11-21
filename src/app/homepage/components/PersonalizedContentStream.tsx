@@ -287,18 +287,6 @@ const PersonalizedContentStream = () => {
       tags: ["Amazon", "Outlet", "Guide"]
     },
     {
-      id: 4,
-      title: "Quantum Computing Breakthrough: IBM Announces 1000-Qubit Processor",
-      excerpt: "IBM's latest quantum processor marks a significant milestone in the race toward practical quantum computing.",
-      category: "News",
-      image: "https://img.rocket.new/generatedImages/rocket_gen_img_133e69454-1764670841086.png",
-      alt: "Futuristic quantum computer processor with blue glowing circuits",
-      author: "",
-      publishedDate: "Jul 22, 2026",
-      readTime: "6 min read",
-      tags: ["Quantum Computing", "IBM", "Innovation"]
-    },
-    {
       id: 5,
       title: "Smart Home Security Systems: 2026 Comparison and Recommendations",
       excerpt: "Comprehensive analysis of the top smart home security systems, from DIY options to professional monitoring.",
@@ -321,18 +309,6 @@ const PersonalizedContentStream = () => {
       publishedDate: "Jun 28, 2026",
       readTime: "10 min read",
       tags: ["Smartphones", "Photography", "Comparison"]
-    },
-    {
-      id: 7,
-      title: "AI-Powered Productivity Tools That Actually Work in 2026",
-      excerpt: "Our team tested dozens of AI productivity tools to find the ones that genuinely improve workflow efficiency.",
-      category: "Guide",
-      image: "https://img.rocket.new/generatedImages/rocket_gen_img_1e5481e82-1770938347610.png",
-      alt: "Person using AI productivity software on laptop with holographic interface",
-      author: "",
-      publishedDate: "Jun 14, 2026",
-      readTime: "9 min read",
-      tags: ["AI", "Productivity", "Software"]
     },
     {
       id: 8,
@@ -394,10 +370,8 @@ const PersonalizedContentStream = () => {
     1: "/iphone-duo-cases",
     2: "/october-deals",
     3: "/amazon-outlet-guide",
-    4: "/quantum-computing-ibm-article",
     5: "/smart-home-security-systems-article",
     6: "/i-phone-16-pro-vs-samsung-comparison-article",
-    7: "/ai-productivity-tools-2026-article",
     8: "/sony-wh-2000xm6-review-article",
     9: "/best-laptops-developers-2026",
     10: "/best-amazon-deals-this-week",

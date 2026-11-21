@@ -17,24 +17,6 @@ interface Notification {
 
 const mockNotifications: Notification[] = [
   {
-    id: 1,
-    type: 'breaking',
-    title: 'Breaking: NVIDIA RTX 6090 Ti Announced',
-    description: 'NVIDIA just unveiled the RTX 6090 Ti with unprecedented performance benchmarks at CES 2026.',
-    time: '2 minutes ago',
-    read: false,
-    href: '/nvidia-rtx-6090-ti-article',
-  },
-  {
-    id: 2,
-    type: 'trending',
-    title: 'Apple M4 Chip Review Is Trending',
-    description: 'Our in-depth Apple M4 chip review is now one of the most-read articles this week.',
-    time: '1 hour ago',
-    read: false,
-    href: '/apple-m4-chip-article',
-  },
-  {
     id: 3,
     type: 'review',
     title: 'New Review: Sony WH-2000XM6',
@@ -44,15 +26,6 @@ const mockNotifications: Notification[] = [
     href: '/sony-wh-2000xm6-review-article',
   },
   {
-    id: 4,
-    type: 'update',
-    title: 'CES 2026 Hub Updated',
-    description: 'New product launches and event schedules have been added to the CES 2026 Hub.',
-    time: '5 hours ago',
-    read: true,
-    href: '/ces-2026-hub',
-  },
-  {
     id: 5,
     type: 'trending',
     title: 'Samsung Galaxy S26 Ultra vs iPhone 16 Pro',
@@ -60,24 +33,6 @@ const mockNotifications: Notification[] = [
     time: '8 hours ago',
     read: true,
     href: '/i-phone-16-pro-vs-samsung-comparison-article',
-  },
-  {
-    id: 6,
-    type: 'update',
-    title: 'Tech Trends 2026 Report Published',
-    description: 'Our annual Tech Trends 2026 report is live. Explore the top 6 trends shaping the future.',
-    time: '1 day ago',
-    read: true,
-    href: '/tech-trends-2026',
-  },
-  {
-    id: 7,
-    type: 'breaking',
-    title: 'Tesla Robotaxi Officially Launches',
-    description: 'Tesla has officially launched its Robotaxi service in select cities across the US.',
-    time: '2 days ago',
-    read: true,
-    href: '/tesla-robotaxi-article',
   },
 ];
 
