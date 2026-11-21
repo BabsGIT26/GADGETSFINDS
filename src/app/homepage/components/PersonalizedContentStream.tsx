@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import AppImage from '@/components/ui/AppImage';
 import Icon from '@/components/ui/AppIcon';
 
 interface ContentItem {
@@ -448,12 +447,12 @@ const PersonalizedContentStream = () => {
               href={articleRoutes[item.id] || "/"}
               className="bg-card rounded-xl overflow-hidden shadow-md"
             >
-              <div className="relative h-48 overflow-hidden bg-white">
-                {item.fit === "contain" ? (
-                  <img src={item.image} alt={item.alt} className="w-full h-full object-contain" />
-                ) : (
-                  <AppImage src={item.image} alt={item.alt} className="w-full h-full object-cover" />
-                )}
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src={item.image}
+                  alt={item.alt}
+                  className={`block w-full h-full ${item.fit === "contain" ? "object-contain" : "object-cover"}`}
+                />
               </div>
               <div className="p-5">
                 <span className="inline-block px-2 py-1 bg-primary/10 text-primary text-xs font-semibold rounded mb-2">
@@ -498,12 +497,12 @@ const PersonalizedContentStream = () => {
             href={articleRoutes[item.id] || "/"}
             className="bg-card rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow"
           >
-            <div className="relative h-48 overflow-hidden bg-white">
-              {item.fit === "contain" ? (
-                <img src={item.image} alt={item.alt} className="w-full h-full object-contain" />
-              ) : (
-                <AppImage src={item.image} alt={item.alt} className="w-full h-full object-cover" />
-              )}
+            <div className="relative h-48 overflow-hidden">
+              <img
+                src={item.image}
+                alt={item.alt}
+                className={`block w-full h-full ${item.fit === "contain" ? "object-contain" : "object-cover"}`}
+              />
             </div>
             <div className="p-5">
               <span className="inline-block px-2 py-1 bg-primary/10 text-primary text-xs font-semibold rounded mb-2">
