@@ -88,10 +88,6 @@ export default function BestLaptopsDevelopers2026() {
               {/* Meta with strong visibility */}
               <div className="mt-4 flex flex-wrap items-center gap-4 rounded-md bg-black/65 px-4 py-2 text-xs sm:text-sm text-gray-100 backdrop-blur-md shadow-sm">
                 <span className="flex items-center gap-1.5">
-                  <Icon name="UserIcon" size={14} variant="outline" />
-                </span>
-                <span className="text-gray-400">•</span>
-                <span className="flex items-center gap-1.5">
                   <Icon name="ClockIcon" size={14} variant="outline" />
                   12 min read
                 </span>
@@ -104,14 +100,14 @@ export default function BestLaptopsDevelopers2026() {
         {/* Article Body */}
         <article className="mx-auto max-w-5xl px-5 py-10 sm:px-8 sm:py-12 lg:py-16">
           <div className="prose prose-lg prose-invert max-w-none lg:prose-xl">
-            <p className="text-xl text-muted-foreground leading-relaxed mb-6">
-              After comparing specs, verified owner reviews, and expert reviews for dozens of laptops across different price ranges, we've compiled this guide to help developers find their perfect coding machine. Whether you're a web developer, data scientist, or mobile app creator, this guide covers everything you need to know.
-            </p>
-          <TopPicks picks={[
+            <TopPicks picks={[
     { label: "Best overall", name: "MacBook Pro 14 (M5)", why: "The current 14-inch MacBook Pro on Amazon.", url: "https://www.amazon.com/dp/B0FWD623D1?tag=gadgetsfindswebsite-20" },
     { label: "Best value", name: "MacBook Air 13 (M5)", why: "Fanless and light for web and scripting work.", url: "https://www.amazon.com/dp/B0GR19X8DC?tag=gadgetsfindswebsite-20" },
     { label: "Most power", name: "MacBook Pro 16 (M5 Max)", why: "For big builds, local models, and VMs.", url: "https://www.amazon.com/dp/B0GR1F53WV?tag=gadgetsfindswebsite-20" },
           ]} />
+            <p className="text-xl text-muted-foreground leading-relaxed mb-6">
+              After comparing specs, verified owner reviews, and expert reviews for dozens of laptops across different price ranges, we've compiled this guide to help developers find their perfect coding machine. Whether you're a web developer, data scientist, or mobile app creator, this guide covers everything you need to know.
+            </p>
 
 
             <h2 className="text-3xl font-bold text-foreground mt-8 mb-6">What Makes a Great Developer Laptop?</h2>

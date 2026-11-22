@@ -10,18 +10,18 @@ import { illustrationAlt } from "@/lib/illustrations";
 export const metadata: Metadata = {
   title: "Best Cheap Tablets Under $150 in 2026 | Gadgets Finds",
   description:
-    "New tablets that can actually land under $150 in 2026: Fire HD 10, Galaxy Tab A9+, Amazon Kids Tablet 8, Fire HD 8, and Lenovo Tab One. Exact listings, not renewed units.",
+    "New tablets that can actually land under $150 in 2026: Fire HD 8, Lenovo Tab One, and Amazon Kids Tablet 8, plus the Fire HD 10 and Galaxy Tab A9+ when they are back in stock. Exact listings, not renewed units.",
   metadataBase: new URL("https://www.gadgets-finds.com"),
   alternates: { canonical: "https://www.gadgets-finds.com/best-cheap-tablets-under-150" },
   openGraph: {
     title: 'Best Cheap Tablets Under $150 in 2026',
-    description: 'Fire HD 10, Galaxy Tab A9+, Amazon Kids Tablet 8, Fire HD 8, and Lenovo Tab One.',
+    description: 'Fire HD 8, Lenovo Tab One, Amazon Kids Tablet 8, Fire HD 10, and Galaxy Tab A9+.',
     url: 'https://www.gadgets-finds.com/best-cheap-tablets-under-150',
     siteName: "Gadgets Finds",
     type: "article",
     images: [{
       url: 'https://www.gadgets-finds.com/og/tablet',
-      alt: 'Amazon Fire HD 10 tablet',
+      alt: 'Cheap tablets under $150',
     }],
   },
   twitter: {
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     site: "@Gadgets_finds",
     creator: "@Gadgets_finds",
     title: 'Best Cheap Tablets Under $150 in 2026',
-    description: 'Fire HD 10, Galaxy Tab A9+, Amazon Kids Tablet 8, Fire HD 8, and Lenovo Tab One.',
+    description: 'Fire HD 8, Lenovo Tab One, Amazon Kids Tablet 8, Fire HD 10, and Galaxy Tab A9+.',
     images: ['https://www.gadgets-finds.com/og/tablet'],
   },
 };
@@ -94,20 +94,20 @@ export default function Page() {
           <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">Buying Guide</p>
           <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">Best Cheap Tablets Under $150 in 2026</h1>
           <p className="text-muted-foreground mb-2 text-sm">Last updated: November 2026</p>
-          <TopPicks note="On November 22, 2026 the Fire HD 10 and Galaxy Tab A9+ listings showed no new stock on Amazon. Check their buttons below before you plan around them." picks={[
+          <TopPicks note="On November 22, 2026 the Fire HD 10 was out of stock and the Galaxy Tab A9+ had no featured new offer on Amazon, so both moved to the end of this guide without buttons." picks={[
+    { label: "Best overall right now", name: "Amazon Fire HD 8 (2024)", why: "The cheapest new tablet here from a known brand.", url: "https://www.amazon.com/dp/B0CVDN4QS6?tag=gadgetsfindswebsite-20" },
+    { label: "Best Android", name: "Lenovo Tab One", why: "Play Store, 4 GB RAM, and a folio stand in the box.", url: "https://www.amazon.com/dp/B0F1NHSFMF?tag=gadgetsfindswebsite-20" },
     { label: "Best for kids", name: "Amazon Kids Tablet 8", why: "The pick for a child aged 3 to 5.", url: "https://www.amazon.com/dp/B0FLB1NJPY?tag=gadgetsfindswebsite-20" },
-    { label: "Best small tablet", name: "Amazon Fire HD 8", why: "The smaller Fire tablet for reading and streaming.", url: "https://www.amazon.com/dp/B0CVDN4QS6?tag=gadgetsfindswebsite-20" },
-    { label: "Best Android", name: "Lenovo Tab One", why: "A small Android tablet with the Play Store.", url: "https://www.amazon.com/dp/B0F1NHSFMF?tag=gadgetsfindswebsite-20" },
           ]} />
-          <ProductListJsonLd name="Best cheap tablets under $150" url="/best-cheap-tablets-under-150" products={["Amazon Fire HD 10", "Samsung Galaxy Tab A9+", "Amazon Kids Tablet 8", "Amazon Fire HD 8", "Lenovo Tab One"]} />
+          <ProductListJsonLd name="Best cheap tablets under $150" url="/best-cheap-tablets-under-150" products={["Amazon Fire HD 8", "Lenovo Tab One", "Amazon Kids Tablet 8", "Amazon Fire HD 10", "Samsung Galaxy Tab A9+"]} />
           <p className="text-muted-foreground mb-6 text-lg leading-relaxed">
             A tablet under $150 in 2026 is a streaming, reading, and browsing machine. It is not a laptop replacement, and it is not going to edit video or keep a dozen heavy apps happy at once. The useful ones in this range have a screen you can watch for an hour without squinting, a battery that lasts a travel day, and storage you can expand when 32 GB fills up.
           </p>
           <p className="text-muted-foreground mb-6 leading-relaxed">
-            This guide stays on five new listings. Each title links to that exact product, and each review ends with its own View on Amazon button. None of them is a renewed, refurbished, or “like new” unit. A new iPad is outside this budget, and a renewed older iPad is a different kind of purchase. That option is discussed at the end, without a button.
+            This guide stays on five new listings. Each title links to that exact product, and each in-stock review ends with its own View on Amazon button. None of them is a renewed, refurbished, or “like new” unit. A new iPad is outside this budget, and a renewed older iPad is a different kind of purchase. That option is discussed at the end, without a button.
           </p>
           <p className="text-muted-foreground mb-10 leading-relaxed">
-            Two of the five only belong in this guide when the live Amazon price is inside the budget. If it is not, skip that card and buy the Fire HD 10 or the Fire HD 8 instead.
+            When we checked on November 22, 2026, the Fire HD 10 was out of stock on Amazon and the Galaxy Tab A9+ had no featured new offer, so the three tablets you can actually buy now come first. The Fire HD 10 and the Tab A9+ are still reviewed at the end, without buttons, because they are the ones to watch for when they come back.
           </p>
 
           <h2 className="text-2xl md:text-3xl font-bold mt-12 mb-4">What $150 actually buys</h2>
@@ -121,84 +121,78 @@ export default function Page() {
             <li>Battery claims of “up to 13 hours” are Amazon’s mixed-use number, not a lab result for max brightness and a game. Treat them as a full evening of video, not a guarantee.</li>
           </ul>
 
-          <h2 className="text-2xl md:text-3xl font-bold mt-16 mb-4">1. Amazon Fire HD 10</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mt-16 mb-4">1. Amazon Fire HD 8</h2>
           <div className="mb-8 bg-card border-2 border-amber-400/60 rounded-2xl overflow-hidden shadow-sm">
-            <ProductPhoto src={IMAGES.hd10} alt="Amazon Fire HD 10 tablet, black, front and back" />
+            <ProductPhoto src={IMAGES.hd8} alt="Amazon Fire HD 8 2024 tablet, black" />
             <div className="p-6 md:p-8">
               <h3 className="text-2xl font-bold mb-4">
-                <a href={amazonHref(AMAZON.hd10)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">Amazon Fire HD 10</a>
+                <a href={amazonHref(AMAZON.hd8)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">Amazon Fire HD 8 (2024)</a>
               </h3>
               <ul className="text-sm text-muted-foreground space-y-1 mb-6">
-                <li><strong className="text-amber-500">Listing:</strong> 13th generation, 2023, 32 GB, black, sold new</li>
-                <li><strong className="text-amber-500">Screen:</strong> 10.1-inch IPS, 1920 x 1200, 224 ppi</li>
-                <li><strong className="text-amber-500">Chip and memory:</strong> MediaTek MT8186A, 3 GB RAM</li>
-                <li><strong className="text-amber-500">Storage:</strong> 32 GB, microSD up to 1 TB</li>
-                <li><strong className="text-amber-500">Battery:</strong> Amazon rates up to 13 hours; 9 W adapter in the box</li>
+                <li><strong className="text-amber-500">Listing:</strong> 2024 model, 32 GB, black, ad-supported, sold new</li>
+                <li><strong className="text-amber-500">Screen:</strong> 8-inch HD, 1280 x 800</li>
+                <li><strong className="text-amber-500">Memory:</strong> 3 GB RAM, 32 GB storage, microSD up to 1 TB</li>
+                <li><strong className="text-amber-500">Cameras:</strong> 5 MP rear, 2 MP front</li>
               </ul>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                This is the tablet most people should buy if they already live in Prime Video, Kindle, and Alexa. The 2023 Fire HD 10, Amazon’s 13th generation, uses a MediaTek MT8186A with two Cortex-A76 cores up to 2.05 GHz and six Cortex-A55 cores up to 2.0 GHz, plus a Mali-G52 GPU. Amazon says it is about 25 percent faster than the 2021 model. With 3 GB of RAM it is fine for one video app, a browser tab, and Kindle. It is not fine for a split screen full of heavy games.
+                The 2024 Fire HD 8 is the compact tablet in this guide. The linked configuration is the black 32 GB ad-supported model. It is the pick for most people right now: it was in stock on Amazon when we checked on November 22, 2026, while the larger Fire HD 10 was not. Confirm the live price on Amazon.
               </p>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                The panel is a 10.1-inch IPS at 1920 x 1200. That is a real 1080p-class screen, not the 1280 x 800 panel on the smaller Fire HD 8, and it is the right size for a couch or a kitchen counter. The front glass is aluminosilicate. Both cameras are 5 megapixels, which is enough for a video call and not much else. There is a 3.5 mm headphone jack, USB-C 2.0, Bluetooth 5.3, and dual-band Wi-Fi 5. Amazon’s developer sheet lists the body at about 246 x 165 x 8.6 mm and roughly 434 grams. A 9 W adapter and a USB-C cable come in the box. Amazon’s charge claim is a full battery in under four hours on that adapter.
+                The screen is 8 inches at 1280 x 800. That is a clear step down from the Fire HD 10’s 1920 x 1200 panel. Text is fine. Movies are fine on a nightstand and cramped on a couch across the room. The 2024 refresh kept that panel and raised the 32 GB model to 3 GB of RAM, which Amazon describes as 50 percent more than the 2022 release. The processor is still a hexa-core part around 2 GHz. Amazon rates battery life at up to 13 hours of mixed reading, video, and music. The rear camera moved to 5 megapixels. The front camera stays at 2 megapixels, so video calls are the weak spot.
               </p>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                The linked card is the 32 GB black model. A lower street price on Fire tablets usually means lock-screen ads. Amazon sells an ad-free option as a separate choice, and it costs more. Read the style selector on the live page before you assume the screensaver is clean. User-available storage is less than 32 GB because Fire OS keeps a slice. Plan on a microSD card if you download shows.
-              </p>
-              <p className="text-muted-foreground mb-4 leading-relaxed">
-                The Fire HD 10 is the large screen in this guide, as long as you accept Fire OS. Confirm the live price on Amazon. If you need the Play Store every day, open the Galaxy Tab A9+ or the Lenovo Tab One and keep it only if that live price still fits this guide.
+                Everything else matches a small Fire tablet. Fire OS, no Play Store, microSD up to 1 TB, USB-C, and lock-screen ads on this cheaper style. There is a 64 GB configuration and an ad-free option. Both cost more, and neither is the link on this card. If you mostly read in Kindle and watch one show at a time, the HD 8 is enough and the extra money is better spent on a memory card. If two people are going to watch from the same screen, spend the difference on the Fire HD 10.
               </p>
               <div className="grid md:grid-cols-2 gap-6 mt-6">
                 <div>
                   <p className="font-semibold text-green-600 mb-2">Strengths</p>
-                  <p className="text-sm text-muted-foreground">Large 1080p-class screen, 13-hour battery claim, microSD, adapter in the box, and a price that often lands well under $150.</p>
+                  <p className="text-sm text-muted-foreground">Light enough to carry, 3 GB of RAM on the 2024 32 GB model, and expandable storage.</p>
                 </div>
                 <div>
                   <p className="font-semibold text-amber-600 mb-2">Limitations</p>
-                  <p className="text-sm text-muted-foreground">No Google Play. The cheap configuration shows lock-screen ads. 3 GB of RAM and 32 GB of storage run out if you treat it like a phone full of apps.</p>
+                  <p className="text-sm text-muted-foreground">1280 x 800 is a soft screen next to the HD 10. Fire OS and lock-screen ads are still there. The front camera is only 2 megapixels.</p>
                 </div>
               </div>
-              <p className="mt-6 text-sm font-medium">Verdict: The default pick for Prime households. Best suited for streaming, reading, and a second screen in the kitchen.</p>
-              <ViewOnAmazon href={AMAZON.hd10} name="Amazon Fire HD 10" />
+              <p className="mt-6 text-sm font-medium">Verdict: The pick for most people right now. Best suited for reading and one-person video, not a shared living-room screen.</p>
+              <ViewOnAmazon href={AMAZON.hd8} name="Amazon Fire HD 8" />
             </div>
           </div>
 
-          <h2 className="text-2xl md:text-3xl font-bold mt-16 mb-4">2. Samsung Galaxy Tab A9+</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mt-16 mb-4">2. Lenovo Tab One</h2>
           <div className="mb-8 bg-card border-2 border-amber-400/60 rounded-2xl overflow-hidden shadow-sm">
-            <ProductPhoto src={IMAGES.a9} alt="Samsung Galaxy Tab A9+ graphite tablet, front and back" />
+            <ProductPhoto src={IMAGES.lenovo} alt="Lenovo Tab One with its folio case used as a stand" />
             <div className="p-6 md:p-8">
               <h3 className="text-2xl font-bold mb-4">
-                <a href={amazonHref(AMAZON.a9)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">Samsung Galaxy Tab A9+</a>
+                <a href={amazonHref(AMAZON.lenovo)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">Lenovo Tab One</a>
               </h3>
               <ul className="text-sm text-muted-foreground space-y-1 mb-6">
-                <li><strong className="text-amber-500">Listing:</strong> US version, 2024, 11-inch, 64 GB, graphite, tablet only, sold new</li>
-                <li><strong className="text-amber-500">Screen:</strong> 11-inch TFT, 1920 x 1200, 90 Hz</li>
-                <li><strong className="text-amber-500">Memory:</strong> 4 GB RAM, 64 GB, microSD up to 1 TB</li>
-                <li><strong className="text-amber-500">Audio:</strong> Four speakers, Dolby Atmos</li>
+                <li><strong className="text-amber-500">Listing:</strong> 8.7-inch, 4 GB RAM, 64 GB, folio case included, sold new</li>
+                <li><strong className="text-amber-500">Screen:</strong> 8.7-inch, 1340 x 800</li>
+                <li><strong className="text-amber-500">Chip:</strong> MediaTek Helio G85, Mali-G52 MC2</li>
+                <li><strong className="text-amber-500">Software:</strong> Android, with the Play Store</li>
+                <li><strong className="text-amber-500">Battery claim:</strong> Up to 12.5 hours of YouTube</li>
               </ul>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                The Galaxy Tab A9+ is the Android tablet in this guide, and it only fits when the live Amazon price is inside the budget. If it is not, do not stretch. Buy the Fire HD 10 instead.
+                The Lenovo Tab One is here for one reason: it is a small Android tablet with the Play Store and a folio case in the box. That case folds into a stand, which is the thing a bare Fire tablet makes you buy later. The panel is 8.7 inches at 1340 x 800, so it is a little taller than the Fire HD 8 and still well short of the Fire HD 10 or the Tab A9+. Lenovo’s own card lists a MediaTek Helio G85, a Mali-G52 MC2 GPU, 4 GB of RAM, and 64 GB of storage. The listing claims up to 12.5 hours of YouTube streaming.
               </p>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                The screen is the reason to wait for that sale. It is an 11-inch 1920 x 1200 panel at 90 Hz, brighter and smoother than the 60 Hz Fire HD 10. Samsung’s own listing calls out about 480 nits. Four speakers with Dolby Atmos are louder and more even than the stereo pair on a Fire tablet, which matters if this is the device that plays shows in a bedroom. Storage is 64 GB with 4 GB of RAM, and the microSD slot goes to 1 TB. That is a more comfortable starting point than 32 GB.
+                Four gigabytes of RAM and full Android make this a better app tablet than either Fire model. Chrome, Gmail, Maps, and whatever else you install from the Play Store behave like they do on a cheap Android phone. The Helio G85 is an old mid-range phone chip. It is smooth for video and browsing and ordinary for games. Lenovo’s software support will not match Samsung’s. Treat the Tab One as a two- or three-year device, not something you will still be updating in 2029.
               </p>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                The chipset is Qualcomm’s Snapdragon 695. It is an entry tablet processor, not a flagship, and it is still the right class for YouTube, Netflix, Chrome, and light games. The software is Android with One UI and the Play Store, plus Samsung’s update track, which is longer than a no-name Android tablet and much more open than Fire OS. There is no S Pen support on the A9+. Do not buy a random pen and expect palm rejection. The rear camera is 8 megapixels and the front camera is 5 megapixels. USB-C handles charging. A charger is not the point of this card: the linked style is the tablet only.
-              </p>
-              <p className="text-muted-foreground mb-4 leading-relaxed">
-                The link is the US graphite 64 GB model, not an international SM-X110, not a Latin-American import, and not the smaller 8.7-inch Galaxy Tab A9. Those imports are cheaper and often have no US warranty. Read the title on the live page and confirm it says US version before you pay.
+                Price is the catch. Open the listing. If the live Amazon price is outside this guide, close it and buy the Fire HD 8. The link is the folio-case model with 4 GB and 64 GB, not a marketplace bundle that pads the storage number with a microSD card.
               </p>
               <div className="grid md:grid-cols-2 gap-6 mt-6">
                 <div>
                   <p className="font-semibold text-green-600 mb-2">Strengths</p>
-                  <p className="text-sm text-muted-foreground">Full Android, 90 Hz 11-inch screen, four speakers, 64 GB, and a real Samsung update path.</p>
+                  <p className="text-sm text-muted-foreground">Real Android, 4 GB of RAM, 64 GB, and a folio stand in the box. Small enough to travel.</p>
                 </div>
                 <div>
                   <p className="font-semibold text-amber-600 mb-2">Limitations</p>
-                  <p className="text-sm text-muted-foreground">Buy it for this guide only when the live Amazon price is inside the budget. No S Pen.</p>
+                  <p className="text-sm text-muted-foreground">The price often climbs past $150. The 1340 x 800 panel is ordinary. Lenovo will not support it as long as Samsung.</p>
                 </div>
               </div>
-              <p className="mt-6 text-sm font-medium">Verdict: Best Android experience under $150, and only when the sale price is actually under $150.</p>
-              <ViewOnAmazon href={AMAZON.a9} name="Samsung Galaxy Tab A9+" />
+              <p className="mt-6 text-sm font-medium">Verdict: The Android pick. When we checked on November 22, 2026, it was in stock and sold by Amazon under $150; skip it if the live price has climbed past the budget.</p>
+              <ViewOnAmazon href={AMAZON.lenovo} name="Lenovo Tab One" />
             </div>
           </div>
 
@@ -242,78 +236,84 @@ export default function Page() {
             </div>
           </div>
 
-          <h2 className="text-2xl md:text-3xl font-bold mt-16 mb-4">4. Amazon Fire HD 8</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mt-16 mb-4">4. Amazon Fire HD 10</h2>
           <div className="mb-8 bg-card border-2 border-amber-400/60 rounded-2xl overflow-hidden shadow-sm">
-            <ProductPhoto src={IMAGES.hd8} alt="Amazon Fire HD 8 2024 tablet, black" />
+            <ProductPhoto src={IMAGES.hd10} alt="Amazon Fire HD 10 tablet, black, front and back" />
             <div className="p-6 md:p-8">
               <h3 className="text-2xl font-bold mb-4">
-                <a href={amazonHref(AMAZON.hd8)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">Amazon Fire HD 8 (2024)</a>
+                Amazon Fire HD 10
               </h3>
               <ul className="text-sm text-muted-foreground space-y-1 mb-6">
-                <li><strong className="text-amber-500">Listing:</strong> 2024 model, 32 GB, black, ad-supported, sold new</li>
-                <li><strong className="text-amber-500">Screen:</strong> 8-inch HD, 1280 x 800</li>
-                <li><strong className="text-amber-500">Memory:</strong> 3 GB RAM, 32 GB storage, microSD up to 1 TB</li>
-                <li><strong className="text-amber-500">Cameras:</strong> 5 MP rear, 2 MP front</li>
+                <li><strong className="text-amber-500">Listing:</strong> 13th generation, 2023, 32 GB, black, sold new</li>
+                <li><strong className="text-amber-500">Screen:</strong> 10.1-inch IPS, 1920 x 1200, 224 ppi</li>
+                <li><strong className="text-amber-500">Chip and memory:</strong> MediaTek MT8186A, 3 GB RAM</li>
+                <li><strong className="text-amber-500">Storage:</strong> 32 GB, microSD up to 1 TB</li>
+                <li><strong className="text-amber-500">Battery:</strong> Amazon rates up to 13 hours; 9 W adapter in the box</li>
               </ul>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                The 2024 Fire HD 8 is the compact tablet in this guide. The linked configuration is the black 32 GB ad-supported model. Buy it when you want the smaller screen, or when the Fire HD 10 listing is not the one you want. Confirm the live price on Amazon.
+                When it is back in stock, this is the tablet to buy if you already live in Prime Video, Kindle, and Alexa. The 2023 Fire HD 10, Amazon’s 13th generation, uses a MediaTek MT8186A with two Cortex-A76 cores up to 2.05 GHz and six Cortex-A55 cores up to 2.0 GHz, plus a Mali-G52 GPU. Amazon says it is about 25 percent faster than the 2021 model. With 3 GB of RAM it is fine for one video app, a browser tab, and Kindle. It is not fine for a split screen full of heavy games.
               </p>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                The screen is 8 inches at 1280 x 800. That is a clear step down from the Fire HD 10’s 1920 x 1200 panel. Text is fine. Movies are fine on a nightstand and cramped on a couch across the room. The 2024 refresh kept that panel and raised the 32 GB model to 3 GB of RAM, which Amazon describes as 50 percent more than the 2022 release. The processor is still a hexa-core part around 2 GHz. Amazon rates battery life at up to 13 hours of mixed reading, video, and music. The rear camera moved to 5 megapixels. The front camera stays at 2 megapixels, so video calls are the weak spot.
+                The panel is a 10.1-inch IPS at 1920 x 1200. That is a real 1080p-class screen, not the 1280 x 800 panel on the smaller Fire HD 8, and it is the right size for a couch or a kitchen counter. The front glass is aluminosilicate. Both cameras are 5 megapixels, which is enough for a video call and not much else. There is a 3.5 mm headphone jack, USB-C 2.0, Bluetooth 5.3, and dual-band Wi-Fi 5. Amazon’s developer sheet lists the body at about 246 x 165 x 8.6 mm and roughly 434 grams. A 9 W adapter and a USB-C cable come in the box. Amazon’s charge claim is a full battery in under four hours on that adapter.
               </p>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                Everything else matches a small Fire tablet. Fire OS, no Play Store, microSD up to 1 TB, USB-C, and lock-screen ads on this cheaper style. There is a 64 GB configuration and an ad-free option. Both cost more, and neither is the link on this card. If you mostly read in Kindle and watch one show at a time, the HD 8 is enough and the extra money is better spent on a memory card. If two people are going to watch from the same screen, spend the difference on the Fire HD 10.
+                The listing we track is the 32 GB black model. A lower street price on Fire tablets usually means lock-screen ads. Amazon sells an ad-free option as a separate choice, and it costs more. Read the style selector on the live page before you assume the screensaver is clean. User-available storage is less than 32 GB because Fire OS keeps a slice. Plan on a microSD card if you download shows.
+              </p>
+              <p className="text-muted-foreground mb-4 leading-relaxed">
+                The Fire HD 10 is the large screen in this guide, as long as you accept Fire OS. If you need the Play Store every day, the Lenovo Tab One above is the Android pick you can buy now.
               </p>
               <div className="grid md:grid-cols-2 gap-6 mt-6">
                 <div>
                   <p className="font-semibold text-green-600 mb-2">Strengths</p>
-                  <p className="text-sm text-muted-foreground">Light enough to carry, 3 GB of RAM on the 2024 32 GB model, and expandable storage.</p>
+                  <p className="text-sm text-muted-foreground">Large 1080p-class screen, 13-hour battery claim, microSD, adapter in the box, and a price that often lands well under $150.</p>
                 </div>
                 <div>
                   <p className="font-semibold text-amber-600 mb-2">Limitations</p>
-                  <p className="text-sm text-muted-foreground">1280 x 800 is a soft screen next to the HD 10. Fire OS and lock-screen ads are still there. The front camera is only 2 megapixels.</p>
+                  <p className="text-sm text-muted-foreground">No Google Play. The cheap configuration shows lock-screen ads. 3 GB of RAM and 32 GB of storage run out if you treat it like a phone full of apps.</p>
                 </div>
               </div>
-              <p className="mt-6 text-sm font-medium">Verdict: The compact pick. Best suited for reading and one-person video, not a shared living-room screen.</p>
-              <ViewOnAmazon href={AMAZON.hd8} name="Amazon Fire HD 8" />
+              <p className="mt-6 text-sm font-medium">Verdict: The best Prime-household tablet when it is in stock. Best suited for streaming, reading, and a second screen in the kitchen.</p>
+              <p className="mt-6 text-sm italic text-muted-foreground">No button: when we checked on November 22, 2026, this listing was currently unavailable on Amazon. Use the Fire HD 8 above until it is back.</p>
             </div>
           </div>
 
-          <h2 className="text-2xl md:text-3xl font-bold mt-16 mb-4">5. Lenovo Tab One</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mt-16 mb-4">5. Samsung Galaxy Tab A9+</h2>
           <div className="mb-8 bg-card border-2 border-amber-400/60 rounded-2xl overflow-hidden shadow-sm">
-            <ProductPhoto src={IMAGES.lenovo} alt="Lenovo Tab One with its folio case used as a stand" />
+            <ProductPhoto src={IMAGES.a9} alt="Samsung Galaxy Tab A9+ graphite tablet, front and back" />
             <div className="p-6 md:p-8">
               <h3 className="text-2xl font-bold mb-4">
-                <a href={amazonHref(AMAZON.lenovo)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">Lenovo Tab One</a>
+                Samsung Galaxy Tab A9+
               </h3>
               <ul className="text-sm text-muted-foreground space-y-1 mb-6">
-                <li><strong className="text-amber-500">Listing:</strong> 8.7-inch, 4 GB RAM, 64 GB, folio case included, sold new</li>
-                <li><strong className="text-amber-500">Screen:</strong> 8.7-inch, 1340 x 800</li>
-                <li><strong className="text-amber-500">Chip:</strong> MediaTek Helio G85, Mali-G52 MC2</li>
-                <li><strong className="text-amber-500">Software:</strong> Android, with the Play Store</li>
-                <li><strong className="text-amber-500">Battery claim:</strong> Up to 12.5 hours of YouTube</li>
+                <li><strong className="text-amber-500">Listing:</strong> US version, 2024, 11-inch, 64 GB, graphite, tablet only, sold new</li>
+                <li><strong className="text-amber-500">Screen:</strong> 11-inch TFT, 1920 x 1200, 90 Hz</li>
+                <li><strong className="text-amber-500">Memory:</strong> 4 GB RAM, 64 GB, microSD up to 1 TB</li>
+                <li><strong className="text-amber-500">Audio:</strong> Four speakers, Dolby Atmos</li>
               </ul>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                The Lenovo Tab One is here for one reason: it is a small Android tablet with the Play Store and a folio case in the box. That case folds into a stand, which is the thing a bare Fire tablet makes you buy later. The panel is 8.7 inches at 1340 x 800, so it is a little taller than the Fire HD 8 and still well short of the Fire HD 10 or the Tab A9+. Lenovo’s own card lists a MediaTek Helio G85, a Mali-G52 MC2 GPU, 4 GB of RAM, and 64 GB of storage. The listing claims up to 12.5 hours of YouTube streaming.
+                The Galaxy Tab A9+ is the better Android tablet in this guide, but it only fits when a new unit is on sale inside the budget. If it is not, do not stretch. Buy the Lenovo Tab One instead.
               </p>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                Four gigabytes of RAM and full Android make this a better app tablet than either Fire model. Chrome, Gmail, Maps, and whatever else you install from the Play Store behave like they do on a cheap Android phone. The Helio G85 is an old mid-range phone chip. It is smooth for video and browsing and ordinary for games. Lenovo’s software support will not match Samsung’s. Treat the Tab One as a two- or three-year device, not something you will still be updating in 2029.
+                The screen is the reason to wait for that sale. It is an 11-inch 1920 x 1200 panel at 90 Hz, brighter and smoother than the 60 Hz Fire HD 10. Samsung’s own listing calls out about 480 nits. Four speakers with Dolby Atmos are louder and more even than the stereo pair on a Fire tablet, which matters if this is the device that plays shows in a bedroom. Storage is 64 GB with 4 GB of RAM, and the microSD slot goes to 1 TB. That is a more comfortable starting point than 32 GB.
               </p>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                Price is the catch. Open the listing. If the live Amazon price is outside this guide, close it and buy the Fire HD 8. The link is the folio-case model with 4 GB and 64 GB, not a marketplace bundle that pads the storage number with a microSD card.
+                The chipset is Qualcomm’s Snapdragon 695. It is an entry tablet processor, not a flagship, and it is still the right class for YouTube, Netflix, Chrome, and light games. The software is Android with One UI and the Play Store, plus Samsung’s update track, which is longer than a no-name Android tablet and much more open than Fire OS. There is no S Pen support on the A9+. Do not buy a random pen and expect palm rejection. The rear camera is 8 megapixels and the front camera is 5 megapixels. USB-C handles charging. A charger is not the point of this card: the linked style is the tablet only.
+              </p>
+              <p className="text-muted-foreground mb-4 leading-relaxed">
+                The link is the US graphite 64 GB model, not an international SM-X110, not a Latin-American import, and not the smaller 8.7-inch Galaxy Tab A9. Those imports are cheaper and often have no US warranty. Read the title on the live page and confirm it says US version before you pay.
               </p>
               <div className="grid md:grid-cols-2 gap-6 mt-6">
                 <div>
                   <p className="font-semibold text-green-600 mb-2">Strengths</p>
-                  <p className="text-sm text-muted-foreground">Real Android, 4 GB of RAM, 64 GB, and a folio stand in the box. Small enough to travel.</p>
+                  <p className="text-sm text-muted-foreground">Full Android, 90 Hz 11-inch screen, four speakers, 64 GB, and a real Samsung update path.</p>
                 </div>
                 <div>
                   <p className="font-semibold text-amber-600 mb-2">Limitations</p>
-                  <p className="text-sm text-muted-foreground">The price often climbs past $150. The 1340 x 800 panel is ordinary. Lenovo will not support it as long as Samsung.</p>
+                  <p className="text-sm text-muted-foreground">Buy it for this guide only when the live Amazon price is inside the budget. No S Pen.</p>
                 </div>
               </div>
-              <p className="mt-6 text-sm font-medium">Verdict: The compact Android pick, and only while the live price is under $150.</p>
-              <ViewOnAmazon href={AMAZON.lenovo} name="Lenovo Tab One" />
+              <p className="mt-6 text-sm font-medium">Verdict: Best Android experience under $150, and only when the sale price is actually under $150.</p>
+              <p className="mt-6 text-sm italic text-muted-foreground">No button: when we checked on November 22, 2026, this listing had no featured new offer on Amazon, and other sellers were above $150. Use the Lenovo Tab One above for Android.</p>
             </div>
           </div>
 
@@ -330,11 +330,11 @@ export default function Page() {
                 </tr>
               </thead>
               <tbody>
-                <tr className="border-b"><td className="p-3">Fire HD 10</td><td className="p-3">Fire OS</td><td className="p-3">10.1 in, 1920x1200</td><td className="p-3">3 GB / 32 GB</td><td className="p-3">Usually</td></tr>
-                <tr className="border-b"><td className="p-3">Galaxy Tab A9+</td><td className="p-3">Android</td><td className="p-3">11 in, 90 Hz</td><td className="p-3">4 GB / 64 GB</td><td className="p-3">On sale</td></tr>
-                <tr className="border-b"><td className="p-3">Kids Tablet 8</td><td className="p-3">Android, Google Play</td><td className="p-3">8.7 in plus case</td><td className="p-3">4 GB / 64 GB</td><td className="p-3">Check the live price</td></tr>
                 <tr className="border-b"><td className="p-3">Fire HD 8 (2024)</td><td className="p-3">Fire OS</td><td className="p-3">8 in, 1280x800</td><td className="p-3">3 GB / 32 GB</td><td className="p-3">Yes</td></tr>
-                <tr><td className="p-3">Lenovo Tab One</td><td className="p-3">Android</td><td className="p-3">8.7 in, 1340x800</td><td className="p-3">4 GB / 64 GB</td><td className="p-3">When under $150</td></tr>
+                <tr><td className="p-3">Lenovo Tab One</td><td className="p-3">Android</td><td className="p-3">8.7 in, 1340x800</td><td className="p-3">4 GB / 64 GB</td><td className="p-3">Yes, when we checked</td></tr>
+                <tr className="border-b"><td className="p-3">Kids Tablet 8</td><td className="p-3">Android, Google Play</td><td className="p-3">8.7 in plus case</td><td className="p-3">4 GB / 64 GB</td><td className="p-3">Check the live price</td></tr>
+                <tr className="border-b"><td className="p-3">Fire HD 10</td><td className="p-3">Fire OS</td><td className="p-3">10.1 in, 1920x1200</td><td className="p-3">3 GB / 32 GB</td><td className="p-3">Out of stock Nov 22</td></tr>
+                <tr className="border-b"><td className="p-3">Galaxy Tab A9+</td><td className="p-3">Android</td><td className="p-3">11 in, 90 Hz</td><td className="p-3">4 GB / 64 GB</td><td className="p-3">No new offer Nov 22</td></tr>
               </tbody>
             </table>
           </div>
@@ -349,18 +349,17 @@ export default function Page() {
 
           <h2 className="text-2xl font-bold mt-10 mb-4">How to choose</h2>
           <ul className="list-disc pl-5 text-muted-foreground space-y-2 mb-8">
-            <li>Prime Video and Kindle, one household screen: Fire HD 10.</li>
-            <li>You need Gmail, Chrome, and the Play Store, and the A9+ is at or under $150: Galaxy Tab A9+.</li>
-            <li>A child ages 3 to 5, and the live price of the Kids bundle is inside this guide: Amazon Kids Tablet 8. If it is not, buy the adult HD 10 and a case instead.</li>
+            <li>Prime Video and Kindle on a budget, available today: Fire HD 8. Want the bigger 10-inch screen? Wait for the Fire HD 10 to come back in stock.</li>
+            <li>You need Gmail, Chrome, and the Play Store: Lenovo Tab One. The Galaxy Tab A9+ is better when a new unit returns at or under $150.</li>
+            <li>A child ages 3 to 5, and the live price of the Kids bundle is inside this guide: Amazon Kids Tablet 8. If it is not, buy the adult Fire HD 8 and a case instead.</li>
             <li>You want the cheapest new tablet that is still from a real brand: Fire HD 8.</li>
-            <li>You want Android in a small size with a stand, and the Tab One is under $150: Lenovo Tab One.</li>
-            <li>Add a microSD card to any of them if you download video. 32 GB does not survive a vacation.</li>
+                        <li>Add a microSD card to any of them if you download video. 32 GB does not survive a vacation.</li>
           </ul>
 
           <h2 className="text-2xl font-bold mt-10 mb-4">Final verdict</h2>
           <div className="rounded-2xl border-2 border-amber-400 bg-amber-400/10 p-6 md:p-8 mb-8">
           <p className="text-muted-foreground mb-6 leading-relaxed">
-            Buy the Amazon Fire HD 10. It is the large screen that actually lives under $150 most of the time, and for streaming and reading the missing Play Store does not matter. Step up to the Galaxy Tab A9+ only on the days Amazon has the US 64 GB model at or under $150. That is the one with the better display, the speakers, and real Android. Use the Amazon Kids Tablet 8 for a child aged 3 to 5 when the live price is inside this guide, the Fire HD 8 when you want the smaller tablet, and the Lenovo Tab One when you want a small Android tablet and the live price still fits.
+            Buy the Amazon Fire HD 8 for streaming and reading; it is the cheapest new tablet here from a brand you know, and it was in stock when we checked. Buy the Lenovo Tab One if you need the Play Store. Use the Amazon Kids Tablet 8 for a child aged 3 to 5. The Fire HD 10 and the Galaxy Tab A9+ are better tablets on paper, but on November 22, 2026 neither had a new unit you could buy from Amazon under $150. When they are back, the Fire HD 10 is the big-screen upgrade for Prime households.
           </p>
           <p className="text-muted-foreground mb-8 leading-relaxed">
             Prices move weekly. Open the button under the review and read the current configuration, the ad-supported toggle, and the seller before you pay. The buttons go to the original new listings named above.
@@ -368,8 +367,8 @@ export default function Page() {
           </div>
           <GuideFaq
             items={[
-              { q: "What is the best tablet under $150 in 2026?", a: "The Amazon Fire HD 10. It is the large new tablet that usually stays under $150, and it is enough for streaming and reading." },
-              { q: "Is a Galaxy Tab A9+ in this guide?", a: "Only when the live Amazon price is inside the budget. Otherwise take the Fire HD 10." },
+              { q: "What is the best tablet under $150 in 2026?", a: "Right now, the Amazon Fire HD 8 for streaming and reading, or the Lenovo Tab One if you need the Play Store. The Fire HD 10 is the bigger upgrade when it is back in stock." },
+              { q: "Is the Galaxy Tab A9+ still worth buying?", a: "Yes, when a new unit is back at or under $150. On November 22, 2026 Amazon had no featured new offer, so take the Lenovo Tab One for Android until then." },
               { q: "Should I buy a renewed iPad instead?", a: "A renewed older iPad can be better software, but it is a used device with a shorter warranty. This guide does not treat it as the same purchase as a new Fire or Galaxy tablet." },
               { q: "What cheap tablets should I skip?", a: "No-name Android tablets. Many ship with little RAM, a charger you should not trust, and no security updates." },
             ]}
