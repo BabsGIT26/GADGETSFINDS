@@ -17,15 +17,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   const articlePages = [
-    '/i-phone-16-pro-vs-samsung-comparison-article',
-    '/macbook-pro-m4-article',
-    '/playstation-5-digital-renewed-article',
-    '/samsung-galaxy-s26-ultra-article',
-    '/samsung-galaxy-z-fold-6-article',
     '/smart-home-security-systems-article',
-    '/sony-wh-2000xm6-review-article',
     '/genz-semi-automatic-slingshot-article',
-    '/logitech-g29-driving-force-article',
   ];
 
   const buyingGuides = [
@@ -57,25 +50,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/black-friday-smartwatches/carbinox-edge',
     '/roborock-vs-roomba-2026',
     '/best-foldable-phones-2026',
+    '/best-macbooks-2026',
+    '/best-graphics-cards-2026',
+    '/best-gaming-consoles-2026',
+    '/best-phones-2026',
+    '/best-noise-cancelling-headphones-2026',
     '/iphone-duo-cases',
   ];
 
   const productPages = [
-    '/macbook-pro-m5-max-article',
-    '/macbook-air-m5-13-article',
-    '/apple-macbook-pro-oled-proled-xdr',
-    '/nvidia-rtx-5090-ti-article',
-    '/nvidia-rtx-50-series-lowest-prices',
-    '/iphone-17-vs-galaxy-s26-ultra',
-    '/playstation-5-article',
-    '/playstation-5-pro-article',
-    '/playstation-5-dualsense-article',
-    '/ps5-cooling-station-article',
-    '/xbox-series-x-digital-article',
     '/roborock-saros-z70-article',
     '/samsung-65-s85h-oled-article',
     '/samsung-990-pro-4tb-article',
-    '/ghost-of-yotei-complete-edition',
     '/amazon-outlet-guide',
     '/outlet-extender-stick',
   ];
