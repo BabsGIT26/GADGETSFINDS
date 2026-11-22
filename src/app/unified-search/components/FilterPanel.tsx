@@ -48,8 +48,7 @@ const FilterPanel = ({ filters, onFilterChange }: FilterPanelProps) => {
   const sortOptions = [
     { value: 'relevance', label: 'Most Relevant', icon: 'SparklesIcon' },
     { value: 'newest', label: 'Newest First', icon: 'ClockIcon' },
-    { value: 'popular', label: 'Most Popular', icon: 'FireIcon' },
-    { value: 'rating', label: 'Highest Rated', icon: 'StarIcon' }
+    { value: 'popular', label: 'Most Popular', icon: 'FireIcon' }
   ];
 
   const handleContentTypeToggle = (type: string) => {
