@@ -9,7 +9,8 @@ import CommentSection from "@/components/comments/CommentSection";
 const AMAZON =
   "https://www.amazon.com/dp/B0GR19X8DC?tag=gadgetsfindswebsite-20";
 
-const OG_IMAGE = "https://m.media-amazon.com/images/I/71txEBdkjxL.jpg";
+const OG_IMAGE = "/assets/illustrations/laptop.svg";
+const SHARE_IMAGE = "https://www.gadgets-finds.com/og/laptop";
 
 export const metadata: Metadata = {
   title: "MacBook Air 13-inch M5 — 16GB, 512GB, Silver | Gadgets Finds",
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: OG_IMAGE,
+        url: SHARE_IMAGE,
         width: 1200,
         height: 630,
         alt: "MacBook Air 13-inch M5 Silver",
@@ -38,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@Gadgets_finds",
     title: "MacBook Air 13-inch M5 — Silver",
-    images: [OG_IMAGE],
+    images: [SHARE_IMAGE],
   },
 };
 
