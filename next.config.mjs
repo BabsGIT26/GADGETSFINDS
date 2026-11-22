@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  productionBrowserSourceMaps: true,
+  productionBrowserSourceMaps: false,
   distDir: process.env.DIST_DIR || '.next',
 
   typescript: {
-      ignoreBuildErrors: true,
+      ignoreBuildErrors: false,
     },
 
   eslint: {
@@ -54,6 +54,17 @@ const nextConfig = {
       source: '/early-black-friday-deals',
       destination: '/',
       permanent: true,
+    },
+    {
+      // Old October Prime Day page; send visitors to the evergreen deals page.
+      source: '/october-deals',
+      destination: '/best-amazon-deals-this-week',
+      statusCode: 301,
+    },
+    {
+      source: '/nvidia-rtx-50-series-lowest-prices-amazon',
+      destination: '/nvidia-rtx-50-series-lowest-prices',
+      statusCode: 301,
     },
   ];
 },

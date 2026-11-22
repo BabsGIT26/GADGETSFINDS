@@ -1,4 +1,5 @@
 import { MetadataRoute } from 'next';
+import { PAGE_DATES, SITE_UPDATED } from '@/lib/page-dates';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.gadgets-finds.com';
@@ -9,6 +10,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/privacy-policy',
     '/terms-of-service',
     '/cookies',
+    '/contact-us',
+    '/how-we-research',
+    '/affiliate-disclosure',
     '/best-laptops-developers-2026',
   ];
 
@@ -52,6 +56,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/black-friday-smartwatches/whoop-5-peak',
     '/black-friday-smartwatches/carbinox-edge',
     '/roborock-vs-roomba-2026',
+    '/best-foldable-phones-2026',
+    '/iphone-duo-cases',
   ];
 
   const productPages = [
@@ -71,13 +77,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/samsung-990-pro-4tb-article',
     '/ghost-of-yotei-complete-edition',
     '/amazon-outlet-guide',
+    '/outlet-extender-stick',
   ];
 
   const allPages = [...staticPages, ...buyingGuides, ...productPages, ...articlePages];
 
   return allPages.map((path) => ({
     url: `${baseUrl}${path}`,
-    lastModified: new Date(),
+    // Real last-change dates per page (from git history), not the build time.
+    lastModified: PAGE_DATES[path] ?? SITE_UPDATED,
     changeFrequency: path === '' || path === '/best-amazon-deals-this-week' ? 'daily' : 'weekly',
     priority: path === '' ? 1.0 : buyingGuides.includes(path) ? 0.9 : path.includes('article') ? 0.7 : 0.8,
   }));
