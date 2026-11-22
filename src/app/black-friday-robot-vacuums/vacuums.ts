@@ -24,7 +24,7 @@ export const VACUUMS: Vacuum[] = [
   {
     slug: "roborock-qrevo-2-pro-black",
     name: "Roborock Qrevo 2 Pro (Black)",
-    image: "/assets/images/roborock-qrevo-2-pro-black.jpg",
+    image: "/assets/illustrations/vacuum.svg",
     alt: "Black Roborock Qrevo 2 Pro robot vacuum in its station",
     asin: "B0GXF7ZQPY",
     card: "The full station, in black. Vacuum, spinning mops, and a dock that empties, washes, and dries. Same robot as the white listing.",
@@ -43,7 +43,7 @@ export const VACUUMS: Vacuum[] = [
   {
     slug: "roborock-qrevo-2-pro-white",
     name: "Roborock Qrevo 2 Pro (White)",
-    image: "/assets/images/roborock-qrevo-2-pro-white.jpg",
+    image: "/assets/illustrations/vacuum.svg",
     alt: "White Roborock Qrevo 2 Pro robot vacuum in its station",
     asin: "B0GXFHY7Y2",
     card: "The same Qrevo 2 Pro station, in white. Buy this listing only if white is the color you want.",
@@ -62,7 +62,7 @@ export const VACUUMS: Vacuum[] = [
   {
     slug: "roborock-qrevo-curv-2-flow",
     name: "Roborock Qrevo Curv 2 Flow",
-    image: "/assets/images/roborock-qrevo-curv-2-flow.jpg",
+    image: "/assets/illustrations/vacuum.svg",
     alt: "Roborock Qrevo Curv 2 Flow robot vacuum with its roller mop extended",
     asin: "B0FXG2BDTJ",
     card: "The other full station. A roller mop Roborock says washes itself as it runs, plus a dock that heat-washes and dries.",
@@ -81,7 +81,7 @@ export const VACUUMS: Vacuum[] = [
   {
     slug: "eufy-c10",
     name: "eufy C10",
-    image: "/assets/images/eufy-c10.jpg",
+    image: "/assets/illustrations/vacuum.svg",
     alt: "eufy C10 robot vacuum with self-empty dock",
     asin: "B0GD1XTMFN",
     card: "Vacuum only, with a dock. Pick it if pet hair fills a bin every day and you do not need a mop.",
@@ -100,7 +100,7 @@ export const VACUUMS: Vacuum[] = [
   {
     slug: "ecovacs-t90-pro-omni",
     name: "ECOVACS DEEBOT T90 PRO OMNI",
-    image: "/assets/images/ecovacs-t90-pro-omni.jpg",
+    image: "/assets/illustrations/vacuum.svg",
     alt: "ECOVACS DEEBOT T90 PRO OMNI robot vacuum and mop",
     asin: "B0GJ5S4V78",
     card: "The full station. Vacuum, mop, and a dock that cleans the roller. Only if hard floors are the main job.",
@@ -119,7 +119,7 @@ export const VACUUMS: Vacuum[] = [
   {
     slug: "roborock-q7-m5-plus",
     name: "Roborock Q7 M5+",
-    image: "/assets/images/roborock-q7-m5-plus.jpg",
+    image: "/assets/illustrations/vacuum.svg",
     alt: "Roborock Q7 M5+ robot vacuum and mop with dock",
     asin: "B0DWX69JVG",
     card: "Vacuum and mop with a dock. The step up if you wanted a Roborock and the old Q5 is not the one to buy.",
@@ -138,7 +138,7 @@ export const VACUUMS: Vacuum[] = [
   {
     slug: "shark-ai-ultra",
     name: "Shark AI Ultra",
-    image: "/assets/images/shark-ai-ultra.jpg",
+    image: "/assets/illustrations/vacuum.svg",
     alt: "Shark AI Ultra robot vacuum with self-empty base",
     asin: "B09H8CWFNK",
     card: "Older vacuum-and-dock, bagless base, aimed at pet hair. Fine if you do not need a mop.",
@@ -157,7 +157,7 @@ export const VACUUMS: Vacuum[] = [
   {
     slug: "ilife-a30s",
     name: "ILIFE A30s",
-    image: "/assets/images/ilife-a30s.jpg",
+    image: "/assets/illustrations/vacuum.svg",
     alt: "ILIFE A30s robot vacuum",
     asin: "B0G5YDVR99",
     card: "No dock and no mop. LiDAR, no-go zones, and a remote. For people who will empty the bin.",
@@ -176,7 +176,7 @@ export const VACUUMS: Vacuum[] = [
   {
     slug: "eufy-l60",
     name: "eufy L60 (Renewed)",
-    image: "/assets/images/eufy-l60.jpg",
+    image: "/assets/illustrations/vacuum.svg",
     alt: "Renewed eufy L60 robot vacuum with self-empty station",
     asin: "B0CYNVGN26",
     card: "This listing is renewed, not new. A dock and a detangling roller, only if you accept a renewed unit.",
@@ -195,7 +195,7 @@ export const VACUUMS: Vacuum[] = [
   {
     slug: "lefant-m210-pro",
     name: "Lefant M210 Pro",
-    image: "/assets/images/lefant-m210-pro-white.jpg",
+    image: "/assets/illustrations/vacuum.svg",
     alt: "Lefant M210 Pro robot vacuum in white",
     asin: "B0CYL7273B",
     card: "The simple daily robot from the budget guide. No dock. You empty it. Fine for a small home.",

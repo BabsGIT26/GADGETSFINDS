@@ -4,6 +4,7 @@ import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import RelatedGuides from "@/components/common/RelatedGuides";
 import { WATCHES, amazonUrl, watchBySlug } from "../watches";
+import { illustrationAlt } from "@/lib/illustrations";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -27,7 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: `https://www.gadgets-finds.com${path}`,
       siteName: "Gadgets Finds",
       type: "article",
-      images: [{ url: `https://www.gadgets-finds.com${item.image}`, alt: item.alt }],
+      images: [{ url: item.image.replace("/assets/illustrations/", "https://www.gadgets-finds.com/og/").replace(".svg", ""), alt: item.alt }],
     },
     twitter: {
       card: "summary_large_image",
@@ -35,7 +36,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       creator: "@Gadgets_finds",
       title: `${item.name} — who it is for`,
       description: item.card,
-      images: [`https://www.gadgets-finds.com${item.image}`],
+      images: [item.image.replace("/assets/illustrations/", "https://www.gadgets-finds.com/og/").replace(".svg", "")],
     },
   };
 }
@@ -66,7 +67,7 @@ export default async function Page({ params }: Props) {
             </a>
           </p>
           <div className="rounded-xl border border-border mb-8 py-4 flex items-center justify-center px-4">
-            <img src={item.image} alt={item.alt} className="max-h-72 md:max-h-[22rem] w-auto max-w-full object-contain" />
+            <img src={item.image} alt={illustrationAlt(item.image, item.alt)} className="max-h-72 md:max-h-[22rem] w-auto max-w-full object-contain" />
           </div>
           <h2 className="text-xl font-bold mb-2">Who it is for</h2>
           <p className="text-muted-foreground leading-relaxed mb-6">{item.fit}</p>

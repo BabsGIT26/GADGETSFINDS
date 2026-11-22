@@ -5,6 +5,7 @@ import RelatedGuides from "@/components/common/RelatedGuides";
 import GuideFaq, { ProductListJsonLd } from "@/components/common/GuideFaq";
 import { VACUUMS, amazonUrl } from "./vacuums";
 
+import { illustrationAlt } from "@/lib/illustrations";
 export const metadata: Metadata = {
   title: "Black Friday Robot Vacuums | Gadgets Finds",
   description:
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "https://phandroid.com/wp-content/uploads/2022/06/ecovacs-x1-omni-8.jpg",
+        url: "https://www.gadgets-finds.com/og/vacuum",
         alt: "Robot vacuum docked in its station",
       },
     ],
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
     creator: "@Gadgets_finds",
     title: "Black Friday Robot Vacuums",
     description: "How to choose between the dock robots, the mop station, and the simple robots on sale.",
-    images: ["https://phandroid.com/wp-content/uploads/2022/06/ecovacs-x1-omni-8.jpg"],
+    images: ["https://www.gadgets-finds.com/og/vacuum"],
   },
 };
 
@@ -76,7 +77,7 @@ export default function Page() {
             {VACUUMS.map((item) => (
               <div key={item.slug} className="bg-card border border-border rounded-xl overflow-hidden flex flex-col">
                 <a href={`/black-friday-robot-vacuums/${item.slug}`} className="bg-white h-52 flex items-center justify-center px-3">
-                  <img src={item.image} alt={item.alt} className="max-h-48 w-auto max-w-full object-contain" />
+                  <img src={item.image} alt={illustrationAlt(item.image, item.alt)} className="max-h-48 w-auto max-w-full object-contain" />
                 </a>
                 <div className="p-4 flex flex-col flex-1">
                   <h2 className="text-base font-bold">

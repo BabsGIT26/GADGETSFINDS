@@ -5,6 +5,7 @@ import RelatedGuides from "@/components/common/RelatedGuides";
 import GuideFaq, { ProductListJsonLd } from "@/components/common/GuideFaq";
 import { WATCHES, amazonUrl } from "./watches";
 
+import { illustrationAlt } from "@/lib/illustrations";
 export const metadata: Metadata = {
   title: "Black Friday Smartwatches | Gadgets Finds",
   description:
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "https://www.apple.com/assets-www/en_WW/watch/01_og/watch_og_9cde5b638.png",
+        url: "https://www.gadgets-finds.com/og/watch",
         alt: "Apple Watch",
       },
     ],
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
     creator: "@Gadgets_finds",
     title: "Black Friday Smartwatches",
     description: "iPhone, Garmin, a screenless membership band, or a budget GPS watch. Read the note before the listing.",
-    images: ["https://www.apple.com/assets-www/en_WW/watch/01_og/watch_og_9cde5b638.png"],
+    images: ["https://www.gadgets-finds.com/og/watch"],
   },
 };
 
@@ -80,7 +81,7 @@ export default function Page() {
             {WATCHES.map((item) => (
               <div key={item.slug} className="bg-card border border-border rounded-xl overflow-hidden flex flex-col">
                 <a href={`/black-friday-smartwatches/${item.slug}`} className="bg-white h-52 flex items-center justify-center px-3">
-                  <img src={item.image} alt={item.alt} className="max-h-48 w-auto max-w-full object-contain" />
+                  <img src={item.image} alt={illustrationAlt(item.image, item.alt)} className="max-h-48 w-auto max-w-full object-contain" />
                 </a>
                 <div className="p-4 flex flex-col flex-1">
                   <h2 className="text-base font-bold">
