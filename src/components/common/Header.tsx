@@ -389,6 +389,8 @@ const toggleTheme = () => {
           ))}
           {/* Notifications in mobile nav strip — icon only, no "Alerts" text */}
           <button
+            type="button"
+            aria-label="Notifications"
             onClick={() => setIsNotifOpen((prev) => !prev)}
             className={`flex items-center px-2.5 py-1.5 rounded-lg text-xs font-medium whitespace-nowrap transition-colors flex-shrink-0 relative ${
               isNotifOpen ? 'text-primary bg-primary/10' : 'text-muted-foreground hover:text-foreground hover:bg-muted'

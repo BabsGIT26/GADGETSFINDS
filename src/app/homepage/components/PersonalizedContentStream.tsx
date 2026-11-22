@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Icon from '@/components/ui/AppIcon';
@@ -21,12 +21,7 @@ interface ContentItem {
 }
 
 const PersonalizedContentStream = () => {
-  const [isHydrated, setIsHydrated] = useState(false);
   const [activeFilter, setActiveFilter] = useState('See All');
-
-  useEffect(() => {
-    setIsHydrated(true);
-  }, []);
 
   const filters = ['See All', 'Latest', 'Trending', 'Reviews', 'Guides'];
 
@@ -397,42 +392,7 @@ const PersonalizedContentStream = () => {
     .map((id) => contentItems.find((item) => item.id === id))
     .filter((item): item is ContentItem => Boolean(item));
 
-  if (!isHydrated) {
-    return (
-      <div className="space-y-6">
-        <div className="flex items-center justify-between">
-          <h2 className="text-2xl font-bold text-foreground">Recommended</h2>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {guideItems.map((item) => (
-            <Link
-              key={item.id}
-              href={articleRoutes[item.id] || "/"}
-              className="bg-card rounded-xl overflow-hidden shadow-md"
-            >
-              <div className="relative h-48 overflow-hidden">
-                <Image
-                  src={item.image}
-                  alt={illustrationAlt(item.image, item.alt)}
-                  fill
-                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
-                  className={`block ${item.fit === "contain" ? "object-contain" : "object-cover"}`}
-                  />
-              </div>
-              <div className="p-5">
-                <span className="inline-block px-2 py-1 bg-primary/10 text-primary text-xs font-semibold rounded mb-2">
-                  {item.category}
-                </span>
-                <h3 className="text-lg font-bold text-foreground mb-2">{item.title}</h3>
-                <p className="text-sm text-muted-foreground">{item.excerpt}</p>
-              </div>
-            </Link>
-          ))}
-        </div>
-      </div>
-    );
-  }
-
+  // Server and client render the same full list, so nothing shifts when the page hydrates.
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between gap-4 flex-wrap">
