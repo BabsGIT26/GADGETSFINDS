@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "https://m.media-amazon.com/images/I/51DW7RN3fEL.jpg",
+        url: "https://www.gadgets-finds.com/og/outlet",
         width: 1200,
         height: 630,
         alt: "Outlet Extender Stick",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@Gadgets_finds",
     title: "Outlet Extender Stick for Behind Couch",
-    images: ["https://m.media-amazon.com/images/I/51DW7RN3fEL.jpg"],
+    images: ["https://www.gadgets-finds.com/og/outlet"],
   },
 };
 
@@ -72,8 +72,8 @@ export default function Page() {
 
           <div className="mb-10 flex justify-center">
             <img
-              src="https://m.media-amazon.com/images/I/51DW7RN3fEL.jpg"
-              alt="Outlet Extender Stick for Behind Couch"
+              src="/assets/illustrations/outlet.svg"
+              alt="Illustration, not a product photo: Outlet Extender Stick for Behind Couch"
               className="w-full max-w-[280px] h-auto rounded-xl"
             />
           </div>
@@ -86,13 +86,6 @@ export default function Page() {
             Most models are telescoping and range from roughly 18 to 35 inches when extended. Some also rotate at the base or the head, which helps when the original outlet is horizontal or in a tight corner.
           </p>
 
-          <div className="my-8 flex justify-center">
-            <img
-              src="https://s.yimg.com/lo/mysterio/api/b4a489a9106ad419e74f886e1491c42324ee363187f7bc2f204c62ba6955fbaa/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2Fuser-uploaded%2F71rvcckj7dl._ac_sl1500__5767.jpg"
-              alt="Outlet extender behind a couch"
-              className="w-full max-w-lg rounded-xl"
-            />
-          </div>
 
           <h2 className="text-2xl font-bold mt-10 mb-3">Typical features</h2>
           <p className="text-muted-foreground mb-4">
