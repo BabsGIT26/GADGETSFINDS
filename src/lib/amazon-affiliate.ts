@@ -4,7 +4,8 @@ const AMAZON_ASSOCIATE_TAG = "gadgetsfindswebsite-20";
 // intentionally keep their search URL rather than sending visitors to a
 // potentially incorrect listing.
 const VERIFIED_ASINS: Record<string, string> = {
-  "macbook pro m4": "B0DLHBYRPS",
+  "macbook pro m4": "B0FWD623D1",
+  "macbook pro m5": "B0FWD623D1",
   "meta quest 3": "B0CD1JTBSC",
   "playstation 5 slim (disc)": "B0CP4F9J4W",
   "intel arc b580": "B0DVS6MSP9",
