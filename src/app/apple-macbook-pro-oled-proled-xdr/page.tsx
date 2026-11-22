@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
+import ArticleJsonLd from "@/components/common/ArticleJsonLd";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Apple's First Touchscreen MacBook Pro with PROLED XDR OLED Display — Gadgets Finds",
+  title: "MacBook Pro with PROLED XDR OLED Display | Gadgets Finds",
   description:
     "Full details on Apple's groundbreaking MacBook Pro with tandem OLED PROLED XDR display, touchscreen, Dynamic Island, M5 Pro/Max, and up to 24 hours battery. Pre-orders open.",
   metadataBase: new URL("https://www.gadgets-finds.com"),
@@ -39,6 +40,7 @@ export default function Page() {
   return (
     <>
       <Header />
+      <ArticleJsonLd path="/apple-macbook-pro-oled-proled-xdr" headline={"MacBook Pro with PROLED XDR OLED Display"} description={"Full details on Apple's groundbreaking MacBook Pro with tandem OLED PROLED XDR display, touchscreen, Dynamic Island, M5 Pro/Max, and up to 24 hours battery. Pre-orders open."} products={["Apple MacBook Pro with PROLED XDR display"]} />
       <article className="min-h-screen bg-background pt-20 md:pt-16">
         <div className="container mx-auto px-4 py-4 md:py-8 max-w-4xl text-sm md:text-base">
           <p className="text-xs text-muted-foreground mb-4 leading-relaxed">

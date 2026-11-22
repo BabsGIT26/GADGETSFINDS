@@ -1,23 +1,22 @@
 import { NextRequest, NextResponse } from "next/server";
-import { sendXConversion } from "@/lib/x-conversion";
+import { cleanSourceUrl, readTwclid, sendXConversion } from "@/lib/x-conversion";
 
+// Server-side X conversion. Only X's ad click ID (twclid) is forwarded;
+// IP addresses, emails, and phone numbers are never sent. See /privacy-policy.
 export async function POST(req: NextRequest) {
   try {
-    const body = await req.json();
+    const body = await req.json().catch(() => ({}));
+    const twclid =
+      (typeof body?.twclid === "string" && body.twclid.slice(0, 200)) || readTwclid(req);
     const result = await sendXConversion({
-      eventId: body.eventId || "tw-pwfa9-pageview",
-      conversionId: body.conversionId,
-      eventSourceUrl: body.eventSourceUrl || req.headers.get("referer") || undefined,
-      identifiers: body.identifiers || [
-        {
-          ip_address: req.headers.get("x-forwarded-for")?.split(",")[0]?.trim(),
-          user_agent: req.headers.get("user-agent") || undefined,
-        },
-      ],
+      eventId: typeof body?.eventId === "string" ? body.eventId : "tw-pwfa9-pageview",
+      conversionId: typeof body?.conversionId === "string" ? body.conversionId : undefined,
+      eventSourceUrl: cleanSourceUrl(body?.eventSourceUrl || req.headers.get("referer")),
+      identifiers: twclid ? [{ twclid }] : [],
     });
 
-    return NextResponse.json(result);
-  } catch (e) {
-    return NextResponse.json({ ok: false, error: String(e) }, { status: 500 });
+    return NextResponse.json({ ok: result.ok });
+  } catch {
+    return NextResponse.json({ ok: false }, { status: 500 });
   }
 }

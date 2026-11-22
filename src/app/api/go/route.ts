@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { sendXConversion } from "@/lib/x-conversion";
+import { cleanSourceUrl, readTwclid, sendXConversion } from "@/lib/x-conversion";
 
 export async function GET(req: NextRequest) {
   const url = req.nextUrl.searchParams.get("url");
@@ -7,17 +7,19 @@ export async function GET(req: NextRequest) {
     return NextResponse.redirect("https://www.gadgets-finds.com");
   }
 
-  // Send conversion event (fire-and-forget, don't block redirect)
-  sendXConversion({
-    eventId: "tw-pwfa9-amazon-click",
-    eventSourceUrl: req.headers.get("referer") || undefined,
-    identifiers: [
-      {
-        ip_address: req.headers.get("x-forwarded-for")?.split(",")[0]?.trim(),
-        user_agent: req.headers.get("user-agent") || undefined,
-      },
-    ],
-  }).catch(() => {});
+  // Report the Amazon click to X only when the visitor arrived from an X ad.
+  // No IP address, user agent, or other personal data is sent; see /privacy-policy.
+  const twclid = readTwclid(req);
+  if (twclid) {
+    await Promise.race([
+      sendXConversion({
+        eventId: "tw-pwfa9-amazon-click",
+        eventSourceUrl: cleanSourceUrl(req.headers.get("referer")),
+        identifiers: [{ twclid }],
+      }).catch(() => {}),
+      new Promise((resolve) => setTimeout(resolve, 800)),
+    ]);
+  }
 
   return NextResponse.redirect(url);
 }
