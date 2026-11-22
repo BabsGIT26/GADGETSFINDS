@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import ArticleJsonLd from "@/components/common/ArticleJsonLd";
 import Link from 'next/link';
 import AppImage from '@/components/ui/AppImage';
 import Icon from '@/components/ui/AppIcon';
@@ -51,6 +52,7 @@ export default function SamsungGalaxyZFold6Article() {
   return (
     <>
       <Header />
+      <ArticleJsonLd path="/samsung-galaxy-z-fold-6-article" headline={"Samsung Galaxy Z Fold 6 Review"} description={"Samsung Galaxy Z Fold 6 foldable smartphone review: improved crease, powerful performance, and refined design — though the crease remains visible."} products={["Samsung Galaxy Z Fold 6"]} includeArticle={false} />
       <div className="min-h-screen bg-background pt-14 md:pt-16">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
         {/* Hero Section */}

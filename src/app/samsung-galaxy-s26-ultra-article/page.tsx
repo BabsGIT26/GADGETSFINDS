@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import ArticleJsonLd from "@/components/common/ArticleJsonLd";
 import Link from 'next/link';
 import AppImage from '@/components/ui/AppImage';
 import Icon from '@/components/ui/AppIcon';
@@ -51,6 +52,7 @@ export default function SamsungGalaxyS26UltraArticle() {
   return (
     <>
       <Header />
+      <ArticleJsonLd path="/samsung-galaxy-s26-ultra-article" headline={"Samsung Galaxy S26 Ultra Review"} description={"Samsung Galaxy S26 Ultra review: announced February 25, 2026 and released March 11, 2026. Advanced AI camera system, Snapdragon 8 Elite for Galaxy, and S Pen included."} products={["Samsung Galaxy S26 Ultra"]} includeArticle={false} />
       <div className="min-h-screen bg-background pt-14 md:pt-16">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
         {/* Hero Section */}
@@ -218,7 +220,7 @@ export default function SamsungGalaxyS26UltraArticle() {
           </div>
           <AmazonDealBox
   productName="Samsung Galaxy S26 Ultra"
-  href="https://www.amazon.com/s?k=Samsung+Galaxy+S26+Ultra+256GB+Black+unlocked&tag=gadgetsfindswebsite-20"
+  href="https://www.amazon.com/dp/B0G4SWDH8P?tag=gadgetsfindswebsite-20"
 />
         </article>
 

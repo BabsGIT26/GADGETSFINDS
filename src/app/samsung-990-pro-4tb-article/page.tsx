@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
+import ArticleJsonLd from "@/components/common/ArticleJsonLd";
 import Link from "next/link";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import GuideFaq, { ProductListJsonLd } from "@/components/common/GuideFaq";
 
 export const metadata: Metadata = {
-  title: "Samsung 990 PRO 4TB Review: PCIe 4.0 SSD (MZ-V9P4T0B/AM) | Gadgets Finds",
+  title: "Samsung 990 PRO 4TB SSD Review | Gadgets Finds",
   description:
     "Samsung 990 PRO 4TB, model MZ-V9P4T0B/AM. PCIe 4.0 NVMe rated to 7,450 MB/s read and 6,900 MB/s write, with a 5-year or 2,400 TBW warranty.",
   metadataBase: new URL("https://www.gadgets-finds.com"),
@@ -57,6 +58,7 @@ export default function Page() {
   return (
     <>
       <Header />
+      <ArticleJsonLd path="/samsung-990-pro-4tb-article" headline={"Samsung 990 PRO 4TB SSD Review"} description={"Samsung 990 PRO 4TB, model MZ-V9P4T0B/AM. PCIe 4.0 NVMe rated to 7,450 MB/s read and 6,900 MB/s write, with a 5-year or 2,400 TBW warranty."} products={["Samsung 990 PRO 4TB SSD"]} />
       <article className="min-h-screen bg-background pt-14 md:pt-16">
         <div className="container mx-auto px-4 py-10 max-w-4xl">
           <p className="text-xs text-muted-foreground mb-6 leading-relaxed">
@@ -119,7 +121,7 @@ export default function Page() {
                 <li><strong className="text-amber-500">Cache and NAND:</strong> 4GB LPDDR4, Samsung V-NAND TLC</li>
                 <li><strong className="text-amber-500">Warranty:</strong> 5 years or 2,400 TBW</li>
                 <li><strong className="text-amber-500">Power:</strong> about 6.5 W average and 8.6 W burst, per Samsung</li>
-                <li><strong className="text-amber-500">Recently seen:</strong> $799.99 on Amazon. Samsung’s store lists $1,099.99</li>
+                <li><strong className="text-amber-500">Price:</strong> Samsung’s store lists $1,099.99. Check Amazon for the current price</li>
               </ul>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 The sequential figures are Samsung’s ratings on a PCIe 4.0 test system. In practice they show up on large copies: game installs, video projects, disk images. The 1TB and 2TB 990 PRO share the same peak sequential speeds. The 4TB is the capacity choice, with the larger DRAM cache and the higher random-read rating.
@@ -176,7 +178,7 @@ export default function Page() {
               The Samsung 990 PRO 4TB, MZ-V9P4T0B/AM, fits a PC that needs one M.2 slot for a large library and already has a cover on that slot. It is a current PCIe 4.0 drive with Samsung’s controller, 4GB of DRAM, and a 2,400 TBW warranty. The speed rating holds on a PCIe 4.0 slot. A drive that is already fast and only half full does not need replacing for the sake of the number on the box.
             </p>
             <p className="text-muted-foreground">
-              Samsung lists this 4TB at $1,099.99. Amazon was recently at $799.99. Both move. Use the button, confirm the 4TB MZ-V9P4T0B/AM listing, and check the price on that page.
+              Samsung lists this 4TB at $1,099.99 (checked Nov 22, 2026). Amazon’s price is often lower and moves often. Use the button, confirm the 4TB MZ-V9P4T0B/AM listing, and check the price on that page.
             </p>
           </div>
 

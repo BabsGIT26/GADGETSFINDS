@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ArticleJsonLd from "@/components/common/ArticleJsonLd";
 import AppImage from "@/components/ui/AppImage";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
@@ -13,7 +14,7 @@ const OG_IMAGE = "/assets/illustrations/tv.svg";
 const SHARE_IMAGE = "https://www.gadgets-finds.com/og/tv";
 
 export const metadata: Metadata = {
-  title: "Samsung 65-Inch S85H Series OLED 4K Smart TV (2026) | Gadgets Finds",
+  title: "Samsung 65-Inch S85H OLED 4K TV (2026) | Gadgets Finds",
   description:
     "2026 Samsung 65-inch S85H OLED with Vision AI, NQ4 AI Gen2 processor, 4K AI upscaling, OLED HDR, and gaming features. Price and stock change on Amazon.",
   metadataBase: new URL("https://www.gadgets-finds.com"),
@@ -47,6 +48,7 @@ export default function Page() {
   return (
     <>
       <Header />
+      <ArticleJsonLd path="/samsung-65-s85h-oled-article" headline={"Samsung 65-Inch S85H OLED 4K TV (2026)"} description={"2026 Samsung 65-inch S85H OLED with Vision AI, NQ4 AI Gen2 processor, 4K AI upscaling, OLED HDR, and gaming features. Price and stock change on Amazon."} products={["Samsung 65-inch S85H OLED 4K Smart TV"]} />
       <article className="min-h-screen bg-background pt-28 md:pt-16">
         <div className="container mx-auto px-4 pt-2 pb-10 max-w-3xl">
           <p className="text-xs md:text-sm text-foreground mb-3">
