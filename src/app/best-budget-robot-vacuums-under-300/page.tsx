@@ -5,6 +5,7 @@ import AmazonDealBox from "@/components/common/AmazonDealBox";
 import RelatedGuides from "@/components/common/RelatedGuides";
 import { FaqJsonLd, ProductListJsonLd } from "@/components/common/GuideFaq";
 
+import { illustrationAlt } from "@/lib/illustrations";
 export const metadata: Metadata = {
   title: "Best Robot Vacuums Under $300 in 2026 | Gadgets Finds",
   description:
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
     siteName: "Gadgets Finds",
     type: "article",
     images: [{
-      url: 'https://www.gadgets-finds.com/assets/images/eufy-robovac-g30-floor.jpg',
+      url: 'https://www.gadgets-finds.com/og/vacuum',
       alt: 'eufy RoboVac G30 robot vacuum',
     }],
   },
@@ -28,7 +29,7 @@ export const metadata: Metadata = {
     creator: "@Gadgets_finds",
     title: 'Best Robot Vacuums Under $300 in 2026',
     description: 'Lefant M210 Pro for most homes, eufy G30 for pet hair, and Roborock Q5 when the live price still fits.',
-    images: ['https://www.gadgets-finds.com/assets/images/eufy-robovac-g30-floor.jpg'],
+    images: ['https://www.gadgets-finds.com/og/vacuum'],
   },
 };
 
@@ -59,10 +60,10 @@ function ViewOnAmazon({ href, name }: { href: string; name: string }) {
 }
 
 const IMAGES = {
-  lefant: "/assets/images/lefant-m210-pro.jpg",
-  eufy: "/assets/images/eufy-robovac-g30-floor.jpg",
-  q5: "/assets/images/roborock-q5.jpg",
-  roomba: "/assets/images/roomba-600-series.jpg",
+  lefant: "/assets/illustrations/vacuum.svg",
+  eufy: "/assets/illustrations/vacuum.svg",
+  q5: "/assets/illustrations/vacuum.svg",
+  roomba: "/assets/illustrations/vacuum.svg",
 } as const;
 
 function ProductPhoto({ src, alt }: { src: string; alt: string }) {
@@ -70,7 +71,7 @@ function ProductPhoto({ src, alt }: { src: string; alt: string }) {
     <div className="border-b border-border py-4">
       <img
         src={src}
-        alt={alt}
+        alt={illustrationAlt(src, alt)}
         referrerPolicy="no-referrer"
         className="mx-auto block w-auto max-w-full h-auto max-h-72 md:max-h-[22rem] object-contain"
       />

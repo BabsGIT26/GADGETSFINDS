@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "https://images.macrumors.com/t/2bugNDX7f6zrI_wlLg7-bwMKe2U=/2500x/article-new/2026/10/Apple-MacBook-Pro-with-PROLED-XDR-Display-family-lineup-feature.jpg",
+        url: "https://www.gadgets-finds.com/og/laptop",
         width: 1200,
         height: 630,
         alt: "Apple MacBook Pro with PROLED XDR Display",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Apple's First Touchscreen MacBook Pro with PROLED XDR Display",
     description: "Tandem OLED, 2000 nits, touch, Dynamic Island, M5 Pro & Max.",
-    images: ["https://images.macrumors.com/t/2bugNDX7f6zrI_wlLg7-bwMKe2U=/2500x/article-new/2026/10/Apple-MacBook-Pro-with-PROLED-XDR-Display-family-lineup-feature.jpg"],
+    images: ["https://www.gadgets-finds.com/og/laptop"],
   },
 };
 
@@ -97,8 +97,8 @@ export default function Page() {
               </p>
             </div>
             <img
-              src="https://images.macrumors.com/t/2bugNDX7f6zrI_wlLg7-bwMKe2U=/2500x/article-new/2026/10/Apple-MacBook-Pro-with-PROLED-XDR-Display-family-lineup-feature.jpg"
-              alt="MacBook Pro PROLED XDR family lineup"
+              src="/assets/illustrations/laptop.svg"
+              alt="Illustration, not a product photo: MacBook Pro PROLED XDR family lineup"
               className="w-36 md:w-56 h-auto rounded-lg object-contain flex-shrink-0 mx-auto md:mx-0"
             />
           </div>
@@ -117,8 +117,8 @@ export default function Page() {
               </p>
             </div>
             <img
-              src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/Apple-MacBook-Pro-with-PROLED-XDR-Display-lifestyle-remote-work-261028.jpg?quality=90&strip=all&w=1200"
-              alt="Person using the touchscreen on the new MacBook Pro"
+              src="/assets/illustrations/laptop.svg"
+              alt="Illustration, not a product photo: Person using the touchscreen on the new MacBook Pro"
               className="w-36 md:w-56 h-auto rounded-lg object-contain flex-shrink-0 mx-auto md:mx-0"
             />
           </div>
@@ -151,8 +151,8 @@ export default function Page() {
               </ul>
             </div>
             <img
-              src="https://static0.xdaimages.com/wordpress/wp-content/uploads/2026/10/apple-oled-macbook-pro.jpg?w=1600&h=900&fit=crop"
-              alt="MacBook Pro with vibrant OLED display"
+              src="/assets/illustrations/laptop.svg"
+              alt="Illustration, not a product photo: MacBook Pro with vibrant OLED display"
               className="w-36 md:w-56 h-auto rounded-lg object-contain flex-shrink-0 mx-auto md:mx-0"
             />
           </div>
