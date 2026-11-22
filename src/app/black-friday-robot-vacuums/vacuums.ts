@@ -122,7 +122,7 @@ export const VACUUMS: Vacuum[] = [
     image: "/assets/illustrations/vacuum.svg",
     alt: "Roborock Q7 M5+ robot vacuum and mop with dock",
     asin: "B0DWX69JVG",
-    card: "Vacuum and mop with a dock. The step up if you wanted a Roborock and the old Q5 is not the one to buy.",
+    card: "Vacuum and mop with a dock. The step up if you want a Roborock with a self-empty dock.",
     fit: "Roborock lists the Q7 M5+ as a vacuum and mop with a self-empty dock, LiDAR, and a dual anti-tangle system, and it calls it an upgrade from the Q5 Max+. That is the one to open if you want a mapped robot that also mops, and you do not want the largest station on this page.",
     skip: "Skip it if you will never use the mop. You would be paying for a pad, a tank, and maintenance you do not want. The eufy C10 or the Shark AI Ultra stay vacuum-only. Also skip it if you only needed the old Q5 from our budget guide. That is a different, simpler robot.",
     points: [
@@ -130,7 +130,7 @@ export const VACUUMS: Vacuum[] = [
       "LiDAR, so you can keep it out of a room. Gyro robots on the cheap end cannot do that well.",
       "Anti-tangle is aimed at pet hair. It reduces wraps. It does not mean you never touch the brush.",
     ],
-    limit: "Our longer guide still covers the original Roborock Q5. Do not treat this as the same machine. The Q5 is often unavailable, and it does not have this dock.",
+    limit: "Our under-$300 guide now covers the Roborock Q7 L5, the dockless model. Do not treat this as the same machine. The Q7 L5 has no self-empty dock.",
     compareName: "eufy C10",
     compareSlug: "eufy-c10",
     compare: "The C10 is the slimmer vacuum-only dock. The Q7 M5+ is the one that also mops. If the floors are mostly hard and you want both jobs, take the Roborock. If you only want hair off the floor, the C10 is the cleaner decision.",

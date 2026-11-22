@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ArticleJsonLd from "@/components/common/ArticleJsonLd";
 import { notFound } from "next/navigation";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
@@ -54,6 +55,7 @@ export default async function Page({ params }: Props) {
   return (
     <>
       <Header />
+      <ArticleJsonLd path={`/black-friday-smartwatches/${item.slug}`} headline={item.name} description={item.card} products={[item.name]} />
       <article className="min-h-screen bg-background pt-14 md:pt-16">
         <div className="container mx-auto px-4 py-10 max-w-3xl">
           <p className="text-xs text-muted-foreground mb-6 leading-relaxed">
