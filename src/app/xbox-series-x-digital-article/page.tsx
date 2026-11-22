@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ArticleJsonLd from "@/components/common/ArticleJsonLd";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
@@ -46,6 +47,7 @@ export default function Page() {
   return (
     <>
       <Header />
+      <ArticleJsonLd path="/xbox-series-x-digital-article" headline={"Xbox Series X Digital 1TB Robot White"} description={"Xbox Series X All-Digital Gaming Console with 1TB SSD, Wireless Controller, true 4K up to 120FPS, Robot White. Price and stock change on Amazon."} products={["Xbox Series X Digital 1TB Robot White"]} />
       <article className="min-h-screen bg-background pt-28 md:pt-16">
         <div className="container mx-auto px-4 pt-2 pb-10 max-w-3xl">
           <p className="text-xs md:text-sm text-foreground mb-3">

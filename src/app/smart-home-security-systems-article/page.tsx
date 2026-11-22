@@ -106,6 +106,7 @@ export default function SmartHomeSecurityArticle() {
             </ul>
 
             <h2 className="text-2xl font-bold text-foreground mt-8 mb-4">Top Smart Security Systems of 2026</h2>
+            <p className="text-sm text-muted-foreground mb-4">Kit and monitoring prices below are the brands’ published prices at the time of writing. They change often, so check the brand or Amazon for the current price.</p>
 
             <h3 className="text-xl font-bold text-foreground mt-6 mb-3">1. Ring Alarm Pro (Best Overall)</h3>
             <p className="text-muted-foreground mb-4">

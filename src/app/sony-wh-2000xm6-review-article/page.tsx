@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import ArticleJsonLd from "@/components/common/ArticleJsonLd";
 import Link from 'next/link';
 import AppImage from '@/components/ui/AppImage';
 import Icon from '@/components/ui/AppIcon';
@@ -51,6 +52,7 @@ export default function SonyWH2000XM6Article() {
   return (
     <>
       <Header />
+      <ArticleJsonLd path="/sony-wh-2000xm6-review-article" headline={"Sony WH-2000XM6 Review"} description={"Sony WH-2000XM6 headphones deliver premium noise cancellation and exceptional audio quality."} products={["Sony WH-1000XM6"]} includeArticle={false} />
       <div className="min-h-screen bg-background pt-14 md:pt-16">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
         {/* Hero Section */}

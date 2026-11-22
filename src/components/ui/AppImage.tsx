@@ -4,6 +4,8 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { illustrationAlt } from '@/lib/illustrations';
 
+const OPTIMIZED_HOSTS = ['img.rocket.new', 'images.unsplash.com', 'images.pexels.com', 'images.pixabay.com'];
+
 interface AppImageProps {
     src: string;
     alt: string;
@@ -51,6 +53,9 @@ function AppImage({
     // More reliable external URL detection
     const isExternal = imageSrc.startsWith('http://') || imageSrc.startsWith('https://');
     const isLocal = imageSrc.startsWith('/') || imageSrc.startsWith('./') || imageSrc.startsWith('data:');
+    // Hosts listed in next.config images.remotePatterns go through next/image,
+    // so they are resized and served as WebP/AVIF instead of full-size PNGs.
+    const canOptimize = isExternal && OPTIMIZED_HOSTS.some((host) => imageSrc.startsWith(`https://${host}/`));
 
     // Illustrations stand in for product photos; say so in the alt text.
     alt = illustrationAlt(imageSrc, alt);
@@ -71,7 +76,7 @@ function AppImage({
    const commonClassName = `${className} rounded-xl ${isLoading && !priority ? 'bg-gray-200' : ''} ${onClick ? 'cursor-pointer hover:opacity-90 transition-opacity' : ''}`;
 
     // For external URLs or when in doubt, use regular img tag
-    if (isExternal && !isLocal) {
+    if (isExternal && !isLocal && !canOptimize) {
         const imgStyle: React.CSSProperties = {};
 
         if (width) imgStyle.width = width;
@@ -89,6 +94,8 @@ function AppImage({
                         onClick={onClick}
                         style={imgStyle}
                         referrerPolicy="no-referrer"
+                        loading={priority ? 'eager' : 'lazy'}
+                        decoding="async"
                         {...props}
                     />
                 </div>
@@ -105,6 +112,8 @@ function AppImage({
                 onClick={onClick}
                 style={imgStyle}
                 referrerPolicy="no-referrer"
+                loading={priority ? 'eager' : 'lazy'}
+                decoding="async"
                 {...props}
             />
         );
