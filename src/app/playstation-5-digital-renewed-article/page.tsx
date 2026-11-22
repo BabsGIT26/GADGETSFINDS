@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ArticleJsonLd from "@/components/common/ArticleJsonLd";
 import AppImage from "@/components/ui/AppImage";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
@@ -43,6 +44,7 @@ export default function Page() {
   return (
     <>
       <Header />
+      <ArticleJsonLd path="/playstation-5-digital-renewed-article" headline={"PS5 Digital Edition"} description={"PlayStation 5 Digital Edition: no disc drive, ultra-high speed SSD, DualSense included. Price and stock change on Amazon."} products={["PlayStation 5 Digital Edition"]} />
       <article className="min-h-screen bg-background pt-28 md:pt-16">
         <div className="w-full bg-muted flex items-center justify-center py-10 pb-2">
           <AppImage

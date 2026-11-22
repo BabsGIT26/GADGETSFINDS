@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ArticleJsonLd from "@/components/common/ArticleJsonLd";
 import AppImage from "@/components/ui/AppImage";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
@@ -8,7 +9,7 @@ const AMAZON_PS5 = "https://www.amazon.com/PlayStation%C2%AE5-console-slim-Renew
 const AMAZON_GTA6 = "https://www.amazon.com/dp/B0H6K928WL?tag=gadgetsfindswebsite-20";
 
 export const metadata: Metadata = {
-  title: "PlayStation 5 and GTA 6 — Should You Buy a PS5 in 2026? | Gadgets Finds",
+  title: "PS5 and GTA 6: Should You Buy a PS5 in 2026? | Gadgets Finds",
   description:
     "PS5 Slim review: specs, disc vs digital, storage, DualSense, and why GTA 6 on November 19, 2026 is PS5-only.",
   metadataBase: new URL("https://www.gadgets-finds.com"),
@@ -34,6 +35,7 @@ export default function Page() {
   return (
     <>
       <Header />
+      <ArticleJsonLd path="/playstation-5-article" headline={"PS5 and GTA 6: Should You Buy a PS5 in 2026?"} description={"PS5 Slim review: specs, disc vs digital, storage, DualSense, and why GTA 6 on November 19, 2026 is PS5-only."} products={["PlayStation 5 Slim (disc)", "Grand Theft Auto VI for PS5"]} />
       <article className="min-h-screen bg-background pt-28 md:pt-16">
          <div className="w-full bg-muted flex items-center justify-center py-10 pb-2">
           <AppImage src="/assets/illustrations/console.svg" alt="PlayStation 5 Slim console" className="max-h-[400px] w-auto max-w-[85%] object-contain" />

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ArticleJsonLd from "@/components/common/ArticleJsonLd";
 import Link from "next/link";
 import AppImage from "@/components/ui/AppImage";
 import Header from "@/components/common/Header";
@@ -41,6 +42,7 @@ export default function Page() {
   return (
     <>
       <Header />
+      <ArticleJsonLd path="/playstation-5-dualsense-article" headline={"PS5 DualSense Wireless Controller"} description={"PlayStation DualSense: haptics, adaptive triggers, battery, PC use, and how to spot an official listing on Amazon."} products={["PS5 DualSense Wireless Controller"]} />
       <article className="min-h-screen bg-background pt-14 md:pt-16">
         <div className="container mx-auto px-4 py-10 max-w-3xl">
           <p className="text-sm text-foreground mb-6">
@@ -56,7 +58,7 @@ export default function Page() {
 
           <p className="text-muted-foreground mb-4">
             DualSense is the standard PS5 pad: haptic feedback, adaptive triggers, a built-in
-            mic, Create button, USB-C. Street price often sits near $70–$80 for an official
+            mic, Create button, USB-C. Check Amazon for the current price of an official
             unit. Colors change; the internals do not.
           </p>
           <p className="text-muted-foreground mb-8">

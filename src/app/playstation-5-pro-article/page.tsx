@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ArticleJsonLd from "@/components/common/ArticleJsonLd";
 import AppImage from "@/components/ui/AppImage";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
@@ -47,6 +48,7 @@ export default function Page() {
   return (
     <>
       <Header />
+      <ArticleJsonLd path="/playstation-5-pro-article" headline={"PlayStation 5 Pro — 2TB"} description={"PS5 Pro with 2TB SSD, PSSR upscaling, faster ray tracing, and DualSense. No disc drive. Price and stock change on Amazon."} products={["PlayStation 5 Pro 2TB"]} />
       <article className="min-h-screen bg-background pt-28 md:pt-16">
         <div className="container mx-auto px-4 pt-2 pb-10 max-w-3xl">
           <p className="text-xs md:text-sm text-foreground mb-3">
