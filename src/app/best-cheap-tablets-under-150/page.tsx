@@ -5,6 +5,7 @@ import AmazonDealBox from "@/components/common/AmazonDealBox";
 import RelatedGuides from "@/components/common/RelatedGuides";
 import GuideFaq, { ProductListJsonLd } from "@/components/common/GuideFaq";
 
+import { illustrationAlt } from "@/lib/illustrations";
 export const metadata: Metadata = {
   title: "Best Cheap Tablets Under $150 in 2026 | Gadgets Finds",
   description:
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
     siteName: "Gadgets Finds",
     type: "article",
     images: [{
-      url: 'https://www.gadgets-finds.com/assets/images/fire-hd-10.jpg',
+      url: 'https://www.gadgets-finds.com/og/tablet',
       alt: 'Amazon Fire HD 10 tablet',
     }],
   },
@@ -28,7 +29,7 @@ export const metadata: Metadata = {
     creator: "@Gadgets_finds",
     title: 'Best Cheap Tablets Under $150 in 2026',
     description: 'Fire HD 10, Galaxy Tab A9+, Fire HD 10 Kids, Fire HD 8, and Lenovo Tab One.',
-    images: ['https://www.gadgets-finds.com/assets/images/fire-hd-10.jpg'],
+    images: ['https://www.gadgets-finds.com/og/tablet'],
   },
 };
 
@@ -59,11 +60,11 @@ function ViewOnAmazon({ href, name }: { href: string; name: string }) {
 }
 
 const IMAGES = {
-  hd10: "/assets/images/fire-hd-10.jpg",
-  a9: "/assets/images/galaxy-tab-a9-plus.jpg",
-  kids: "/assets/images/fire-hd-10-kids.jpg",
-  hd8: "/assets/images/fire-hd-8-2024.jpg",
-  lenovo: "/assets/images/lenovo-tab-one.jpg",
+  hd10: "/assets/illustrations/tablet.svg",
+  a9: "/assets/illustrations/tablet.svg",
+  kids: "/assets/illustrations/tablet.svg",
+  hd8: "/assets/illustrations/tablet.svg",
+  lenovo: "/assets/illustrations/tablet.svg",
 } as const;
 
 function ProductPhoto({ src, alt }: { src: string; alt: string }) {
@@ -71,7 +72,7 @@ function ProductPhoto({ src, alt }: { src: string; alt: string }) {
     <div className="border-b border-border py-4">
       <img
         src={src}
-        alt={alt}
+        alt={illustrationAlt(src, alt)}
         referrerPolicy="no-referrer"
         className="mx-auto block w-auto max-w-full h-auto max-h-72 md:max-h-[22rem] object-contain"
       />

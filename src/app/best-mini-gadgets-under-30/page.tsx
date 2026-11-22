@@ -5,6 +5,7 @@ import AmazonDealBox from "@/components/common/AmazonDealBox";
 import RelatedGuides from "@/components/common/RelatedGuides";
 import GuideFaq, { ProductListJsonLd } from "@/components/common/GuideFaq";
 
+import { illustrationAlt } from "@/lib/illustrations";
 export const metadata: Metadata = {
   title: "Best Mini Gadgets Under $30 in 2026 | Gadgets Finds",
   description:
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
     siteName: "Gadgets Finds",
     type: "article",
     images: [{
-      url: 'https://www.gadgets-finds.com/assets/images/anker-nano-45w-hero.jpg',
+      url: 'https://www.gadgets-finds.com/og/charger',
       alt: 'Anker Nano 45W charger',
     }],
   },
@@ -28,7 +29,7 @@ export const metadata: Metadata = {
     creator: "@Gadgets_finds",
     title: 'Best Mini Gadgets Under $30 in 2026',
     description: 'Anker Nano 45W, a 5-in-1 USB-C hub, a 100W cable two-pack, and a Galaxy SmartTag2.',
-    images: ['https://www.gadgets-finds.com/assets/images/anker-nano-45w-hero.jpg'],
+    images: ['https://www.gadgets-finds.com/og/charger'],
   },
 };
 
@@ -58,10 +59,10 @@ function ViewOnAmazon({ href, name }: { href: string; name: string }) {
 }
 
 const IMAGES = {
-  charger: "/assets/images/anker-nano-45w-hero.jpg",
-  hub: "/assets/images/anker-5in1-hub.jpg",
-  cable: "/assets/images/anker-100w-cable.jpg",
-  tag: "/assets/images/galaxy-smarttag2.jpg",
+  charger: "/assets/illustrations/charger.svg",
+  hub: "/assets/illustrations/hub.svg",
+  cable: "/assets/illustrations/cable.svg",
+  tag: "/assets/illustrations/tracker.svg",
 } as const;
 
 function ProductPhoto({ src, alt }: { src: string; alt: string }) {
@@ -69,7 +70,7 @@ function ProductPhoto({ src, alt }: { src: string; alt: string }) {
     <div className="border-b border-border py-4">
       <img
         src={src}
-        alt={alt}
+        alt={illustrationAlt(src, alt)}
         referrerPolicy="no-referrer"
         className="mx-auto block w-auto max-w-full h-auto max-h-72 md:max-h-[22rem] object-contain"
       />

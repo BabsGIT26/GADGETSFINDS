@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "https://images.samsung.com/africa_fr/smartphones/galaxy-z-fold8-ultra/images/galaxy-z-fold8-ultra-share-image.jpg ",
+        url: "https://www.gadgets-finds.com/og/foldable ",
         width: 1200,
         height: 630,
         alt: "Best Foldable Phones 2026",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@Gadgets_finds",
     title: "Best Foldable Phones 2026",
-    images: ["https://macdailynews.com/wp-content/uploads/2026/09/260911_iphone_duo.png"],
+    images: ["https://www.gadgets-finds.com/og/foldable"],
   },
 };
 
@@ -110,8 +110,8 @@ export default function Page() {
             <h2 className="text-2xl md:text-3xl font-bold mb-4">Apple iPhone Duo</h2>
             <div className="mb-6 rounded-xl overflow-hidden">
               <img
-                src="https://macdailynews.com/wp-content/uploads/2026/09/260911_iphone_duo.png"
-                alt="Apple iPhone Duo"
+                src="/assets/illustrations/foldable.svg"
+                alt="Illustration, not a product photo: Apple iPhone Duo"
                 className="w-full h-auto"
               />
             </div>
@@ -154,13 +154,6 @@ export default function Page() {
           {/* Galaxy Z Fold 8 */}
           <section className="mb-16">
             <h2 className="text-2xl md:text-3xl font-bold mb-4">Samsung Galaxy Z Fold 8</h2>
-            <div className="mb-6 rounded-xl overflow-hidden">
-              <img
-                src="https://img.global.news.samsung.com/global/wp-content/uploads/2026/07/22215407/Samsung-Mobile-Galaxy-Unpacked-July-2026-Galaxy-Z-Fold8-Ultra-Galaxy-Z-Fold8-Galaxy-Z-Flip8-Launch_Thumb932.jpg"
-                alt="Samsung Galaxy Z Fold 8"
-                className="w-full h-auto"
-              />
-            </div>
             <p className="text-muted-foreground mb-4">
               The lightest premium foldable right now at just 201 g. Passport-style shape with a wider cover screen (5.5") that feels more natural one-handed. Inner screen is 7.6". Snapdragon 8 Elite Gen 5, 4,800 mAh battery.
             </p>
@@ -186,13 +179,6 @@ export default function Page() {
           {/* Galaxy Z Fold 8 Ultra */}
           <section className="mb-16">
             <h2 className="text-2xl md:text-3xl font-bold mb-4">Samsung Galaxy Z Fold 8 Ultra</h2>
-            <div className="mb-6 rounded-xl overflow-hidden">
-              <img
-                src="https://media.nextmobiles.com/wp-content/uploads/2026/07/Samsung-Galaxy-Z-Fold-8-Ultra-blog-Next-Mobiles.jpeg"
-                alt="Samsung Galaxy Z Fold 8 Ultra"
-                className="w-full h-auto"
-              />
-            </div>
             <p className="text-muted-foreground mb-4">
               The bigger, more feature-packed version. 8-inch inner screen, 6.5-inch cover, 200 MP main camera, and a thinner body. Starts around $2,099.
             </p>
@@ -212,13 +198,6 @@ export default function Page() {
           {/* Pixel 11 Pro Fold */}
           <section className="mb-16">
             <h2 className="text-2xl md:text-3xl font-bold mb-4">Google Pixel 11 Pro Fold</h2>
-            <div className="mb-6 rounded-xl overflow-hidden">
-              <img
-                src="https://m-cdn.phonearena.com/images/article/182546-wide-two_1200/Pixel-11-Pro-Fold-is-here-Tensor-G6-incredible-Super-Actua-display-and-HiLight.jpg"
-                alt="Google Pixel 11 Pro Fold"
-                className="w-full h-auto"
-              />
-            </div>
             <p className="text-muted-foreground mb-4">
               8-inch inner display, 6.5-inch cover, full IP68 rating, and a real 5x telephoto. Tensor G6 chip. Starts at $1,899.
             </p>
