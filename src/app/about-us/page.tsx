@@ -5,14 +5,14 @@ import Footer from '@/app/homepage/components/Footer';
 
 export const metadata: Metadata = {
   title: 'About Gadgets Finds — Tech Reviews & Honest Recommendations',
-  description: 'Learn about Gadgets Finds mission to provide unbiased tech reviews, rigorous testing procedures, and transparent recommendations for consumers.',
+  description: 'How Gadgets Finds researches gadgets: manufacturer specs, verified owner reviews, and expert reviews, with clear affiliate disclosure.',
   metadataBase: new URL('https://www.gadgets-finds.com'),
   alternates: {
     canonical: 'https://www.gadgets-finds.com/about-us'
   },
   openGraph: {
     title: 'About Gadgets Finds',
-    description: 'Unbiased tech reviews with rigorous testing and editorial independence.',
+    description: 'Research-based gadget guides with clear affiliate disclosure.',
     url: 'https://www.gadgets-finds.com/about-us',
     type: 'website',
     images: [
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     site: '@Gadgets_finds',
     creator: '@Gadgets_finds',
     title: 'About Gadgets Finds',
-    description: 'Unbiased tech reviews with rigorous testing and editorial independence.',
+    description: 'Research-based gadget guides with clear affiliate disclosure.',
     images: ['https://www.gadgets-finds.com/assets/images/c25f7797a5e24e21877a902e49174fd6-1768753589028.png']
   }
 };
@@ -83,10 +83,10 @@ const AboutPage = () => {
           <h2 className="text-3xl font-bold text-brand-text-primary mb-6">Our Story</h2>
           <div className="space-y-4 text-brand-text-secondary leading-relaxed">
             <p>
-              Gadgets Finds was created to offer straightforward and trustworthy tech reviews. Many review sites prioritize affiliate revenue over honesty — we aim to do things differently.
+              Gadgets Finds was created to offer straightforward, research-based buying guides. Many review sites prioritize affiliate revenue over honesty — we aim to do things differently.
             </p>
             <p>
-              We focus on real-world testing and clear, unbiased recommendations to help you choose the right products.
+              We do not run a test lab. Our picks come from manufacturer specs and documentation, verified owner reviews, and published expert reviews, and we say plainly when a number is the maker's claim rather than something we measured.
             </p>
             <p>
               We maintain editorial independence and are transparent about our affiliate relationships when they exist.
@@ -100,9 +100,9 @@ const AboutPage = () => {
           <h2 className="text-3xl font-bold text-brand-text-primary mb-6">Our Review Methodology</h2>
           <div className="space-y-6">
             <div className="bg-slate-900 p-6 rounded-lg border border-slate-800">
-              <h3 className="text-xl font-bold text-brand-text-primary mb-3">Rigorous Testing Procedures</h3>
+              <h3 className="text-xl font-bold text-brand-text-primary mb-3">How We Research</h3>
               <p className="text-brand-text-secondary">
-                We test products in real-world conditions over extended periods using appropriate tools and benchmarks to gather objective data.
+                We compare manufacturer specs and data sheets, read verified owner reviews for recurring problems, and check what independent expert reviewers report. We do not claim hands-on results we did not get.
               </p>
             </div>
             <div className="bg-slate-900 p-6 rounded-lg border border-slate-800">
@@ -114,7 +114,7 @@ const AboutPage = () => {
             <div className="bg-slate-900 p-6 rounded-lg border border-slate-800">
               <h3 className="text-xl font-bold text-brand-text-primary mb-3">Transparency & Accountability</h3>
               <p className="text-brand-text-secondary">
-                We disclose our testing approach, affiliate relationships, and update reviews when significant changes occur.
+                We disclose how we research, our affiliate relationships, and update guides when prices, stock, or products change.
               </p>
             </div>
           </div>
