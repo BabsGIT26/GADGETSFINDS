@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: 'https://www.gadgets-finds.com/sony-wh-2000xm6-review-article',
     type: 'article',
     images: [{
-      url: "https://www.gadgets-finds.com/assets/images/sony_wh_1000xm6.png",
+      url: "https://www.gadgets-finds.com/og/headphones",
       width: 1200,
       height: 630,
       alt: 'Sony WH-2000XM6 Headphones'
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     creator: '@Gadgets_finds',
     title: 'Sony WH-2000XM6 Review',
     description: 'Premium noise cancellation and exceptional audio quality.',
-    images: ['https://www.gadgets-finds.com/assets/images/sony_wh_1000xm6.png']
+    images: ['https://www.gadgets-finds.com/og/headphones']
   }
 };
 
@@ -40,7 +40,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Sony WH-2000XM6 Review',
   description: 'Sony WH-2000XM6 headphones deliver premium noise cancellation and exceptional audio quality.',
-  image: "https://www.gadgets-finds.com/assets/images/sony_wh_1000xm6.png",
+  image: "https://www.gadgets-finds.com/og/headphones",
   datePublished: '2026-01-25',
   dateModified: '2026-01-25',
   author: { '@type': 'Organization', name: 'Gadgets Finds' },
@@ -56,7 +56,7 @@ export default function SonyWH2000XM6Article() {
         {/* Hero Section */}
         <div className="relative h-[400px] md:h-[500px] w-full">
           <AppImage
-            src="/assets/images/sony_wh_1000xm6.png"
+            src="/assets/illustrations/headphones.svg"
             alt="Sony WH-1000XM6 wireless headphones"
             className="w-full h-full object-cover" />
           
@@ -93,7 +93,7 @@ export default function SonyWH2000XM6Article() {
           {/* Article Body */}
           <div className="prose prose-lg max-w-none">
             <p className="text-xl text-muted-foreground leading-relaxed mb-6">
-              After two weeks of intensive testing, Sony's WH-2000XM6 headphones have proven themselves as the undisputed champion of noise-canceling audio. Here's everything you need to know.
+              Based on Sony's specs, published expert reviews, and verified owner reviews, the WH-1000XM6 is one of the strongest noise-canceling headphones you can buy. Here's everything you need to know.
             </p>
 
             <h2 className="text-2xl font-bold text-foreground mt-8 mb-4">Design and Build Quality</h2>
@@ -112,7 +112,7 @@ export default function SonyWH2000XM6Article() {
               This is where the WH-2000XM6 truly shines. Sony's new Integrated Processor V2 delivers noise cancellation that's 20% more effective than the already-impressive XM5. The system uses eight microphones (two more than the previous generation) to capture and cancel ambient noise with unprecedented accuracy.
             </p>
             <p className="text-muted-foreground mb-4">
-              In real-world testing, the XM6 excelled in every scenario:
+              Expert and owner reviews consistently report strong results in these situations:
             </p>
             <ul className="list-disc pl-6 text-muted-foreground mb-4 space-y-2">
               <li><strong>Airplane Cabins:</strong> Engine noise was reduced to a barely perceptible hum, making long flights significantly more comfortable.</li>
@@ -146,7 +146,7 @@ export default function SonyWH2000XM6Article() {
               The WH-2000XM6 is packed with intelligent features that enhance the user experience:
             </p>
             <ul className="list-disc pl-6 text-muted-foreground mb-4 space-y-2">
-              <li><strong>Speak-to-Chat:</strong> Automatically pauses music and activates ambient sound when you start speaking. Works flawlessly in testing.</li>
+              <li><strong>Speak-to-Chat:</strong> Automatically pauses music and activates ambient sound when you start speaking. Owners report it works reliably.</li>
               <li><strong>Adaptive Sound Control:</strong> Learns your locations and adjusts noise cancellation settings automatically.</li>
               <li><strong>Quick Attention Mode:</strong> Cover the right ear cup to temporarily lower volume and let in ambient sound for quick conversations.</li>
               <li><strong>Multipoint Connection:</strong> Seamlessly switch between two devices. Finally works reliably without dropouts.</li>
@@ -158,7 +158,7 @@ export default function SonyWH2000XM6Article() {
 
             <h2 className="text-2xl font-bold text-foreground mt-8 mb-4">Battery Life and Charging</h2>
             <p className="text-muted-foreground mb-4">
-              Sony claims 40 hours of battery life with ANC enabled, and our testing confirmed this figure. With ANC disabled, battery life extends to an impressive 50 hours. A quick 3-minute charge provides 3 hours of playback—perfect for emergency situations.
+              Sony claims 40 hours of battery life with ANC enabled, and expert reviews report results close to that figure. With ANC disabled, battery life extends to an impressive 50 hours. A quick 3-minute charge provides 3 hours of playback—perfect for emergency situations.
             </p>
             <p className="text-muted-foreground mb-4">
               The headphones charge via USB-C and support fast charging. A full charge takes approximately 3.5 hours. The included cable is high-quality and appropriately long for convenient charging.

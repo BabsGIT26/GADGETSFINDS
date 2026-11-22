@@ -90,7 +90,7 @@ export default function SmartHomeSecurityArticle() {
           {/* Article Body */}
           <div className="prose prose-lg max-w-none">
             <p className="text-xl text-muted-foreground leading-relaxed mb-6">
-              Home security has evolved dramatically in recent years. We've tested and compared the leading smart home security systems to help you choose the best protection for your home and family.
+              Home security has evolved dramatically in recent years. We've compared the leading smart home security systems using manufacturer specs, expert reviews, and verified owner reviews to help you choose the best protection for your home and family.
             </p>
 
             <h2 className="text-2xl font-bold text-foreground mt-8 mb-4">What to Look for in a Smart Security System</h2>

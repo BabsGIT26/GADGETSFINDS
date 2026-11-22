@@ -99,7 +99,7 @@ const TermsOfServicePage = () => {
     title: 'Affiliate Disclosure',
     content: [
     'Gadgets Finds participates in various affiliate marketing programs, which means we may earn commissions on purchases made through our links to retailer sites. This comes at no additional cost to you and helps support our content creation.',
-    'Our reviews and recommendations are based on our honest opinions and thorough testing. Affiliate relationships do not influence our editorial content or product evaluations.']
+    'Our guides and recommendations are based on our honest opinions and research into manufacturer specs, verified owner reviews, and expert reviews. Affiliate relationships do not influence our editorial content or product evaluations.']
 
   },
   {
