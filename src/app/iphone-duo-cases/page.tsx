@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import TopPicks from "@/components/common/TopPicks";
 import ArticleJsonLd from "@/components/common/ArticleJsonLd";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
@@ -102,6 +103,11 @@ export default function Page() {
           <p className="max-w-md mx-auto text-base text-zinc-600 dark:text-zinc-300">
             Clear, silicone, leather, and protective options designed for the iPhone Duo.
           </p>
+          <TopPicks picks={[
+    { label: "Best value", name: "FNTCASE MagSafe Case", why: "Strong magnets and a screen protector included.", url: "https://www.amazon.com/dp/B0HDST6F85?tag=gadgetsfindswebsmediavid-20" },
+    { label: "Best with stand", name: "TORRAS Q3 Spin", why: "Hinge protection with a 360° rotating stand.", url: "https://www.amazon.com/dp/B0HGDS2DZC?tag=gadgetsfindswebsmediavid-20" },
+    { label: "Best clear", name: "Spigen Ultra Hybrid Pro", why: "Shows the phone color, covers the hinge.", url: "https://www.amazon.com/dp/B0GYQH6WFJ?tag=gadgetsfindswebsmediavid-20" },
+          ]} />
         </section>
 
         <div className="max-w-xl mx-auto px-6 mb-8 text-center">

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import TopPicks from "@/components/common/TopPicks";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import RelatedGuides from "@/components/common/RelatedGuides";
@@ -93,6 +94,16 @@ export default function Page() {
           <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">By Gadgets Finds · Updated November 2026</p>
           <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-3">{copy.heading}</h1>
           <p className="text-muted-foreground mb-8">{copy.intro}</p>
+          <TopPicks
+            picks={[
+              { label: "Best for iPhone", name: "Apple Watch SE 3 GPS 40mm", why: "The smaller Apple watch here, for an iPhone." },
+              { label: "Best for fitness", name: "Garmin Venu 4 45mm", why: "The everyday Garmin. Works with iPhone or Android." },
+              { label: "Most rugged", name: "Garmin Instinct 3 AMOLED 45mm", why: "Built to be knocked, with multi-band GPS." },
+            ].map((pick) => {
+              const item = WATCHES.find((entry) => entry.name === pick.name)!;
+              return { ...pick, url: amazonUrl(item.asin) };
+            })}
+          />
 
           <ProductListJsonLd
             name={copy.listName}

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import TopPicks from "@/components/common/TopPicks";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import RelatedGuides from "@/components/common/RelatedGuides";
@@ -89,6 +90,16 @@ export default function Page() {
           <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">By Gadgets Finds · Updated November 2026</p>
           <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-3">{copy.heading}</h1>
           <p className="text-muted-foreground mb-8">{copy.intro}</p>
+          <TopPicks
+            picks={[
+              { label: "Best overall", name: "Roborock Qrevo 2 Pro (Black)", why: "Vacuum, spinning mops, and a dock that empties, washes, and dries." },
+              { label: "Best value", name: "Roborock Q7 M5+", why: "A Roborock vacuum and mop with a self-empty dock." },
+              { label: "Best budget", name: "Lefant M210 Pro", why: "The simple daily robot. No dock, you empty it." },
+            ].map((pick) => {
+              const item = VACUUMS.find((entry) => entry.name === pick.name)!;
+              return { ...pick, url: amazonUrl(item.asin) };
+            })}
+          />
 
           <ProductListJsonLd
             name={copy.listName}

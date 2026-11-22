@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import TopPicks from "@/components/common/TopPicks";
 import ArticleJsonLd from "@/components/common/ArticleJsonLd";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
@@ -59,6 +60,11 @@ export default function Page() {
           <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
             Best Foldable Phones 2026
           </h1>
+          <TopPicks picks={[
+    { label: "Best overall", name: "Google Pixel 11 Pro Fold", why: "IP68 and real zoom in a foldable.", url: "https://www.amazon.com/dp/B0H6R2NGMZ?tag=gadgetsfindswebsite-20" },
+    { label: "Best daily foldable", name: "Samsung Galaxy Z Fold 8", why: "The lightest and most usable fold here.", url: "https://www.amazon.com/dp/B0H126B3KV?tag=gadgetsfindswebsite-20" },
+    { label: "Biggest screen", name: "Samsung Galaxy Z Fold 8 Ultra", why: "Maximum screen and camera.", url: "https://www.amazon.com/dp/B0H12KX1X4?tag=gadgetsfindswebsite-20" },
+          ]} />
           <p className="text-muted-foreground mb-8 text-lg">
             Apple finally entered the foldable market with the iPhone Duo. Samsung refined its Galaxy Z Fold 8 line, and Google improved the Pixel 11 Pro Fold. Here’s how the top premium options compare in late 2026.
           </p>
@@ -215,6 +221,13 @@ export default function Page() {
             >
               VIEW ON AMAZON
             </a>
+          </section>
+
+          <section id="older-models" className="scroll-mt-28 mb-8">
+            <h2 className="text-2xl font-bold mt-10 mb-4">What about the Galaxy Z Fold 6?</h2>
+            <p className="text-muted-foreground leading-relaxed">
+              The Galaxy Z Fold 6 launched in 2024 and has since been replaced by the Z Fold 7 and now the Z Fold 8 line above. It can still be a fair buy as a clearly discounted, new unit from a trusted seller, but a newer Fold gets software updates for longer. We no longer keep a separate Z Fold 6 page.
+            </p>
           </section>
 
           <h2 className="text-2xl font-bold mt-10 mb-4">Quick Verdict</h2>
