@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: 'https://www.gadgets-finds.com/samsung-galaxy-s26-ultra-article',
     type: 'article',
     images: [{
-      url: "https://www.gadgets-finds.com/assets/images/samsung_galaxy_s_twenty_six_ultra.png",
+      url: "https://www.gadgets-finds.com/og/phone",
       width: 1200,
       height: 630,
       alt: 'Samsung Galaxy S26 Ultra'
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     creator: '@Gadgets_finds',
     title: 'Samsung Galaxy S26 Ultra Review',
     description: 'Announced Feb 25, released Mar 11 2026. Advanced AI camera, Snapdragon 8 Elite for Galaxy, S Pen.',
-    images: ['https://www.gadgets-finds.com/assets/images/samsung_galaxy_s_twenty_six_ultra.png']
+    images: ['https://www.gadgets-finds.com/og/phone']
   }
 };
 
@@ -40,7 +40,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Samsung Galaxy S26 Ultra Review',
   description: 'Samsung Galaxy S26 Ultra review: announced February 25, 2026 and released March 11, 2026.',
-  image: "https://www.gadgets-finds.com/assets/images/samsung_galaxy_s_twenty_six_ultra.png",
+  image: "https://www.gadgets-finds.com/og/phone",
   datePublished: '2026-03-11',
   dateModified: '2026-08-12',
   author: { '@type': 'Organization', name: 'Gadgets Finds' },
@@ -56,7 +56,7 @@ export default function SamsungGalaxyS26UltraArticle() {
         {/* Hero Section */}
         <div className="relative min-h-[50vh] md:h-[60vh] overflow-hidden flex flex-col">
           <AppImage
-            src="/assets/images/samsung_galaxy_s_twenty_six_ultra.png"
+            src="/assets/illustrations/phone.svg"
             alt="Samsung Galaxy S26 Ultra smartphone with advanced quad camera system"
             className="absolute inset-0 w-full h-full object-cover" />
 
@@ -191,12 +191,12 @@ export default function SamsungGalaxyS26UltraArticle() {
 
             <h2 className="text-3xl font-bold text-foreground mb-6 mt-12">Performance</h2>
             <p className="text-muted-foreground mb-6">
-              The Galaxy S26 Ultra is powered by the Snapdragon 8 Elite for Galaxy processor with 12GB of RAM, delivering exceptional performance. Benchmark tests show significant improvements in CPU and GPU performance compared to the S25 Ultra. The vapor chamber cooling system ensures sustained performance during intensive tasks.
+              The Galaxy S26 Ultra is powered by the Snapdragon 8 Elite for Galaxy processor with 12GB of RAM, delivering exceptional performance. Published benchmark results show significant improvements in CPU and GPU performance compared to the S25 Ultra. The vapor chamber cooling system ensures sustained performance during intensive tasks.
             </p>
 
             <h2 className="text-3xl font-bold text-foreground mb-6 mt-12">Battery Life</h2>
             <p className="text-muted-foreground mb-6">
-              The 5,000mAh battery with 45W fast charging delivers solid all-day battery life. In testing, the S26 Ultra lasted through a full day of mixed use including photography, gaming, and productivity tasks. The improved power efficiency of the Snapdragon 8 Elite contributes to the extended battery life.
+              The 5,000mAh battery with 45W fast charging delivers solid all-day battery life. Expert and owner reviews report that the S26 Ultra lasts through a full day of mixed use including photography, gaming, and productivity tasks. The improved power efficiency of the Snapdragon 8 Elite contributes to the extended battery life.
             </p>
 
             <h2 className="text-3xl font-bold text-foreground mb-6 mt-12">S Pen</h2>

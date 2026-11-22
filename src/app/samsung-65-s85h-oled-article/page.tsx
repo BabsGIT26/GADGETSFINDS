@@ -9,7 +9,8 @@ import CommentSection from "@/components/comments/CommentSection";
 const AMAZON =
   "https://www.amazon.com/dp/B0GQ6YWP33?tag=gadgetsfindswebsite-20";
 
-const OG_IMAGE = "https://eftm.com/wp-content/uploads/2026/03/Samsung-OLED-S85H-scaled.jpg";
+const OG_IMAGE = "/assets/illustrations/tv.svg";
+const SHARE_IMAGE = "https://www.gadgets-finds.com/og/tv";
 
 export const metadata: Metadata = {
   title: "Samsung 65-Inch S85H Series OLED 4K Smart TV (2026) | Gadgets Finds",
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: OG_IMAGE,
+        url: SHARE_IMAGE,
         width: 1200,
         height: 630,
         alt: "Samsung 65-Inch S85H Series OLED TV",
@@ -38,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@Gadgets_finds",
     title: "Samsung 65-Inch S85H Series OLED 4K Smart TV (2026)",
-    images: [OG_IMAGE],
+    images: [SHARE_IMAGE],
   },
 };
 
@@ -84,7 +85,7 @@ export default function Page() {
 
           <div className="w-full flex justify-center py-6 mb-6">
             <AppImage
-              src="https://eftm.com/wp-content/uploads/2026/03/Samsung-OLED-S85H-scaled.jpg"
+              src="/assets/illustrations/tv.svg"
               alt="Samsung S85H OLED in a living room"
               className="max-h-[400px] w-auto max-w-full object-contain rounded-lg"
             />
@@ -107,13 +108,6 @@ export default function Page() {
             Buy it if you want true OLED blacks and color in a 65-inch size without stepping up to Samsung’s higher QD-OLED lines. Strong for movies and for 4K/120Hz gaming on PS5 or Xbox.
           </p>
 
-          <div className="w-full flex justify-center py-6 mb-6">
-            <AppImage
-              src="https://cdn.mos.cms.futurecdn.net/sUoRqwztUWf4789WKCgPwa-2000-80.jpg"
-              alt="Samsung S85H OLED showing city skyline"
-              className="max-h-[400px] w-auto max-w-full object-contain rounded-lg"
-            />
-          </div>
 
           <p className="text-muted-foreground mb-4">
             Skip it if you need the brightest possible HDR for a very bright room, or if you prefer Dolby Vision (this model focuses on HDR10+).
@@ -131,13 +125,6 @@ export default function Page() {
             A solid 2026 OLED entry point with AI processing and full gaming features. Open the Amazon listing to see the current deal price and stock.
           </p>
 
-          <div className="w-full flex justify-center py-6 mb-10">
-            <AppImage
-              src="https://m.media-amazon.com/images/I/818JZQW4xWL.jpg"
-              alt="Samsung 65-Inch S85H Series OLED TV"
-              className="max-h-[400px] w-auto max-w-full object-contain"
-            />
-          </div>
 
           <AmazonDealBox
             productName="Samsung 65-Inch S85H Series OLED 4K Smart TV (2026)"

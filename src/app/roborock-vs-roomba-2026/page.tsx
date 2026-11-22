@@ -5,6 +5,7 @@ import AmazonDealBox from "@/components/common/AmazonDealBox";
 import RelatedGuides from "@/components/common/RelatedGuides";
 import GuideFaq, { ProductListJsonLd } from "@/components/common/GuideFaq";
 
+import { illustrationAlt } from "@/lib/illustrations";
 export const metadata: Metadata = {
   title: "Roborock vs Roomba in 2026: Which Is Better? | Gadgets Finds",
   description: "Direct comparison of Roborock and Roomba robot vacuums in 2026. Suction, navigation, mopping, value, and which brand wins for most people.",
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
     siteName: "Gadgets Finds",
     type: "article",
     images: [{
-      url: 'https://www.gadgets-finds.com/assets/images/roborock-qrevo-s-pro-room.jpg',
+      url: 'https://www.gadgets-finds.com/og/vacuum',
       alt: 'Roborock Qrevo S Pro robot vacuum',
     }],
   },
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
     creator: "@Gadgets_finds",
     title: 'Roborock vs Roomba in 2026',
     description: 'Suction, navigation, mopping, and which robot vacuum is the better buy in 2026.',
-    images: ['https://www.gadgets-finds.com/assets/images/roborock-qrevo-s-pro-room.jpg'],
+    images: ['https://www.gadgets-finds.com/og/vacuum'],
   },
 };
 
@@ -55,8 +56,8 @@ function ViewOnAmazon({ href, name }: { href: string; name: string }) {
 }
 
 const IMAGES = {
-  qrevo: "/assets/images/roborock-qrevo-s-pro-room.jpg",
-  roomba: "/assets/images/roomba-combo-10-max-room.jpg",
+  qrevo: "/assets/illustrations/vacuum.svg",
+  roomba: "/assets/illustrations/vacuum.svg",
 } as const;
 
 function ProductPhoto({ src, alt }: { src: string; alt: string }) {
@@ -64,7 +65,7 @@ function ProductPhoto({ src, alt }: { src: string; alt: string }) {
     <div className="border-b border-border py-4">
       <img
         src={src}
-        alt={alt}
+        alt={illustrationAlt(src, alt)}
         referrerPolicy="no-referrer"
         className="mx-auto block w-auto max-w-full h-auto max-h-72 md:max-h-[22rem] object-contain"
       />
