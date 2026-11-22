@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ArticleJsonLd from "@/components/common/ArticleJsonLd";
 import AppImage from "@/components/ui/AppImage";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
@@ -14,7 +15,7 @@ const OG_IMAGE = "/assets/illustrations/gadget.svg";
 const SHARE_IMAGE = "https://www.gadgets-finds.com/og/gadget";
 
 export const metadata: Metadata = {
-  title: "GenZ Semi-Automatic Slingshot Rapid Fire Steel Ball Shooter | Gadgets Finds",
+  title: "GenZ Semi-Automatic Slingshot Review | Gadgets Finds",
   description:
     "CNC aluminum semi-automatic slingshot with dual magazine, rapid-fire steel ball loading, fiber optic sight. Outdoor target practice gadget. Price and stock change on Amazon.",
   metadataBase: new URL("https://www.gadgets-finds.com"),
@@ -48,6 +49,7 @@ export default function Page() {
   return (
     <>
       <Header />
+      <ArticleJsonLd path="/genz-semi-automatic-slingshot-article" headline={"GenZ Semi-Automatic Slingshot Review"} description={"CNC aluminum semi-automatic slingshot with dual magazine, rapid-fire steel ball loading, fiber optic sight. Outdoor target practice gadget. Price and stock change on Amazon."} products={["GenZ semi-automatic slingshot"]} />
       <article className="min-h-screen bg-background pt-28 md:pt-16">
         <div className="container mx-auto px-4 pt-2 pb-10 max-w-3xl">
           <p className="text-xs md:text-sm text-foreground mb-3">

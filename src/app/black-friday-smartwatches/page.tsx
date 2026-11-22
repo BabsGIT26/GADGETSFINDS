@@ -6,14 +6,34 @@ import GuideFaq, { ProductListJsonLd } from "@/components/common/GuideFaq";
 import { WATCHES, amazonUrl } from "./watches";
 
 import { illustrationAlt } from "@/lib/illustrations";
-export const metadata: Metadata = {
-  title: "Black Friday Smartwatches | Gadgets Finds",
+import { seasonCopy } from "@/lib/sale-season";
+
+// Re-render hourly so the Black Friday copy switches to the evergreen copy after Cyber Monday.
+export const revalidate = 3600;
+
+const SALE_COPY = {
+  "title": "Black Friday Smartwatches",
+  "heading": "Black Friday smartwatches",
+  "intro": "Black Friday through Cyber Monday: which watch fits your phone and your routine, before you open the listing.",
+  "listName": "Black Friday smartwatches"
+};
+const EVERGREEN_COPY = {
+  "title": "Smartwatch Deals Worth Opening",
+  "heading": "Smartwatch deals worth opening",
+  "intro": "The watches we would check first when one goes on sale, matched to your phone and your routine.",
+  "listName": "Smartwatch deals"
+};
+
+export function generateMetadata(): Metadata {
+  const copy = seasonCopy(SALE_COPY, EVERGREEN_COPY);
+  return {
+  title: `${copy.title} | Gadgets Finds`,
   description:
     "How to choose a Black Friday smartwatch: Apple Watch SE 3 or Series 12, Garmin Venu 4 or Instinct 3, WHOOP membership, or the CARBINOX Edge.",
   metadataBase: new URL("https://www.gadgets-finds.com"),
   alternates: { canonical: "https://www.gadgets-finds.com/black-friday-smartwatches" },
   openGraph: {
-    title: "Black Friday Smartwatches",
+    title: copy.title,
     description: "iPhone, Garmin, a screenless membership band, or a budget GPS watch. Read the note before the listing.",
     url: "https://www.gadgets-finds.com/black-friday-smartwatches",
     siteName: "Gadgets Finds",
@@ -29,11 +49,12 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@Gadgets_finds",
     creator: "@Gadgets_finds",
-    title: "Black Friday Smartwatches",
+    title: copy.title,
     description: "iPhone, Garmin, a screenless membership band, or a budget GPS watch. Read the note before the listing.",
     images: ["https://www.gadgets-finds.com/og/watch"],
   },
-};
+  };
+}
 
 function amazonHref(url: string) {
   return `/api/go?url=${encodeURIComponent(url)}`;
@@ -59,6 +80,7 @@ const FAQ = [
 ];
 
 export default function Page() {
+  const copy = seasonCopy(SALE_COPY, EVERGREEN_COPY);
   return (
     <>
       <Header />
@@ -68,11 +90,12 @@ export default function Page() {
             <span className="text-red-600 font-semibold">Disclosure:</span> Gadgets Finds is an Amazon Associate. We may earn from qualifying purchases if you buy through links on this page, at no extra cost to you. Prices and availability change on Amazon.
           </p>
 
-          <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">By Gadgets Finds · November 2026</p>
-          <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-8">Black Friday smartwatches</h1>
+          <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">By Gadgets Finds · Updated November 2026</p>
+          <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-3">{copy.heading}</h1>
+          <p className="text-muted-foreground mb-8">{copy.intro}</p>
 
           <ProductListJsonLd
-            name="Black Friday smartwatches"
+            name={copy.listName}
             url="/black-friday-smartwatches"
             products={WATCHES.map((item) => item.name)}
           />

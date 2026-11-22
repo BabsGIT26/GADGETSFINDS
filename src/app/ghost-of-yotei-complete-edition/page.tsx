@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ArticleJsonLd from "@/components/common/ArticleJsonLd";
 import Link from "next/link";
 import AppImage from "@/components/ui/AppImage";
 import Header from "@/components/common/Header";
@@ -11,13 +12,13 @@ const AMAZON_GAME =
   "https://www.amazon.com/dp/B0F6F41T4H?tag=gadgetsfindswebsite-20";
 
 export const metadata: Metadata = {
-  title: "Ghost of Yōtei Complete Edition launches today — Gadgets Finds",
+  title: "Ghost of Yōtei Complete Edition: What to Buy | Gadgets Finds",
   description:
     "Ghost of Yōtei Complete Edition is out on PS5, with Echoes of Sekigahara and Most Wanted. The Gold Limited Edition Slim bundle is a separate listing.",
   metadataBase: new URL("https://www.gadgets-finds.com"),
   alternates: { canonical: "https://www.gadgets-finds.com/ghost-of-yotei-complete-edition" },
     openGraph: {
-    title: "Ghost of Yōtei Complete Edition launches today — Gadgets Finds",
+    title: "Ghost of Yōtei Complete Edition: What to Buy | Gadgets Finds",
     description: "New story expansion and Most Wanted on PS5. Bundle and game listings on Amazon.",
     url: "https://www.gadgets-finds.com/ghost-of-yotei-complete-edition",
     siteName: "Gadgets Finds",
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@Gadgets_finds",
-    title: "Ghost of Yōtei Complete Edition launches today — Gadgets Finds",
+    title: "Ghost of Yōtei Complete Edition: What to Buy | Gadgets Finds",
     images: ["https://www.gadgets-finds.com/og/game"],
   },
 };
@@ -43,6 +44,7 @@ export default function Page() {
   return (
     <>
       <Header />
+      <ArticleJsonLd path="/ghost-of-yotei-complete-edition" headline={"Ghost of Yōtei Complete Edition: What to Buy"} description={"Ghost of Yōtei Complete Edition is out on PS5, with Echoes of Sekigahara and Most Wanted. The Gold Limited Edition Slim bundle is a separate listing."} products={["Ghost of Yōtei Complete Edition", "PS5 Slim Ghost of Yōtei Gold bundle"]} />
         <article className="min-h-screen bg-background pt-24 md:pt-16">
         <div className="container mx-auto px-4 pt-4 pb-10 max-w-3xl">
           <p className="text-sm text-foreground mb-6">
@@ -100,8 +102,8 @@ export default function Page() {
 
           <h2 className="text-2xl font-bold mt-10 mb-3">The Gold console bundle</h2>
           <p className="text-muted-foreground mb-6">
-            Amazon also lists a PlayStation 5 Slim Ghost of Yōtei Gold Limited Edition Bundle,
-            recently around $798.99. That is a disc Slim with 1TB, a matching DualSense, and a
+            Amazon also lists a PlayStation 5 Slim Ghost of Yōtei Gold Limited Edition Bundle.
+            That is a disc Slim with 1TB, a matching DualSense, and a
             voucher for the standard game. It is not the Complete Edition. If you want the
             expansion, buy the game listing or the upgrade, not only the console box.
           </p>
