@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import TopPicks from "@/components/common/TopPicks";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
@@ -39,6 +40,8 @@ const AMAZON = {
   pulse: "https://www.amazon.com/dp/B0CMDH9M5W?tag=gadgetsfindswebsite-20",
   dock: "https://www.amazon.com/dp/B08HHFKMXB?tag=gadgetsfindswebsite-20",
   stand: "https://www.amazon.com/dp/B0CL5GJDVY?tag=gadgetsfindswebsite-20",
+  cooling: "https://www.amazon.com/dp/B0CXSWDHM6?tag=gadgetsfindswebsite-20",
+  wheel: "https://www.amazon.com/dp/B00Z0UWWYC?tag=gadgetsfindswebsite-20",
 } as const;
 
 function amazonHref(url: string) {
@@ -93,6 +96,11 @@ export default function Page() {
           <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">Buying Guide</p>
           <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">Best PS5 Accessories Worth Buying in 2026</h1>
           <p className="text-muted-foreground mb-2 text-sm">Last updated: November 2026</p>
+          <TopPicks picks={[
+    { label: "Best upgrade", name: "WD_BLACK SN850P 2TB", why: "The licensed drive for deleting fewer games.", url: "https://www.amazon.com/dp/B0C47ZX1WB?tag=gadgetsfindswebsite-20" },
+    { label: "Best controller", name: "DualSense Edge", why: "Back buttons and swappable sticks.", url: "https://www.amazon.com/dp/B0BSYFB99D?tag=gadgetsfindswebsite-20" },
+    { label: "Best value", name: "DualSense Charging Station", why: "Two controllers charged without the console.", url: "https://www.amazon.com/dp/B08HHFKMXB?tag=gadgetsfindswebsite-20" },
+          ]} />
           <ProductListJsonLd name="Best PS5 accessories in 2026" url="/best-ps5-accessories-2026" products={["WD_BLACK SN850P 2TB", "PlayStation PULSE Elite", "DualSense Edge", "DualSense Charging Station", "PlayStation Vertical Stand"]} />
           <p className="text-muted-foreground mb-8 text-lg leading-relaxed">
             The PlayStation 5 is a strong console on its own. A handful of accessories still change how it feels day to day: more room for games you can actually launch, a controller you can tune, a headset that does not die mid-session, and a dock or stand that removes a small daily annoyance. Most of the rest is decoration.
@@ -339,6 +347,32 @@ export default function Page() {
               </tbody>
             </table>
           </div>
+
+          <h2 className="text-2xl md:text-3xl font-bold mt-16 mb-4">More PS5 accessories worth knowing</h2>
+          <section id="dualsense" className="scroll-mt-28 mb-8">
+            <h3 className="text-xl font-bold mb-2">A second DualSense controller</h3>
+            <p className="text-muted-foreground mb-3 leading-relaxed">
+              The standard DualSense has haptic feedback, adaptive triggers, a built-in mic, and USB-C charging. A second pad is normal when the PS5 is the family TV console. Stick drift is the long-term complaint on this generation, official or not. Amazon mixes official Sony pads with lookalikes, so buy one sold by Amazon or PlayStation and check that the title says DualSense. The listing we used to link is gone, so there is no button here; the DualSense Edge above is the upgrade pick.
+            </p>
+          </section>
+          <section id="cooling-station" className="scroll-mt-28 mb-8">
+            <h3 className="text-xl font-bold mb-2">
+              <a href={amazonHref(AMAZON.cooling)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4">PS5 cooling station with controller charger</a>
+            </h3>
+            <p className="text-muted-foreground mb-3 leading-relaxed">
+              A third-party vertical stand with a three-speed fan under the console, two docks for standard DualSense pads, and three extra USB ports. The listing says it fits the original, Slim, and Pro, disc or digital. It does not charge the DualSense Edge, and it does not replace keeping the PS5’s own vents clear. Worth it if you want one base instead of a separate stand and charger.
+            </p>
+            <ViewOnAmazon href={AMAZON.cooling} name="PS5 cooling station" />
+          </section>
+          <section id="racing-wheel" className="scroll-mt-28 mb-10">
+            <h3 className="text-xl font-bold mb-2">
+              <a href={amazonHref(AMAZON.wheel)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4">Logitech G29 Driving Force wheel and pedals</a>
+            </h3>
+            <p className="text-muted-foreground mb-3 leading-relaxed">
+              A long-running starter racing wheel for PS5, PS4, and PC: dual-motor force feedback with helical gears, 900 degrees of rotation, steel paddle shifters, and a three-pedal set. It is gear-driven, so it feels less smooth and detailed than a modern direct-drive wheel. Buy it to start sim racing; skip it if you already know you want direct drive. The G920 is the Xbox version.
+            </p>
+            <ViewOnAmazon href={AMAZON.wheel} name="Logitech G29 Driving Force" />
+          </section>
 
           <h2 className="text-2xl md:text-3xl font-bold mt-10 mb-4">Final Verdict</h2>
           <div className="rounded-2xl border-2 border-amber-400 bg-amber-400/10 p-6 md:p-8 mb-8">

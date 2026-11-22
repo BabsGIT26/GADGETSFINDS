@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import TopPicks from "@/components/common/TopPicks";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
@@ -86,6 +87,11 @@ export default function Page() {
           <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">Comparison</p>
           <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">Roborock vs Roomba in 2026: Which Is Better?</h1>
           <p className="text-muted-foreground mb-2 text-sm">Last updated: November 2026</p>
+          <TopPicks note="On November 22, 2026 the Qrevo S Pro listing compared below showed as currently unavailable on Amazon." picks={[
+    { label: "Best Roomba", name: "iRobot Roomba Combo 10 Max", why: "For the familiar app and obstacle recognition.", url: "https://www.amazon.com/dp/B0D9ZRH61T?tag=gadgetsfindswebsite-20" },
+    { label: "Best Roborock flagship", name: "Roborock Qrevo 2 Pro", why: "LiDAR, two mops, and a dock that washes them.", url: "https://www.amazon.com/dp/B0GXF7ZQPY?tag=gadgetsfindswebsite-20" },
+    { label: "Best budget Roborock", name: "Roborock Q7 L5", why: "LiDAR mapping at a much lower price.", url: "https://www.amazon.com/dp/B0F3337BV7?tag=gadgetsfindswebsite-20" },
+          ]} />
           <ProductListJsonLd name="Roborock vs Roomba in 2026" url="/roborock-vs-roomba-2026" products={["Roborock Qrevo S Pro", "iRobot Roomba Combo 10 Max"]} />
           <p className="text-muted-foreground mb-8 text-lg leading-relaxed">
             Roborock and iRobot’s Roomba remain two of the most popular robot vacuum brands. Both have improved, but they still take different approaches. Roborock focuses on strong suction, LiDAR navigation, and feature-rich mopping docks at prices that undercut a comparable Roomba. Roomba emphasizes a familiar app, camera-based obstacle avoidance, and a parts ecosystem people already know how to shop for.

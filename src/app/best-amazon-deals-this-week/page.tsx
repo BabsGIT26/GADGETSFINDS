@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import TopPicks from "@/components/common/TopPicks";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
@@ -91,6 +92,11 @@ export default function Page() {
           <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">Deals</p>
           <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">Best Amazon Deals This Week</h1>
           <p className="text-muted-foreground mb-2 text-sm">The price on Amazon is the only price.</p>
+          <TopPicks picks={[
+    { label: "Best overall", name: "Fire TV Stick 4K (newest model)", why: "The current stick for most TVs.", url: "https://www.amazon.com/dp/B0G4XRP464?tag=gadgetsfindswebsite-20" },
+    { label: "Best value", name: "Fire TV Stick 4K Select", why: "The cheaper 4K stick when prices are close.", url: "https://www.amazon.com/dp/B0C6W3D4RM?tag=gadgetsfindswebsite-20" },
+    { label: "Best for Dolby Vision", name: "Fire TV Stick 4K Plus", why: "Open this one when the TV uses Dolby Vision.", url: "https://www.amazon.com/dp/B0F7Z4QZTT?tag=gadgetsfindswebsite-20" },
+          ]} />
           <ProductListJsonLd name="Best Amazon deals this week" url="/best-amazon-deals-this-week" products={["Fire TV Stick 4K", "Fire TV Stick 4K Plus", "Fire TV Stick 4K Select", "Fire TV Cube"]} />
           <p className="text-muted-foreground mb-6 text-lg leading-relaxed">
             These four are Amazon's own streaming boxes. A stick deal can change overnight. Open the button, then read the price on Amazon before you pay. This page does not keep a copy of that price.

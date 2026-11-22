@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import TopPicks from "@/components/common/TopPicks";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
@@ -94,6 +95,11 @@ export default function Page() {
             Best Budget Robot Vacuums Under $300 in 2026 — Full In-Depth Guide
           </h1>
           <p className="text-muted-foreground mb-1 text-sm">Last updated: November 2026</p>
+          <TopPicks picks={[
+    { label: "Best overall", name: "Lefant M210 Pro", why: "The strongest all-around pick in this guide.", url: "https://www.amazon.com/dp/B0CYL7273B?tag=gadgetsfindswebsite-20" },
+    { label: "Best navigation", name: "Roborock Q7 L5", why: "LiDAR mapping, if the live price still fits.", url: "https://www.amazon.com/dp/B0F3337BV7?tag=gadgetsfindswebsite-20" },
+    { label: "Simplest", name: "iRobot Roomba 600 Series", why: "A basic Roomba for people who want no setup.", url: "https://www.amazon.com/dp/B08SP5GYJP?tag=gadgetsfindswebsite-20" },
+          ]} />
           <p className="text-muted-foreground mb-8 text-sm">Approximate length: 2,300+ words</p>
 
           <p className="text-muted-foreground mb-4 text-lg leading-relaxed">
