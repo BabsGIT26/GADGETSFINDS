@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "/assets/images/s26_ultra_compare.png",
+        url: "https://www.gadgets-finds.com/og/phone",
         width: 1200,
         height: 630,
         alt: "iPhone 17 vs Galaxy S26 Ultra",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@Gadgets_finds",
     title: "iPhone 17 vs Galaxy S26 Ultra — Gadgets Finds",
-    images: ["/assets/images/s26_ultra_compare.png"],
+    images: ["https://www.gadgets-finds.com/og/phone"],
   },
   title: "iPhone 17 vs Galaxy S26 Ultra — Gadgets Finds",
   description:
@@ -88,7 +88,7 @@ export default function Page() {
 
           <div className="w-full flex justify-center py-6 mb-10">
             <AppImage
-              src="/assets/images/s26_ultra_compare.png"
+              src="/assets/illustrations/phone.svg"
               alt="Samsung Galaxy S26 Ultra"
               className="max-h-[360px] w-auto max-w-full object-contain"
             />

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 
+import { illustrationAlt } from "@/lib/illustrations";
 export const metadata: Metadata = {
   title: "iPhone Duo Cases — Clear, Silicone & Leather Options",
   description: "A selection of cases for the iPhone Duo. Clear, silicone, leather, and protective options.",
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "https://the-gadgeteer.com/wp-content/uploads/2026/10/iphone-duo-five-cases-hero-final-1280x720.jpg",
+        url: "https://www.gadgets-finds.com/og/foldable",
         width: 1280,
         height: 720,
         alt: "iPhone Duo Cases",
@@ -28,7 +29,7 @@ export const metadata: Metadata = {
     title: "iPhone Duo Cases",
     description: "Clear, silicone, and protective cases for the iPhone Duo.",
     images: [
-      "https://the-gadgeteer.com/wp-content/uploads/2026/10/iphone-duo-five-cases-hero-final-1280x720.jpg",
+      "https://www.gadgets-finds.com/og/foldable",
     ],
   },
 };
@@ -39,7 +40,7 @@ const cases = [
     color: "Navy Blue",
     description: "Official Apple case. Thin, light, MagSafe compatible.",
     href: "https://www.amazon.com/Apple-iPhone-Duo-Case-complement/dp/B0HJBCCRYD?tag=gadgetsfindswebsmediavid-20",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlIdhTux50lVoW7HkrQGv5brL8gYDk3EeG-ADXgRYvjw&s=10",
+    image: "/assets/illustrations/foldable.svg",
     bg: "bg-zinc-100 dark:bg-zinc-800",
   },
   {
@@ -47,7 +48,7 @@ const cases = [
     color: "Black",
     description: "Strong magnets, translucent matte finish, screen protector included.",
     href: "https://www.amazon.com/FNTCASE-iPhone-Duo-Magsafe-Black/dp/B0HDST6F85?tag=gadgetsfindswebsmediavid-20",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvcHhVBew7FWZU708cJGFyp1DVhaxXFo8CtUwb7ZS7_Q&s=10",
+    image: "/assets/illustrations/foldable.svg",
     bg: "bg-zinc-900 dark:bg-zinc-700",
   },
   {
@@ -55,7 +56,7 @@ const cases = [
     color: "Dark",
     description: "Hinge protection with 360° rotating stand.",
     href: "https://www.amazon.com/s?k=TORRAS+Q3+Spin+iPhone+Duo&tag=gadgetsfindswebsmediavid-20",
-    image: "https://torraslife.com/cdn/shop/files/c76aa41848c0d10d159b5d6dd1accb60_0910a191-b87e-4cc9-80b9-4fddc739f638.png?v=1789663999&width=1024",
+    image: "/assets/illustrations/foldable.svg",
     bg: "bg-zinc-800 dark:bg-zinc-600",
   },
   {
@@ -63,7 +64,7 @@ const cases = [
     color: "Clear",
     description: "Clear case that shows the phone color. Hinge coverage.",
     href: "https://www.amazon.com/s?k=Spigen+Ultra+Hybrid+Pro+iPhone+Duo&tag=gadgetsfindswebsmediavid-20",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhIzQ19wkDu8VkAfZSFxuL8TPNiVzPMUbTPHPCHp6THA&s=10",
+    image: "/assets/illustrations/foldable.svg",
     bg: "bg-zinc-100 dark:bg-zinc-800",
   },
   {
@@ -71,7 +72,7 @@ const cases = [
     color: "Black",
     description: "Rugged protection with articulating hinge cover.",
     href: "https://www.amazon.com/OtterBox-Foldable-iPhone-Defender-Case/dp/B0HGNPW2NG?tag=gadgetsfindswebsmediavid-20",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAUqeqtDpU1olo7HSIqPdtONBlQO9AfkBrGMylPHG8dA&s=10",
+    image: "/assets/illustrations/foldable.svg",
     bg: "bg-zinc-900 dark:bg-zinc-700",
   },
   {
@@ -79,7 +80,7 @@ const cases = [
     color: "Black",
     description: "Thin aramid fiber with MagSafe support.",
     href: "https://www.amazon.com/s?k=Pitaka+iPhone+Duo+aramid&tag=gadgetsfindswebsmediavid-20",
-    image: "https://www.bigw.com.au/medias/sys_master/images/images/hf1/h2f/172314000392222.jpg",
+    image: "/assets/illustrations/foldable.svg",
     bg: "bg-zinc-800 dark:bg-zinc-600",
   },
 ];
@@ -120,7 +121,7 @@ export default function Page() {
                 <div className={`${item.bg} aspect-square overflow-hidden`}>
                   <img
                     src={item.image}
-                    alt={`${item.name} ${item.color}`}
+                    alt={illustrationAlt(item.image, `${item.name} ${item.color}`)}
                     className="w-full h-full object-contain"
                   />
                 </div>

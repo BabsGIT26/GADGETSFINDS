@@ -4,8 +4,10 @@ import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 import Link from "next/link";
 
+import { illustrationAlt } from "@/lib/illustrations";
 const AMAZON = "https://www.amazon.com/s?k=rechargeable+LED+keychain+light&tag=gadgetsfindswebsmediavid-20";
-const IMAGE = "https://m.media-amazon.com/images/I/61pU8V8MjAL.jpg";
+const IMAGE = "/assets/illustrations/flashlight.svg";
+const SHARE_IMAGE = "https://www.gadgets-finds.com/og/flashlight";
 
 export const metadata: Metadata = {
   robots: { index: false, follow: true },
@@ -19,7 +21,7 @@ export const metadata: Metadata = {
     url: "https://www.gadgets-finds.com/led-keychain-light",
     siteName: "Gadgets Finds",
     type: "article",
-    images: [{ url: IMAGE, width: 1200, height: 630, alt: "LED Keychain Light" }],
+    images: [{ url: SHARE_IMAGE, width: 1200, height: 630, alt: "LED Keychain Light" }],
   },
 };
 
@@ -46,7 +48,7 @@ export default function Page() {
           </div>
 
           <div className="mb-10 flex justify-center">
-            <img src={IMAGE} alt="LED Keychain Light" className="w-full max-w-[280px] h-auto rounded-xl" />
+            <img src={IMAGE} alt={illustrationAlt(IMAGE, "LED Keychain Light")} className="w-full max-w-[280px] h-auto rounded-xl" />
           </div>
 
           <h2 className="text-2xl font-bold mt-10 mb-3">What it is</h2>
