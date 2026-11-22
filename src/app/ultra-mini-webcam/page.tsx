@@ -5,8 +5,10 @@ import AmazonDealBox from "@/components/common/AmazonDealBox";
 import Link from "next/link";
 import CommentSection from "@/components/comments/CommentSection";
 
+import { illustrationAlt } from "@/lib/illustrations";
 const AMAZON = "https://www.amazon.com/OBSBOT-Lightweight-Microphone-Space-Grey/dp/B0D9W7J9SK?tag=gadgetsfindswebsmediavid-20";
-const IMAGE = "https://m.media-amazon.com/images/I/51OZ72zdwsL.jpg";
+const IMAGE = "/assets/illustrations/webcam.svg";
+const SHARE_IMAGE = "https://www.gadgets-finds.com/og/webcam";
 
 export const metadata: Metadata = {
   robots: { index: false, follow: true },
@@ -20,7 +22,7 @@ export const metadata: Metadata = {
     url: "https://www.gadgets-finds.com/ultra-mini-webcam",
     siteName: "Gadgets Finds",
     type: "article",
-    images: [{ url: IMAGE, width: 1200, height: 630, alt: "Ultra-Mini Webcam" }],
+    images: [{ url: SHARE_IMAGE, width: 1200, height: 630, alt: "Ultra-Mini Webcam" }],
   },
 };
 
@@ -47,7 +49,7 @@ export default function Page() {
           </div>
 
           <div className="mb-10 flex justify-center">
-            <img src={IMAGE} alt="Ultra-Mini Webcam" className="w-full max-w-[280px] h-auto rounded-xl" />
+            <img src={IMAGE} alt={illustrationAlt(IMAGE, "Ultra-Mini Webcam")} className="w-full max-w-[280px] h-auto rounded-xl" />
           </div>
 
           <h2 className="text-2xl font-bold mt-10 mb-3">What it is</h2>

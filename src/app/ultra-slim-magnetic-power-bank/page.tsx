@@ -4,8 +4,10 @@ import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 import Link from "next/link";
 
+import { illustrationAlt } from "@/lib/illustrations";
 const AMAZON = "https://www.amazon.com/UGREEN-5000mAh-Ultra-Magnetic-Power/dp/B0F6NFHB31?tag=gadgetsfindswebsmediavid-20";
-const IMAGE = "https://m.media-amazon.com/images/I/51FsefzzP3L.jpg";
+const IMAGE = "/assets/illustrations/powerbank.svg";
+const SHARE_IMAGE = "https://www.gadgets-finds.com/og/powerbank";
 
 export const metadata: Metadata = {
   robots: { index: false, follow: true },
@@ -19,7 +21,7 @@ export const metadata: Metadata = {
     url: "https://www.gadgets-finds.com/ultra-slim-magnetic-power-bank",
     siteName: "Gadgets Finds",
     type: "article",
-    images: [{ url: IMAGE, width: 1200, height: 630, alt: "Ultra-Slim Magnetic Power Bank" }],
+    images: [{ url: SHARE_IMAGE, width: 1200, height: 630, alt: "Ultra-Slim Magnetic Power Bank" }],
   },
 };
 
@@ -46,7 +48,7 @@ export default function Page() {
           </div>
 
           <div className="mb-10 flex justify-center">
-            <img src={IMAGE} alt="Ultra-Slim Magnetic Power Bank" className="w-full max-w-[280px] h-auto rounded-xl" />
+            <img src={IMAGE} alt={illustrationAlt(IMAGE, "Ultra-Slim Magnetic Power Bank")} className="w-full max-w-[280px] h-auto rounded-xl" />
           </div>
 
           <h2 className="text-2xl font-bold mt-10 mb-3">What it is</h2>
