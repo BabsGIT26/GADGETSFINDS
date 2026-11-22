@@ -46,9 +46,6 @@ const TrendingSuggestions = ({ onSuggestionClick }: TrendingSuggestionsProps) =>
                 <p className="font-semibold text-foreground group-hover:text-primary transition-colors">
                   {topic.name}
                 </p>
-                <p className="text-xs text-muted-foreground">
-                  {topic.count.toLocaleString()} results
-                </p>
               </div>
               <Icon name="ArrowRightIcon" size={16} variant="outline" className="text-muted-foreground group-hover:text-primary transition-colors" />
             </button>

@@ -8,16 +8,10 @@ interface Product {
   name: string;
   brand: string;
   category: string;
-  price: number;
-  originalPrice?: number;
-  rating: number;
-  reviewCount: number;
   image: string;
   imageAlt: string;
   features: string[];
-  expertScore: number;
   isNew?: boolean;
-  inStock: boolean;
   affiliateLink: string;
   type: 'product';
 }
@@ -39,7 +33,7 @@ const SearchResults = ({ results, isSearching, searchQuery }: SearchResultsProps
     return (
       <div className="flex flex-col items-center justify-center py-20">
         <div className="animate-spin rounded-full h-16 w-16 border-4 border-primary border-t-transparent mb-4"></div>
-        <p className="text-muted-foreground text-lg">Searching across all content...</p>
+        <p className="text-muted-foreground text-lg">Searching...</p>
       </div>
     );
   }
