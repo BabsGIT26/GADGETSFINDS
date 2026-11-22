@@ -152,6 +152,9 @@ const toggleTheme = () => {
     { label: 'Tablets', href: '/best-cheap-tablets-under-150', icon: 'DevicePhoneMobileIcon' },
     { label: 'PS5 gear', href: '/best-ps5-accessories-2026', icon: 'PuzzlePieceIcon' },
     { label: 'Chargers', href: '/best-portable-chargers-for-travel', icon: 'BoltIcon' },
+    { label: 'Laptops', href: '/best-macbooks-2026', icon: 'ComputerDesktopIcon' },
+    { label: 'Consoles', href: '/best-gaming-consoles-2026', icon: 'PuzzlePieceIcon' },
+    { label: 'Phones', href: '/best-phones-2026', icon: 'DevicePhoneMobileIcon' },
     { label: 'Search', href: '/unified-search', icon: 'MagnifyingGlassIcon' },
   ];
 
@@ -173,6 +176,9 @@ const toggleTheme = () => {
     { label: 'Tablets', href: '/best-cheap-tablets-under-150', icon: 'DevicePhoneMobileIcon' },
     { label: 'PS5 gear', href: '/best-ps5-accessories-2026', icon: 'PuzzlePieceIcon' },
     { label: 'Chargers', href: '/best-portable-chargers-for-travel', icon: 'BoltIcon' },
+    { label: 'Laptops', href: '/best-macbooks-2026', icon: 'ComputerDesktopIcon' },
+    { label: 'Consoles', href: '/best-gaming-consoles-2026', icon: 'PuzzlePieceIcon' },
+    { label: 'Phones', href: '/best-phones-2026', icon: 'DevicePhoneMobileIcon' },
   ];
 
   const isActive = (href: string) => pathname === href;

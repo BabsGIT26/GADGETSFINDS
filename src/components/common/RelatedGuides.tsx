@@ -11,6 +11,12 @@ const GUIDES = [
   { href: "/black-friday-smartwatches", title: "Black Friday smartwatches" },
   { href: "/best-mini-gadgets-under-30", title: "Best mini gadgets under $30" },
   { href: "/best-amazon-deals-this-week", title: "Best Amazon deals this week" },
+  { href: "/best-macbooks-2026", title: "Best MacBooks in 2026" },
+  { href: "/best-graphics-cards-2026", title: "Best graphics cards in 2026" },
+  { href: "/best-gaming-consoles-2026", title: "Best gaming consoles in 2026" },
+  { href: "/best-phones-2026", title: "Best phones in 2026" },
+  { href: "/best-foldable-phones-2026", title: "Best foldable phones in 2026" },
+  { href: "/best-noise-cancelling-headphones-2026", title: "Best noise-cancelling headphones in 2026" },
 ] as const;
 
 export default function RelatedGuides({ current }: { current: string }) {
