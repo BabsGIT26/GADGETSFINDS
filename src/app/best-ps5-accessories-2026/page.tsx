@@ -5,6 +5,7 @@ import AmazonDealBox from "@/components/common/AmazonDealBox";
 import RelatedGuides from "@/components/common/RelatedGuides";
 import GuideFaq, { ProductListJsonLd } from "@/components/common/GuideFaq";
 
+import { illustrationAlt } from "@/lib/illustrations";
 export const metadata: Metadata = {
   title: "Best PS5 Accessories Worth Buying in 2026 | Gadgets Finds",
   description:
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
     siteName: "Gadgets Finds",
     type: "article",
     images: [{
-      url: 'https://www.gadgets-finds.com/assets/images/wd-black-sn850p.jpg',
+      url: 'https://www.gadgets-finds.com/og/ssd',
       alt: 'WD_BLACK SN850P SSD for PS5',
     }],
   },
@@ -28,7 +29,7 @@ export const metadata: Metadata = {
     creator: "@Gadgets_finds",
     title: 'Best PS5 Accessories Worth Buying in 2026',
     description: 'WD_BLACK SN850P, DualSense Edge, PULSE Elite, the charging station, and the vertical stand.',
-    images: ['https://www.gadgets-finds.com/assets/images/wd-black-sn850p.jpg'],
+    images: ['https://www.gadgets-finds.com/og/ssd'],
   },
 };
 
@@ -59,11 +60,11 @@ function ViewOnAmazon({ href, name }: { href: string; name: string }) {
 }
 
 const IMAGES = {
-  ssd: "/assets/images/wd-black-sn850p.jpg",
-  edge: "/assets/images/dualsense-edge.jpg",
-  pulse: "/assets/images/pulse-elite.jpg",
-  dock: "/assets/images/dualsense-charging-station.jpg",
-  stand: "/assets/images/ps5-vertical-stand.jpg",
+  ssd: "/assets/illustrations/ssd.svg",
+  edge: "/assets/illustrations/controller.svg",
+  pulse: "/assets/illustrations/headphones.svg",
+  dock: "/assets/illustrations/controller.svg",
+  stand: "/assets/illustrations/console.svg",
 } as const;
 
 function ProductPhoto({ src, alt }: { src: string; alt: string }) {
@@ -71,7 +72,7 @@ function ProductPhoto({ src, alt }: { src: string; alt: string }) {
     <div className="border-b border-border py-4">
       <img
         src={src}
-        alt={alt}
+        alt={illustrationAlt(src, alt)}
         referrerPolicy="no-referrer"
         className="mx-auto block w-auto max-w-full h-auto max-h-72 md:max-h-[22rem] object-contain"
       />

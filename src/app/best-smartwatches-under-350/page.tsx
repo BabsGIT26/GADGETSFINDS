@@ -5,6 +5,7 @@ import AmazonDealBox from "@/components/common/AmazonDealBox";
 import RelatedGuides from "@/components/common/RelatedGuides";
 import GuideFaq, { ProductListJsonLd } from "@/components/common/GuideFaq";
 
+import { illustrationAlt } from "@/lib/illustrations";
 export const metadata: Metadata = {
   title: "Best Smartwatches Under $350 in 2026 | Gadgets Finds",
   description:
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
     siteName: "Gadgets Finds",
     type: "article",
     images: [{
-      url: 'https://www.gadgets-finds.com/assets/images/apple-watch-se-3.jpg',
+      url: 'https://www.gadgets-finds.com/og/watch',
       alt: 'Apple Watch SE 3',
     }],
   },
@@ -28,7 +29,7 @@ export const metadata: Metadata = {
     creator: "@Gadgets_finds",
     title: 'Best Smartwatches Under $350 in 2026',
     description: 'Apple Watch SE 3, Galaxy Watch 7, Garmin Forerunner 165, and Pixel Watch 3.',
-    images: ['https://www.gadgets-finds.com/assets/images/apple-watch-se-3.jpg'],
+    images: ['https://www.gadgets-finds.com/og/watch'],
   },
 };
 
@@ -58,10 +59,10 @@ function ViewOnAmazon({ href, name }: { href: string; name: string }) {
 }
 
 const IMAGES = {
-  se: "/assets/images/apple-watch-se-3.jpg",
-  galaxy: "/assets/images/galaxy-watch-7.jpg",
-  garmin: "/assets/images/forerunner-165.jpg",
-  pixel: "/assets/images/pixel-watch-3.jpg",
+  se: "/assets/illustrations/watch.svg",
+  galaxy: "/assets/illustrations/watch.svg",
+  garmin: "/assets/illustrations/watch.svg",
+  pixel: "/assets/illustrations/watch.svg",
 } as const;
 
 function ProductPhoto({ src, alt }: { src: string; alt: string }) {
@@ -69,7 +70,7 @@ function ProductPhoto({ src, alt }: { src: string; alt: string }) {
     <div className="border-b border-border py-4">
       <img
         src={src}
-        alt={alt}
+        alt={illustrationAlt(src, alt)}
         referrerPolicy="no-referrer"
         className="mx-auto block w-auto max-w-full h-auto max-h-72 md:max-h-[22rem] object-contain"
       />

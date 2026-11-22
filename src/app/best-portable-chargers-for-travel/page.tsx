@@ -5,6 +5,7 @@ import AmazonDealBox from "@/components/common/AmazonDealBox";
 import RelatedGuides from "@/components/common/RelatedGuides";
 import GuideFaq, { ProductListJsonLd } from "@/components/common/GuideFaq";
 
+import { illustrationAlt } from "@/lib/illustrations";
 export const metadata: Metadata = {
   title: "Best Portable Chargers for Travel in 2026 | Gadgets Finds",
   description:
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
     siteName: "Gadgets Finds",
     type: "article",
     images: [{
-      url: 'https://www.gadgets-finds.com/assets/images/anker-20k-87w.jpg',
+      url: 'https://www.gadgets-finds.com/og/powerbank',
       alt: 'Anker 20,000mAh portable charger',
     }],
   },
@@ -28,7 +29,7 @@ export const metadata: Metadata = {
     creator: "@Gadgets_finds",
     title: 'Best Portable Chargers for Travel in 2026',
     description: 'Anker 20,000mAh 87W, Nano 10,000mAh, Prime 99.54Wh, and the Nano 3-in-1.',
-    images: ['https://www.gadgets-finds.com/assets/images/anker-20k-87w.jpg'],
+    images: ['https://www.gadgets-finds.com/og/powerbank'],
   },
 };
 
@@ -58,10 +59,10 @@ function ViewOnAmazon({ href, name }: { href: string; name: string }) {
 }
 
 const IMAGES = {
-  twenty: "/assets/images/anker-20k-87w.jpg",
-  nano: "/assets/images/anker-nano-10k.jpg",
-  prime: "/assets/images/anker-prime-27650.jpg",
-  fusion: "/assets/images/anker-nano-3in1.jpg",
+  twenty: "/assets/illustrations/powerbank.svg",
+  nano: "/assets/illustrations/powerbank.svg",
+  prime: "/assets/illustrations/powerbank.svg",
+  fusion: "/assets/illustrations/powerbank.svg",
 } as const;
 
 function ProductPhoto({ src, alt }: { src: string; alt: string }) {
@@ -69,7 +70,7 @@ function ProductPhoto({ src, alt }: { src: string; alt: string }) {
     <div className="border-b border-border py-4">
       <img
         src={src}
-        alt={alt}
+        alt={illustrationAlt(src, alt)}
         referrerPolicy="no-referrer"
         className="mx-auto block w-auto max-w-full h-auto max-h-72 md:max-h-[22rem] object-contain"
       />
