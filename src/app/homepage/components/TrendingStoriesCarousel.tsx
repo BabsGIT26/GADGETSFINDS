@@ -75,7 +75,7 @@ const TrendingStoriesCarousel = () => {
     author: 'Gadgets Finds',
     readTime: '5 min read',
     trending: true,
-    link: '/samsung-galaxy-s26-ultra-article'
+    link: '/best-phones-2026#galaxy-s26-ultra'
   },
   {
     id: 3,
@@ -87,7 +87,7 @@ const TrendingStoriesCarousel = () => {
     author: 'Gadgets Finds',
     readTime: '8 min read',
     trending: true,
-    link: '/i-phone-16-pro-vs-samsung-comparison-article'
+    link: '/best-phones-2026#iphone-17-vs-galaxy-s26-ultra'
   },
   {
     id: 4,
@@ -99,7 +99,7 @@ const TrendingStoriesCarousel = () => {
     author: 'Gadgets Finds',
     readTime: '6 min read',
     trending: true,
-    link: '/nvidia-rtx-5090-ti-article'
+    link: '/best-graphics-cards-2026#rtx-5090'
   },
   {
     id: 5,
@@ -124,7 +124,7 @@ const TrendingStoriesCarousel = () => {
     author: 'Gadgets Finds',
     readTime: '10 min read',
     trending: true,
-    link: '/macbook-pro-m4-article'
+    link: '/best-macbooks-2026#macbook-pro-14-m5'
   }];
 
   const nextSlide = () => {

@@ -5,6 +5,7 @@ import PersonalizedContentStream from './components/PersonalizedContentStream';
 import QuickAccessGrid from './components/QuickAccessGrid';
 import NewsletterSubscription from './components/NewsletterSubscription';
 import Footer from './components/Footer';
+import TopPicks from '@/components/common/TopPicks';
 import GadgetsSection from './components/GadgetsSection';
 import MiniGadgetsSection from './components/MiniGadgetsSection';
 
@@ -53,6 +54,16 @@ export default function Homepage() {
       <main className="pt-0">
         <section className="py-8 md:py-16 bg-background">
           <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto -mt-4 md:mt-0 mb-8">
+              <TopPicks
+                title="Top picks from our guides"
+                picks={[
+                  { label: 'Best travel power bank', name: 'Anker 20,000mAh 87W (built-in cable)', why: 'From our travel chargers guide.', url: 'https://www.amazon.com/dp/B0CXDQXC3Q?tag=gadgetsfindswebsite-20' },
+                  { label: 'Best value streaming', name: 'Fire TV Stick 4K Select', why: 'From our Amazon deals guide.', url: 'https://www.amazon.com/dp/B0C6W3D4RM?tag=gadgetsfindswebsite-20' },
+                  { label: 'Best robot vacuum value', name: 'Roborock Q7 L5', why: 'From our robot vacuums under $300 guide.', url: 'https://www.amazon.com/dp/B0F3337BV7?tag=gadgetsfindswebsite-20' },
+                ]}
+              />
+            </div>
             <PersonalizedContentStream />
           </div>
         </section>

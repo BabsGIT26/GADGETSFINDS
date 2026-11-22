@@ -9,7 +9,6 @@ interface Gadget {
   name: string;
   brand: string;
   category: string;
-  rating: number;
   badge?: string;
   badgeColor?: string;
   image: string;
@@ -24,7 +23,6 @@ const gadgets: Gadget[] = [
     name: "Black Friday robot vacuums",
     brand: "Buying guide",
     category: "Robotics",
-    rating: 4.8,
     badge: "Black Friday",
     badgeColor: "bg-red-600 text-white",
     image: "/assets/illustrations/vacuum.svg",
@@ -36,7 +34,6 @@ const gadgets: Gadget[] = [
     name: "Black Friday smartwatches",
     brand: "Buying guide",
     category: "Wearables",
-    rating: 4.8,
     badge: "Black Friday",
     badgeColor: "bg-red-600 text-white",
     image: "/assets/illustrations/watch.svg",
@@ -49,67 +46,61 @@ const gadgets: Gadget[] = [
     name: "MacBook Pro M5 Max",
     brand: "Apple",
     category: "Laptops",
-    rating: 4.9,
     badge: "M5 Max",
     badgeColor: "bg-zinc-800 text-white",
     image: "/assets/illustrations/laptop.svg",
     alt: "MacBook Pro 16-inch M5 Max",
-    href: "/macbook-pro-m5-max-article",
+    href: "/best-macbooks-2026#macbook-pro-16-m5-max",
     highlights: ["36GB / 2TB", "18-core CPU", "Price changes"],
   },  
   {
     name: "Ghost of Yōtei Complete Edition",
     brand: "PlayStation",
     category: "Gaming",
-    rating: 4.8,
     badge: "Out now",
     badgeColor: "bg-amber-500 text-white",
     image: "/assets/illustrations/game.svg",
     alt: "Ghost of Yotei",
-    href: "/ghost-of-yotei-complete-edition",
+    href: "/best-gaming-consoles-2026#ps5-ghost-of-yotei-bundle",
     highlights: ["Echoes of Sekigahara", "Most Wanted", "PS5 only"],
   },
   {
     name: "MacBook Pro 14 M5",
     brand: "Apple",
     category: "Laptops",
-    rating: 4.9,
     badge: "Editor's Pick",
     badgeColor: "bg-amber-500 text-white",
     image: "/assets/illustrations/laptop.svg",
     alt: "Apple MacBook Pro 14-inch",
-    href: "/macbook-pro-m4-article",
+    href: "/best-macbooks-2026#macbook-pro-14-m5",
     highlights: ["M5 chip", "Liquid Retina XDR", "Replaces the M4"],
   },
   {
     name: "NVIDIA RTX 5090",
     brand: "NVIDIA",
     category: "GPUs",
-    rating: 4.8,
     badge: "Flagship GPU",
     badgeColor: "bg-green-600 text-white",
     image: "/assets/illustrations/gpu.svg",
     alt: "NVIDIA RTX 5090",
-    href: "/nvidia-rtx-5090-ti-article",
+    href: "/best-graphics-cards-2026#rtx-5090",
     highlights: ["Blackwell", "32GB class VRAM", "4K gaming"],
   },
   {
     name: "Samsung Galaxy S26 Ultra",
     brand: "Samsung",
     category: "Smartphones",
-    rating: 4.7,
     badge: "Flagship",
     badgeColor: "bg-blue-600 text-white",
     image: "/assets/illustrations/phone.svg",
     alt: "Samsung Galaxy S26 Ultra",
-    href: "/samsung-galaxy-s26-ultra-article",
+    href: "/best-phones-2026#galaxy-s26-ultra",
     highlights: ["S Pen", "200MP class camera", "Galaxy AI"],
   },
   {
     name: "Robot vacuums under $300",
     brand: "Buying guide",
     category: "Robotics",
-    rating: 4.8,
     badge: "Guide",
     badgeColor: "bg-emerald-600 text-white",
     image: "/assets/illustrations/vacuum.svg",
@@ -121,31 +112,28 @@ const gadgets: Gadget[] = [
     name: "Sony WH-1000XM6",
     brand: "Sony",
     category: "Audio",
-    rating: 4.7,
     badge: "Headphones",
     badgeColor: "bg-violet-600 text-white",
     image: "/assets/illustrations/headphones.svg",
     alt: "Sony WH-1000XM6",
-    href: "/sony-wh-2000xm6-review-article",
+    href: "/best-noise-cancelling-headphones-2026#sony-wh-1000xm6",
     highlights: ["ANC", "Wireless", "Travel"],
   },
   {
     name: "PlayStation 5",
     brand: "Sony",
     category: "Gaming",
-    rating: 4.8,
     badge: "Console",
     badgeColor: "bg-sky-600 text-white",
     image: "/assets/illustrations/console.svg",
     alt: "Sony PlayStation 5",
-    href: "/playstation-5-article",
+    href: "/best-gaming-consoles-2026#playstation-5",
     highlights: ["On sale now", "4K gaming", "DualSense"],
   },
   {
     name: "PS5 accessories",
     brand: "Buying guide",
     category: "Gaming",
-    rating: 4.7,
     badge: "Guide",
     badgeColor: "bg-emerald-600 text-white",
     image: "/assets/illustrations/controller.svg",
@@ -157,19 +145,17 @@ const gadgets: Gadget[] = [
     name: "PS5 Digital",
     brand: "Sony",
     category: "Gaming",
-    rating: 4.6,
     badge: "Deal",
     badgeColor: "bg-red-600 text-white",
     image: "/assets/illustrations/console.svg",
     alt: "PlayStation 5 Digital Edition",
-    href: "/playstation-5-digital-renewed-article",
+    href: "/best-gaming-consoles-2026#playstation-5",
     highlights: ["Digital Edition", "825GB SSD", "Price changes"],
   },
   {
     name: "Tablets under $150",
     brand: "Buying guide",
     category: "Laptops",
-    rating: 4.6,
     badge: "Guide",
     badgeColor: "bg-emerald-600 text-white",
     image: "/assets/illustrations/tablet.svg",
@@ -182,12 +168,11 @@ const gadgets: Gadget[] = [
     name: "PS5 cooling station",
     brand: "Accessory",
     category: "Gaming",
-    rating: 4.4,
     badge: "Stand",
     badgeColor: "bg-amber-500 text-white",
     image: "/assets/illustrations/console.svg",
     alt: "PS5 cooling station with controller docks",
-    href: "/ps5-cooling-station-article",
+    href: "/best-ps5-accessories-2026#cooling-station",
     highlights: ["3-speed fan", "Two DualSense docks", "3 USB ports"],
   },
 
@@ -196,31 +181,28 @@ const gadgets: Gadget[] = [
     name: "Galaxy Z Fold 6",
     brand: "Samsung",
     category: "Smartphones",
-    rating: 4.5,
     badge: "Foldable",
     badgeColor: "bg-blue-600 text-white",
     image: "/assets/illustrations/foldable.svg",
     alt: "Samsung Galaxy Z Fold 6",
-    href: "/samsung-galaxy-z-fold-6-article",
+    href: "/best-foldable-phones-2026#older-models",
     highlights: ["Out since 2024", "Folding display", "S Pen"],
   },
   {
     name: "Intel Arc B580",
     brand: "Intel",
     category: "GPUs",
-    rating: 4.3,
     badge: "Battlemage",
     badgeColor: "bg-cyan-700 text-white",
     image: "/assets/illustrations/gpu.svg",
     alt: "Intel Arc B580",
-    href: "/intel-arc-b-series-article",
+    href: "/best-graphics-cards-2026#intel-arc-b580",
     highlights: ["12GB GDDR6", "Released 2024", "Value GPU"],
   },
     {
     name: "Roborock Saros Z70",
     brand: "Roborock",
     category: "Robotics",
-    rating: 4.0,
     badge: "Flagship",
     badgeColor: "bg-red-600 text-white",
     image: "/assets/illustrations/vacuum.svg",
@@ -232,12 +214,11 @@ const gadgets: Gadget[] = [
     name: "iPhone 17 vs S26 Ultra",
     brand: "Apple / Samsung",
     category: "Smartphones",
-    rating: 4.7,
     badge: "Compare",
     badgeColor: "bg-amber-500 text-white",
     image: "/assets/illustrations/phone.svg",
     alt: "iPhone 17 vs Galaxy S26 Ultra",
-    href: "/iphone-17-vs-galaxy-s26-ultra",
+    href: "/best-phones-2026#iphone-17-vs-galaxy-s26-ultra",
     highlights: ["6.3 vs 6.9 display", "A19 vs Snapdragon", "Dual vs quad camera"],
   },
 ];
@@ -317,21 +298,6 @@ export default function GadgetsSection() {
                 <h3 className="text-foreground font-bold text-base md:text-lg group-hover:text-primary transition-colors mb-2">
                   {gadget.name}
                 </h3>
-                <div className="flex items-center gap-1.5 mb-3">
-                  <div className="flex">
-                    {[1, 2, 3, 4, 5].map((star) => (
-                      <svg
-                        key={star}
-                        className={`w-3.5 h-3.5 ${star <= Math.round(gadget.rating) ? "text-amber-400" : "text-muted"}`}
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                      >
-                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                      </svg>
-                    ))}
-                  </div>
-                  <span className="text-xs text-muted-foreground">{gadget.rating}</span>
-                </div>
                 <ul className="space-y-1 mb-4 flex-1">
                   {gadget.highlights.map((h) => (
                     <li key={h} className="flex items-center gap-2 text-xs text-muted-foreground">
