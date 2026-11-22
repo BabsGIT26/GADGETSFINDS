@@ -4,6 +4,7 @@ import type { Metadata, Viewport } from 'next';
 import '../styles/index.css';
 import AmazonDisclosureGate from '@/components/common/AmazonDisclosureGate';
 import AmazonClickTracker from '@/components/common/AmazonClickTracker';
+import BreadcrumbJsonLd from '@/components/common/BreadcrumbJsonLd';
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -21,6 +22,7 @@ export const metadata: Metadata = {
     url: 'https://www.gadgets-finds.com',
     siteName: 'Gadgets Finds',
     type: 'website',
+    images: [{ url: '/og-home.png', width: 1200, height: 630, alt: 'Gadgets Finds' }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -28,7 +30,7 @@ export const metadata: Metadata = {
     creator: '@Gadgets_finds',
     title: 'Gadgets Finds — Gadget Buying Guides for 2026',
     description: 'Buying guides for robot vacuums, PS5 accessories, tablets under $150, travel chargers, smartwatches under $350, and mini gadgets.',
-    
+    images: ['/og-home.png'],
   },
   icons: {
     icon: [{ url: "/favicon.ico", type: "image/x-icon" }],
@@ -90,11 +92,6 @@ export default function RootLayout({
     __html: `(function(){try{var t=localStorage.getItem('theme');if(t==='dark'){document.documentElement.classList.add('dark')}}catch(e){}})();`,
   }}
 />
-        <link
-          rel="preload"
-          href="/assets/images/c25f7797a5e24e21877a902e49174fd6-1768753589028.png"
-          as="image"
-        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
@@ -107,6 +104,7 @@ export default function RootLayout({
       <body>
         <AmazonDisclosureGate />
         <AmazonClickTracker />
+        <BreadcrumbJsonLd />
         {children}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-XVZBC35EG6"

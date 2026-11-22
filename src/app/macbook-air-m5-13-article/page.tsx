@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ArticleJsonLd from "@/components/common/ArticleJsonLd";
 import AppImage from "@/components/ui/AppImage";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
@@ -47,6 +48,7 @@ export default function Page() {
   return (
     <>
       <Header />
+      <ArticleJsonLd path="/macbook-air-m5-13-article" headline={"MacBook Air 13-inch M5 — 16GB, 512GB, Silver"} description={"2026 MacBook Air 13-inch with M5 chip, 13.6-inch Liquid Retina, 16GB unified memory, 512GB SSD, Touch ID, Wi-Fi 7. Silver. Price changes on Amazon."} products={["Apple MacBook Air 13-inch M5 (16GB, 512GB)"]} />
       <article className="min-h-screen bg-background pt-28 md:pt-16">
         <div className="container mx-auto px-4 pt-2 pb-10 max-w-3xl">
           <p className="text-xs md:text-sm text-foreground mb-3">
@@ -62,8 +64,8 @@ export default function Page() {
           </h1>
           <p className="text-muted-foreground mb-6">
             Apple’s 2026 13.6-inch MacBook Air with the M5 chip: 16GB unified memory, 512GB SSD,
-            Liquid Retina display, Touch ID, and Wi-Fi 7. Silver finish. List price is $1,299; Amazon
-            has been near $1,099. Price and stock change.
+            Liquid Retina display, Touch ID, and Wi-Fi 7. Silver finish. Apple’s list price is $1,299.
+            Amazon’s price and stock change, so check the listing for the current price.
           </p>
 
           <AmazonButton href={AMAZON} />
@@ -122,7 +124,7 @@ export default function Page() {
           <ul className="list-disc pl-5 text-muted-foreground space-y-2 mb-4">
             <li>Confirm Silver, 16GB, and 512GB on the live Amazon card.</li>
             <li>Sold by Amazon.com is the safer listing.</li>
-            <li>List is $1,299; street price has been near $1,099. Recheck before you pay.</li>
+            <li>Apple lists it at $1,299. Check Amazon for the current price before you pay.</li>
             <li>AppleCare+ is optional and sold separately.</li>
           </ul>
 

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ArticleJsonLd from "@/components/common/ArticleJsonLd";
 import AppImage from "@/components/ui/AppImage";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
@@ -13,7 +14,7 @@ const OG_IMAGE = "/assets/illustrations/wheel.svg";
 const SHARE_IMAGE = "https://www.gadgets-finds.com/og/wheel";
 
 export const metadata: Metadata = {
-  title: "Logitech G29 Driving Force Racing Wheel and Pedals Review | Gadgets Finds",
+  title: "Logitech G29 Driving Force Wheel Review | Gadgets Finds",
   description:
     "Logitech G29 Driving Force Racing Wheel and Floor Pedals for PS5, PS4, PC and Mac. Dual-motor force feedback, 900° rotation, stainless steel paddle shifters, leather cover. Is it still worth it? Price changes on Amazon.",
   metadataBase: new URL("https://www.gadgets-finds.com"),
@@ -104,6 +105,7 @@ export default function Page() {
   return (
     <>
       <Header />
+      <ArticleJsonLd path="/logitech-g29-driving-force-article" headline={"Logitech G29 Driving Force Wheel Review"} description={"Logitech G29 Driving Force Racing Wheel and Floor Pedals for PS5, PS4, PC and Mac. Dual-motor force feedback, 900° rotation, stainless steel paddle shifters, leather cover. Is it still worth it? Price changes on Amazon."} products={["Logitech G29 Driving Force racing wheel and pedals"]} includeArticle={false} />
       <article className="min-h-screen bg-background pt-28 md:pt-16">
         <script
           type="application/ld+json"
