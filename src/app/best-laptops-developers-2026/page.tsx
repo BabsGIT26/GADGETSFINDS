@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import TopPicks from "@/components/common/TopPicks";
 import React from 'react';
 import Link from 'next/link';
 import AppImage from '@/components/ui/AppImage';
@@ -106,6 +107,12 @@ export default function BestLaptopsDevelopers2026() {
             <p className="text-xl text-muted-foreground leading-relaxed mb-6">
               After comparing specs, verified owner reviews, and expert reviews for dozens of laptops across different price ranges, we've compiled this guide to help developers find their perfect coding machine. Whether you're a web developer, data scientist, or mobile app creator, this guide covers everything you need to know.
             </p>
+          <TopPicks picks={[
+    { label: "Best overall", name: "MacBook Pro 14 (M5)", why: "The current 14-inch MacBook Pro on Amazon.", url: "https://www.amazon.com/dp/B0FWD623D1?tag=gadgetsfindswebsite-20" },
+    { label: "Best value", name: "MacBook Air 13 (M5)", why: "Fanless and light for web and scripting work.", url: "https://www.amazon.com/dp/B0GR19X8DC?tag=gadgetsfindswebsite-20" },
+    { label: "Most power", name: "MacBook Pro 16 (M5 Max)", why: "For big builds, local models, and VMs.", url: "https://www.amazon.com/dp/B0GR1F53WV?tag=gadgetsfindswebsite-20" },
+          ]} />
+
 
             <h2 className="text-3xl font-bold text-foreground mt-8 mb-6">What Makes a Great Developer Laptop?</h2>
             <p className="text-muted-foreground mb-6">
@@ -448,11 +455,11 @@ export default function BestLaptopsDevelopers2026() {
           <div className="mt-16 pt-8 border-t border-border">
             <h3 className="text-2xl font-bold text-foreground mb-6">Related Articles</h3>
             <div className="grid md:grid-cols-2 gap-6">
-              <Link href="/macbook-pro-m4-article" className="group block">
+              <Link href="/best-macbooks-2026#macbook-pro-14-m5" className="group block">
                 <div className="rounded-lg border border-border bg-card p-5 transition hover:border-brand-primary">
                   <span className="text-xs font-bold text-brand-primary">Laptops</span>
                   <h4 className="mt-2 text-lg font-bold text-foreground group-hover:text-brand-primary">
-                    MacBook Pro M4, and the M5 that replaced it
+                    Best MacBooks to buy in 2026
                   </h4>
                 </div>
               </Link>

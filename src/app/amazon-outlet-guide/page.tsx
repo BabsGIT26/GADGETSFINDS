@@ -100,10 +100,10 @@ export default function Page() {
             Warehouse and Renewed are returns and refurbished units. Outlet is meant for{" "}
             <strong>new</strong> excess. Always read the condition on the listing. If the card
             says open-box, you are no longer in the same aisle. Our{" "}
-            <Link href="/playstation-5-article" className="text-primary underline">
-              PS5 guide
+            <Link href="/best-gaming-consoles-2026#playstation-5" className="text-primary underline">
+              consoles guide
             </Link>{" "}
-            uses a Renewed listing — that is a different program.
+            explains why we no longer link Renewed consoles — that is a different program.
           </p>
 
           <h2 className="text-2xl font-bold mt-10 mb-3">How to use it in two minutes</h2>

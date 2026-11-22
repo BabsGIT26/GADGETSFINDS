@@ -27,12 +27,17 @@ const Footer = () => {
       { label: 'Black Friday vacuums', href: '/black-friday-robot-vacuums' },
       { label: 'Tablets under $150', href: '/best-cheap-tablets-under-150' },
       { label: 'PS5 accessories', href: '/best-ps5-accessories-2026' },
+      { label: 'Gaming consoles', href: '/best-gaming-consoles-2026' },
+      { label: 'Graphics cards', href: '/best-graphics-cards-2026' },
     ],
     Community: [
       { label: 'Travel chargers', href: '/best-portable-chargers-for-travel' },
       { label: 'Smartwatches', href: '/best-smartwatches-under-350' },
       { label: 'Black Friday watches', href: '/black-friday-smartwatches' },
       { label: 'Mini gadgets', href: '/best-mini-gadgets-under-30' },
+      { label: 'MacBooks', href: '/best-macbooks-2026' },
+      { label: 'Phones', href: '/best-phones-2026' },
+      { label: 'Headphones', href: '/best-noise-cancelling-headphones-2026' },
     ],
     Legal: [
       { label: 'Privacy Policy', href: '/privacy-policy' },

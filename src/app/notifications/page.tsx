@@ -23,7 +23,7 @@ const mockNotifications: Notification[] = [
     description: 'We published a full review of the Sony WH-2000XM6 headphones. See how they compare.',
     time: '3 hours ago',
     read: false,
-    href: '/sony-wh-2000xm6-review-article',
+    href: '/best-noise-cancelling-headphones-2026#sony-wh-1000xm6',
   },
   {
     id: 5,
@@ -32,7 +32,7 @@ const mockNotifications: Notification[] = [
     description: 'Our comparison article is going viral — find out which flagship wins in 2026.',
     time: '8 hours ago',
     read: true,
-    href: '/i-phone-16-pro-vs-samsung-comparison-article',
+    href: '/best-phones-2026#iphone-17-vs-galaxy-s26-ultra',
   },
 ];
 
