@@ -7,16 +7,10 @@ export interface Product {
   name: string;
   brand: string;
   category: string;
-  price: number;
-  originalPrice?: number;
-  rating: number;
-  reviewCount: number;
   image: string;
   imageAlt: string;
   features: string[];
-  expertScore: number;
   isNew?: boolean;
-  inStock: boolean;
   affiliateLink: string;
 }
 
@@ -27,9 +21,6 @@ interface ProductCardProps {
 }
 
 const ProductCard = ({ product, onCompare, isComparing }: ProductCardProps) => {
-  const discount = product.originalPrice
-    ? Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100)
-    : 0;
   const affiliateHref = resolveAmazonAffiliateUrl(product.name, product.affiliateLink);
 
   return (
@@ -37,7 +28,6 @@ const ProductCard = ({ product, onCompare, isComparing }: ProductCardProps) => {
       <div className="relative aspect-square overflow-hidden bg-muted">
         <AppImage src={product.image} alt={product.imageAlt} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
         {product.isNew && <div className="absolute top-3 left-3 px-2 py-1 bg-brand-primary text-brand-dark text-xs font-bold rounded">NEW</div>}
-        {discount > 0 && <div className="absolute top-3 right-3 px-2 py-1 bg-destructive text-destructive-foreground text-xs font-bold rounded">-{discount}%</div>}
         <button onClick={() => onCompare(product.id)} className={`absolute bottom-3 right-3 p-2 rounded-full transition-all duration-300 ${isComparing ? 'bg-primary text-primary-foreground' : 'bg-card/90 text-foreground hover:bg-card'}`} aria-label={isComparing ? 'Remove from comparison' : 'Add to comparison'}>
           <Icon name={isComparing ? 'CheckIcon' : 'PlusIcon'} size={20} variant="outline" />
         </button>
@@ -49,11 +39,11 @@ const ProductCard = ({ product, onCompare, isComparing }: ProductCardProps) => {
         </div>
         <div className="flex flex-wrap gap-1">{product.features.slice(0, 3).map((feature, index) => <span key={index} className="px-2 py-1 bg-muted text-muted-foreground text-xs rounded">{feature}</span>)}</div>
         <div className="pt-3 border-t border-border">
-          <div className="flex items-baseline space-x-2 mb-3"><span className="text-2xl font-bold text-foreground">${product.price.toLocaleString()}</span>{product.originalPrice && <span className="text-sm text-muted-foreground line-through">${product.originalPrice.toLocaleString()}</span>}</div>
+          <p className="text-xs text-muted-foreground mb-2">Check the current price on Amazon.</p>
           <p className="text-[11px] text-muted-foreground mb-2">Affiliate link: we may earn a commission if you buy through this link.</p>
           <div className="flex items-center space-x-2">
-            <a href={affiliateHref} target="_blank" rel="nofollow sponsored noopener noreferrer" className={`flex-1 px-4 py-2 rounded-md text-sm font-semibold text-center transition-colors ${product.inStock ? 'bg-primary text-primary-foreground hover:bg-primary/90' : 'bg-muted text-muted-foreground cursor-not-allowed'}`}>
-              {product.inStock ? 'View Deal · Affiliate link' : 'Out of Stock'}
+            <a href={affiliateHref} target="_blank" rel="nofollow sponsored noopener noreferrer" className={`flex-1 px-4 py-2 rounded-md text-sm font-semibold text-center transition-colors bg-primary text-primary-foreground hover:bg-primary/90`}>
+              Check price on Amazon · Affiliate link
             </a>
             <button className="p-2 border border-border rounded-md hover:bg-muted transition-colors" aria-label="Save product"><Icon name="BookmarkIcon" size={18} variant="outline" /></button>
           </div>

@@ -20,8 +20,8 @@ const ComparisonTable = ({ products, onRemove, onClear }: ComparisonTableProps) 
   const [activeTab, setActiveTab] = useState<'overview' | 'specs'>('overview');
 
   const specifications: Specification[] = [
-    { label: 'Price', key: 'price' },
-    { label: 'Availability', key: 'inStock' },
+    { label: 'Brand', key: 'brand' },
+    { label: 'Category', key: 'category' },
   ];
 
   if (products.length === 0) {
@@ -35,7 +35,7 @@ const ComparisonTable = ({ products, onRemove, onClear }: ComparisonTableProps) 
             No Products Selected
           </h3>
           <p className="text-muted-foreground">
-            Select products from the list below to start comparing their features, specifications, and prices side by side.
+            Select products from the list below to start comparing their features and specifications side by side.
           </p>
         </div>
       </div>
@@ -132,46 +132,11 @@ const ComparisonTable = ({ products, onRemove, onClear }: ComparisonTableProps) 
                     </td>
                     {products.map((product) => (
                       <td key={product.id} className="p-4 text-center">
-                        {spec.key === 'price' && (
-                          <span className="text-lg font-bold text-foreground">
-                            ${product.price.toLocaleString()}
-                          </span>
+                        {spec.key === 'brand' && (
+                          <span className="text-sm font-medium text-foreground">{product.brand}</span>
                         )}
-                        {spec.key === 'expertScore' && (
-                          <div className="flex items-center justify-center space-x-2">
-                            <div className="flex-1 max-w-[120px] bg-muted rounded-full h-2">
-                              <div
-                                className="bg-brand-secondary h-full rounded-full"
-                                style={{ width: `${product.expertScore}%` }}
-                              ></div>
-                            </div>
-                            <span className="text-sm font-semibold text-brand-secondary">
-                              {product.expertScore}
-                            </span>
-                          </div>
-                        )}
-                        {spec.key === 'rating' && (
-                          <div className="flex items-center justify-center space-x-1">
-                            <Icon name="StarIcon" size={16} variant="solid" className="text-brand-cta" />
-                            <span className="text-sm font-medium text-foreground">
-                              {product.rating}
-                            </span>
-                          </div>
-                        )}
-                        {spec.key === 'reviewCount' && (
-                          <span className="text-sm text-muted-foreground">
-                            {product.reviewCount} reviews
-                          </span>
-                        )}
-                        {spec.key === 'inStock' && (
-                          <span
-                            className={`inline-flex items-center px-2 py-1 rounded-full text-xs font-medium ${
-                              product.inStock
-                                ? 'bg-success/10 text-success' :'bg-destructive/10 text-destructive'
-                            }`}
-                          >
-                            {product.inStock ? 'In Stock' : 'Out of Stock'}
-                          </span>
+                        {spec.key === 'category' && (
+                          <span className="text-sm text-muted-foreground capitalize">{product.category.replace('-', ' ')}</span>
                         )}
                       </td>
                     ))}
@@ -212,13 +177,9 @@ const ComparisonTable = ({ products, onRemove, onClear }: ComparisonTableProps) 
                         href={product.affiliateLink}
                         target="_blank"
                         rel="nofollow sponsored noopener noreferrer"
-                        className={`block w-full px-4 py-2 rounded-md text-sm font-semibold text-center transition-colors ${
-                          product.inStock
-                            ? 'bg-primary text-primary-foreground hover:bg-primary/90'
-                            : 'bg-muted text-muted-foreground cursor-not-allowed'
-                        }`}
+                        className={`block w-full px-4 py-2 rounded-md text-sm font-semibold text-center transition-colors bg-primary text-primary-foreground hover:bg-primary/90`}
                       >
-                        {product.inStock ? 'View Deal · Affiliate link' : 'Out of Stock'}
+                        Check price on Amazon · Affiliate link
                       </a>
                     </td>
                   ))}

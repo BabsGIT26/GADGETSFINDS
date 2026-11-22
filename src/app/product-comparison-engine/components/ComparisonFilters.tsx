@@ -77,21 +77,11 @@ const ComparisonFilters = ({ onFilterChange }: ComparisonFiltersProps) => {
 
   const sortOptions: FilterOption[] = [
     { id: 'relevance', label: 'Most Relevant', value: 'relevance' },
-    { id: 'price-low', label: 'Price: Low to High', value: 'price-low' },
-    { id: 'price-high', label: 'Price: High to Low', value: 'price-high' },
     { id: 'newest', label: 'Newest First', value: 'newest' },
   ];
 
   const handleCategoryChange = (category: string) => {
     const newFilters = { ...filters, category };
-    setFilters(newFilters);
-    onFilterChange(newFilters);
-  };
-
-  const handlePriceChange = (index: number, value: number) => {
-    const newPriceRange: [number, number] = [...filters.priceRange] as [number, number];
-    newPriceRange[index] = value;
-    const newFilters = { ...filters, priceRange: newPriceRange };
     setFilters(newFilters);
     onFilterChange(newFilters);
   };
@@ -172,36 +162,6 @@ const ComparisonFilters = ({ onFilterChange }: ComparisonFiltersProps) => {
                   {category.label}
                 </button>
               ))}
-            </div>
-          </div>
-
-          <div>
-            <label className="block text-sm font-semibold text-foreground mb-3">
-              Price Range
-            </label>
-            <div className="space-y-3">
-              <div className="flex items-center justify-between text-sm text-muted-foreground">
-                <span>${filters.priceRange[0]}</span>
-                <span>${filters.priceRange[1]}</span>
-              </div>
-              <input
-                type="range"
-                min="0"
-                max="5000"
-                step="100"
-                value={filters.priceRange[0]}
-                onChange={(e) => handlePriceChange(0, parseInt(e.target.value))}
-                className="w-full h-2 bg-muted rounded-lg appearance-none cursor-pointer accent-primary"
-              />
-              <input
-                type="range"
-                min="0"
-                max="5000"
-                step="100"
-                value={filters.priceRange[1]}
-                onChange={(e) => handlePriceChange(1, parseInt(e.target.value))}
-                className="w-full h-2 bg-muted rounded-lg appearance-none cursor-pointer accent-primary"
-              />
             </div>
           </div>
 
