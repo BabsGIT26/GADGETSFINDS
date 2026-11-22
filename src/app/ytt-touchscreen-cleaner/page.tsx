@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "https://m.media-amazon.com/images/I/71dnnsMpNpL._AC_UL450_SY450_QL70_.jpg",
+        url: "https://www.gadgets-finds.com/og/cleaner",
         width: 1200,
         height: 630,
         alt: "YTT Touchscreen Screen Cleaner",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@Gadgets_finds",
     title: "YTT Touchscreen Screen Cleaner Spray",
-    images: ["https://m.media-amazon.com/images/I/71dnnsMpNpL._AC_UL450_SY450_QL70_.jpg"],
+    images: ["https://www.gadgets-finds.com/og/cleaner"],
   },
 };
 
@@ -73,8 +73,8 @@ export default function Page() {
 
           <div className="mb-10 flex justify-center">
             <img
-              src="https://m.media-amazon.com/images/I/71dnnsMpNpL._AC_UL450_SY450_QL70_.jpg"
-              alt="YTT Touchscreen Screen Cleaner Spray"
+              src="/assets/illustrations/cleaner.svg"
+              alt="Illustration, not a product photo: YTT Touchscreen Screen Cleaner Spray"
               className="w-full max-w-[280px] h-auto rounded-xl"
             />
           </div>
@@ -87,13 +87,6 @@ export default function Page() {
             Most versions contain about 15 ml of cleaning solution. The liquid is generally alcohol-free and designed for glass and coated screens. Users typically report that a couple of sprays are enough for a phone or tablet.
           </p>
 
-          <div className="my-8 flex justify-center">
-            <img
-              src="https://media-cldnry.s-nbcnews.com/image/upload/t_social_share_1200x630_center,f_auto,q_auto:best/newscms/2022_40/1912888/221003-screen-cleaners-2x1-aw.jpg"
-              alt="YTT screen cleaner in use"
-              className="w-full max-w-md rounded-xl"
-            />
-          </div>
 
           <h2 className="text-2xl font-bold mt-10 mb-3">How people use it</h2>
           <p className="text-muted-foreground mb-4">

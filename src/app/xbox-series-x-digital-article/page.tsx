@@ -8,7 +8,8 @@ const AMAZON =
   "https://www.amazon.com/dp/B0DCD9LGHY?tag=gadgetsfindswebsite-20";
 
 const OG_IMAGE =
-  "https://i5.walmartimages.com/seo/Microsoft-Xbox-Series-X-1TB-All-Digital-Robot-White-Console-with-Mytrix-High-Speed-HDMI-Robot-White-All-Digital-Xbox_a8dc999d-ac15-4e82-9f95-de3180348647.198f3b0d3a2fa0ef73e6ddb0928ffbcc.jpeg";
+  "/assets/illustrations/console.svg";
+const SHARE_IMAGE = "https://www.gadgets-finds.com/og/console";
 
 export const metadata: Metadata = {
   title: "Xbox Series X Digital 1TB Robot White — Gadgets Finds",
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: OG_IMAGE,
+        url: SHARE_IMAGE,
         width: 1200,
         height: 630,
         alt: "Xbox Series X Digital Robot White full console",
@@ -37,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@Gadgets_finds",
     title: "Xbox Series X Digital 1TB — Robot White",
-    images: [OG_IMAGE],
+    images: [SHARE_IMAGE],
   },
 };
 
