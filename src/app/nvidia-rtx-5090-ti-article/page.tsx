@@ -21,14 +21,14 @@ export const metadata: Metadata = {
     siteName: "Gadgets Finds",
     type: "article",
     images: [
-      { url: "/assets/images/nvidia_rtx_5090.png", width: 1200, height: 630, alt: "NVIDIA RTX 5090" },
+      { url: "https://www.gadgets-finds.com/og/gpu", width: 1200, height: 630, alt: "NVIDIA RTX 5090" },
     ],
   },
   twitter: {
     card: "summary_large_image",
     site: "@Gadgets_finds",
     title: "NVIDIA RTX 5090 Review — Gadgets Finds",
-    images: ["/assets/images/nvidia_rtx_5090.png"],
+    images: ["https://www.gadgets-finds.com/og/gpu"],
   },
 };
 
@@ -39,7 +39,7 @@ export default function NVIDIARTXArticle() {
       <div className="min-h-screen bg-background pt-14 md:pt-16">
         <div className="relative h-[42vh] min-h-[240px] max-h-[420px] overflow-hidden">
           <AppImage
-            src="/assets/images/nvidia_rtx_5090.png"
+            src="/assets/illustrations/gpu.svg"
             alt="NVIDIA RTX 5090"
             className="absolute inset-0 h-full w-full object-cover"
             priority

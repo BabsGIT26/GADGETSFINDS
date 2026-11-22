@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "https://m.media-amazon.com/images/I/811IbTkEvnL.jpg",
+        url: "https://www.gadgets-finds.com/og/gpu",
         width: 1200,
         height: 630,
         alt: "NVIDIA RTX 50-Series GPUs lowest prices",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "NVIDIA RTX 50-Series Lowest Prices Right Now",
     description: "Best current deals on RTX 5090, 5080, 5070 Ti and more as GPU prices climb.",
-    images: ["https://m.media-amazon.com/images/I/811IbTkEvnL.jpg"],
+    images: ["https://www.gadgets-finds.com/og/gpu"],
   },
 };
 
@@ -74,8 +74,8 @@ export default function Page() {
               </div>
             </div>
             <img
-              src="https://m.media-amazon.com/images/I/811IbTkEvnL.jpg"
-              alt="ASUS ROG Astral GeForce RTX 5090 32GB GDDR7 OC Edition"
+              src="/assets/illustrations/gpu.svg"
+              alt="Illustration, not a product photo: ASUS ROG Astral GeForce RTX 5090 32GB GDDR7 OC Edition"
               className="w-36 md:w-48 h-auto rounded-lg object-contain flex-shrink-0 mx-auto md:mx-0"
             />
           </div>
@@ -103,8 +103,8 @@ export default function Page() {
               </div>
             </div>
             <img
-              src="https://m.media-amazon.com/images/I/71oOraaImGL.jpg"
-              alt="PNY NVIDIA GeForce RTX 5080 Triple-Fan 16GB GDDR7"
+              src="/assets/illustrations/gpu.svg"
+              alt="Illustration, not a product photo: PNY NVIDIA GeForce RTX 5080 Triple-Fan 16GB GDDR7"
               className="w-36 md:w-48 h-auto rounded-lg object-contain flex-shrink-0 mx-auto md:mx-0"
             />
           </div>
@@ -131,8 +131,8 @@ export default function Page() {
               </div>
             </div>
             <img
-              src="https://m.media-amazon.com/images/I/81POeoI3lSL.jpg"
-              alt="ASUS TUF Gaming GeForce RTX 5070 Ti 16GB GDDR7 OC Edition"
+              src="/assets/illustrations/gpu.svg"
+              alt="Illustration, not a product photo: ASUS TUF Gaming GeForce RTX 5070 Ti 16GB GDDR7 OC Edition"
               className="w-36 md:w-48 h-auto rounded-lg object-contain flex-shrink-0 mx-auto md:mx-0"
             />
           </div>
@@ -160,8 +160,8 @@ export default function Page() {
               </div>
             </div>
             <img
-              src="https://www.techpowerup.com/gpu-specs/images-new/b/12306-front-thumb.jpg"
-              alt="NVIDIA GeForce RTX 5070 12GB GDDR7 Founders Edition"
+              src="/assets/illustrations/gpu.svg"
+              alt="Illustration, not a product photo: NVIDIA GeForce RTX 5070 12GB GDDR7 Founders Edition"
               className="w-36 md:w-48 h-auto rounded-lg object-contain flex-shrink-0 mx-auto md:mx-0"
             />
           </div>
@@ -188,8 +188,8 @@ export default function Page() {
               </div>
             </div>
             <img
-              src="https://m.media-amazon.com/images/I/41LK8D7pR7L._SL500_.jpg"
-              alt="ASUS Dual GeForce RTX 5060 Ti 8GB GDDR7 OC Edition"
+              src="/assets/illustrations/gpu.svg"
+              alt="Illustration, not a product photo: ASUS Dual GeForce RTX 5060 Ti 8GB GDDR7 OC Edition"
               className="w-36 md:w-48 h-auto rounded-lg object-contain flex-shrink-0 mx-auto md:mx-0"
             />
           </div>
@@ -216,8 +216,8 @@ export default function Page() {
               </div>
             </div>
             <img
-              src="https://m.media-amazon.com/images/I/81aN+w8d4GL.jpg"
-              alt="ASUS Prime GeForce RTX 5060 Ti 16GB GDDR7"
+              src="/assets/illustrations/gpu.svg"
+              alt="Illustration, not a product photo: ASUS Prime GeForce RTX 5060 Ti 16GB GDDR7"
               className="w-36 md:w-48 h-auto rounded-lg object-contain flex-shrink-0 mx-auto md:mx-0"
             />
           </div>
