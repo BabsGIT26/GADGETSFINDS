@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import TopPicks from "@/components/common/TopPicks";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
@@ -91,6 +92,11 @@ export default function Page() {
           <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">Buying Guide</p>
           <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">Best Mini Gadgets Under $30 in 2026</h1>
           <p className="text-muted-foreground mb-2 text-sm">Last updated: November 2026</p>
+          <TopPicks picks={[
+    { label: "Best overall", name: "Anker Nano 45W charger", why: "A real 45W charger, with the cable in the box.", url: "https://www.amazon.com/dp/B0DPKRC84P?tag=gadgetsfindswebsite-20" },
+    { label: "Best value", name: "Anker 100W USB-C cable (2-pack)", why: "Spare leads for when the first one kinks.", url: "https://www.amazon.com/dp/B09LCJPZ1P?tag=gadgetsfindswebsite-20" },
+    { label: "Best for laptops", name: "Anker 5-in-1 USB-C hub", why: "For a laptop that is short of ports.", url: "https://www.amazon.com/dp/B0CH9JN4R4?tag=gadgetsfindswebsite-20" },
+          ]} />
           <ProductListJsonLd name="Best mini gadgets under $30" url="/best-mini-gadgets-under-30" products={["Anker Nano 45W charger", "Anker 5-in-1 USB-C hub", "Anker 100W USB-C cable two-pack", "Samsung Galaxy SmartTag2"]} />
           <p className="text-muted-foreground mb-6 text-lg leading-relaxed">
             Thirty dollars is enough for a charger, a hub, a spare cable, or a tracker that you will still be using in a year. It is not enough for a gadget whose only job is to look clever in a photo. The useful ones at this price are boring on purpose: they add a port, they replace a lost cable, or they make a keyring findable.

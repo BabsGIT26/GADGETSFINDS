@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import TopPicks from "@/components/common/TopPicks";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
@@ -91,6 +92,11 @@ export default function Page() {
           <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">Buying Guide</p>
           <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">Best Smartwatches Under $350 in 2026</h1>
           <p className="text-muted-foreground mb-2 text-sm">Last updated: November 2026</p>
+          <TopPicks picks={[
+    { label: "Best for iPhone", name: "Apple Watch SE 3", why: "The current SE, the one to buy for an iPhone.", url: "https://www.amazon.com/dp/B0FQFW7M9H?tag=gadgetsfindswebsite-20" },
+    { label: "Best for Android", name: "Samsung Galaxy Watch 7", why: "The Android watch that still feels current.", url: "https://www.amazon.com/dp/B0D1YQKDML?tag=gadgetsfindswebsite-20" },
+    { label: "Best for running", name: "Garmin Forerunner 165", why: "The better buy once training matters more than apps.", url: "https://www.amazon.com/dp/B0CT3SGHXL?tag=gadgetsfindswebsite-20" },
+          ]} />
           <ProductListJsonLd name="Best smartwatches under $350" url="/best-smartwatches-under-350" products={["Apple Watch SE 3", "Samsung Galaxy Watch 7", "Garmin Forerunner 165", "Google Pixel Watch 3"]} />
           <p className="text-muted-foreground mb-6 text-lg leading-relaxed">
             Under $350 you can buy a current watch from Apple, Samsung, Garmin, or Google. You cannot buy one watch that is the best on an iPhone and an Android phone at the same time. The Apple Watch only pairs with an iPhone. The Galaxy Watch and the Pixel Watch want an Android phone. Garmin is the one that stays useful on either.

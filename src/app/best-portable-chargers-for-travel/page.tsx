@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import TopPicks from "@/components/common/TopPicks";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
@@ -91,6 +92,11 @@ export default function Page() {
           <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">Buying Guide</p>
           <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">Best Portable Chargers for Travel in 2026</h1>
           <p className="text-muted-foreground mb-2 text-sm">Last updated: November 2026</p>
+          <TopPicks picks={[
+    { label: "Best overall", name: "Anker 20,000mAh 87W (built-in cable)", why: "The size and wattage that match a normal trip.", url: "https://www.amazon.com/dp/B0CXDQXC3Q?tag=gadgetsfindswebsite-20" },
+    { label: "Lightest", name: "Anker Nano 10,000mAh", why: "When ounces matter more than capacity.", url: "https://www.amazon.com/dp/B0C9D7R1B6?tag=gadgetsfindswebsite-20" },
+    { label: "Best for laptops", name: "Anker Prime 27,650mAh 250W", why: "When a laptop has to survive the flight.", url: "https://www.amazon.com/dp/B0BYP2F3SG?tag=gadgetsfindswebsite-20" },
+          ]} />
           <ProductListJsonLd name="Best portable chargers for travel" url="/best-portable-chargers-for-travel" products={["Anker 20,000mAh 87W", "Anker Nano 10,000mAh 30W", "Anker Prime 27,650mAh", "Anker Nano 3-in-1"]} />
           <p className="text-muted-foreground mb-6 text-lg leading-relaxed">
             A travel power bank has one job: put a real charge back into a phone, and sometimes a laptop, somewhere between the security line and the hotel. The useful ones in 2026 are USB-C, they tell you how much charge is left, and they stay under the 100 watt-hour line that airlines use for spare lithium batteries.

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import TopPicks from "@/components/common/TopPicks";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
@@ -93,6 +94,11 @@ export default function Page() {
           <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">Buying Guide</p>
           <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">Best Cheap Tablets Under $150 in 2026</h1>
           <p className="text-muted-foreground mb-2 text-sm">Last updated: November 2026</p>
+          <TopPicks note="On November 22, 2026 the Fire HD 10 and Galaxy Tab A9+ listings showed no new stock on Amazon. Check their buttons below before you plan around them." picks={[
+    { label: "Best for kids", name: "Amazon Kids Tablet 8", why: "The pick for a child aged 3 to 5.", url: "https://www.amazon.com/dp/B0FLB1NJPY?tag=gadgetsfindswebsite-20" },
+    { label: "Best small tablet", name: "Amazon Fire HD 8", why: "The smaller Fire tablet for reading and streaming.", url: "https://www.amazon.com/dp/B0CVDN4QS6?tag=gadgetsfindswebsite-20" },
+    { label: "Best Android", name: "Lenovo Tab One", why: "A small Android tablet with the Play Store.", url: "https://www.amazon.com/dp/B0F1NHSFMF?tag=gadgetsfindswebsite-20" },
+          ]} />
           <ProductListJsonLd name="Best cheap tablets under $150" url="/best-cheap-tablets-under-150" products={["Amazon Fire HD 10", "Samsung Galaxy Tab A9+", "Amazon Kids Tablet 8", "Amazon Fire HD 8", "Lenovo Tab One"]} />
           <p className="text-muted-foreground mb-6 text-lg leading-relaxed">
             A tablet under $150 in 2026 is a streaming, reading, and browsing machine. It is not a laptop replacement, and it is not going to edit video or keep a dozen heavy apps happy at once. The useful ones in this range have a screen you can watch for an hour without squinting, a battery that lasts a travel day, and storage you can expand when 32 GB fills up.
