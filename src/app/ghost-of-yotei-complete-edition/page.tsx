@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "/assets/images/ghost_of_yotei.png",
+        url: "https://www.gadgets-finds.com/og/game",
         width: 1200,
         height: 630,
         alt: "Ghost of Yotei PS5",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@Gadgets_finds",
     title: "Ghost of Yōtei Complete Edition launches today — Gadgets Finds",
-    images: ["/assets/images/ghost_of_yotei.png"],
+    images: ["https://www.gadgets-finds.com/og/game"],
   },
 };
 
@@ -81,7 +81,7 @@ export default function Page() {
 
           <div className="w-full flex justify-center py-6 mb-10">
             <AppImage
-              src="/assets/images/ghost_of_yotei.png"
+              src="/assets/illustrations/game.svg"
               alt="Ghost of Yotei"
               className="max-h-[400px] w-auto max-w-full object-contain"
             />

@@ -10,7 +10,8 @@ const AMAZON =
 
 const TRACKED = `/api/go?url=${encodeURIComponent(AMAZON)}`;
 
-const OG_IMAGE = "https://m.media-amazon.com/images/I/91NgubSWmjL.jpg";
+const OG_IMAGE = "/assets/illustrations/gadget.svg";
+const SHARE_IMAGE = "https://www.gadgets-finds.com/og/gadget";
 
 export const metadata: Metadata = {
   title: "GenZ Semi-Automatic Slingshot Rapid Fire Steel Ball Shooter | Gadgets Finds",
@@ -28,7 +29,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: OG_IMAGE,
+        url: SHARE_IMAGE,
         width: 1200,
         height: 630,
         alt: "Semi-automatic rapid fire slingshot with magazine and steel balls",
@@ -39,7 +40,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@Gadgets_finds",
     title: "GenZ Semi-Automatic Slingshot Rapid Fire Steel Ball Shooter",
-    images: [OG_IMAGE],
+    images: [SHARE_IMAGE],
   },
 };
 
@@ -90,7 +91,7 @@ export default function Page() {
 
           <div className="w-full flex justify-center py-6 mb-6">
             <AppImage
-              src="https://m.media-amazon.com/images/I/71gQB6ZQV7L.jpg"
+              src="/assets/illustrations/gadget.svg"
               alt="CNC aluminum semi-automatic slingshot kit with magazines and steel balls"
               className="max-h-[400px] w-auto max-w-full object-contain rounded-lg"
             />
@@ -111,13 +112,6 @@ export default function Page() {
             Adults who want faster practice sessions than a traditional slingshot. Good for backyard or range target work where you want multiple shots without stopping to load each ball by hand.
           </p>
 
-          <div className="w-full flex justify-center py-6 mb-6">
-            <AppImage
-              src="https://m.media-amazon.com/images/I/614Ys7NGCsL.jpg"
-              alt="Semi-automatic slingshot in outdoor setting"
-              className="max-h-[400px] w-auto max-w-full object-contain rounded-lg"
-            />
-          </div>
 
           <p className="text-muted-foreground mb-4">
             Skip it if you need maximum power for hunting or if you prefer a classic single-shot frame. This is a rapid-fire practice tool, not a high-powered hunting slingshot.
