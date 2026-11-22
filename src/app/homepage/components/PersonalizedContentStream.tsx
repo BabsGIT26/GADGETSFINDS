@@ -416,7 +416,7 @@ const PersonalizedContentStream = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {filteredItems.map((item) => (
+        {filteredItems.map((item, index) => (
           <Link
             key={item.id}
             href={articleRoutes[item.id] || "/"}
@@ -428,6 +428,8 @@ const PersonalizedContentStream = () => {
                 alt={illustrationAlt(item.image, item.alt)}
                 fill
                 sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                // The first row is above the fold on most screens: load it right away.
+                priority={index < 3}
                 className={`block ${item.fit === "contain" ? "object-contain" : "object-cover"}`}
                 />
             </div>
