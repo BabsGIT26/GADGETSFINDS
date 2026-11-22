@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "/assets/images/roborock_saros_z70.png",
+        url: "https://www.gadgets-finds.com/og/vacuum",
         width: 1200,
         height: 630,
         alt: "Roborock Saros Z70 robot vacuum and mop",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     title: "Roborock Saros Z70 — Gadgets Finds",
     description:
       "Saros Z70 Black. Price seen at $999.98 (−50%). Amazon price changes.",
-    images: ["/assets/images/roborock_saros_z70.png"],
+    images: ["https://www.gadgets-finds.com/og/vacuum"],
   },
 };
 
@@ -49,7 +49,7 @@ export default function Page() {
       <article className="min-h-screen bg-background pt-28 md:pt-16">
         <div className="w-full bg-muted flex items-center justify-center py-10 pb-2">
           <AppImage
-            src="/assets/images/roborock_saros_z70.png"
+            src="/assets/illustrations/vacuum.svg"
             alt="Roborock Saros Z70 robot vacuum and mop, black"
             className="max-h-[400px] w-auto max-w-[85%] object-contain"
           />
