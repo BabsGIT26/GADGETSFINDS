@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ArticleJsonLd from "@/components/common/ArticleJsonLd";
 import AppImage from "@/components/ui/AppImage";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
@@ -6,7 +7,7 @@ import AmazonDealBox from "@/components/common/AmazonDealBox";
 
 const AMAZON_IPHONE = "https://www.amazon.com/s?k=iPhone+17&tag=gadgetsfindswebsite-20";
 const AMAZON_S26 =
-  "https://www.amazon.com/s?k=Samsung+Galaxy+S26+Ultra+256GB+Black+unlocked&tag=gadgetsfindswebsite-20";
+  "https://www.amazon.com/dp/B0G4SWDH8P?tag=gadgetsfindswebsite-20";
 
 export const metadata: Metadata = {
     openGraph: {
@@ -41,6 +42,7 @@ export default function Page() {
   return (
     <>
       <Header />
+      <ArticleJsonLd path="/iphone-17-vs-galaxy-s26-ultra" headline={"iPhone 17 vs Galaxy S26 Ultra"} description={"Display, cameras, battery, and who should buy which."} products={["Apple iPhone 17", "Samsung Galaxy S26 Ultra"]} />
       <article className="min-h-screen bg-background pt-14 md:pt-16">
         <div className="container mx-auto px-4 py-10 max-w-3xl">
           <p className="text-sm text-foreground mb-6">

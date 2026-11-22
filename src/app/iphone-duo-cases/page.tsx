@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ArticleJsonLd from "@/components/common/ArticleJsonLd";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 
@@ -55,7 +56,7 @@ const cases = [
     name: "TORRAS Q3 Spin",
     color: "Dark",
     description: "Hinge protection with 360° rotating stand.",
-    href: "https://www.amazon.com/s?k=TORRAS+Q3+Spin+iPhone+Duo&tag=gadgetsfindswebsmediavid-20",
+    href: "https://www.amazon.com/dp/B0HGDS2DZC?tag=gadgetsfindswebsmediavid-20",
     image: "/assets/illustrations/foldable.svg",
     bg: "bg-zinc-800 dark:bg-zinc-600",
   },
@@ -63,7 +64,7 @@ const cases = [
     name: "Spigen Ultra Hybrid Pro",
     color: "Clear",
     description: "Clear case that shows the phone color. Hinge coverage.",
-    href: "https://www.amazon.com/s?k=Spigen+Ultra+Hybrid+Pro+iPhone+Duo&tag=gadgetsfindswebsmediavid-20",
+    href: "https://www.amazon.com/dp/B0GYQH6WFJ?tag=gadgetsfindswebsmediavid-20",
     image: "/assets/illustrations/foldable.svg",
     bg: "bg-zinc-100 dark:bg-zinc-800",
   },
@@ -79,7 +80,7 @@ const cases = [
     name: "Pitaka Aramid Case",
     color: "Black",
     description: "Thin aramid fiber with MagSafe support.",
-    href: "https://www.amazon.com/s?k=Pitaka+iPhone+Duo+aramid&tag=gadgetsfindswebsmediavid-20",
+    href: "https://www.amazon.com/dp/B0HGLHGRST?tag=gadgetsfindswebsmediavid-20",
     image: "/assets/illustrations/foldable.svg",
     bg: "bg-zinc-800 dark:bg-zinc-600",
   },
@@ -89,6 +90,7 @@ export default function Page() {
   return (
     <>
       <Header />
+      <ArticleJsonLd path="/iphone-duo-cases" headline={"iPhone Duo Cases — Clear, Silicone & Leather Options"} description={"A selection of cases for the iPhone Duo. Clear, silicone, leather, and protective options."} products={["FNTCASE iPhone Duo case", "TORRAS Q3 Spin", "Spigen Ultra Hybrid Pro", "OtterBox Defender Series", "Pitaka Aramid Case"]} />
       <main className="min-h-screen bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100">
         <section className="pt-20 pb-10 px-6 text-center">
           <p className="text-xs tracking-widest uppercase text-zinc-500 dark:text-zinc-400 mb-3">

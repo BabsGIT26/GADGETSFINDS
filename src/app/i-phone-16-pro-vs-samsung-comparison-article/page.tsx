@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import ArticleJsonLd from "@/components/common/ArticleJsonLd";
 import Link from 'next/link';
 import AppImage from '@/components/ui/AppImage';
 import Icon from '@/components/ui/AppIcon';
@@ -50,6 +51,7 @@ export default function iPhone16ProVsSamsungArticle() {
   return (
     <>
       <Header />
+      <ArticleJsonLd path="/i-phone-16-pro-vs-samsung-comparison-article" headline={"iPhone 16 Pro vs Samsung Comparison"} description={"Comprehensive comparison of iPhone 16 Pro and Samsung Galaxy S26 Ultra covering performance, camera, design, and value."} products={["Apple iPhone 16 Pro", "Samsung Galaxy S26 Ultra"]} includeArticle={false} />
       <div className="min-h-screen bg-background pt-14 md:pt-16">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
         {/* Hero Section */}
