@@ -90,7 +90,7 @@ export default function iPhone16ProVsSamsungArticle() {
           {/* Article Body */}
           <div className="prose prose-lg max-w-none">
             <p className="text-xl text-muted-foreground leading-relaxed mb-6">
-              We put the two flagship smartphones through extensive camera testing to determine the mobile photography champion. After weeks of real-world testing, here's our comprehensive comparison.
+              We compared the two flagship smartphones' camera specs, published expert reviews, and sample comparisons, plus what verified owners report, to see which one is the better camera phone. Here's our research-based comparison.
             </p>
 
             <h2 className="text-2xl font-bold text-foreground mt-8 mb-4">Design and Build Quality</h2>

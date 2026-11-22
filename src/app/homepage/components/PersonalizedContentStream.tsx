@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Icon from '@/components/ui/AppIcon';
+import { illustrationAlt } from '@/lib/illustrations';
 
 interface ContentItem {
   id: number;
@@ -34,7 +35,7 @@ const PersonalizedContentStream = () => {
       title: "Black Friday Robot Vacuums",
       excerpt: "Dock, mop station, or a robot you empty yourself. Short notes on the models showing on Amazon, then the listing.",
       category: "Buying Guide",
-      image: "/assets/images/black-friday-robot-vacuum.webp",
+      image: "/assets/illustrations/vacuum.svg",
       alt: "Black robot vacuum on a Black Friday graphic",
       author: "Gadgets Finds",
       publishedDate: "November 19, 2026",
@@ -46,7 +47,7 @@ const PersonalizedContentStream = () => {
       title: "Black Friday Smartwatches",
       excerpt: "Apple Watch, Garmin, a WHOOP membership, or a budget GPS watch. The phone decides it before the listing does.",
       category: "Buying Guide",
-      image: "/assets/images/apple-watch-series-12-42.jpg",
+      image: "/assets/illustrations/watch.svg",
       alt: "Apple Watch Series 12 GPS 42mm in black",
       author: "Gadgets Finds",
       publishedDate: "November 20, 2026",
@@ -59,7 +60,7 @@ const PersonalizedContentStream = () => {
       title: "Samsung 990 PRO 4TB Review",
       excerpt: "PCIe 4.0 NVMe up to 7,450 MB/s. The MZ-V9P4T0B/AM box has no heatsink. Read that before you buy it for a PS5.",
       category: "Storage",
-      image: "/assets/images/samsung-990-pro-4tb.jpg",
+      image: "/assets/illustrations/ssd.svg",
       alt: "Samsung 990 PRO 4TB NVMe SSD",
       author: "Gadgets Finds",
       publishedDate: "November 18, 2026",
@@ -72,7 +73,7 @@ const PersonalizedContentStream = () => {
       title: "Best Budget Robot Vacuums Under $300 (2026)",
       excerpt: "Strong cleaning, better navigation, and solid pet hair performance without spending $500+.",
       category: "Buying Guide",
-      image: "/assets/images/eufy-robovac-g30-floor.jpg",
+      image: "/assets/illustrations/vacuum.svg",
       alt: "eufy RoboVac G30 robot vacuum",
       author: "Gadgets Finds",
       publishedDate: "November 17, 2026",
@@ -84,7 +85,7 @@ const PersonalizedContentStream = () => {
       title: "Best PS5 Accessories Worth Buying in 2026",
       excerpt: "SSD expansion, headsets, DualSense Edge, charging docks — what actually improves the PS5 experience.",
       category: "Buying Guide",
-      image: "/assets/images/dualsense-edge.jpg",
+      image: "/assets/illustrations/controller.svg",
       alt: "DualSense Edge wireless controller",
       author: "Gadgets Finds",
       publishedDate: "November 17, 2026",
@@ -96,7 +97,7 @@ const PersonalizedContentStream = () => {
       title: "Roborock vs Roomba in 2026: Which Is Better?",
       excerpt: "Direct comparison on suction, navigation, mopping, and value. Roborock wins for most people.",
       category: "Comparison",
-      image: "/assets/images/roborock-qrevo-s-pro-room.jpg",
+      image: "/assets/illustrations/vacuum.svg",
       alt: "Roborock Qrevo S Pro robot vacuum and mop",
       author: "Gadgets Finds",
       publishedDate: "November 17, 2026",
@@ -108,7 +109,7 @@ const PersonalizedContentStream = () => {
       title: "Best Cheap Tablets Under $150 in 2026",
       excerpt: "Fire HD 10, Galaxy Tab A9+, Fire HD 8, and Lenovo Tab One. New listings only, with the prices that actually fit under $150.",
       category: "Buying Guide",
-      image: "/assets/images/fire-hd-10.jpg",
+      image: "/assets/illustrations/tablet.svg",
       alt: "Amazon Fire HD 10 tablet",
       author: "Gadgets Finds",
       publishedDate: "November 17, 2026",
@@ -121,7 +122,7 @@ const PersonalizedContentStream = () => {
       title: "Best Portable Chargers for Travel in 2026",
       excerpt: "Four new Anker banks: 20,000mAh at 87W, a pocket Nano, a 99.54Wh laptop Prime, and a 3-in-1 with a wall plug.",
       category: "Buying Guide",
-      image: "/assets/images/anker-20k-87w.jpg",
+      image: "/assets/illustrations/powerbank.svg",
       alt: "Anker 20,000mAh power bank",
       author: "Gadgets Finds",
       publishedDate: "November 17, 2026",
@@ -134,7 +135,7 @@ const PersonalizedContentStream = () => {
       title: "Best Smartwatches Under $350 in 2026",
       excerpt: "Apple Watch SE 3, Galaxy Watch 7, Forerunner 165, and Pixel Watch 3, matched to the phone you already own.",
       category: "Buying Guide",
-      image: "/assets/images/apple-watch-se-3.jpg",
+      image: "/assets/illustrations/watch.svg",
       alt: "Apple Watch SE 3",
       author: "Gadgets Finds",
       publishedDate: "November 17, 2026",
@@ -146,7 +147,7 @@ const PersonalizedContentStream = () => {
       title: "Best Mini Gadgets Under $30 in 2026",
       excerpt: "An Anker 45W charger, a 5-in-1 hub, a 100W cable two-pack, and a Galaxy SmartTag2, each under $30.",
       category: "Buying Guide",
-      image: "/assets/images/anker-nano-45w-hero.jpg",
+      image: "/assets/illustrations/charger.svg",
       alt: "Anker Nano 45W charger",
       author: "Gadgets Finds",
       publishedDate: "November 17, 2026",
@@ -158,7 +159,7 @@ const PersonalizedContentStream = () => {
       title: "Best Amazon Deals This Week",
       excerpt: "Fire TV Stick 4K, 4K Plus, 4K Select, and Fire TV Cube. Open the guide, then read the live price on Amazon.",
       category: "Deals",
-      image: "/assets/images/fire-tv-stick-4k-card.jpg",
+      image: "/assets/illustrations/streaming.svg",
       alt: "Amazon Fire TV Stick 4K with remote",
       author: "Gadgets Finds",
       publishedDate: "November 17, 2026",
@@ -170,7 +171,7 @@ const PersonalizedContentStream = () => {
       title: "Logitech G29 Driving Force Racing Wheel and Pedals",
       excerpt: "Dual-motor force feedback, stainless steel paddle shifters, leather cover. For PS5, PS4, PC and Mac. Price changes.",
       category: "Gaming",
-      image: "https://m.media-amazon.com/images/I/71ywUl+M-JL.jpg",
+      image: "/assets/illustrations/wheel.svg",
       alt: "Logitech G29 Driving Force Racing Wheel and Pedals",
       author: "Gadgets Finds",
       publishedDate: "November 15, 2026",
@@ -182,7 +183,7 @@ const PersonalizedContentStream = () => {
       title: "Samsung 65-Inch S85H Series OLED 4K Smart TV (2026)",
       excerpt: "Vision AI, NQ4 AI Gen2, OLED HDR, 4K AI Upscaling, Premium Gaming Pack. Price and stock change.",
       category: "TVs",
-      image: "https://m.media-amazon.com/images/I/818JZQW4xWL.jpg",
+      image: "/assets/illustrations/tv.svg",
       alt: "Samsung 65-Inch S85H OLED",
       author: "Gadgets Finds",
       publishedDate: "November 7, 2026",
@@ -195,7 +196,7 @@ const PersonalizedContentStream = () => {
       title: "PlayStation 5 Pro — 2TB",
       excerpt: "Stronger GPU, PSSR, faster ray tracing, 2TB SSD, DualSense. No disc drive. Price and stock change.",
       category: "Gaming",
-      image: "https://m.media-amazon.com/images/I/51f-7a6i5PL.jpg",
+      image: "/assets/illustrations/console.svg",
       alt: "PlayStation 5 Pro",
       author: "Gadgets Finds",
       publishedDate: "November 7, 2026",
@@ -207,7 +208,7 @@ const PersonalizedContentStream = () => {
       title: "MacBook Air 13-inch M5 — 16GB, 512GB, Silver",
       excerpt: "2026 Air with M5, 13.6-inch Liquid Retina, Touch ID, and Wi-Fi 7. The price on Amazon is the one that counts.",
       category: "Laptops",
-      image: "https://m.media-amazon.com/images/I/71txEBdkjxL.jpg",
+      image: "/assets/illustrations/laptop.svg",
       alt: "MacBook Air 13-inch M5 Silver",
       author: "Gadgets Finds",
       publishedDate: "November 4, 2026",
@@ -219,7 +220,7 @@ const PersonalizedContentStream = () => {
       title: "Xbox Series X Digital 1TB Robot White",
       excerpt: "All-digital Series X with 1TB SSD, true 4K up to 120 FPS, matching white controller. Price and stock change.",
       category: "Gaming",
-      image: "https://m.media-amazon.com/images/I/51bq1shHXEL.jpg",
+      image: "/assets/illustrations/console.svg",
       alt: "Xbox Series X Digital Robot White",
       author: "Gadgets Finds",
       publishedDate: "October 31, 2026",
@@ -232,7 +233,7 @@ const PersonalizedContentStream = () => {
       title: "Apple's First Touchscreen MacBook Pro with PROLED XDR OLED Display",
       excerpt: "Tandem OLED, 2000 nits, touch, Dynamic Island, M5 Pro & Max. The biggest MacBook Pro redesign in years.",
       category: "News",
-      image: "https://images.macrumors.com/t/2bugNDX7f6zrI_wlLg7-bwMKe2U=/2500x/article-new/2026/10/Apple-MacBook-Pro-with-PROLED-XDR-Display-family-lineup-feature.jpg",
+      image: "/assets/illustrations/laptop.svg",
       alt: "Apple MacBook Pro with PROLED XDR Display",
       author: "Gadgets Finds",
       publishedDate: "October 29, 2026",
@@ -244,7 +245,7 @@ const PersonalizedContentStream = () => {
       title: "Lowest Prices for NVIDIA RTX 50-Series GPUs on Amazon Right Now",
       excerpt: "Current lowest prices for RTX 5090, 5080, 5070 Ti, 5070, and 5060 Ti as prices skyrocket. Check stock and deals.",
       category: "Deals",
-      image: "https://m.media-amazon.com/images/I/811IbTkEvnL.jpg",
+      image: "/assets/illustrations/gpu.svg",
       alt: "ASUS ROG Astral GeForce RTX 5090",
       author: "Gadgets Finds",
       publishedDate: "October 28, 2026",
@@ -255,7 +256,7 @@ const PersonalizedContentStream = () => {
       title: "iPhone Duo Cases",
         excerpt: "Clear, silicone, leather, and protective options designed for the iPhone Duo.",
         category: "Accessories",
-        image: "/assets/images/iphone_duo_cases.png",
+        image: "/assets/illustrations/foldable.svg",
         alt: "iPhone Duo Cases",
         author: "Gadgets Finds",
         publishedDate: "October 24, 2026",
@@ -267,7 +268,7 @@ const PersonalizedContentStream = () => {
       title: "These 12 deals are worth opening before October Prime Day",
       excerpt: "AirPods, MacBook, Ring, Blink and more. Prices change before you click.",
       category: "Deals",
-      image: "/assets/images/october_deals_card.png",
+      image: "/assets/illustrations/deals.svg",
       alt: "October Prime Day deals",
       author: "",
       publishedDate: "2026-10-04",
@@ -279,7 +280,7 @@ const PersonalizedContentStream = () => {
       title: "Amazon Outlet explained",
       excerpt: "Public clearance and overstock — not a secret club. How to read Outlet vs Warehouse.",
       category: "Guide",
-      image: "/assets/images/amazon_outlet.png",
+      image: "/assets/illustrations/deals.svg",
       alt: "Gadgets Finds",
       author: "",
       publishedDate: "2026-09-28",
@@ -315,7 +316,7 @@ const PersonalizedContentStream = () => {
       title: "Sony WH-2000XM6 Review: The New King of Noise Cancellation",
       excerpt: "Sony's latest flagship headphones set a new standard for active noise cancellation and audio quality.",
       category: "Review",
-      image: "/assets/images/sony_wh_1000xm6.png",
+      image: "/assets/illustrations/headphones.svg",
       alt: "Sony WH-1000XM6 wireless headphones",
       author: "",
       publishedDate: "Aug 7, 2026",
@@ -339,7 +340,7 @@ const PersonalizedContentStream = () => {
       title: "Best Amazon Deals This Week",
       excerpt: "Fire TV prices checked on November 17, 2026. Confirm the current price before you buy.",
       category: "Deals",
-      image: "/assets/images/fire-tv-stick-4k-card.jpg",
+      image: "/assets/illustrations/streaming.svg",
       alt: "Amazon Fire TV Stick 4K with remote",
       author: "Gadgets Finds",
       publishedDate: "November 17, 2026",
@@ -424,7 +425,7 @@ const PersonalizedContentStream = () => {
               <div className="relative h-48 overflow-hidden">
                 <img
                   src={item.image}
-                  alt={item.alt}
+                  alt={illustrationAlt(item.image, item.alt)}
                   className={`block w-full h-full ${item.fit === "contain" ? "object-contain" : "object-cover"}`}
                 />
               </div>
@@ -474,7 +475,7 @@ const PersonalizedContentStream = () => {
             <div className="relative h-48 overflow-hidden">
               <img
                 src={item.image}
-                alt={item.alt}
+                alt={illustrationAlt(item.image, item.alt)}
                 className={`block w-full h-full ${item.fit === "contain" ? "object-contain" : "object-cover"}`}
               />
             </div>

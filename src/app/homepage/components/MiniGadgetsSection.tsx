@@ -5,7 +5,7 @@ import AppImage from "@/components/ui/AppImage";
 const miniGadgets = [
   {
     name: "GenZ Semi-Auto Slingshot",
-    image: "https://m.media-amazon.com/images/I/91NgubSWmjL.jpg",
+    image: "/assets/illustrations/gadget.svg",
     alt: "Semi-automatic rapid fire slingshot",
     href: "/genz-semi-automatic-slingshot-article",
     badge: "Rapid Fire",
