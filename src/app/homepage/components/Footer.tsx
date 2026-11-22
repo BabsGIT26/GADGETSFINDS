@@ -19,6 +19,8 @@ const Footer = () => {
     Company: [
       { label: 'About Us', href: '/about-us' },
       { label: 'Contact', href: '/contact-us' },
+      { label: 'How We Research', href: '/how-we-research' },
+      { label: 'Affiliate Disclosure', href: '/affiliate-disclosure' },
     ],
     Resources: [
       { label: 'Robot vacuums', href: '/best-budget-robot-vacuums-under-300' },

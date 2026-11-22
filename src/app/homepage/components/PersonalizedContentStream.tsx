@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import Icon from '@/components/ui/AppIcon';
 import { illustrationAlt } from '@/lib/illustrations';
 
@@ -264,18 +265,6 @@ const PersonalizedContentStream = () => {
         tags: ["iPhone Duo", "Cases", "Accessories"],
     },
     {
-      id: 2,
-      title: "These 12 deals are worth opening before October Prime Day",
-      excerpt: "AirPods, MacBook, Ring, Blink and more. Prices change before you click.",
-      category: "Deals",
-      image: "/assets/illustrations/deals.svg",
-      alt: "October Prime Day deals",
-      author: "",
-      publishedDate: "2026-10-04",
-      readTime: "4 min read",
-      tags: ["Deals", "October"]
-    },
-    {
       id: 3,
       title: "Amazon Outlet explained",
       excerpt: "Public clearance and overstock — not a secret club. How to read Outlet vs Warehouse.",
@@ -369,7 +358,6 @@ const PersonalizedContentStream = () => {
     12: "/apple-macbook-pro-oled-proled-xdr",
     11: "/nvidia-rtx-50-series-lowest-prices",
     1: "/iphone-duo-cases",
-    2: "/october-deals",
     3: "/amazon-outlet-guide",
     5: "/smart-home-security-systems-article",
     6: "/i-phone-16-pro-vs-samsung-comparison-article",
@@ -423,11 +411,13 @@ const PersonalizedContentStream = () => {
               className="bg-card rounded-xl overflow-hidden shadow-md"
             >
               <div className="relative h-48 overflow-hidden">
-                <img
+                <Image
                   src={item.image}
                   alt={illustrationAlt(item.image, item.alt)}
-                  className={`block w-full h-full ${item.fit === "contain" ? "object-contain" : "object-cover"}`}
-                />
+                  fill
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  className={`block ${item.fit === "contain" ? "object-contain" : "object-cover"}`}
+                  />
               </div>
               <div className="p-5">
                 <span className="inline-block px-2 py-1 bg-primary/10 text-primary text-xs font-semibold rounded mb-2">
@@ -473,11 +463,13 @@ const PersonalizedContentStream = () => {
             className="bg-card rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow"
           >
             <div className="relative h-48 overflow-hidden">
-              <img
+              <Image
                 src={item.image}
                 alt={illustrationAlt(item.image, item.alt)}
-                className={`block w-full h-full ${item.fit === "contain" ? "object-contain" : "object-cover"}`}
-              />
+                fill
+                sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                className={`block ${item.fit === "contain" ? "object-contain" : "object-cover"}`}
+                />
             </div>
             <div className="p-5">
               <span className="inline-block px-2 py-1 bg-primary/10 text-primary text-xs font-semibold rounded mb-2">
