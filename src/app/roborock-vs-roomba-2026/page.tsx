@@ -109,7 +109,7 @@ export default function Page() {
                 <li><strong className="text-amber-500">Navigation:</strong> PreciSense LiDAR, plus Reactive Tech obstacle avoidance</li>
                 <li><strong className="text-amber-500">Mopping:</strong> Dual spinning mops that lift</li>
                 <li><strong className="text-amber-500">Dock:</strong> Self-empty, self-refill, 167°F mop washing, warm-air drying</li>
-                <li><strong className="text-amber-500">List price:</strong> $699.99, recently seen on sale near $400</li>
+                <li><strong className="text-amber-500">List price:</strong> $699.99; often discounted on Amazon</li>
               </ul>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 The Qrevo S Pro is the Roborock used for this 2026 comparison because it shows the brand’s current formula in one box: a high pascal number, a LiDAR tower, spinning mops, and a dock that does more than hold a dust bag. Roborock rates suction at 18,500 Pa. That number is a marketing figure, not a lab measurement of every carpet in your house, but it sits well above the older midrange robots that topped out around 2,000 to 5,000 Pa.
@@ -136,7 +136,7 @@ export default function Page() {
                 <li><strong className="text-amber-500">Navigation:</strong> PrecisionVision camera system, not LiDAR</li>
                 <li><strong className="text-amber-500">Mopping:</strong> Retracting mop pad with SmartScrub back-and-forth pressure</li>
                 <li><strong className="text-amber-500">Dock:</strong> AutoWash base empties the bin, refills water, and washes and dries the pad</li>
-                <li><strong className="text-amber-500">List price:</strong> $1,399, recently seen from the high $700s to about $1,000</li>
+                <li><strong className="text-amber-500">List price:</strong> $1,399; sale prices vary on Amazon</li>
               </ul>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 The Combo 10 Max is the Roomba used here because it is iRobot’s current answer to a Roborock dock combo, not a leftover 600-series robot. The robot vacuums and mops. The pad retracts so the robot can cross carpet without dragging a wet cloth over it. SmartScrub adds a back-and-forth pass with downward pressure on hard floors. The AutoWash dock empties the bin, refills the robot, and washes and dries the pad, which is the maintenance story Roomba is selling in 2026.
@@ -145,7 +145,7 @@ export default function Page() {
                 Navigation is still PrecisionVision, a camera system. It can recognize shoes, cords, and pet waste, which is the feature Roomba owners usually buy it for. It does not build the map with a spinning LiDAR turret, and it still depends more on usable light than a Roborock does. iRobot describes the suction as much stronger than earlier Roomba combos. The company does not publish a pascal rating on this listing, so this guide will not invent one.
               </p>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                The tradeoff is price and consistency. The list price is $1,399, and recent selling prices have still landed well above a discounted Qrevo S Pro. Owner reviews on the Amazon listing have been mixed, with the score sitting near 3 stars, which is a weaker signal than the Qrevo S Pro’s recent ratings. This link is the original new X085020 bundle. Skip any listing whose title says renewed.
+                The tradeoff is price and consistency. The list price is $1,399, and even on sale it has usually cost more than a discounted Qrevo S Pro. Owner reviews on the Amazon listing have been mixed, with the score sitting near 3 stars, which is a weaker signal than the Qrevo S Pro’s recent ratings. This link is the original new X085020 bundle. Skip any listing whose title says renewed.
               </p>
               <p className="mt-6 text-sm font-medium">Verdict: Best if you want the Roomba app and camera avoidance. Best suited for: Buyers who already prefer iRobot and want a dock that washes the pad.</p>
               <ViewOnAmazon href={AMAZON.roomba} name="Roomba Combo 10 Max" />
@@ -230,7 +230,7 @@ export default function Page() {
 
           <h2 className="text-2xl font-bold mt-10 mb-4">Value for Money</h2>
           <p className="text-muted-foreground mb-4 leading-relaxed">
-            List price on the Qrevo S Pro is $699.99. In November 2026 it has been selling near $400. List price on the Combo 10 Max is $1,399, and recent prices have run from the high $700s to around $1,000 depending on the offer. At those gaps, Roborock is offering LiDAR, a published 18,500 Pa suction rating, two lifting mops, and a hot-water dock for less money than the Roomba’s camera robot and AutoWash base.
+            List price on the Qrevo S Pro is $699.99, and the Combo 10 Max lists at $1,399 (list prices checked Nov 22, 2026). Both are discounted often, so see Amazon for current prices. In our checks the Roborock has usually been the cheaper of the two on sale. At that gap, Roborock is offering LiDAR, a published 18,500 Pa suction rating, two lifting mops, and a hot-water dock for less money than the Roomba’s camera robot and AutoWash base.
           </p>
           <p className="text-muted-foreground mb-8 leading-relaxed">
             Roomba can still be the rational buy if you already own bags and filters, you want the camera’s obstacle labels, and a sale closes more of the price gap than it has lately. It is not the rational buy at or near list. Check the live price on both cards before you decide. A coupon on one listing can move the winner for a week without changing the hardware.
@@ -271,7 +271,7 @@ export default function Page() {
             items={[
               { q: "Is Roborock or Roomba better in 2026?", a: "Roborock is the better choice for most people. The Qrevo S Pro offers LiDAR, higher published suction, and a dock that washes the mops, usually for less than the Roomba Combo 10 Max." },
               { q: "When is a Roomba the better buy?", a: "When you want the familiar iRobot app, camera avoidance for cords and pet waste, and a sale that closes the price gap." },
-              { q: "What if my budget is under $300?", a: "These two dock robots are above that line. The separate budget guide covers the Lefant M210 Pro, eufy RoboVac G30, and Roborock Q5." },
+              { q: "What if my budget is under $300?", a: "These two dock robots are above that line. The separate budget guide covers the Lefant M210 Pro, eufy RoboVac G30, and Roborock Q7 L5." },
             ]}
           />
           <RelatedGuides current="/roborock-vs-roomba-2026" />

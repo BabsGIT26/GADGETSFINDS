@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ArticleJsonLd from "@/components/common/ArticleJsonLd";
 import AppImage from "@/components/ui/AppImage";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
@@ -9,9 +10,9 @@ const AMAZON_ROBOROCK =
 
 export const metadata: Metadata = {
   title:
-    "Roborock Saros Z70 — $999.98 Limited Deal | Gadgets Finds",
+    "Roborock Saros Z70: Arm Robot Vacuum Guide | Gadgets Finds",
   description:
-    "Roborock Saros Z70 Black: OmniGrip arm, 22,000Pa, 3.14-inch slim body, auto mop wash and dry. Price seen at $999.98 (−50%). Amazon price changes.",
+    "Roborock Saros Z70 Black: OmniGrip arm, 22,000Pa, 3.14-inch slim body, auto mop wash and dry. Who it fits, what to check, and when the price makes sense.",
   metadataBase: new URL("https://www.gadgets-finds.com"),
   alternates: {
     canonical: "https://www.gadgets-finds.com/roborock-saros-z70-article",
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Roborock Saros Z70 — Gadgets Finds",
     description:
-      "Limited-time Amazon listing for the Saros Z70 Black. Price seen at $999.98. Amazon price and stock change.",
+      "The Saros Z70 Black: OmniGrip arm, mop dock, and what to check before you buy.",
     url: "https://www.gadgets-finds.com/roborock-saros-z70-article",
     siteName: "Gadgets Finds",
     type: "article",
@@ -37,7 +38,7 @@ export const metadata: Metadata = {
     site: "@Gadgets_finds",
     title: "Roborock Saros Z70 — Gadgets Finds",
     description:
-      "Saros Z70 Black. Price seen at $999.98 (−50%). Amazon price changes.",
+      "Saros Z70 Black: OmniGrip arm, mop dock, and what to check before you buy.",
     images: ["https://www.gadgets-finds.com/og/vacuum"],
   },
 };
@@ -46,6 +47,7 @@ export default function Page() {
   return (
     <>
       <Header />
+      <ArticleJsonLd path="/roborock-saros-z70-article" headline={"Roborock Saros Z70: Arm Robot Vacuum Guide"} description={"Roborock Saros Z70 Black: OmniGrip arm, 22,000Pa, 3.14-inch slim body, auto mop wash and dry. Who it fits, what to check, and when the price makes sense."} products={["Roborock Saros Z70"]} />
       <article className="min-h-screen bg-background pt-28 md:pt-16">
         <div className="w-full bg-muted flex items-center justify-center py-10 pb-2">
           <AppImage
@@ -88,9 +90,8 @@ export default function Page() {
           
           <div className="bg-red-100 border-l-4 border-red-500 p-4 mb-8">
             <p className="text-red-700 font-bold">
-              Limited-time Amazon deal: Roborock Saros Z70 (Black) seen at
-              $999.98 (−50% vs $1,999.99 list). Price and stock change on
-              Amazon.
+              Roborock Saros Z70 (Black): list price $1,999.99. Amazon often
+              discounts it. See Amazon for the current price and stock.
             </p>
           </div>
 
@@ -135,19 +136,19 @@ export default function Page() {
             </li>
           </ul>
 
-          <h2 className="text-2xl font-bold mt-10 mb-3">The $999.98 deal</h2>
+          <h2 className="text-2xl font-bold mt-10 mb-3">When the price makes sense</h2>
           <p className="text-muted-foreground mb-4">
-            List on that Amazon page is $1,999.99. The limited-time price we
-            last checked was $999.98 (−50%). That is the only reason to look
-            now. At full list, wait or buy a Saros / S8-class machine without
-            the arm.
+            List on that Amazon page is $1,999.99 (checked Nov 22, 2026). Amazon
+            has run deep discounts on it, and a big discount is the main reason
+            to look. At full list, wait or buy a Saros / S8-class machine
+            without the arm.
           </p>
 
           <h2 className="text-2xl font-bold mt-10 mb-3">Buy if / skip if</h2>
           <ul className="list-disc pl-5 text-muted-foreground space-y-2 mb-4">
             <li>
-              <strong>Buy if</strong> the live Amazon price is still near
-              $999, you want a self-washing mop dock, and you accept the arm
+              <strong>Buy if</strong> the live Amazon price is deeply
+              discounted from list, you want a self-washing mop dock, and you accept the arm
               as extra, not guaranteed.
             </li>
             <li>
@@ -168,9 +169,9 @@ export default function Page() {
 
           <h2 className="text-2xl font-bold mt-10 mb-3">Verdict</h2>
           <p className="text-muted-foreground mb-8">
-            Treat this as a half-price flagship mop-vac, not a miracle
-            butler. If B0DSLBZV3F is still near $999.98, it is a serious
-            discount. If the price snapped back to $1,999, walk away.
+            Treat this as a flagship mop-vac, not a miracle
+            butler. If B0DSLBZV3F is around half of list, it is a serious
+            discount. If the price is back near list, walk away.
           </p>
 
           <AmazonDealBox

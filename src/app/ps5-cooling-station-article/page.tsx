@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ArticleJsonLd from "@/components/common/ArticleJsonLd";
 import Link from "next/link";
 import AppImage from "@/components/ui/AppImage";
 import Header from "@/components/common/Header";
@@ -42,6 +43,7 @@ export default function Page() {
   return (
     <>
       <Header />
+      <ArticleJsonLd path="/ps5-cooling-station-article" headline={"PS5 Cooling Station with Controller Charger"} description={"Vertical PS5 stand with a 3-speed fan, two DualSense docks, and three USB ports. Fits Slim, original, and Pro."} products={["PS5 cooling station"]} />
       <article className="min-h-screen bg-background pt-14 md:pt-16">
                 <div className="container mx-auto px-4 pt-4 pb-10 max-w-3xl">
           <p className="text-xs md:text-sm text-foreground mb-6">
