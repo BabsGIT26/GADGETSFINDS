@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ArticleJsonLd from "@/components/common/ArticleJsonLd";
 import AppImage from "@/components/ui/AppImage";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
@@ -43,6 +44,7 @@ export default function Page() {
   return (
     <>
       <Header />
+      <ArticleJsonLd path="/macbook-pro-m5-max-article" headline={"MacBook Pro 16 M5 Max 36GB 2TB"} description={"Apple 2026 16.2-inch MacBook Pro with M5 Max, 18-core CPU, 32-core GPU, 36GB memory, 2TB SSD, Wi-Fi 7. Price changes on Amazon."} products={["Apple MacBook Pro 16-inch M5 Max (36GB, 2TB)"]} />
       <article className="min-h-screen bg-background pt-28 md:pt-16">
         <div className="container mx-auto px-4 pt-2 pb-10 max-w-3xl">
           <p className="text-xs md:text-sm text-foreground mb-6">
@@ -118,7 +120,7 @@ export default function Page() {
           <h2 className="text-2xl font-bold mt-10 mb-3">Before you click</h2>
           <ul className="list-disc pl-5 text-muted-foreground space-y-2 mb-4">
             <li>Confirm Silver vs Space Black, and 36GB / 2TB, on the live listing.</li>
-            <li>Confirm the live price. $3,499 was recent, not a promise.</li>
+            <li>Confirm the current price on Amazon. It moves often.</li>
             <li>Memory and storage are not user-upgradeable.</li>
             <li>This is a 16-inch. The 14-inch M5 Max is a different machine.</li>
           </ul>
@@ -126,7 +128,7 @@ export default function Page() {
           <h2 className="text-2xl font-bold mt-10 mb-3">Verdict</h2>
           <p className="text-muted-foreground mb-8">
             The right MacBook Pro if you want M5 Max power with 2TB already on board. Skip it if
-            you only browse and write. Open the Amazon listing before you treat $3,499 as live.
+            you only browse and write. Open the Amazon listing for the current price.
           </p>
 
           <div className="flex justify-center mb-8">

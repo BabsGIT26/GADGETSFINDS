@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ArticleJsonLd from "@/components/common/ArticleJsonLd";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
@@ -7,7 +8,7 @@ import Link from "next/link";
 const AMAZON = "https://www.amazon.com/Extender-Stick-360%C2%B0-Rotating-Adjustable-Protection/dp/B0H3P79YX2?tag=gadgetsfindswebsmediavid-20";
 
 export const metadata: Metadata = {
-  title: "Outlet Extender Stick for Behind Couch Review — Gadgets Finds",
+  title: "Outlet Extender Stick for Behind a Couch | Gadgets Finds",
   description:
     "Extendable outlet stick that brings hard-to-reach outlets behind couches, desks, and beds within easy reach.",
   metadataBase: new URL("https://www.gadgets-finds.com"),
@@ -41,6 +42,7 @@ export default function Page() {
   return (
     <>
       <Header />
+      <ArticleJsonLd path="/outlet-extender-stick" headline={"Outlet Extender Stick for Behind a Couch"} description={"Extendable outlet stick that brings hard-to-reach outlets behind couches, desks, and beds within easy reach."} products={["Outlet extender stick"]} />
       <article className="min-h-screen bg-background pt-14 md:pt-16">
         <div className="container mx-auto px-4 py-10 max-w-3xl">
           <p className="text-xs text-muted-foreground mb-2 leading-relaxed">

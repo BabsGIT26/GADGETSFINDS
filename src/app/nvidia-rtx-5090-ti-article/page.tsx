@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ArticleJsonLd from "@/components/common/ArticleJsonLd";
 import Link from "next/link";
 import AppImage from "@/components/ui/AppImage";
 import Icon from "@/components/ui/AppIcon";
@@ -36,6 +37,7 @@ export default function NVIDIARTXArticle() {
   return (
     <>
       <Header />
+      <ArticleJsonLd path="/nvidia-rtx-5090-ti-article" headline={"NVIDIA RTX 5090 Review"} description={"NVIDIA RTX 5090 delivers flagship GPU performance for gaming, content creation, and AI workloads with the new Blackwell architecture."} products={["NVIDIA GeForce RTX 5090"]} />
       <div className="min-h-screen bg-background pt-14 md:pt-16">
         <div className="relative h-[42vh] min-h-[240px] max-h-[420px] overflow-hidden">
           <AppImage
