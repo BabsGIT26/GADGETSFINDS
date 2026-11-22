@@ -17,13 +17,10 @@ interface Specification {
 }
 
 const ComparisonTable = ({ products, onRemove, onClear }: ComparisonTableProps) => {
-  const [activeTab, setActiveTab] = useState<'overview' | 'specs' | 'reviews'>('overview');
+  const [activeTab, setActiveTab] = useState<'overview' | 'specs'>('overview');
 
   const specifications: Specification[] = [
     { label: 'Price', key: 'price' },
-    { label: 'Expert Score', key: 'expertScore' },
-    { label: 'User Rating', key: 'rating' },
-    { label: 'Review Count', key: 'reviewCount' },
     { label: 'Availability', key: 'inStock' },
   ];
 
@@ -72,7 +69,7 @@ const ComparisonTable = ({ products, onRemove, onClear }: ComparisonTableProps) 
 
       <div className="border-b border-border">
         <div className="flex space-x-1 p-2">
-          {(['overview', 'specs', 'reviews'] as const).map((tab) => (
+          {(['overview', 'specs'] as const).map((tab) => (
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
@@ -233,15 +230,6 @@ const ComparisonTable = ({ products, onRemove, onClear }: ComparisonTableProps) 
                 <td colSpan={products.length + 1} className="p-8 text-center">
                   <p className="text-muted-foreground">
                     Detailed specifications coming soon
-                  </p>
-                </td>
-              </tr>
-            )}
-            {activeTab === 'reviews' && (
-              <tr>
-                <td colSpan={products.length + 1} className="p-8 text-center">
-                  <p className="text-muted-foreground">
-                    User reviews and expert opinions coming soon
                   </p>
                 </td>
               </tr>

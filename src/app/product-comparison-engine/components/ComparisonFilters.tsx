@@ -79,7 +79,6 @@ const ComparisonFilters = ({ onFilterChange }: ComparisonFiltersProps) => {
     { id: 'relevance', label: 'Most Relevant', value: 'relevance' },
     { id: 'price-low', label: 'Price: Low to High', value: 'price-low' },
     { id: 'price-high', label: 'Price: High to Low', value: 'price-high' },
-    { id: 'rating', label: 'Highest Rated', value: 'rating' },
     { id: 'newest', label: 'Newest First', value: 'newest' },
   ];
 

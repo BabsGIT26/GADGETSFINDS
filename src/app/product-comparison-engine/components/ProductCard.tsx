@@ -47,16 +47,6 @@ const ProductCard = ({ product, onCompare, isComparing }: ProductCardProps) => {
           <p className="text-xs text-muted-foreground font-medium uppercase tracking-wide">{product.brand}</p>
           <h3 className="font-display font-semibold text-base text-foreground mt-1 line-clamp-2">{product.name}</h3>
         </div>
-        <div className="flex items-center space-x-2">
-          <div className="flex items-center space-x-1">
-            {[...Array(5)].map((_, index) => <Icon key={index} name="StarIcon" size={14} variant={index < Math.floor(product.rating) ? 'solid' : 'outline'} className={index < Math.floor(product.rating) ? 'text-brand-cta' : 'text-muted-foreground'} />)}
-          </div>
-          <span className="text-sm text-muted-foreground">{product.rating} ({product.reviewCount})</span>
-        </div>
-        <div className="flex items-center space-x-2">
-          <div className="flex-1 bg-muted rounded-full h-2 overflow-hidden"><div className="bg-brand-secondary h-full rounded-full" style={{ width: `${product.expertScore}%` }} /></div>
-          <span className="text-xs font-semibold text-brand-secondary">{product.expertScore}</span>
-        </div>
         <div className="flex flex-wrap gap-1">{product.features.slice(0, 3).map((feature, index) => <span key={index} className="px-2 py-1 bg-muted text-muted-foreground text-xs rounded">{feature}</span>)}</div>
         <div className="pt-3 border-t border-border">
           <div className="flex items-baseline space-x-2 mb-3"><span className="text-2xl font-bold text-foreground">${product.price.toLocaleString()}</span>{product.originalPrice && <span className="text-sm text-muted-foreground line-through">${product.originalPrice.toLocaleString()}</span>}</div>

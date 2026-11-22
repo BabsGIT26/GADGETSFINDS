@@ -6,14 +6,14 @@ import Footer from '@/app/homepage/components/Footer';
 export const metadata: Metadata = {
   robots: { index: false, follow: true },
   title: 'Compare Gadgets — Compare Tech Products — Gadgets Finds',
-  description: 'Compare tech products side-by-side with intelligent filtering, expert scores, user ratings, and comprehensive specifications to make informed purchasing decisions.',
+  description: 'Compare tech products side-by-side by category, brand, and key features before you open the Amazon listing.',
   metadataBase: new URL('https://www.gadgets-finds.com'),
   alternates: {
     canonical: 'https://www.gadgets-finds.com/product-comparison-engine'
   },
   openGraph: {
     title: 'Compare Gadgets',
-    description: 'Compare tech products side-by-side with expert scores and user ratings.',
+    description: 'Compare tech products side-by-side by category, brand, and key features.',
     url: 'https://www.gadgets-finds.com/product-comparison-engine',
     type: 'website',
     images: [
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     site: '@Gadgets_finds',
     creator: '@Gadgets_finds',
     title: 'Compare Gadgets',
-    description: 'Compare tech products side-by-side with expert scores and user ratings.',
+    description: 'Compare tech products side-by-side by category, brand, and key features.',
     images: ['https://www.gadgets-finds.com/assets/images/c25f7797a5e24e21877a902e49174fd6-1768753589028.png']
   }
 };
