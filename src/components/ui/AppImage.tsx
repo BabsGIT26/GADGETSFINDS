@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
+import { illustrationAlt } from '@/lib/illustrations';
 
 interface AppImageProps {
     src: string;
@@ -50,6 +51,9 @@ function AppImage({
     // More reliable external URL detection
     const isExternal = imageSrc.startsWith('http://') || imageSrc.startsWith('https://');
     const isLocal = imageSrc.startsWith('/') || imageSrc.startsWith('./') || imageSrc.startsWith('data:');
+
+    // Illustrations stand in for product photos; say so in the alt text.
+    alt = illustrationAlt(imageSrc, alt);
 
     const handleError = () => {
         if (!hasError && imageSrc !== fallbackSrc) {
