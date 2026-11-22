@@ -4,8 +4,10 @@ import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 import Link from "next/link";
 
+import { illustrationAlt } from "@/lib/illustrations";
 const AMAZON = "https://www.amazon.com/s?k=electric+air+duster+compressed&tag=gadgetsfindswebsmediavid-20";
-const IMAGE = "https://m.media-amazon.com/images/I/81SEN6oNw1L._AC_SX425_.jpg";
+const IMAGE = "/assets/illustrations/gadget.svg";
+const SHARE_IMAGE = "https://www.gadgets-finds.com/og/gadget";
 
 export const metadata: Metadata = {
   robots: { index: false, follow: true },
@@ -19,7 +21,7 @@ export const metadata: Metadata = {
     url: "https://www.gadgets-finds.com/mini-electric-air-duster",
     siteName: "Gadgets Finds",
     type: "article",
-    images: [{ url: IMAGE, width: 1200, height: 630, alt: "Mini Electric Air Duster" }],
+    images: [{ url: SHARE_IMAGE, width: 1200, height: 630, alt: "Mini Electric Air Duster" }],
   },
 };
 
@@ -46,7 +48,7 @@ export default function Page() {
           </div>
 
           <div className="mb-10 flex justify-center">
-            <img src={IMAGE} alt="Mini Electric Air Duster" className="w-full max-w-[280px] h-auto rounded-xl" />
+            <img src={IMAGE} alt={illustrationAlt(IMAGE, "Mini Electric Air Duster")} className="w-full max-w-[280px] h-auto rounded-xl" />
           </div>
 
           <h2 className="text-2xl font-bold mt-10 mb-3">What it is</h2>

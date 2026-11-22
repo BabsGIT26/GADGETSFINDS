@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   type: "article",
   images: [
     {
-      url: "https://www.gadgets-finds.com/assets/images/october_deals_card.png",
+      url: "https://www.gadgets-finds.com/og/deals",
       width: 1200,
       height: 630,
     },
@@ -55,7 +55,7 @@ twitter: {
   card: "summary_large_image",
   title: "Exclusive 48-Hour Premium Tech Sales — Up to 65% OFF",
   description: "48-hour price drops on October 6–7. 30 days free for eligible new members.",
-  images: ["https://www.gadgets-finds.com/assets/images/october_deals_card.png"],
+  images: ["https://www.gadgets-finds.com/og/deals"],
 },
 };
 
@@ -72,7 +72,7 @@ export default function MemberTrialPage() {
 </p>
 
          <AppImage
-  src="/assets/images/PRIME_OCTOBER_2026.png"
+  src="/assets/illustrations/deals.svg"
   alt="Amazon Prime before Prime Big Deal Days, October 6 and 7"
   className="w-full max-h-40 md:max-h-80 object-contain mb-4 md:mb-6"
 />
