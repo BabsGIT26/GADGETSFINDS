@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
+import ArticleJsonLd from "@/components/common/ArticleJsonLd";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 
 const AMAZON_IPHONE_DUO = "https://www.amazon.com/s?k=iPhone+Duo&tag=gadgetsfindswebsite-20";
 const AMAZON_ZFOLD8 = "https://www.amazon.com/dp/B0H126B3KV?tag=gadgetsfindswebsite-20";
-const AMAZON_ZFOLD8_ULTRA = "https://www.amazon.com/s?k=Galaxy+Z+Fold+8+Ultra&tag=gadgetsfindswebsite-20";
+const AMAZON_ZFOLD8_ULTRA = "https://www.amazon.com/dp/B0H12KX1X4?tag=gadgetsfindswebsite-20";
 const AMAZON_PIXEL_FOLD = "https://www.amazon.com/dp/B0H6R2NGMZ?tag=gadgetsfindswebsite-20";
 
 export const metadata: Metadata = {
-  title: "Best Foldable Phones 2026: iPhone Duo vs Galaxy Z Fold 8 vs Pixel 11 Pro Fold | Gadgets Finds",
+  title: "Best Foldable Phones of 2026 Compared | Gadgets Finds",
   description:
     "Premium comparison of the top foldable phones in 2026. iPhone Duo, Samsung Galaxy Z Fold 8, Galaxy Z Fold 8 Ultra, and Google Pixel 11 Pro Fold. Specs, reviews, and Amazon links.",
   metadataBase: new URL("https://www.gadgets-finds.com"),
@@ -43,6 +44,7 @@ export default function Page() {
   return (
     <>
       <Header />
+      <ArticleJsonLd path="/best-foldable-phones-2026" headline={"Best Foldable Phones of 2026 Compared"} description={"Premium comparison of the top foldable phones in 2026. iPhone Duo, Samsung Galaxy Z Fold 8, Galaxy Z Fold 8 Ultra, and Google Pixel 11 Pro Fold. Specs, reviews, and Amazon links."} products={["Apple iPhone Duo", "Samsung Galaxy Z Fold 8", "Samsung Galaxy Z Fold 8 Ultra", "Google Pixel 11 Pro Fold"]} />
       <article className="min-h-screen bg-background pt-14 md:pt-16">
         <div className="container mx-auto px-4 py-10 max-w-4xl">
           <p className="text-xs text-muted-foreground mb-6 leading-relaxed">
@@ -104,6 +106,7 @@ export default function Page() {
               </tbody>
             </table>
           </div>
+          <p className="text-sm text-muted-foreground mt-2 mb-6">Starting prices are launch list prices from each maker. Amazon and carrier prices change often, so check the listing for the current price.</p>
 
           {/* iPhone Duo */}
           <section className="mb-16">

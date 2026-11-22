@@ -9,12 +9,12 @@ import { illustrationAlt } from "@/lib/illustrations";
 export const metadata: Metadata = {
   title: "Best Cheap Tablets Under $150 in 2026 | Gadgets Finds",
   description:
-    "New tablets that can actually land under $150 in 2026: Fire HD 10, Galaxy Tab A9+, Fire HD 10 Kids, Fire HD 8, and Lenovo Tab One. Exact listings, not renewed units.",
+    "New tablets that can actually land under $150 in 2026: Fire HD 10, Galaxy Tab A9+, Amazon Kids Tablet 8, Fire HD 8, and Lenovo Tab One. Exact listings, not renewed units.",
   metadataBase: new URL("https://www.gadgets-finds.com"),
   alternates: { canonical: "https://www.gadgets-finds.com/best-cheap-tablets-under-150" },
   openGraph: {
     title: 'Best Cheap Tablets Under $150 in 2026',
-    description: 'Fire HD 10, Galaxy Tab A9+, Fire HD 10 Kids, Fire HD 8, and Lenovo Tab One.',
+    description: 'Fire HD 10, Galaxy Tab A9+, Amazon Kids Tablet 8, Fire HD 8, and Lenovo Tab One.',
     url: 'https://www.gadgets-finds.com/best-cheap-tablets-under-150',
     siteName: "Gadgets Finds",
     type: "article",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     site: "@Gadgets_finds",
     creator: "@Gadgets_finds",
     title: 'Best Cheap Tablets Under $150 in 2026',
-    description: 'Fire HD 10, Galaxy Tab A9+, Fire HD 10 Kids, Fire HD 8, and Lenovo Tab One.',
+    description: 'Fire HD 10, Galaxy Tab A9+, Amazon Kids Tablet 8, Fire HD 8, and Lenovo Tab One.',
     images: ['https://www.gadgets-finds.com/og/tablet'],
   },
 };
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 const AMAZON = {
   hd10: "https://www.amazon.com/dp/B0BHZT5S12?tag=gadgetsfindswebsite-20",
   a9: "https://www.amazon.com/dp/B0CLF3VPMV?tag=gadgetsfindswebsite-20",
-  kids: "https://www.amazon.com/dp/B0BL5SZ3VV?tag=gadgetsfindswebsite-20",
+  kids: "https://www.amazon.com/dp/B0FLB1NJPY?tag=gadgetsfindswebsite-20",
   hd8: "https://www.amazon.com/dp/B0CVDN4QS6?tag=gadgetsfindswebsite-20",
   lenovo: "https://www.amazon.com/dp/B0F1NHSFMF?tag=gadgetsfindswebsite-20",
 } as const;
@@ -93,7 +93,7 @@ export default function Page() {
           <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">Buying Guide</p>
           <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">Best Cheap Tablets Under $150 in 2026</h1>
           <p className="text-muted-foreground mb-2 text-sm">Last updated: November 2026</p>
-          <ProductListJsonLd name="Best cheap tablets under $150" url="/best-cheap-tablets-under-150" products={["Amazon Fire HD 10", "Samsung Galaxy Tab A9+", "Amazon Fire HD 10 Kids", "Amazon Fire HD 8", "Lenovo Tab One"]} />
+          <ProductListJsonLd name="Best cheap tablets under $150" url="/best-cheap-tablets-under-150" products={["Amazon Fire HD 10", "Samsung Galaxy Tab A9+", "Amazon Kids Tablet 8", "Amazon Fire HD 8", "Lenovo Tab One"]} />
           <p className="text-muted-foreground mb-6 text-lg leading-relaxed">
             A tablet under $150 in 2026 is a streaming, reading, and browsing machine. It is not a laptop replacement, and it is not going to edit video or keep a dozen heavy apps happy at once. The useful ones in this range have a screen you can watch for an hour without squinting, a battery that lasts a travel day, and storage you can expand when 32 GB fills up.
           </p>
@@ -196,43 +196,43 @@ export default function Page() {
             </div>
           </div>
 
-          <h2 className="text-2xl md:text-3xl font-bold mt-16 mb-4">3. Amazon Fire HD 10 Kids</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mt-16 mb-4">3. Amazon Kids Tablet 8</h2>
           <div className="mb-8 bg-card border-2 border-amber-400/60 rounded-2xl overflow-hidden shadow-sm">
-            <ProductPhoto src={IMAGES.kids} alt="Amazon Fire HD 10 Kids tablet in a blue kid-proof case" />
+            <ProductPhoto src={IMAGES.kids} alt="Amazon Kids Tablet 8 in a green soft bumper case" />
             <div className="p-6 md:p-8">
               <h3 className="text-2xl font-bold mb-4">
-                <a href={amazonHref(AMAZON.kids)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">Amazon Fire HD 10 Kids</a>
+                <a href={amazonHref(AMAZON.kids)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">Amazon Kids Tablet 8</a>
               </h3>
               <ul className="text-sm text-muted-foreground space-y-1 mb-6">
-                <li><strong className="text-amber-500">Listing:</strong> 2023 Kids model, ages 3–7, 32 GB, blue, sold new</li>
-                <li><strong className="text-amber-500">In the box:</strong> Tablet, kid-proof case, USB-C cable, 9 W adapter</li>
-                <li><strong className="text-amber-500">Included service:</strong> 1 year of Amazon Kids+, then a monthly renewal</li>
-                <li><strong className="text-amber-500">Guarantee:</strong> 2-year worry-free replacement if it breaks</li>
+                <li><strong className="text-amber-500">Listing:</strong> Newest model, ages 3–5, 8.7-inch screen, 4 GB RAM, 64 GB, Cool Green bumper, sold new</li>
+                <li><strong className="text-amber-500">In the box:</strong> Tablet, soft bumper case with kickstand, charging cable, headphone adapter</li>
+                <li><strong className="text-amber-500">Included service:</strong> 1 year of Amazon Kids+, then it auto-renews</li>
+                <li><strong className="text-amber-500">Software:</strong> Android with the Google Play Store, managed by the parent</li>
               </ul>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                The Fire HD 10 Kids is the same 10.1-inch 2023 tablet, wrapped for a child. Amazon aims this blue bundle at ages 3 to 7. The case is the product: a thick bumper with a built-in stand, so a drop off a couch is the expected use, not an accident you have to argue about. Amazon includes a 2-year worry-free guarantee. If the tablet breaks in that window, they replace it. That promise is the reason to pay more than a bare Fire HD 10.
+                The Amazon Kids Tablet 8 replaces the Fire HD 10 Kids in this guide. The Fire HD 10 Kids is no longer sold new on Amazon, and this is Amazon’s current kids tablet. It is smaller, with an 8.7-inch screen, and it is aimed at ages 3 to 5. The soft bumper case has a built-in kickstand, so it survives the couch and the car seat.
               </p>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                The bundle also includes one year of Amazon Kids+. That is the ad-free catalog of books, games, and videos, with a parent dashboard for time limits and content. Amazon’s listing says the Kids+ subscription renews after the included year, and that you can cancel from the parent dashboard. Read that renewal price on Amazon before you keep it. The tablet itself does not show the lock-screen ads used on the cheap adult Fire HD 10.
+                The big change is software. The old Fire Kids tablets ran Fire OS and the Amazon Appstore. This one runs Android with Google services, so a parent can approve apps from the Google Play Store on top of the Kids+ catalog. Both you and your child need Google accounts for that, and apps from older Fire tablets do not carry over.
               </p>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                Hardware matches the adult 32 GB model closely enough that you should not buy the Kids edition for speed. You buy it for the case, the guarantee, and the parent controls. Storage is still 32 GB plus microSD up to 1 TB. Amazon still quotes about 13 hours of battery. The Kids bundle only belongs in this guide when the live Amazon price is inside the budget. If it is not, buy the regular Fire HD 10 and a separate case.
+                The bundle includes one year of Amazon Kids+, the ad-free catalog of books, games, and videos picked for ages 3 to 5. Amazon’s listing says it auto-renews after the first year, so read the renewal price on Amazon and set a reminder if you plan to cancel. Amazon quotes up to 14 hours of video playback, and 64 GB leaves room for downloads before a trip.
               </p>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                Older kids who want Roblox accounts, a real browser, and the Play Store will outgrow Fire OS. This card is for younger children. The link is the blue standalone Kids tablet, not a Disney-themed bundle and not a used unit.
+                Early reviews are mixed. When we checked on Nov 22, 2026, the listing had 3.4 out of 5 stars from only 25 ratings, so read the recent reviews before you buy. Older kids should look at the ages 6+ version or a regular tablet instead.
               </p>
               <div className="grid md:grid-cols-2 gap-6 mt-6">
                 <div>
                   <p className="font-semibold text-green-600 mb-2">Strengths</p>
-                  <p className="text-sm text-muted-foreground">Kid-proof case, two-year replacement, parental controls, and a year of Kids+ included. No lock-screen ads.</p>
+                  <p className="text-sm text-muted-foreground">Kid-proof bumper with a stand, a year of Kids+ included, Google Play with parent approval, and 64 GB of storage.</p>
                 </div>
                 <div>
                   <p className="font-semibold text-amber-600 mb-2">Limitations</p>
-                  <p className="text-sm text-muted-foreground">Kids+ renews after the first year. Same Fire OS limits as the adult tablet. Confirm the live price on Amazon.</p>
+                  <p className="text-sm text-muted-foreground">Smaller 8.7-inch screen, made for ages 3 to 5, few ratings so far, and Kids+ renews after the first year. Confirm the live price on Amazon.</p>
                 </div>
               </div>
-              <p className="mt-6 text-sm font-medium">Verdict: The kids pick when the sale price is under $150. Skip it at full list.</p>
-              <ViewOnAmazon href={AMAZON.kids} name="Amazon Fire HD 10 Kids" />
+              <p className="mt-6 text-sm font-medium">Verdict: The kids pick when the live price is inside this guide. Skip it for kids older than 5.</p>
+              <ViewOnAmazon href={AMAZON.kids} name="Amazon Kids Tablet 8" />
             </div>
           </div>
 
@@ -326,7 +326,7 @@ export default function Page() {
               <tbody>
                 <tr className="border-b"><td className="p-3">Fire HD 10</td><td className="p-3">Fire OS</td><td className="p-3">10.1 in, 1920x1200</td><td className="p-3">3 GB / 32 GB</td><td className="p-3">Usually</td></tr>
                 <tr className="border-b"><td className="p-3">Galaxy Tab A9+</td><td className="p-3">Android</td><td className="p-3">11 in, 90 Hz</td><td className="p-3">4 GB / 64 GB</td><td className="p-3">On sale</td></tr>
-                <tr className="border-b"><td className="p-3">Fire HD 10 Kids</td><td className="p-3">Fire OS</td><td className="p-3">10.1 in plus case</td><td className="p-3">3 GB / 32 GB</td><td className="p-3">On sale</td></tr>
+                <tr className="border-b"><td className="p-3">Kids Tablet 8</td><td className="p-3">Android, Google Play</td><td className="p-3">8.7 in plus case</td><td className="p-3">4 GB / 64 GB</td><td className="p-3">Check the live price</td></tr>
                 <tr className="border-b"><td className="p-3">Fire HD 8 (2024)</td><td className="p-3">Fire OS</td><td className="p-3">8 in, 1280x800</td><td className="p-3">3 GB / 32 GB</td><td className="p-3">Yes</td></tr>
                 <tr><td className="p-3">Lenovo Tab One</td><td className="p-3">Android</td><td className="p-3">8.7 in, 1340x800</td><td className="p-3">4 GB / 64 GB</td><td className="p-3">When under $150</td></tr>
               </tbody>
@@ -345,7 +345,7 @@ export default function Page() {
           <ul className="list-disc pl-5 text-muted-foreground space-y-2 mb-8">
             <li>Prime Video and Kindle, one household screen: Fire HD 10.</li>
             <li>You need Gmail, Chrome, and the Play Store, and the A9+ is at or under $150: Galaxy Tab A9+.</li>
-            <li>A child ages 3 to 7, and the live price of the Kids bundle is inside this guide: Fire HD 10 Kids. If it is not, buy the adult HD 10 instead.</li>
+            <li>A child ages 3 to 5, and the live price of the Kids bundle is inside this guide: Amazon Kids Tablet 8. If it is not, buy the adult HD 10 and a case instead.</li>
             <li>You want the cheapest new tablet that is still from a real brand: Fire HD 8.</li>
             <li>You want Android in a small size with a stand, and the Tab One is under $150: Lenovo Tab One.</li>
             <li>Add a microSD card to any of them if you download video. 32 GB does not survive a vacation.</li>
@@ -354,7 +354,7 @@ export default function Page() {
           <h2 className="text-2xl font-bold mt-10 mb-4">Final verdict</h2>
           <div className="rounded-2xl border-2 border-amber-400 bg-amber-400/10 p-6 md:p-8 mb-8">
           <p className="text-muted-foreground mb-6 leading-relaxed">
-            Buy the Amazon Fire HD 10. It is the large screen that actually lives under $150 most of the time, and for streaming and reading the missing Play Store does not matter. Step up to the Galaxy Tab A9+ only on the days Amazon has the US 64 GB model at or under $150. That is the one with the better display, the speakers, and real Android. Use the Fire HD 10 Kids for a young child when the live price is inside this guide, the Fire HD 8 when you want the smaller tablet, and the Lenovo Tab One when you want a small Android tablet and the live price still fits.
+            Buy the Amazon Fire HD 10. It is the large screen that actually lives under $150 most of the time, and for streaming and reading the missing Play Store does not matter. Step up to the Galaxy Tab A9+ only on the days Amazon has the US 64 GB model at or under $150. That is the one with the better display, the speakers, and real Android. Use the Amazon Kids Tablet 8 for a child aged 3 to 5 when the live price is inside this guide, the Fire HD 8 when you want the smaller tablet, and the Lenovo Tab One when you want a small Android tablet and the live price still fits.
           </p>
           <p className="text-muted-foreground mb-8 leading-relaxed">
             Prices move weekly. Open the button under the review and read the current configuration, the ad-supported toggle, and the seller before you pay. The buttons go to the original new listings named above.

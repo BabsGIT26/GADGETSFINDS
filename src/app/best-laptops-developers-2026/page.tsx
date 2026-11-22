@@ -452,7 +452,7 @@ export default function BestLaptopsDevelopers2026() {
                 <div className="rounded-lg border border-border bg-card p-5 transition hover:border-brand-primary">
                   <span className="text-xs font-bold text-brand-primary">Laptops</span>
                   <h4 className="mt-2 text-lg font-bold text-foreground group-hover:text-brand-primary">
-                    MacBook Pro M4: Apple Silicon Reaches New Heights
+                    MacBook Pro M4, and the M5 that replaced it
                   </h4>
                 </div>
               </Link>
