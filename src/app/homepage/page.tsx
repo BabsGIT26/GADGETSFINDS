@@ -12,7 +12,7 @@ import MiniGadgetsSection from './components/MiniGadgetsSection';
 export const metadata: Metadata = {
   title: 'Gadgets Finds — Gadget Buying Guides for 2026',
   description:
-    'Buying guides for robot vacuums, PS5 accessories, tablets under $150, travel chargers, smartwatches under $350, and mini gadgets. Prices, limits, and what to skip.',
+    'Tech gadget buying guides for 2026: robot vacuums, PS5 accessories, cheap tablets, travel chargers, smartwatches and laptops. See what to buy and what to skip.',
   metadataBase: new URL('https://www.gadgets-finds.com'),
   alternates: {
     canonical: 'https://www.gadgets-finds.com/',

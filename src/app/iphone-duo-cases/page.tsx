@@ -1,180 +1,167 @@
 import type { Metadata } from "next";
-import TopPicks from "@/components/common/TopPicks";
-import ArticleJsonLd from "@/components/common/ArticleJsonLd";
-import Header from "@/components/common/Header";
-import Footer from "@/app/homepage/components/Footer";
+import Roundup, { type RoundupProduct } from "@/components/common/Roundup";
+import { pageMetadata } from "@/lib/seo";
+import { illustrationPath } from "@/lib/illustrations";
 
-import { illustrationAlt } from "@/lib/illustrations";
-export const metadata: Metadata = {
-  title: "iPhone Duo Cases — Clear, Silicone & Leather Options",
-  description: "A selection of cases for the iPhone Duo. Clear, silicone, leather, and protective options.",
-  metadataBase: new URL("https://www.gadgets-finds.com"),
-  alternates: { canonical: "https://www.gadgets-finds.com/iphone-duo-cases" },
-  openGraph: {
-    title: "iPhone Duo Cases",
-    description: "Clear, silicone, and protective cases for the iPhone Duo.",
-    url: "https://www.gadgets-finds.com/iphone-duo-cases",
-    siteName: "Gadgets Finds",
-    type: "article",
-    images: [
-      {
-        url: "https://www.gadgets-finds.com/og/foldable",
-        width: 1280,
-        height: 720,
-        alt: "iPhone Duo Cases",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    site: "@Gadgets_finds",
-    title: "iPhone Duo Cases",
-    description: "Clear, silicone, and protective cases for the iPhone Duo.",
-    images: [
-      "https://www.gadgets-finds.com/og/foldable",
-    ],
-  },
-};
+const TAG = "gadgetsfindswebsmediavid-20";
+const PATH = "/iphone-duo-cases";
+const SEO_TITLE = "Best iPhone Duo Cases in 2026";
+const TITLE = "Best iPhone Duo Cases in 2026: Clear, Rugged and MagSafe";
+const DESCRIPTION =
+  "The best iPhone Duo cases in 2026: FNTCASE, TORRAS Q3 Spin, Spigen clear, OtterBox Defender, Pitaka aramid and Apple's case, compared on hinge cover. Shop now.";
+const IMG = illustrationPath("foldable");
+const amz = (asin: string) => `https://www.amazon.com/dp/${asin}?tag=${TAG}`;
 
-const cases = [
+export const metadata: Metadata = pageMetadata({ path: PATH, title: SEO_TITLE, description: DESCRIPTION, kind: "foldable" });
+
+const products: RoundupProduct[] = [
   {
+    id: "fntcase-magsafe",
+    name: "FNTCASE MagSafe Case for iPhone Duo",
+    label: "Best value",
+    url: amz("B0HDST6F85"),
+    why: "Hinge protection, MagSafe magnets and a screen protector for the lowest price.",
+    specs: [
+      ["Style", "Translucent matte, black"],
+      ["Hinge cover", "Yes, full hinge"],
+      ["MagSafe", "Yes"],
+      ["Price when checked", "From $12.23, Nov 22, 2026"],
+    ],
+    body: [
+      "The cheapest case here that still covers both halves and the hinge. Strong magnets hold MagSafe chargers and wallets, and the listing includes a screen protector for the outer display.",
+    ],
+    skip: "you want a premium feel. The matte plastic is fine but does not feel like Apple's or Pitaka's cases.",
+    image: IMG,
+  },
+  {
+    id: "torras-q3-spin",
+    name: "TORRAS Q3 Spin for iPhone Duo",
+    label: "Best with stand",
+    url: amz("B0HGDS2DZC"),
+    why: "A 360° rotating magnetic stand plus hinge protection.",
+    specs: [
+      ["Style", "Dark"],
+      ["Hinge cover", "Yes"],
+      ["MagSafe", "Yes, with rotating stand"],
+      ["Price when checked", "$69.99, Nov 22, 2026"],
+    ],
+    body: [
+      "The rotating ring folds out into a stand in portrait or landscape, which is handy for video calls and watching on the inner screen. It also covers the hinge.",
+    ],
+    skip: "you want the thinnest case. The stand adds bulk to a phone that is already thick when folded.",
+    image: IMG,
+  },
+  {
+    id: "spigen-ultra-hybrid-pro",
+    name: "Spigen Ultra Hybrid Pro for iPhone Duo",
+    label: "Best clear",
+    url: amz("B0GYQH6WFJ"),
+    why: "Shows off the phone's color and still covers the hinge.",
+    specs: [
+      ["Style", "Crystal clear"],
+      ["Hinge cover", "Yes"],
+      ["MagSafe", "Check the listing"],
+      ["Price when checked", "$34.99, Nov 22, 2026"],
+    ],
+    body: [
+      "Pick this if you bought the iPhone Duo for its color. Spigen's clear hybrid design pairs a rigid back with a softer frame and covers the hinge.",
+    ],
+    skip: "you dislike how clear cases can show scratches and slowly yellow over time.",
+    image: IMG,
+  },
+  {
+    id: "apple-iphone-duo-case",
     name: "Apple iPhone Duo Case",
-    color: "Navy Blue",
-    description: "Official Apple case. Thin, light, MagSafe compatible.",
-    href: "https://www.amazon.com/Apple-iPhone-Duo-Case-complement/dp/B0HJBCCRYD?tag=gadgetsfindswebsmediavid-20",
-    image: "/assets/illustrations/foldable.svg",
-    bg: "bg-zinc-100 dark:bg-zinc-800",
+    label: "Best fit",
+    url: "https://www.amazon.com/Apple-iPhone-Duo-Case-complement/dp/B0HJBCCRYD?tag=gadgetsfindswebsmediavid-20",
+    why: "Apple's own case: thin, light and aligned for MagSafe.",
+    specs: [
+      ["Style", "Navy Blue"],
+      ["Hinge cover", "Check the listing"],
+      ["MagSafe", "Yes"],
+      ["Price when checked", "$79.00, Nov 22, 2026"],
+    ],
+    body: [
+      "The safest choice for exact fit and MagSafe alignment, in a slim design that keeps the phone easy to fold. It costs more than most third-party cases.",
+    ],
+    skip: "you drop your phone often. A rugged case like the OtterBox protects more.",
+    image: IMG,
   },
   {
-    name: "FNTCASE MagSafe Case",
-    color: "Black",
-    description: "Strong magnets, translucent matte finish, screen protector included.",
-    href: "https://www.amazon.com/FNTCASE-iPhone-Duo-Magsafe-Black/dp/B0HDST6F85?tag=gadgetsfindswebsmediavid-20",
-    image: "/assets/illustrations/foldable.svg",
-    bg: "bg-zinc-900 dark:bg-zinc-700",
+    id: "otterbox-defender",
+    name: "OtterBox Defender Series Pro XT for iPhone Duo",
+    label: "Most rugged",
+    url: "https://www.amazon.com/OtterBox-Foldable-iPhone-Defender-Case/dp/B0HGNPW2NG?tag=gadgetsfindswebsmediavid-20",
+    why: "The most protective case here, with an articulating hinge cover.",
+    specs: [
+      ["Style", "Black"],
+      ["Hinge cover", "Yes, articulating"],
+      ["MagSafe", "Check the listing"],
+      ["Price when checked", "$89.99, Nov 22, 2026"],
+    ],
+    body: [
+      "For job sites, kids and clumsy hands. The Defender name means thick, layered protection, and the hinge cover moves with the phone as it folds.",
+    ],
+    skip: "you want a slim phone. It is the bulkiest and most expensive case here.",
+    image: IMG,
   },
   {
-    name: "TORRAS Q3 Spin",
-    color: "Dark",
-    description: "Hinge protection with 360° rotating stand.",
-    href: "https://www.amazon.com/dp/B0HGDS2DZC?tag=gadgetsfindswebsmediavid-20",
-    image: "/assets/illustrations/foldable.svg",
-    bg: "bg-zinc-800 dark:bg-zinc-600",
-  },
-  {
-    name: "Spigen Ultra Hybrid Pro",
-    color: "Clear",
-    description: "Clear case that shows the phone color. Hinge coverage.",
-    href: "https://www.amazon.com/dp/B0GYQH6WFJ?tag=gadgetsfindswebsmediavid-20",
-    image: "/assets/illustrations/foldable.svg",
-    bg: "bg-zinc-100 dark:bg-zinc-800",
-  },
-  {
-    name: "OtterBox Defender Series",
-    color: "Black",
-    description: "Rugged protection with articulating hinge cover.",
-    href: "https://www.amazon.com/OtterBox-Foldable-iPhone-Defender-Case/dp/B0HGNPW2NG?tag=gadgetsfindswebsmediavid-20",
-    image: "/assets/illustrations/foldable.svg",
-    bg: "bg-zinc-900 dark:bg-zinc-700",
-  },
-  {
-    name: "Pitaka Aramid Case",
-    color: "Black",
-    description: "Thin aramid fiber with MagSafe support.",
-    href: "https://www.amazon.com/dp/B0HGLHGRST?tag=gadgetsfindswebsmediavid-20",
-    image: "/assets/illustrations/foldable.svg",
-    bg: "bg-zinc-800 dark:bg-zinc-600",
+    id: "pitaka-aramid",
+    name: "Pitaka Aramid Case for iPhone Duo",
+    label: "Thinnest",
+    url: "https://www.amazon.com/dp/B0HGLHGRST?tag=gadgetsfindswebsmediavid-20",
+    why: "Thin aramid fiber that feels almost caseless.",
+    specs: [
+      ["Style", "Black/grey aramid"],
+      ["Hinge cover", "Check the listing"],
+      ["MagSafe", "Yes"],
+      ["Price when checked", "$47.49, Nov 22, 2026"],
+    ],
+    body: [
+      "Aramid fiber is very thin and stiff, so the case adds almost no bulk and resists scratches. It protects against scuffs more than drops.",
+    ],
+    skip: "you want real drop protection. Choose the OtterBox or TORRAS instead.",
+    image: IMG,
   },
 ];
 
 export default function Page() {
   return (
-    <>
-      <Header />
-      <ArticleJsonLd path="/iphone-duo-cases" headline={"iPhone Duo Cases — Clear, Silicone & Leather Options"} description={"A selection of cases for the iPhone Duo. Clear, silicone, leather, and protective options."} products={["FNTCASE iPhone Duo case", "TORRAS Q3 Spin", "Spigen Ultra Hybrid Pro", "OtterBox Defender Series", "Pitaka Aramid Case"]} />
-      <main className="min-h-screen bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100">
-        <section className="pt-20 pb-10 px-6 text-center">
-          <p className="text-xs tracking-widest uppercase text-zinc-500 dark:text-zinc-400 mb-3">
-            iPhone Duo
-          </p>
-          <h1 className="text-4xl md:text-5xl font-semibold tracking-tight mb-4">
-            Cases
-          </h1>
-          <p className="max-w-md mx-auto text-base text-zinc-600 dark:text-zinc-300">
-            Clear, silicone, leather, and protective options designed for the iPhone Duo.
-          </p>
-          <TopPicks picks={[
-    { label: "Best value", name: "FNTCASE MagSafe Case", why: "Strong magnets and a screen protector included.", url: "https://www.amazon.com/dp/B0HDST6F85?tag=gadgetsfindswebsmediavid-20" },
-    { label: "Best with stand", name: "TORRAS Q3 Spin", why: "Hinge protection with a 360° rotating stand.", url: "https://www.amazon.com/dp/B0HGDS2DZC?tag=gadgetsfindswebsmediavid-20" },
-    { label: "Best clear", name: "Spigen Ultra Hybrid Pro", why: "Shows the phone color, covers the hinge.", url: "https://www.amazon.com/dp/B0GYQH6WFJ?tag=gadgetsfindswebsmediavid-20" },
-          ]} />
-        </section>
-
-        <div className="max-w-xl mx-auto px-6 mb-8 text-center">
-          <p className="text-xs text-zinc-500 dark:text-zinc-400">
-            <span className="text-red-600 dark:text-red-500 font-medium">Disclosure:</span>  We may earn from qualifying purchases if you buy through links on this page, at no extra cost to you.
-          </p>
-        </div>
-
-        <section className="max-w-5xl mx-auto px-6 pb-14">
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-5">
-            {cases.map((item) => (
-              <a
-                key={item.name + item.color}
-                href={item.href}
-                target="_blank"
-                rel="nofollow sponsored noopener noreferrer"
-                className="group block rounded-2xl border border-zinc-200 dark:border-zinc-700 overflow-hidden hover:shadow-md transition-shadow bg-white dark:bg-zinc-900"
-              >
-                <div className={`${item.bg} aspect-square overflow-hidden`}>
-                  <img
-                    src={item.image}
-                    alt={illustrationAlt(item.image, `${item.name} ${item.color}`)}
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-                <div className="p-4">
-                  <p className="text-[10px] uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-1">
-                    {item.color}
-                  </p>
-                  <h2 className="text-sm font-medium mb-1 group-hover:text-zinc-700 dark:group-hover:text-zinc-200">
-                    {item.name}
-                  </h2>
-                  <p className="text-xs text-zinc-600 dark:text-zinc-300 leading-snug mb-2">
-                    {item.description}
-                  </p>
-                  <span className="text-xs font-medium group-hover:underline">
-                    View on Amazon →
-                  </span>
-                </div>
-              </a>
-            ))}
-          </div>
-        </section>
-
-        <section className="max-w-2xl mx-auto px-6 pb-20">
-          <h2 className="text-2xl font-semibold mb-4">About these cases</h2>
-          <p className="text-sm text-zinc-600 dark:text-zinc-300 mb-4 leading-relaxed">
-            Official Apple cases are the safest match for fit and MagSafe alignment. Third-party options from Spigen, TORRAS, OtterBox, and Pitaka add hinge protection, stands, or thinner materials. Clear cases show the phone’s color. Leather and aramid versions feel more premium but cost more.
-          </p>
-          <p className="text-sm text-zinc-600 dark:text-zinc-300 mb-4 leading-relaxed">
-            Most good cases cover both halves and the hinge. Check whether the listing includes a screen protector and whether the magnets work with MagSafe or Qi2 chargers. Prices and stock change quickly on new iPhone Duo accessories.
-          </p>
-          <p className="text-sm text-zinc-600 dark:text-zinc-300 mb-8 leading-relaxed">
-            Always confirm the case is labeled for iPhone Duo before buying. Regular iPhone cases will not fit.
-          </p>
-
-          <a
-            href="https://www.amazon.com/s?k=iPhone+Duo+case&tag=gadgetsfindswebsmediavid-20"
-            target="_blank"
-            rel="nofollow sponsored noopener noreferrer"
-            className="inline-block text-sm font-medium border border-zinc-900 dark:border-zinc-100 px-5 py-2.5 rounded-full hover:bg-zinc-900 hover:text-white dark:hover:bg-zinc-100 dark:hover:text-zinc-900 transition-colors"
-          >
-            See more iPhone Duo cases
-          </a>
-        </section>
-      </main>
-      <Footer />
-    </>
+    <Roundup
+      path={PATH}
+      eyebrow="iPhone Duo"
+      title={TITLE}
+      updated="November 2026"
+      description={DESCRIPTION}
+      answer="The best iPhone Duo case for most people is the FNTCASE MagSafe case: it covers both halves and the hinge, has MagSafe magnets and includes a screen protector, for a fraction of Apple's price. Choose the TORRAS Q3 Spin for a built-in stand, the Spigen Ultra Hybrid Pro to show off the color, and the OtterBox Defender for the most protection."
+      intro={[
+        "Every case here is labelled for the iPhone Duo; regular iPhone cases will not fit. We compare them on hinge coverage, MagSafe support, bulk and price. Prices are what Amazon showed on November 22, 2026, and new accessories change price quickly.",
+      ]}
+      hero={{ src: IMG, alt: "iPhone Duo cases" }}
+      tableTitle="iPhone Duo cases compared"
+      tableColumns={["Hinge cover", "MagSafe", "Price when checked"]}
+      products={products}
+      buyingGuide={{
+        heading: "How to choose an iPhone Duo case",
+        points: [
+          { title: "Hinge protection", body: "The hinge is the most exposed part of a foldable. Prefer a case that covers it, or one with a cover that moves as the phone folds." },
+          { title: "MagSafe and Qi2", body: "If you use MagSafe chargers, wallets or car mounts, check the listing says the case has MagSafe magnets." },
+          { title: "Bulk", body: "A folded iPhone Duo is already thick. Rugged cases and stands add more; aramid and Apple's case add the least." },
+          { title: "Screen protector", body: "Some cases include a protector for the outer screen. Do not apply your own film to the inner folding screen." },
+        ],
+      }}
+      verdict={[
+        "Buy the FNTCASE for the best value, the TORRAS Q3 Spin if you want a stand, the Spigen if you want to see the color, and the OtterBox if protection matters most. For the phone itself, see our best foldable phones guide.",
+      ]}
+      faqTitle="iPhone Duo case questions"
+      faq={[
+        { q: "What is the best iPhone Duo case?", a: "The FNTCASE MagSafe case for most people. It covers the hinge, has MagSafe magnets and includes a screen protector at a low price." },
+        { q: "Do regular iPhone cases fit the iPhone Duo?", a: "No. The iPhone Duo folds, so it needs a case made specifically for it." },
+        { q: "Do iPhone Duo cases work with MagSafe?", a: "Many do, including Apple's, FNTCASE, TORRAS and Pitaka. Check each listing for MagSafe or Qi2 magnets." },
+        { q: "Should an iPhone Duo case cover the hinge?", a: "Yes, if you want drop protection. The hinge is the most exposed part of a foldable phone." },
+      ]}
+      topics={["mobile"]}
+      dealBox={{ productName: "iPhone Duo Cases", href: `https://www.amazon.com/s?k=iPhone+Duo+case&tag=${TAG}` }}
+    />
   );
 }

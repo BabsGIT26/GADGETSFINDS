@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import AppImage from "@/components/ui/AppImage";
+import { CardImage } from "@/components/common/Media";
 
 const miniGadgets = [
   {
@@ -26,12 +26,8 @@ export default function MiniGadgetsSection() {
               href={item.href}
               className="group bg-card border border-border rounded-xl overflow-hidden hover:border-primary transition-all"
             >
-              <div className="relative h-40 bg-muted">
-                <AppImage
-                  src={item.image}
-                  alt={item.alt}
-                  className="w-full h-full object-cover"
-                />
+              <div className="relative">
+                <CardImage src={item.image} alt={item.alt} />
                 {item.badge && (
                   <span className="absolute top-2 left-2 text-xs font-bold px-2 py-1 rounded-full bg-red-600 text-white">
                     {item.badge}

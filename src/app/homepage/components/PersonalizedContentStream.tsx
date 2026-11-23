@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
+import { CardImage } from '@/components/common/Media';
 import Icon from '@/components/ui/AppIcon';
 import { illustrationAlt } from '@/lib/illustrations';
 
@@ -422,17 +422,7 @@ const PersonalizedContentStream = () => {
             href={articleRoutes[item.id] || "/"}
             className="bg-card rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow"
           >
-            <div className="relative h-48 overflow-hidden">
-              <Image
-                src={item.image}
-                alt={illustrationAlt(item.image, item.alt)}
-                fill
-                sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
-                // The first row is above the fold on most screens: load it right away.
-                priority={index < 3}
-                className={`block ${item.fit === "contain" ? "object-contain" : "object-cover"}`}
-                />
-            </div>
+            <CardImage src={item.image} alt={item.alt} priority={index < 3} />
             <div className="p-5">
               <span className="inline-block px-2 py-1 bg-primary/10 text-primary text-xs font-semibold rounded mb-2">
                 {item.category}
