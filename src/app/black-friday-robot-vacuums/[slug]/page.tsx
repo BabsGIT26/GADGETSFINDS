@@ -3,8 +3,11 @@ import { notFound } from "next/navigation";
 import { DealDetail, dealSeoTitle } from "@/components/common/DealPages";
 import { metaDescription, pageMetadata } from "@/lib/seo";
 import { VACUUMS, amazonUrl, vacuumBySlug } from "../vacuums";
+import { isSaleSeason } from "@/lib/sale-season";
 
 type Props = { params: Promise<{ slug: string }> };
+
+export const revalidate = 3600;
 
 const HUB = "/black-friday-robot-vacuums";
 
@@ -19,7 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return pageMetadata({
     path: `${HUB}/${item.slug}`,
     title: dealSeoTitle(item.name),
-    description: metaDescription([`${item.name} Black Friday deal:`, item.card]),
+    description: metaDescription([isSaleSeason() ? `${item.name} Black Friday deal:` : `${item.name}:`, item.card]),
     kind: "vacuum",
   });
 }
@@ -32,7 +35,7 @@ export default async function Page({ params }: Props) {
     <DealDetail
       item={{ ...item, href: amazonUrl(item.asin) }}
       hubPath={HUB}
-      hubLabel="Black Friday robot vacuum deals"
+      hubLabel={isSaleSeason() ? "Black Friday robot vacuum deals" : "Robot vacuum deals"}
       noun="robot vacuum"
     />
   );

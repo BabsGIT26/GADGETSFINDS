@@ -15,6 +15,12 @@ const SALE_COPY = {
   description:
     "Black Friday robot vacuum deals 2026: Roborock Qrevo 2 Pro, Q7 M5+, eufy, Shark and Lefant, sorted by dock, mop and budget so you open the right one. Shop now.",
   listName: "Black Friday robot vacuum deals",
+  answer:
+    "The best Black Friday robot vacuum deal for most homes is the Roborock Qrevo 2 Pro: it vacuums, mops, and its dock empties the bin and washes and dries the mops. The Roborock Q7 M5+ is the value pick with a self-empty dock, and the Lefant M210 Pro is the budget robot if you are happy to empty it yourself. These robots are often discounted on Black Friday — check today's price on Amazon.",
+  faqFirst: {
+    q: "Is Black Friday a good time to buy a robot vacuum?",
+    a: "Usually, yes. Robot vacuums are among the most discounted categories during Black Friday and Cyber Monday. Compare the sale price with the regular price on the listing before you buy. We do not list sale prices here because they change.",
+  },
 };
 const EVERGREEN_COPY = {
   seoTitle: "Robot Vacuum Deals Worth Buying",
@@ -22,6 +28,12 @@ const EVERGREEN_COPY = {
   description:
     "Robot vacuum deals worth buying: Roborock Qrevo 2 Pro, Q7 M5+, eufy, Shark and Lefant, sorted by dock, mop and budget so you open the right one. Shop now.",
   listName: "Robot vacuum deals",
+  answer:
+    "The best robot vacuum deal for most homes is the Roborock Qrevo 2 Pro: it vacuums, mops, and its dock empties the bin and washes and dries the mops. The Roborock Q7 M5+ is the value pick with a self-empty dock, and the Lefant M210 Pro is the budget robot if you are happy to empty it yourself. Check today's price on Amazon.",
+  faqFirst: {
+    q: "When is a good time to buy a robot vacuum?",
+    a: "Sale weeks such as Black Friday and Cyber Monday are usually a good time. Robot vacuums are among the most discounted categories then. Compare the sale price with the regular price on the listing before you buy.",
+  },
 };
 
 export function generateMetadata(): Metadata {
@@ -46,7 +58,7 @@ export default function Page() {
       eyebrow="Robot vacuum deals"
       title={copy.heading}
       listName={copy.listName}
-      answer="The best Black Friday robot vacuum deal for most homes is the Roborock Qrevo 2 Pro: it vacuums, mops, and its dock empties the bin and washes and dries the mops. The Roborock Q7 M5+ is the value pick with a self-empty dock, and the Lefant M210 Pro is the budget robot if you are happy to empty it yourself."
+      answer={copy.answer}
       picks={PICKS.map((pick) => ({ ...pick, url: amazonUrl(VACUUMS.find((entry) => entry.name === pick.name)!.asin) }))}
       items={items}
       sections={[
@@ -72,7 +84,7 @@ export default function Page() {
       ]}
       faqTitle="Robot vacuum deal questions"
       faq={[
-        { q: "Is Black Friday a good time to buy a robot vacuum?", a: "Usually, yes. Robot vacuums are among the most discounted categories during Black Friday and Cyber Monday. Compare the sale price with the regular price on the listing before you buy." },
+        copy.faqFirst,
         { q: "Do I need a self-empty dock?", a: "Only if the bin fills before the week is over, which pet hair usually causes. If you live alone with mostly bare floors, a robot you empty yourself is simpler and smaller." },
         { q: "Which of these robot vacuums also mop?", a: "The Roborock Qrevo 2 Pro, Qrevo Curv 2 Flow, Q7 M5+ and the ECOVACS T90 Pro Omni mop. The eufy C10, Shark AI Ultra, ILIFE A30s, eufy L60 and Lefant M210 Pro only vacuum." },
         { q: "Is the eufy L60 listing new?", a: "No. The eufy L60 link is a renewed unit. Read the condition and return window on Amazon before you treat it as new." },

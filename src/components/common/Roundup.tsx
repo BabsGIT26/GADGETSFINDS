@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
 import RelatedGuides, { type Topic } from "@/components/common/RelatedGuides";
@@ -70,7 +71,7 @@ export default function Roundup({
   /** Spec labels shown as table columns, in order. Must match keys in product specs. */
   tableColumns: string[];
   products: RoundupProduct[];
-  extra?: { id: string; heading: string; body: string[] }[];
+  extra?: { id: string; heading: string; body: ReactNode[] }[];
   buyingGuide?: { heading: string; intro?: string; points: BuyingPoint[] };
   verdict: string[];
   faq: FaqItem[];
@@ -203,8 +204,8 @@ export default function Roundup({
           {extra?.map((block) => (
             <section key={block.id} id={block.id} className="scroll-mt-28">
               <h2 className={H2}>{block.heading}</h2>
-              {block.body.map((paragraph) => (
-                <p key={paragraph.slice(0, 40)} className={P}>
+              {block.body.map((paragraph, index) => (
+                <p key={index} className={P}>
                   {paragraph}
                 </p>
               ))}

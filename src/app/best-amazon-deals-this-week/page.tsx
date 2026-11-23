@@ -2,17 +2,46 @@ import type { Metadata } from "next";
 import Roundup, { type RoundupProduct } from "@/components/common/Roundup";
 import { pageMetadata } from "@/lib/seo";
 import { illustrationPath } from "@/lib/illustrations";
+import { seasonCopy } from "@/lib/sale-season";
 
 const TAG = "gadgetsfindswebsite-20";
 const PATH = "/best-amazon-deals-this-week";
-const SEO_TITLE = "Best Amazon Deals This Week: Fire TV Picks";
-const TITLE = "Best Amazon Deals This Week: Fire TV Stick 4K, 4K Plus and Cube";
-const DESCRIPTION =
-  "The best Amazon deals this week on Fire TV: Stick 4K, 4K Plus, 4K Select and Fire TV Cube compared so you open the right one. Check today's live Amazon price.";
 const IMG = illustrationPath("streaming");
 const amz = (asin: string) => `https://www.amazon.com/dp/${asin}?tag=${TAG}`;
 
-export const metadata: Metadata = pageMetadata({ path: PATH, title: SEO_TITLE, description: DESCRIPTION, kind: "streaming" });
+export const revalidate = 3600;
+
+const SALE_COPY = {
+  seoTitle: "Black Friday Amazon Deals 2026",
+  heading: "Black Friday Amazon Deals: Fire TV Stick 4K, Plus and Cube",
+  description:
+    "Black Friday 2026 Fire TV deals: Stick 4K, 4K Plus, 4K Select and Fire TV Cube compared so you open the right one. Check today's live price on Amazon.",
+  eyebrow: "Black Friday week",
+  answer:
+    "The best Black Friday deal for most TVs this week is the newest Fire TV Stick 4K: 4K HDR10+, Wi-Fi 6 and the new remote. Choose the 4K Plus only if your TV supports Dolby Vision, the 4K Select if it is clearly cheaper, and the Fire TV Cube if you need hands-free Alexa and HDMI switching in the living room. These sticks are often discounted on Black Friday — check today's price on Amazon.",
+  faqFirst: {
+    q: "What is the best Black Friday Amazon deal this week?",
+    a: "The newest Fire TV Stick 4K, if its live price still makes sense next to the 4K Plus and the 4K Select. These devices are often discounted during Black Friday week. Confirm the price on Amazon before you buy.",
+  },
+};
+const EVERGREEN_COPY = {
+  seoTitle: "Best Amazon Deals This Week: Fire TV Picks",
+  heading: "Best Amazon Deals This Week: Fire TV Stick 4K, 4K Plus and Cube",
+  description:
+    "The best Amazon deals this week on Fire TV: Stick 4K, 4K Plus, 4K Select and Fire TV Cube compared so you open the right one. Check today's live Amazon price.",
+  eyebrow: "Deals",
+  answer:
+    "The best Amazon deal this week for most TVs is the newest Fire TV Stick 4K: 4K HDR10+, Wi-Fi 6 and the new remote. Choose the 4K Plus only if your TV supports Dolby Vision, the 4K Select if it is clearly cheaper, and the Fire TV Cube if you need hands-free Alexa and HDMI switching in the living room.",
+  faqFirst: {
+    q: "What is the best Amazon deal this week?",
+    a: "The newest Fire TV Stick 4K, if its live price still makes sense next to the 4K Plus and the 4K Select. Confirm the price on Amazon before you buy.",
+  },
+};
+
+export function generateMetadata(): Metadata {
+  const copy = seasonCopy(SALE_COPY, EVERGREEN_COPY);
+  return pageMetadata({ path: PATH, title: copy.seoTitle, description: copy.description, kind: "streaming" });
+}
 
 const products: RoundupProduct[] = [
   {
@@ -87,22 +116,44 @@ const products: RoundupProduct[] = [
 ];
 
 export default function Page() {
+  const copy = seasonCopy(SALE_COPY, EVERGREEN_COPY);
   return (
     <Roundup
       path={PATH}
-      eyebrow="Deals"
-      title={TITLE}
+      eyebrow={copy.eyebrow}
+      title={copy.heading}
       updated="November 2026"
-      description={DESCRIPTION}
-      answer="The best Amazon deal this week for most TVs is the newest Fire TV Stick 4K: 4K HDR10+, Wi-Fi 6 and the new remote. Choose the 4K Plus only if your TV supports Dolby Vision, the 4K Select if it is clearly cheaper, and the Fire TV Cube if you need hands-free Alexa and HDMI switching in the living room."
+      description={copy.description}
+      answer={copy.answer}
       intro={[
-        "These are Amazon's own streaming devices, and their prices change during sale weeks, sometimes overnight. We do not keep a copy of the price; open the listing to see today's number. Before you buy, compare the current price with the regular price on Amazon's page, and make sure you are looking at the current model rather than an older one with a big percent-off banner.",
+        "These are Amazon's own streaming devices, and their prices change during sale weeks, sometimes overnight. We do not keep a copy of the price; open the listing to see today's number. Before you buy, compare the current price with the regular price on Amazon's page, and make sure you are looking at the current model rather than an older one with a big percent-off banner. Brands do not pay to be included in our guides.",
       ]}
       hero={{ src: IMG, alt: "Fire TV streaming deals" }}
       tableTitle="Fire TV deals compared"
       tableColumns={["Picture", "Wi-Fi", "Buy it if"]}
       products={products}
       extra={[
+        {
+          id: "other-black-friday-guides",
+          heading: "Other deals worth opening this week",
+          body: [
+            <>
+              Fire TV is only one category. For robot vacuums, see our{" "}
+              <a href="/black-friday-robot-vacuums" className="underline decoration-amber-500/80 underline-offset-4 hover:text-foreground">
+                robot vacuum deals
+              </a>
+              . For watches, see our{" "}
+              <a href="/black-friday-smartwatches" className="underline decoration-amber-500/80 underline-offset-4 hover:text-foreground">
+                smartwatch deals
+              </a>
+              . For leftover and closeout stock, see the{" "}
+              <a href="/amazon-outlet-guide" className="underline decoration-amber-500/80 underline-offset-4 hover:text-foreground">
+                Amazon Outlet guide
+              </a>
+              . Those gadgets are often discounted on Black Friday — check today&apos;s price on Amazon.
+            </>,
+          ],
+        },
         {
           id: "what-to-skip",
           heading: "Amazon deals to skip",
@@ -126,7 +177,7 @@ export default function Page() {
       ]}
       faqTitle="Amazon deal questions"
       faq={[
-        { q: "What is the best Amazon deal this week?", a: "The newest Fire TV Stick 4K, if its live price still makes sense next to the 4K Plus and the 4K Select. Confirm the price on Amazon before you buy." },
+        copy.faqFirst,
         { q: "Which Fire TV Stick should I buy?", a: "The Fire TV Stick 4K for most TVs, the 4K Plus for TVs with Dolby Vision, and the Fire TV Cube if you need HDMI switching or hands-free Alexa." },
         { q: "Is the cheaper Fire TV Stick HD a better deal?", a: "No. A small saving is not worth giving up 4K and the new remote." },
         { q: "Does a Fire TV Stick include Netflix?", a: "No. Netflix, Disney+ and other paid apps need their own subscriptions." },
