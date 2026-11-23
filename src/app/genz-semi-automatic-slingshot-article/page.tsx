@@ -1,154 +1,85 @@
 import type { Metadata } from "next";
-import ArticleJsonLd from "@/components/common/ArticleJsonLd";
-import AppImage from "@/components/ui/AppImage";
-import Header from "@/components/common/Header";
-import Footer from "@/app/homepage/components/Footer";
-import AmazonDealBox from "@/components/common/AmazonDealBox";
+import ProductArticle from "@/components/common/ProductArticle";
 import CommentSection from "@/components/comments/CommentSection";
+import { pageMetadata } from "@/lib/seo";
+import { illustrationPath } from "@/lib/illustrations";
 
-const AMAZON =
-  "https://www.amazon.com/dp/B0HB4HCB8L?tag=00linktree-pinterest-20";
+const PATH = "/genz-semi-automatic-slingshot-article";
+const AMAZON = "https://www.amazon.com/dp/B0HB4HCB8L?tag=00linktree-pinterest-20";
+const SEO_TITLE = "Semi-Automatic Slingshot: Is It Worth It?";
+const TITLE = "Semi-Automatic Slingshot With a 12-Round Magazine: Is It Worth It?";
+const DESCRIPTION =
+  "A semi-automatic slingshot with a 12-round magazine, CNC aluminum frame and fiber optic sight for adult target practice. Who it suits, what to check. See price.";
 
-const TRACKED = `/api/go?url=${encodeURIComponent(AMAZON)}`;
-
-const OG_IMAGE = "/assets/illustrations/gadget.svg";
-const SHARE_IMAGE = "https://www.gadgets-finds.com/og/gadget";
-
-export const metadata: Metadata = {
-  title: "GenZ Semi-Automatic Slingshot Review | Gadgets Finds",
-  description:
-    "CNC aluminum semi-automatic slingshot with dual magazine, rapid-fire steel ball loading, fiber optic sight. Outdoor target practice gadget. Price and stock change on Amazon.",
-  metadataBase: new URL("https://www.gadgets-finds.com"),
-  alternates: {
-    canonical: "https://www.gadgets-finds.com/genz-semi-automatic-slingshot-article",
-  },
-  openGraph: {
-    title: "GenZ Semi-Automatic Slingshot Rapid Fire Steel Ball Shooter",
-    description: "Magazine-fed CNC aluminum slingshot for rapid outdoor target practice. Price changes.",
-    url: "https://www.gadgets-finds.com/genz-semi-automatic-slingshot-article",
-    siteName: "Gadgets Finds",
-    type: "article",
-    images: [
-      {
-        url: SHARE_IMAGE,
-        width: 1200,
-        height: 630,
-        alt: "Semi-automatic rapid fire slingshot with magazine and steel balls",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    site: "@Gadgets_finds",
-    title: "GenZ Semi-Automatic Slingshot Rapid Fire Steel Ball Shooter",
-    images: [SHARE_IMAGE],
-  },
-};
+export const metadata: Metadata = pageMetadata({ path: PATH, title: SEO_TITLE, description: DESCRIPTION, kind: "gadget" });
 
 export default function Page() {
   return (
-    <>
-      <Header />
-      <ArticleJsonLd path="/genz-semi-automatic-slingshot-article" headline={"GenZ Semi-Automatic Slingshot Review"} description={"CNC aluminum semi-automatic slingshot with dual magazine, rapid-fire steel ball loading, fiber optic sight. Outdoor target practice gadget. Price and stock change on Amazon."} products={["GenZ semi-automatic slingshot"]} />
-      <article className="min-h-screen bg-background pt-28 md:pt-16">
-        <div className="container mx-auto px-4 pt-2 pb-10 max-w-3xl">
-          <p className="text-xs md:text-sm text-foreground mb-3">
-            Disclosure: Gadgets Finds is an Amazon Associate. We may earn from qualifying
-            purchases if you buy through links on this page, at no extra cost to you.
-          </p>
-
-          <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">
-            Outdoor Gadgets
-          </p>
-          <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-            GenZ Semi-Automatic Slingshot Rapid Fire Steel Ball Shooter
-          </h1>
-          <p className="text-muted-foreground mb-6">
-            CNC aluminum magazine-fed slingshot for rapid outdoor target practice. Auto-reload steel balls, fiber optic sight, dual magazines. Price and stock change on Amazon.
-          </p>
-
-          <a
-            href={TRACKED}
-            target="_blank"
-            rel="nofollow sponsored noopener noreferrer"
-            className="inline-block bg-amber-400 hover:bg-amber-500 text-black font-bold px-6 py-3 rounded-md"
-          >
-            VIEW ON AMAZON
-          </a>
-
-          <div className="my-8 aspect-video">
-            <iframe
-              className="w-full h-full rounded-lg"
-              src="https://www.youtube.com/embed/JFYSGrot8qI"
-              title="Semi-Auto Magazine Slingshot Review"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-          </div>
-
-          <h2 className="text-2xl font-bold mt-10 mb-3">What this gadget is</h2>
-          <p className="text-muted-foreground mb-4">
-            A semi-automatic / auto-loading slingshot built from CNC aircraft-grade aluminum. It uses a magazine system that feeds steel balls for rapid follow-up shots without reloading by hand every time. Designed for adult outdoor target practice.
-          </p>
-
-          <div className="w-full flex justify-center py-6 mb-6">
-            <AppImage
-              src="/assets/illustrations/gadget.svg"
-              alt="CNC aluminum semi-automatic slingshot kit with magazines and steel balls"
-              className="max-h-[400px] w-auto max-w-full object-contain rounded-lg"
-            />
-          </div>
-
-          <ul className="list-disc pl-5 text-muted-foreground space-y-2 mb-4">
-            <li>Frame: CNC aircraft-grade aluminum alloy</li>
-            <li>Loading: Magazine-fed semi-automatic / auto-reload system</li>
-            <li>Capacity: Dual magazines (typically 12+ rounds each)</li>
-            <li>Ammo: 8mm steel balls</li>
-            <li>Sight: Adjustable fiber optic sight system</li>
-            <li>Extras: Spare bands, steel balls (quantity varies), modular parts</li>
-            <li>Use: Outdoor target practice, skill training, recreational shooting</li>
-          </ul>
-
-          <h2 className="text-2xl font-bold mt-10 mb-3">Who it is for</h2>
-          <p className="text-muted-foreground mb-4">
-            Adults who want faster practice sessions than a traditional slingshot. Good for backyard or range target work where you want multiple shots without stopping to load each ball by hand.
-          </p>
-
-
-          <p className="text-muted-foreground mb-4">
-            Skip it if you need maximum power for hunting or if you prefer a classic single-shot frame. This is a rapid-fire practice tool, not a high-powered hunting slingshot.
-          </p>
-
-          <h2 className="text-2xl font-bold mt-10 mb-3">Before you click</h2>
-          <ul className="list-disc pl-5 text-muted-foreground space-y-2 mb-4">
-            <li>Confirm the exact kit (magazines, bands, steel balls included) on the live Amazon listing.</li>
-            <li>Steel balls are often 8mm — check compatibility if you already have ammo.</li>
-            <li>Price and stock change. Recheck before you buy.</li>
-            <li>Adult use only. Follow local laws for target practice.</li>
-          </ul>
-
-          <h2 className="text-2xl font-bold mt-10 mb-3">Verdict</h2>
-          <p className="text-muted-foreground mb-8">
-            A solid GenZ-style rapid-fire steel ball slingshot for outdoor practice. The magazine system is the main upgrade over traditional models. Open the Amazon page to see the current deal, what’s in the box, and stock.
-          </p>
-
-          <div className="w-full flex justify-center py-6 mb-10">
-            <AppImage
-              src={OG_IMAGE}
-              alt="GenZ Semi-Automatic Slingshot Rapid Fire"
-              className="max-h-[400px] w-auto max-w-full object-contain"
-            />
-          </div>
-
-          <AmazonDealBox
-            productName="GenZ Semi-Automatic Slingshot Rapid Fire Steel Ball Shooter"
-            href={AMAZON}
-          />
-
-          <CommentSection articleSlug="genz-semi-automatic-slingshot-article" />
-        </div>
-      </article>
-      <Footer />
-    </>
+    <ProductArticle
+      path={PATH}
+      eyebrow="Outdoor gadgets"
+      title={TITLE}
+      description={DESCRIPTION}
+      topics={["deals"]}
+      answer="This semi-automatic slingshot is worth it if you want faster target practice than a classic slingshot: a 12-round magazine feeds 8mm steel balls so you can shoot repeatedly without loading each one by hand. It has a CNC aluminum frame and a fiber optic sight. It is a practice tool for adults, not a hunting slingshot."
+      image={{ src: illustrationPath("gadget"), alt: "Semi-automatic slingshot with magazine" }}
+      cta={{ href: AMAZON, note: "In stock when we checked on November 22, 2026. Price and contents change on Amazon." }}
+      bestFor="Adults doing backyard or range target practice"
+      glance={[
+        ["Frame", "CNC aircraft-grade aluminum"],
+        ["Loading", "Magazine-fed, magnetic reload"],
+        ["Magazine", "12 rounds"],
+        ["Ammo", "8mm steel balls"],
+        ["Sight", "Adjustable fiber optic"],
+        ["In the box", "Spare bands and parts; steel balls may not be included"],
+      ]}
+      why={[
+        "The magazine is the reason to buy it: you shoot a full string of targets, then reload in one go. The aluminum frame is light and comes apart for cleaning, and spare bands and parts are included.",
+      ]}
+      skip={[
+        "Skip it if you want maximum power or a classic single-shot frame, or if slingshots are restricted where you live. It is for adult target practice only.",
+      ]}
+      sections={[
+        {
+          heading: "What a semi-automatic slingshot is",
+          body: [
+            "A semi-automatic or auto-loading slingshot holds several steel balls in a magazine and loads the next one after each shot. You still draw the bands for every shot, but you skip picking up and seating each ball by hand.",
+          ],
+        },
+        {
+          heading: "Check these before you buy",
+          bullets: [
+            "What is in the box: the seller says steel balls are a bonus and may not ship with every order.",
+            "Ammo size: it takes 8mm steel balls; check before reusing ammo you already own.",
+            "Local laws and a safe backstop for target practice.",
+            "Eye protection for you and anyone nearby.",
+          ],
+        },
+        {
+          heading: "Semi-automatic slingshot video",
+          body: [
+            <div key="video" className="relative aspect-[16/9] w-full overflow-hidden rounded-2xl bg-muted">
+              <iframe
+                className="absolute inset-0 h-full w-full"
+                src="https://www.youtube-nocookie.com/embed/JFYSGrot8qI"
+                title="Semi-automatic magazine slingshot video"
+                loading="lazy"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>,
+          ],
+        },
+      ]}
+      faqTitle="Semi-automatic slingshot questions"
+      faq={[
+        { q: "How does a semi-automatic slingshot work?", a: "A magazine holds several steel balls and feeds the next one after each shot, so you do not load each ball by hand. You still pull the bands for every shot." },
+        { q: "What ammo does this slingshot use?", a: "8mm steel balls. The seller says they may not be included in every order." },
+        { q: "Is a semi-automatic slingshot good for hunting?", a: "No. It is built for rapid target practice, not maximum power." },
+      ]}
+      products={["Semi-automatic slingshot"]}
+      dealBox={{ productName: "Semi-Automatic Slingshot", href: AMAZON }}
+      after={<CommentSection articleSlug="genz-semi-automatic-slingshot-article" />}
+    />
   );
 }

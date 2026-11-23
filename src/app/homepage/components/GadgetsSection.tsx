@@ -2,7 +2,7 @@
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 import { useState } from "react";
 import Link from "next/link";
-import AppImage from "@/components/ui/AppImage";
+import { CardImage } from "@/components/common/Media";
 import Icon from "@/components/ui/AppIcon";
 
 interface Gadget {
@@ -278,12 +278,8 @@ export default function GadgetsSection() {
               href={gadget.href}
               className="group bg-card border border-border rounded-2xl overflow-hidden hover:border-primary hover:shadow-xl transition-all duration-300 flex flex-col"
             >
-              <div className="relative h-48 overflow-hidden bg-muted">
-                <AppImage
-                  src={gadget.image}
-                  alt={gadget.alt}
-                  className={gadget.contain ? "w-full h-full object-contain bg-black" : "w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"}
-                />
+              <div className="relative">
+                <CardImage src={gadget.image} alt={gadget.alt} />
                 {gadget.badge && (
                   <span className={`absolute top-3 left-3 text-xs font-bold px-2 py-1 rounded-full ${gadget.badgeColor}`}>
                     {gadget.badge}
