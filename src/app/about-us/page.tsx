@@ -5,7 +5,7 @@ import Footer from '@/app/homepage/components/Footer';
 
 export const metadata: Metadata = {
   title: 'About Gadgets Finds — Tech Reviews & Honest Recommendations',
-  description: 'How Gadgets Finds researches gadgets: manufacturer specs, verified owner reviews, and expert reviews, with clear affiliate disclosure.',
+  description: 'How Gadgets Finds researches gadgets: manufacturer specs, verified owner reviews, and expert reviews, with a clear affiliate disclosure on every guide.',
   metadataBase: new URL('https://www.gadgets-finds.com'),
   alternates: {
     canonical: 'https://www.gadgets-finds.com/about-us'

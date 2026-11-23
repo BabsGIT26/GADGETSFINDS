@@ -5,7 +5,7 @@ import Footer from '@/app/homepage/components/Footer';
 
 export const metadata: Metadata = {
   title: 'Cookie Policy — Gadgets Finds Cookie Management',
-  description: 'Learn how Gadgets Finds uses cookies and tracking technologies. Manage your cookie preferences and understand our data collection practices.',
+  description: 'Learn how Gadgets Finds uses cookies and tracking technologies, how to manage your cookie preferences, and what our data collection practices mean for you.',
   metadataBase: new URL('https://www.gadgets-finds.com'),
   alternates: {
     canonical: 'https://www.gadgets-finds.com/cookies'

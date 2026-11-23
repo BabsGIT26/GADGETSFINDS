@@ -6,7 +6,7 @@ import Footer from '@/app/homepage/components/Footer';
 export const metadata: Metadata = {
   title: 'Affiliate Disclosure | Gadgets Finds',
   description:
-    'Gadgets Finds is an Amazon Associate and earns from qualifying purchases. How our affiliate links work and how they affect our recommendations.',
+    'Gadgets Finds is an Amazon Associate and earns from qualifying purchases. How our affiliate links work, what that means for you, and how it affects our guides.',
   metadataBase: new URL('https://www.gadgets-finds.com'),
   alternates: { canonical: 'https://www.gadgets-finds.com/affiliate-disclosure' },
   openGraph: {
