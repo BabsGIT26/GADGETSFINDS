@@ -1,401 +1,130 @@
 import type { Metadata } from "next";
-import TopPicks from "@/components/common/TopPicks";
-import Header from "@/components/common/Header";
-import Footer from "@/app/homepage/components/Footer";
-import AmazonDealBox from "@/components/common/AmazonDealBox";
-import RelatedGuides from "@/components/common/RelatedGuides";
-import { FaqJsonLd, ProductListJsonLd } from "@/components/common/GuideFaq";
+import Roundup, { type RoundupProduct } from "@/components/common/Roundup";
+import { pageMetadata } from "@/lib/seo";
+import { illustrationPath } from "@/lib/illustrations";
 
-import { illustrationAlt } from "@/lib/illustrations";
-export const metadata: Metadata = {
-  title: "Best Robot Vacuums Under $300 in 2026 | Gadgets Finds",
-  description:
-    "Best robot vacuums under $300 in 2026: Lefant M210 Pro for most homes, eufy G30 for pet hair, and the Roborock Q7 L5 for LiDAR mapping plus a mop. What to skip.",
-  metadataBase: new URL("https://www.gadgets-finds.com"),
-  alternates: { canonical: "https://www.gadgets-finds.com/best-budget-robot-vacuums-under-300" },
-  openGraph: {
-    title: 'Best Robot Vacuums Under $300 in 2026',
-    description: 'Lefant M210 Pro for most homes, eufy G30 for pet hair, and the Roborock Q7 L5 for LiDAR mapping plus a mop.',
-    url: 'https://www.gadgets-finds.com/best-budget-robot-vacuums-under-300',
-    siteName: "Gadgets Finds",
-    type: "article",
-    images: [{
-      url: 'https://www.gadgets-finds.com/og/vacuum',
-      alt: 'eufy RoboVac G30 robot vacuum',
-    }],
+const TAG = "gadgetsfindswebsite-20";
+const PATH = "/best-budget-robot-vacuums-under-300";
+const SEO_TITLE = "Best Robot Vacuums Under $300 in 2026";
+const TITLE = "Best Robot Vacuums Under $300 in 2026: Budget Picks";
+const DESCRIPTION =
+  "The best robot vacuums under $300 in 2026: Roborock Q7 L5 with LiDAR and a mop, eufy C10 with a self-empty dock, and the Lefant M210 Pro. Check today's price.";
+const IMG = illustrationPath("vacuum");
+const amz = (asin: string) => `https://www.amazon.com/dp/${asin}?tag=${TAG}`;
+
+export const metadata: Metadata = pageMetadata({ path: PATH, title: SEO_TITLE, description: DESCRIPTION, kind: "vacuum" });
+
+const products: RoundupProduct[] = [
+  {
+    id: "roborock-q7-l5",
+    name: "Roborock Q7 L5",
+    label: "Best overall",
+    url: amz("B0F3337BV7"),
+    why: "LiDAR mapping, strong suction and a mop for well under $300.",
+    specs: [
+      ["Navigation", "LiDAR, saves multiple floor maps"],
+      ["Suction (Roborock)", "8,000Pa"],
+      ["Mop", "Yes, 270ml water tank, removable pad"],
+      ["Dock", "Charging only, no self-empty"],
+      ["Price when checked", "$119.99 on Amazon, Nov 22, 2026"],
+    ],
+    body: [
+      "This is the robot most people under $300 should buy. LiDAR means it maps the home, cleans in straight rows instead of bouncing around, and lets you set no-go zones and room schedules in the Roborock app. Roborock rates it at 8,000Pa, and both brushes are designed to resist hair wrap.",
+      "The mop is a simple drag pad with three water levels. It wipes up dust and light marks on hard floors; it does not scrub dried spills like the spinning mops on pricier stations. The listing is sold by Roborock and shipped by Amazon.",
+    ],
+    skip: "you do not want to empty a bin every day or two. There is no self-empty dock, so look at the eufy C10.",
+    image: IMG,
   },
-  twitter: {
-    card: "summary_large_image",
-    site: "@Gadgets_finds",
-    creator: "@Gadgets_finds",
-    title: 'Best Robot Vacuums Under $300 in 2026',
-    description: 'Lefant M210 Pro for most homes, eufy G30 for pet hair, and the Roborock Q7 L5 for LiDAR mapping plus a mop.',
-    images: ['https://www.gadgets-finds.com/og/vacuum'],
+  {
+    id: "eufy-c10",
+    name: "eufy C10 with self-empty station",
+    label: "Best self-empty",
+    url: amz("B0GD1XTMFN"),
+    why: "A self-emptying dock and LiDAR for about $220.",
+    specs: [
+      ["Navigation", "Laser (LiDAR) mapping"],
+      ["Suction (eufy)", "4,000Pa"],
+      ["Dock", "Self-empty, 3L bag, about 60 days per bag"],
+      ["Height", "2.85 in"],
+      ["Price when checked", "$219.99 on Amazon, Nov 22, 2026"],
+    ],
+    body: [
+      "Pick the C10 if pet hair or a busy household fills a robot bin fast. The robot empties itself into a 3-liter bag in the station, and eufy says one bag lasts about 60 days. LiDAR mapping, schedules and room cleaning work from the eufy app.",
+      "At 2.85 inches tall it fits under more beds and sofas than most docked robots, and an extending side brush reaches into corners. It vacuums only: there is no mop.",
+    ],
+    skip: "you want the floor mopped too, or you would rather not buy replacement dust bags. The Roborock Q7 L5 mops and costs less.",
+    image: IMG,
   },
-};
-
-
-const AMAZON = {
-  lefant: "https://www.amazon.com/dp/B0CYL7273B?tag=gadgetsfindswebsite-20",
-  eufy: "https://www.amazon.com/s?k=eufy+RoboVac+G30&tag=gadgetsfindswebsite-20",
-  q5: "https://www.amazon.com/dp/B0F3337BV7?tag=gadgetsfindswebsite-20",
-  roomba: "https://www.amazon.com/dp/B08SP5GYJP?tag=gadgetsfindswebsite-20",
-} as const;
-
-function amazonHref(url: string) {
-  return `/api/go?url=${encodeURIComponent(url)}`;
-}
-
-function ViewOnAmazon({ href, name }: { href: string; name: string }) {
-  return (
-    <a
-      href={amazonHref(href)}
-      target="_blank"
-      rel="nofollow sponsored noopener noreferrer"
-      aria-label={`View ${name} on Amazon`}
-      className="inline-flex items-center justify-center mt-6 min-w-[220px] px-8 py-3 rounded-full bg-amber-400 text-zinc-950 text-sm font-extrabold hover:bg-amber-300 transition-colors"
-    >
-      View on Amazon
-    </a>
-  );
-}
-
-const IMAGES = {
-  lefant: "/assets/illustrations/vacuum.svg",
-  eufy: "/assets/illustrations/vacuum.svg",
-  q5: "/assets/illustrations/vacuum.svg",
-  roomba: "/assets/illustrations/vacuum.svg",
-} as const;
-
-function ProductPhoto({ src, alt }: { src: string; alt: string }) {
-  return (
-    <div className="border-b border-border py-4">
-      <img
-        src={src}
-        alt={illustrationAlt(src, alt)}
-        referrerPolicy="no-referrer"
-        className="mx-auto block w-auto max-w-full h-auto max-h-72 md:max-h-[22rem] object-contain"
-      />
-    </div>
-  );
-}
+  {
+    id: "lefant-m210-pro",
+    name: "Lefant M210 Pro",
+    label: "Best under $100",
+    url: amz("B0CYL7273B"),
+    why: "The cheapest robot here worth buying, and the slimmest.",
+    specs: [
+      ["Navigation", "Infrared sensors, no map"],
+      ["Runtime (Lefant)", "Up to 120 minutes"],
+      ["Size", "11 in wide, 2.99 in tall"],
+      ["Dock", "Charging only"],
+      ["Price when checked", "$94.99 on Amazon, Nov 22, 2026"],
+    ],
+    body: [
+      "A small, quiet robot for a studio, a bedroom or a small apartment with hard floors. It has no roller brush, just a wide suction opening, so hair does not wrap around anything. You get six cleaning modes, three suction levels, schedules in the Lefant app and Alexa or Google Assistant control.",
+      "Without LiDAR it cannot draw a map or clean room by room, and it covers a big home less evenly than the Roborock. For daily upkeep in a small space, that matters less than the price.",
+    ],
+    skip: "you have several rooms or thick carpet. A mapping robot like the Q7 L5 covers a larger home far better for about $25 more.",
+    image: IMG,
+  },
+];
 
 export default function Page() {
   return (
-    <>
-      <Header />
-      <article className="min-h-screen bg-background pt-14 md:pt-16">
-        <div className="container mx-auto px-4 py-10 max-w-4xl">
-          <p className="text-xs text-muted-foreground mb-6 leading-relaxed">
-            <span className="text-red-600 font-semibold">Disclosure:</span> Gadgets Finds is an Amazon Associate. We may earn from qualifying purchases if you buy through links on this page, at no extra cost to you. Prices and availability change on Amazon.
-          </p>
-
-          <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">Buying Guide</p>
-          <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-            Best Budget Robot Vacuums Under $300 in 2026 — Full In-Depth Guide
-          </h1>
-          <p className="text-muted-foreground mb-1 text-sm">Last updated: November 2026</p>
-          <TopPicks picks={[
-    { label: "Best overall", name: "Lefant M210 Pro", why: "The strongest all-around pick in this guide.", url: "https://www.amazon.com/dp/B0CYL7273B?tag=gadgetsfindswebsite-20" },
-    { label: "Best navigation", name: "Roborock Q7 L5", why: "LiDAR mapping, if the live price still fits.", url: "https://www.amazon.com/dp/B0F3337BV7?tag=gadgetsfindswebsite-20" },
-    { label: "Simplest", name: "iRobot Roomba 600 Series", why: "A basic Roomba for people who want no setup.", url: "https://www.amazon.com/dp/B08SP5GYJP?tag=gadgetsfindswebsite-20" },
-          ]} />
-          <p className="text-muted-foreground mb-8 text-sm">Approximate length: 2,300+ words</p>
-
-          <p className="text-muted-foreground mb-4 text-lg leading-relaxed">
-            Robot vacuums priced under $300 have improved significantly over the past two years. In 2026, several models in this range can handle daily cleaning in apartments and smaller homes with far better consistency than older budget robots. They still lag flagship robots in obstacle avoidance, multi-floor mapping, and self-emptying. The gap has narrowed enough that many people no longer need a flagship for acceptable results.
-          </p>
-          <p className="text-muted-foreground mb-4 leading-relaxed">
-            This guide covers robots aimed at a budget under $300. Open Amazon for the live price. Recommendations are based on suction, navigation, pet hair, edge cleaning, battery, the app, and maintenance, not a saved price.
-          </p>
-          <p className="text-muted-foreground mb-10 leading-relaxed">
-            For a shorter Black Friday list, with smaller photos and more models, see{" "}
-            <a href="/black-friday-robot-vacuums" className="underline decoration-amber-500/80 underline-offset-4 hover:text-foreground">
-              Black Friday robot vacuums
-            </a>
-            .
-          </p>
-
-          <h2 className="text-2xl md:text-3xl font-bold mt-12 mb-4">What Separates Good Budget Robots from Weak Ones</h2>
-          <p className="text-muted-foreground mb-6">
-            Under $300, manufacturers cut costs in specific areas. Understanding these trade-offs helps avoid disappointment:
-          </p>
-          <div className="grid md:grid-cols-2 gap-4 mb-12">
-            <div className="rounded-xl border-2 border-amber-400 bg-amber-400/10 p-5">
-              <h3 className="font-bold text-amber-500 mb-2">Suction power</h3>
-              <p className="text-sm text-muted-foreground">Models claiming 3,000–4,000 Pa generally outperform those under 2,000 Pa on carpet and pet hair. Real-world results matter more than the number, but higher figures usually correlate with better debris pickup.</p>
-            </div>
-            <div className="rounded-xl border-2 border-sky-400 bg-sky-400/10 p-5">
-              <h3 className="font-bold text-sky-500 mb-2">Navigation</h3>
-              <p className="text-sm text-muted-foreground">LiDAR is still rare near $300 but appears on sale. Gyroscopic systems with structured paths are acceptable. Pure random/bounce navigation is outdated and inefficient in 2026.</p>
-            </div>
-            <div className="rounded-xl border-2 border-emerald-400 bg-emerald-400/10 p-5">
-              <h3 className="font-bold text-emerald-500 mb-2">Edge and corner performance</h3>
-              <p className="text-sm text-muted-foreground">Many budget robots leave a visible strip of dust along baseboards. Side brush design and edge-cleaning modes make a noticeable difference.</p>
-            </div>
-            <div className="rounded-xl border-2 border-violet-400 bg-violet-400/10 p-5">
-              <h3 className="font-bold text-violet-500 mb-2">Battery and coverage</h3>
-              <p className="text-sm text-muted-foreground">100+ minutes of runtime is preferable. Shorter runtimes force more frequent recharging in homes larger than 800–1,000 sq ft.</p>
-            </div>
-            <div className="rounded-xl border-2 border-orange-400 bg-orange-400/10 p-5">
-              <h3 className="font-bold text-orange-500 mb-2">Roller design</h3>
-              <p className="text-sm text-muted-foreground">Rubber or hybrid rollers resist pet hair tangling better than traditional bristle brushes.</p>
-            </div>
-            <div className="rounded-xl border-2 border-cyan-400 bg-cyan-400/10 p-5">
-              <h3 className="font-bold text-cyan-500 mb-2">App quality</h3>
-              <p className="text-sm text-muted-foreground">A stable app with reliable scheduling is now expected. Frequent disconnections or missing basic controls are red flags.</p>
-            </div>
-            <div className="rounded-xl border-2 border-rose-400 bg-rose-400/10 p-5 md:col-span-2">
-              <h3 className="font-bold text-rose-500 mb-2">Parts availability</h3>
-              <p className="text-sm text-muted-foreground">Filters, side brushes, and rollers should be easy and inexpensive to replace.</p>
-            </div>
-          </div>
-
-          <h2 className="text-2xl md:text-3xl font-bold mt-16 mb-8">Best Budget Robot Vacuums Under $300</h2>
-
-          <div className="mb-16 bg-card border-2 border-amber-400/60 rounded-2xl overflow-hidden shadow-sm">
-            <ProductPhoto src={IMAGES.lefant} alt="Lefant M210 Pro robot vacuum" />
-            <div className="p-6 md:p-8">
-              <h3 className="text-2xl font-bold mb-4"><a href={amazonHref(AMAZON.lefant)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">Lefant M210 Pro</a></h3>
-              <ul className="text-sm text-muted-foreground space-y-1 mb-6">
-                <li><strong className="text-amber-500">Claimed suction:</strong> Approximately 4,000 Pa</li>
-                <li><strong className="text-amber-500">Navigation:</strong> Gyroscopic with structured cleaning paths</li>
-                <li><strong className="text-amber-500">Runtime:</strong> Up to 120 minutes</li>
-                <li><strong className="text-amber-500">Dustbin capacity:</strong> Around 600 ml</li>
-              </ul>
-              <p className="text-muted-foreground mb-4">
-                The Lefant M210 Pro currently offers one of the strongest combinations of suction and cleaning logic in this guide. Unlike older random robots, it follows more deliberate paths, which reduces the number of passes needed to clean a room thoroughly.
-              </p>
-              <p className="text-muted-foreground mb-4">
-                On hard floors it removes fine dust, crumbs, and small debris effectively. On low- and medium-pile carpet it handles most everyday dirt and moderate amounts of pet hair. High-pile rugs reduce efficiency, which is normal at this price. Edge cleaning is above average for the category thanks to a reasonably aggressive side brush.
-              </p>
-              <p className="text-muted-foreground mb-4">
-                The app supports scheduling, manual control, and basic cleaning modes. Battery life is sufficient for most apartments and smaller houses on a single charge. Noise levels are moderate on standard power and higher when maximum suction is engaged.
-              </p>
-              <div className="grid md:grid-cols-2 gap-6 mt-6">
-                <div>
-                  <p className="font-semibold text-green-600 mb-2">Strengths</p>
-                  <p className="text-sm text-muted-foreground">Strong suction relative to price, more efficient coverage than random models, solid runtime, and generally reliable daily performance.</p>
-                </div>
-                <div>
-                  <p className="font-semibold text-amber-600 mb-2">Limitations</p>
-                  <p className="text-sm text-muted-foreground">Mapping remains basic. It can still get stuck on cables, low thresholds, or certain rug edges. The dustbin fills relatively quickly in homes with heavy shedding.</p>
-                </div>
-              </div>
-              <p className="mt-6 text-sm font-medium">Verdict: Best overall value. Best suited for buyers who want the everyday cleaner in this guide.</p>
-              <ViewOnAmazon href={AMAZON.lefant} name="Lefant M210 Pro" />
-            </div>
-          </div>
-
-          <div className="mb-16 bg-card border-2 border-amber-400/60 rounded-2xl overflow-hidden shadow-sm">
-            <ProductPhoto src={IMAGES.eufy} alt="eufy RoboVac G30 robot vacuum" />
-            <div className="p-6 md:p-8">
-              <h3 className="text-2xl font-bold mb-4"><a href={amazonHref(AMAZON.eufy)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">eufy RoboVac G30</a></h3>
-              <ul className="text-sm text-muted-foreground space-y-1 mb-6">
-                <li><strong className="text-amber-500">Suction:</strong> Roughly 2,000–2,500 Pa in boost mode</li>
-                <li><strong className="text-amber-500">Navigation:</strong> Gyroscopic</li>
-                <li><strong className="text-amber-500">Runtime:</strong> Approximately 100–110 minutes</li>
-                <li><strong className="text-amber-500">Dustbin:</strong> Around 600 ml</li>
-              </ul>
-              <p className="text-muted-foreground mb-4">
-                eufy has iterated on this platform for several years, resulting in a mature and predictable robot. The G30 stands out primarily for pet hair performance. Its rubber roller design resists tangling better than many traditional brush rolls in the same price range.
-              </p>
-              <p className="text-muted-foreground mb-4">
-                It collects dog and cat hair effectively on hard floors and low-pile carpet. Navigation is systematic enough for most homes, though it lacks the precise mapping of LiDAR models. It may require a second pass in corners or along certain edges, but repeated scheduled runs usually improve overall results.
-              </p>
-              <p className="text-muted-foreground mb-4">
-                The app is stable and includes scheduling plus manual driving. Maintenance is relatively low because the roller design reduces hair wrap.
-              </p>
-              <div className="grid md:grid-cols-2 gap-6 mt-6">
-                <div>
-                  <p className="font-semibold text-green-600 mb-2">Strengths</p>
-                  <p className="text-sm text-muted-foreground">Excellent pet hair pickup, low-tangle roller, proven reliability, and widely available replacement parts.</p>
-                </div>
-                <div>
-                  <p className="font-semibold text-amber-600 mb-2">Limitations</p>
-                  <p className="text-sm text-muted-foreground">Peak suction is lower than the Lefant M210 Pro. No advanced mapping or virtual barriers. Runtime is slightly shorter than top competitors.</p>
-                </div>
-              </div>
-              <p className="mt-6 text-sm font-medium">Verdict: Best for pet hair. Best suited for: Households with dogs or cats that shed regularly.</p>
-              <ViewOnAmazon href={AMAZON.eufy} name="eufy RoboVac G30" />
-            </div>
-          </div>
-
-          <div className="mb-16 bg-card border-2 border-amber-400/60 rounded-2xl overflow-hidden shadow-sm">
-            <ProductPhoto src={IMAGES.q5} alt="Roborock Q7 L5 robot vacuum and mop" />
-            <div className="p-6 md:p-8">
-              <h3 className="text-2xl font-bold mb-4"><a href={amazonHref(AMAZON.q5)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">Roborock Q7 L5</a></h3>
-              <ul className="text-sm text-muted-foreground space-y-1 mb-6">
-                <li><strong className="text-amber-500">Suction:</strong> 8,000 Pa (Roborock rating)</li>
-                <li><strong className="text-amber-500">Navigation:</strong> LiDAR</li>
-                <li><strong className="text-amber-500">Runtime:</strong> Up to 150 minutes</li>
-                <li><strong className="text-amber-500">Mop:</strong> 270 ml water tank, removable pad, three water levels</li>
-              </ul>
-              <p className="text-muted-foreground mb-4">
-                The Q7 L5 replaces the Roborock Q5 in this guide. The Q5 is no longer sold new on Amazon, and Roborock lists the Q7 L5 as its upgrade. LiDAR navigation builds accurate maps, supports no-go zones, and cleans individual rooms, and it adds a vacuum-and-mop pad the Q5 never had.
-              </p>
-              <p className="text-muted-foreground mb-4">
-                It moves in efficient straight lines and covers floor space more thoroughly than gyroscopic robots. Carpet boost raises suction on rugs, and the anti-tangle main and side brushes are built for pet hair. The app can suggest no-go zones around cables and table legs, but it has no camera, so it will not dodge socks or pet mess the way pricier Roborocks do.
-              </p>
-              <div className="grid md:grid-cols-2 gap-6 mt-6">
-                <div>
-                  <p className="font-semibold text-green-600 mb-2">Strengths</p>
-                  <p className="text-sm text-muted-foreground">Real LiDAR mapping, multi-floor maps, up to 150 minutes of runtime, a light mop, and a feature-rich app.</p>
-                </div>
-                <div>
-                  <p className="font-semibold text-amber-600 mb-2">Limitations</p>
-                  <p className="text-sm text-muted-foreground">No self-empty dock, so you empty the bin by hand. The mop is a damp pad, not a scrubbing mop. It needs 2.4 GHz Wi-Fi. Confirm the price on Amazon still fits this budget before you buy.</p>
-                </div>
-              </div>
-              <p className="mt-6 text-sm font-medium">Verdict: The mapping pick in this guide. Best suited for: Buyers who want LiDAR navigation and room-by-room cleaning without paying for a dock.</p>
-                            <ViewOnAmazon href={AMAZON.q5} name="Roborock Q7 L5" />
-            </div>
-          </div>
-
-          <div className="mb-16 bg-card border-2 border-amber-400/60 rounded-2xl overflow-hidden shadow-sm">
-            <ProductPhoto src={IMAGES.roomba} alt="iRobot Roomba 694, a 600 series robot vacuum" />
-            <div className="p-6 md:p-8">
-              <h3 className="text-2xl font-bold mb-4"><a href={amazonHref(AMAZON.roomba)} target="_blank" rel="nofollow sponsored noopener noreferrer" className="underline decoration-amber-500/80 underline-offset-4 hover:text-amber-700">iRobot Roomba 600 Series</a></h3>
-              <ul className="text-sm text-muted-foreground space-y-1 mb-6">
-                <li><strong className="text-amber-500">Suction:</strong> Moderate</li>
-                <li><strong className="text-amber-500">Navigation:</strong> Basic adaptive</li>
-                <li><strong className="text-amber-500">Runtime:</strong> 60–90 minutes</li>
-              </ul>
-              <p className="text-muted-foreground mb-4">
-                The Roomba 600 series represents older technology, but renewed units remain relevant for users who prioritize simplicity and brand support over modern features. It cleans adequately for light daily debris on hard floors. Carpet performance is average by 2026 standards. Navigation is less efficient, so it takes longer to cover the same area and may leave more missed spots on the first run.
-              </p>
-              <div className="grid md:grid-cols-2 gap-6 mt-6">
-                <div>
-                  <p className="font-semibold text-green-600 mb-2">Strengths</p>
-                  <p className="text-sm text-muted-foreground">Proven reliability, excellent parts availability, simple operation, and often the lowest price for a recognizable brand.</p>
-                </div>
-                <div>
-                  <p className="font-semibold text-amber-600 mb-2">Limitations</p>
-                  <p className="text-sm text-muted-foreground">Outdated navigation, lower suction than newer competitors, shorter runtime, and minimal smart features.</p>
-                </div>
-              </div>
-              <p className="mt-6 text-sm font-medium">Verdict: Best simple option. Best suited for: Users who want a basic machine that requires almost no learning curve.</p>
-              <ViewOnAmazon href={AMAZON.roomba} name="iRobot Roomba 600 Series" />
-            </div>
-          </div>
-
-          <h2 className="text-2xl md:text-3xl font-bold mt-12 mb-6">Side-by-Side Comparison</h2>
-          <div className="overflow-x-auto mb-12 rounded-xl border-2 border-amber-400/70">
-            <table className="w-full text-sm">
-              <thead className="bg-amber-400/15">
-                <tr>
-                  <th className="text-left p-3 font-semibold text-amber-500">Criteria</th>
-                  <th className="text-left p-3 font-semibold">Lefant M210 Pro</th>
-                  <th className="text-left p-3 font-semibold">eufy RoboVac G30</th>
-                  <th className="text-left p-3 font-semibold">Roborock Q7 L5</th>
-                  <th className="text-left p-3 font-semibold">Roomba 600 Series</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="border-t"><td className="p-3">Suction strength</td><td className="p-3">High</td><td className="p-3">Medium-High</td><td className="p-3">High</td><td className="p-3">Medium</td></tr>
-                <tr className="border-t bg-muted/30"><td className="p-3">Navigation</td><td className="p-3">Structured gyro</td><td className="p-3">Gyroscopic</td><td className="p-3">LiDAR</td><td className="p-3">Basic</td></tr>
-                <tr className="border-t"><td className="p-3">Pet hair performance</td><td className="p-3">Good</td><td className="p-3">Excellent</td><td className="p-3">Very Good</td><td className="p-3">Average</td></tr>
-                <tr className="border-t bg-muted/30"><td className="p-3">Typical runtime</td><td className="p-3">~120 min</td><td className="p-3">~105 min</td><td className="p-3">~150 min</td><td className="p-3">60–90 min</td></tr>
-                <tr className="border-t"><td className="p-3">Mapping capability</td><td className="p-3">Limited</td><td className="p-3">Limited</td><td className="p-3">Good</td><td className="p-3">None</td></tr>
-                <tr className="border-t bg-muted/30"><td className="p-3">App experience</td><td className="p-3">Good</td><td className="p-3">Very Good</td><td className="p-3">Excellent</td><td className="p-3">Basic</td></tr>
-                <tr className="border-t"><td className="p-3">Edge cleaning</td><td className="p-3">Above average</td><td className="p-3">Average</td><td className="p-3">Good</td><td className="p-3">Average</td></tr>
-                                <tr className="border-t"><td className="p-3">Ideal user</td><td className="p-3">Most people</td><td className="p-3">Pet owners</td><td className="p-3">Mapping and a light mop</td><td className="p-3">Simplicity seekers</td></tr>
-              </tbody>
-            </table>
-          </div>
-
-          <h2 className="text-2xl md:text-3xl font-bold mt-12 mb-6">Recommendations by Home Type and Needs</h2>
-          <ul className="space-y-3 mb-12 text-muted-foreground">
-            <li><strong className="text-amber-500">Best overall in this guide:</strong> Lefant M210 Pro</li>
-            <li><strong className="text-amber-500">Homes with moderate to heavy pet shedding:</strong> eufy RoboVac G30</li>
-            <li><strong className="text-amber-500">Want mapping and room-by-room cleaning:</strong> Roborock Q7 L5</li>
-            <li><strong className="text-amber-500">Prefer the simplest possible option:</strong> Roomba 600 Series</li>
-            <li><strong className="text-amber-500">Mostly hard floors (tile, hardwood, laminate):</strong> Any of the top three perform well</li>
-            <li><strong className="text-amber-500">Significant carpet coverage:</strong> Prioritize the Roborock Q7 L5 or Lefant M210 Pro for stronger suction</li>
-            <li><strong className="text-amber-500">Apartments under 1,000 sq ft:</strong> All recommended models are sufficient</li>
-            <li><strong className="text-amber-500">Homes closer to 1,500 sq ft:</strong> Favor longer runtime (Q7 L5 or Lefant) and more efficient navigation</li>
-          </ul>
-
-          <h2 className="text-2xl md:text-3xl font-bold mt-12 mb-6">Maintenance Expectations</h2>
-          <div className="rounded-xl border-2 border-sky-400 bg-sky-400/10 p-6 mb-12">
-            <p className="text-muted-foreground mb-4">Budget robots generally require more frequent attention than premium models:</p>
-            <ul className="space-y-2 text-muted-foreground">
-              <li>Empty the dustbin after every one or two cleaning cycles</li>
-              <li>Remove hair from the side brush and main roller at least weekly</li>
-              <li>Wipe cliff and wall sensors monthly</li>
-              <li>Replace the filter every two to three months (sooner with pets or high dust)</li>
-              <li>Check wheels and axles periodically for wrapped hair</li>
-            </ul>
-            <p className="mt-4 text-muted-foreground">Consistent basic maintenance prevents most performance declines. Neglecting it is the most common reason budget robots appear to “stop working well” after a few months.</p>
-          </div>
-
-          <h2 className="text-2xl md:text-3xl font-bold mt-12 mb-6">Frequently Asked Questions</h2>
-          <FaqJsonLd
-            items={[
-              { q: "Are robot vacuums under $300 worth buying in 2026?", a: "Yes for most apartments and smaller homes. The better models reduce the need for daily manual vacuuming and sweeping." },
-              { q: "Can any model under $300 empty itself?", a: "Self-emptying docks are uncommon as standard equipment at this price. Occasional bundle deals appear, but dedicated self-emptying robots usually cost more." },
-              { q: "Which model handles pet hair best?", a: "The eufy RoboVac G30 currently leads among regularly priced options under $300." },
-              { q: "How often do these models get stuck?", a: "All budget robots can get stuck on cables, clothing, or low thresholds. Clearing the floor before runs and using no-go zones (where available) reduces incidents." },
-              { q: "Should I buy now or wait for major sales?", a: "Major sales periods often bring the Roborock and Lefant models into stronger value territory. If you need a robot immediately, the Lefant M210 Pro or eufy G30 are safe purchases." },
-              { q: "Do these robots work on dark floors or rugs?", a: "Most handle normal flooring fine. Very dark rugs or highly reflective surfaces can occasionally confuse cliff sensors on any robot vacuum." },
-            ]}
-          />
-          <ProductListJsonLd
-            name="Best robot vacuums under $300"
-            url="/best-budget-robot-vacuums-under-300"
-            products={["Lefant M210 Pro", "eufy RoboVac G30", "Roborock Q7 L5", "iRobot Roomba 600 Series"]}
-          />
-          <div className="space-y-6 mb-12">
-            <div>
-              <p className="font-semibold text-amber-500 mb-1">Are robot vacuums under $300 worth buying in 2026?</p>
-              <p className="text-muted-foreground">Yes for most apartments and smaller homes. The better models reduce the need for daily manual vacuuming and sweeping.</p>
-            </div>
-            <div>
-              <p className="font-semibold text-amber-500 mb-1">Can any model under $300 empty itself?</p>
-              <p className="text-muted-foreground">Self-emptying docks are uncommon as standard equipment at this price. Occasional bundle deals appear, but dedicated self-emptying robots usually cost more.</p>
-            </div>
-            <div>
-              <p className="font-semibold text-amber-500 mb-1">Which model handles pet hair best?</p>
-              <p className="text-muted-foreground">The eufy RoboVac G30 currently leads among regularly priced options under $300.</p>
-            </div>
-            <div>
-              <p className="font-semibold text-amber-500 mb-1">How often do these models get stuck?</p>
-              <p className="text-muted-foreground">All budget robots can get stuck on cables, clothing, or low thresholds. Clearing the floor before runs and using no-go zones (where available) reduces incidents.</p>
-            </div>
-            <div>
-              <p className="font-semibold text-amber-500 mb-1">Should I buy now or wait for major sales?</p>
-              <p className="text-muted-foreground">Major sales periods often bring the Roborock and Lefant models into stronger value territory. If you need a robot immediately, the Lefant M210 Pro or eufy G30 are safe purchases.</p>
-            </div>
-            <div>
-              <p className="font-semibold text-amber-500 mb-1">Do these robots work on dark floors or rugs?</p>
-              <p className="text-muted-foreground">Most handle normal flooring fine. Very dark rugs or highly reflective surfaces can occasionally confuse cliff sensors on any robot vacuum.</p>
-            </div>
-          </div>
-
-          <h2 className="text-2xl md:text-3xl font-bold mt-12 mb-6">Final Verdict</h2>
-          <div className="bg-amber-400/10 border-2 border-amber-400 rounded-2xl p-6 md:p-8 mb-10">
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              The Lefant M210 Pro is the strongest all-around recommendation for most buyers in this guide. It combines useful suction with more efficient cleaning patterns than typical budget robots. Households focused on pet hair should lean toward the eufy RoboVac G30. Buyers who want the best navigation should open the Roborock Q7 L5 and keep it only if the live Amazon price still fits this guide.
-            </p>
-            <p className="text-muted-foreground">
-              Prices, promotions, and stock change frequently on Amazon. Always confirm the current price, recent customer feedback, and return policy before ordering.
-            </p>
-          </div>
-
-          <RelatedGuides current="/best-budget-robot-vacuums-under-300" />
-
-          <AmazonDealBox
-            productName="Robot Vacuums Under $300"
-            href="https://www.amazon.com/s?k=robot+vacuum+under+300&tag=gadgetsfindswebsite-20"
-          />
-
-          <p className="text-sm text-muted-foreground mt-8">
-            Prices change frequently. Always verify current pricing, compatibility, and recent reviews on Amazon before purchasing.
-          </p>
-        </div>
-      </article>
-      <Footer />
-    </>
+    <Roundup
+      path={PATH}
+      eyebrow="Robot vacuums"
+      title={TITLE}
+      updated="November 2026"
+      description={DESCRIPTION}
+      answer="The best robot vacuum under $300 for most homes is the Roborock Q7 L5: LiDAR mapping, 8,000Pa of suction and a mop, at $119.99 when we checked. Choose the eufy C10 if you want a dock that empties the bin for you, and the Lefant M210 Pro if your space is small and your budget is under $100."
+      intro={[
+        "Under $300 you are choosing between three things: a map, a mop and a self-empty dock. Very few robots in this price range do all three well, so the picks below each lead with the one that matters most. Every pick is a new listing on Amazon; we do not include renewed units here.",
+      ]}
+      hero={{ src: IMG, alt: "Budget robot vacuums under $300" }}
+      tableTitle="Budget robot vacuums compared"
+      tableColumns={["Navigation", "Dock", "Price when checked"]}
+      products={products}
+      extra={[
+        {
+          id: "older-models",
+          heading: "What about the eufy G30 and Roomba 600?",
+          body: [
+            "Older guides still recommend the eufy RoboVac G30 and the iRobot Roomba 600 series. Neither has LiDAR, and we could not find a current new listing for the G30 on Amazon. The Roomba 600 series is mostly sold renewed now. For the same money, the Roborock Q7 L5 maps the home and mops.",
+          ],
+        },
+      ]}
+      buyingGuide={{
+        heading: "How to choose a cheap robot vacuum",
+        intro: "Decide which chore you want to stop doing, then match it to the feature.",
+        points: [
+          { title: "Navigation", body: "LiDAR robots map the home, clean in rows and let you block off rooms. Robots without it wander and miss spots; they are fine for one or two small rooms." },
+          { title: "Self-empty dock", body: "Worth it with pets or a busy home. Without one you empty a small bin every day or two. Docks need replacement bags." },
+          { title: "Mopping", body: "Budget robots drag a damp pad. It keeps dust down on hard floors but will not scrub dried spills. Spinning mops cost more." },
+          { title: "Height", body: "Measure under your sofa and bed. Robots under about 3 inches tall reach the dust that collects there." },
+          { title: "Wi-Fi", body: "All three picks need 2.4GHz Wi-Fi for the app. Most routers broadcast it, but check if yours is set to 5GHz only." },
+        ],
+      }}
+      verdict={[
+        "Buy the Roborock Q7 L5 unless you have a reason not to. Spend more on the eufy C10 only for the self-empty dock, and save with the Lefant M210 Pro if you live in a small space. For bigger sale discounts on docked and mopping robots, see our Black Friday robot vacuum deals.",
+      ]}
+      faqTitle="Budget robot vacuum questions"
+      faq={[
+        { q: "What is the best robot vacuum under $300?", a: "The Roborock Q7 L5 for most homes. It has LiDAR mapping, 8,000Pa of suction and a mop, and was $119.99 on Amazon when we checked." },
+        { q: "Is a cheap robot vacuum worth it?", a: "Yes, for daily upkeep. A budget robot keeps dust and hair under control between deep cleans. It will not replace an upright vacuum on stairs or thick rugs." },
+        { q: "Do I need LiDAR on a robot vacuum?", a: "For more than one or two rooms, yes. LiDAR lets the robot map the home, clean efficiently and skip areas you block off." },
+        { q: "Which budget robot vacuum is best for pet hair?", a: "The eufy C10, because the self-empty dock handles a bin that fills fast. The Roborock Q7 L5 also has anti-tangle brushes if you do not need a dock." },
+        { q: "Can a robot vacuum under $300 mop?", a: "Some can. The Roborock Q7 L5 vacuums and mops at the same time with a damp pad, which is fine for light cleaning on hard floors." },
+      ]}
+      dealBox={{ productName: "Robot Vacuums Under $300", href: `https://www.amazon.com/s?k=robot+vacuum+under+300&tag=${TAG}` }}
+    />
   );
 }
-

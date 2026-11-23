@@ -1,253 +1,141 @@
 import type { Metadata } from "next";
-import TopPicks from "@/components/common/TopPicks";
-import ArticleJsonLd from "@/components/common/ArticleJsonLd";
-import Header from "@/components/common/Header";
-import Footer from "@/app/homepage/components/Footer";
-import AmazonDealBox from "@/components/common/AmazonDealBox";
+import Roundup, { type RoundupProduct } from "@/components/common/Roundup";
+import { pageMetadata } from "@/lib/seo";
+import { illustrationPath } from "@/lib/illustrations";
 
-const AMAZON_IPHONE_DUO = "https://www.amazon.com/s?k=iPhone+Duo&tag=gadgetsfindswebsite-20";
-const AMAZON_ZFOLD8 = "https://www.amazon.com/dp/B0H126B3KV?tag=gadgetsfindswebsite-20";
-const AMAZON_ZFOLD8_ULTRA = "https://www.amazon.com/dp/B0H12KX1X4?tag=gadgetsfindswebsite-20";
-const AMAZON_PIXEL_FOLD = "https://www.amazon.com/dp/B0H6R2NGMZ?tag=gadgetsfindswebsite-20";
+const TAG = "gadgetsfindswebsite-20";
+const PATH = "/best-foldable-phones-2026";
+const SEO_TITLE = "Best Foldable Phones of 2026, Compared";
+const TITLE = "Best Foldable Phones of 2026: Pixel, Galaxy Z Fold 8 and iPhone Duo";
+const DESCRIPTION =
+  "The best foldable phones of 2026: Pixel 11 Pro Fold, Galaxy Z Fold 8, Z Fold 8 Ultra and iPhone Duo compared by weight, screens, zoom and durability. Shop now.";
+const IMG = illustrationPath("foldable");
+const amz = (asin: string) => `https://www.amazon.com/dp/${asin}?tag=${TAG}`;
 
-export const metadata: Metadata = {
-  title: "Best Foldable Phones of 2026 Compared | Gadgets Finds",
-  description:
-    "Premium comparison of the top foldable phones in 2026. iPhone Duo, Samsung Galaxy Z Fold 8, Galaxy Z Fold 8 Ultra, and Google Pixel 11 Pro Fold. Specs, reviews, and Amazon links.",
-  metadataBase: new URL("https://www.gadgets-finds.com"),
-  alternates: {
-    canonical: "https://www.gadgets-finds.com/best-foldable-phones-2026",
-  },
-  openGraph: {
-    title: "Best Foldable Phones 2026 Comparison",
-    description: "iPhone Duo, Galaxy Z Fold 8, Pixel 11 Pro Fold — premium foldables compared.",
-    url: "https://www.gadgets-finds.com/best-foldable-phones-2026",
-    siteName: "Gadgets Finds",
-    type: "article",
-    images: [
-      {
-        url: "https://www.gadgets-finds.com/og/foldable ",
-        width: 1200,
-        height: 630,
-        alt: "Best Foldable Phones 2026",
-      },
+export const metadata: Metadata = pageMetadata({ path: PATH, title: SEO_TITLE, description: DESCRIPTION, kind: "foldable" });
+
+const products: RoundupProduct[] = [
+  {
+    id: "pixel-11-pro-fold",
+    name: "Google Pixel 11 Pro Fold",
+    label: "Best overall",
+    url: amz("B0H6R2NGMZ"),
+    why: "IP68 and a real 5x telephoto in a foldable.",
+    specs: [
+      ["Inner / cover screen", "8.0 in / 6.5 in"],
+      ["Weight", "239 g"],
+      ["Water resistance", "IP68"],
+      ["Launch price (maker)", "$1,899"],
     ],
+    body: [
+      "The most complete foldable for most people: a large 8-inch inner screen, a full-size 6.5-inch cover screen, a real 5x telephoto camera and full IP68 dust and water resistance, which most foldables still lack. Google's Tensor G6 runs clean Android with Gemini built in.",
+    ],
+    skip: "weight is your priority. At 239 g it is noticeably heavier than the Galaxy Z Fold 8.",
+    image: IMG,
   },
-  twitter: {
-    card: "summary_large_image",
-    site: "@Gadgets_finds",
-    title: "Best Foldable Phones 2026",
-    images: ["https://www.gadgets-finds.com/og/foldable"],
+  {
+    id: "galaxy-z-fold-8",
+    name: "Samsung Galaxy Z Fold 8",
+    label: "Best for everyday use",
+    url: amz("B0H126B3KV"),
+    why: "The lightest premium foldable, with a wider cover screen.",
+    specs: [
+      ["Inner / cover screen", "7.6 in / 5.5 in"],
+      ["Weight", "201 g"],
+      ["Water resistance", "IP48"],
+      ["Launch price (maker)", "$1,899"],
+    ],
+    body: [
+      "At 201 g, about the weight of a large regular phone, this is the foldable that is easiest to carry every day. The wider 5.5-inch cover screen makes one-handed typing feel normal, and it runs the Snapdragon 8 Elite Gen 5 with a 4,800mAh battery and Samsung's long update support.",
+    ],
+    skip: "you need strong zoom or dust protection. It has no dedicated telephoto and only IP48 dust resistance.",
+    image: IMG,
   },
-};
+  {
+    id: "galaxy-z-fold-8-ultra",
+    name: "Samsung Galaxy Z Fold 8 Ultra",
+    label: "Biggest screen",
+    url: amz("B0H12KX1X4"),
+    why: "An 8-inch inner screen and a 200MP main camera.",
+    specs: [
+      ["Inner / cover screen", "8.0 in / 6.5 in"],
+      ["Weight", "215 g"],
+      ["Water resistance", "Check the listing"],
+      ["Launch price (maker)", "About $2,099"],
+    ],
+    body: [
+      "The bigger Fold for people who want the most screen and the best camera hardware Samsung puts in a foldable, including a 200MP main sensor, in a thinner body than past Ultras.",
+    ],
+    skip: "you want the lightest fold or the best zoom. The regular Fold 8 is lighter, and the Pixel has the 5x telephoto.",
+    image: IMG,
+  },
+  {
+    id: "iphone-duo",
+    name: "Apple iPhone Duo",
+    label: "Best for iPhone users",
+    url: `https://www.amazon.com/s?k=iPhone+Duo&tag=${TAG}`,
+    why: "Apple's first foldable, for people staying on iOS.",
+    specs: [
+      ["Inner / cover screen", "7.6 in / 5.4 in"],
+      ["Weight", "About 254 g"],
+      ["Water resistance", "IP68"],
+      ["Launch price (maker)", "$1,999"],
+    ],
+    body: [
+      "Apple's first foldable is a book-style phone with a 5.4-inch cover screen, a 7.6-inch nano-texture inner display, the A20 Pro chip, a titanium frame and IP68 protection. It is the only foldable that keeps iMessage, FaceTime and your Apple Watch working the way they do on any iPhone.",
+    ],
+    skip: "weight or zoom matters. It is the heaviest phone here and has no dedicated telephoto camera.",
+    note: "Amazon did not list the iPhone Duo itself when we checked on November 22, 2026, so this button opens an Amazon search. Apple and carriers sell it directly.",
+    image: IMG,
+  },
+];
 
 export default function Page() {
   return (
-    <>
-      <Header />
-      <ArticleJsonLd path="/best-foldable-phones-2026" headline={"Best Foldable Phones of 2026 Compared"} description={"Premium comparison of the top foldable phones in 2026. iPhone Duo, Samsung Galaxy Z Fold 8, Galaxy Z Fold 8 Ultra, and Google Pixel 11 Pro Fold. Specs, reviews, and Amazon links."} products={["Apple iPhone Duo", "Samsung Galaxy Z Fold 8", "Samsung Galaxy Z Fold 8 Ultra", "Google Pixel 11 Pro Fold"]} />
-      <article className="min-h-screen bg-background pt-14 md:pt-16">
-        <div className="container mx-auto px-4 py-10 max-w-4xl">
-          <p className="text-xs text-muted-foreground mb-6 leading-relaxed">
-            <span className="text-red-600 font-semibold">Disclosure:</span> Gadgets Finds is an
-            Amazon Associate. We may earn from qualifying purchases if you buy through links on this
-            page, at no extra cost to you. Prices and availability change on Amazon.
-          </p>
-
-          <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">
-            Comparison
-          </p>
-          <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-            Best Foldable Phones 2026
-          </h1>
-          <TopPicks picks={[
-    { label: "Best overall", name: "Google Pixel 11 Pro Fold", why: "IP68 and real zoom in a foldable.", url: "https://www.amazon.com/dp/B0H6R2NGMZ?tag=gadgetsfindswebsite-20" },
-    { label: "Best daily foldable", name: "Samsung Galaxy Z Fold 8", why: "The lightest and most usable fold here.", url: "https://www.amazon.com/dp/B0H126B3KV?tag=gadgetsfindswebsite-20" },
-    { label: "Biggest screen", name: "Samsung Galaxy Z Fold 8 Ultra", why: "Maximum screen and camera.", url: "https://www.amazon.com/dp/B0H12KX1X4?tag=gadgetsfindswebsite-20" },
-          ]} />
-          <p className="text-muted-foreground mb-8 text-lg">
-            Apple finally entered the foldable market with the iPhone Duo. Samsung refined its Galaxy Z Fold 8 line, and Google improved the Pixel 11 Pro Fold. Here’s how the top premium options compare in late 2026.
-          </p>
-
-          <div className="overflow-x-auto mb-12">
-            <table className="w-full text-sm border-collapse">
-              <thead>
-                <tr className="border-b">
-                  <th className="text-left p-3">Phone</th>
-                  <th className="text-left p-3">Starting Price</th>
-                  <th className="text-left p-3">Inner / Cover</th>
-                  <th className="text-left p-3">Weight</th>
-                  <th className="text-left p-3">Best For</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="border-b">
-                  <td className="p-3 font-semibold">iPhone Duo</td>
-                  <td className="p-3">$1,999</td>
-                  <td className="p-3">7.6" / 5.4"</td>
-                  <td className="p-3">254 g</td>
-                  <td className="p-3">iPhone users who want the fold</td>
-                </tr>
-                <tr className="border-b">
-                  <td className="p-3 font-semibold">Galaxy Z Fold 8</td>
-                  <td className="p-3">$1,899</td>
-                  <td className="p-3">7.6" / 5.5"</td>
-                  <td className="p-3">201 g</td>
-                  <td className="p-3">Lightest, most daily-friendly</td>
-                </tr>
-                <tr className="border-b">
-                  <td className="p-3 font-semibold">Galaxy Z Fold 8 Ultra</td>
-                  <td className="p-3">$2,099</td>
-                  <td className="p-3">8.0" / 6.5"</td>
-                  <td className="p-3">215 g</td>
-                  <td className="p-3">Bigger screen + better cameras</td>
-                </tr>
-                <tr>
-                  <td className="p-3 font-semibold">Pixel 11 Pro Fold</td>
-                  <td className="p-3">$1,899</td>
-                  <td className="p-3">8.0" / 6.5"</td>
-                  <td className="p-3">239 g</td>
-                  <td className="p-3">IP68 + real zoom</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <p className="text-sm text-muted-foreground mt-2 mb-6">Starting prices are launch list prices from each maker. Amazon and carrier prices change often, so check the listing for the current price.</p>
-
-          {/* iPhone Duo */}
-          <section className="mb-16">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">Apple iPhone Duo</h2>
-            <div className="mb-6 rounded-xl overflow-hidden">
-              <img
-                src="/assets/illustrations/foldable.svg"
-                alt="Illustration, not a product photo: Apple iPhone Duo"
-                className="w-full h-auto"
-              />
-            </div>
-            <p className="text-muted-foreground mb-4">
-              Apple’s first foldable. Book-style design with a 5.4-inch cover screen and 7.6-inch inner display (nano-texture). Powered by the A20 Pro, IP68, titanium build. Starts at $1,999.
-            </p>
-            <p className="text-muted-foreground mb-4">
-              Reviewers noted strong hinge feel, animations, and polish, with trade-offs in weight, camera hardware versus non-folding Pro models, and apps still catching up to the large screen.
-            </p>
-           <div className="mb-6"> 
-<a
-  href={AMAZON_IPHONE_DUO}
-  target="_blank"
-  rel="nofollow sponsored noopener noreferrer"
-  className="inline-block bg-amber-400 hover:bg-amber-500 text-black font-bold px-6 py-3 rounded-md"
->
-  VIEW ON AMAZON
-</a>
-</div>
-<div className="aspect-video mb-6 rounded-xl overflow-hidden">
-  
-              <iframe
-                src="https://www.youtube.com/embed/ESABTN4VtrA"
-                title="iPhone Duo Review"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="w-full h-full"
-              />
-            </div>
-
-            <ul className="list-disc pl-5 text-muted-foreground space-y-1 mb-6">
-              <li>Strongest software polish and animations</li>
-              <li>Heaviest of the group (~254 g)</li>
-              <li>No dedicated telephoto</li>
-              <li>Best if you are already in the Apple ecosystem</li>
-            </ul>
-           
-          </section>
-
-          {/* Galaxy Z Fold 8 */}
-          <section className="mb-16">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">Samsung Galaxy Z Fold 8</h2>
-            <p className="text-muted-foreground mb-4">
-              The lightest premium foldable right now at just 201 g. Passport-style shape with a wider cover screen (5.5") that feels more natural one-handed. Inner screen is 7.6". Snapdragon 8 Elite Gen 5, 4,800 mAh battery.
-            </p>
-            <p className="text-muted-foreground mb-4">
-              Reviewers liked the thinner, more usable cover screen and said the form factor felt daily-drivable. Main trade-offs are the lack of a dedicated telephoto and only IP48 dust resistance.
-            </p>
-            <ul className="list-disc pl-5 text-muted-foreground space-y-1 mb-6">
-              <li>Lightest major foldable</li>
-              <li>Best cover screen usability</li>
-              <li>Strong software support from Samsung</li>
-              <li>Cameras are good but not Ultra-level</li>
-            </ul>
-            <a
-              href={AMAZON_ZFOLD8}
-              target="_blank"
-              rel="nofollow sponsored noopener noreferrer"
-              className="inline-block bg-amber-400 hover:bg-amber-500 text-black font-bold px-6 py-3 rounded-md"
-            >
-              VIEW ON AMAZON
-            </a>
-          </section>
-
-          {/* Galaxy Z Fold 8 Ultra */}
-          <section className="mb-16">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">Samsung Galaxy Z Fold 8 Ultra</h2>
-            <p className="text-muted-foreground mb-4">
-              The bigger, more feature-packed version. 8-inch inner screen, 6.5-inch cover, 200 MP main camera, and a thinner body. Starts around $2,099.
-            </p>
-            <p className="text-muted-foreground mb-4">
-              Better if you want the largest possible screen and stronger camera hardware. It’s heavier than the regular Fold 8 and still carries the usual foldable compromises on zoom compared to a non-folding Ultra.
-            </p>
-            <a
-              href={AMAZON_ZFOLD8_ULTRA}
-              target="_blank"
-              rel="nofollow sponsored noopener noreferrer"
-              className="inline-block bg-amber-400 hover:bg-amber-500 text-black font-bold px-6 py-3 rounded-md"
-            >
-              VIEW ON AMAZON
-            </a>
-          </section>
-
-          {/* Pixel 11 Pro Fold */}
-          <section className="mb-16">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">Google Pixel 11 Pro Fold</h2>
-            <p className="text-muted-foreground mb-4">
-              8-inch inner display, 6.5-inch cover, full IP68 rating, and a real 5x telephoto. Tensor G6 chip. Starts at $1,899.
-            </p>
-            <p className="text-muted-foreground mb-4">
-              Frequently recommended as the best overall foldable for most people because it combines a large screen, proper dust/water resistance, and usable zoom. Software is clean and AI features are strong.
-            </p>
-            <a
-              href={AMAZON_PIXEL_FOLD}
-              target="_blank"
-              rel="nofollow sponsored noopener noreferrer"
-              className="inline-block bg-amber-400 hover:bg-amber-500 text-black font-bold px-6 py-3 rounded-md"
-            >
-              VIEW ON AMAZON
-            </a>
-          </section>
-
-          <section id="older-models" className="scroll-mt-28 mb-8">
-            <h2 className="text-2xl font-bold mt-10 mb-4">What about the Galaxy Z Fold 6?</h2>
-            <p className="text-muted-foreground leading-relaxed">
-              The Galaxy Z Fold 6 launched in 2024 and has since been replaced by the Z Fold 7 and now the Z Fold 8 line above. It can still be a fair buy as a clearly discounted, new unit from a trusted seller, but a newer Fold gets software updates for longer. We no longer keep a separate Z Fold 6 page.
-            </p>
-          </section>
-
-          <h2 className="text-2xl font-bold mt-10 mb-4">Quick Verdict</h2>
-          <ul className="list-disc pl-5 text-muted-foreground space-y-2 mb-8">
-            <li><strong>Already on iPhone and want the fold?</strong> iPhone Duo.</li>
-            <li><strong>Want the lightest and most usable daily foldable?</strong> Galaxy Z Fold 8.</li>
-            <li><strong>Want maximum screen + camera?</strong> Galaxy Z Fold 8 Ultra.</li>
-            <li><strong>Want IP68 + real zoom?</strong> Pixel 11 Pro Fold.</li>
-          </ul>
-
-          <p className="text-sm text-muted-foreground mb-8">
-            Prices and stock change. Always confirm the live listing on Amazon before buying. As an Amazon Associate, Gadgets Finds earns from qualifying purchases.
-          </p>
-<AmazonDealBox
-  productName="Top Foldable Phones 2026"
-  href="https://www.amazon.com/s?k=foldable+phones&tag=gadgetsfindswebsite-20"
-/>
-        </div>
-      </article>
-      <Footer />
-    </>
+    <Roundup
+      path={PATH}
+      eyebrow="Foldable phones"
+      title={TITLE}
+      updated="November 2026"
+      description={DESCRIPTION}
+      answer="The best foldable phone of 2026 for most people is the Google Pixel 11 Pro Fold: it pairs a big 8-inch screen with IP68 water resistance and a real 5x zoom. The Galaxy Z Fold 8 is the lightest and easiest to use every day, the Z Fold 8 Ultra has the biggest screen, and the iPhone Duo is the pick if you want to stay on iPhone."
+      intro={[
+        "Foldables still cost more than regular flagships and give up something for the hinge: weight, zoom, or dust protection. Choose the compromise you can live with. The table lists makers' launch prices for reference; Amazon and carrier prices change often.",
+      ]}
+      hero={{ src: IMG, alt: "Foldable phones compared" }}
+      tableTitle="Foldable phones compared"
+      tableColumns={["Inner / cover screen", "Weight", "Water resistance"]}
+      products={products}
+      extra={[
+        {
+          id: "older-models",
+          heading: "Is the Galaxy Z Fold 6 still worth buying?",
+          body: [
+            "The Galaxy Z Fold 6 launched in 2024 and has since been replaced by the Z Fold 7 and the Z Fold 8 line above. It can still be a fair buy as a clearly discounted new unit from a trusted seller, but a newer Fold gets software updates for longer.",
+          ],
+        },
+      ]}
+      buyingGuide={{
+        heading: "How to choose a foldable phone",
+        points: [
+          { title: "Weight", body: "Foldables range from about 200 g to over 250 g. If it will live in a jeans pocket, the lighter Galaxy Z Fold 8 is the easiest to carry." },
+          { title: "Cover screen", body: "A wider cover screen (5.5 inches or more) means you can use the phone closed like a normal phone and open it only for reading, video or multitasking." },
+          { title: "Durability", body: "IP68 means dust and water protection. IP48 handles water but not fine dust or sand. Consider a case and the maker's protection plan." },
+          { title: "Camera", body: "Foldables usually trail regular flagships on zoom. If you shoot a lot of telephoto, the Pixel 11 Pro Fold's 5x lens is the strongest here." },
+          { title: "Platform", body: "Staying on iPhone means the iPhone Duo. On Android, Samsung and Google both promise long software support." },
+        ],
+      }}
+      verdict={[
+        "Buy the Pixel 11 Pro Fold for the best all-round foldable, the Galaxy Z Fold 8 if lightness and one-handed use matter most, the Z Fold 8 Ultra for the largest screen and camera, and the iPhone Duo if you are staying with Apple.",
+      ]}
+      faqTitle="Foldable phone questions"
+      faq={[
+        { q: "What is the best foldable phone in 2026?", a: "The Google Pixel 11 Pro Fold for most people, thanks to IP68 protection and a 5x telephoto. The Galaxy Z Fold 8 is the lightest and easiest to carry." },
+        { q: "Are foldable phones durable?", a: "They are much sturdier than early models, but the inner screen is still softer than glass. Use a case, avoid sand and pockets with keys, and consider the maker's protection plan." },
+        { q: "Is a foldable phone worth it?", a: "Worth it if you read, multitask or watch video on your phone a lot and value the bigger screen. If you mainly take photos and message, a regular flagship costs less and zooms better." },
+        { q: "Does Apple make a foldable iPhone?", a: "Yes. The iPhone Duo is Apple's first foldable, with a 7.6-inch inner display and a 5.4-inch cover screen." },
+      ]}
+      dealBox={{ productName: "Top Foldable Phones 2026", href: `https://www.amazon.com/s?k=foldable+phones&tag=${TAG}` }}
+    />
   );
 }
