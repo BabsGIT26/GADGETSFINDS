@@ -1,20 +1,17 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
+import { illustrationPath } from "@/lib/illustrations";
 import Roundup, { type RoundupProduct } from "@/components/common/Roundup";
 
 const TAG = "gadgetsfindswebsite-20";
 const PATH = "/best-graphics-cards-2026";
-const TITLE = "Best Graphics Cards to Buy in 2026";
+const SEO_TITLE = "Best Graphics Cards for Gaming in 2026";
+const TITLE = "Best Graphics Cards for Gaming in 2026: RTX 50 and Arc";
 const DESCRIPTION =
-  "RTX 5090, 5080, 5070 Ti, 5070, and 5060 Ti compared, plus Intel Arc B580: memory, power, launch prices, and which card fits your monitor.";
+  "The best graphics cards for gaming in 2026: RTX 5090, 5080, 5070 Ti, 5070, 5060 Ti and Intel Arc B580, matched to 1080p, 1440p and 4K. Check today's price.";
+const IMG = illustrationPath("gpu");
 
-export const metadata: Metadata = {
-  title: `${TITLE} | Gadgets Finds`,
-  description: DESCRIPTION,
-  metadataBase: new URL("https://www.gadgets-finds.com"),
-  alternates: { canonical: `https://www.gadgets-finds.com${PATH}` },
-  openGraph: { title: TITLE, description: DESCRIPTION, url: `https://www.gadgets-finds.com${PATH}`, type: "article" },
-  twitter: { card: "summary_large_image", title: TITLE, description: DESCRIPTION },
-};
+export const metadata: Metadata = pageMetadata({ path: PATH, title: SEO_TITLE, description: DESCRIPTION, kind: "gpu" });
 
 const amz = (asin: string) => `https://www.amazon.com/dp/${asin}?tag=${TAG}`;
 
@@ -96,6 +93,7 @@ const products: RoundupProduct[] = [
     label: "Cheapest 1440p RTX 50",
     url: amz("B0F7XHBT13"),
     why: "NVIDIA's own design at the lowest 5070 tier.",
+    skip: "you plan to keep the card for years at 1440p. The 16GB 5070 Ti has more headroom.",
     specs: [
       ["Memory", "12GB GDDR7"],
       ["Board power (maker rating)", "250W"],
@@ -110,6 +108,7 @@ const products: RoundupProduct[] = [
     label: "Tightest budget",
     url: amz("B0F7W1KVT3"),
     why: "Only when the 16GB model costs much more.",
+    skip: "the 16GB 5060 Ti costs only a little more. 8GB is already tight in new games.",
     specs: [
       ["Memory", "8GB GDDR7"],
       ["Board power (maker rating)", "180W"],
@@ -123,6 +122,7 @@ const products: RoundupProduct[] = [
     name: "Intel Arc B580 12GB",
     label: "Budget alternative",
     why: "Intel's 1080p and 1440p card.",
+    skip: "you play older games that Intel drivers handle less well, or you want DLSS. Buy NVIDIA.",
     specs: [
       ["Memory", "12GB GDDR6"],
       ["Board power (maker rating)", "190W"],
@@ -144,30 +144,32 @@ export default function Page() {
       title={TITLE}
       updated="November 2026"
       description={DESCRIPTION}
+      answer="The best graphics card for gaming in 2026 for most PCs is the RTX 5070 Ti 16GB: it handles high-refresh 1440p and entry-level 4K. For 1080p and budget 1440p, the RTX 5060 Ti 16GB is the best value. Buy the RTX 5090 only for 4K with ray tracing or local AI work that needs 32GB of memory."
       intro={[
-        "Pick the card for your monitor, not for the name on the box. 1080p needs a 5060 Ti. 1440p is the 5070 or 5070 Ti. 4K starts at the 5070 Ti with DLSS and ends at the 5090.",
-        "Prices for RTX 50 cards change by the hour and partner cards cost more than NVIDIA's launch prices, so this page lists launch prices only as a reference. This guide replaces our older RTX 50 price list, RTX 5090 page, and Intel Arc B-Series page.",
+        "Pick the card for your monitor, not for the name on the box: 1080p needs a 5060 Ti, 1440p is the 5070 or 5070 Ti, and 4K starts at the 5070 Ti with DLSS. RTX 50 prices change by the hour and partner cards cost more than NVIDIA's launch prices, so the table lists launch prices only as a reference.",
       ]}
+      hero={{ src: IMG, alt: "Graphics card buying guide" }}
+      tableTitle="RTX 50 and Arc graphics cards compared"
       tableColumns={["Memory", "Board power (maker rating)", "Launch price (maker)"]}
-      products={products}
-      extra={[
-        {
-          id: "before-you-buy",
-          heading: "Before you buy a graphics card",
-          body: [
-            "Check your power supply. The board power ratings above are the makers’ figures for the card alone; partner cards with factory overclocks can draw more.",
-            "Measure your case. Triple-fan cards are long and thick.",
-            "Confirm the exact model on Amazon: memory size, new not renewed, and sold by Amazon or the maker.",
-          ],
-        },
-      ]}
+      products={products.map((product) => ({ ...product, image: IMG }))}
+      buyingGuide={{
+        heading: "How to choose a graphics card",
+        points: [
+          { title: "Match the card to your monitor", body: "1080p at 60 to 144Hz: RTX 5060 Ti or Arc B580. 1440p high refresh: RTX 5070 or 5070 Ti. 4K: RTX 5070 Ti with DLSS, the 5080, or the 5090." },
+          { title: "Video memory", body: "8GB is enough for esports at 1080p. For new big-budget games at high settings, 12GB to 16GB is the safer choice and lasts longer." },
+          { title: "Power supply", body: "The board power figures are the makers' ratings for the card alone. Factory-overclocked partner cards can draw more, and the 5090 needs a quality high-wattage supply with the right 16-pin connector." },
+          { title: "Case size", body: "Triple-fan cards are long and thick. Measure the space in your case before you buy." },
+          { title: "Listing check", body: "Confirm the memory size, that the card is new rather than renewed, and that Amazon or the maker is the seller." },
+        ],
+      }}
       verdict={[
         "Buy the RTX 5070 Ti for most gaming PCs. Drop to the 5060 Ti 16GB for 1080p and budget 1440p. Buy the 5090 only for 4K with ray tracing or local AI work that needs 32GB.",
       ]}
+      faqTitle="Graphics card buying questions"
       faq={[
-        { q: "Is there an RTX 5090 Ti?", a: "No. The RTX 5090 is NVIDIA's top GeForce card in the RTX 50 series." },
+        { q: "What is the best graphics card for 1440p gaming?", a: "The RTX 5070 Ti 16GB for high-refresh 1440p, or the RTX 5070 if you want to spend less and play at medium-to-high settings." },
         { q: "Is 8GB of video memory enough in 2026?", a: "For esports at 1080p, yes. For new big-budget games at high settings, 12GB to 16GB is the safer choice." },
-        { q: "Why are RTX 50 prices higher than launch prices?", a: "Demand and partner-card pricing. Launch prices on this page are NVIDIA's reference prices; read the live price on Amazon." },
+        { q: "Is there an RTX 5090 Ti?", a: "No. The RTX 5090 is NVIDIA's top GeForce card in the RTX 50 series." },
         { q: "What power supply do I need for an RTX 5090?", a: "NVIDIA rates the card at 575W. Plan for a quality high-wattage power supply with the right 16-pin connector, and check the card maker's recommendation." },
       ]}
     />
