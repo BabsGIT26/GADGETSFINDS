@@ -1,24 +1,35 @@
 import Header from "@/components/common/Header";
 import Footer from "@/app/homepage/components/Footer";
-import RelatedGuides from "@/components/common/RelatedGuides";
+import RelatedGuides, { type Topic } from "@/components/common/RelatedGuides";
 import GuideFaq, { type FaqItem } from "@/components/common/GuideFaq";
 import ArticleJsonLd from "@/components/common/ArticleJsonLd";
 import TopPicks from "@/components/common/TopPicks";
+import AmazonDealBox from "@/components/common/AmazonDealBox";
+import { HeroImage, ProductImage } from "@/components/common/Media";
+import { CARD, CONTAINER, CTA, DISCLOSURE, EYEBROW, H1, H2, H3, LEAD, P, PAGE, UL } from "@/lib/layout";
 
 export type RoundupProduct = {
   /** Section anchor, used by the 301s from the old single-product pages. */
   id: string;
   name: string;
-  /** Short label for the Top picks box and the table. */
+  /** "Best for" label, used in Quick picks, the table and the review. */
   label: string;
   /** Full Amazon URL with the page's tag. Leave out when no verified listing exists. */
   url?: string;
-  /** One line for the Top picks box. */
+  /** One line for the Quick picks box. */
   why: string;
   specs: [string, string][];
+  /** "Why we picked it" paragraphs. */
   body: string[];
+  /** "Who should skip it". */
   skip?: string;
+  /** Product image or illustration (4:3). */
+  image?: string;
+  /** Short stock or listing note shown above the button. */
+  note?: string;
 };
+
+export type BuyingPoint = { title: string; body: string };
 
 function goHref(url: string) {
   return `/api/go?url=${encodeURIComponent(url)}`;
@@ -29,26 +40,46 @@ export default function Roundup({
   eyebrow,
   title,
   updated,
-  intro,
+  answer,
+  intro = [],
+  hero,
+  tableTitle,
   tableColumns,
   products,
   extra,
+  buyingGuide,
   verdict,
   faq,
+  faqTitle,
   description,
+  picksNote,
+  dealBox,
+  topics,
 }: {
   path: string;
   eyebrow: string;
+  /** H1: contains the primary keyword. */
   title: string;
   updated: string;
-  intro: string[];
+  /** Short answer shown right under the H1; uses the primary keyword. */
+  answer: string;
+  intro?: string[];
+  hero?: { src: string; alt: string };
+  /** H2 above the comparison table, e.g. "Best cheap tablets compared". */
+  tableTitle: string;
   /** Spec labels shown as table columns, in order. Must match keys in product specs. */
   tableColumns: string[];
   products: RoundupProduct[];
   extra?: { id: string; heading: string; body: string[] }[];
+  buyingGuide?: { heading: string; intro?: string; points: BuyingPoint[] };
   verdict: string[];
   faq: FaqItem[];
+  faqTitle?: string;
   description: string;
+  picksNote?: string;
+  /** Optional Amazon search box at the end, e.g. for more options. */
+  dealBox?: { productName: string; href: string };
+  topics?: Topic[];
 }) {
   const picks = products
     .filter((product) => product.url)
@@ -58,27 +89,27 @@ export default function Roundup({
     <>
       <Header />
       <ArticleJsonLd path={path} headline={title} description={description} products={products.map((p) => p.name)} />
-      <article className="min-h-screen bg-background pt-14 md:pt-16">
-        <div className="container mx-auto px-4 py-10 max-w-4xl">
-          <p className="text-xs text-muted-foreground mb-6 leading-relaxed">
-            <span className="text-red-600 font-semibold">Disclosure:</span> Gadgets Finds is an Amazon Associate. We may earn from qualifying purchases if you buy through links on this page, at no extra cost to you. Prices and availability change on Amazon.
+      <main className={PAGE}>
+      <article>
+        <div className={CONTAINER}>
+          <p className={DISCLOSURE}>
+            <span className="text-red-600 font-semibold">Disclosure:</span> Gadgets Finds is an Amazon Associate. We may
+            earn from qualifying purchases if you buy through links on this page, at no extra cost to you.
           </p>
-          <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">{eyebrow}</p>
-          <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">{title}</h1>
-          <p className="text-muted-foreground mb-2 text-sm">Last updated: {updated}</p>
-          <TopPicks picks={picks} />
+          <p className={EYEBROW}>{eyebrow}</p>
+          <h1 className={H1}>{title}</h1>
+          <p className="text-sm text-muted-foreground mb-4">Updated {updated} · Specs from maker pages and Amazon listings</p>
+          <p className={LEAD}>{answer}</p>
+          <TopPicks picks={picks} note={picksNote} />
           {intro.map((paragraph) => (
-            <p key={paragraph.slice(0, 40)} className="text-muted-foreground mb-5 leading-relaxed">
+            <p key={paragraph.slice(0, 40)} className={P}>
               {paragraph}
             </p>
           ))}
-          <p className="text-sm text-muted-foreground mb-8 leading-relaxed">
-            This page summarizes maker specs and public listings. We did not lab-test these products, and we do not
-            publish star ratings or scores. Read the live price, seller, and stock on Amazon before you buy.
-          </p>
+          {hero ? <HeroImage src={hero.src} alt={hero.alt} priority={false} /> : null}
 
-          <h2 className="text-2xl md:text-3xl font-bold mt-10 mb-4">Compare at a glance</h2>
-          <div className="overflow-x-auto mb-10 rounded-xl border border-border">
+          <h2 className={H2}>{tableTitle}</h2>
+          <div className="overflow-x-auto mb-4 rounded-xl border border-border">
             <table className="w-full text-sm border-collapse min-w-[560px]">
               <thead>
                 <tr className="bg-muted/50 text-left">
@@ -113,73 +144,103 @@ export default function Roundup({
               </tbody>
             </table>
           </div>
+          <p className="text-xs text-muted-foreground mb-8">
+            We did not lab-test these products and do not publish star ratings or scores. Check the live price, seller and
+            stock on Amazon before you buy.
+          </p>
 
           {products.map((product, index) => (
-            <section key={product.id} id={product.id} className="scroll-mt-28 mb-10">
-              <h2 className="text-2xl md:text-3xl font-bold mt-12 mb-2">
+            <section key={product.id} id={product.id} className="scroll-mt-28">
+              <h2 className={H2}>
                 {index + 1}. {product.name}
               </h2>
-              <p className="text-sm font-semibold text-amber-600 dark:text-amber-400 mb-4">{product.label}</p>
-              <div className="bg-card border-2 border-amber-400/60 rounded-2xl p-6 md:p-8 shadow-sm">
-                <ul className="text-sm text-muted-foreground space-y-1 mb-5">
+              <div className={CARD}>
+                {product.image ? <ProductImage src={product.image} alt={product.name} /> : null}
+                <p className="mb-4">
+                  <span className="inline-block rounded-full bg-amber-400 px-3 py-1 text-xs font-extrabold uppercase tracking-wide text-zinc-950">
+                    Best for: {product.label.replace(/^Best (for )?/i, "")}
+                  </span>
+                </p>
+                <ul className="text-sm text-muted-foreground space-y-1 mb-2">
                   {product.specs.map(([key, value]) => (
                     <li key={key}>
-                      <strong className="text-amber-500">{key}:</strong> {value}
+                      <strong className="text-foreground">{key}:</strong> {value}
                     </li>
                   ))}
                 </ul>
+                <h3 className={H3}>Why we picked it</h3>
                 {product.body.map((paragraph) => (
-                  <p key={paragraph.slice(0, 40)} className="text-muted-foreground mb-4 leading-relaxed">
+                  <p key={paragraph.slice(0, 40)} className={P}>
                     {paragraph}
                   </p>
                 ))}
                 {product.skip ? (
-                  <p className="text-muted-foreground mb-4 leading-relaxed">
-                    <strong className="text-foreground">Skip it if:</strong> {product.skip}
-                  </p>
+                  <>
+                    <h3 className={H3}>Who should skip it</h3>
+                    <p className={P}>{/^[a-z]/.test(product.skip) ? `Skip it if ${product.skip}` : product.skip}</p>
+                  </>
                 ) : null}
+                {product.note ? <p className="text-sm text-muted-foreground italic mb-4">{product.note}</p> : null}
                 {product.url ? (
                   <a
                     href={goHref(product.url)}
                     target="_blank"
                     rel="nofollow sponsored noopener noreferrer"
-                    aria-label={`View ${product.name} on Amazon`}
-                    className="inline-flex items-center justify-center mt-2 min-w-[220px] px-8 py-3 rounded-full bg-amber-400 text-zinc-950 text-sm font-extrabold hover:bg-amber-300 transition-colors"
+                    aria-label={`Check price of ${product.name} on Amazon`}
+                    className={`${CTA} mt-2`}
                   >
-                    View on Amazon
+                    Check price on Amazon
                   </a>
                 ) : (
-                  <p className="text-sm text-muted-foreground italic">No Amazon button: we could not confirm a current new listing for this one.</p>
+                  <p className="text-sm text-muted-foreground italic">
+                    No Amazon button: we could not confirm a current new listing for this one.
+                  </p>
                 )}
               </div>
             </section>
           ))}
 
           {extra?.map((block) => (
-            <section key={block.id} id={block.id} className="scroll-mt-28 mb-10">
-              <h2 className="text-2xl md:text-3xl font-bold mt-12 mb-4">{block.heading}</h2>
+            <section key={block.id} id={block.id} className="scroll-mt-28">
+              <h2 className={H2}>{block.heading}</h2>
               {block.body.map((paragraph) => (
-                <p key={paragraph.slice(0, 40)} className="text-muted-foreground mb-4 leading-relaxed">
+                <p key={paragraph.slice(0, 40)} className={P}>
                   {paragraph}
                 </p>
               ))}
             </section>
           ))}
 
-          <div className="rounded-2xl border-2 border-amber-400 bg-amber-400/10 p-6 md:p-8 my-10">
-            <h2 className="text-2xl font-bold mb-3">Final verdict</h2>
+          {buyingGuide ? (
+            <section id="buying-guide" className="scroll-mt-28">
+              <h2 className={H2}>{buyingGuide.heading}</h2>
+              {buyingGuide.intro ? <p className={P}>{buyingGuide.intro}</p> : null}
+              {buyingGuide.points.map((point) => (
+                <div key={point.title}>
+                  <h3 className={H3}>{point.title}</h3>
+                  <p className={P}>{point.body}</p>
+                </div>
+              ))}
+            </section>
+          ) : null}
+
+          <section className="rounded-2xl border-2 border-amber-400 bg-amber-400/10 p-5 md:p-6 mt-12">
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-3">Final verdict</h2>
             {verdict.map((paragraph) => (
-              <p key={paragraph.slice(0, 40)} className="text-muted-foreground mb-3 leading-relaxed">
+              <p key={paragraph.slice(0, 40)} className={P}>
                 {paragraph}
               </p>
             ))}
-          </div>
+          </section>
 
-          <GuideFaq items={faq} />
-          <RelatedGuides current={path} />
+          <GuideFaq items={faq} title={faqTitle} />
+          <RelatedGuides current={path} topics={topics} />
+          {dealBox ? <AmazonDealBox productName={dealBox.productName} href={dealBox.href} /> : null}
         </div>
       </article>
+      </main>
       <Footer />
     </>
   );
 }
+

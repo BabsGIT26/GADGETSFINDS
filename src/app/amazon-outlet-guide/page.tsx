@@ -1,138 +1,77 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import AppImage from "@/components/ui/AppImage";
-import Header from "@/components/common/Header";
-import Footer from "@/app/homepage/components/Footer";
-import AmazonDealBox from "@/components/common/AmazonDealBox";
+import ProductArticle from "@/components/common/ProductArticle";
+import { pageMetadata } from "@/lib/seo";
+import { illustrationPath } from "@/lib/illustrations";
 
+const PATH = "/amazon-outlet-guide";
 const AMAZON_OUTLET = "https://www.amazon.com/outlet?tag=gadgetsfindswebsite-20";
+const SEO_TITLE = "Amazon Outlet: What It Is and How to Use It";
+const TITLE = "Amazon Outlet: What It Is and How to Find Real Deals";
+const DESCRIPTION =
+  "Amazon Outlet explained: what it sells, how it differs from Amazon Warehouse and Renewed, and how to find it in the app in two minutes. Open Amazon Outlet now.";
 
-export const metadata: Metadata = {
-  title: "Amazon Outlet — Gadgets Finds",
-  description:
-    "Amazon Outlet is the overstock and closeout shelf: how to use it for gadgets without treating it like a second store.",
-  metadataBase: new URL("https://www.gadgets-finds.com"),
-  alternates: { canonical: "https://www.gadgets-finds.com/amazon-outlet-guide" },
-  openGraph: {
-    title: "Amazon Outlet — Gadgets Finds",
-    description: "Amazon’s overstock and closeout shelf — how to use it.",
-    url: "https://www.gadgets-finds.com/amazon-outlet-guide",
-    siteName: "Gadgets Finds",
-    type: "article",
-    images: [
-      {
-        url: "https://www.gadgets-finds.com/og/deals",
-        width: 1200,
-        height: 630,
-        alt: "Amazon Outlet",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    site: "@Gadgets_finds",
-    title: "Amazon Outlet — Gadgets Finds",
-    images: ["https://www.gadgets-finds.com/og/deals"],
-  },
-};
+export const metadata: Metadata = pageMetadata({ path: PATH, title: SEO_TITLE, description: DESCRIPTION, kind: "deals" });
+
+const link = "underline decoration-amber-500/80 underline-offset-4 hover:text-foreground";
 
 export default function Page() {
   return (
-    <>
-      <Header />
-      <article className="min-h-screen bg-background pt-14 md:pt-16">
-        <div className="container mx-auto px-4 py-10 max-w-3xl">
-          <p className="text-xs text-muted-foreground mb-6 leading-relaxed max-w-full">
-            <span className="text-red-600 font-semibold">Disclosure:</span> Gadgets Finds is an
-            Amazon Associate. We may earn from qualifying purchases if you buy through links on
-            this page, at no extra cost to you.
-          </p>
-
-          <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">Guides</p>
-          <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-2">Amazon Outlet</h1>
-          <p className="text-sm text-muted-foreground mb-8">By Gadgets Finds</p>
-
-          <p className="text-muted-foreground mb-6">
-            Most people never leave Amazon’s search bar. Outlet is the other door: a single grid
-            where leftover inventory is priced to leave the warehouse.
-          </p>
-          <p className="text-muted-foreground mb-4">
-            It is Amazon’s overstock and closeout shelf — last sizes, extra colors, products that
-            did not move at full price. Open it when you already know the kind of thing you want
-            and you can live with last season’s finish.
-          </p>
-
-          <p className="mb-8">
-            <a
-              href={AMAZON_OUTLET}
-              target="_blank"
-              rel="nofollow sponsored noopener noreferrer"
-              className="inline-flex items-center px-5 py-2.5 rounded-full bg-amber-400 text-zinc-950 text-sm font-semibold hover:bg-transparent hover:text-foreground border border-amber-400 transition-colors"
-            >
-              Open Amazon Outlet
-            </a>
-          </p>
-
-          <h2 className="text-2xl font-bold mt-10 mb-3">Why it exists</h2>
-          <p className="text-muted-foreground mb-6">
-            Warehouses cost money. When a model piles up, Amazon would rather cut the price than
-            keep stacking boxes. Outlet is that cut, gathered in one URL instead of buried on
-            page eight of a normal search.
-          </p>
-
-          <h2 className="text-2xl font-bold mt-10 mb-3">What to expect</h2>
-          <p className="text-muted-foreground mb-6">
-            Useful for headphones, home, kitchen, apparel, accessories, some laptops and monitors.
-            Unreliable when you need one exact current flagship today. If the PS5 or phone you
-            want is not in the grid, it is not hidden. It simply is not Outlet stock.
-          </p>
-
-          <div className="w-full flex items-center justify-center py-6 mb-8">
-            <AppImage
-              src="/assets/illustrations/deals.svg"
-              alt="Amazon Outlet"
-              className="max-h-[400px] w-auto max-w-full object-contain"
-            />
-          </div>
-
-          <h2 className="text-2xl font-bold mt-10 mb-3">Outlet is not Warehouse</h2>
-          <p className="text-muted-foreground mb-6">
-            Warehouse and Renewed are returns and refurbished units. Outlet is meant for{" "}
-            <strong>new</strong> excess. Always read the condition on the listing. If the card
-            says open-box, you are no longer in the same aisle. Our{" "}
-            <Link href="/best-gaming-consoles-2026#playstation-5" className="text-primary underline">
-              consoles guide
-            </Link>{" "}
-            explains why we no longer link Renewed consoles — that is a different program.
-          </p>
-
-          <h2 className="text-2xl font-bold mt-10 mb-3">How to use it in two minutes</h2>
-          <ul className="list-disc pl-5 text-muted-foreground space-y-2 mb-6">
-            <li>Web: All menu → Programs & Features → Amazon Outlet.</li>
-            <li>App: Deals and Savings → Amazon Outlet.</li>
-            <li>Filter a category first.</li>
-            <li>Ignore a loud % if you would not buy the brand at full price.</li>
-            <li>Compare the same model on the regular product page before you pay.</li>
-          </ul>
-
-          <h2 className="text-2xl font-bold mt-10 mb-3">How we treat it</h2>
-          <p className="text-muted-foreground mb-6">
-            We do not republish the whole grid. We open Outlet when a gadget we already cover
-            might be cheaper there. If the cut is real, the listing is worth a click. If it is
-            noise, we close it.
-          </p>
-
-          <h2 className="text-2xl font-bold mt-10 mb-3">Worth opening now</h2>
-          <p className="text-muted-foreground mb-8">
-            If you are already shopping electronics or home and you can accept a color or bundle
-            that is not on the hero banner, start at Outlet, then decide. The live catalog is on
-            Amazon; it changes through the day.
-          </p>
-
-          <AmazonDealBox productName="Amazon Outlet" href={AMAZON_OUTLET} />
-        </div>
-      </article>
-      <Footer />
-    </>
+    <ProductArticle
+      path={PATH}
+      eyebrow="Deal guides"
+      title={TITLE}
+      description={DESCRIPTION}
+      topics={["deals"]}
+      answer="Amazon Outlet is Amazon's overstock and closeout section: new products that did not sell at full price, such as last sizes, extra colors and older models, marked down to clear the warehouse. It is worth opening when you know the kind of product you want and do not mind last season's color or bundle."
+      image={{ src: illustrationPath("deals"), alt: "Amazon Outlet deals" }}
+      cta={{ href: AMAZON_OUTLET, label: "Open Amazon Outlet" }}
+      bestFor="Flexible shoppers looking for new, discounted overstock"
+      why={[
+        "Outlet gathers markdowns in one grid instead of scattering them across normal search results. It is strongest for headphones, home, kitchen, clothing and accessories, plus some laptops and monitors.",
+      ]}
+      skip={[
+        "Skip it if you need one exact current flagship today. If the phone or console you want is not in the grid, it is not hidden; it simply is not overstock.",
+      ]}
+      sections={[
+        {
+          heading: "Amazon Outlet vs Amazon Warehouse and Renewed",
+          body: [
+            <>
+              Amazon Warehouse (now Amazon Resale) sells returned and open-box items, and Amazon Renewed sells refurbished products. Outlet is meant for <strong>new</strong> excess stock. Always read the condition on the listing: if it says used or open-box, you are not in Outlet anymore. Our{" "}
+              <a href="/best-gaming-consoles-2026#playstation-5" className={link}>gaming consoles guide</a> explains why we do not link renewed consoles.
+            </>,
+          ],
+        },
+        {
+          heading: "How to find Amazon Outlet",
+          bullets: [
+            "On the website: open the All menu, then Programs & Features, then Amazon Outlet.",
+            "In the Amazon app: go to Deals, then Amazon Outlet.",
+            "Pick a category first; the full grid is too big to browse.",
+            "Ignore a large percentage off if you would not buy the brand at full price.",
+            "Compare the same model on its normal product page before you pay.",
+          ],
+        },
+        {
+          heading: "Is Amazon Outlet worth it?",
+          body: [
+            <>
+              Yes, if you are flexible on color or version. The discounts are real markdowns on new stock, but they change through the day and are not always the lowest price. For tech we have already compared, start with our{" "}
+              <a href="/best-amazon-deals-this-week" className={link}>best Amazon deals this week</a> and{" "}
+              <a href="/best-mini-gadgets-under-30" className={link}>best tech gadgets under $30</a>, then check Outlet for the same items.
+            </>,
+          ],
+        },
+      ]}
+      faqTitle="Amazon Outlet questions"
+      faq={[
+        { q: "What is Amazon Outlet?", a: "Amazon's section for new overstock and closeout products, discounted to clear warehouse space." },
+        { q: "Are Amazon Outlet items new?", a: "Outlet is for new excess stock. Used and open-box items are sold through Amazon Resale (formerly Warehouse), and refurbished items through Amazon Renewed. Check the condition on each listing." },
+        { q: "How do I find Amazon Outlet in the app?", a: "Open Deals in the Amazon app and choose Amazon Outlet, or search for Amazon Outlet." },
+        { q: "Is Amazon Outlet cheaper than regular Amazon?", a: "Often, but not always. Compare the same model on its normal product page before buying." },
+      ]}
+      products={["Amazon Outlet"]}
+      dealBox={{ productName: "Amazon Outlet", href: AMAZON_OUTLET }}
+    />
   );
 }
