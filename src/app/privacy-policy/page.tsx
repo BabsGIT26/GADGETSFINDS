@@ -5,7 +5,7 @@ import Footer from '@/app/homepage/components/Footer';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy | Gadgets Finds',
-  description: 'What Gadgets Finds collects, the analytics and X pixel we use, how Amazon link clicks are tracked, cookies, and your choices.',
+  description: 'What Gadgets Finds collects, the analytics and X pixel we use, how Amazon link clicks are tracked, cookies, and the choices you have over your own data.',
   metadataBase: new URL('https://www.gadgets-finds.com'),
   alternates: {
     canonical: 'https://www.gadgets-finds.com/privacy-policy'

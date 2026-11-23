@@ -5,7 +5,7 @@ import Footer from '@/app/homepage/components/Footer';
 
 export const metadata: Metadata = {
   title: 'Terms of Service — Gadgets Finds Legal Agreement',
-  description: 'Read the terms and conditions for using Gadgets Finds website. Understand your rights, responsibilities, and our policies.',
+  description: 'Read the terms and conditions for using the Gadgets Finds website, including your rights, your responsibilities, and the policies that govern the site.',
   metadataBase: new URL('https://www.gadgets-finds.com'),
   alternates: {
     canonical: 'https://www.gadgets-finds.com/terms-of-service'

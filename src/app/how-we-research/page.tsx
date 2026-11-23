@@ -6,7 +6,7 @@ import Footer from '@/app/homepage/components/Footer';
 export const metadata: Metadata = {
   title: 'How We Research and Choose Products | Gadgets Finds',
   description:
-    'How Gadgets Finds picks the gadgets in its guides: specs, Amazon listing checks, owner reviews, expert reviews, and what we do not claim.',
+    'How Gadgets Finds picks the gadgets in its guides: specs, Amazon listing checks, owner reviews, expert reviews, and what we do not claim to have tested.',
   metadataBase: new URL('https://www.gadgets-finds.com'),
   alternates: { canonical: 'https://www.gadgets-finds.com/how-we-research' },
   openGraph: {
