@@ -54,7 +54,8 @@ export default function Homepage() {
       <main className="pt-0">
         <section className="py-8 md:py-16 bg-background">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto -mt-4 md:mt-0 mb-8">
+            <PersonalizedContentStream />
+            <div className="max-w-4xl mx-auto mt-10 md:mt-14">
               <TopPicks
                 title="Top picks from our guides"
                 picks={[
@@ -64,7 +65,6 @@ export default function Homepage() {
                 ]}
               />
             </div>
-            <PersonalizedContentStream />
           </div>
         </section>
 
