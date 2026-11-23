@@ -1,20 +1,17 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
+import { illustrationPath } from "@/lib/illustrations";
 import Roundup, { type RoundupProduct } from "@/components/common/Roundup";
 
 const TAG = "gadgetsfindswebsite-20";
 const PATH = "/best-noise-cancelling-headphones-2026";
+const SEO_TITLE = "Best Noise-Cancelling Headphones 2026";
 const TITLE = "Best Noise-Cancelling Headphones in 2026";
 const DESCRIPTION =
-  "Sony WH-1000XM6, Bose QuietComfort Ultra (2nd Gen), and Sony WH-CH720N compared: battery, noise cancelling, comfort, and who each pair is for.";
+  "The best noise-cancelling headphones in 2026: Sony WH-1000XM6 vs Bose QuietComfort Ultra (2nd Gen), plus a budget Sony pair, by battery and comfort. Shop now.";
+const IMG = illustrationPath("headphones");
 
-export const metadata: Metadata = {
-  title: `${TITLE} | Gadgets Finds`,
-  description: DESCRIPTION,
-  metadataBase: new URL("https://www.gadgets-finds.com"),
-  alternates: { canonical: `https://www.gadgets-finds.com${PATH}` },
-  openGraph: { title: TITLE, description: DESCRIPTION, url: `https://www.gadgets-finds.com${PATH}`, type: "article" },
-  twitter: { card: "summary_large_image", title: TITLE, description: DESCRIPTION },
-};
+export const metadata: Metadata = pageMetadata({ path: PATH, title: SEO_TITLE, description: DESCRIPTION, kind: "headphones" });
 
 const amz = (asin: string) => `https://www.amazon.com/dp/${asin}?tag=${TAG}`;
 
@@ -81,19 +78,31 @@ export default function Page() {
       title={TITLE}
       updated="November 2026"
       description={DESCRIPTION}
+      answer="The best noise-cancelling headphones in 2026 for most people are the Sony WH-1000XM6: strong noise cancelling, a deep app and a folding design for travel. Choose the Bose QuietComfort Ultra (2nd Gen) if comfort on long flights matters most, and the Sony WH-CH720N if you want good-enough noise cancelling for a commute at a much lower price."
       intro={[
-        "The two flagships, Sony and Bose, are close. Choose by fit and app: Sony for the deeper app and folding design, Bose for comfort. If you mostly need quiet on a bus, a budget pair is enough.",
-        "This guide replaces our older single-model Sony headphones review.",
+        "Sony and Bose are close at the top, so choose by fit and app. If you mostly need quiet on a bus or in a library, a budget pair is enough; the flagships earn their price on long flights, where they block more low engine noise.",
       ]}
+      hero={{ src: IMG, alt: "Noise-cancelling headphones buying guide" }}
+      tableTitle="Sony vs Bose noise-cancelling headphones compared"
       tableColumns={["Battery (maker rating)", "Noise cancelling", "Launched"]}
-      products={products}
+      products={products.map((product) => ({ ...product, image: IMG }))}
+      buyingGuide={{
+        heading: "How to choose noise-cancelling headphones",
+        points: [
+          { title: "Where you will use them", body: "Planes and trains reward the flagships. For an office, a bus or studying, a budget pair with active noise cancelling is enough." },
+          { title: "Comfort", body: "Clamp force and ear-cup depth matter more than specs on a long flight. Bose is known for a lighter, softer fit; Sony offers more app control." },
+          { title: "Battery", body: "Look at the maker's rating with noise cancelling on, since that is how you will use them. All three pairs here last a long-haul flight." },
+          { title: "Calls and multipoint", body: "If you take calls on a laptop and a phone, check that the model supports multipoint Bluetooth so it can stay connected to both." },
+        ],
+      }}
       verdict={[
         "Buy the Sony WH-1000XM6 for most people, the Bose QuietComfort Ultra (2nd Gen) if comfort on long flights matters most, and the Sony WH-CH720N if you want good-enough noise cancelling for much less.",
       ]}
+      faqTitle="Noise-cancelling headphone questions"
       faq={[
-        { q: "Is the Sony WH-2000XM6 a real model?", a: "No. Sony's current flagship is the WH-1000XM6." },
-        { q: "Sony or Bose?", a: "Both are flagship noise-cancelling headphones. Sony has the deeper app and folds smaller; Bose is known for comfort. Try both if you can." },
+        { q: "Sony or Bose: which noise-cancelling headphones are better?", a: "Both make flagship noise-cancelling headphones. Sony has the deeper app and folds smaller; Bose is known for comfort. Try both on if you can." },
         { q: "Are cheap noise-cancelling headphones worth it?", a: "For commuting and studying, yes. For long flights, the flagships block more engine noise." },
+        { q: "Is the Sony WH-2000XM6 a real model?", a: "No. Sony's current flagship is the WH-1000XM6." },
       ]}
     />
   );
