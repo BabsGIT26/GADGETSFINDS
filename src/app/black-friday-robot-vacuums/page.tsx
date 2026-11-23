@@ -1,169 +1,82 @@
 import type { Metadata } from "next";
-import TopPicks from "@/components/common/TopPicks";
-import Header from "@/components/common/Header";
-import Footer from "@/app/homepage/components/Footer";
-import RelatedGuides from "@/components/common/RelatedGuides";
-import GuideFaq, { ProductListJsonLd } from "@/components/common/GuideFaq";
-import { VACUUMS, amazonUrl } from "./vacuums";
-
-import { illustrationAlt } from "@/lib/illustrations";
+import { DealHub } from "@/components/common/DealPages";
+import { pageMetadata } from "@/lib/seo";
 import { seasonCopy } from "@/lib/sale-season";
+import { VACUUMS, amazonUrl } from "./vacuums";
 
 // Re-render hourly so the Black Friday copy switches to the evergreen copy after Cyber Monday.
 export const revalidate = 3600;
 
+const PATH = "/black-friday-robot-vacuums";
+
 const SALE_COPY = {
-  "title": "Black Friday Robot Vacuums",
-  "heading": "Black Friday robot vacuums",
-  "intro": "Black Friday through Cyber Monday: which robot to open first, and what to check on the listing.",
-  "listName": "Black Friday robot vacuums"
+  seoTitle: "Black Friday Robot Vacuum Deals 2026",
+  heading: "Black Friday Robot Vacuum Deals 2026: Which to Buy",
+  description:
+    "Black Friday robot vacuum deals 2026: Roborock Qrevo 2 Pro, Q7 M5+, eufy, Shark and Lefant, sorted by dock, mop and budget so you open the right one. Shop now.",
+  listName: "Black Friday robot vacuum deals",
 };
 const EVERGREEN_COPY = {
-  "title": "Robot Vacuum Deals Worth Opening",
-  "heading": "Robot vacuum deals worth opening",
-  "intro": "The robots we would check first when one goes on sale, and what to read on the listing before you buy.",
-  "listName": "Robot vacuum deals"
+  seoTitle: "Robot Vacuum Deals Worth Buying",
+  heading: "Robot Vacuum Deals Worth Buying",
+  description:
+    "Robot vacuum deals worth buying: Roborock Qrevo 2 Pro, Q7 M5+, eufy, Shark and Lefant, sorted by dock, mop and budget so you open the right one. Shop now.",
+  listName: "Robot vacuum deals",
 };
 
 export function generateMetadata(): Metadata {
   const copy = seasonCopy(SALE_COPY, EVERGREEN_COPY);
-  return {
-  title: `${copy.title} | Gadgets Finds`,
-  description:
-    "Which Black Friday robot vacuum to open first: the Roborock Qrevo 2 Pro, the Qrevo Curv 2 Flow, or a smaller dock, mop, or a robot you empty yourself.",
-  metadataBase: new URL("https://www.gadgets-finds.com"),
-  alternates: { canonical: "https://www.gadgets-finds.com/black-friday-robot-vacuums" },
-  openGraph: {
-    title: copy.title,
-    description: "How to choose between the dock robots, the mop station, and the simple robots on sale.",
-    url: "https://www.gadgets-finds.com/black-friday-robot-vacuums",
-    siteName: "Gadgets Finds",
-    type: "article",
-    images: [
-      {
-        url: "https://www.gadgets-finds.com/og/vacuum",
-        alt: "Robot vacuum docked in its station",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    site: "@Gadgets_finds",
-    creator: "@Gadgets_finds",
-    title: copy.title,
-    description: "How to choose between the dock robots, the mop station, and the simple robots on sale.",
-    images: ["https://www.gadgets-finds.com/og/vacuum"],
-  },
-  };
+  return pageMetadata({ path: PATH, title: copy.seoTitle, description: copy.description, kind: "vacuum" });
 }
 
-function amazonHref(url: string) {
-  return `/api/go?url=${encodeURIComponent(url)}`;
-}
-
-const FAQ = [
-  {
-    q: "Do I need a self-empty dock?",
-    a: "Only if the bin fills before the week is over. Pet hair usually does. If you live alone and the floors are mostly bare, a robot you empty yourself is simpler and takes less space.",
-  },
-  {
-    q: "Which of these actually mop?",
-    a: "The Roborock Qrevo 2 Pro, the Roborock Qrevo Curv 2 Flow, the ECOVACS T90 Pro Omni, and the Roborock Q7 M5+ mop. The eufy C10, Shark AI Ultra, ILIFE A30s, eufy L60, and Lefant M210 Pro vacuum. The two Qrevo 2 Pro listings are the same robot in black and white.",
-  },
-  {
-    q: "Is the eufy L60 the same kind of listing as the others?",
-    a: "No. The L60 link on this page is a renewed unit. The others are the standard listings. Read the condition and the return window on Amazon before you treat it as a new robot.",
-  },
+const PICKS = [
+  { label: "Best overall", name: "Roborock Qrevo 2 Pro (Black)", why: "Vacuum, spinning mops, and a dock that empties, washes and dries." },
+  { label: "Best value", name: "Roborock Q7 M5+", why: "A Roborock vacuum and mop with a self-empty dock." },
+  { label: "Best budget", name: "Lefant M210 Pro", why: "A simple daily robot with no dock; you empty it." },
 ];
+
+const link = "underline decoration-amber-500/80 underline-offset-4 hover:text-foreground";
 
 export default function Page() {
   const copy = seasonCopy(SALE_COPY, EVERGREEN_COPY);
+  const items = VACUUMS.map((item) => ({ ...item, href: amazonUrl(item.asin) }));
   return (
-    <>
-      <Header />
-      <article className="min-h-screen bg-background pt-14 md:pt-16">
-        <div className="container mx-auto px-4 py-10 max-w-4xl">
-          <p className="text-xs text-muted-foreground mb-6 leading-relaxed">
-            <span className="text-red-600 font-semibold">Disclosure:</span> Gadgets Finds is an Amazon Associate. We may earn from qualifying purchases if you buy through links on this page, at no extra cost to you. Prices and availability change on Amazon.
-          </p>
-
-          <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">By Gadgets Finds · Updated November 2026</p>
-          <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-3">{copy.heading}</h1>
-          <p className="text-muted-foreground mb-8">{copy.intro}</p>
-          <TopPicks
-            picks={[
-              { label: "Best overall", name: "Roborock Qrevo 2 Pro (Black)", why: "Vacuum, spinning mops, and a dock that empties, washes, and dries." },
-              { label: "Best value", name: "Roborock Q7 M5+", why: "A Roborock vacuum and mop with a self-empty dock." },
-              { label: "Best budget", name: "Lefant M210 Pro", why: "The simple daily robot. No dock, you empty it." },
-            ].map((pick) => {
-              const item = VACUUMS.find((entry) => entry.name === pick.name)!;
-              return { ...pick, url: amazonUrl(item.asin) };
-            })}
-          />
-
-          <ProductListJsonLd
-            name={copy.listName}
-            url="/black-friday-robot-vacuums"
-            products={VACUUMS.map((item) => item.name)}
-          />
-
-          <div className="grid sm:grid-cols-2 gap-4">
-            {VACUUMS.map((item) => (
-              <div key={item.slug} className="bg-card border border-border rounded-xl overflow-hidden flex flex-col">
-                <a href={`/black-friday-robot-vacuums/${item.slug}`} className="bg-white h-52 flex items-center justify-center px-3">
-                  <img src={item.image} alt={illustrationAlt(item.image, item.alt)} className="max-h-48 w-auto max-w-full object-contain" />
-                </a>
-                <div className="p-4 flex flex-col flex-1">
-                  <h2 className="text-base font-bold">
-                    <a href={`/black-friday-robot-vacuums/${item.slug}`} className="hover:text-amber-700">
-                      {item.name}
-                    </a>
-                  </h2>
-                  <p className="text-sm text-muted-foreground mt-2 flex-1">{item.card}</p>
-                  <div className="mt-4 flex flex-col gap-2">
-                    <a
-                      href={`/black-friday-robot-vacuums/${item.slug}`}
-                      className="inline-flex items-center justify-center px-4 py-2 rounded-full border border-amber-500 text-sm font-bold hover:bg-amber-400/10"
-                    >
-                      See the review
-                    </a>
-                    <a
-                      href={amazonHref(amazonUrl(item.asin))}
-                      target="_blank"
-                      rel="nofollow sponsored noopener noreferrer"
-                      aria-label={`View ${item.name} on Amazon`}
-                      className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-amber-400 text-zinc-950 text-sm font-extrabold hover:bg-amber-300 transition-colors"
-                    >
-                      View on Amazon
-                    </a>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <p className="text-muted-foreground mt-10 mb-4 leading-relaxed">
-            These are the robots showing on Amazon during the sale. They are not the same kind of purchase. The first three are the full Roborock stations. Open those before the smaller robots if you want a dock that empties the bin and deals with the mop.
-          </p>
-          <p className="text-muted-foreground mb-4 leading-relaxed">
-            The Roborock Qrevo 2 Pro, in black and in white, is one robot in two colors. It uses spinning mops. The Roborock Qrevo Curv 2 Flow is the other station, with a roller mop Roborock says cleans itself during the run. Neither of those is the Q7 M5+ further down the page.
-          </p>
-          <p className="text-muted-foreground mb-4 leading-relaxed">
-            Under those, split the rest. A robot with no dock, the Lefant M210 Pro or the ILIFE A30s, is the buy when you will empty the bin yourself. A vacuum with a dock, the eufy C10, the Shark AI Ultra, or the renewed eufy L60, is the buy when pet hair fills a bin in a day. A smaller mop robot, the Roborock Q7 M5+ or the ECOVACS T90 Pro Omni, is the buy when you want the floor washed and you do not want the largest station.
-          </p>
-          <p className="text-muted-foreground mb-8 leading-relaxed">
-            Read the short note first. The Amazon button is there after that, and it does not open until you click it. The price on Amazon is the only price. The longer budget comparison is still the{" "}
-            <a href="/best-budget-robot-vacuums-under-300" className="underline decoration-amber-500/80 underline-offset-4 hover:text-foreground">
-              robot vacuum guide under $300
-            </a>
-            .
-          </p>
-
-          <GuideFaq items={FAQ} />
-          <RelatedGuides current="/black-friday-robot-vacuums" />
-        </div>
-      </article>
-      <Footer />
-    </>
+    <DealHub
+      path={PATH}
+      eyebrow="Robot vacuum deals"
+      title={copy.heading}
+      listName={copy.listName}
+      answer="The best Black Friday robot vacuum deal for most homes is the Roborock Qrevo 2 Pro: it vacuums, mops, and its dock empties the bin and washes and dries the mops. The Roborock Q7 M5+ is the value pick with a self-empty dock, and the Lefant M210 Pro is the budget robot if you are happy to empty it yourself."
+      picks={PICKS.map((pick) => ({ ...pick, url: amazonUrl(VACUUMS.find((entry) => entry.name === pick.name)!.asin) }))}
+      items={items}
+      sections={[
+        {
+          heading: "How to choose a robot vacuum on sale",
+          body: [
+            "Decide on the dock first. The Roborock Qrevo 2 Pro (black or white, the same robot) and the Qrevo Curv 2 Flow are full stations: they empty the dust, refill water, and wash the mops. They suit mostly hard floors and need floor space for a tall base.",
+            "If you want the floor washed without the biggest station, look at the Roborock Q7 M5+ or the ECOVACS T90 Pro Omni. If pet hair fills a bin every day, a vacuum with a self-empty dock, like the eufy C10, the Shark AI Ultra or the renewed eufy L60, saves the daily chore.",
+            "If you live alone and do not mind emptying a bin, a robot with no dock, the Lefant M210 Pro or the ILIFE A30s, is the cheapest and takes the least space.",
+            <>
+              Want a longer comparison with buying advice? See our{" "}
+              <a href="/best-budget-robot-vacuums-under-300" className={link}>
+                best robot vacuums under $300
+              </a>{" "}
+              and{" "}
+              <a href="/roborock-vs-roomba-2026" className={link}>
+                Roborock vs Roomba
+              </a>{" "}
+              guides.
+            </>,
+          ],
+        },
+      ]}
+      faqTitle="Robot vacuum deal questions"
+      faq={[
+        { q: "Is Black Friday a good time to buy a robot vacuum?", a: "Usually, yes. Robot vacuums are among the most discounted categories during Black Friday and Cyber Monday. Compare the sale price with the regular price on the listing before you buy." },
+        { q: "Do I need a self-empty dock?", a: "Only if the bin fills before the week is over, which pet hair usually causes. If you live alone with mostly bare floors, a robot you empty yourself is simpler and smaller." },
+        { q: "Which of these robot vacuums also mop?", a: "The Roborock Qrevo 2 Pro, Qrevo Curv 2 Flow, Q7 M5+ and the ECOVACS T90 Pro Omni mop. The eufy C10, Shark AI Ultra, ILIFE A30s, eufy L60 and Lefant M210 Pro only vacuum." },
+        { q: "Is the eufy L60 listing new?", a: "No. The eufy L60 link is a renewed unit. Read the condition and return window on Amazon before you treat it as new." },
+      ]}
+    />
   );
 }
