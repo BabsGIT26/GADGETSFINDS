@@ -18,6 +18,6 @@ export function isSaleSeason(now: Date = new Date()): boolean {
 
 export type SeasonCopy = { title: string; heading: string; intro: string; listName: string };
 
-export function seasonCopy(sale: SeasonCopy, evergreen: SeasonCopy, now: Date = new Date()): SeasonCopy {
+export function seasonCopy<T extends object = SeasonCopy>(sale: T, evergreen: T, now: Date = new Date()): T {
   return isSaleSeason(now) ? sale : evergreen;
 }
