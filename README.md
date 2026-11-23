@@ -89,3 +89,4 @@ You can check out the [Next.js GitHub repository](https://github.com/vercel/next
 - Styled with Tailwind CSS
 
 Built with ❤️ on Rocket.new
+<!-- Deploy marker: Stage 3 (Top picks, roundups, 301s) released Nov 23, 2026. -->
