@@ -22,7 +22,7 @@
     
     /* Muted */
     --color-muted: #F4F6F8; /* gray-100 */
-    --color-muted-foreground: #6B7280; /* gray-500 */
+    --color-muted-foreground: #4B5563; /* gray-600, 6.1:1 on muted #F4F6F8 */
     
     /* Primary - Brand Authority */
     --color-primary: #0066FF; /* blue-600 */

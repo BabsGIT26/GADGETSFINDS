@@ -7,6 +7,7 @@ import ArticleJsonLd from "@/components/common/ArticleJsonLd";
 import TopPicks, { type TopPick } from "@/components/common/TopPicks";
 import { CardImage, ProductImage } from "@/components/common/Media";
 import { CARD, CONTAINER, CTA, DISCLOSURE, EYEBROW, H1, H2, LEAD, P, PAGE, UL } from "@/lib/layout";
+import { isSaleSeason } from "@/lib/sale-season";
 
 export type DealItem = {
   slug: string;
@@ -69,6 +70,7 @@ export function DealHub({
           <p className={EYEBROW}>{eyebrow}</p>
           <h1 className={H1}>{title}</h1>
           <p className="text-sm text-muted-foreground mb-4">Updated November 2026 · Specs from maker pages and Amazon listings</p>
+          <p className="text-sm text-muted-foreground mb-4">Brands do not pay to be included in our guides. These gadgets are often discounted on Black Friday — check today&apos;s price on Amazon.</p>
           <p className={LEAD}>{answer}</p>
           <TopPicks picks={picks} />
           <ProductListJsonLd name={listName} url={path} products={items.map((item) => item.name)} />
@@ -169,6 +171,7 @@ export function DealDetail({
           </p>
           <h1 className={H1}>{dealTitle(item.name)}</h1>
           <p className="text-sm text-muted-foreground mb-4">Updated November 2026 · Specs from the maker and the Amazon listing</p>
+          <p className="text-sm text-muted-foreground mb-4">Brands do not pay to be included in our guides. This gadget is often discounted on Black Friday — check today&apos;s price on Amazon.</p>
           <p className={LEAD}>{item.card}</p>
           <div className="mb-8">{cta}</div>
           <div className={CARD}>
@@ -212,11 +215,13 @@ export function DealDetail({
 }
 
 export function dealTitle(name: string) {
-  return `${name} Black Friday Deal: Who It Is For`;
+  return isSaleSeason() ? `${name} Black Friday Deal: Who It Is For` : `${name}: Who It Is For`;
 }
 
 /** Keyword title tag that fits in 60 characters with the brand suffix. */
 export function dealSeoTitle(name: string) {
-  const options = [`${name} Black Friday Deal`, `${name} Deal`, name];
+  const options = isSaleSeason()
+    ? [`${name} Black Friday Deal`, `${name} Deal`, name]
+    : [`${name} Deal`, name];
   return options.find((option) => `${option} | Gadgets Finds`.length <= 60) ?? name;
 }
