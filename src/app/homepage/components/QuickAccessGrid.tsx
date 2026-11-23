@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { isSaleSeason } from '@/lib/sale-season';
 import Icon from '@/components/ui/AppIcon';
 
 interface QuickAccessItem {
@@ -12,14 +13,14 @@ interface QuickAccessItem {
 const QuickAccessGrid = () => {
   const quickAccessItems: QuickAccessItem[] = [
     {
-      title: 'Black Friday vacuums',
+      title: isSaleSeason() ? 'Black Friday vacuums' : 'Robot vacuum deals',
       description: 'Dock, mop station, or a simple robot. Read the note first.',
       icon: 'SparklesIcon',
       href: '/black-friday-robot-vacuums',
       color: 'from-red-500 to-amber-500',
     },
     {
-      title: 'Black Friday watches',
+      title: isSaleSeason() ? 'Black Friday watches' : 'Smartwatch deals',
       description: 'Apple, Garmin, WHOOP, or a budget GPS watch',
       icon: 'DevicePhoneMobileIcon',
       href: '/black-friday-smartwatches',
