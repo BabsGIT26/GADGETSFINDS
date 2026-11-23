@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { CardImage } from '@/components/common/Media';
 import Icon from '@/components/ui/AppIcon';
 import { illustrationAlt } from '@/lib/illustrations';
+import { isSaleSeason } from '@/lib/sale-season';
 
 interface ContentItem {
   id: number;
@@ -28,7 +29,7 @@ const PersonalizedContentStream = () => {
   const contentItems: ContentItem[] = [
     {
       id: 27,
-      title: "Black Friday Robot Vacuums",
+      title: isSaleSeason() ? "Black Friday Robot Vacuums" : "Robot Vacuum Deals",
       excerpt: "Dock, mop station, or a robot you empty yourself. Short notes on the models showing on Amazon, then the listing.",
       category: "Buying Guide",
       image: "/assets/illustrations/vacuum.svg",
@@ -40,7 +41,7 @@ const PersonalizedContentStream = () => {
     },
     {
       id: 28,
-      title: "Black Friday Smartwatches",
+      title: isSaleSeason() ? "Black Friday Smartwatches" : "Smartwatch Deals",
       excerpt: "Apple Watch, Garmin, a WHOOP membership, or a budget GPS watch. The phone decides it before the listing does.",
       category: "Buying Guide",
       image: "/assets/illustrations/watch.svg",
@@ -160,7 +161,7 @@ const PersonalizedContentStream = () => {
       author: "Gadgets Finds",
       publishedDate: "November 17, 2026",
       readTime: "8 min read",
-      tags: ["Amazon", "Deals", "50% Off", "Guide"],
+      tags: ["Amazon", "Deals", "Fire TV", "Guide"],
     },
     {
       id: 17,

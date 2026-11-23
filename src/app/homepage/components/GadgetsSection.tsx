@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { CardImage } from "@/components/common/Media";
 import Icon from "@/components/ui/AppIcon";
+import { isSaleSeason } from "@/lib/sale-season";
 
 interface Gadget {
   name: string;
@@ -225,9 +226,22 @@ const gadgets: Gadget[] = [
 
 const categories = ["All", "Laptops", "Smartphones", "GPUs", "Robotics", "Audio", "Gaming"];
 
+function displayGadget(gadget: Gadget, sale: boolean): Gadget {
+  if (gadget.href === "/black-friday-robot-vacuums") {
+    return { ...gadget, name: sale ? gadget.name : "Robot vacuum deals", badge: sale ? "Black Friday" : "Deals" };
+  }
+  if (gadget.href === "/black-friday-smartwatches") {
+    return { ...gadget, name: sale ? gadget.name : "Smartwatch deals", badge: sale ? "Black Friday" : "Deals" };
+  }
+  return gadget;
+}
+
 export default function GadgetsSection() {
   const [active, setActive] = useState("All");
-  const visible = active === "All" ? gadgets : gadgets.filter((g) => g.category === active);
+  const sale = isSaleSeason();
+  const visible = (active === "All" ? gadgets : gadgets.filter((g) => g.category === active)).map((g) =>
+    displayGadget(g, sale),
+  );
 
   return (
     <section className="py-12 md:py-20 bg-background">

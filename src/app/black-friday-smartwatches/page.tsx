@@ -15,13 +15,25 @@ const SALE_COPY = {
   description:
     "Black Friday smartwatch deals 2026: Apple Watch SE 3 and Series 12, Garmin Venu 4 and Instinct 3, WHOOP and a budget GPS watch, matched to your phone. Shop now.",
   listName: "Black Friday smartwatch deals",
+  answer:
+    "The best Black Friday smartwatch deal depends on your phone. On iPhone, the Apple Watch SE 3 is the best value and the Series 12 is the upgrade. On Android, or to work with either phone, the Garmin Venu 4 is the everyday fitness pick and the Instinct 3 AMOLED is the rugged one. These watches are often discounted on Black Friday — check today's price on Amazon.",
+  faqFirst: {
+    q: "Is Black Friday a good time to buy a smartwatch?",
+    a: "Usually, yes. Apple Watch and Garmin models are often discounted during Black Friday and Cyber Monday. Compare the sale price with the regular price on the listing first. We do not list sale prices here because they change.",
+  },
 };
 const EVERGREEN_COPY = {
   seoTitle: "Smartwatch Deals Worth Buying",
   heading: "Smartwatch Deals Worth Buying",
   description:
-    "Smartwatch deals worth buying: Apple Watch SE 3 and Series 12, Garmin Venu 4 and Instinct 3, WHOOP and a budget GPS watch, matched to your phone. Shop the deals.",
+    "Smartwatch deals worth buying: Apple Watch SE 3 and Series 12, Garmin Venu 4 and Instinct 3, WHOOP and a budget GPS watch, matched to your phone. Shop now.",
   listName: "Smartwatch deals",
+  answer:
+    "The best smartwatch deal depends on your phone. On iPhone, the Apple Watch SE 3 is the best value and the Series 12 is the upgrade. On Android, or to work with either phone, the Garmin Venu 4 is the everyday fitness pick and the Instinct 3 AMOLED is the rugged one. Check today's price on Amazon.",
+  faqFirst: {
+    q: "When is a good time to buy a smartwatch?",
+    a: "Sale weeks such as Black Friday and Cyber Monday are usually a good time. Apple Watch and Garmin models are often discounted then. Compare the sale price with the regular price on the listing first.",
+  },
 };
 
 export function generateMetadata(): Metadata {
@@ -46,7 +58,7 @@ export default function Page() {
       eyebrow="Smartwatch deals"
       title={copy.heading}
       listName={copy.listName}
-      answer="The best Black Friday smartwatch deal depends on your phone. On iPhone, the Apple Watch SE 3 is the best value and the Series 12 is the upgrade. On Android, or to work with either phone, the Garmin Venu 4 is the everyday fitness pick and the Instinct 3 AMOLED is the rugged one."
+      answer={copy.answer}
       picks={PICKS.map((pick) => ({ ...pick, url: amazonUrl(WATCHES.find((entry) => entry.name === pick.name)!.asin) }))}
       items={items}
       sections={[
@@ -67,7 +79,7 @@ export default function Page() {
       ]}
       faqTitle="Smartwatch deal questions"
       faq={[
-        { q: "Is Black Friday a good time to buy a smartwatch?", a: "Usually, yes. Apple Watch and Garmin models are often discounted during Black Friday and Cyber Monday. Compare the sale price with the regular price on the listing first." },
+        copy.faqFirst,
         { q: "Which of these work with an Android phone?", a: "The Garmin Venu 4, the Garmin Instinct 3, the CARBINOX Edge and the WHOOP. The Apple Watches need an iPhone." },
         { q: "Is the WHOOP a smartwatch?", a: "No. It is a screenless band sold with 12 months of WHOOP Peak membership. You read the data on your phone." },
         { q: "What is the difference between the two Series 12 listings?", a: "The 42mm is GPS only with an S/M band. The 46mm is GPS + Cellular with an M/L band; cellular still needs a carrier plan." },
