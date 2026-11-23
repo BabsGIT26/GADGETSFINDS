@@ -49,7 +49,7 @@ export default function Homepage() {
       <Header />
 
       {/* Spacer so content starts below the fixed header (taller on mobile because of nav strip) */}
-      <div className="h-28 md:h-16" />
+      <div className="h-28 lg:h-16" />
 
       <main className="pt-0">
         <section className="py-8 md:py-16 bg-background">

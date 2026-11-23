@@ -2,7 +2,7 @@
  * One set of layout and type classes for every article, guide and product page,
  * so widths, spacing and heading sizes match from page to page.
  */
-export const PAGE = "min-h-screen bg-background pt-14 md:pt-16";
+export const PAGE = "min-h-screen bg-background pt-28 lg:pt-16";
 export const CONTAINER = "mx-auto w-full max-w-4xl px-4 sm:px-6 py-8 md:py-12";
 export const EYEBROW = "text-xs font-bold uppercase tracking-widest text-primary mb-2";
 export const H1 = "text-3xl md:text-5xl font-bold text-foreground leading-tight mb-4";

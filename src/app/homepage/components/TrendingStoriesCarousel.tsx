@@ -157,6 +157,7 @@ const TrendingStoriesCarousel = () => {
             <p className="text-brand-text-secondary mb-4 line-clamp-2">{stories[0].excerpt}</p>
             <Link
               href={stories[0].link || "/best-budget-robot-vacuums-under-300"}
+              aria-label={`Read more: ${stories[0].title}`}
               className="inline-flex items-center space-x-2 px-4 py-2 bg-brand-primary text-white rounded-lg font-semibold text-sm"
             >
               <span>Read More</span>
@@ -209,6 +210,7 @@ const TrendingStoriesCarousel = () => {
             </div>
             <Link
               href={stories[currentIndex].link || '/best-budget-robot-vacuums-under-300'}
+              aria-label={`Read more: ${stories[currentIndex].title}`}
               className="inline-flex items-center space-x-2 px-3 md:px-4 py-1.5 md:py-2 bg-brand-primary text-white rounded-lg font-semibold text-xs md:text-sm hover:bg-brand-primary/90 transition-colors">
 
               <span>Read More</span>
@@ -220,10 +222,10 @@ const TrendingStoriesCarousel = () => {
             <button
               key={index}
               onClick={() => goToSlide(index)}
-              className={`h-2 rounded-full transition-all duration-300 ${
-              index === currentIndex ? 'bg-brand-primary w-8' : 'bg-white/50 w-2'}`
-              }
+              className="flex items-center justify-center min-w-6 min-h-6"
               aria-label={`Go to story ${index + 1}`}>
+              <span className={`h-2 rounded-full transition-all duration-300 ${
+              index === currentIndex ? 'bg-brand-primary w-8' : 'bg-white/50 w-2'}`} />
             </button>
             )}
           </div>
