@@ -1,31 +1,40 @@
 import Link from "next/link";
 
-const GUIDES = [
-  { href: "/best-budget-robot-vacuums-under-300", title: "Best budget robot vacuums under $300" },
-  { href: "/black-friday-robot-vacuums", title: "Black Friday robot vacuums" },
-  { href: "/roborock-vs-roomba-2026", title: "Roborock vs Roomba in 2026" },
-  { href: "/best-ps5-accessories-2026", title: "Best PS5 accessories in 2026" },
-  { href: "/best-cheap-tablets-under-150", title: "Best cheap tablets under $150" },
-  { href: "/best-portable-chargers-for-travel", title: "Best portable chargers for travel" },
-  { href: "/best-smartwatches-under-350", title: "Best smartwatches under $350" },
-  { href: "/black-friday-smartwatches", title: "Black Friday smartwatches" },
-  { href: "/best-mini-gadgets-under-30", title: "Best mini gadgets under $30" },
-  { href: "/best-amazon-deals-this-week", title: "Best Amazon deals this week" },
-  { href: "/best-macbooks-2026", title: "Best MacBooks in 2026" },
-  { href: "/best-graphics-cards-2026", title: "Best graphics cards in 2026" },
-  { href: "/best-gaming-consoles-2026", title: "Best gaming consoles in 2026" },
-  { href: "/best-phones-2026", title: "Best phones in 2026" },
-  { href: "/best-foldable-phones-2026", title: "Best foldable phones in 2026" },
-  { href: "/best-noise-cancelling-headphones-2026", title: "Best noise-cancelling headphones in 2026" },
-] as const;
+export type Topic = "home" | "mobile" | "computing" | "gaming" | "deals" | "audio" | "travel";
 
-export default function RelatedGuides({ current }: { current: string }) {
+const GUIDES: { href: string; title: string; topics: Topic[] }[] = [
+  { href: "/best-budget-robot-vacuums-under-300", title: "Best robot vacuums under $300", topics: ["home", "deals"] },
+  { href: "/roborock-vs-roomba-2026", title: "Roborock vs Roomba: which to buy", topics: ["home"] },
+  { href: "/black-friday-robot-vacuums", title: "Black Friday robot vacuum deals", topics: ["home", "deals"] },
+  { href: "/best-cheap-tablets-under-150", title: "Best cheap tablets under $150", topics: ["mobile", "deals"] },
+  { href: "/best-phones-2026", title: "Best phones of 2026", topics: ["mobile"] },
+  { href: "/best-foldable-phones-2026", title: "Best foldable phones of 2026", topics: ["mobile"] },
+  { href: "/best-smartwatches-under-350", title: "Best smartwatches under $350", topics: ["mobile", "audio"] },
+  { href: "/black-friday-smartwatches", title: "Black Friday smartwatch deals", topics: ["mobile", "deals"] },
+  { href: "/best-portable-chargers-for-travel", title: "Best portable chargers for travel", topics: ["mobile", "travel"] },
+  { href: "/best-mini-gadgets-under-30", title: "Best tech gadgets under $30", topics: ["travel", "deals", "computing"] },
+  { href: "/best-noise-cancelling-headphones-2026", title: "Best noise-cancelling headphones", topics: ["audio", "travel"] },
+  { href: "/best-macbooks-2026", title: "Best MacBooks of 2026", topics: ["computing"] },
+  { href: "/best-laptops-developers-2026", title: "Best laptops for programming", topics: ["computing"] },
+  { href: "/best-graphics-cards-2026", title: "Best graphics cards of 2026", topics: ["computing", "gaming"] },
+  { href: "/best-gaming-consoles-2026", title: "Best gaming consoles of 2026", topics: ["gaming"] },
+  { href: "/best-ps5-accessories-2026", title: "Best PS5 accessories", topics: ["gaming", "audio"] },
+  { href: "/best-amazon-deals-this-week", title: "Best Amazon tech deals this week", topics: ["deals"] },
+];
+
+/** Up to six related guides: same topic first, then the rest in list order. */
+export default function RelatedGuides({ current, limit = 6, topics }: { current: string; limit?: number; topics?: Topic[] }) {
+  const found = GUIDES.find((guide) => guide.href === current);
+  const self = found ?? (topics ? { href: current, title: "", topics } : undefined);
   const others = GUIDES.filter((guide) => guide.href !== current);
+  const shared = (guide: (typeof GUIDES)[number]) =>
+    self ? guide.topics.filter((topic) => self.topics.includes(topic)).length : 0;
+  const ranked = [...others].sort((a, b) => shared(b) - shared(a)).slice(0, limit);
   return (
     <nav className="mt-12 mb-4" aria-label="Related guides">
-      <h2 className="text-2xl font-bold mb-4">Related guides</h2>
-      <ul className="space-y-2 text-muted-foreground">
-        {others.map((guide) => (
+      <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Related buying guides</h2>
+      <ul className="grid gap-2 sm:grid-cols-2 text-muted-foreground">
+        {ranked.map((guide) => (
           <li key={guide.href}>
             <Link href={guide.href} className="underline underline-offset-4 decoration-amber-500/80 hover:text-foreground">
               {guide.title}

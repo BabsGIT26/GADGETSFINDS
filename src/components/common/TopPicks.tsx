@@ -15,7 +15,7 @@ function goHref(url: string) {
 
 export default function TopPicks({
   picks,
-  title = "Top picks",
+  title = "Quick picks",
   note,
 }: {
   picks: TopPick[];
@@ -27,7 +27,7 @@ export default function TopPicks({
       aria-label={title}
       className="my-6 rounded-2xl border-2 border-amber-400 bg-amber-400/10 p-4 md:p-6"
     >
-      <p className="text-xs font-bold uppercase tracking-widest text-amber-600 dark:text-amber-400 mb-3">{title}</p>
+      <h2 className="text-xs font-bold uppercase tracking-widest text-amber-800 dark:text-amber-300 mb-3">{title}</h2>
       <ol className="space-y-3">
         {picks.map((pick) => (
           <li
@@ -39,7 +39,7 @@ export default function TopPicks({
                 {pick.label}
               </span>
               <p className="mt-1 font-bold text-foreground leading-snug">{pick.name}</p>
-              <p className="text-sm text-muted-foreground leading-snug">{pick.why}</p>
+              <p className="text-sm text-foreground/80 leading-snug">{pick.why}</p>
             </div>
             <a
               href={goHref(pick.url)}
