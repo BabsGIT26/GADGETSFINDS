@@ -1,142 +1,97 @@
 import type { Metadata } from "next";
-import ArticleJsonLd from "@/components/common/ArticleJsonLd";
-import AppImage from "@/components/ui/AppImage";
-import Header from "@/components/common/Header";
-import Footer from "@/app/homepage/components/Footer";
-import AmazonDealBox from "@/components/common/AmazonDealBox";
-import AmazonButton from "@/components/common/AmazonButton";
+import ProductArticle from "@/components/common/ProductArticle";
 import CommentSection from "@/components/comments/CommentSection";
+import { pageMetadata } from "@/lib/seo";
+import { illustrationPath } from "@/lib/illustrations";
 
-const AMAZON =
-  "https://www.amazon.com/dp/B0GQ6YWP33?tag=gadgetsfindswebsite-20";
+const PATH = "/samsung-65-s85h-oled-article";
+const URL = "https://www.amazon.com/dp/B0GQ6YWP33?tag=gadgetsfindswebsite-20";
+const SEO_TITLE = "Samsung S85H 65-Inch OLED TV: Worth It?";
+const TITLE = "Samsung S85H 65-Inch OLED TV (2026): Is It Worth Buying?";
+const DESCRIPTION =
+  "Samsung S85H 65-inch OLED TV (2026): Samsung's entry OLED with 4K 120Hz gaming, NQ4 AI Gen2 processor and HDR10+. Who it suits, who should skip it. See price.";
 
-const OG_IMAGE = "/assets/illustrations/tv.svg";
-const SHARE_IMAGE = "https://www.gadgets-finds.com/og/tv";
+export const metadata: Metadata = pageMetadata({ path: PATH, title: SEO_TITLE, description: DESCRIPTION, kind: "tv" });
 
-export const metadata: Metadata = {
-  title: "Samsung 65-Inch S85H OLED 4K TV (2026) | Gadgets Finds",
-  description:
-    "2026 Samsung 65-inch S85H OLED with Vision AI, NQ4 AI Gen2 processor, 4K AI upscaling, OLED HDR, and gaming features. Price and stock change on Amazon.",
-  metadataBase: new URL("https://www.gadgets-finds.com"),
-  alternates: {
-    canonical: "https://www.gadgets-finds.com/samsung-65-s85h-oled-article",
-  },
-  openGraph: {
-    title: "Samsung 65-Inch S85H Series OLED 4K Smart TV (2026)",
-    description: "OLED HDR, NQ4 AI Gen2, 4K AI Upscaling, Premium Gaming Pack. Price changes.",
-    url: "https://www.gadgets-finds.com/samsung-65-s85h-oled-article",
-    siteName: "Gadgets Finds",
-    type: "article",
-    images: [
-      {
-        url: SHARE_IMAGE,
-        width: 1200,
-        height: 630,
-        alt: "Samsung 65-Inch S85H Series OLED TV",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    site: "@Gadgets_finds",
-    title: "Samsung 65-Inch S85H Series OLED 4K Smart TV (2026)",
-    images: [SHARE_IMAGE],
-  },
-};
+const link = "underline decoration-amber-500/80 underline-offset-4 hover:text-foreground";
 
 export default function Page() {
   return (
-    <>
-      <Header />
-      <ArticleJsonLd path="/samsung-65-s85h-oled-article" headline={"Samsung 65-Inch S85H OLED 4K TV (2026)"} description={"2026 Samsung 65-inch S85H OLED with Vision AI, NQ4 AI Gen2 processor, 4K AI upscaling, OLED HDR, and gaming features. Price and stock change on Amazon."} products={["Samsung 65-inch S85H OLED 4K Smart TV"]} />
-      <article className="min-h-screen bg-background pt-28 md:pt-16">
-        <div className="container mx-auto px-4 pt-2 pb-10 max-w-3xl">
-          <p className="text-xs md:text-sm text-foreground mb-3">
-            Disclosure: Gadgets Finds is an Amazon Associate. We may earn from qualifying
-            purchases if you buy through links on this page, at no extra cost to you.
-          </p>
-
-          <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">
-            TVs
-          </p>
-          <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-            Samsung 65-Inch Class S85H Series OLED 4K Smart TV (2026)
-          </h1>
-          <p className="text-muted-foreground mb-6">
-            2026 entry-level Samsung OLED with Vision AI, NQ4 AI Gen2 processor, OLED HDR,
-            4K AI Upscaling, Color Booster Pro, and a Premium Gaming Pack. Price and stock change on Amazon.
-          </p>
-
-          <AmazonButton href={AMAZON} />
-
-          <div className="my-8 aspect-video">
-            <iframe
-              className="w-full h-full rounded-lg"
-              src="https://www.youtube.com/embed/A1BcTPpHlqs"
-              title="Samsung S85H OLED Review"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-          </div>
-
-          <h2 className="text-2xl font-bold mt-10 mb-3">What this TV is</h2>
-          <p className="text-muted-foreground mb-4">
-            The S85H is Samsung’s 2026 entry OLED (model QN65S85HAEXZA / 65S85H). ASIN B0GQ6YWP33.
-            It uses a WOLED panel with self-illuminating pixels for near-infinite contrast.
-          </p>
-
-          <div className="w-full flex justify-center py-6 mb-6">
-            <AppImage
-              src="/assets/illustrations/tv.svg"
-              alt="Samsung S85H OLED in a living room"
-              className="max-h-[400px] w-auto max-w-full object-contain rounded-lg"
-            />
-          </div>
-
-          <ul className="list-disc pl-5 text-muted-foreground space-y-2 mb-4">
-            <li>Size: 65-inch class, 4K (3840 x 2160)</li>
-            <li>Panel: OLED with OLED HDR</li>
-            <li>Processor: NQ4 AI Gen2 with Samsung Vision AI</li>
-            <li>Upscaling: 4K AI Upscaling</li>
-            <li>Color: Color Booster Pro, Pantone Validated</li>
-            <li>Refresh: up to 120Hz with Motion Xcelerator</li>
-            <li>Gaming: Premium Gaming Pack (FreeSync Premium, G-Sync compatible, ALLM, low latency)</li>
-            <li>Smart: Tizen, Alexa built-in</li>
-            <li>Audio: AI Sound Controller, 20W</li>
-          </ul>
-
-          <h2 className="text-2xl font-bold mt-10 mb-3">Who it is for</h2>
-          <p className="text-muted-foreground mb-4">
-            Buy it if you want true OLED blacks and color in a 65-inch size without stepping up to Samsung’s higher QD-OLED lines. Strong for movies and for 4K/120Hz gaming on PS5 or Xbox.
-          </p>
-
-
-          <p className="text-muted-foreground mb-4">
-            Skip it if you need the brightest possible HDR for a very bright room, or if you prefer Dolby Vision (this model focuses on HDR10+).
-          </p>
-
-          <h2 className="text-2xl font-bold mt-10 mb-3">Before you click</h2>
-          <ul className="list-disc pl-5 text-muted-foreground space-y-2 mb-4">
-            <li>Confirm the 65-inch S85H 2026 model on the live Amazon card.</li>
-            <li>Price and stock change often on this set. Recheck before you pay.</li>
-            <li>Measure your space — 65-inch class is large.</li>
-          </ul>
-
-          <h2 className="text-2xl font-bold mt-10 mb-3">Verdict</h2>
-          <p className="text-muted-foreground mb-8">
-            A solid 2026 OLED entry point with AI processing and full gaming features. Open the Amazon listing to see the current deal price and stock.
-          </p>
-
-
-          <AmazonDealBox
-            productName="Samsung 65-Inch S85H Series OLED 4K Smart TV (2026)"
-            href={AMAZON}
-          />
-
-          <CommentSection articleSlug="samsung-65-s85h-oled-article" />
-        </div>
-      </article>
-      <Footer />
-    </>
+    <ProductArticle
+      path={PATH}
+      eyebrow="TVs"
+      title={TITLE}
+      description={DESCRIPTION}
+      topics={["gaming", "home"]}
+      answer="The Samsung S85H 65-inch OLED TV is worth buying if you want true OLED contrast and 4K 120Hz gaming without paying for Samsung's brighter QD-OLED models. It is Samsung's 2026 entry OLED. Skip it if your room is very bright or you want Dolby Vision. It was $1,197.99 on Amazon when we checked on November 22, 2026."
+      image={{ src: illustrationPath("tv"), alt: "Samsung S85H 65-inch OLED TV" }}
+      cta={{ href: URL, note: "Model QN65S85HAEXZA. In stock when we checked; price and stock change." }}
+      bestFor="Movies and console gaming in a dim or average room"
+      glance={[
+        ["Screen", "65-inch class, 4K (3840 x 2160) OLED"],
+        ["Refresh", "Up to 120Hz, Motion Xcelerator"],
+        ["Processor", "NQ4 AI Gen2 with Samsung Vision AI"],
+        ["HDR", "OLED HDR, HDR10+ (no Dolby Vision)"],
+        ["Gaming", "FreeSync Premium, G-Sync compatible, ALLM"],
+        ["Price when checked", "$1,197.99 on Amazon, Nov 22, 2026"],
+      ]}
+      why={[
+        "OLED pixels light themselves, so black is truly black and there is no blooming around subtitles or bright objects. With 120Hz, VRR and auto low-latency mode, the S85H gets the most out of a PS5 or Xbox Series X. It is the least expensive way into a 65-inch Samsung OLED.",
+      ]}
+      skip={[
+        "Skip it if the TV faces big sunny windows: entry OLEDs are less bright than Samsung's QD-OLED and Mini LED sets. Skip it too if you rely on Dolby Vision from streaming apps, since Samsung TVs use HDR10+ instead.",
+      ]}
+      sections={[
+        {
+          heading: "What the Samsung S85H is",
+          body: [
+            "The S85H (model QN65S85HAEXZA) is Samsung's 2026 entry OLED. It uses a WOLED panel, Samsung's NQ4 AI Gen2 processor for 4K AI upscaling, and Color Booster Pro. It runs Tizen with Alexa built in and has 20W speakers with AI Sound Controller.",
+          ],
+        },
+        {
+          heading: "Samsung S85H for gaming",
+          body: [
+            <>
+              The Premium Gaming Pack covers what current consoles and PCs need: 4K at up to 120Hz, FreeSync Premium and G-Sync compatibility, and auto low-latency mode. If you are building a setup, see our{" "}
+              <a href="/best-gaming-consoles-2026" className={link}>best gaming consoles</a> and{" "}
+              <a href="/best-ps5-accessories-2026" className={link}>best PS5 accessories</a> guides.
+            </>,
+          ],
+        },
+        {
+          heading: "Samsung S85H video overview",
+          body: [
+            <div key="video" className="relative aspect-[16/9] w-full overflow-hidden rounded-2xl bg-muted">
+              <iframe
+                className="absolute inset-0 h-full w-full"
+                src="https://www.youtube-nocookie.com/embed/A1BcTPpHlqs"
+                title="Samsung S85H OLED review video"
+                loading="lazy"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>,
+          ],
+        },
+        {
+          heading: "Check these before you buy",
+          bullets: [
+            "Confirm the listing is the 65-inch S85H (2026), not an older S85 model.",
+            "Measure your wall or stand: a 65-inch TV is about 57 inches wide.",
+            "Price and stock on this TV change often; recheck before you pay.",
+          ],
+        },
+      ]}
+      faqTitle="Samsung S85H OLED questions"
+      faq={[
+        { q: "Is the Samsung S85H a good TV?", a: "Yes, for dim or average rooms. It has OLED contrast, 4K 120Hz and full gaming features. Brighter rooms suit Samsung's QD-OLED or Mini LED models better." },
+        { q: "Does the Samsung S85H support Dolby Vision?", a: "No. Samsung TVs support HDR10+ instead of Dolby Vision." },
+        { q: "Is the S85H good for PS5 and Xbox?", a: "Yes. It supports 4K at 120Hz, variable refresh rate and auto low-latency mode." },
+        { q: "What is the difference between the S85H and S90H?", a: "The S85H is Samsung's entry OLED. The higher S90-series models are generally brighter and cost more; compare current listings before you buy." },
+      ]}
+      products={["Samsung 65-inch S85H OLED 4K Smart TV"]}
+      dealBox={{ productName: "Samsung 65-Inch S85H OLED 4K TV (2026)", href: URL }}
+      after={<CommentSection articleSlug="samsung-65-s85h-oled-article" />}
+    />
   );
 }

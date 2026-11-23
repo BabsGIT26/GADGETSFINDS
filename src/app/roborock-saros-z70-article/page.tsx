@@ -1,186 +1,93 @@
 import type { Metadata } from "next";
-import ArticleJsonLd from "@/components/common/ArticleJsonLd";
-import AppImage from "@/components/ui/AppImage";
-import Header from "@/components/common/Header";
-import Footer from "@/app/homepage/components/Footer";
-import AmazonDealBox from "@/components/common/AmazonDealBox";
+import ProductArticle from "@/components/common/ProductArticle";
+import { pageMetadata } from "@/lib/seo";
+import { illustrationPath } from "@/lib/illustrations";
 
-const AMAZON_ROBOROCK =
-  "https://www.amazon.com/dp/B0DSLBZV3F?tag=gadgetsfindswebsite-20";
+const PATH = "/roborock-saros-z70-article";
+const URL = "https://www.amazon.com/dp/B0DSLBZV3F?tag=gadgetsfindswebsite-20";
+const SEO_TITLE = "Roborock Saros Z70: Is It Worth Buying?";
+const TITLE = "Roborock Saros Z70: Is the Robot Vacuum With an Arm Worth Buying?";
+const DESCRIPTION =
+  "Roborock Saros Z70: the robot vacuum and mop with an OmniGrip arm, 22,000Pa suction and a 3.14-inch body. Who it suits, who should skip it. Check today's price.";
 
-export const metadata: Metadata = {
-  title:
-    "Roborock Saros Z70: Arm Robot Vacuum Guide | Gadgets Finds",
-  description:
-    "Roborock Saros Z70 Black: OmniGrip arm, 22,000Pa, 3.14-inch slim body, auto mop wash and dry. Who it fits, what to check, and when the price makes sense.",
-  metadataBase: new URL("https://www.gadgets-finds.com"),
-  alternates: {
-    canonical: "https://www.gadgets-finds.com/roborock-saros-z70-article",
-  },
-  openGraph: {
-    title: "Roborock Saros Z70 — Gadgets Finds",
-    description:
-      "The Saros Z70 Black: OmniGrip arm, mop dock, and what to check before you buy.",
-    url: "https://www.gadgets-finds.com/roborock-saros-z70-article",
-    siteName: "Gadgets Finds",
-    type: "article",
-    images: [
-      {
-        url: "https://www.gadgets-finds.com/og/vacuum",
-        width: 1200,
-        height: 630,
-        alt: "Roborock Saros Z70 robot vacuum and mop",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    site: "@Gadgets_finds",
-    title: "Roborock Saros Z70 — Gadgets Finds",
-    description:
-      "Saros Z70 Black: OmniGrip arm, mop dock, and what to check before you buy.",
-    images: ["https://www.gadgets-finds.com/og/vacuum"],
-  },
-};
+export const metadata: Metadata = pageMetadata({ path: PATH, title: SEO_TITLE, description: DESCRIPTION, kind: "vacuum" });
+
+const link = "underline decoration-amber-500/80 underline-offset-4 hover:text-foreground";
 
 export default function Page() {
   return (
-    <>
-      <Header />
-      <ArticleJsonLd path="/roborock-saros-z70-article" headline={"Roborock Saros Z70: Arm Robot Vacuum Guide"} description={"Roborock Saros Z70 Black: OmniGrip arm, 22,000Pa, 3.14-inch slim body, auto mop wash and dry. Who it fits, what to check, and when the price makes sense."} products={["Roborock Saros Z70"]} />
-      <article className="min-h-screen bg-background pt-28 md:pt-16">
-        <div className="w-full bg-muted flex items-center justify-center py-10 pb-2">
-          <AppImage
-            src="/assets/illustrations/vacuum.svg"
-            alt="Roborock Saros Z70 robot vacuum and mop, black"
-            className="max-h-[400px] w-auto max-w-[85%] object-contain"
-          />
-        </div>
-
-        <div className="container mx-auto px-4 pt-2 pb-10 max-w-3xl">
-         
-
-          <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">
-            Smart Home
-          </p>
-          <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4 leading-tight">
-            Roborock Saros Z70
-            <br />
-            Flagship vac-mop with OmniGrip arm
-          </h1>
-
-          <p className="text-muted-foreground mb-6">
-            The Roborock Saros Z70 (Black) is a 3.14-inch robot vacuum-mop
-            with 22,000Pa suction, FlexiArm edge cleaning, AdaptiLift
-            chassis, and the OmniGrip five-axis arm. 
-          </p>
-
-          <a
-            href={AMAZON_ROBOROCK}
-            target="_blank"
-            rel="nofollow sponsored noopener noreferrer"
-            className="inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-3 px-6 rounded-md mb-6"
-          >
-            View product on Amazon 
-          </a>
-           <p className="text-sm text-muted-foreground mb-4">
-            As an Amazon Associate, Gadgets Finds earns from qualifying
-            purchases.
-          </p>
-          
-          <div className="bg-red-100 border-l-4 border-red-500 p-4 mb-8">
-            <p className="text-red-700 font-bold">
-              Roborock Saros Z70 (Black): list price $1,999.99. Amazon often
-              discounts it. See Amazon for the current price and stock.
-            </p>
-          </div>
-
-          <h2 className="text-2xl font-bold mt-10 mb-3">
-            What the Z70 actually is
-          </h2>
-          <p className="text-muted-foreground mb-4">
-            This is Roborock’s arm-equipped flagship, not a $300 “set and
-            forget” budget bot. The dock empties dust, washes and dries
-            mops, and handles water. The robot is built to run hard floors
-            and low carpets in one pass, then lift the mop on carpet.
-          </p>
-
-          <h2 className="text-2xl font-bold mt-10 mb-3">OmniGrip arm</h2>
-          <p className="text-muted-foreground mb-4">
-            OmniGrip can pick up light objects (socks, tissues, similar
-            items, about 300g max per Roborock). It is not a hand that
-            reliably moves shoes, cables, or clutter. Independent reviews
-            and Amazon feedback are mixed: the vac-mop is strong; the arm
-            is the party trick and sometimes misses or jams.
-          </p>
-
-          <h2 className="text-2xl font-bold mt-10 mb-3">
-            Slim body, edges, thresholds
-          </h2>
-          <ul className="list-disc pl-5 text-muted-foreground space-y-2 mb-4">
-            <li>
-              <strong>3.14" height</strong> — better under sofas than most
-              flagship docks-era robots.
-            </li>
-            <li>
-              <strong>FlexiArm</strong> — side brush and mop extend into
-              corners.
-            </li>
-            <li>
-              <strong>AdaptiLift</strong> — chassis lift for thresholds up to
-              about 4 cm; mop lift on carpet (about 22 mm).
-            </li>
-            <li>
-              <strong>22,000Pa</strong> — marketing peak suction; real-world
-              pickup still depends on brush, seal, and floor type.
-            </li>
-          </ul>
-
-          <h2 className="text-2xl font-bold mt-10 mb-3">When the price makes sense</h2>
-          <p className="text-muted-foreground mb-4">
-            List on that Amazon page is $1,999.99 (checked Nov 22, 2026). Amazon
-            has run deep discounts on it, and a big discount is the main reason
-            to look. At full list, wait or buy a Saros / S8-class machine
-            without the arm.
-          </p>
-
-          <h2 className="text-2xl font-bold mt-10 mb-3">Buy if / skip if</h2>
-          <ul className="list-disc pl-5 text-muted-foreground space-y-2 mb-4">
-            <li>
-              <strong>Buy if</strong> the live Amazon price is deeply
-              discounted from list, you want a self-washing mop dock, and you accept the arm
-              as extra, not guaranteed.
-            </li>
-            <li>
-              <strong>Skip if</strong> you need a small dock, have lots of
-              stairs, or you are buying only for the arm.
-            </li>
-          </ul>
-
-          <h2 className="text-2xl font-bold mt-10 mb-3">
-            Watch-outs before you click Amazon
-          </h2>
-          <ul className="list-disc pl-5 text-muted-foreground space-y-2 mb-4">
-            <li>Color must be Black on B0DSLBZV3F.</li>
-            <li>Prefer Amazon sold/shipped or a known seller.</li>
-            <li>Dock needs floor space and an outlet.</li>
-            <li>Amazon price and availability change without notice.</li>
-          </ul>
-
-          <h2 className="text-2xl font-bold mt-10 mb-3">Verdict</h2>
-          <p className="text-muted-foreground mb-8">
-            Treat this as a flagship mop-vac, not a miracle
-            butler. If B0DSLBZV3F is around half of list, it is a serious
-            discount. If the price is back near list, walk away.
-          </p>
-
-          <AmazonDealBox
-            productName="Roborock Saros Z70"
-            href={AMAZON_ROBOROCK}
-          />
-        </div>
-      </article>
-      <Footer />
-    </>
+    <ProductArticle
+      path={PATH}
+      eyebrow="Robot vacuums"
+      title={TITLE}
+      description={DESCRIPTION}
+      topics={["home"]}
+      answer="The Roborock Saros Z70 is worth buying only at a deep discount. It is an excellent flagship vacuum and mop with a self-washing dock, but the OmniGrip arm that picks up socks is a bonus, not a reason to pay list price. When we checked on November 22, 2026, it was $949.99 on Amazon against a $1,999.99 list price."
+      image={{ src: illustrationPath("vacuum"), alt: "Roborock Saros Z70 robot vacuum and mop" }}
+      cta={{ href: URL, note: "Black, model B0DSLBZV3F. In stock and sold by Roborock when we checked; price and stock change." }}
+      bestFor="Mixed floors and low furniture, bought on sale"
+      glance={[
+        ["Suction (Roborock)", "22,000Pa"],
+        ["Height", "3.14 in"],
+        ["Arm", "OmniGrip, lifts light items up to about 300g"],
+        ["Climbs", "Thresholds up to about 4cm (AdaptiLift)"],
+        ["Dock", "Empties dust, washes and dries mops, refills water"],
+        ["Price when checked", "$949.99 (list $1,999.99), Nov 22, 2026"],
+      ]}
+      why={[
+        "Under the arm, it is one of Roborock's best vac-mops: very high rated suction, mops that lift about 22mm on carpet, an extending side brush and mop for corners, and a dock that does almost all of the maintenance. At 3.14 inches tall it fits under more sofas than most flagship robots.",
+      ]}
+      skip={[
+        "Skip it if you are buying it for the arm. It can pick up socks and tissues, but it is not a robot that tidies shoes, cables or toys, and owner feedback on the arm is mixed. Skip it too if you have little floor space for a large dock, or if the price is back near list.",
+      ]}
+      sections={[
+        {
+          heading: "What the Roborock Saros Z70 does",
+          body: [
+            "The Saros Z70 is a flagship robot vacuum and mop. It vacuums and mops hard floors and low carpet in one run, lifts the mops on carpet, and returns to a dock that empties the bin, washes and dries the mops and refills its water tank.",
+            "Its headline feature is OmniGrip, a folding five-axis arm. Roborock says it can lift light objects up to about 300 grams, like socks or tissues, and move them out of the way before cleaning.",
+          ],
+        },
+        {
+          heading: "Saros Z70 features that matter",
+          bullets: [
+            <><strong>3.14-inch height:</strong> reaches under lower sofas and beds than most docked robots.</>,
+            <><strong>FlexiArm:</strong> the side brush and mop extend into corners and along baseboards.</>,
+            <><strong>AdaptiLift:</strong> raises the body to cross thresholds up to about 4cm.</>,
+            <><strong>22,000Pa:</strong> Roborock's peak suction rating. Real pickup still depends on the brush, the floor and the setting.</>,
+          ],
+        },
+        {
+          heading: "Is the Saros Z70 worth it at its price?",
+          body: [
+            "At its $1,999.99 list price, no: you are paying a large premium for the arm. At around half of list, as it was on November 22, 2026, it becomes a fair price for a top-tier vac-mop with the arm as an extra.",
+            <>
+              If you want the dock and mopping without the arm, compare the Roborock Qrevo S Pro in our{" "}
+              <a href="/roborock-vs-roomba-2026" className={link}>Roborock vs Roomba comparison</a>, or the deals in our{" "}
+              <a href="/black-friday-robot-vacuums" className={link}>Black Friday robot vacuum guide</a>. On a tight budget, see the{" "}
+              <a href="/best-budget-robot-vacuums-under-300" className={link}>best robot vacuums under $300</a>.
+            </>,
+          ],
+        },
+        {
+          heading: "Check these before you buy",
+          bullets: [
+            "The listing should say Black and B0DSLBZV3F.",
+            "Buy from Amazon or Roborock's own store, not an unknown third-party seller.",
+            "Leave floor space and an outlet for the dock.",
+            "The robot needs 2.4GHz Wi-Fi for the app.",
+          ],
+        },
+      ]}
+      faqTitle="Roborock Saros Z70 questions"
+      faq={[
+        { q: "Is the Roborock Saros Z70 worth it?", a: "Only at a big discount. It is a very good vac-mop with a self-washing dock, but the arm alone does not justify the list price." },
+        { q: "What can the Saros Z70 arm pick up?", a: "Light items up to about 300 grams, such as socks and tissues, according to Roborock. It does not reliably move shoes, cables or clutter." },
+        { q: "How tall is the Roborock Saros Z70?", a: "3.14 inches, low enough to clean under many sofas and beds." },
+        { q: "Does the Saros Z70 mop carpet?", a: "No. It lifts its mops about 22mm when it detects carpet, so it can vacuum rugs without wetting them." },
+      ]}
+      products={["Roborock Saros Z70"]}
+      dealBox={{ productName: "Roborock Saros Z70", href: URL }}
+    />
   );
 }

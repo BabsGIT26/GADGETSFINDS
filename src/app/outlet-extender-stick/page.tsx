@@ -1,150 +1,82 @@
 import type { Metadata } from "next";
-import ArticleJsonLd from "@/components/common/ArticleJsonLd";
-import Header from "@/components/common/Header";
-import Footer from "@/app/homepage/components/Footer";
-import AmazonDealBox from "@/components/common/AmazonDealBox";
-import Link from "next/link";
+import ProductArticle from "@/components/common/ProductArticle";
+import { pageMetadata } from "@/lib/seo";
+import { illustrationPath } from "@/lib/illustrations";
 
+const PATH = "/outlet-extender-stick";
 const AMAZON = "https://www.amazon.com/Extender-Stick-360%C2%B0-Rotating-Adjustable-Protection/dp/B0H3P79YX2?tag=gadgetsfindswebsmediavid-20";
+const SEO_TITLE = "Outlet Extender Stick for Behind a Couch";
+const TITLE = "Outlet Extender Stick for Behind a Couch: Reach Hidden Outlets";
+const DESCRIPTION =
+  "An outlet extender stick brings outlets behind a couch, bed or desk within reach: 23 to 35 inches, 6 AC outlets plus USB and a rotating head. Check the price.";
 
-export const metadata: Metadata = {
-  title: "Outlet Extender Stick for Behind a Couch | Gadgets Finds",
-  description:
-    "Extendable outlet stick that brings hard-to-reach outlets behind couches, desks, and beds within easy reach.",
-  metadataBase: new URL("https://www.gadgets-finds.com"),
-  alternates: {
-    canonical: "https://www.gadgets-finds.com/outlet-extender-stick",
-  },
-  openGraph: {
-    title: "Outlet Extender Stick for Behind Couch",
-    description: "Reach hidden outlets without moving furniture.",
-    url: "https://www.gadgets-finds.com/outlet-extender-stick",
-    siteName: "Gadgets Finds",
-    type: "article",
-    images: [
-      {
-        url: "https://www.gadgets-finds.com/og/outlet",
-        width: 1200,
-        height: 630,
-        alt: "Outlet Extender Stick",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    site: "@Gadgets_finds",
-    title: "Outlet Extender Stick for Behind Couch",
-    images: ["https://www.gadgets-finds.com/og/outlet"],
-  },
-};
+export const metadata: Metadata = pageMetadata({ path: PATH, title: SEO_TITLE, description: DESCRIPTION, kind: "outlet" });
 
 export default function Page() {
   return (
-    <>
-      <Header />
-      <ArticleJsonLd path="/outlet-extender-stick" headline={"Outlet Extender Stick for Behind a Couch"} description={"Extendable outlet stick that brings hard-to-reach outlets behind couches, desks, and beds within easy reach."} products={["Outlet extender stick"]} />
-      <article className="min-h-screen bg-background pt-14 md:pt-16">
-        <div className="container mx-auto px-4 py-10 max-w-3xl">
-          <p className="text-xs text-muted-foreground mb-2 leading-relaxed">
-            <span className="text-red-600 font-semibold">Disclosure:</span> Gadgets Finds is an
-            Amazon Associate. We may earn from qualifying purchases if you buy through links on this
-            page, at no extra cost to you. Prices and availability change on Amazon.
-          </p>
-
-          <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">
-            Home
-          </p>
-          <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-            Outlet Extender Stick for Behind Couch
-          </h1>
-          <p className="text-muted-foreground mb-6">
-            Extendable stick that brings outlets hidden behind couches, desks, and beds within easy reach without moving furniture.
-          </p>
-
-          <div className="mb-6">
-            <a
-              href={AMAZON}
-              target="_blank"
-              rel="nofollow sponsored noopener noreferrer"
-              className="inline-block bg-amber-400 hover:bg-amber-500 text-black font-bold px-6 py-3 rounded-md"
-            >
-              VIEW ON AMAZON
-            </a>
-          </div>
-
-          <div className="mb-10 flex justify-center">
-            <img
-              src="/assets/illustrations/outlet.svg"
-              alt="Illustration, not a product photo: Outlet Extender Stick for Behind Couch"
-              className="w-full max-w-[280px] h-auto rounded-xl"
-            />
-          </div>
-
-          <h2 className="text-2xl font-bold mt-10 mb-3">The problem it solves</h2>
-          <p className="text-muted-foreground mb-4">
-            In many homes, wall outlets end up blocked once a couch, bed, or desk is placed against the wall. Reaching them usually means moving heavy furniture or crawling behind it. Outlet extender sticks plug into the wall outlet and bring the sockets forward so you can use them more easily.
-          </p>
-          <p className="text-muted-foreground mb-4">
-            Most models are telescoping and range from roughly 18 to 35 inches when extended. Some also rotate at the base or the head, which helps when the original outlet is horizontal or in a tight corner.
-          </p>
-
-
-          <h2 className="text-2xl font-bold mt-10 mb-3">Typical features</h2>
-          <p className="text-muted-foreground mb-4">
-            Common versions include two or more AC outlets on the front face. Higher-end models add USB-A and USB-C ports so you can charge phones and tablets without extra adapters. A few include a small ledge or shelf for resting a phone while charging.
-          </p>
-          <p className="text-muted-foreground mb-4">
-            Installation is usually just plugging it into the wall. Some come with adhesive strips if you want to mount it more securely, though many people simply let it rest behind the furniture.
-          </p>
-
-          <h2 className="text-2xl font-bold mt-10 mb-3">Who finds it useful</h2>
-          <ul className="list-disc pl-5 text-muted-foreground space-y-2 mb-4">
-            <li>People with outlets blocked by sofas or beds</li>
-            <li>Renters who can’t easily move furniture</li>
-            <li>Anyone who wants easier access for chargers and lamps</li>
-          </ul>
-          <p className="text-muted-foreground mb-4">
-            It’s less useful if you need a very long run (traditional extension cords are better for that) or if you want a full power strip with surge protection on the floor.
-          </p>
-
-          <h2 className="text-2xl font-bold mt-10 mb-3">Things to check</h2>
-          <ul className="list-disc pl-5 text-muted-foreground space-y-2 mb-10">
-            <li>Maximum and minimum extension length</li>
-            <li>Number and type of outlets (AC only vs AC + USB)</li>
-            <li>Whether the head rotates and how far</li>
-            <li>Build quality and current price on the listing</li>
-          </ul>
-
-          <div className="my-8 aspect-video">
-            <iframe
-              className="w-full h-full rounded-lg"
-              src="https://www.youtube.com/embed/RGU_XLSoH9A"
-              title="Outlet Extender Stick"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-          </div>
-
-          <p className="text-sm text-muted-foreground mb-8">
-            As an Amazon Associate, Gadgets Finds earns from qualifying purchases. Prices and availability change on Amazon.
-          </p>
-
-          <AmazonDealBox
-            productName="Outlet Extender Stick for Behind Couch"
-            href={AMAZON}
-          />
-
-          <div className="flex justify-end mt-8 mb-2">
-            <Link
-              href="/mini-gadgets"
-              className="inline-flex items-center gap-1 px-3 py-1.5 bg-red-600 hover:bg-red-700 text-white font-medium text-xs rounded transition-colors"
-            >
-              ← Back to Mini Gadgets
-            </Link>
-          </div>
-        </div>
-      </article>
-      <Footer />
-    </>
+    <ProductArticle
+      path={PATH}
+      eyebrow="Home"
+      title={TITLE}
+      description={DESCRIPTION}
+      topics={["home", "deals"]}
+      answer="An outlet extender stick plugs into a wall outlet hidden behind a couch, bed or desk and brings the sockets up to where you can reach them, without moving furniture. The one we link adjusts from about 23 to 35 inches, has 6 AC outlets plus USB ports and a 360° rotating head, and was $33.99 on Amazon when we checked on November 22, 2026."
+      image={{ src: illustrationPath("outlet"), alt: "Outlet extender stick behind a couch" }}
+      cta={{ href: AMAZON, note: "Price and stock change on Amazon." }}
+      bestFor="Outlets blocked by a sofa, bed or heavy desk"
+      glance={[
+        ["Length", "Adjustable, about 23 to 34.8 in"],
+        ["Outlets", "6 AC plus USB ports"],
+        ["Head", "Rotates 360°"],
+        ["Safety", "Overload switch with reset"],
+        ["Price when checked", "$33.99 on Amazon, Nov 22, 2026"],
+      ]}
+      why={[
+        "It solves one annoying problem cheaply: you stop crawling behind the sofa to plug in a lamp or a charger. Renters who cannot move furniture or add outlets get usable sockets at arm's height, and the USB ports charge a phone without a separate adapter.",
+      ]}
+      skip={[
+        "Skip it if you need a long run across a room (use a proper extension cord) or a surge protector for a TV and console setup on the floor.",
+      ]}
+      sections={[
+        {
+          heading: "How an outlet extender stick works",
+          body: [
+            "The stick plugs straight into the wall outlet and telescopes upward behind the furniture, with the sockets at the top. The rotating head lets it fit an outlet that is mounted sideways or in a tight corner. Most people just let it rest against the wall; it needs no tools to install.",
+          ],
+        },
+        {
+          heading: "What to check before you buy an outlet extender",
+          bullets: [
+            "The shortest and longest length: measure from the outlet to the top of your sofa or headboard.",
+            "The number and type of outlets: AC only, or AC plus USB-A and USB-C.",
+            "Whether the head rotates and how far.",
+            "Overload protection, and the total load you plan to plug in.",
+          ],
+        },
+        {
+          heading: "Outlet extender stick video",
+          body: [
+            <div key="video" className="relative aspect-[16/9] w-full overflow-hidden rounded-2xl bg-muted">
+              <iframe
+                className="absolute inset-0 h-full w-full"
+                src="https://www.youtube-nocookie.com/embed/RGU_XLSoH9A"
+                title="Outlet extender stick video"
+                loading="lazy"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>,
+          ],
+        },
+      ]}
+      faqTitle="Outlet extender questions"
+      faq={[
+        { q: "How do I reach an outlet behind a couch?", a: "Use an outlet extender stick. It plugs into the hidden outlet and raises the sockets to the top of the couch so you can plug things in without moving it." },
+        { q: "Is an outlet extender safe?", a: "Choose one with overload protection and do not plug in more than its rated load. Avoid running heaters or other high-power appliances through it." },
+        { q: "Can I use an outlet extender behind a bed?", a: "Yes. Measure from the outlet to the top of the headboard and choose a stick that reaches that height." },
+      ]}
+      products={["Outlet extender stick"]}
+      dealBox={{ productName: "Outlet Extender Stick for Behind Couch", href: AMAZON }}
+    />
   );
 }
