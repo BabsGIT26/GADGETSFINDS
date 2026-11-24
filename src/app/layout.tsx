@@ -6,6 +6,10 @@ import AmazonDisclosureGate from '@/components/common/AmazonDisclosureGate';
 import AmazonClickTracker from '@/components/common/AmazonClickTracker';
 import BreadcrumbJsonLd from '@/components/common/BreadcrumbJsonLd';
 
+// Re-render every page at most hourly (ISR) so live Amazon prices stay under 24h old
+// without new deploys. Pages that set their own revalidate keep the lower value.
+export const revalidate = 3600;
+
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1
