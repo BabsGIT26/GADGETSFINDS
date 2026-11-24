@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Header from "@/components/common/Header";
+import { LivePrice, ProductPhoto } from "@/components/common/AmazonMedia";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 import Link from "next/link";
@@ -60,6 +61,8 @@ export default function Page() {
             Portable two-in-one spray and microfiber cloth for phones, iPads, laptops, car touchscreens, and other electronic devices.
           </p>
 
+          <LivePrice url={AMAZON} className="mb-3" />
+
           <div className="mb-6">
             <a
               href={AMAZON}
@@ -72,11 +75,7 @@ export default function Page() {
           </div>
 
           <div className="mb-10 flex justify-center">
-            <img
-              src="/assets/illustrations/cleaner.svg"
-              alt="Illustration, not a product photo: YTT Touchscreen Screen Cleaner Spray"
-              className="w-full max-w-[280px] h-auto rounded-xl"
-            />
+            <ProductPhoto url={AMAZON} fallback="/assets/illustrations/cleaner.svg" alt="YTT Touchscreen Screen Cleaner Spray" />
           </div>
 
           <h2 className="text-2xl font-bold mt-10 mb-3">What it is</h2>

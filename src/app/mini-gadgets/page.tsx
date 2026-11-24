@@ -4,6 +4,7 @@ import Footer from "@/app/homepage/components/Footer";
 import Link from "next/link";
 
 import { illustrationAlt } from "@/lib/illustrations";
+import { photosForRoutes } from "@/lib/amazon/route-photos";
 export const metadata: Metadata = {
   robots: { index: false, follow: true },
   title: "Mini Gadgets — Gadgets Finds",
@@ -130,7 +131,8 @@ const gadgets = [
   },
 ];
 
-export default function Page() {
+export default async function Page() {
+  const photos = await photosForRoutes(gadgets.map((item) => item.href));
   return (
     <>
       <Header />
@@ -153,13 +155,26 @@ export default function Page() {
                 href={item.href}
                 className="group flex flex-col bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden hover:border-red-600 transition-colors h-full"
               >
-                <div className="aspect-square bg-zinc-800 overflow-hidden">
-                  <img
-                    src={item.image}
-                    alt={illustrationAlt(item.image, item.title)}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+                {photos[item.href] ? (
+                  <div className="aspect-square bg-white overflow-hidden">
+                    <img
+                      src={photos[item.href]}
+                      alt={item.title}
+                      width={500}
+                      height={500}
+                      loading="lazy"
+                      className="w-full h-full object-contain p-3"
+                    />
+                  </div>
+                ) : (
+                  <div className="aspect-square bg-zinc-800 overflow-hidden">
+                    <img
+                      src={item.image}
+                      alt={illustrationAlt(item.image, item.title)}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                )}
 
                 <div className="p-2 flex flex-col flex-1">
                   <h2 className="font-semibold text-sm mb-1 group-hover:text-red-500 transition-colors">

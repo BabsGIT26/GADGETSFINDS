@@ -5,7 +5,7 @@ import RelatedGuides, { type Topic } from "@/components/common/RelatedGuides";
 import GuideFaq, { type FaqItem } from "@/components/common/GuideFaq";
 import ArticleJsonLd from "@/components/common/ArticleJsonLd";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
-import { HeroImage } from "@/components/common/Media";
+import { LivePrice, ProductPhoto } from "@/components/common/AmazonMedia";
 import { CARD, CONTAINER, CTA, DISCLOSURE, EYEBROW, H1, H2, H3, LEAD, P, PAGE, UL } from "@/lib/layout";
 
 const go = (url: string) => `/api/go?url=${encodeURIComponent(url)}`;
@@ -69,6 +69,7 @@ export default function ProductArticle({
 }) {
   const ctaButton = cta ? (
     <div className="my-6">
+      <LivePrice url={cta.href} className="mb-3" />
       <a href={go(cta.href)} target="_blank" rel="nofollow sponsored noopener noreferrer" className={CTA}>
         {cta.label ?? "Check price on Amazon"}
       </a>
@@ -93,7 +94,7 @@ export default function ProductArticle({
           <p className="text-sm text-muted-foreground mb-4">Updated {updated} · Specs from maker pages and Amazon listings</p>
           <p className={LEAD}>{answer}</p>
           {ctaButton}
-          <HeroImage src={image.src} alt={image.alt} priority={false} />
+          <ProductPhoto url={cta?.href} fallback={image.src} alt={image.alt} variant="hero" />
 
           {glance || bestFor || why || skip ? (
             <section className={`${CARD} mt-8`}>
