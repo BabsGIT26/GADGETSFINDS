@@ -26,7 +26,7 @@ const gadgets: Gadget[] = [
     category: "Laptops",
     badge: "USB-C",
     badgeColor: "bg-slate-700 text-white",
-    image: "/assets/images/selore-usb-c-dual-hdmi-dock.jpg",
+    image: "/assets/images/selore-usb-c-dual-hdmi-official.jpg",
     alt: "Selore USB-C docking station with two HDMI ports",
     href: "/selore-usb-c-dual-hdmi-dock",
     highlights: ["Two HDMI ports", "85W to the laptop", "Macs mirror only"],

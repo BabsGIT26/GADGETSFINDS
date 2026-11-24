@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "/assets/images/selore-usb-c-dual-hdmi-dock.jpg",
+        url: "/assets/images/selore-usb-c-dual-hdmi-official.jpg",
         alt: "Selore USB-C docking station with two HDMI ports",
       },
     ],
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     site: "@Gadgets_finds",
     title: "Selore USB-C Dock for Two HDMI Monitors",
     description: "Two HDMI ports from one USB-C cable. Windows extends. Macs mirror.",
-    images: ["/assets/images/selore-usb-c-dual-hdmi-dock.jpg"],
+    images: ["/assets/images/selore-usb-c-dual-hdmi-official.jpg"],
   },
 };
 
@@ -72,7 +72,7 @@ export default function Page() {
 
           <div className="w-full flex justify-center py-6 mb-10">
             <img
-              src="/assets/images/selore-usb-c-dual-hdmi-dock.jpg"
+              src="/assets/images/selore-usb-c-dual-hdmi-official.jpg"
               alt="Selore USB-C docking station with two HDMI ports, USB ports, and SD card slots"
               className="max-h-[28rem] w-auto max-w-full object-contain"
             />
