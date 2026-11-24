@@ -12,6 +12,8 @@ import { illustrationAlt } from "@/lib/illustrations";
 type Props = { src: string; alt: string; priority?: boolean; className?: string };
 
 const isSvg = (src: string) => src.endsWith(".svg") || src.includes("/assets/illustrations/");
+/** Amazon Creators API photos: hotlinked as-is (never re-hosted or resized), contained on white. */
+export const isAmazonPhoto = (src: string) => /^https:\/\/m\.media-amazon\.com\//.test(src);
 
 function Frame({
   src,
@@ -21,8 +23,9 @@ function Frame({
   frame,
 }: Props & { sizes: string; frame: string }) {
   const svg = isSvg(src);
+  const amazon = isAmazonPhoto(src);
   return (
-    <div className={`relative overflow-hidden bg-muted ${frame}`}>
+    <div className={`relative overflow-hidden ${amazon ? "bg-white border border-zinc-200" : "bg-muted"} ${frame}`}>
       <Image
         src={src}
         alt={illustrationAlt(src, alt)}
@@ -30,8 +33,8 @@ function Frame({
         sizes={sizes}
         priority={priority}
         loading={priority ? undefined : "lazy"}
-        unoptimized={svg}
-        className={svg ? "object-contain p-4" : "object-cover"}
+        unoptimized={svg || amazon}
+        className={svg || amazon ? "object-contain p-4" : "object-cover"}
       />
     </div>
   );

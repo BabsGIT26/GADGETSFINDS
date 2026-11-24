@@ -1,3 +1,5 @@
+import { LivePrice, PriceDisclaimer, ProductPhoto, amazonItemFor } from "@/components/common/AmazonMedia";
+
 export type TopPick = {
   /** Short label such as "Best overall" or "Best value". */
   label: string;
@@ -7,13 +9,15 @@ export type TopPick = {
   why: string;
   /** Full Amazon product URL, already carrying the page's own tag. */
   url: string;
+  /** Illustration used when no Amazon photo is available. */
+  image?: string;
 };
 
 function goHref(url: string) {
   return `/api/go?url=${encodeURIComponent(url)}`;
 }
 
-export default function TopPicks({
+export default async function TopPicks({
   picks,
   title = "Quick picks",
   note,
@@ -22,6 +26,8 @@ export default function TopPicks({
   title?: string;
   note?: string;
 }) {
+  const items = await Promise.all(picks.map((pick) => amazonItemFor({ url: pick.url })));
+  const anyPrice = items.some((item) => item && (item.price || item.availability === "OUT_OF_STOCK"));
   return (
     <aside
       aria-label={title}
@@ -32,14 +38,18 @@ export default function TopPicks({
         {picks.map((pick) => (
           <li
             key={pick.label}
-            className="flex flex-col gap-2 rounded-xl bg-background/80 border border-border p-3 sm:flex-row sm:items-center sm:justify-between"
+            className="flex flex-col gap-3 rounded-xl bg-background/80 border border-border p-3 sm:flex-row sm:items-center sm:justify-between"
           >
-            <div className="min-w-0">
-              <span className="inline-block rounded-full bg-amber-400 px-2 py-0.5 text-[11px] font-extrabold uppercase tracking-wide text-zinc-950">
-                {pick.label}
-              </span>
-              <p className="mt-1 font-bold text-foreground leading-snug">{pick.name}</p>
-              <p className="text-sm text-foreground/80 leading-snug">{pick.why}</p>
+            <div className="flex min-w-0 items-center gap-3">
+              <ProductPhoto url={pick.url} fallback={pick.image} alt={pick.name} variant="thumb" />
+              <div className="min-w-0">
+                <span className="inline-block rounded-full bg-amber-400 px-2 py-0.5 text-[11px] font-extrabold uppercase tracking-wide text-zinc-950">
+                  {pick.label}
+                </span>
+                <p className="mt-1 font-bold text-foreground leading-snug">{pick.name}</p>
+                <p className="text-sm text-foreground/80 leading-snug">{pick.why}</p>
+                <LivePrice url={pick.url} compact className="mt-1" />
+              </div>
             </div>
             <a
               href={goHref(pick.url)}
@@ -54,6 +64,7 @@ export default function TopPicks({
         ))}
       </ol>
       {note ? <p className="mt-3 text-xs text-muted-foreground leading-relaxed">{note}</p> : null}
+      {anyPrice ? <PriceDisclaimer className="mt-2" /> : null}
     </aside>
   );
 }
