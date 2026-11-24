@@ -102,20 +102,19 @@ export default function Page() {
               className="max-h-[28rem] w-auto max-w-full object-contain"
             />
           </div>
-<div> 
-<p
+<p> 
             The listing includes two HDMI ports at up to 4K at 60 Hz each, a USB-C
             power-delivery port that takes up to 100 W and passes about 85 W to the laptop,
             two USB-A 3.0 ports, one USB-C data port, and SD and microSD slots. It is a
             compact grey hub — Selore lists it at 5 by 0.7 by 0.13 inches and about 0.22
             pounds — not a full Thunderbolt dock, and the port list does not include Ethernet.
-          </p>
+        </p> 
           <p className="text-muted-foreground mb-6">
             The useful catch is the operating system. On a Windows laptop with the right
             USB-C port, both monitors can show different desktops. On a Mac, both HDMI
             screens show the same picture. Brands do not pay to be included in our guides.
           </p>
-</div>
+          
           <h2 className="text-2xl font-bold mt-10 mb-3">Who it is for</h2>
           <p className="text-muted-foreground mb-4">
             This is a good fit for a Windows laptop when you want two extended HDMI
