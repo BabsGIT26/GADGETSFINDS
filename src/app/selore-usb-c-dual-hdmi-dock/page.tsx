@@ -103,7 +103,7 @@ export default function Page() {
             />
           </div>
 <div> 
-<P>
+<p
             The listing includes two HDMI ports at up to 4K at 60 Hz each, a USB-C
             power-delivery port that takes up to 100 W and passes about 85 W to the laptop,
             two USB-A 3.0 ports, one USB-C data port, and SD and microSD slots. It is a
