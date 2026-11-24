@@ -12,7 +12,7 @@ const miniGadgets = [
   },
 ];
 
-export default function MiniGadgetsSection() {
+export default function MiniGadgetsSection({ photos = {} }: { photos?: Record<string, string> }) {
   return (
     <section className="py-12 md:py-16 bg-background">
       <div className="container mx-auto px-4">
@@ -27,7 +27,7 @@ export default function MiniGadgetsSection() {
               className="group bg-card border border-border rounded-xl overflow-hidden hover:border-primary transition-all"
             >
               <div className="relative">
-                <CardImage src={item.image} alt={item.alt} />
+                <CardImage src={photos[item.href] ?? item.image} alt={item.alt} />
                 {item.badge && (
                   <span className="absolute top-2 left-2 text-xs font-bold px-2 py-1 rounded-full bg-red-600 text-white">
                     {item.badge}
