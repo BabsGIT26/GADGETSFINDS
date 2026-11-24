@@ -23,7 +23,7 @@ export default function Page() {
       title={TITLE}
       description={DESCRIPTION}
       topics={["gaming", "home"]}
-      answer="The Samsung S85H 65-inch OLED TV is worth buying if you want true OLED contrast and 4K 120Hz gaming without paying for Samsung's brighter QD-OLED models. It is Samsung's 2026 entry OLED. Skip it if your room is very bright or you want Dolby Vision. It was $1,197.99 on Amazon when we checked on November 22, 2026."
+      answer="The Samsung S85H 65-inch OLED TV is worth buying if you want true OLED contrast and 4K 120Hz gaming without paying for Samsung's brighter QD-OLED models. It is Samsung's 2026 entry OLED. Skip it if your room is very bright or you want Dolby Vision."
       image={{ src: illustrationPath("tv"), alt: "Samsung S85H 65-inch OLED TV" }}
       cta={{ href: URL, note: "Model QN65S85HAEXZA. In stock when we checked; price and stock change." }}
       bestFor="Movies and console gaming in a dim or average room"
@@ -33,7 +33,6 @@ export default function Page() {
         ["Processor", "NQ4 AI Gen2 with Samsung Vision AI"],
         ["HDR", "OLED HDR, HDR10+ (no Dolby Vision)"],
         ["Gaming", "FreeSync Premium, G-Sync compatible, ALLM"],
-        ["Price when checked", "$1,197.99 on Amazon, Nov 22, 2026"],
       ]}
       why={[
         "OLED pixels light themselves, so black is truly black and there is no blooming around subtitles or bright objects. With 120Hz, VRR and auto low-latency mode, the S85H gets the most out of a PS5 or Xbox Series X. It is the least expensive way into a 65-inch Samsung OLED.",

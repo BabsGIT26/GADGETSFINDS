@@ -22,7 +22,7 @@ export default function Page() {
       title={TITLE}
       description={DESCRIPTION}
       topics={["home"]}
-      answer="The Roborock Saros Z70 is worth buying only at a deep discount. It is an excellent flagship vacuum and mop with a self-washing dock, but the OmniGrip arm that picks up socks is a bonus, not a reason to pay list price. When we checked on November 22, 2026, it was $949.99 on Amazon against a $1,999.99 list price."
+      answer="The Roborock Saros Z70 is worth buying only at a deep discount. It is an excellent flagship vacuum and mop with a self-washing dock, but the OmniGrip arm that picks up socks is a bonus, not a reason to pay list price. Compare today's Amazon price with the list price before you buy."
       image={{ src: illustrationPath("vacuum"), alt: "Roborock Saros Z70 robot vacuum and mop" }}
       cta={{ href: URL, note: "Black, model B0DSLBZV3F. In stock and sold by Roborock when we checked; price and stock change." }}
       bestFor="Mixed floors and low furniture, bought on sale"
@@ -32,7 +32,6 @@ export default function Page() {
         ["Arm", "OmniGrip, lifts light items up to about 300g"],
         ["Climbs", "Thresholds up to about 4cm (AdaptiLift)"],
         ["Dock", "Empties dust, washes and dries mops, refills water"],
-        ["Price when checked", "$949.99 (list $1,999.99), Nov 22, 2026"],
       ]}
       why={[
         "Under the arm, it is one of Roborock's best vac-mops: very high rated suction, mops that lift about 22mm on carpet, an extending side brush and mop for corners, and a dock that does almost all of the maintenance. At 3.14 inches tall it fits under more sofas than most flagship robots.",
@@ -60,7 +59,7 @@ export default function Page() {
         {
           heading: "Is the Saros Z70 worth it at its price?",
           body: [
-            "At its $1,999.99 list price, no: you are paying a large premium for the arm. At around half of list, as it was on November 22, 2026, it becomes a fair price for a top-tier vac-mop with the arm as an extra.",
+            "At its $1,999.99 list price, no: you are paying a large premium for the arm. At around half of list, it becomes a fair price for a top-tier vac-mop with the arm as an extra.",
             <>
               If you want the dock and mopping without the arm, compare the Roborock Qrevo S Pro in our{" "}
               <a href="/roborock-vs-roomba-2026" className={link}>Roborock vs Roomba comparison</a>, or the deals in our{" "}

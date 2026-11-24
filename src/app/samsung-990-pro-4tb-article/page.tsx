@@ -22,7 +22,7 @@ export default function Page() {
       title={TITLE}
       description={DESCRIPTION}
       topics={["computing", "gaming"]}
-      answer="The Samsung 990 PRO 4TB SSD is a fast PCIe 4.0 NVMe drive, rated at 7,450 MB/s read and 6,900 MB/s write, with 4GB of DRAM and a 2,400 TBW warranty. Buy it for a PC that needs a lot of space in one M.2 slot. For a PS5 you also need a heatsink. It was $699.99 on Amazon when we checked on November 22, 2026."
+      answer="The Samsung 990 PRO 4TB SSD is a fast PCIe 4.0 NVMe drive, rated at 7,450 MB/s read and 6,900 MB/s write, with 4GB of DRAM and a 2,400 TBW warranty. Buy it for a PC that needs a lot of space in one M.2 slot. For a PS5 you also need a heatsink."
       image={{ src: illustrationPath("ssd"), alt: "Samsung 990 PRO 4TB NVMe SSD" }}
       cta={{ href: URL, note: "Model MZ-V9P4T0B/AM, no heatsink. In stock when we checked; price changes." }}
       bestFor="A PCIe 4.0 desktop or laptop that needs 4TB in one slot"
@@ -32,7 +32,6 @@ export default function Page() {
         ["Random 4KB QD32", "1,600K read, 1,550K write IOPS"],
         ["Cache / NAND", "4GB LPDDR4, Samsung V-NAND TLC"],
         ["Warranty", "5 years or 2,400 TBW"],
-        ["Price when checked", "$699.99 on Amazon, Nov 22, 2026 (Samsung lists $1,099.99)"],
       ]}
       why={[
         "It is one of the fastest PCIe 4.0 drives, with Samsung's own controller and a large 4GB DRAM cache. The 4TB module is single-sided and 2.3mm thick, so it also fits laptops and compact boards that only take that layout. After formatting you get about 3.72TB of usable space.",
