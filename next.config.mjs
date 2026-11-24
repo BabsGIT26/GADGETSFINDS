@@ -30,6 +30,11 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'img.rocket.new',
       },
+      {
+        // Amazon Creators API product photos (hotlinked, rendered unoptimized).
+        protocol: 'https',
+        hostname: 'm.media-amazon.com',
+      },
     ],
   },
 
