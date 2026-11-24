@@ -39,7 +39,7 @@ const AboutPage = () => {
     <div className="min-h-screen bg-brand-dark flex flex-col">
       <Header />
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-brand-primary/20 to-transparent py-20 border-b border-slate-800 pt-32 md:pt-36">
+      <section className="relative bg-gradient-to-br from-brand-primary/20 to-transparent pb-20 border-b border-slate-800 site-pad-top">
         <div className="container mx-auto px-4">
           <Link
             href="/"

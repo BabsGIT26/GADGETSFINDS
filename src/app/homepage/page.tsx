@@ -100,11 +100,11 @@ export default async function Homepage() {
     <div className="min-h-screen bg-background">
       <Header />
 
-      {/* Spacer so content starts below the fixed header (taller on mobile because of nav strip) */}
-      <div className="h-28 lg:h-16" />
+      {/* Clears the fixed header, plus 12–16px of room */}
+      <div className="site-spacer" />
 
       <main className="pt-0">
-        <section className="py-8 md:py-16 bg-background">
+        <section className="pt-0 pb-8 md:pb-16 bg-background">
           <div className="container mx-auto px-4">
             <PersonalizedContentStream photos={photos} />
             <div className="max-w-4xl mx-auto mt-10 md:mt-14">
@@ -143,7 +143,7 @@ export default async function Homepage() {
             </div>
 
             <div className="w-full">
-              <TrendingStoriesCarousel />
+              <TrendingStoriesCarousel photos={photos} />
             </div>
           </div>
         </section>
