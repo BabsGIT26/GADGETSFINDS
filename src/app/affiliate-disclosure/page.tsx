@@ -23,7 +23,7 @@ export default function AffiliateDisclosurePage() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <main className="container mx-auto px-4 py-12 max-w-3xl pt-28 md:pt-32">
+      <main className="container mx-auto px-4 pb-12 max-w-3xl site-pad-top">
         <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">Affiliate disclosure</h1>
         <p className="text-sm text-muted-foreground mb-10">Last updated: November 22, 2026</p>
 
