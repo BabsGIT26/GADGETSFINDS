@@ -132,7 +132,7 @@ export default function ProductArticle({
           ) : null}
 
           {sections.map((section) => (
-            <section key={section.heading} id={section.id} className="scroll-mt-28">
+            <section key={section.heading} id={section.id} className="site-scroll">
               <h2 className={H2}>{section.heading}</h2>
               {section.body?.map((b, i) => (typeof b === "string" ? <p key={i} className={P}>{b}</p> : <div key={i} className={P}>{b}</div>))}
               {section.bullets ? (

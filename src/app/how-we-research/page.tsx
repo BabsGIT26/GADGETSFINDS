@@ -50,7 +50,7 @@ export default function HowWeResearchPage() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <main className="container mx-auto px-4 py-12 max-w-3xl pt-28 md:pt-32">
+      <main className="container mx-auto px-4 pb-12 max-w-3xl site-pad-top">
         <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">How we research and choose products</h1>
         <p className="text-muted-foreground mb-10 text-lg leading-relaxed">
           Gadgets Finds writes buying guides for gadgets sold on Amazon. This page explains how a
