@@ -132,7 +132,7 @@ const TermsOfServicePage = () => {
   return (
     <div className="min-h-screen bg-brand-dark flex flex-col">
       <Header />
-      <div className="container mx-auto px-4 py-12 max-w-4xl pt-28 md:pt-32 flex-1">
+      <div className="container mx-auto px-4 pb-12 max-w-4xl site-pad-top flex-1">
         <div className="mb-8">
           <Link
             href="/homepage"

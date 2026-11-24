@@ -119,7 +119,7 @@ const CookiePolicyPage = () => {
   return (
     <div className="min-h-screen bg-brand-dark">
       <Header />
-      <div className="container mx-auto px-4 py-12 max-w-4xl pt-28 md:pt-32">
+      <div className="container mx-auto px-4 pb-12 max-w-4xl site-pad-top">
         <div className="mb-8">
           <Link
             href="/homepage"

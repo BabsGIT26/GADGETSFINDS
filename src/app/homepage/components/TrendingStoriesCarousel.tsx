@@ -1,11 +1,12 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import Link from 'next/link';
-import AppImage from '@/components/ui/AppImage';
+import Image from 'next/image';
 import Icon from '@/components/ui/AppIcon';
+import { illustrationAlt } from '@/lib/illustrations';
 
-interface Story {
+type Story = {
   id: number;
   title: string;
   excerpt: string;
@@ -14,254 +15,233 @@ interface Story {
   alt: string;
   author: string;
   readTime: string;
-  trending: boolean;
-  link?: string;
-  fit?: "contain";
-}
+  link: string;
+};
 
-const TrendingStoriesCarousel = () => {
-  const [isHydrated, setIsHydrated] = useState(false);
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    setIsHydrated(true);
-  }, []);
-
-    const stories: Story[] = [
+const STORIES: Story[] = [
   {
     id: 0,
     title: 'Black Friday Robot Vacuums',
     excerpt: 'Dock, mop station, or a robot you empty yourself. What each one is for before you open Amazon.',
     category: 'Buying Guide',
     image: '/assets/illustrations/vacuum.svg',
-    alt: 'Black robot vacuum on a Black Friday graphic',
+    alt: 'Roborock Qrevo 2 Pro robot vacuum and dock',
     author: 'Gadgets Finds',
     readTime: '6 min read',
-    trending: true,
     link: '/black-friday-robot-vacuums',
   },
   {
-    id: 6,
+    id: 1,
     title: 'Black Friday Smartwatches',
     excerpt: 'Apple Watch, Garmin, WHOOP, or a budget GPS watch. Match it to the phone first.',
     category: 'Buying Guide',
     image: '/assets/illustrations/watch.svg',
-    alt: 'Apple Watch Series 12 GPS 42mm in black',
+    alt: 'Apple Watch SE 3 GPS 40mm',
     author: 'Gadgets Finds',
     readTime: '7 min read',
-    trending: true,
     link: '/black-friday-smartwatches',
-    fit: 'contain',
   },
   {
-    id: 1,
+    id: 2,
     title: 'Best Budget Robot Vacuums Under $300',
     excerpt: 'Lefant, eufy, and Roborock under $300. What each one is for, and what to skip.',
     category: 'Buying Guide',
     image: '/assets/illustrations/vacuum.svg',
-    alt: 'eufy RoboVac G30 robot vacuum',
+    alt: 'Roborock Q7 L5 robot vacuum',
     author: 'Gadgets Finds',
     readTime: '12 min read',
-    trending: true,
     link: '/best-budget-robot-vacuums-under-300',
   },
   {
-    id: 2,
+    id: 3,
     title: 'Samsung Galaxy S26 Ultra Review: AI Camera Powerhouse',
-    excerpt: 'Announced February 25, 2026 and available from March 11, 2026 — the Galaxy S26 Ultra delivers Samsung\'s most advanced AI-powered photography and flagship performance to date.',
-    category: 'Breaking News',
-    image: "/assets/illustrations/phone.svg",
-    alt: 'Samsung Galaxy S26 Ultra smartphone with advanced quad camera system',
+    excerpt:
+      "Announced February 25, 2026 and available from March 11, 2026 — the Galaxy S26 Ultra delivers Samsung's most advanced AI-powered photography and flagship performance to date.",
+    category: 'Phones',
+    image: '/assets/illustrations/phone.svg',
+    alt: 'Samsung Galaxy S26 Ultra',
     author: 'Gadgets Finds',
     readTime: '5 min read',
-    trending: true,
-    link: '/best-phones-2026#galaxy-s26-ultra'
-  },
-  {
-    id: 3,
-    title: 'iPhone 16 Pro vs Samsung Galaxy S26 Ultra: Ultimate Camera Showdown',
-    excerpt: 'How iPhone 16 Pro and Galaxy S26 Ultra compare on paper for photography.',
-    category: 'Reviews',
-    image: "/assets/illustrations/phone.svg",
-    alt: 'iPhone and Samsung Galaxy smartphones side by side comparison',
-    author: 'Gadgets Finds',
-    readTime: '8 min read',
-    trending: true,
-    link: '/best-phones-2026#iphone-17-vs-galaxy-s26-ultra'
+    link: '/best-phones-2026#galaxy-s26-ultra',
   },
   {
     id: 4,
-    title: 'NVIDIA RTX 5090 Benchmarks: Gaming Performance Breakthrough',
-    excerpt: 'Public benchmarks and reporting on RTX 5090 versus RTX 4090 in ray-traced games.',
-    category: 'Hardware',
-    image: "/assets/illustrations/gpu.svg",
-    alt: 'NVIDIA GeForce RTX 5090 Blackwell graphics card with triple-fan cooler',
+    title: 'iPhone 16 Pro vs Samsung Galaxy S26 Ultra: Ultimate Camera Showdown',
+    excerpt: 'How iPhone 16 Pro and Galaxy S26 Ultra compare on paper for photography.',
+    category: 'Phones',
+    image: '/assets/illustrations/phone.svg',
+    alt: 'Samsung Galaxy S26 Ultra, from our iPhone vs Galaxy comparison',
     author: 'Gadgets Finds',
-    readTime: '6 min read',
-    trending: true,
-    link: '/best-graphics-cards-2026#rtx-5090'
+    readTime: '8 min read',
+    link: '/best-phones-2026#iphone-17-vs-galaxy-s26-ultra',
   },
   {
     id: 5,
+    title: 'NVIDIA RTX 5090 Benchmarks: Gaming Performance Breakthrough',
+    excerpt: 'Public benchmarks and reporting on RTX 5090 versus RTX 4090 in ray-traced games.',
+    category: 'Hardware',
+    image: '/assets/illustrations/gpu.svg',
+    alt: 'ASUS TUF Gaming GeForce RTX 5090 graphics card',
+    author: 'Gadgets Finds',
+    readTime: '6 min read',
+    link: '/best-graphics-cards-2026#rtx-5090',
+  },
+  {
+    id: 6,
     title: 'Best Cheap Tablets Under $150 in 2026',
     excerpt: 'Fire HD 10, Galaxy Tab A9+, Fire HD 8, and Lenovo Tab One. New listings only.',
     category: 'Buying Guide',
     image: '/assets/illustrations/tablet.svg',
-    alt: 'Amazon Fire HD 10 tablet',
+    alt: 'Amazon Fire HD 8 tablet',
     author: 'Gadgets Finds',
     readTime: '8 min read',
-    trending: true,
     link: '/best-cheap-tablets-under-150',
-    fit: 'contain',
   },
   {
-    id: 6,
+    id: 7,
     title: 'MacBook Pro M4 is gone: the 14-inch M5 is the one to buy',
     excerpt: 'What changed from the M4 to the M5, and who should buy the 14-inch model.',
     category: 'Laptops',
-    image: "/assets/illustrations/laptop.svg",
-    alt: 'MacBook Pro 14-inch laptop',
+    image: '/assets/illustrations/laptop.svg',
+    alt: 'MacBook Pro 14-inch with the M5 chip',
     author: 'Gadgets Finds',
     readTime: '10 min read',
-    trending: true,
-    link: '/best-macbooks-2026#macbook-pro-14-m5'
-  }];
+    link: '/best-macbooks-2026#macbook-pro-14-m5',
+  },
+];
 
-  const nextSlide = () => {
-    setCurrentIndex((prev) => (prev + 1) % stories.length);
-  };
+const INTERVAL_MS = 6000;
 
-  const prevSlide = () => {
-    setCurrentIndex((prev) => (prev - 1 + stories.length) % stories.length);
-  };
+function isAmazonPhoto(src: string) {
+  return /^https:\/\/m\.media-amazon\.com\//.test(src);
+}
 
-  const goToSlide = (index: number) => {
-    setCurrentIndex(index);
-  };
+function isSvg(src: string) {
+  return src.endsWith('.svg') || src.includes('/assets/illustrations/');
+}
 
-  if (!isHydrated) {
-    return (
-      <div className="bg-card rounded-xl overflow-hidden shadow-lg">
-        <div className="relative h-96 md:h-[500px]">
-          <AppImage
-            src={stories[0].image}
-            alt={stories[0].alt}
-            className={stories[0].fit === "contain" ? "w-full h-full object-contain bg-black" : "w-full h-full object-cover"} />
+function PhotoPanel({ src, alt, priority }: { src: string; alt: string; priority?: boolean }) {
+  const amazon = isAmazonPhoto(src);
+  return (
+    <div className="relative h-[220px] sm:h-[260px] md:h-full w-full bg-white md:rounded-2xl md:border md:border-zinc-200 overflow-hidden">
+      <Image
+        src={src}
+        alt={illustrationAlt(src, alt)}
+        fill
+        sizes="(min-width: 768px) 50vw, 100vw"
+        priority={priority}
+        loading={priority ? undefined : 'lazy'}
+        unoptimized={amazon || isSvg(src)}
+        className="object-contain p-5 sm:p-6 md:p-8"
+      />
+    </div>
+  );
+}
 
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
-          <div className="absolute bottom-0 left-0 right-0 p-8">
-            <span className="inline-block px-3 py-1 bg-brand-accent text-brand-dark text-xs font-bold rounded-full mb-3">
-              {stories[0].category}
-            </span>
-            <h3 className="text-3xl font-bold text-white mb-3">{stories[0].title}</h3>
-            <p className="text-brand-text-secondary mb-4 line-clamp-2">{stories[0].excerpt}</p>
-            <Link
-              href={stories[0].link || "/best-budget-robot-vacuums-under-300"}
-              aria-label={`Read more: ${stories[0].title}`}
-              className="inline-flex items-center space-x-2 px-4 py-2 bg-brand-primary text-white rounded-lg font-semibold text-sm"
-            >
-              <span>Read More</span>
-            </Link>
-            <div className="flex items-center space-x-4 text-sm text-brand-text-secondary">
-              <span>{stories[0].author}</span>
-              <span>•</span>
-              <span>{stories[0].readTime}</span>
-            </div>
-          </div>
-        </div>
-      </div>);
+export default function TrendingStoriesCarousel({ photos = {} }: { photos?: Record<string, string> }) {
+  const stories: Story[] = STORIES.map((story) => ({
+    ...story,
+    image: photos[story.link] ?? story.image,
+  }));
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [paused, setPaused] = useState(false);
+  const reduceMotion = useRef(false);
 
-  }
+  useEffect(() => {
+    reduceMotion.current = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  }, []);
+
+  const count = stories.length;
+  const goTo = useCallback((index: number) => {
+    setCurrentIndex(((index % count) + count) % count);
+  }, [count]);
+  const nextSlide = useCallback(() => goTo(currentIndex + 1), [currentIndex, goTo]);
+  const prevSlide = useCallback(() => goTo(currentIndex - 1), [currentIndex, goTo]);
+
+  useEffect(() => {
+    if (paused || reduceMotion.current) return undefined;
+    const id = window.setInterval(nextSlide, INTERVAL_MS);
+    return () => window.clearInterval(id);
+  }, [paused, nextSlide]);
+
+  const story = stories[currentIndex];
 
   return (
-    <div className="bg-card rounded-xl overflow-hidden shadow-lg">
-      <div className="relative h-96 md:h-[500px]">
-        <AppImage
-          src={stories[currentIndex].image}
-          alt={stories[currentIndex].alt}
-          className={stories[currentIndex].fit === "contain" ? "w-full h-full object-contain bg-black" : "w-full h-full object-cover"} />
-
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
-
-        <div className="absolute top-4 right-4 flex items-center space-x-2 bg-brand-primary/90 backdrop-blur-sm px-3 py-1 rounded-full">
-          <Icon name="FireIcon" size={16} variant="solid" className="text-white" />
-          <span className="text-white text-xs font-bold">Trending</span>
+    <div
+      className="rounded-2xl overflow-hidden border border-white/10 shadow-lg bg-slate-950"
+      onMouseEnter={() => setPaused(true)}
+      onMouseLeave={() => setPaused(false)}
+      onFocusCapture={() => setPaused(true)}
+      onBlurCapture={(event) => {
+        if (!event.currentTarget.contains(event.relatedTarget as Node | null)) setPaused(false);
+      }}
+    >
+      <div
+        className="relative grid grid-cols-1 md:grid-cols-2 md:h-[420px] lg:h-[460px]"
+        aria-roledescription="carousel"
+        aria-label="Featured guides"
+      >
+        <div className="order-1 md:order-2 md:p-5 lg:p-6 md:h-full">
+          <PhotoPanel src={story.image} alt={story.alt} priority={currentIndex === 0} />
         </div>
 
-        {/* Category badge moved to top-left to avoid masking by navigation arrows */}
-        <div className="absolute top-4 left-4">
-          <span className="inline-block px-3 py-1 bg-brand-accent text-brand-dark text-xs font-bold rounded-full">
-            {stories[currentIndex].category}
-          </span>
-        </div>
-
-        <div className="absolute bottom-0 left-0 right-0 p-4 md:p-8">
-          <h3 className="text-xl md:text-3xl font-bold text-white mb-2 md:mb-3 line-clamp-2 px-10 md:px-0">
-            {stories[currentIndex].title}
-          </h3>
-          <p className="text-brand-text-secondary mb-3 md:mb-4 line-clamp-2 text-sm md:text-base">
-            {stories[currentIndex].excerpt}
-          </p>
-          <div className="flex items-center justify-between flex-wrap gap-2 mb-6 md:mb-0">
-            <div className="flex items-center space-x-2 md:space-x-4 text-xs md:text-sm text-brand-text-secondary">
-              <span>{stories[currentIndex].author}</span>
-              <span>•</span>
-              <span>{stories[currentIndex].readTime}</span>
-            </div>
+        <div className="order-2 md:order-1 flex flex-col justify-center px-5 py-6 sm:px-8 sm:py-8 md:px-10 md:py-8 min-h-[220px] md:min-h-0">
+          <p className="text-xs font-bold uppercase tracking-widest text-amber-400 mb-3">{story.category}</p>
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white leading-snug line-clamp-3 mb-3">
+            {story.title}
+          </h2>
+          <p className="text-sm sm:text-base text-slate-300 leading-relaxed line-clamp-3 mb-5">{story.excerpt}</p>
+          <div className="flex flex-wrap items-center gap-3 mt-auto">
             <Link
-              href={stories[currentIndex].link || '/best-budget-robot-vacuums-under-300'}
-              aria-label={`Read more: ${stories[currentIndex].title}`}
-              className="inline-flex items-center space-x-2 px-3 md:px-4 py-1.5 md:py-2 bg-brand-primary text-white rounded-lg font-semibold text-xs md:text-sm hover:bg-brand-primary/90 transition-colors">
-
-              <span>Read More</span>
+              href={story.link}
+              aria-label={`Read the guide: ${story.title}`}
+              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-amber-400 text-zinc-950 text-sm font-extrabold hover:bg-amber-300 transition-colors"
+            >
+              <span>Read the guide</span>
               <Icon name="ArrowRightIcon" size={16} variant="outline" />
             </Link>
-          </div>
-          <div className="flex items-center justify-center space-x-2 md:hidden">
-            {stories.map((_, index) =>
-            <button
-              key={index}
-              onClick={() => goToSlide(index)}
-              className="flex items-center justify-center min-w-6 min-h-6"
-              aria-label={`Go to story ${index + 1}`}>
-              <span className={`h-2 rounded-full transition-all duration-300 ${
-              index === currentIndex ? 'bg-brand-primary w-8' : 'bg-white/50 w-2'}`} />
-            </button>
-            )}
+            <p className="text-xs text-slate-400">
+              {story.author} · {story.readTime}
+            </p>
           </div>
         </div>
 
-        <button
-          onClick={prevSlide}
-          className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 bg-white/10 backdrop-blur-sm hover:bg-white/20 rounded-full flex items-center justify-center transition-colors z-10 min-w-[40px] min-h-[40px]"
-          aria-label="Previous story">
-
-          <Icon name="ChevronLeftIcon" size={20} variant="outline" className="text-white md:w-6 md:h-6" />
-        </button>
-
-        <button
-          onClick={nextSlide}
-          className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 bg-white/10 backdrop-blur-sm hover:bg-white/20 rounded-full flex items-center justify-center transition-colors z-10 min-w-[40px] min-h-[40px]"
-          aria-label="Next story">
-
-          <Icon name="ChevronRightIcon" size={20} variant="outline" className="text-white md:w-6 md:h-6" />
-        </button>
-
-        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 hidden md:flex items-center justify-center space-x-2 z-10">
-          {stories.map((_, index) =>
-          <button
-            key={index}
-            onClick={() => goToSlide(index)}
-            className={`w-2 h-2 rounded-full transition-all duration-300 min-w-[32px] min-h-[32px] flex items-center justify-center ${
-            index === currentIndex ? 'bg-brand-primary w-8' : 'bg-white/50'}`
-            }
-            aria-label={`Go to story ${index + 1}`}>
-          </button>
-          )}
-        </div>
       </div>
-    </div>);
 
-};
-
-export default TrendingStoriesCarousel;
+      <div className="flex items-center justify-center gap-1 px-4 py-3 bg-slate-950 border-t border-white/10">
+        <button
+          type="button"
+          onClick={prevSlide}
+          className="w-10 h-10 flex items-center justify-center text-white hover:text-amber-400"
+          aria-label="Previous guide"
+        >
+          <Icon name="ChevronLeftIcon" size={20} variant="outline" />
+        </button>
+        {stories.map((item, index) => (
+          <button
+            key={item.id}
+            type="button"
+            onClick={() => goTo(index)}
+            className="flex items-center justify-center min-w-8 min-h-8"
+            aria-label={`Go to guide ${index + 1}: ${item.title}`}
+            aria-current={index === currentIndex ? 'true' : undefined}
+          >
+            <span
+              className={`h-2 rounded-full transition-all duration-300 ${
+                index === currentIndex ? 'bg-amber-400 w-8' : 'bg-white/30 w-2'
+              }`}
+            />
+          </button>
+        ))}
+        <button
+          type="button"
+          onClick={nextSlide}
+          className="w-10 h-10 flex items-center justify-center text-white hover:text-amber-400"
+          aria-label="Next guide"
+        >
+          <Icon name="ChevronRightIcon" size={20} variant="outline" />
+        </button>
+      </div>
+    </div>
+  );
+}
