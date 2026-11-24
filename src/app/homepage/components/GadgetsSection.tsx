@@ -21,18 +21,6 @@ interface Gadget {
 
 const gadgets: Gadget[] = [
     {
-    name: "Selore dual HDMI dock",
-    brand: "Selore",
-    category: "Laptops",
-    badge: "USB-C",
-    badgeColor: "bg-slate-700 text-white",
-    image: "/assets/images/selore-usb-c-dual-hdmi-official.jpg",
-    alt: "Selore USB-C docking station with two HDMI ports",
-    href: "/selore-usb-c-dual-hdmi-dock",
-    highlights: ["Two HDMI ports", "85W to the laptop", "Macs mirror only"],
-    contain: true,
-  },
-    {
     name: "Black Friday robot vacuums",
     brand: "Buying guide",
     category: "Robotics",
@@ -248,7 +236,7 @@ function displayGadget(gadget: Gadget, sale: boolean): Gadget {
   return gadget;
 }
 
-export default function GadgetsSection() {
+export default function GadgetsSection({ photos = {} }: { photos?: Record<string, string> }) {
   const [active, setActive] = useState("All");
   const sale = isSaleSeason();
   const visible = (active === "All" ? gadgets : gadgets.filter((g) => g.category === active)).map((g) =>
@@ -305,7 +293,7 @@ export default function GadgetsSection() {
               className="group bg-card border border-border rounded-2xl overflow-hidden hover:border-primary hover:shadow-xl transition-all duration-300 flex flex-col"
             >
               <div className="relative">
-                <CardImage src={gadget.image} alt={gadget.alt} />
+                <CardImage src={photos[gadget.href] ?? gadget.image} alt={gadget.alt} />
                 {gadget.badge && (
                   <span className={`absolute top-3 left-3 text-xs font-bold px-2 py-1 rounded-full ${gadget.badgeColor}`}>
                     {gadget.badge}

@@ -21,7 +21,7 @@ interface ContentItem {
   fit?: "contain";
 }
 
-const PersonalizedContentStream = () => {
+const PersonalizedContentStream = ({ photos = {} }: { photos?: Record<string, string> }) => {
   const [activeFilter, setActiveFilter] = useState('See All');
 
   const filters = ['See All', 'Latest', 'Trending', 'Reviews', 'Guides'];
@@ -423,7 +423,7 @@ const PersonalizedContentStream = () => {
             href={articleRoutes[item.id] || "/"}
             className="bg-card rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow"
           >
-            <CardImage src={item.image} alt={item.alt} priority={index < 3} />
+            <CardImage src={photos[articleRoutes[item.id]] ?? item.image} alt={item.alt} priority={index < 3} />
             <div className="p-5">
               <span className="inline-block px-2 py-1 bg-primary/10 text-primary text-xs font-semibold rounded mb-2">
                 {item.category}

@@ -6,7 +6,8 @@ import GuideFaq, { type FaqItem } from "@/components/common/GuideFaq";
 import ArticleJsonLd from "@/components/common/ArticleJsonLd";
 import TopPicks from "@/components/common/TopPicks";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
-import { HeroImage, ProductImage } from "@/components/common/Media";
+import { HeroImage } from "@/components/common/Media";
+import { LivePrice, ProductPhoto, amazonItemFor } from "@/components/common/AmazonMedia";
 import { CARD, CONTAINER, CTA, DISCLOSURE, EYEBROW, H1, H2, H3, LEAD, P, PAGE, UL } from "@/lib/layout";
 
 export type RoundupProduct = {
@@ -36,7 +37,7 @@ function goHref(url: string) {
   return `/api/go?url=${encodeURIComponent(url)}`;
 }
 
-export default function Roundup({
+export default async function Roundup({
   path,
   eyebrow,
   title,
@@ -82,10 +83,14 @@ export default function Roundup({
   dealBox?: { productName: string; href: string };
   topics?: Topic[];
 }) {
+  // The generic hero illustration is dropped once real product photos are on the page.
+  const photoCount = (await Promise.all(products.map((product) => amazonItemFor({ url: product.url })))).filter(
+    (item) => item?.image,
+  ).length;
   const picks = products
     .filter((product) => product.url)
     .slice(0, 3)
-    .map((product) => ({ label: product.label, name: product.name, why: product.why, url: product.url! }));
+    .map((product) => ({ label: product.label, name: product.name, why: product.why, url: product.url!, image: product.image }));
   return (
     <>
       <Header />
@@ -107,7 +112,7 @@ export default function Roundup({
               {paragraph}
             </p>
           ))}
-          {hero ? <HeroImage src={hero.src} alt={hero.alt} priority={false} /> : null}
+          {hero && photoCount === 0 ? <HeroImage src={hero.src} alt={hero.alt} priority={false} /> : null}
 
           <h2 className={H2}>{tableTitle}</h2>
           <div className="overflow-x-auto mb-4 rounded-xl border border-border">
@@ -156,7 +161,7 @@ export default function Roundup({
                 {index + 1}. {product.name}
               </h2>
               <div className={CARD}>
-                {product.image ? <ProductImage src={product.image} alt={product.name} /> : null}
+                <ProductPhoto url={product.url} fallback={product.image} alt={product.name} />
                 <p className="mb-4">
                   <span className="inline-block rounded-full bg-amber-400 px-3 py-1 text-xs font-extrabold uppercase tracking-wide text-zinc-950">
                     Best for: {product.label.replace(/^Best (for )?/i, "")}
@@ -182,6 +187,7 @@ export default function Roundup({
                   </>
                 ) : null}
                 {product.note ? <p className="text-sm text-muted-foreground italic mb-4">{product.note}</p> : null}
+                {product.url ? <LivePrice url={product.url} className="mb-3" /> : null}
                 {product.url ? (
                   <a
                     href={goHref(product.url)}

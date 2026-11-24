@@ -48,7 +48,7 @@ const products: RoundupProduct[] = [
     ],
     body: [
       "The cheapest way to get a real Android tablet with the Play Store from a brand you know. It runs a MediaTek Helio G85 with 4GB of RAM and 64GB of storage, so Chrome, Gmail and Maps behave like they do on a budget Android phone. The folio case in the box folds into a stand, which saves buying one later.",
-      "It was in stock and sold by Amazon under $150 when we checked on November 22, 2026. Expect two or three years of useful life: Lenovo's update support is shorter than Samsung's.",
+      "Check that it is sold by Amazon and still under $150 before you buy. Expect two or three years of useful life: Lenovo's update support is shorter than Samsung's.",
     ],
     skip: "the live price has climbed past $150, or you want a 10-inch screen for a couch. Then the Fire HD 8 is the better buy today.",
     image: IMG,
