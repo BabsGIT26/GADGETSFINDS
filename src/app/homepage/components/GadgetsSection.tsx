@@ -21,6 +21,18 @@ interface Gadget {
 
 const gadgets: Gadget[] = [
     {
+    name: "Selore dual HDMI dock",
+    brand: "Selore",
+    category: "Laptops",
+    badge: "USB-C",
+    badgeColor: "bg-slate-700 text-white",
+    image: "/assets/images/selore-usb-c-dual-hdmi-dock.jpg",
+    alt: "Selore USB-C docking station with two HDMI ports",
+    href: "/selore-usb-c-dual-hdmi-dock",
+    highlights: ["Two HDMI ports", "85W to the laptop", "Macs mirror only"],
+    contain: true,
+  },
+    {
     name: "Black Friday robot vacuums",
     brand: "Buying guide",
     category: "Robotics",
