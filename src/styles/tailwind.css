@@ -2,6 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Fixed header is 97px below md (bar + nav strip), 105px from md to lg, 64px at lg+.
+   Content offset adds 12px (below lg) or 16px (lg+) of room below the header. */
+:root {
+  --site-header-offset: 109px;
+}
+@media (min-width: 768px) {
+  :root {
+    --site-header-offset: 117px;
+  }
+}
+@media (min-width: 1024px) {
+  :root {
+    --site-header-offset: 80px;
+  }
+}
+
+@layer components {
+  .site-pad-top {
+    padding-top: var(--site-header-offset);
+  }
+  .site-spacer {
+    height: var(--site-header-offset);
+    flex-shrink: 0;
+  }
+  .site-scroll {
+    scroll-margin-top: var(--site-header-offset);
+  }
+}
+
+
 @layer base {
   :root {
     /* Background Colors */

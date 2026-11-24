@@ -31,8 +31,8 @@ export default function Page() {
   return (
     <>
       <Header />
-      <article className="min-h-screen bg-background pt-14 md:pt-16">
-        <div className="container mx-auto px-4 py-10 max-w-3xl">
+      <article className="min-h-screen bg-background site-pad-top">
+        <div className="container mx-auto px-4 pb-10 max-w-3xl">
           <p className="text-xs text-muted-foreground mb-4 leading-relaxed">
             As an Amazon Associate, we may earn from qualifying purchases if you buy through links on this page, at no extra cost to you.
           </p>
