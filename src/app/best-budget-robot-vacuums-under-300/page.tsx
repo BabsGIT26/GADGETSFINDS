@@ -26,7 +26,6 @@ const products: RoundupProduct[] = [
       ["Suction (Roborock)", "8,000Pa"],
       ["Mop", "Yes, 270ml water tank, removable pad"],
       ["Dock", "Charging only, no self-empty"],
-      ["Price when checked", "$119.99 on Amazon, Nov 22, 2026"],
     ],
     body: [
       "This is the robot most people under $300 should buy. LiDAR means it maps the home, cleans in straight rows instead of bouncing around, and lets you set no-go zones and room schedules in the Roborock app. Roborock rates it at 8,000Pa, and both brushes are designed to resist hair wrap.",
@@ -40,13 +39,12 @@ const products: RoundupProduct[] = [
     name: "eufy C10 with self-empty station",
     label: "Best self-empty",
     url: amz("B0GD1XTMFN"),
-    why: "A self-emptying dock and LiDAR for about $220.",
+    why: "A self-emptying dock and LiDAR mapping, still under $300.",
     specs: [
       ["Navigation", "Laser (LiDAR) mapping"],
       ["Suction (eufy)", "4,000Pa"],
       ["Dock", "Self-empty, 3L bag, about 60 days per bag"],
       ["Height", "2.85 in"],
-      ["Price when checked", "$219.99 on Amazon, Nov 22, 2026"],
     ],
     body: [
       "Pick the C10 if pet hair or a busy household fills a robot bin fast. The robot empties itself into a 3-liter bag in the station, and eufy says one bag lasts about 60 days. LiDAR mapping, schedules and room cleaning work from the eufy app.",
@@ -66,13 +64,12 @@ const products: RoundupProduct[] = [
       ["Runtime (Lefant)", "Up to 120 minutes"],
       ["Size", "11 in wide, 2.99 in tall"],
       ["Dock", "Charging only"],
-      ["Price when checked", "$94.99 on Amazon, Nov 22, 2026"],
     ],
     body: [
       "A small, quiet robot for a studio, a bedroom or a small apartment with hard floors. It has no roller brush, just a wide suction opening, so hair does not wrap around anything. You get six cleaning modes, three suction levels, schedules in the Lefant app and Alexa or Google Assistant control.",
       "Without LiDAR it cannot draw a map or clean room by room, and it covers a big home less evenly than the Roborock. For daily upkeep in a small space, that matters less than the price.",
     ],
-    skip: "you have several rooms or thick carpet. A mapping robot like the Q7 L5 covers a larger home far better for about $25 more.",
+    skip: "you have several rooms or thick carpet. A mapping robot like the Q7 L5 covers a larger home far better for a little more money.",
     image: IMG,
   },
 ];
@@ -85,13 +82,13 @@ export default function Page() {
       title={TITLE}
       updated="November 2026"
       description={DESCRIPTION}
-      answer="The best robot vacuum under $300 for most homes is the Roborock Q7 L5: LiDAR mapping, 8,000Pa of suction and a mop, at $119.99 when we checked. Choose the eufy C10 if you want a dock that empties the bin for you, and the Lefant M210 Pro if your space is small and your budget is under $100."
+      answer="The best robot vacuum under $300 for most homes is the Roborock Q7 L5: LiDAR mapping, 8,000Pa of suction and a mop. Choose the eufy C10 if you want a dock that empties the bin for you, and the Lefant M210 Pro if your space is small and your budget is under $100."
       intro={[
         "Under $300 you are choosing between three things: a map, a mop and a self-empty dock. Very few robots in this price range do all three well, so the picks below each lead with the one that matters most. Every pick is a new listing on Amazon; we do not include renewed units here.",
       ]}
       hero={{ src: IMG, alt: "Budget robot vacuums under $300" }}
       tableTitle="Budget robot vacuums compared"
-      tableColumns={["Navigation", "Dock", "Price when checked"]}
+      tableColumns={["Navigation", "Dock"]}
       products={products}
       extra={[
         {
@@ -118,7 +115,7 @@ export default function Page() {
       ]}
       faqTitle="Budget robot vacuum questions"
       faq={[
-        { q: "What is the best robot vacuum under $300?", a: "The Roborock Q7 L5 for most homes. It has LiDAR mapping, 8,000Pa of suction and a mop, and was $119.99 on Amazon when we checked." },
+        { q: "What is the best robot vacuum under $300?", a: "The Roborock Q7 L5 for most homes. It has LiDAR mapping, 8,000Pa of suction and a mop." },
         { q: "Is a cheap robot vacuum worth it?", a: "Yes, for daily upkeep. A budget robot keeps dust and hair under control between deep cleans. It will not replace an upright vacuum on stairs or thick rugs." },
         { q: "Do I need LiDAR on a robot vacuum?", a: "For more than one or two rooms, yes. LiDAR lets the robot map the home, clean efficiently and skip areas you block off." },
         { q: "Which budget robot vacuum is best for pet hair?", a: "The eufy C10, because the self-empty dock handles a bin that fills fast. The Roborock Q7 L5 also has anti-tangle brushes if you do not need a dock." },

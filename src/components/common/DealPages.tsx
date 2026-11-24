@@ -5,7 +5,7 @@ import RelatedGuides from "@/components/common/RelatedGuides";
 import GuideFaq, { ProductListJsonLd, type FaqItem } from "@/components/common/GuideFaq";
 import ArticleJsonLd from "@/components/common/ArticleJsonLd";
 import TopPicks, { type TopPick } from "@/components/common/TopPicks";
-import { CardImage, ProductImage } from "@/components/common/Media";
+import { LivePrice, PriceDisclaimer, ProductPhoto } from "@/components/common/AmazonMedia";
 import { CARD, CONTAINER, CTA, DISCLOSURE, EYEBROW, H1, H2, LEAD, P, PAGE, UL } from "@/lib/layout";
 import { isSaleSeason } from "@/lib/sale-season";
 
@@ -80,7 +80,7 @@ export function DealHub({
             {items.map((item) => (
               <div key={item.slug} className="bg-card border border-border rounded-xl overflow-hidden flex flex-col">
                 <a href={`${path}/${item.slug}`} aria-label={item.name}>
-                  <CardImage src={item.image} alt={item.alt} />
+                  <ProductPhoto url={item.href} fallback={item.image} alt={item.alt} variant="card" />
                 </a>
                 <div className="p-4 flex flex-col flex-1">
                   <h3 className="text-base font-bold text-foreground">
@@ -89,6 +89,7 @@ export function DealHub({
                     </a>
                   </h3>
                   <p className="text-sm text-muted-foreground mt-2 flex-1">{item.card}</p>
+                  <LivePrice url={item.href} compact className="mt-3" />
                   <div className="mt-4 flex flex-col gap-2">
                     <a
                       href={`${path}/${item.slug}`}
@@ -110,6 +111,7 @@ export function DealHub({
               </div>
             ))}
           </div>
+          <PriceDisclaimer className="mt-3" />
 
           {sections.map((section) => (
             <section key={section.heading}>
@@ -173,9 +175,10 @@ export function DealDetail({
           <p className="text-sm text-muted-foreground mb-4">Updated November 2026 · Specs from the maker and the Amazon listing</p>
           <p className="text-sm text-muted-foreground mb-4">Brands do not pay to be included in our guides. This gadget is often discounted on Black Friday — check today&apos;s price on Amazon.</p>
           <p className={LEAD}>{item.card}</p>
+          <LivePrice url={item.href} className="mb-4" />
           <div className="mb-8">{cta}</div>
           <div className={CARD}>
-            <ProductImage src={item.image} alt={item.alt} priority />
+            <ProductPhoto url={item.href} fallback={item.image} alt={item.alt} priority />
             <h2 className="text-xl md:text-2xl font-bold text-foreground mb-3">Who this {noun} is for</h2>
             <p className={P}>{item.fit}</p>
           </div>

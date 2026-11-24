@@ -26,7 +26,6 @@ const products: RoundupProduct[] = [
       ["Navigation", "PreciSense LiDAR plus Reactive Tech obstacle avoidance"],
       ["Mopping", "Two spinning mops that lift on carpet"],
       ["Dock", "Self-empty, refill, 167°F mop wash, warm-air dry"],
-      ["List price (checked Nov 22, 2026)", "$699.99"],
     ],
     body: [
       "The Qrevo S Pro shows Roborock's current formula in one box: very high rated suction, a LiDAR map that works in the dark, two spinning mops, and a dock that empties the bin into a sealed 2.7-liter bag (about seven to nine weeks per bag, Roborock says), refills the water and hot-washes and dries the mops.",
@@ -46,7 +45,6 @@ const products: RoundupProduct[] = [
       ["Navigation", "PrecisionVision camera, not LiDAR"],
       ["Mopping", "One retracting SmartScrub pad"],
       ["Dock", "AutoWash: empties, refills, washes and dries the pad"],
-      ["List price (checked Nov 22, 2026)", "$1,399"],
     ],
     body: [
       "iRobot's current answer to Roborock's dock combos, model X085020. The camera can recognize shoes, cords and pet waste, which is what Roomba buyers usually pay for. The single mop pad scrubs back and forth with pressure, then lifts so the robot can cross carpet dry.",
@@ -66,7 +64,6 @@ const products: RoundupProduct[] = [
       ["Navigation", "LiDAR"],
       ["Mopping", "Drag pad, 270ml tank"],
       ["Dock", "Charging only"],
-      ["Price when checked", "$119.99 on Amazon, Nov 22, 2026"],
     ],
     body: [
       "If neither dock robot fits your budget, the Q7 L5 gives you Roborock's LiDAR map, no-go zones and room schedules without the station. You empty the bin and rinse the pad yourself.",
@@ -139,7 +136,7 @@ export default function Page() {
         { q: "Is Roborock or Roomba better in 2026?", a: "Roborock, for most people. The Qrevo S Pro has LiDAR, higher rated suction and a dock that washes the mops, usually for less than the Roomba Combo 10 Max." },
         { q: "When is a Roomba the better buy?", a: "When you want the simpler iRobot app, camera avoidance for cords and pet waste, and a sale that closes the price gap." },
         { q: "Is LiDAR better than a camera on a robot vacuum?", a: "For mapping, yes: LiDAR works in the dark and keeps a stable map. Cameras are better at recognizing specific objects on the floor." },
-        { q: "What is the best Roborock or Roomba under $300?", a: "The Roborock Q7 L5. It has LiDAR mapping and a mop pad, and was $119.99 on Amazon when we checked. Neither dock robot here is under $300." },
+        { q: "What is the best Roborock or Roomba under $300?", a: "The Roborock Q7 L5. It has LiDAR mapping and a mop pad. Neither dock robot here is under $300." },
       ]}
       dealBox={{ productName: "Roborock and Roomba Robot Vacuums", href: `https://www.amazon.com/s?k=roborock+roomba&tag=${TAG}` }}
     />

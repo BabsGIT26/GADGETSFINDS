@@ -25,7 +25,6 @@ const products: RoundupProduct[] = [
       ["Style", "Translucent matte, black"],
       ["Hinge cover", "Yes, full hinge"],
       ["MagSafe", "Yes"],
-      ["Price when checked", "From $12.23, Nov 22, 2026"],
     ],
     body: [
       "The cheapest case here that still covers both halves and the hinge. Strong magnets hold MagSafe chargers and wallets, and the listing includes a screen protector for the outer display.",
@@ -43,7 +42,6 @@ const products: RoundupProduct[] = [
       ["Style", "Dark"],
       ["Hinge cover", "Yes"],
       ["MagSafe", "Yes, with rotating stand"],
-      ["Price when checked", "$69.99, Nov 22, 2026"],
     ],
     body: [
       "The rotating ring folds out into a stand in portrait or landscape, which is handy for video calls and watching on the inner screen. It also covers the hinge.",
@@ -61,7 +59,6 @@ const products: RoundupProduct[] = [
       ["Style", "Crystal clear"],
       ["Hinge cover", "Yes"],
       ["MagSafe", "Check the listing"],
-      ["Price when checked", "$34.99, Nov 22, 2026"],
     ],
     body: [
       "Pick this if you bought the iPhone Duo for its color. Spigen's clear hybrid design pairs a rigid back with a softer frame and covers the hinge.",
@@ -79,7 +76,6 @@ const products: RoundupProduct[] = [
       ["Style", "Navy Blue"],
       ["Hinge cover", "Check the listing"],
       ["MagSafe", "Yes"],
-      ["Price when checked", "$79.00, Nov 22, 2026"],
     ],
     body: [
       "The safest choice for exact fit and MagSafe alignment, in a slim design that keeps the phone easy to fold. It costs more than most third-party cases.",
@@ -97,7 +93,6 @@ const products: RoundupProduct[] = [
       ["Style", "Black"],
       ["Hinge cover", "Yes, articulating"],
       ["MagSafe", "Check the listing"],
-      ["Price when checked", "$89.99, Nov 22, 2026"],
     ],
     body: [
       "For job sites, kids and clumsy hands. The Defender name means thick, layered protection, and the hinge cover moves with the phone as it folds.",
@@ -115,7 +110,6 @@ const products: RoundupProduct[] = [
       ["Style", "Black/grey aramid"],
       ["Hinge cover", "Check the listing"],
       ["MagSafe", "Yes"],
-      ["Price when checked", "$47.49, Nov 22, 2026"],
     ],
     body: [
       "Aramid fiber is very thin and stiff, so the case adds almost no bulk and resists scratches. It protects against scuffs more than drops.",
@@ -139,7 +133,7 @@ export default function Page() {
       ]}
       hero={{ src: IMG, alt: "iPhone Duo cases" }}
       tableTitle="iPhone Duo cases compared"
-      tableColumns={["Hinge cover", "MagSafe", "Price when checked"]}
+      tableColumns={["Hinge cover", "MagSafe"]}
       products={products}
       buyingGuide={{
         heading: "How to choose an iPhone Duo case",
