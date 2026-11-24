@@ -113,7 +113,7 @@ const NewsletterSignup = () => {
     <div className="min-h-screen bg-brand-dark">
       <Header />
 
-      <div className="container mx-auto px-4 py-12 max-w-6xl pt-28 md:pt-32">
+      <div className="container mx-auto px-4 pb-12 max-w-6xl site-pad-top">
         {/* Hero Section */}
         <div className="text-center mb-12">
           <h1 className="font-display text-4xl md:text-5xl font-bold text-brand-text-primary mb-4">

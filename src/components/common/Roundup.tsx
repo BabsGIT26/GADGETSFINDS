@@ -156,7 +156,7 @@ export default async function Roundup({
           </p>
 
           {products.map((product, index) => (
-            <section key={product.id} id={product.id} className="scroll-mt-28">
+            <section key={product.id} id={product.id} className="site-scroll">
               <h2 className={H2}>
                 {index + 1}. {product.name}
               </h2>
@@ -208,7 +208,7 @@ export default async function Roundup({
           ))}
 
           {extra?.map((block) => (
-            <section key={block.id} id={block.id} className="scroll-mt-28">
+            <section key={block.id} id={block.id} className="site-scroll">
               <h2 className={H2}>{block.heading}</h2>
               {block.body.map((paragraph, index) => (
                 <p key={index} className={P}>
@@ -219,7 +219,7 @@ export default async function Roundup({
           ))}
 
           {buyingGuide ? (
-            <section id="buying-guide" className="scroll-mt-28">
+            <section id="buying-guide" className="site-scroll">
               <h2 className={H2}>{buyingGuide.heading}</h2>
               {buyingGuide.intro ? <p className={P}>{buyingGuide.intro}</p> : null}
               {buyingGuide.points.map((point) => (
