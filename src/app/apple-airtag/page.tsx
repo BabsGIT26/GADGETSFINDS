@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Header from "@/components/common/Header";
+import { LivePrice, ProductPhoto } from "@/components/common/AmazonMedia";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 import Link from "next/link";
@@ -42,6 +43,8 @@ export default function Page() {
             A small Bluetooth tracker that works with Apple’s Find My network to help you locate keys, bags, wallets, and other items.
           </p>
 
+          <LivePrice url={AMAZON} className="mb-3" />
+
           <div className="mb-6">
             <a href={AMAZON} target="_blank" rel="nofollow sponsored noopener noreferrer" className="inline-block bg-amber-400 hover:bg-amber-500 text-black font-bold px-6 py-3 rounded-md">
               VIEW ON AMAZON
@@ -49,7 +52,7 @@ export default function Page() {
           </div>
 
           <div className="mb-10 flex justify-center">
-            <img src={IMAGE} alt={illustrationAlt(IMAGE, "Apple AirTag")} className="w-full max-w-[280px] h-auto rounded-xl" />
+            <ProductPhoto url={AMAZON} fallback={IMAGE} alt="Apple AirTag" />
           </div>
 
           <h2 className="text-2xl font-bold mt-10 mb-3">What it is</h2>

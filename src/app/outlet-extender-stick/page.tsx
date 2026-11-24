@@ -20,7 +20,7 @@ export default function Page() {
       title={TITLE}
       description={DESCRIPTION}
       topics={["home", "deals"]}
-      answer="An outlet extender stick plugs into a wall outlet hidden behind a couch, bed or desk and brings the sockets up to where you can reach them, without moving furniture. The one we link adjusts from about 23 to 35 inches, has 6 AC outlets plus USB ports and a 360° rotating head, and was $33.99 on Amazon when we checked on November 22, 2026."
+      answer="An outlet extender stick plugs into a wall outlet hidden behind a couch, bed or desk and brings the sockets up to where you can reach them, without moving furniture. The one we link adjusts from about 23 to 35 inches, has 6 AC outlets plus USB ports and a 360° rotating head."
       image={{ src: illustrationPath("outlet"), alt: "Outlet extender stick behind a couch" }}
       cta={{ href: AMAZON, note: "Price and stock change on Amazon." }}
       bestFor="Outlets blocked by a sofa, bed or heavy desk"
@@ -29,7 +29,6 @@ export default function Page() {
         ["Outlets", "6 AC plus USB ports"],
         ["Head", "Rotates 360°"],
         ["Safety", "Overload switch with reset"],
-        ["Price when checked", "$33.99 on Amazon, Nov 22, 2026"],
       ]}
       why={[
         "It solves one annoying problem cheaply: you stop crawling behind the sofa to plug in a lamp or a charger. Renters who cannot move furniture or add outlets get usable sockets at arm's height, and the USB ports charge a phone without a separate adapter.",
