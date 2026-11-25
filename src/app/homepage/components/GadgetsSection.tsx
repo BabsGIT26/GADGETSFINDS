@@ -26,7 +26,7 @@ const gadgets: Gadget[] = [
     category: "Laptops",
     badge: "PROLED",
     badgeColor: "bg-zinc-800 text-white",
-    image: "/assets/images/macbook-pro-16-proled-silver.jpg",
+    image: "/assets/images/macbook-pro-16-proled-amazon.jpg",
     alt: "Silver MacBook Pro with PROLED XDR display",
     href: "/macbook-pro-16-proled-xdr-m5-pro",
     highlights: ["M5 Pro, 24GB, 1TB", "16.3-inch touch OLED", "Silver"],

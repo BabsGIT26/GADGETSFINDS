@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "/assets/images/macbook-pro-16-proled-silver.jpg",
+        url: "/assets/images/macbook-pro-16-proled-og.jpg",
         alt: "Silver MacBook Pro with PROLED XDR display",
       },
     ],
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     site: "@Gadgets_finds",
     title: "16.3-inch MacBook Pro PROLED XDR, M5 Pro, Silver",
     description: "M5 Pro, 24GB, 1TB, touch OLED. Confirm this exact configuration on Amazon.",
-    images: ["/assets/images/macbook-pro-16-proled-silver.jpg"],
+    images: ["/assets/images/macbook-pro-16-proled-og.jpg"],
   },
 };
 
@@ -72,7 +72,7 @@ export default function Page() {
 
           <div className="w-full flex justify-center py-6 mb-10">
             <img
-              src="/assets/images/macbook-pro-16-proled-silver.jpg"
+              src="/assets/images/macbook-pro-16-proled-amazon.jpg"
               alt="Silver MacBook Pro with the PROLED XDR display"
               className="max-h-[28rem] w-auto max-w-full object-contain"
             />
