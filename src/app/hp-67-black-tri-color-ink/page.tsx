@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "/assets/images/hp-67-ink-amazon.jpg",
+        url: "/assets/images/hp-67-ink-og.jpg",
         alt: "HP 67 black and tri-color ink cartridge 2-pack",
       },
     ],
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     site: "@Gadgets_finds",
     title: "HP 67 Black/Tri-Color Ink Cartridges (2-Pack) Review",
     description: "Genuine black and tri-color ink for compatible HP DeskJet and ENVY printers.",
-    images: ["/assets/images/hp-67-ink-amazon.jpg"],
+    images: ["/assets/images/hp-67-ink-og.jpg"],
   },
 };
 
