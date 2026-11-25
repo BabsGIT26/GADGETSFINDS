@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Header from "@/components/common/Header";
+import { ProductPhoto } from "@/components/common/AmazonMedia";
 import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 import CommentSection from "@/components/comments/CommentSection";
@@ -69,11 +70,11 @@ export default function Page() {
             </a>
           </p>
 
-          <div className="w-full flex justify-center py-6 mb-10">
-            <img
-              src="/assets/images/starlink-mini-kit-amazon.jpg"
+          <div className="mb-10 flex justify-center">
+            <ProductPhoto
+              url={AMAZON}
+              fallback="/assets/images/starlink-mini-kit-amazon.jpg"
               alt="STARLINK Mini Kit satellite dish on its kickstand"
-              className="max-h-[28rem] w-auto max-w-full object-contain"
             />
           </div>
 
