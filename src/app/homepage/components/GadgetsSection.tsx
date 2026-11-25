@@ -21,6 +21,18 @@ interface Gadget {
 
 const gadgets: Gadget[] = [
     {
+    name: "16.3-inch MacBook Pro",
+    brand: "Apple",
+    category: "Laptops",
+    badge: "PROLED",
+    badgeColor: "bg-zinc-800 text-white",
+    image: "/assets/images/macbook-pro-16-proled-silver.jpg",
+    alt: "Silver MacBook Pro with PROLED XDR display",
+    href: "/macbook-pro-16-proled-xdr-m5-pro",
+    highlights: ["M5 Pro, 24GB, 1TB", "16.3-inch touch OLED", "Silver"],
+    contain: true,
+  },
+    {
     name: "Black Friday robot vacuums",
     brand: "Buying guide",
     category: "Robotics",
