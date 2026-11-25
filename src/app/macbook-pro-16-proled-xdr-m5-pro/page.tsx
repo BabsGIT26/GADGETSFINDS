@@ -56,10 +56,7 @@ export default function Page() {
           <p className="text-sm text-muted-foreground mb-8">By Gadgets Finds</p>
 
           <p className="text-muted-foreground mb-6">
-            This listing is one exact 2026 MacBook Pro: silver, 16.3-inch PROLED XDR display,
-            M5 Pro with an 18-core CPU and 20-core GPU, 24GB of unified memory, and 1TB of
-            storage. It is not the M5 Max, and it is not the 14-inch model. Memory and storage
-            cannot be added later.
+            This listing is for the 2026 16.3-inch MacBook Pro in Silver, featuring the PROLED XDR display, M5 Pro chip (18-core CPU / 20-core GPU), 24GB of unified memory, and 1TB of SSD storage. Note that this is the standard M5 Pro tier—not the 14-inch variant or the M5 Max—and both memory and storage are fixed at purchase.
           </p>
 
           <p className="mb-8">
