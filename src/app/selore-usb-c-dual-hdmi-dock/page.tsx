@@ -74,7 +74,7 @@ export default function Page() {
 
           <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">Laptops</p>
           <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-2">
-            Selore USB-C dock for two HDMI monitors
+            Multi-port USB-C dock (HDMI, audio, USB, etc.)
           </h1>
           <p className="text-sm text-muted-foreground mb-8">By Gadgets Finds</p>
 
