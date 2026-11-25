@@ -59,6 +59,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   const productPages = [
+    '/hp-67-black-tri-color-ink',
     '/starlink-mini-kit',
     '/selore-usb-c-dual-hdmi-dock',
     '/macbook-pro-16-proled-xdr-m5-pro',

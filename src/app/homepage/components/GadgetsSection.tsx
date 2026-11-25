@@ -21,6 +21,18 @@ interface Gadget {
 
 const gadgets: Gadget[] = [
     {
+    name: "HP 67 ink 2-pack",
+    brand: "HP",
+    category: "Printers",
+    badge: "Genuine",
+    badgeColor: "bg-zinc-800 text-white",
+    image: "/assets/images/hp-67-ink-amazon.jpg",
+    alt: "HP 67 black and tri-color ink cartridge 2-pack",
+    href: "/hp-67-black-tri-color-ink",
+    highlights: ["Black and tri-color", "DeskJet and ENVY", "About 120 black pages"],
+    contain: true,
+  },
+    {
     name: "STARLINK Mini Kit",
     brand: "Starlink",
     category: "Internet",
