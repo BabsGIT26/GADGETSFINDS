@@ -21,6 +21,18 @@ interface Gadget {
 
 const gadgets: Gadget[] = [
     {
+    name: "STARLINK Mini Kit",
+    brand: "Starlink",
+    category: "Internet",
+    badge: "Portable",
+    badgeColor: "bg-zinc-800 text-white",
+    image: "/assets/images/starlink-mini-kit-amazon.jpg",
+    alt: "STARLINK Mini Kit satellite dish on its kickstand",
+    href: "/starlink-mini-kit",
+    highlights: ["Backpack size", "Built-in Wi-Fi", "25–40W"],
+    contain: true,
+  },
+    {
     name: "16.3-inch MacBook Pro",
     brand: "Apple",
     category: "Laptops",
