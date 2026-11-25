@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "/assets/images/macbook-pro-16-proled-og-2.jpg",
+        url: "/assets/images/macbook-pro-16-proled-og-3.jpg",
         alt: "Silver MacBook Pro with PROLED XDR display",
       },
     ],
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     site: "@Gadgets_finds",
     title: "16.3-inch MacBook Pro PROLED XDR, M5 Pro, Silver",
     description: "M5 Pro, 24GB, 1TB, touch OLED. Confirm this exact configuration on Amazon.",
-    images: ["/assets/images/macbook-pro-16-proled-og-2.jpg"],
+    images: ["/assets/images/macbook-pro-16-proled-og-3.jpg"],
   },
 };
 
