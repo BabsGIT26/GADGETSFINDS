@@ -40,7 +40,7 @@ export default function AmazonClickTracker() {
       if (!link) return;
       const href = link.getAttribute("href") || "";
       const isGo = href.includes("/api/go");
-      const isAmazon = href.includes("amazon.com");
+      const isAmazon = href.includes("amazon.com") || href.includes("://link.amazon/");
       if (!isGo && !isAmazon) return;
 
       let destination = href;

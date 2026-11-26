@@ -5,7 +5,8 @@ import Footer from "@/app/homepage/components/Footer";
 import AmazonDealBox from "@/components/common/AmazonDealBox";
 import CommentSection from "@/components/comments/CommentSection";
 
-const AMAZON = "https://www.amazon.com/dp/B0FWD1MS82?tag=gadgetsfindswebsite-20";
+const AMAZON = "https://link.amazon/B0hCxFtQ4";
+const PHOTO = "https://www.amazon.com/dp/B0FWD1MS82?tag=gadgetsfindswebsite-20";
 
 export const metadata: Metadata = {
   title: "iPad Pro 13-inch (M5, 256GB) Review — Gadgets Finds",
@@ -66,7 +67,7 @@ export default function Page() {
 
           <div className="mb-10 flex justify-center">
             <ProductPhoto
-              url={AMAZON}
+              url={PHOTO}
               fallback="/assets/images/ipad-pro-13-m5-amazon.jpg"
               alt="Space Black 13-inch iPad Pro"
             />

@@ -3,7 +3,7 @@ import { cleanSourceUrl, readTwclid, sendXConversion } from "@/lib/x-conversion"
 
 export async function GET(req: NextRequest) {
   const url = req.nextUrl.searchParams.get("url");
-  if (!url || !url.startsWith("https://www.amazon.com")) {
+  if (!url || !(url.startsWith("https://www.amazon.com") || url.startsWith("https://link.amazon/"))) {
     return NextResponse.redirect("https://www.gadgets-finds.com");
   }
 
