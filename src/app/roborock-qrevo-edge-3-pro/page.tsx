@@ -20,14 +20,14 @@ export const metadata: Metadata = {
     url: "https://www.gadgets-finds.com/roborock-qrevo-edge-3-pro",
     siteName: "Gadgets Finds",
     type: "article",
-    images: [{ url: "/assets/images/qrevo-edge-3-pro-og.jpg", alt: "Roborock Qrevo Edge 3 Pro on its dock" }],
+    images: [{ url: "/assets/images/qrevo-edge-3-pro-og-2.jpg", alt: "Roborock Qrevo Edge 3 Pro on its dock" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@Gadgets_finds",
     title: "Roborock Qrevo Edge 3 Pro Review",
     description: "36,000 Pa suction, threshold climbing, and a 212°F mop-washing dock.",
-    images: ["/assets/images/qrevo-edge-3-pro-og.jpg"],
+    images: ["/assets/images/qrevo-edge-3-pro-og-2.jpg"],
   },
 };
 
