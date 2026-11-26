@@ -21,6 +21,18 @@ interface Gadget {
 
 const gadgets: Gadget[] = [
     {
+    name: "iPad Pro 13-inch M5",
+    brand: "Apple",
+    category: "Tablets",
+    badge: "OLED",
+    badgeColor: "bg-zinc-800 text-white",
+    image: "/assets/images/ipad-pro-13-m5-amazon.jpg",
+    alt: "Space Black 13-inch iPad Pro",
+    href: "/ipad-pro-13-m5",
+    highlights: ["M5", "13-inch OLED", "256GB"],
+    contain: true,
+  },
+    {
     name: "WHOOP 5.0/MG",
     brand: "WHOOP",
     category: "Wearables",
