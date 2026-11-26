@@ -41,7 +41,7 @@ export default function Page() {
       <article className="min-h-screen bg-background pt-28 md:pt-32">
         <div className="container mx-auto px-4 pt-2 pb-10 max-w-3xl">
           <p className="text-xs md:text-sm text-foreground mb-6">
-            Disclosure: Gadgets Finds is an Amazon Associate. We may earn from qualifying
+            Disclosure:  We may earn from qualifying
             purchases if you buy through links on this page, at no extra cost to you.
           </p>
 
@@ -52,11 +52,8 @@ export default function Page() {
 
           <p className="text-muted-foreground mb-6">
             If you want Apple’s largest, thinnest tablet built for creative work, multitasking, and
-            AI-accelerated workflows, the Apple iPad Pro 13-inch (M5, 256GB, Space Black) packs
-            workstation-class silicon into a 5.1 mm aluminum frame. Featuring a tandem OLED Ultra
-            Retina XDR display, the Apple M5 chip with 12GB of unified memory, and Wi-Fi 7 powered
-            by Apple’s N1 wireless chip, it bridges the gap between an ultra-portable tablet and a
-            laptop replacement.
+            AI-accelerated workflows, the Apple iPad Pro 13-inch  packs
+            workstation-class silicon into a 5.1 mm aluminum frame. 
           </p>
 
           <p className="mb-8">
