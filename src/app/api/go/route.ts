@@ -7,6 +7,8 @@ export async function GET(req: NextRequest) {
     return NextResponse.redirect("https://www.gadgets-finds.com");
   }
 
+  const ping = req.nextUrl.searchParams.get("ping") === "1";
+
   // Report the Amazon click to X only when the visitor arrived from an X ad.
   // No IP address, user agent, or other personal data is sent; see /privacy-policy.
   const twclid = readTwclid(req);
@@ -20,6 +22,9 @@ export async function GET(req: NextRequest) {
       new Promise((resolve) => setTimeout(resolve, 800)),
     ]);
   }
+
+  // The page itself opens Amazon. This request only records the click.
+  if (ping) return new NextResponse(null, { status: 204 });
 
   return NextResponse.redirect(url);
 }

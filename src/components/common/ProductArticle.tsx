@@ -8,7 +8,7 @@ import AmazonDealBox from "@/components/common/AmazonDealBox";
 import { LivePrice, ProductPhoto } from "@/components/common/AmazonMedia";
 import { CARD, CONTAINER, CTA, DISCLOSURE, EYEBROW, H1, H2, H3, LEAD, P, PAGE, UL } from "@/lib/layout";
 
-const go = (url: string) => `/api/go?url=${encodeURIComponent(url)}`;
+const go = (url: string) => url;
 
 export type ArticleSection = {
   id?: string;
@@ -70,7 +70,7 @@ export default function ProductArticle({
   const ctaButton = cta ? (
     <div className="my-6">
       <LivePrice url={cta.href} className="mb-3" />
-      <a href={go(cta.href)} target="_blank" rel="nofollow sponsored noopener noreferrer" className={CTA}>
+      <a href={go(cta.href)} rel="nofollow sponsored noopener noreferrer" className={CTA}>
         {cta.label ?? "Check price on Amazon"}
       </a>
       {cta.note ? <p className="text-xs text-muted-foreground mt-2">{cta.note}</p> : null}

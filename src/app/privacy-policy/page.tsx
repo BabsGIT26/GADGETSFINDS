@@ -69,7 +69,7 @@ const PrivacyPolicyPage = () => {
   {
     title: 'Click Tracking on Amazon Links',
     content: [
-    'Product buttons on this site go through our own link (/api/go) before sending you to Amazon. When you click one, we record an "amazon_click" event in Google Analytics with the page and the product link, so we know which recommendations people use. We do not see what you buy on Amazon.',
+    'Product buttons go straight to Amazon so a phone can open the Amazon app. When you click one, the page records an "amazon_click" event in Google Analytics with the page and the product link, so we know which recommendations people use. We do not see what you buy on Amazon.',
     'We do not send your IP address, email, phone number, or user agent to X (Twitter) or any other ad platform from our server. If you arrived from an ad on X, X adds its own click ID (twclid) to the link and its pixel stores it in a first-party cookie named _twclid. In that case only, our server tells X that the ad click led to an Amazon click, using that click ID and the page address without any query string. If you did not come from an X ad, nothing is sent to X from our server.']
 
   },

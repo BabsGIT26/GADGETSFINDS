@@ -42,7 +42,7 @@ const ProductCard = ({ product, onCompare, isComparing }: ProductCardProps) => {
           <p className="text-xs text-muted-foreground mb-2">Check the current price on Amazon.</p>
           <p className="text-[11px] text-muted-foreground mb-2">Affiliate link: we may earn a commission if you buy through this link.</p>
           <div className="flex items-center space-x-2">
-            <a href={affiliateHref} target="_blank" rel="nofollow sponsored noopener noreferrer" className={`flex-1 px-4 py-2 rounded-md text-sm font-semibold text-center transition-colors bg-primary text-primary-foreground hover:bg-primary/90`}>
+            <a href={affiliateHref} rel="nofollow sponsored noopener noreferrer" className={`flex-1 px-4 py-2 rounded-md text-sm font-semibold text-center transition-colors bg-primary text-primary-foreground hover:bg-primary/90`}>
               Check price on Amazon · Affiliate link
             </a>
             <button className="p-2 border border-border rounded-md hover:bg-muted transition-colors" aria-label="Save product"><Icon name="BookmarkIcon" size={18} variant="outline" /></button>

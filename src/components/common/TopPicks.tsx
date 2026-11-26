@@ -14,7 +14,7 @@ export type TopPick = {
 };
 
 function goHref(url: string) {
-  return `/api/go?url=${encodeURIComponent(url)}`;
+  return url;
 }
 
 export default async function TopPicks({
@@ -71,7 +71,6 @@ export default async function TopPicks({
             </div>
             <a
               href={goHref(pick.url)}
-              target="_blank"
               rel="nofollow sponsored noopener noreferrer"
               aria-label={`Check price of ${pick.name} on Amazon`}
               className={

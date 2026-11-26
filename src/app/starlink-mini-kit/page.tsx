@@ -65,7 +65,7 @@ export default function Page() {
           </p>
 
           <p className="mb-8">
-            <a href={AMAZON} target="_blank" rel="nofollow sponsored noopener noreferrer" className={buttonClass}>
+            <a href={AMAZON} rel="nofollow sponsored noopener noreferrer" className={buttonClass}>
               View on Amazon
             </a>
           </p>
@@ -183,7 +183,7 @@ export default function Page() {
           </ul>
 
           <p className="mb-8">
-            <a href={AMAZON} target="_blank" rel="nofollow sponsored noopener noreferrer" className={buttonClass}>
+            <a href={AMAZON} rel="nofollow sponsored noopener noreferrer" className={buttonClass}>
               Check Current Price & Availability on Amazon
             </a>
           </p>

@@ -40,7 +40,7 @@ export default function AmazonClickTracker() {
       if (!link) return;
       const href = link.getAttribute("href") || "";
       const isGo = href.includes("/api/go");
-      const isAmazon = href.includes("amazon.com") && href.includes("gadgetsfindswebsite-20");
+      const isAmazon = href.includes("amazon.com");
       if (!isGo && !isAmazon) return;
 
       let destination = href;
@@ -50,6 +50,11 @@ export default function AmazonClickTracker() {
         } catch {
           destination = href;
         }
+      }
+
+      if (isAmazon) {
+        const ping = `/api/go?ping=1&url=${encodeURIComponent(destination)}`;
+        fetch(ping, { method: "GET", keepalive: true, credentials: "same-origin" }).catch(() => {});
       }
 
       const asinMatch = destination.match(/\/(?:dp|gp\/product)\/([A-Z0-9]{10})/i);

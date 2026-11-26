@@ -34,7 +34,7 @@ export type RoundupProduct = {
 export type BuyingPoint = { title: string; body: string };
 
 function goHref(url: string) {
-  return `/api/go?url=${encodeURIComponent(url)}`;
+  return url;
 }
 
 export default async function Roundup({
@@ -211,7 +211,6 @@ export default async function Roundup({
                 {product.url ? (
                   <a
                     href={goHref(product.url)}
-                    target="_blank"
                     rel="nofollow sponsored noopener noreferrer"
                     aria-label={`Check price of ${product.name} on Amazon`}
                     className={`${CTA} mt-2`}

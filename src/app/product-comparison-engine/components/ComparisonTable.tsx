@@ -175,7 +175,6 @@ const ComparisonTable = ({ products, onRemove, onClear }: ComparisonTableProps) 
                       </p>
                       <a
                         href={product.affiliateLink}
-                        target="_blank"
                         rel="nofollow sponsored noopener noreferrer"
                         className={`block w-full px-4 py-2 rounded-md text-sm font-semibold text-center transition-colors bg-primary text-primary-foreground hover:bg-primary/90`}
                       >

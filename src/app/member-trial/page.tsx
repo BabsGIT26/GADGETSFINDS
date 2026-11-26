@@ -94,7 +94,6 @@ export default function MemberTrialPage() {
 
           <a
             href={PRIME}
-            target="_blank"
             rel="nofollow sponsored noopener noreferrer"
             className="inline-flex items-center px-5 py-2.5 rounded-full bg-amber-400 text-zinc-950 text-sm font-semibold hover:bg-transparent hover:text-foreground border border-amber-400 transition-colors"
           >
@@ -115,7 +114,6 @@ export default function MemberTrialPage() {
                 </div>
                 <a
                   href={o.href}
-                  target="_blank"
                   rel="nofollow sponsored noopener noreferrer"
                   className="shrink-0 inline-flex items-center justify-center min-w-28 px-4 py-2.5 rounded-md bg-amber-400 text-zinc-950 text-sm font-semibold hover:bg-amber-300"
                 >

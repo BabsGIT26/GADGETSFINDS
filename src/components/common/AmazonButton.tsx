@@ -13,8 +13,6 @@ export default function AmazonButton({
   productName?: string;
   asin?: string;
 }) {
-  const tracked = `/api/go?url=${encodeURIComponent(href)}`;
-
   function fireAmazonClick() {
     // X pixel
     if (typeof window !== "undefined" && (window as any).twq) {
@@ -39,8 +37,7 @@ export default function AmazonButton({
 
   return (
     <a
-      href={tracked}
-      target="_blank"
+      href={href}
       rel="nofollow sponsored noopener noreferrer"
       onClick={fireAmazonClick}
       className={className}

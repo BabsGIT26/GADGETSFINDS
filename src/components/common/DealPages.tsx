@@ -25,7 +25,7 @@ export type DealItem = {
   compare: string;
 };
 
-const go = (url: string) => `/api/go?url=${encodeURIComponent(url)}`;
+const go = (url: string) => url;
 
 function Disclosure() {
   return (
@@ -99,7 +99,6 @@ export function DealHub({
                     </a>
                     <a
                       href={go(item.href)}
-                      target="_blank"
                       rel="nofollow sponsored noopener noreferrer"
                       aria-label={`Check price of ${item.name} on Amazon`}
                       className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-amber-400 text-zinc-950 text-sm font-extrabold hover:bg-amber-300 transition-colors"
@@ -150,7 +149,6 @@ export function DealDetail({
   const cta = (
     <a
       href={go(item.href)}
-      target="_blank"
       rel="nofollow sponsored noopener noreferrer"
       aria-label={`Check price of ${item.name} on Amazon`}
       className={CTA}

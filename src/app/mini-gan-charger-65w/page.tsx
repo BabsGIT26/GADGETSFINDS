@@ -46,7 +46,7 @@ export default function Page() {
           <LivePrice url={AMAZON} className="mb-3" />
 
           <div className="mb-6">
-            <a href={AMAZON} target="_blank" rel="nofollow sponsored noopener noreferrer" className="inline-block bg-amber-400 hover:bg-amber-500 text-black font-bold px-6 py-3 rounded-md">
+            <a href={AMAZON} rel="nofollow sponsored noopener noreferrer" className="inline-block bg-amber-400 hover:bg-amber-500 text-black font-bold px-6 py-3 rounded-md">
               VIEW ON AMAZON
             </a>
           </div>
