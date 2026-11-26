@@ -21,6 +21,18 @@ interface Gadget {
 
 const gadgets: Gadget[] = [
     {
+    name: "WHOOP 5.0/MG",
+    brand: "WHOOP",
+    category: "Wearables",
+    badge: "Screenless",
+    badgeColor: "bg-zinc-800 text-white",
+    image: "/assets/images/whoop-5-amazon.jpg",
+    alt: "Black WHOOP screenless fitness band",
+    href: "/whoop-5-mg-screenless",
+    highlights: ["No screen", "14+ day battery", "12-month membership"],
+    contain: true,
+  },
+    {
     name: "HP 67 ink 2-pack",
     brand: "HP",
     category: "Printers",

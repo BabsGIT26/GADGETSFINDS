@@ -59,6 +59,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   const productPages = [
+    '/whoop-5-mg-screenless',
     '/hp-67-black-tri-color-ink',
     '/starlink-mini-kit',
     '/selore-usb-c-dual-hdmi-dock',
