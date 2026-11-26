@@ -57,6 +57,8 @@ export default async function Roundup({
   picksNote,
   dealBox,
   topics,
+  plainLabels = false,
+  hideDeck = false,
 }: {
   path: string;
   eyebrow: string;
@@ -82,6 +84,10 @@ export default async function Roundup({
   /** Optional Amazon search box at the end, e.g. for more options. */
   dealBox?: { productName: string; href: string };
   topics?: Topic[];
+  /** Small gray labels instead of yellow pills that match the Amazon button. */
+  plainLabels?: boolean;
+  /** Hide the "specs from maker pages" line and the lead paragraph. */
+  hideDeck?: boolean;
 }) {
   // The generic hero illustration is dropped once real product photos are on the page.
   const photoCount = (await Promise.all(products.map((product) => amazonItemFor({ url: product.url })))).filter(
@@ -104,9 +110,11 @@ export default async function Roundup({
           </p>
           <p className={EYEBROW}>{eyebrow}</p>
           <h1 className={H1}>{title}</h1>
-          <p className="text-sm text-muted-foreground mb-4">Updated {updated} · Specs from maker pages and Amazon listings</p>
-          <p className={LEAD}>{answer}</p>
-          <TopPicks picks={picks} note={picksNote} />
+          {hideDeck ? null : (
+            <p className="text-sm text-muted-foreground mb-4">Updated {updated} · Specs from maker pages and Amazon listings</p>
+          )}
+          {hideDeck ? null : <p className={LEAD}>{answer}</p>}
+          <TopPicks picks={picks} note={picksNote} plainLabels={plainLabels} />
           {intro.map((paragraph) => (
             <p key={paragraph.slice(0, 40)} className={P}>
               {paragraph}
@@ -163,7 +171,13 @@ export default async function Roundup({
               <div className={CARD}>
                 <ProductPhoto url={product.url} fallback={product.image} alt={product.name} />
                 <p className="mb-4">
-                  <span className="inline-block rounded-full bg-amber-400 px-3 py-1 text-xs font-extrabold uppercase tracking-wide text-zinc-950">
+                  <span
+                    className={
+                      plainLabels
+                        ? "text-[11px] font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400"
+                        : "inline-block rounded-full bg-amber-400 px-3 py-1 text-xs font-extrabold uppercase tracking-wide text-zinc-950"
+                    }
+                  >
                     Best for: {product.label.replace(/^Best (for )?/i, "")}
                   </span>
                 </p>

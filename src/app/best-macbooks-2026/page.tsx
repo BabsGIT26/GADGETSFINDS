@@ -127,6 +127,8 @@ export default function Page() {
         "Buy the MacBook Air 13 M5 unless you know you need more. Step up to the 14-inch MacBook Pro M5 for the XDR screen, HDMI and the SD slot. Pay for the 16-inch M5 Max only when long renders or local AI models are your daily work.",
       ]}
       faqTitle="MacBook buying questions"
+      plainLabels
+      hideDeck
       faq={[
         { q: "Is the MacBook Air or the MacBook Pro better?", a: "The Air is better for most people: lighter, silent and cheaper. The Pro is better if you need HDMI, an SD slot, the brighter XDR screen, or steady performance during long exports and builds." },
         { q: "Which MacBook is best for students?", a: "The 13-inch MacBook Air with M5. It handles schoolwork, browsing and light creative work, and it is the lightest Mac in this guide." },

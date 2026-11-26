@@ -21,10 +21,12 @@ export default async function TopPicks({
   picks,
   title = "Quick picks",
   note,
+  plainLabels = false,
 }: {
   picks: TopPick[];
   title?: string;
   note?: string;
+  plainLabels?: boolean;
 }) {
   const items = await Promise.all(picks.map((pick) => amazonItemFor({ url: pick.url })));
   const anyPrice = items.some((item) => item && (item.price || item.availability === "OUT_OF_STOCK"));
@@ -43,7 +45,13 @@ export default async function TopPicks({
             <div className="flex min-w-0 items-center gap-3">
               <ProductPhoto url={pick.url} fallback={pick.image} alt={pick.name} variant="thumb" />
               <div className="min-w-0">
-                <span className="inline-block rounded-full bg-amber-400 px-2 py-0.5 text-[11px] font-extrabold uppercase tracking-wide text-zinc-950">
+                <span
+                  className={
+                    plainLabels
+                      ? "block text-[11px] font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400"
+                      : "inline-block rounded-full bg-amber-400 px-2 py-0.5 text-[11px] font-extrabold uppercase tracking-wide text-zinc-950"
+                  }
+                >
                   {pick.label}
                 </span>
                 <p className="mt-1 font-bold text-foreground leading-snug">{pick.name}</p>
