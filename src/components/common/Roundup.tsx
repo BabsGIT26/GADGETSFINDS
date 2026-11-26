@@ -59,6 +59,8 @@ export default async function Roundup({
   topics,
   plainLabels = false,
   hideDeck = false,
+  titleClassName,
+  compactPicks = false,
 }: {
   path: string;
   eyebrow: string;
@@ -88,6 +90,10 @@ export default async function Roundup({
   plainLabels?: boolean;
   /** Hide the "specs from maker pages" line and the lead paragraph. */
   hideDeck?: boolean;
+  /** Override the shared H1 size. */
+  titleClassName?: string;
+  /** Slightly tighter Quick picks on small screens. */
+  compactPicks?: boolean;
 }) {
   // The generic hero illustration is dropped once real product photos are on the page.
   const photoCount = (await Promise.all(products.map((product) => amazonItemFor({ url: product.url })))).filter(
@@ -109,12 +115,12 @@ export default async function Roundup({
             earn from qualifying purchases if you buy through links on this page, at no extra cost to you.
           </p>
           <p className={EYEBROW}>{eyebrow}</p>
-          <h1 className={H1}>{title}</h1>
+          <h1 className={titleClassName ?? H1}>{title}</h1>
           {hideDeck ? null : (
             <p className="text-sm text-muted-foreground mb-4">Updated {updated} · Specs from maker pages and Amazon listings</p>
           )}
           {hideDeck ? null : <p className={LEAD}>{answer}</p>}
-          <TopPicks picks={picks} note={picksNote} plainLabels={plainLabels} />
+          <TopPicks picks={picks} note={picksNote} plainLabels={plainLabels} compactMobile={compactPicks} />
           {intro.map((paragraph) => (
             <p key={paragraph.slice(0, 40)} className={P}>
               {paragraph}

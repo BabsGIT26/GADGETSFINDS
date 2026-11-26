@@ -6,7 +6,7 @@ import Roundup, { type RoundupProduct } from "@/components/common/Roundup";
 const TAG = "gadgetsfindswebsite-20";
 const PATH = "/best-macbooks-2026";
 const SEO_TITLE = "Best MacBook to Buy in 2026: Air vs Pro";
-const TITLE = "Best MacBook to Buy in 2026: Air vs Pro Compared";
+const TITLE = "Best MacBook to Buy in 2026: Air vs Pro";
 const DESCRIPTION =
   "Which MacBook should you buy in 2026? We compare the MacBook Air M5 and the 14- and 16-inch MacBook Pro by screen, ports and power. Check today's price.";
 const IMG = illustrationPath("laptop");
@@ -129,6 +129,8 @@ export default function Page() {
       faqTitle="MacBook buying questions"
       plainLabels
       hideDeck
+      compactPicks
+      titleClassName="text-2xl md:text-5xl font-bold text-foreground leading-tight mb-4"
       faq={[
         { q: "Is the MacBook Air or the MacBook Pro better?", a: "The Air is better for most people: lighter, silent and cheaper. The Pro is better if you need HDMI, an SD slot, the brighter XDR screen, or steady performance during long exports and builds." },
         { q: "Which MacBook is best for students?", a: "The 13-inch MacBook Air with M5. It handles schoolwork, browsing and light creative work, and it is the lightest Mac in this guide." },
