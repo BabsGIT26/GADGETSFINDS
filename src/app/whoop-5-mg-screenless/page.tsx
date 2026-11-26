@@ -8,14 +8,13 @@ import CommentSection from "@/components/comments/CommentSection";
 const AMAZON = "https://www.amazon.com/dp/B0DY2SWV16?tag=gadgetsfindswebsite-20";
 
 export const metadata: Metadata = {
-  title: "WHOOP 5.0/MG Screenless Wearable Review — Gadgets Finds",
+  title: "WHOOP 5.0/MG Review: Screenless Sleep and Recovery — Gadgets Finds",
   description:
     "A screenless WHOOP 5.0/MG band with a 12-month membership for sleep, recovery, and strain, with 14+ days of battery life.",
   metadataBase: new URL("https://www.gadgets-finds.com"),
   alternates: { canonical: "https://www.gadgets-finds.com/whoop-5-mg-screenless" },
   openGraph: {
-    title:
-      "WHOOP 5.0/MG Screenless Fitness, Health & Sleep Wearable (12-Month Membership) Review",
+    title: "WHOOP 5.0/MG Review: Screenless Sleep and Recovery",
     description:
       "A screenless band for sleep, recovery, and strain, sold with a 12-month WHOOP membership.",
     url: "https://www.gadgets-finds.com/whoop-5-mg-screenless",
@@ -31,7 +30,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@Gadgets_finds",
-    title: "WHOOP 5.0/MG Screenless Fitness, Health & Sleep Wearable",
+    title: "WHOOP 5.0/MG Review: Screenless Sleep and Recovery",
     description: "Sleep, recovery, and strain on a band with no screen, plus a 12-month membership.",
     images: ["/assets/images/whoop-5-og.jpg"],
   },
@@ -52,9 +51,8 @@ export default function Page() {
           </p>
 
           <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">Wearables</p>
-          <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
-            WHOOP 5.0/MG Screenless Fitness, Health & Sleep Wearable (12-Month Membership) Review:
-            Distraction-Free 24/7 Biometric Coaching
+          <h1 className="text-2xl md:text-4xl font-bold text-foreground mb-6">
+            WHOOP 5.0/MG Review: Screenless Sleep and Recovery
           </h1>
 
           <p className="text-muted-foreground mb-6">
