@@ -59,6 +59,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   const productPages = [
+    '/roborock-qrevo-edge-3-pro',
     '/ipad-pro-13-m5',
     '/whoop-5-mg-screenless',
     '/hp-67-black-tri-color-ink',

@@ -21,6 +21,18 @@ interface Gadget {
 
 const gadgets: Gadget[] = [
     {
+    name: "Qrevo Edge 3 Pro",
+    brand: "Roborock",
+    category: "Vacuums",
+    badge: "Flagship",
+    badgeColor: "bg-zinc-800 text-white",
+    image: "/assets/images/qrevo-edge-3-pro.jpg",
+    alt: "Roborock Qrevo Edge 3 Pro on its dock",
+    href: "/roborock-qrevo-edge-3-pro",
+    highlights: ["36,000 Pa", "Climbs thresholds", "212°F dock"],
+    contain: true,
+  },
+    {
     name: "iPad Pro 13-inch M5",
     brand: "Apple",
     category: "Tablets",
