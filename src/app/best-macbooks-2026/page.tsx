@@ -11,7 +11,12 @@ const DESCRIPTION =
   "Which MacBook should you buy in 2026? We compare the MacBook Air M5 and the 14- and 16-inch MacBook Pro by screen, ports and power. Check today's price.";
 const IMG = illustrationPath("laptop");
 
-export const metadata: Metadata = pageMetadata({ path: PATH, title: SEO_TITLE, description: DESCRIPTION, kind: "laptop" });
+export const metadata: Metadata = pageMetadata({
+  path: PATH,
+  title: SEO_TITLE,
+  description: DESCRIPTION,
+  ogImage: "/assets/images/macbook-air-13-m5-og.jpg",
+});
 
 const products: RoundupProduct[] = [
   {
