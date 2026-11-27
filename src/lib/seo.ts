@@ -24,7 +24,9 @@ export function pageMetadata({
   const raw = ogImage ?? (kind ? illustrationOg(kind) : undefined);
   // Product photos are not 1200x630. Social sites crop them and cut the product off.
   // Local /og images are already composed. Everything else is framed first.
-  const image = raw && /^https?:\/\//.test(raw) && !raw.startsWith(`${BASE}/og`) ? `${BASE}/og/frame?src=${encodeURIComponent(raw)}` : raw;
+  // Some CDNs block our server. Those files are already 16:9, so social sites can load them directly.
+  const direct = raw ? (() => { try { return new URL(raw).hostname === "lvdneng.rosselcdn.net"; } catch { return false; } })() : false;
+  const image = raw && /^https?:\/\//.test(raw) && !raw.startsWith(`${BASE}/og`) && !direct ? `${BASE}/og/frame?src=${encodeURIComponent(raw)}` : raw;
   const full = `${title} | Gadgets Finds`;
   return {
     title: { absolute: full.length <= 60 ? full : title },
