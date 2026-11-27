@@ -8,7 +8,7 @@ import { getAmazonItem } from "@/lib/amazon/catalog";
 import { illustrationPath } from "@/lib/illustrations";
 import { CONTAINER, CTA, DISCLOSURE, EYEBROW, H1, H2, LEAD, P, PAGE } from "@/lib/layout";
 import { pageMetadata } from "@/lib/seo";
-import { CATEGORIES, DEALS, amazonUrl, type DealCategory } from "./deals";
+import { CATEGORIES, DEALS, amazonUrl, type Deal, type DealCategory } from "./deals";
 import { DealCard, DealFilter } from "./filter";
 
 export const revalidate = 3600;
@@ -17,7 +17,7 @@ const PATH = "/black-friday-50-off";
 const SEO_TITLE = "Black Friday Deals at 50% Off";
 const TITLE = "Black Friday Deals at 50% Off or More";
 const DESCRIPTION =
-  "Black Friday deals at 50% off or more: headphones, TVs, smart home, robot vacuums and kitchen electronics. Filter by category. The list follows Amazon's live discount.";
+  "Black Friday deals at 50% off or more: headphones, TVs, smart home, vacuums and kitchen gear. Filter by category. Amazon sets the discount.";
 
 const ART: Record<DealCategory, "gadget" | "deals" | "smart-home" | "vacuum"> = {
   Audio: "gadget",
@@ -30,7 +30,7 @@ const ART: Record<DealCategory, "gadget" | "deals" | "smart-home" | "vacuum"> = 
 export const metadata: Metadata = pageMetadata({ path: PATH, title: SEO_TITLE, description: DESCRIPTION, kind: "deals" });
 
 export default async function Page() {
-  const live = [];
+  const live: Deal[] = [];
   for (const deal of DEALS) {
     const item = await getAmazonItem(deal.asin);
     if (item?.savingsPercent != null && item.savingsPercent >= 50) {
@@ -72,7 +72,7 @@ export default async function Page() {
                         href={amazonUrl(deal.asin)}
                         rel="nofollow sponsored noopener noreferrer"
                         aria-label={`Check price of ${deal.name} on Amazon`}
-                        className={`${CTA} mt-3 text-center text-xs sm:text-sm`}
+                        className="mt-3 inline-flex items-center justify-center px-3 py-2 rounded-full bg-amber-400 text-zinc-950 text-xs sm:text-sm font-extrabold hover:bg-amber-300"
                       >
                         Check price on Amazon
                       </a>
