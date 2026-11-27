@@ -297,5 +297,44 @@
       "B0DVS6MSP9",
       "B0D18SMB1X"
     ]
+  },
+  {
+    "id": "app/black-friday-gaming-pc/page.tsx#0",
+    "asins": [
+      "B09VCHQHZ6",
+      "B0GMLJCBBM",
+      "B0DKFMSMYK",
+      "B083TZ68H1",
+      "B0DQLHVQSF",
+      "B0FH7MB8WV",
+      "B0F8KWHK5B",
+      "B0H1NH99GX",
+      "B0DX2DPJZ5",
+      "B0DJ6DGHCP"
+    ]
+  },
+  {
+    "id": "app/black-friday-gaming-pc/page.tsx#1",
+    "asins": [
+      "B0FFQN6344",
+      "B0FF7TGMD2",
+      "B0FBXX1D17",
+      "B0D8RZ65XJ",
+      "B07H25DYM3",
+      "B0GD1CJ71R",
+      "B0FJ2Y9GK1",
+      "B0FKZ5FVG1",
+      "B0H7FZY8GW",
+      "B0CCK6P1HR"
+    ]
+  },
+  {
+    "id": "app/black-friday-gaming-pc/page.tsx#2",
+    "asins": [
+      "B0H4X2M3NY",
+      "B0DS2WQZ2M",
+      "B0BGT61797",
+      "B0DS6WPTLL"
+    ]
   }
 ]
