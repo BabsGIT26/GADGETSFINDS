@@ -65,7 +65,10 @@ export default async function Page() {
                     <ProductPhoto asin={deal.asin} fallback={illustrationPath(ART[deal.category])} alt={deal.name} variant="deal" />
                     <div className="p-3 sm:p-4 flex flex-col flex-1">
                       <p className="text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">{deal.category}</p>
-                      <h2 className="mt-1 h-10 sm:h-12 text-sm sm:text-base font-bold leading-5 sm:leading-6 text-foreground line-clamp-2">{deal.name}</h2>
+                      <h2 className="mt-1 h-10 sm:h-12 text-sm sm:text-base font-bold leading-5 sm:leading-6 text-foreground">
+                        <span className="block truncate">{deal.name}</span>
+                        <span className="block truncate font-medium">{deal.detail}</span>
+                      </h2>
                       <p className="mt-2 h-8 sm:h-10 text-xs sm:text-sm leading-4 sm:leading-5 text-muted-foreground line-clamp-2">{deal.note}</p>
                       <LivePrice asin={deal.asin} compact className="mt-3" />
                       <a
