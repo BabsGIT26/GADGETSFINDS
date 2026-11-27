@@ -20,6 +20,7 @@ function guides(): { href: string; title: string; topics: Topic[] }[] {
   { href: "/best-macbooks-2026", title: "Best MacBooks of 2026", topics: ["computing"] },
   { href: "/best-laptops-developers-2026", title: "Best laptops for programming", topics: ["computing"] },
   { href: "/best-graphics-cards-2026", title: "Best graphics cards of 2026", topics: ["computing", "gaming"] },
+  { href: "/samsung-9100-pro-2tb-article", title: "Samsung 9100 PRO 2TB SSD", topics: ["computing", "gaming"] },
   { href: "/black-friday-gaming-pc", title: isSaleSeason() ? "Black Friday gaming PC parts" : "Gaming PC parts worth buying", topics: ["computing", "gaming", "deals"] },
   { href: "/best-gaming-consoles-2026", title: "Best gaming consoles of 2026", topics: ["gaming"] },
   { href: "/best-ps5-accessories-2026", title: "Best PS5 accessories", topics: ["gaming", "audio"] },

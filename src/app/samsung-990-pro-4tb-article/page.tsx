@@ -45,6 +45,10 @@ export default function Page() {
           body: [
             "Samsung's sequential ratings show up on large copies: game installs, video projects and disk images. Everyday desktop work is closer to the low-queue figures, 22,000 read and 80,000 write IOPS at queue depth one. The 1.6 million IOPS rating needs deep queues that normal apps do not produce.",
             "Install Samsung Magician to update the firmware and watch temperature and health. Early 990 PRO units had a firmware bug that inflated the wear reading; Samsung fixed it, so update a new drive before moving your files onto it.",
+            <>
+              If the board has a PCIe 5.0 M.2 slot and 2TB is enough, the faster drive is the{" "}
+              <a href="/samsung-9100-pro-2tb-article" className={link}>Samsung 9100 PRO 2TB</a>.
+            </>,
           ],
         },
         {

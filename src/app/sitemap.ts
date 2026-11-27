@@ -71,6 +71,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/roborock-saros-z70-article',
     '/samsung-65-s85h-oled-article',
     '/samsung-990-pro-4tb-article',
+    '/samsung-9100-pro-2tb-article',
     '/amazon-outlet-guide',
     '/outlet-extender-stick',
   ];
