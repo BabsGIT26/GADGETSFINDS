@@ -52,7 +52,7 @@ export default function ProductArticle({
   updated?: string;
   answer: ReactNode;
   image: { src: string; alt: string };
-  cta?: { href: string; label?: string; note?: string };
+  cta?: { href: string; label?: string; note?: string; asin?: string };
   glance?: [string, string][];
   bestFor?: string;
   why?: ReactNode[];
@@ -69,7 +69,7 @@ export default function ProductArticle({
 }) {
   const ctaButton = cta ? (
     <div className="my-6">
-      <LivePrice url={cta.href} className="mb-3" />
+      <LivePrice url={cta.href} asin={cta.asin} className="mb-3" />
       <a href={go(cta.href)} rel="nofollow sponsored noopener noreferrer" className={CTA}>
         {cta.label ?? "Check price on Amazon"}
       </a>
@@ -94,7 +94,7 @@ export default function ProductArticle({
           <p className="text-sm text-muted-foreground mb-4">Updated {updated} · Specs from maker pages and Amazon listings</p>
           <p className={LEAD}>{answer}</p>
           {ctaButton}
-          <ProductPhoto url={cta?.href} fallback={image.src} alt={image.alt} variant="hero" />
+          <ProductPhoto url={cta?.href} asin={cta?.asin} fallback={image.src} alt={image.alt} variant="hero" />
 
           {glance || bestFor || why || skip ? (
             <section className={`${CARD} mt-8`}>

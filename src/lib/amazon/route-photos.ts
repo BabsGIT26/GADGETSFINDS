@@ -33,6 +33,7 @@ export const ROUTE_ASIN: Record<string, string> = {
   "/best-ps5-accessories-2026#racing-wheel": "B00Z0UWWYC",
   "/best-smartwatches-under-350": "B0FQFW7M9H",
   "/black-friday-gaming-pc": "B0H4X2M3NY",
+  "/iphone-18-pro-max": "B0HJHXTRFQ",
   "/black-friday-robot-vacuums": "B0GXF7ZQPY",
   "/black-friday-smartwatches": "B0HJB1CGR3",
   "/genz-semi-automatic-slingshot-article": "B0HB4HCB8L",

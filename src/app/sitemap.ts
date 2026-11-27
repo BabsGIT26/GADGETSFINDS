@@ -42,6 +42,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/black-friday-robot-vacuums/lefant-m210-pro',
     '/black-friday-smartwatches',
     '/black-friday-gaming-pc',
+    '/iphone-18-pro-max',
     '/black-friday-smartwatches/apple-watch-se-3-40mm',
     '/black-friday-smartwatches/apple-watch-series-12-42mm',
     '/black-friday-smartwatches/apple-watch-series-12-cellular-46mm',
