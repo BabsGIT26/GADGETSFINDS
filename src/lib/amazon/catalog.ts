@@ -23,6 +23,12 @@ export type AmazonItem = {
   title: string | null;
   image: { url: string; width: number; height: number } | null;
   price: string | null;
+  /** Struck-through basis, usually the list price. Null when Amazon sends none. */
+  listPrice: string | null;
+  /** Dollar amount off, as Amazon displays it. Null when there is no discount. */
+  savingsAmount: string | null;
+  /** Whole-number percent off. Null when there is no discount. */
+  savingsPercent: number | null;
   availability: string | null;
   /** ISO time the data was fetched from Amazon. */
   fetchedAt: string;
