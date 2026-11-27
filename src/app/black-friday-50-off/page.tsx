@@ -28,7 +28,10 @@ const ART: Record<DealCategory, "gadget" | "deals" | "smart-home" | "vacuum"> = 
   Vacuums: "vacuum",
 };
 
-export const metadata: Metadata = pageMetadata({ path: PATH, title: SEO_TITLE, description: DESCRIPTION, kind: "deals" });
+const OG_IMAGE =
+  "https://lvdneng.rosselcdn.net/sites/default/files/dpistyles_v2/ena_16_9_extra_big/2026/10/15/node_1746632/69662044/public/2026/10/15/107959403.png?itok=5E9mqopU1792562748";
+
+export const metadata: Metadata = pageMetadata({ path: PATH, title: SEO_TITLE, description: DESCRIPTION, kind: "deals", ogImage: OG_IMAGE });
 
 export default async function Page() {
   const live: Deal[] = [];

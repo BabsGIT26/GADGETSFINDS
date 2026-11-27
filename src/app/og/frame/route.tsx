@@ -12,6 +12,7 @@ const ALLOWED = new Set([
   "images.pexels.com",
   "images.pixabay.com",
   "img.rocket.new",
+  "lvdneng.rosselcdn.net",
 ]);
 
 function dimensions(buf: Buffer, mime: string) {
@@ -57,7 +58,7 @@ export async function GET(req: Request) {
   if (url.protocol !== "https:" || !ALLOWED.has(url.hostname)) {
     return new Response("Image host not allowed", { status: 400 });
   }
-  const res = await fetch(url, { headers: { "User-Agent": "GadgetsFinds-OG" } });
+  const res = await fetch(url, { headers: { "User-Agent": "Mozilla/5.0", Accept: "image/avif,image/webp,image/png,image/jpeg,*/*" } });
   if (!res.ok) return new Response("Image unavailable", { status: 502 });
   const mime = (res.headers.get("content-type") || "image/jpeg").split(";")[0].trim();
   if (!mime.startsWith("image/")) return new Response("Not an image", { status: 400 });
