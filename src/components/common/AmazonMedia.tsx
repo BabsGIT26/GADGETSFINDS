@@ -123,15 +123,11 @@ export async function LivePrice({
     <PriceFreshness fetchedAt={item.fetchedAt}>
       <div className={className}>
         <p className="leading-snug">
-          {item.price ? (
-            <span className={`${compact ? "text-base" : "text-xl"} font-extrabold text-foreground`}>{item.price}</span>
-          ) : (
+          {outOfStock ? (
             <span className="text-sm font-semibold text-foreground">Currently unavailable on Amazon</span>
-          )}{" "}
-          {item.savingsPercent ? (
-            <span className="text-sm font-bold text-red-600">{item.savingsPercent}% off</span>
+          ) : item.savingsPercent ? (
+            <span className={`${compact ? "text-sm" : "text-lg"} font-bold text-red-600`}>{item.savingsPercent}% off</span>
           ) : null}{" "}
-          {item.listPrice ? <span className="text-sm text-muted-foreground line-through">{item.listPrice}</span> : null}{" "}
           <span className={`text-xs text-muted-foreground ${compact ? "block" : ""}`}>on Amazon as of {asOf}</span>
         </p>
         {compact ? null : <p className="mt-1 text-[11px] leading-snug text-muted-foreground">{PRICE_DISCLAIMER}</p>}
