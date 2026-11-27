@@ -23,7 +23,7 @@ function Frame({
   frame,
 }: Props & { sizes: string; frame: string }) {
   const svg = isSvg(src);
-  const amazon = isAmazonPhoto(src);
+  const amazon = isAmazonPhoto(src) || src.startsWith("https://cdn.idealo.com/");
   return (
     <div className={`relative overflow-hidden ${amazon ? "bg-white border border-zinc-200" : "bg-muted"} ${frame}`}>
       <Image

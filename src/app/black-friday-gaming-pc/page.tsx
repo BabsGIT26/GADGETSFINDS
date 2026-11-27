@@ -16,6 +16,7 @@ export const metadata: Metadata = pageMetadata({
   description:
     "Black Friday gaming PC parts: CPU, graphics card, board, memory, SSD, power supply, cooler and case, with today's Amazon price and percent off.",
   kind: "deals",
+  ogImage: "https://cdn.idealo.com/folder/Product/206565/0/206565058/s4_produktbild_max/nzxt-h9-flow-rgb-white.jpg",
 });
 
 type Part = { name: string; asin: string; href: string; note: string };

@@ -32,8 +32,8 @@ const PersonalizedContentStream = ({ photos = {} }: { photos?: Record<string, st
       title: isSaleSeason() ? "Black Friday Gaming PC Parts" : "Gaming PC Parts",
       excerpt: "CPU, graphics card, motherboard, memory, SSD, power supply, cooler, and case. Today's Amazon price and percent off.",
       category: "Buying Guide",
-      image: "/assets/illustrations/gpu.svg",
-      alt: "MSI RTX 3060 Ventus 2X graphics card",
+      image: "https://cdn.idealo.com/folder/Product/206565/0/206565058/s4_produktbild_max/nzxt-h9-flow-rgb-white.jpg",
+      alt: "NZXT H9 Flow RGB white PC case",
       author: "Gadgets Finds",
       publishedDate: "November 27, 2026",
       readTime: "6 min read",
@@ -437,7 +437,7 @@ const PersonalizedContentStream = ({ photos = {} }: { photos?: Record<string, st
             href={articleRoutes[item.id] || "/"}
             className="bg-card rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow"
           >
-            <CardImage src={photos[articleRoutes[item.id]] ?? item.image} alt={item.alt} priority={index < 3} />
+            <CardImage src={item.id === 29 ? item.image : (photos[articleRoutes[item.id]] ?? item.image)} alt={item.alt} priority={index < 3} />
             <div className="p-5">
               <span className="inline-block px-2 py-1 bg-primary/10 text-primary text-xs font-semibold rounded mb-2">
                 {item.category}
