@@ -80,6 +80,22 @@ export default async function Page() {
                 ))}
               </DealFilter>
             )}
+            <a
+              href="https://link.amazon/B080y0dqv"
+              rel="nofollow sponsored noopener noreferrer"
+              className="group mt-8 flex flex-col overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-950 text-white shadow-sm sm:flex-row"
+            >
+              <div className="flex flex-1 flex-col justify-center px-5 py-6 sm:px-7">
+                <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-amber-300">More Black Friday deals</p>
+                <p className="mt-2 text-2xl font-bold leading-tight">Filtered to 50% off and above</p>
+                <p className="mt-2 max-w-xl text-sm leading-relaxed text-zinc-300">
+                  Amazon’s larger sale list, kept to products marked down by half or more.
+                </p>
+              </div>
+              <span className="flex items-center justify-center bg-amber-400 px-6 py-4 text-sm font-extrabold text-zinc-950 group-hover:bg-amber-300 sm:px-8">
+                See the deals
+              </span>
+            </a>
             <PriceDisclaimer className="mt-3" />
             <h2 className={H2}>How the 50% line works</h2>
             <p className={P}>
