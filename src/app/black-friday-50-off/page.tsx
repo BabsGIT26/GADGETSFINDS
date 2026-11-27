@@ -53,7 +53,7 @@ export default async function Page() {
             <h1 className={H1}>{TITLE}</h1>
             <p className="text-sm text-muted-foreground mb-4">Updated through the sale · Discount comes from Amazon and can change hourly</p>
             <p className={LEAD}>
-              This page lists tech, smart-home, vacuum and kitchen products only while Amazon shows them at 50% off or more. Use the filters to jump to a category. The percent is the only price figure we show.
+              This page lists tech, smart-home, vacuum and kitchen products only while Amazon shows them at 50% off or more. Use the filters to jump to a category. Each card shows today's price, the old listing price, and the percent off.
             </p>
             <ProductListJsonLd name="Black Friday deals at 50% off or more" url={PATH} products={live.map((deal) => deal.name)} />
             {live.length === 0 ? (
@@ -74,7 +74,7 @@ export default async function Page() {
                         aria-label={`Check price of ${deal.name} on Amazon`}
                         className="mt-3 inline-flex items-center justify-center px-3 py-2 rounded-full bg-amber-400 text-zinc-950 text-xs sm:text-sm font-extrabold hover:bg-amber-300"
                       >
-                        Check price on Amazon
+                        Check on Amazon
                       </a>
                     </div>
                   </DealCard>
@@ -84,7 +84,7 @@ export default async function Page() {
             <PriceDisclaimer className="mt-3" />
             <h2 className={H2}>How the 50% line works</h2>
             <p className={P}>
-              A product stays on this page only when Amazon's own discount is 50% or higher. If the listing price or the sale price moves, the product drops off or comes back on the next refresh. We do not print the dollar price here.
+              A product stays on this page only when Amazon's own discount is 50% or higher. If the listing price or the sale price moves, the product drops off or comes back on the next refresh. The card shows the current price, the old listing price, and the percent.
             </p>
             <p className={P}>
               Headphones, streaming sticks and smart displays are the bulk of the list. Kitchen tools and robot vacuums are here when they clear the same 50% line. A bundle is one Amazon listing, so the percent is for the pair, not each piece.

@@ -52,7 +52,7 @@ export default function ProductArticle({
   updated?: string;
   answer: ReactNode;
   image: { src: string; alt: string };
-  cta?: { href: string; label?: string; note?: string; asin?: string };
+  cta?: { href: string; label?: string; note?: string; asin?: string; percentOnly?: boolean };
   glance?: [string, string][];
   bestFor?: string;
   why?: ReactNode[];
@@ -69,7 +69,7 @@ export default function ProductArticle({
 }) {
   const ctaButton = cta ? (
     <div className="my-6">
-      <LivePrice url={cta.href} asin={cta.asin} className="mb-3" />
+      <LivePrice url={cta.href} asin={cta.asin} percentOnly={cta.percentOnly} className="mb-3" />
       <a href={go(cta.href)} rel="nofollow sponsored noopener noreferrer" className={CTA}>
         {cta.label ?? "Check price on Amazon"}
       </a>

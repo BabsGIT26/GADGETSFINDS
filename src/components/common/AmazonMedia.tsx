@@ -107,17 +107,20 @@ export async function LivePrice({
   asin,
   url,
   compact = false,
+  percentOnly = false,
   className = "",
 }: {
   asin?: string | null;
   url?: string | null;
   compact?: boolean;
+  /** Hide the dollar prices and show only the red percent. Used on one article. */
+  percentOnly?: boolean;
   className?: string;
 }) {
   const item = await amazonItemFor({ asin, url });
   if (!item) return null;
   const outOfStock = !item.price && item.availability === "OUT_OF_STOCK";
-  if (!item.price && !outOfStock) return null;
+  if (!item.price && !outOfStock && !(percentOnly && item.savingsPercent)) return null;
   const asOf = formatAsOf(item.fetchedAt);
   return (
     <PriceFreshness fetchedAt={item.fetchedAt}>
@@ -125,9 +128,21 @@ export async function LivePrice({
         <p className="leading-snug">
           {outOfStock ? (
             <span className="text-sm font-semibold text-foreground">Currently unavailable on Amazon</span>
-          ) : item.savingsPercent ? (
-            <span className={`${compact ? "text-sm" : "text-lg"} font-bold text-red-600`}>{item.savingsPercent}% off</span>
-          ) : null}{" "}
+          ) : percentOnly ? (
+            item.savingsPercent ? (
+              <span className={`${compact ? "text-sm" : "text-lg"} font-bold text-red-600`}>{item.savingsPercent}% off</span>
+            ) : null
+          ) : (
+            <>
+              {item.price ? (
+                <span className={`${compact ? "text-base" : "text-xl"} font-extrabold text-foreground`}>{item.price}</span>
+              ) : null}{" "}
+              {item.savingsPercent ? (
+                <span className="text-sm font-bold text-red-600">{item.savingsPercent}% off</span>
+              ) : null}{" "}
+              {item.listPrice ? <span className="text-sm text-muted-foreground line-through">{item.listPrice}</span> : null}
+            </>
+          )}{" "}
           <span className={`text-xs text-muted-foreground ${compact ? "block" : ""}`}>on Amazon as of {asOf}</span>
         </p>
         {compact ? null : <p className="mt-1 text-[11px] leading-snug text-muted-foreground">{PRICE_DISCLAIMER}</p>}

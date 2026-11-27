@@ -25,7 +25,7 @@ export default function Page() {
       topics={["computing", "gaming"]}
       answer="The Samsung 9100 PRO 2TB is a PCIe 5.0 NVMe SSD, rated at 14,700 MB/s read and 13,400 MB/s write, with 2GB of DRAM and a 1,200 TBW warranty. Buy it for a desktop that has a PCIe 5.0 M.2 slot. On a PCIe 4.0 board, or in a PS5, it cannot reach that speed."
       image={{ src: illustrationPath("ssd"), alt: "Samsung 9100 PRO 2TB NVMe SSD" }}
-      cta={{ href: URL, asin: ASIN, note: "Model MZ-VAP2T0B/AM, no heatsink. Price and stock change on Amazon." }}
+      cta={{ href: URL, asin: ASIN, percentOnly: true, note: "Model MZ-VAP2T0B/AM, no heatsink. Price and stock change on Amazon." }}
       bestFor="A desktop with a real PCIe 5.0 M.2 slot and a heatsink over the drive"
       glance={[
         ["Interface", "PCIe 5.0 x4, NVMe 2.0, M.2 2280"],
