@@ -20,6 +20,17 @@ type Story = {
 
 const STORIES: Story[] = [
   {
+    id: 8,
+    title: 'Black Friday Gaming PC Parts',
+    excerpt: 'CPU, graphics card, board, memory, SSD, power supply, cooler, and case, with today\'s Amazon price and percent off.',
+    category: 'Buying Guide',
+    image: '/assets/illustrations/gpu.svg',
+    alt: 'MSI RTX 3060 Ventus 2X graphics card',
+    author: 'Gadgets Finds',
+    readTime: '6 min read',
+    link: '/black-friday-gaming-pc',
+  },
+  {
     id: 0,
     title: 'Black Friday Robot Vacuums',
     excerpt: 'Dock, mop station, or a robot you empty yourself. What each one is for before you open Amazon.',

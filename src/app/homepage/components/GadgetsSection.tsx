@@ -21,6 +21,17 @@ interface Gadget {
 
 const gadgets: Gadget[] = [
     {
+    name: "Black Friday gaming PC parts",
+    brand: "Buying guide",
+    category: "Gaming",
+    badge: "Black Friday",
+    badgeColor: "bg-red-600 text-white",
+    image: "/assets/illustrations/gpu.svg",
+    alt: "MSI RTX 3060 Ventus 2X graphics card",
+    href: "/black-friday-gaming-pc",
+    highlights: ["CPU, board, memory", "Graphics card", "Live percent off"],
+  },
+    {
     name: "Qrevo Edge 3 Pro",
     brand: "Roborock",
     category: "Vacuums",
@@ -299,6 +310,9 @@ const gadgets: Gadget[] = [
 const categories = ["All", "Laptops", "Smartphones", "GPUs", "Robotics", "Audio", "Gaming"];
 
 function displayGadget(gadget: Gadget, sale: boolean): Gadget {
+  if (gadget.href === "/black-friday-gaming-pc") {
+    return { ...gadget, name: sale ? gadget.name : "Gaming PC parts", badge: sale ? "Black Friday" : "Deals" };
+  }
   if (gadget.href === "/black-friday-robot-vacuums") {
     return { ...gadget, name: sale ? gadget.name : "Robot vacuum deals", badge: sale ? "Black Friday" : "Deals" };
   }

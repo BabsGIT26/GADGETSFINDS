@@ -28,6 +28,19 @@ const PersonalizedContentStream = ({ photos = {} }: { photos?: Record<string, st
 
   const contentItems: ContentItem[] = [
     {
+      id: 29,
+      title: isSaleSeason() ? "Black Friday Gaming PC Parts" : "Gaming PC Parts",
+      excerpt: "CPU, graphics card, motherboard, memory, SSD, power supply, cooler, and case. Today's Amazon price, percent off, and amount off.",
+      category: "Buying Guide",
+      image: "/assets/illustrations/gpu.svg",
+      alt: "MSI RTX 3060 Ventus 2X graphics card",
+      author: "Gadgets Finds",
+      publishedDate: "November 27, 2026",
+      readTime: "6 min read",
+      tags: ["Gaming PC", "Black Friday", "GPU", "Buying Guide"],
+      fit: "contain",
+    },
+    {
       id: 27,
       title: isSaleSeason() ? "Black Friday Robot Vacuums" : "Robot Vacuum Deals",
       excerpt: "Dock, mop station, or a robot you empty yourself. Short notes on the models showing on Amazon, then the listing.",
@@ -335,6 +348,7 @@ const PersonalizedContentStream = ({ photos = {} }: { photos?: Record<string, st
   ];
 
   const articleRoutes: { [key: number]: string } = {
+    29: "/black-friday-gaming-pc",
     27: "/black-friday-robot-vacuums",
     28: "/black-friday-smartwatches",
     26: "/samsung-990-pro-4tb-article",
@@ -388,7 +402,7 @@ const PersonalizedContentStream = ({ photos = {} }: { photos?: Record<string, st
 
   const filteredItems = getFilteredItems();
 
-  const guideIds = [28, 27, 26, 25, 24, 23, 22, 21];
+  const guideIds = [29, 28, 27, 26, 25, 24, 23, 22, 21];
   const guideItems = guideIds
     .map((id) => contentItems.find((item) => item.id === id))
     .filter((item): item is ContentItem => Boolean(item));
