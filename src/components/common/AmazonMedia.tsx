@@ -136,9 +136,9 @@ export async function LivePrice({
         ) : (
           <div>
             <p className="flex items-baseline justify-between gap-2">
-              <span className={`${compact ? "text-sm sm:text-base" : "text-xl"} inline-flex items-center rounded-md border border-green-300 bg-green-500 px-2 py-0.5 font-extrabold text-white whitespace-nowrap shadow-[0_0_16px_2px_rgba(74,222,128,0.85)]`}>{item.price}</span>
+              <span className={`${compact ? "text-sm sm:text-base" : "text-xl"} inline-flex items-center rounded-md border border-green-300 bg-green-500 px-2 py-0.5 font-extrabold text-white whitespace-nowrap shadow-[0_0_8px_rgba(74,222,128,0.45)]`}>{item.price}</span>
               {item.savingsPercent ? (
-                <span className="text-sm font-bold text-red-600 whitespace-nowrap">{item.savingsPercent}% off</span>
+                <span className={`${compact ? "text-sm sm:text-base" : "text-xl"} font-extrabold text-red-600 whitespace-nowrap`}>{item.savingsPercent}% off</span>
               ) : (
                 <span />
               )}
