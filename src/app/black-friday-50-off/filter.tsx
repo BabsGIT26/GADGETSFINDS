@@ -6,11 +6,9 @@ const FilterContext = createContext("All");
 
 export function DealFilter({
   categories,
-  total,
   children,
 }: {
   categories: string[];
-  total: number;
   children: ReactNode;
 }) {
   const [category, setCategory] = useState("All");
@@ -32,7 +30,6 @@ export function DealFilter({
           );
         })}
       </div>
-      <p className="text-sm text-muted-foreground mb-4">{total} listings Amazon currently marks at 50% off or more.</p>
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-4">{children}</div>
     </FilterContext.Provider>
   );

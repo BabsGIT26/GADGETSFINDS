@@ -59,7 +59,7 @@ export default async function Page() {
             {live.length === 0 ? (
               <p className={P}>None of the tracked listings are at 50% off on Amazon right now. The page checks again within an hour.</p>
             ) : (
-              <DealFilter categories={categories} total={live.length}>
+              <DealFilter categories={categories}>
                 {live.map((deal) => (
                   <DealCard key={deal.asin} category={deal.category}>
                     <ProductPhoto asin={deal.asin} fallback={illustrationPath(ART[deal.category])} alt={deal.name} variant="deal" />
