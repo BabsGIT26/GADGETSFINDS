@@ -9,21 +9,23 @@ import { asinFromUrl, formatAsOf, getAmazonItem, type AmazonItem } from "@/lib/a
  * (never downloaded or re-hosted) and shown unaltered: object-contain on white.
  */
 
-type Variant = "product" | "card" | "hero" | "thumb";
+type Variant = "product" | "card" | "hero" | "thumb" | "deal";
 
 const FRAME: Record<Variant, string> = {
   product: "aspect-[4/3] w-full max-w-sm rounded-xl mb-5",
   card: "aspect-[4/3] w-full",
+  deal: "aspect-square w-full sm:aspect-[4/3]",
   hero: "aspect-[16/9] w-full rounded-2xl my-6",
   thumb: "aspect-square w-20 sm:w-24 shrink-0 rounded-lg",
 };
 const SIZES: Record<Variant, string> = {
   product: "(min-width: 640px) 384px, 100vw",
   card: "(min-width: 1024px) 300px, (min-width: 640px) 45vw, 100vw",
+  deal: "(min-width: 640px) 45vw, 50vw",
   hero: "(min-width: 896px) 864px, 100vw",
   thumb: "96px",
 };
-const PAD: Record<Variant, string> = { product: "p-4", card: "p-4", hero: "p-6", thumb: "p-1.5" };
+const PAD: Record<Variant, string> = { product: "p-4", card: "p-4", deal: "p-2 sm:p-4", hero: "p-6", thumb: "p-1.5" };
 
 export const PRICE_DISCLAIMER =
   "Product prices and availability are accurate as of the date/time indicated and are subject to change. Any price and availability information displayed on Amazon.com at the time of purchase will apply to the purchase of this product.";

@@ -22,6 +22,14 @@ type Part = { name: string; asin: string; href: string; note: string };
 
 const SECTIONS: { heading: string; parts: Part[] }[] = [
   {
+    heading: "Prebuilt PCs",
+    parts: [
+      { name: "CyberPowerPC Ryzen 7 8700F + RTX 5060 Ti", asin: "B0DXVK2SLY", href: "https://link.amazon/B03ej9f36", note: "A complete desktop. It does not use the parts further down." },
+      { name: "CyberPowerPC Core i7-14700F + RTX 5060 Ti", asin: "B0DXVFR2MP", href: "https://link.amazon/B06m1w3qg", note: "A complete Intel desktop with an RTX 5060 Ti." },
+      { name: "MSI Aegis R2 Core Ultra 9 285 + RTX 5070", asin: "B0GLLCT2H9", href: "https://link.amazon/B0gDC63ey", note: "A complete MSI desktop. This Intel chip does not fit the AM5 boards below." },
+    ],
+  },
+  {
     heading: "Graphics cards",
     parts: [
       { name: "MSI RTX 3060 Ventus 2X 12GB", asin: "B0H4X2M3NY", href: "https://link.amazon/B0iEmcaor", note: "1080p card, and the one on this list with a real markdown." },
@@ -92,22 +100,22 @@ function PartCard({ part }: { part: Part }) {
   return (
     <div className="bg-card border border-border rounded-xl overflow-hidden flex flex-col">
       <a href={part.href} rel="nofollow sponsored noopener noreferrer" aria-label={part.name}>
-        <ProductPhoto asin={part.asin} alt={part.name} variant="card" />
+        <ProductPhoto asin={part.asin} alt={part.name} variant="deal" />
       </a>
-      <div className="p-4 flex flex-col flex-1">
-        <h3 className="text-base font-bold text-foreground">
+      <div className="p-2.5 sm:p-4 flex flex-col flex-1">
+        <h3 className="text-sm sm:text-base font-bold text-foreground leading-snug">
           <a href={part.href} rel="nofollow sponsored noopener noreferrer" className="hover:text-amber-700">
             {part.name}
           </a>
         </h3>
-        <p className="text-sm text-muted-foreground mt-2 flex-1">{part.note}</p>
-        <LivePrice asin={part.asin} compact className="mt-3" />
-        <div className="mt-4">
+        <p className="text-xs sm:text-sm text-muted-foreground mt-1 sm:mt-2 flex-1">{part.note}</p>
+        <LivePrice asin={part.asin} compact className="mt-2 sm:mt-3" />
+        <div className="mt-2 sm:mt-4">
           <a
             href={part.href}
             rel="nofollow sponsored noopener noreferrer"
             aria-label={`Check price of ${part.name} on Amazon`}
-            className="inline-flex w-full items-center justify-center px-4 py-2 rounded-full bg-amber-400 text-zinc-950 text-sm font-extrabold hover:bg-amber-300 transition-colors"
+            className="inline-flex w-full items-center justify-center px-2 py-1.5 sm:px-4 sm:py-2 rounded-full bg-amber-400 text-zinc-950 text-[11px] sm:text-sm font-extrabold leading-tight hover:bg-amber-300 transition-colors"
           >
             Check price on Amazon
           </a>
@@ -131,14 +139,14 @@ export default function Page() {
             <p className={EYEBROW}>Gaming PC parts</p>
             <h1 className={H1}>Black Friday gaming PC parts</h1>
             <p className="text-base text-muted-foreground mb-8 max-w-2xl">
-              The price and the percent off come from Amazon and change through the sale. The Ryzen 7
+              The prebuilt PCs are complete computers. The price and the percent off come from Amazon and change through the sale. The Ryzen 7
               9800X3D, the motherboards, and the DDR5 kit are one build. The Intel chip needs a different board. The Ryzen
               7 5700X is AM4 and does not fit these boards.
             </p>
             {SECTIONS.map((section) => (
               <section key={section.heading} className="mb-10">
                 <h2 className={H2}>{section.heading}</h2>
-                <div className="grid sm:grid-cols-2 gap-4">
+                <div className="grid grid-cols-2 gap-2 sm:gap-4">
                   {section.parts.map((part) => (
                     <PartCard key={part.asin} part={part} />
                   ))}
