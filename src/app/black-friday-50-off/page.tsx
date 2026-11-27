@@ -53,7 +53,7 @@ export default async function Page() {
             <h1 className={H1}>{TITLE}</h1>
             <p className="text-sm text-muted-foreground mb-4">Updated through the sale · Discount comes from Amazon and can change hourly</p>
             <p className={LEAD}>
-              This page lists tech, smart-home, vacuum and kitchen products only while Amazon shows them at 50% off or more. Use the filters to jump to a category. Each card shows today's price, the old listing price, and the percent off.
+              This page lists tech, smart-home, vacuum and kitchen products only while Amazon shows them at 50% off or more.
             </p>
             <ProductListJsonLd name="Black Friday deals at 50% off or more" url={PATH} products={live.map((deal) => deal.name)} />
             {live.length === 0 ? (

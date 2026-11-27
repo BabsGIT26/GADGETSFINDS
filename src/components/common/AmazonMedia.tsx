@@ -125,26 +125,28 @@ export async function LivePrice({
   return (
     <PriceFreshness fetchedAt={item.fetchedAt}>
       <div className={className}>
-        <p className="leading-snug">
-          {outOfStock ? (
-            <span className="text-sm font-semibold text-foreground">Currently unavailable on Amazon</span>
-          ) : percentOnly ? (
-            item.savingsPercent ? (
+        {outOfStock ? (
+          <p className="text-sm font-semibold text-foreground">Currently unavailable on Amazon</p>
+        ) : percentOnly ? (
+          <p className="leading-snug">
+            {item.savingsPercent ? (
               <span className={`${compact ? "text-sm" : "text-lg"} font-bold text-red-600`}>{item.savingsPercent}% off</span>
-            ) : null
-          ) : (
-            <>
-              {item.price ? (
-                <span className={`${compact ? "text-base" : "text-xl"} font-extrabold text-foreground`}>{item.price}</span>
-              ) : null}{" "}
+            ) : null}
+          </p>
+        ) : (
+          <div>
+            <p className="flex items-baseline justify-between gap-2">
+              <span className={`${compact ? "text-sm sm:text-base" : "text-xl"} font-extrabold text-foreground whitespace-nowrap`}>{item.price}</span>
               {item.savingsPercent ? (
-                <span className="text-sm font-bold text-red-600">{item.savingsPercent}% off</span>
-              ) : null}{" "}
-              {item.listPrice ? <span className="text-sm text-muted-foreground line-through">{item.listPrice}</span> : null}
-            </>
-          )}{" "}
-          <span className={`text-xs text-muted-foreground ${compact ? "block" : ""}`}>on Amazon as of {asOf}</span>
-        </p>
+                <span className="text-sm font-bold text-red-600 whitespace-nowrap">{item.savingsPercent}% off</span>
+              ) : (
+                <span />
+              )}
+            </p>
+            <p className="text-sm text-muted-foreground line-through min-h-5">{item.listPrice ?? ""}</p>
+          </div>
+        )}
+        <p className="text-xs text-muted-foreground">on Amazon as of {asOf}</p>
         {compact ? null : <p className="mt-1 text-[11px] leading-snug text-muted-foreground">{PRICE_DISCLAIMER}</p>}
       </div>
     </PriceFreshness>
