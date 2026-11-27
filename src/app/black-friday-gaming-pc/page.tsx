@@ -25,9 +25,9 @@ const SECTIONS: { heading: string; parts: Part[] }[] = [
   {
     heading: "Prebuilt PCs",
     parts: [
-      { name: "CyberPowerPC Ryzen 7 8700F + RTX 5060 Ti", asin: "B0DXVK2SLY", href: "https://link.amazon/B03ej9f36", note: "A complete desktop. It does not use the parts further down." },
-      { name: "CyberPowerPC Core i7-14700F + RTX 5060 Ti", asin: "B0DXVFR2MP", href: "https://link.amazon/B06m1w3qg", note: "A complete Intel desktop with an RTX 5060 Ti." },
       { name: "MSI Aegis R2 Core Ultra 9 285 + RTX 5070", asin: "B0GLLCT2H9", href: "https://link.amazon/B0gDC63ey", note: "A complete MSI desktop. This Intel chip does not fit the AM5 boards below." },
+      { name: "CyberPowerPC Core i7-14700F + RTX 5060 Ti", asin: "B0DXVFR2MP", href: "https://link.amazon/B06m1w3qg", note: "A complete Intel desktop with an RTX 5060 Ti." },
+      { name: "CyberPowerPC Ryzen 7 8700F + RTX 5060 Ti", asin: "B0DXVK2SLY", href: "https://link.amazon/B03ej9f36", note: "A complete desktop. It does not use the parts further down." },
     ],
   },
   {
@@ -139,11 +139,6 @@ export default function Page() {
             </p>
             <p className={EYEBROW}>Gaming PC parts</p>
             <h1 className={H1}>Black Friday gaming PC parts</h1>
-            <p className="text-base text-muted-foreground mb-8 max-w-2xl">
-              The prebuilt PCs are complete computers. The price and the percent off come from Amazon and change through the sale. The Ryzen 7
-              9800X3D, the motherboards, and the DDR5 kit are one build. The Intel chip needs a different board. The Ryzen
-              7 5700X is AM4 and does not fit these boards.
-            </p>
             {SECTIONS.map((section) => (
               <section key={section.heading} className="mb-10">
                 <h2 className={H2}>{section.heading}</h2>
