@@ -6,7 +6,7 @@ import GuideFaq, { ProductListJsonLd } from "@/components/common/GuideFaq";
 import { LivePrice, PriceDisclaimer, ProductPhoto } from "@/components/common/AmazonMedia";
 import { getAmazonItem } from "@/lib/amazon/catalog";
 import { illustrationPath } from "@/lib/illustrations";
-import { CONTAINER, CTA, DISCLOSURE, EYEBROW, H1, H2, LEAD, P, PAGE } from "@/lib/layout";
+import { CONTAINER, CTA, DISCLOSURE, EYEBROW, H1, H2, P, PAGE } from "@/lib/layout";
 import { pageMetadata } from "@/lib/seo";
 import { CATEGORIES, DEALS, amazonUrl, type Deal, type DealCategory } from "./deals";
 import { DealCard, DealFilter } from "./filter";
@@ -51,10 +51,6 @@ export default async function Page() {
             </p>
             <p className={EYEBROW}>Black Friday</p>
             <h1 className={H1}>{TITLE}</h1>
-            <p className="text-sm text-muted-foreground mb-4">Updated through the sale · Discount comes from Amazon and can change hourly</p>
-            <p className={LEAD}>
-              This page lists tech, smart-home, vacuum and kitchen products only while Amazon shows them at 50% off or more.
-            </p>
             <ProductListJsonLd name="Black Friday deals at 50% off or more" url={PATH} products={live.map((deal) => deal.name)} />
             {live.length === 0 ? (
               <p className={P}>None of the tracked listings are at 50% off on Amazon right now. The page checks again within an hour.</p>
