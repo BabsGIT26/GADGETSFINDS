@@ -74,7 +74,7 @@ const fetchGroup = (group: Group) =>
       if (Object.keys(items).length === 0) throw new Error("Amazon returned no items");
       return { fetchedAt: new Date().toISOString(), items };
     },
-    ["amazon-creators-v1", group.id, group.asins.join(",")],
+    ["amazon-creators-v2", group.id, group.asins.join(",")],
     { revalidate: DATA_REVALIDATE_SECONDS, tags: ["amazon"] },
   )();
 
