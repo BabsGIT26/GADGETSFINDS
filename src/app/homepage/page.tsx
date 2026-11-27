@@ -75,10 +75,13 @@ function BlackFridayWeekBanner() {
       <h2 className="text-xl md:text-2xl font-bold text-white mb-2">Black Friday and Cyber Monday deals</h2>
       <p className="text-sm md:text-base text-white leading-relaxed mb-3">
         Black Friday is November 27 and Cyber Monday is November 30. These gadgets are often discounted this week — check
-        today&apos;s price on Amazon. We do not list sale prices here because they change.
+        today's price on Amazon. We do not list sale prices here because they change.
       </p>
       <p className="text-sm text-white mb-4">Brands do not pay to be included in our guides.</p>
       <div className="flex flex-col sm:flex-row flex-wrap gap-2">
+        <a href="/black-friday-gaming-pc" className={linkClass}>
+          Gaming PC parts
+        </a>
         <a href="/best-amazon-deals-this-week" className={linkClass}>
           Fire TV deals
         </a>
