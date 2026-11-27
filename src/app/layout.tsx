@@ -4,6 +4,7 @@ import type { Metadata, Viewport } from 'next';
 import '../styles/index.css';
 import AmazonDisclosureGate from '@/components/common/AmazonDisclosureGate';
 import AmazonClickTracker from '@/components/common/AmazonClickTracker';
+import { Analytics } from "@vercel/analytics/next";
 import BreadcrumbJsonLd from '@/components/common/BreadcrumbJsonLd';
 
 // Re-render every page at most hourly (ISR) so live Amazon prices stay under 24h old
@@ -108,6 +109,7 @@ export default function RootLayout({
       <body>
         <AmazonDisclosureGate />
         <AmazonClickTracker />
+        <Analytics />
         <BreadcrumbJsonLd />
         {children}
         <Script
