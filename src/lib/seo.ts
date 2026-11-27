@@ -21,7 +21,10 @@ export function pageMetadata({
   ogImage?: string;
 }): Metadata {
   const url = `${BASE}${path}`;
-  const image = ogImage ?? (kind ? illustrationOg(kind) : undefined);
+  const raw = ogImage ?? (kind ? illustrationOg(kind) : undefined);
+  // Product photos are not 1200x630. Social sites crop them and cut the product off.
+  // Local /og images are already composed. Everything else is framed first.
+  const image = raw && /^https?:\/\//.test(raw) && !raw.startsWith(`${BASE}/og`) ? `${BASE}/og/frame?src=${encodeURIComponent(raw)}` : raw;
   const full = `${title} | Gadgets Finds`;
   return {
     title: { absolute: full.length <= 60 ? full : title },
