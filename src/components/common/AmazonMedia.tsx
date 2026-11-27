@@ -129,9 +129,6 @@ export async function LivePrice({
           {item.savingsPercent ? (
             <span className="text-sm font-bold text-red-600">{item.savingsPercent}% off</span>
           ) : null}{" "}
-          {item.savingsAmount ? (
-            <span className="text-sm font-semibold text-foreground">{item.savingsAmount} off</span>
-          ) : null}{" "}
           {item.listPrice ? <span className="text-sm text-muted-foreground line-through">{item.listPrice}</span> : null}{" "}
           <span className={`text-xs text-muted-foreground ${compact ? "block" : ""}`}>on Amazon as of {asOf}</span>
         </p>

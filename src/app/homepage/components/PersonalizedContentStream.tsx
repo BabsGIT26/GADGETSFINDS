@@ -30,7 +30,7 @@ const PersonalizedContentStream = ({ photos = {} }: { photos?: Record<string, st
     {
       id: 29,
       title: isSaleSeason() ? "Black Friday Gaming PC Parts" : "Gaming PC Parts",
-      excerpt: "CPU, graphics card, motherboard, memory, SSD, power supply, cooler, and case. Today's Amazon price, percent off, and amount off.",
+      excerpt: "CPU, graphics card, motherboard, memory, SSD, power supply, cooler, and case. Today's Amazon price and percent off.",
       category: "Buying Guide",
       image: "/assets/illustrations/gpu.svg",
       alt: "MSI RTX 3060 Ventus 2X graphics card",

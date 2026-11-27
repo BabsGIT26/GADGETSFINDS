@@ -14,7 +14,7 @@ export const metadata: Metadata = pageMetadata({
   path: PATH,
   title: "Black Friday Gaming PC Parts",
   description:
-    "Black Friday gaming PC parts: CPU, graphics card, board, memory, SSD, power supply, cooler and case, with today's Amazon price, percent off and amount off.",
+    "Black Friday gaming PC parts: CPU, graphics card, board, memory, SSD, power supply, cooler and case, with today's Amazon price and percent off.",
   kind: "deals",
 });
 
@@ -122,7 +122,7 @@ export default function Page() {
             <p className={EYEBROW}>Gaming PC parts</p>
             <h1 className={H1}>Black Friday gaming PC parts</h1>
             <p className="text-base text-muted-foreground mb-8 max-w-2xl">
-              The price, the percent off, and the amount off come from Amazon and change through the sale. The Ryzen 7
+              The price and the percent off come from Amazon and change through the sale. The Ryzen 7
               9800X3D, the motherboards, and the DDR5 kit are one build. The Intel chip needs a different board. The Ryzen
               7 5700X is AM4 and does not fit these boards.
             </p>
