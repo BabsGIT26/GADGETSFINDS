@@ -13,6 +13,13 @@ interface QuickAccessItem {
 const QuickAccessGrid = () => {
   const quickAccessItems: QuickAccessItem[] = [
     {
+      title: isSaleSeason() ? 'Black Friday PC parts' : 'Gaming PC parts',
+      description: 'CPU, graphics card, board, and the rest, with the live price',
+      icon: 'CpuChipIcon',
+      href: '/black-friday-gaming-pc',
+      color: 'from-violet-500 to-fuchsia-500',
+    },
+    {
       title: isSaleSeason() ? 'Black Friday vacuums' : 'Robot vacuum deals',
       description: 'Dock, mop station, or a simple robot. Read the note first.',
       icon: 'SparklesIcon',
