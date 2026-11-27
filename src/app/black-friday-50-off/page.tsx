@@ -1,0 +1,107 @@
+import type { Metadata } from "next";
+import Header from "@/components/common/Header";
+import Footer from "@/app/homepage/components/Footer";
+import RelatedGuides from "@/components/common/RelatedGuides";
+import GuideFaq, { ProductListJsonLd } from "@/components/common/GuideFaq";
+import { LivePrice, PriceDisclaimer, ProductPhoto } from "@/components/common/AmazonMedia";
+import { getAmazonItem } from "@/lib/amazon/catalog";
+import { illustrationPath } from "@/lib/illustrations";
+import { CONTAINER, CTA, DISCLOSURE, EYEBROW, H1, H2, LEAD, P, PAGE } from "@/lib/layout";
+import { pageMetadata } from "@/lib/seo";
+import { CATEGORIES, DEALS, amazonUrl, type DealCategory } from "./deals";
+import { DealCard, DealFilter } from "./filter";
+
+export const revalidate = 3600;
+
+const PATH = "/black-friday-50-off";
+const SEO_TITLE = "Black Friday Deals at 50% Off";
+const TITLE = "Black Friday Deals at 50% Off or More";
+const DESCRIPTION =
+  "Black Friday deals at 50% off or more: headphones, TVs, smart home, robot vacuums and kitchen electronics. Filter by category. The list follows Amazon's live discount.";
+
+const ART: Record<DealCategory, "gadget" | "deals" | "smart-home" | "vacuum"> = {
+  Audio: "gadget",
+  "TV & streaming": "deals",
+  "Smart home": "smart-home",
+  Kitchen: "gadget",
+  Vacuums: "vacuum",
+};
+
+export const metadata: Metadata = pageMetadata({ path: PATH, title: SEO_TITLE, description: DESCRIPTION, kind: "deals" });
+
+export default async function Page() {
+  const live = [];
+  for (const deal of DEALS) {
+    const item = await getAmazonItem(deal.asin);
+    if (item?.savingsPercent != null && item.savingsPercent >= 50) {
+      live.push(deal);
+    }
+  }
+  const categories = CATEGORIES.filter((category) => live.some((deal) => deal.category === category));
+
+  return (
+    <>
+      <Header />
+      <main className={PAGE}>
+        <article>
+          <div className={CONTAINER}>
+            <p className={DISCLOSURE}>
+              <span className="text-red-600 font-semibold">Disclosure:</span> Gadgets Finds is an Amazon Associate. We may earn
+              from qualifying purchases if you buy through links on this page, at no extra cost to you.
+            </p>
+            <p className={EYEBROW}>Black Friday</p>
+            <h1 className={H1}>{TITLE}</h1>
+            <p className="text-sm text-muted-foreground mb-4">Updated through the sale · Discount comes from Amazon and can change hourly</p>
+            <p className={LEAD}>
+              This page lists tech, smart-home, vacuum and kitchen products only while Amazon shows them at 50% off or more. Use the filters to jump to a category. The percent is the only price figure we show.
+            </p>
+            <ProductListJsonLd name="Black Friday deals at 50% off or more" url={PATH} products={live.map((deal) => deal.name)} />
+            {live.length === 0 ? (
+              <p className={P}>None of the tracked listings are at 50% off on Amazon right now. The page checks again within an hour.</p>
+            ) : (
+              <DealFilter categories={categories} total={live.length}>
+                {live.map((deal) => (
+                  <DealCard key={deal.asin} category={deal.category}>
+                    <ProductPhoto asin={deal.asin} fallback={illustrationPath(ART[deal.category])} alt={deal.name} variant="deal" />
+                    <div className="p-3 sm:p-4 flex flex-col flex-1">
+                      <p className="text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">{deal.category}</p>
+                      <h2 className="text-sm sm:text-base font-bold text-foreground mt-1">{deal.name}</h2>
+                      <p className="text-xs sm:text-sm text-muted-foreground mt-2 flex-1">{deal.note}</p>
+                      <LivePrice asin={deal.asin} compact className="mt-3" />
+                      <a
+                        href={amazonUrl(deal.asin)}
+                        rel="nofollow sponsored noopener noreferrer"
+                        aria-label={`Check price of ${deal.name} on Amazon`}
+                        className={`${CTA} mt-3 text-center text-xs sm:text-sm`}
+                      >
+                        Check price on Amazon
+                      </a>
+                    </div>
+                  </DealCard>
+                ))}
+              </DealFilter>
+            )}
+            <PriceDisclaimer className="mt-3" />
+            <h2 className={H2}>How the 50% line works</h2>
+            <p className={P}>
+              A product stays on this page only when Amazon's own discount is 50% or higher. If the listing price or the sale price moves, the product drops off or comes back on the next refresh. We do not print the dollar price here.
+            </p>
+            <p className={P}>
+              Headphones, streaming sticks and smart displays are the bulk of the list. Kitchen tools and robot vacuums are here when they clear the same 50% line. A bundle is one Amazon listing, so the percent is for the pair, not each piece.
+            </p>
+            <GuideFaq
+              title="Black Friday 50% off questions"
+              items={[
+                { q: "Why did a product disappear?", a: "Amazon's discount fell under 50%, or the listing stopped sending a discount. The page reads that number about once an hour." },
+                { q: "Are these the only 50% off products on Amazon?", a: "No. This is a curated set of tech, home and kitchen electronics, not every item in Amazon's sale." },
+                { q: "Does the percent include a coupon I have to click?", a: "No. The percent is the discount Amazon attaches to the listing itself. A coupon you have to clip is separate." },
+              ]}
+            />
+            <RelatedGuides current={PATH} />
+          </div>
+        </article>
+      </main>
+      <Footer />
+    </>
+  );
+}

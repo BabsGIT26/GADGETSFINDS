@@ -37,6 +37,7 @@ export const PAGE_DATES: Record<string, string> = {
   '/black-friday-gaming-pc': '2026-11-27',
   '/iphone-18-pro-max': '2026-11-27',
   '/samsung-9100-pro-2tb-article': '2026-11-27',
+  '/black-friday-50-off': '2026-11-27',
   '/black-friday-smartwatches/apple-watch-se-3-40mm': '2026-11-23',
   '/black-friday-smartwatches/apple-watch-series-12-42mm': '2026-11-23',
   '/black-friday-smartwatches/apple-watch-series-12-cellular-46mm': '2026-11-23',

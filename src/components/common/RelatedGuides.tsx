@@ -3,7 +3,8 @@ import { isSaleSeason } from "@/lib/sale-season";
 
 export type Topic = "home" | "mobile" | "computing" | "gaming" | "deals" | "audio" | "travel";
 
-function guides(): { href: string; title: string; topics: Topic[] }[] {
+function guides():   { href: "/black-friday-50-off", title: "Black Friday deals at 50% off", topics: ["deals", "computing", "gaming", "home"] },
+{ href: string; title: string; topics: Topic[] }[] {
   return [
   { href: "/best-budget-robot-vacuums-under-300", title: "Best robot vacuums under $300", topics: ["home", "deals"] },
   { href: "/roborock-vs-roomba-2026", title: "Roborock vs Roomba: which to buy", topics: ["home"] },

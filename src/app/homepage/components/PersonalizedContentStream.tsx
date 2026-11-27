@@ -28,6 +28,19 @@ const PersonalizedContentStream = ({ photos = {} }: { photos?: Record<string, st
 
   const contentItems: ContentItem[] = [
     {
+      id: 32,
+      title: "Black Friday deals at 50% off",
+      excerpt: "Headphones, TVs, smart home, vacuums and kitchen gear, only while Amazon shows 50% off or more. Filter by category.",
+      category: "Deals",
+      image: "/assets/illustrations/deals.svg",
+      alt: "Black Friday deals at 50% off",
+      author: "Gadgets Finds",
+      publishedDate: "November 27, 2026",
+      readTime: "8 min read",
+      tags: ["Black Friday", "Deals"],
+      fit: "contain",
+    },
+    {
       id: 31,
       title: "Samsung 9100 PRO 2TB SSD",
       excerpt: "PCIe 5.0 at 14,700 MB/s. Worth it only if the board has a Gen 5 slot. Specs, PS5 fit, and who should buy the 990 PRO instead.",
@@ -374,6 +387,7 @@ const PersonalizedContentStream = ({ photos = {} }: { photos?: Record<string, st
   ];
 
   const articleRoutes: { [key: number]: string } = {
+    32: "/black-friday-50-off",
     31: "/samsung-9100-pro-2tb-article",
     30: "/iphone-18-pro-max",
     29: "/black-friday-gaming-pc",
@@ -430,7 +444,7 @@ const PersonalizedContentStream = ({ photos = {} }: { photos?: Record<string, st
 
   const filteredItems = getFilteredItems();
 
-  const guideIds = [31, 30, 29, 28, 27, 26, 25, 24, 23];
+  const guideIds = [32, 31, 30, 29, 28, 27, 26, 25, 24];
   const guideItems = guideIds
     .map((id) => contentItems.find((item) => item.id === id))
     .filter((item): item is ContentItem => Boolean(item));
