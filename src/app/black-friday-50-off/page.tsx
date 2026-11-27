@@ -26,6 +26,7 @@ const ART: Record<DealCategory, "gadget" | "deals" | "smart-home" | "vacuum"> = 
   "Smart home": "smart-home",
   Kitchen: "gadget",
   Vacuums: "vacuum",
+  Tools: "gadget",
 };
 
 const OG_IMAGE =
