@@ -88,23 +88,32 @@ const SECTIONS: { heading: string; parts: Part[] }[] = [
   },
 ];
 
-function PartRow({ part }: { part: Part }) {
+function PartCard({ part }: { part: Part }) {
   return (
-    <article className="flex gap-3 sm:gap-4 border border-border rounded-xl bg-card p-3 sm:p-4">
-      <ProductPhoto asin={part.asin} alt={part.name} variant="thumb" />
-      <div className="min-w-0 flex-1">
-        <h3 className="text-base font-bold text-foreground">{part.name}</h3>
-        <p className="text-sm text-muted-foreground mt-1">{part.note}</p>
-        <LivePrice asin={part.asin} compact className="mt-2" />
-        <a
-          href={part.href}
-          rel="nofollow sponsored noopener noreferrer"
-          className="mt-3 inline-flex items-center justify-center px-4 py-2 rounded-full bg-amber-400 text-zinc-950 text-sm font-extrabold hover:bg-amber-300"
-        >
-          View on Amazon
-        </a>
+    <div className="bg-card border border-border rounded-xl overflow-hidden flex flex-col">
+      <a href={part.href} rel="nofollow sponsored noopener noreferrer" aria-label={part.name}>
+        <ProductPhoto asin={part.asin} alt={part.name} variant="card" />
+      </a>
+      <div className="p-4 flex flex-col flex-1">
+        <h3 className="text-base font-bold text-foreground">
+          <a href={part.href} rel="nofollow sponsored noopener noreferrer" className="hover:text-amber-700">
+            {part.name}
+          </a>
+        </h3>
+        <p className="text-sm text-muted-foreground mt-2 flex-1">{part.note}</p>
+        <LivePrice asin={part.asin} compact className="mt-3" />
+        <div className="mt-4">
+          <a
+            href={part.href}
+            rel="nofollow sponsored noopener noreferrer"
+            aria-label={`Check price of ${part.name} on Amazon`}
+            className="inline-flex w-full items-center justify-center px-4 py-2 rounded-full bg-amber-400 text-zinc-950 text-sm font-extrabold hover:bg-amber-300 transition-colors"
+          >
+            Check price on Amazon
+          </a>
+        </div>
       </div>
-    </article>
+    </div>
   );
 }
 
@@ -129,9 +138,9 @@ export default function Page() {
             {SECTIONS.map((section) => (
               <section key={section.heading} className="mb-10">
                 <h2 className={H2}>{section.heading}</h2>
-                <div className="grid gap-3">
+                <div className="grid sm:grid-cols-2 gap-4">
                   {section.parts.map((part) => (
-                    <PartRow key={part.asin} part={part} />
+                    <PartCard key={part.asin} part={part} />
                   ))}
                 </div>
               </section>
