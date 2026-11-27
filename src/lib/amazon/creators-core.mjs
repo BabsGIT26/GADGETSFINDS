@@ -94,12 +94,19 @@ function summarize(item) {
   const image = item?.images?.primary?.large || {};
   const listings = Array.isArray(item?.offersV2?.listings) ? item.offersV2.listings : [];
   const offer = listings.find((l) => l?.isBuyBoxWinner) || listings[0] || null;
-  const money = offer?.price?.money || {};
+  const price = offer?.price || {};
+  const money = price.money || {};
+  const basis = price.savingBasis?.money || {};
+  const saved = price.savings || {};
+  const percent = Number(saved.percentage);
   return {
     asin: item.asin,
     title: item?.itemInfo?.title?.displayValue || null,
     image: image.url ? { url: image.url, width: image.width || 500, height: image.height || 500 } : null,
     price: money.displayAmount || null,
+    listPrice: basis.displayAmount || null,
+    savingsAmount: saved.money?.displayAmount || null,
+    savingsPercent: Number.isFinite(percent) && percent > 0 ? Math.round(percent) : null,
     availability: offer?.availability?.type || null,
   };
 }
