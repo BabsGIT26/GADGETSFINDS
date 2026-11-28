@@ -10,8 +10,9 @@ const SEO_TITLE = "Samsung 9100 PRO 2TB: Specs and Verdict";
 const TITLE = "Samsung 9100 PRO 2TB SSD: Specs, PCIe 5.0 and Who Should Buy It";
 const DESCRIPTION =
   "Samsung 9100 PRO 2TB: PCIe 5.0 NVMe at 14,700 MB/s, 2GB DRAM and 1,200 TBW. When it beats the 990 PRO, and who should skip it.";
+const OG_IMAGE = "https://m.media-amazon.com/images/I/51xQiJEJPwL._AC_SL1500_.jpg";
 
-export const metadata: Metadata = pageMetadata({ path: PATH, title: SEO_TITLE, description: DESCRIPTION, kind: "ssd" });
+export const metadata: Metadata = pageMetadata({ path: PATH, title: SEO_TITLE, description: DESCRIPTION, ogImage: OG_IMAGE });
 
 const link = "underline decoration-amber-500/80 underline-offset-4 hover:text-foreground";
 
